@@ -227,7 +227,7 @@ function CharacterTileComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("src", "/assets/icons/", ctx_r0.iconsSpecs[ctx_r0.character.class + "_" + ctx_r0.character.role], "", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("src", "assets/icons/", ctx_r0.iconsSpecs[ctx_r0.character.class + "_" + ctx_r0.character.role], "", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMapInterpolate1"]("name ", ctx_r0.character.class, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
