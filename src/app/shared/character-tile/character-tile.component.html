@@ -1,0 +1,4 @@
+<ng-container *ngIf="character">
+  <img class="icon" crossorigin="anonymous" src="assets/icons/{{iconsSpecs[character.class + '_' + character.role]}}" alt="">
+  <span class="name {{character.class}}">{{character.name}} <sup>[{{character.player?.name}}]</sup></span>
+</ng-container>

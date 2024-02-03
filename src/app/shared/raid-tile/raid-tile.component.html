@@ -1,0 +1,25 @@
+<header>
+  <div class="internal-actions" data-html2canvas-ignore="true">
+    <button (click)="export()" title="MRT export">⬆️</button>
+    <button [disabled]="capturingScreenshot" (click)="screenshot()" title="Screenshot"><span class="icon-photo" [class.loading]="capturingScreenshot"></span></button>
+    <button (click)="ping()" title="Discord pings">✉️</button>
+  </div>
+  <h3>{{title}}</h3>
+  <div class="external-actions" data-html2canvas-ignore="true">
+    <button (click)="onPruneClick.emit()">🗑️</button>
+    <button (click)="onRemoveClick.emit()">💀</button>
+  </div>
+</header>
+<div class="raidgroups" #raidGroups>
+  <app-character-tile
+    *ngFor="let slot of raid; index as i"
+    class="character-{{i}}"
+    [class.highlight]="slot?.highlight"
+    (click)="onSlotClick.emit(i)"
+    (dragover)="onDragOver.emit(i)"
+    (dragstart)="onSlotDragStart.emit(i)"
+    (dragend)="onSlotDragEnd.emit()"
+    [character]="slot"
+    [draggable]="!!slot"
+  ></app-character-tile>
+</div>

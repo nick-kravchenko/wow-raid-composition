@@ -1,0 +1,73 @@
+:host {
+  position: relative;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    flex-grow: 1;
+  }
+  .internal-actions, .external-actions {
+    display: flex;
+    align-items: center;
+    button {
+      display: block;
+      margin: 0 4px 0 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+.raidgroups {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 3px;
+}
+h3 {
+  grid-area: title;
+  text-align: center;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+  line-height: 2rem;
+  font-size: 14px;
+  color: #9d9d9d;
+}
+.highlight {
+  animation: shake .2s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-.5rem);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(.5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  bottom: 0;
+  font-size: 1.25em;
+  line-height: 1em;
+  cursor: pointer;
+  &[disabled] {
+    cursor: default;
+  }
+}

@@ -1,0 +1,6 @@
+<h4>{{player.name}}:</h4>
+<ul>
+  <li *ngFor="let character of player.characters">
+    <app-character-tile [character]="character"></app-character-tile>
+  </li>
+</ul>
