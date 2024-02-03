@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font: 14px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  background: #000;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=styles.css.map*/
