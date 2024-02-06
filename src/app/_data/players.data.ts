@@ -146,4 +146,26 @@ export const players: Player[] = [
       {name: 'Tamioka', level: 25, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.mage},
     ]
   },
-]
+
+  {
+    name: 'Souleater',
+    discord: { userId: '1018985851864227870' },
+    characters: [
+      {name: 'Souleater', level: 25, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.warlock},
+    ]
+  },
+  {
+    name: 'Dacon',
+    discord: { userId: '289927099035287552' },
+    characters: [
+      {name: 'Dacon', level: 25, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.warrior},
+    ]
+  },
+  {
+    name: 'Filin',
+    discord: { userId: '358759514788593674' },
+    characters: [
+      {name: 'Filin', level: 25, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.druid},
+    ]
+  },
+];
