@@ -55,7 +55,7 @@ export class CompositionService {
       {
         relativeTo: this.activatedRoute,
         queryParams,
-        queryParamsHandling: 'merge', // remove to replace all query params by provided
+        queryParamsHandling: 'merge',
       }
     );
   }
@@ -72,6 +72,20 @@ export class CompositionService {
 
   characterUsedInAnyRaid(character: Character): boolean {
     return this.raids.some((raid: Character[]) => raid.some((c: Character) => c?.name === character.name));
+  }
+
+  highlightPlayerInRaid(raidId: number, player?: Player): void {
+    const character = this.raids.find((raid: Character[], i: number) => {
+      return i === raidId;
+    })?.find((c: Character) => {
+      return c?.player?.name === player?.name;
+    });
+    if (character) {
+      character.highlight = true;
+      setTimeout(() => {
+        character.highlight = false;
+      }, 2000);
+    }
   }
 
   pushCharacter(character: Character): void {
@@ -98,6 +112,7 @@ export class CompositionService {
       return;
     }
     if (this.playerAlreadyInRaid(raidId, character.player)) {
+      this.highlightPlayerInRaid(raidId, character?.player);
       return;
     }
     this.raids = this.raids.map((raid, i) => {
@@ -108,6 +123,7 @@ export class CompositionService {
   moveCharacter(fromRaidId: number, fromSlot: number, toRaidId: number, toSlot: number, character: Character): void {
     const thisCharacterInRaid = this.raids[toRaidId].some((c) => c?.name === character.name);
     if (this.playerAlreadyInRaid(toRaidId, character.player) && !thisCharacterInRaid) {
+      this.highlightPlayerInRaid(toRaidId, character?.player);
       return;
     }
 
