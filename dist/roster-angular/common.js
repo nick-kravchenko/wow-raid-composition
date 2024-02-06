@@ -178,6 +178,27 @@ const players = [
             { name: 'Tamioka', level: 25, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].mage },
         ]
     },
+    {
+        name: 'Souleater',
+        discord: { userId: '1018985851864227870' },
+        characters: [
+            { name: 'Souleater', level: 25, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warlock },
+        ]
+    },
+    {
+        name: 'Dacon',
+        discord: { userId: '289927099035287552' },
+        characters: [
+            { name: 'Dacon', level: 25, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warrior },
+        ]
+    },
+    {
+        name: 'Filin',
+        discord: { userId: '358759514788593674' },
+        characters: [
+            { name: 'Filin', level: 25, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].druid },
+        ]
+    },
 ];
 
 
