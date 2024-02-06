@@ -7,20 +7,24 @@ import { players } from '../_data/players.data';
 
 @Injectable()
 export class CompositionService {
-  characters: Character[] = players.reduce((characters: Character[], player) => {
-    return [
+  characters: Character[] = players.reduce((characters: Character[], player: Player) => {
+    return !!player && !!player.characters ? [
       ...characters,
-      ...player.characters!.map(character => ({...character, player: { name: player.name, discord: player.discord }})),
-    ]
+      ...player.characters.map(character => ({...character, player: { name: player.name, discord: player.discord }})),
+    ] : characters;
   }, []);
+
   public raidsSubject: BehaviorSubject<Character[][]> = new BehaviorSubject<Character[][]>([]);
-  get raids() {
+
+  get raids(): Character[][] {
     return this.raidsSubject.value;
   }
+
   set raids(raids: Character[][]) {
     this.raidsSubject.next(raids);
     this.writeRaidsToQueryParams();
   }
+
   get emptyRaid(): Character[] {
     return new Array(10).fill(null);
   }
@@ -32,43 +36,45 @@ export class CompositionService {
     this.readRaidFromQueryParams();
   }
 
-  readRaidFromQueryParams() {
+  readRaidFromQueryParams(): void {
     const raidsParam = this.activatedRoute.snapshot.queryParamMap.get('raids');
     if (raidsParam) {
-      const raids = decodeURIComponent(raidsParam).split('-')
-        .map((r: string) => 
+      // @ts-ignore
+      this.raids = decodeURIComponent(raidsParam).split('-')
+        .map((r: string) =>
           r.split('_').map((name) => this.characters.find((character) => character.name === name || null))
         );
-      // @ts-ignore
-      this.raids = raids;
     }
   }
-  writeRaidsToQueryParams() {
+
+  writeRaidsToQueryParams(): void {
     const raids: string = this.raids.map((raid: Character[]) => raid.map((character: Character) => character?.name || '').join('_')).join('-');
     const queryParams: Params = { raids: encodeURIComponent(raids) };
     this.router.navigate(
-      [], 
+      [],
       {
         relativeTo: this.activatedRoute,
         queryParams,
         queryParamsHandling: 'merge', // remove to replace all query params by provided
       }
-    )
+    );
   }
 
-  setRaids(raids: Character[][]) {
-    this.raids = raids;
-  }
-  playerAlreadyInRaid(raidId: number, player?: Player) {
+  playerAlreadyInRaid(raidId: number, player?: Player): boolean {
     return this.raids[raidId].some((character: Character) => character?.player && player && character.player.name === player?.name);
   }
-  playerUsedInEveryRaid(player?: Player) {
-    return this.raids.every((raid: Character[]) => raid.some((character: Character) => character?.player?.name && character.player.name === player?.name));
+
+  playerUsedInEveryRaid(player?: Player): boolean {
+    return this.raids.every((raid: Character[]) => {
+      return raid.some((character: Character) => character?.player?.name && character.player.name === player?.name);
+    });
   }
-  characterUsedInAnyRaid(character: Character) {
+
+  characterUsedInAnyRaid(character: Character): boolean {
     return this.raids.some((raid: Character[]) => raid.some((c: Character) => c?.name === character.name));
   }
-  pushCharacter(character: Character) {
+
+  pushCharacter(character: Character): void {
     let inserted = false;
     if (!this.characterUsedInAnyRaid(character)) {
       this.raids = this.raids.reduce((raids: Character[][], raid: Character[], i: number) => {
@@ -83,36 +89,57 @@ export class CompositionService {
             }
           }),
         ];
-      }, []); 
+      }, []);
     }
   }
-  addCharacterToRaid(raidId: number, slotId: number, character: Character) {
-    if (this.characterUsedInAnyRaid(character)) return;
-    if (this.playerAlreadyInRaid(raidId, character.player)) return;
-    this.raids = this.raids.map((raid, i) => i !== raidId ? raid : raid.map((c, k) => k !== slotId ? c : character));
-  }
-  moveCharacter(fromRaidId: number, fromSlot: number, toRaidId: number, toSlot: number, character: Character) {
-    const thisCharacterInRaid = this.raids[toRaidId].some((c) => c?.name === character.name);
-    if (this.playerAlreadyInRaid(toRaidId, character.player) && !thisCharacterInRaid) return;
 
-    let charToSwap: Character|undefined = undefined;
-    if (this.raids[toRaidId][toSlot]) charToSwap = this.raids[toRaidId][toSlot];
+  addCharacterToRaid(raidId: number, slotId: number, character: Character): void {
+    if (this.characterUsedInAnyRaid(character)) {
+      return;
+    }
+    if (this.playerAlreadyInRaid(raidId, character.player)) {
+      return;
+    }
+    this.raids = this.raids.map((raid, i) => {
+      return i !== raidId ? raid : raid.map((c, k) => k !== slotId ? c : character);
+    });
+  }
+
+  moveCharacter(fromRaidId: number, fromSlot: number, toRaidId: number, toSlot: number, character: Character): void {
+    const thisCharacterInRaid = this.raids[toRaidId].some((c) => c?.name === character.name);
+    if (this.playerAlreadyInRaid(toRaidId, character.player) && !thisCharacterInRaid) {
+      return;
+    }
+
+    let charToSwap: Character|undefined;
+    if (this.raids[toRaidId][toSlot]) {
+      charToSwap = this.raids[toRaidId][toSlot];
+    }
     this.raids[toRaidId][toSlot] = this.raids[fromRaidId][fromSlot];
 
-    if (charToSwap) this.raids[fromRaidId][fromSlot] = charToSwap;
-    else this.deleteCharacter(fromRaidId, fromSlot);
+    if (charToSwap) {
+      this.raids[fromRaidId][fromSlot] = charToSwap;
+    } else {
+      this.deleteCharacter(fromRaidId, fromSlot);
+    }
   }
-  deleteCharacter(fromRaidId: number, fromSlot: number) {
+
+  deleteCharacter(fromRaidId: number, fromSlot: number): void {
     // @ts-ignore
-    this.raids = this.raids.map((raid: Character[], raidId) => raid.map((character, slotId) => raidId === fromRaidId && slotId === fromSlot ? null : character));
+    this.raids = this.raids.map((raid: Character[], raidId) => {
+      return raid.map((character, slotId) => raidId === fromRaidId && slotId === fromSlot ? null : character);
+    });
   }
-  resetRaid(raidId: number) {
+
+  resetRaid(raidId: number): void {
     this.raids = this.raids.map((raid: Character[], i) => i === raidId ? this.emptyRaid : raid);
   }
-  removeRaid(raidId: number) {
+
+  removeRaid(raidId: number): void {
     this.raids = this.raids.filter((raid: Character[], i) => i !== raidId);
   }
-  addRaid() {
+
+  addRaid(): void {
     this.raids = [...this.raids, this.emptyRaid];
   }
 }
