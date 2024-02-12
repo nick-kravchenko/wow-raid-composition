@@ -1,7 +1,7 @@
-import { CharacterClass } from "./character-class.enum";
-import { CharacterRank } from "./character-rank.enum";
-import { CharacterRole } from "./character-role.enum";
-import { Player } from "./player";
+import { CharacterClass } from './character-class.enum';
+import { CharacterRank } from './character-rank.enum';
+import { CharacterRole } from './character-role.enum';
+import { Player } from './player';
 
 export interface Character {
   name: string;

@@ -1,5 +1,5 @@
-import { Character } from "./character";
-import { CharacterRole } from "./character-role.enum";
+import { Character } from './character';
+import { CharacterRole } from './character-role.enum';
 
 export interface Player {
   name: string;

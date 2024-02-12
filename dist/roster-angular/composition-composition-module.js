@@ -7480,11 +7480,11 @@ class CompositionService {
         this.activatedRoute = activatedRoute;
         this.router = router;
         this.characters = _data_players_data__WEBPACK_IMPORTED_MODULE_2__["players"].reduce((characters, player) => {
-            return [
+            return !!player && !!player.characters ? [
                 ...characters,
                 ...player.characters.map(character => (Object.assign(Object.assign({}, character), { player: { name: player.name, discord: player.discord } }))),
-            ];
-        }, []);
+            ] : characters;
+        }, []).filter((character) => character.level === 40);
         this.raidsSubject = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"]([]);
         this.readRaidFromQueryParams();
     }
@@ -7501,10 +7501,9 @@ class CompositionService {
     readRaidFromQueryParams() {
         const raidsParam = this.activatedRoute.snapshot.queryParamMap.get('raids');
         if (raidsParam) {
-            const raids = decodeURIComponent(raidsParam).split('-')
-                .map((r) => r.split('_').map((name) => this.characters.find((character) => character.name === name || null)));
             // @ts-ignore
-            this.raids = raids;
+            this.raids = decodeURIComponent(raidsParam).split('-')
+                .map((r) => r.split('_').map((name) => this.characters.find((character) => character.name === name || null)));
         }
     }
     writeRaidsToQueryParams() {
@@ -7516,17 +7515,31 @@ class CompositionService {
             queryParamsHandling: 'merge',
         });
     }
-    setRaids(raids) {
-        this.raids = raids;
-    }
     playerAlreadyInRaid(raidId, player) {
         return this.raids[raidId].some((character) => (character === null || character === void 0 ? void 0 : character.player) && player && character.player.name === (player === null || player === void 0 ? void 0 : player.name));
     }
     playerUsedInEveryRaid(player) {
-        return this.raids.every((raid) => raid.some((character) => { var _a; return ((_a = character === null || character === void 0 ? void 0 : character.player) === null || _a === void 0 ? void 0 : _a.name) && character.player.name === (player === null || player === void 0 ? void 0 : player.name); }));
+        return this.raids.every((raid) => {
+            return raid.some((character) => { var _a; return ((_a = character === null || character === void 0 ? void 0 : character.player) === null || _a === void 0 ? void 0 : _a.name) && character.player.name === (player === null || player === void 0 ? void 0 : player.name); });
+        });
     }
     characterUsedInAnyRaid(character) {
         return this.raids.some((raid) => raid.some((c) => (c === null || c === void 0 ? void 0 : c.name) === character.name));
+    }
+    highlightPlayerInRaid(raidId, player) {
+        var _a;
+        const character = (_a = this.raids.find((raid, i) => {
+            return i === raidId;
+        })) === null || _a === void 0 ? void 0 : _a.find((c) => {
+            var _a;
+            return ((_a = c === null || c === void 0 ? void 0 : c.player) === null || _a === void 0 ? void 0 : _a.name) === (player === null || player === void 0 ? void 0 : player.name);
+        });
+        if (character) {
+            character.highlight = true;
+            setTimeout(() => {
+                character.highlight = false;
+            }, 2000);
+        }
     }
     pushCharacter(character) {
         let inserted = false;
@@ -7548,28 +7561,40 @@ class CompositionService {
         }
     }
     addCharacterToRaid(raidId, slotId, character) {
-        if (this.characterUsedInAnyRaid(character))
+        if (this.characterUsedInAnyRaid(character)) {
             return;
-        if (this.playerAlreadyInRaid(raidId, character.player))
+        }
+        if (this.playerAlreadyInRaid(raidId, character.player)) {
+            this.highlightPlayerInRaid(raidId, character === null || character === void 0 ? void 0 : character.player);
             return;
-        this.raids = this.raids.map((raid, i) => i !== raidId ? raid : raid.map((c, k) => k !== slotId ? c : character));
+        }
+        this.raids = this.raids.map((raid, i) => {
+            return i !== raidId ? raid : raid.map((c, k) => k !== slotId ? c : character);
+        });
     }
     moveCharacter(fromRaidId, fromSlot, toRaidId, toSlot, character) {
         const thisCharacterInRaid = this.raids[toRaidId].some((c) => (c === null || c === void 0 ? void 0 : c.name) === character.name);
-        if (this.playerAlreadyInRaid(toRaidId, character.player) && !thisCharacterInRaid)
+        if (this.playerAlreadyInRaid(toRaidId, character.player) && !thisCharacterInRaid) {
+            this.highlightPlayerInRaid(toRaidId, character === null || character === void 0 ? void 0 : character.player);
             return;
-        let charToSwap = undefined;
-        if (this.raids[toRaidId][toSlot])
+        }
+        let charToSwap;
+        if (this.raids[toRaidId][toSlot]) {
             charToSwap = this.raids[toRaidId][toSlot];
+        }
         this.raids[toRaidId][toSlot] = this.raids[fromRaidId][fromSlot];
-        if (charToSwap)
+        if (charToSwap) {
             this.raids[fromRaidId][fromSlot] = charToSwap;
-        else
+        }
+        else {
             this.deleteCharacter(fromRaidId, fromSlot);
+        }
     }
     deleteCharacter(fromRaidId, fromSlot) {
         // @ts-ignore
-        this.raids = this.raids.map((raid, raidId) => raid.map((character, slotId) => raidId === fromRaidId && slotId === fromSlot ? null : character));
+        this.raids = this.raids.map((raid, raidId) => {
+            return raid.map((character, slotId) => raidId === fromRaidId && slotId === fromSlot ? null : character);
+        });
     }
     resetRaid(raidId) {
         this.raids = this.raids.map((raid, i) => i === raidId ? this.emptyRaid : raid);

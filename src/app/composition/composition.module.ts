@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { CompositionRoutingModule } from './composition-routing.module';
 import { CompositionComponent } from './composition.component';
-import { SharedModule } from "../shared/shared.module";
+import { SharedModule } from '../shared/shared.module';
 import { CompositionService } from './composition.service';
 
 @NgModule({
