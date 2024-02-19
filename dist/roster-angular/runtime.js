@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"common":"common","composition-composition-module":"composition-composition-module","players-players-module":"players-players-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"default~composition-composition-module~players-players-module":"default~composition-composition-module~players-players-module","composition-composition-module":"composition-composition-module","players-players-module":"players-players-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function

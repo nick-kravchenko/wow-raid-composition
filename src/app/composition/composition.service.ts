@@ -12,7 +12,7 @@ export class CompositionService {
       ...characters,
       ...player.characters.map(character => ({...character, player: { name: player.name, discord: player.discord }})),
     ] : characters;
-  }, []).filter((character) => character.level === 40);
+  }, []);
 
   public raidsSubject: BehaviorSubject<Character[][]> = new BehaviorSubject<Character[][]>([]);
 

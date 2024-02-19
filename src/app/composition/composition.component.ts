@@ -27,27 +27,42 @@ export class CompositionComponent implements OnInit {
     characterClass: new FormControl(''),
     characterRole: new FormControl(''),
     characterRank: new FormControl(''),
+    characterLevel: new FormControl(''),
   });
   signedPlayers: string[] = [];
   players = players;
   characterClasses = CharacterClass;
   characterRoles = CharacterRole;
   characterRank = CharacterRank;
-  get filteredCharacters() {
+  get filteredCharacters(): Character[] {
     return this.characters.filter((c) => {
       const {
         player,
         characterClass,
         characterRole,
         characterRank,
+        characterLevel,
       } = this.formGroup.getRawValue();
       const filtersPassed = [];
-      if (player) filtersPassed.push(c.player?.name === player);
-      if (characterClass) filtersPassed.push(c.class === characterClass);
-      if (characterRole) filtersPassed.push(c.role === characterRole);
-      if (characterRank) filtersPassed.push(c.rank === characterRank);
-      if (this.signedPlayers.length && c.player?.discord?.userId) filtersPassed.push(this.signedPlayers.includes(c.player.discord.userId));
-      return filtersPassed.every(c => c);
+      if (player) {
+        filtersPassed.push(c.player?.name === player);
+      }
+      if (characterClass) {
+        filtersPassed.push(c.class === characterClass);
+      }
+      if (characterRole) {
+        filtersPassed.push(c.role === characterRole);
+      }
+      if (characterRank) {
+        filtersPassed.push(c.rank === characterRank);
+      }
+      if (characterLevel && characterLevel !== 'null') {
+        filtersPassed.push(c.level === Number(characterLevel));
+      }
+      if (this.signedPlayers.length && c.player?.discord?.userId) {
+        filtersPassed.push(this.signedPlayers.includes(c.player.discord.userId));
+      }
+      return filtersPassed.every((condition: boolean) => condition);
     }).sort((a, b) =>
       a.class === b.class
         ? a.name > b.name ? 1 : -1
@@ -94,7 +109,7 @@ export class CompositionComponent implements OnInit {
         queryParams[key] = encodeURIComponent(value[key]);
       }
       this.router.navigate(
-        [], 
+        [],
         {
           relativeTo: this.activatedRoute,
           queryParams,

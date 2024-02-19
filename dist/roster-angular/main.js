@@ -508,8 +508,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: '', loadChildren: () => Promise.all(/*! import() | composition-composition-module */[__webpack_require__.e("common"), __webpack_require__.e("composition-composition-module")]).then(__webpack_require__.bind(null, /*! ./composition/composition.module */ "xhUX")).then(m => m.CompositionModule) },
-    { path: 'players', loadChildren: () => Promise.all(/*! import() | players-players-module */[__webpack_require__.e("common"), __webpack_require__.e("players-players-module")]).then(__webpack_require__.bind(null, /*! ./players/players.module */ "SDng")).then(m => m.PlayersModule) }
+    { path: '', loadChildren: () => Promise.all(/*! import() | composition-composition-module */[__webpack_require__.e("default~composition-composition-module~players-players-module"), __webpack_require__.e("composition-composition-module")]).then(__webpack_require__.bind(null, /*! ./composition/composition.module */ "xhUX")).then(m => m.CompositionModule) },
+    { path: 'players', loadChildren: () => Promise.all(/*! import() | players-players-module */[__webpack_require__.e("default~composition-composition-module~players-players-module"), __webpack_require__.e("players-players-module")]).then(__webpack_require__.bind(null, /*! ./players/players.module */ "SDng")).then(m => m.PlayersModule) }
 ];
 class AppRoutingModule {
 }
