@@ -95,6 +95,7 @@ export const players: Player[] = [
     discord: { userId: '352895751082213377' },
     characters: [
       {name: 'Panibavovna', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.paladin},
+      {name: 'Kulbabka', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.druid},
     ]
   },
   {
@@ -110,6 +111,7 @@ export const players: Player[] = [
     discord: { userId: '185128538741932032' },
     characters: [
       {name: 'Odessit', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.hunter},
+      {name: 'Odesit', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.druid},
     ]
   },
   {
