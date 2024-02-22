@@ -127,6 +127,7 @@ const players = [
         discord: { userId: '352895751082213377' },
         characters: [
             { name: 'Panibavovna', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].paladin },
+            { name: 'Kulbabka', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].druid },
         ]
     },
     {
@@ -142,6 +143,7 @@ const players = [
         discord: { userId: '185128538741932032' },
         characters: [
             { name: 'Odessit', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].hunter },
+            { name: 'Odesit', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].druid },
         ]
     },
     {
