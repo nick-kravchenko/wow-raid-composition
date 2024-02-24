@@ -94,7 +94,7 @@ export class CompositionComponent implements OnInit {
     this.handleFormChange();
   }
 
-  handleActivatedRouteQueryParams() {
+  handleActivatedRouteQueryParams(): void {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       for (let key in params) {
         this.formGroup.get(key)?.setValue(decodeURIComponent(params[key]));
@@ -102,7 +102,7 @@ export class CompositionComponent implements OnInit {
     });
   }
 
-  handleFormChange() {
+  handleFormChange(): void {
     this.formGroup.valueChanges.subscribe((value) => {
       const queryParams: Params = {};
       for (let key in value) {
@@ -115,14 +115,14 @@ export class CompositionComponent implements OnInit {
           queryParams,
           queryParamsHandling: 'merge', // remove to replace all query params by provided
         }
-      )
+      );
     });
   }
 
-  eventIdChangesHandler() {
+  eventIdChangesHandler(): void {
     this.formGroup.get('eventId')?.valueChanges.subscribe(() => {
       this.updateSignedUpPlayers();
-    })
+    });
   }
 
   isCharacterAvailable(character: Character) {

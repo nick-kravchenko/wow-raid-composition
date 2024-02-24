@@ -1,6 +1,7 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import html2canvas from 'html2canvas';
 import { Character } from 'src/app/_entities/character';
+import { CharacterRole } from '../../_entities/character-role.enum';
 
 @Component({
   selector: 'app-raid-tile',
@@ -18,17 +19,30 @@ export class RaidTileComponent implements OnInit {
   @Output() onRemoveClick: EventEmitter<any> = new EventEmitter();
   @ViewChild('raidGroups') raidGroups!: ElementRef;
 
-  capturingScreenshot: boolean = false;
+  capturingScreenshot = false;
+
+  get tankCount() {
+    return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.tank).length;
+  }
+  get meleeCount() {
+    return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.melee).length;
+  }
+  get rangedCount() {
+    return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.ranged).length;
+  }
+  get healerCount() {
+    return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.healer).length;
+  }
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  export() {
+  export(): void {
     navigator.clipboard.writeText(this.raid.map(c => c?.name).join('\n'));
   }
 
-  screenshot() {
+  screenshot(): void {
     this.capturingScreenshot = true;
     html2canvas(this.raidGroups.nativeElement, {
       backgroundColor: '#404040'
@@ -44,18 +58,17 @@ export class RaidTileComponent implements OnInit {
     });
   }
 
-  ping() {
-    const message = this.raid.reduce((message: string, character: Character, i: number) => {
+  ping(): void {
+    const message = this.raid.reduce((m: string, character: Character, i: number) => {
       if (character) {
-        message += `<@${character.player?.discord?.userId}> `;
+        m += `<@${character.player?.discord?.userId}> `;
       }
-      
+
       if (i > 0 && i % 2) {
-        message += '\n';
+        m += '\n';
       }
-      return message;
+      return m;
     }, '');
-    console.log(message);
     navigator.clipboard.writeText(message);
   }
 }
