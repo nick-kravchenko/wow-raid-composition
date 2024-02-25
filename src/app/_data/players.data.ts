@@ -21,6 +21,7 @@ export const players: Player[] = [
       {name: 'Vindsval', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.warrior},
       {name: 'Watain', level: 25, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.hunter},
       {name: 'Necrolust', level: 25, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.warlock},
+      {name: 'Darkspace', level: 40, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.mage},
     ]
   },
   {
@@ -29,6 +30,7 @@ export const players: Player[] = [
     characters: [
       {name: 'Lloydaustin', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.warrior},
       {name: 'Rkin', level: 40, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.rogue},
+      {name: 'Opillya', level: 40, rank: CharacterRank.alt, role: CharacterRole.healer, class: CharacterClass.priest},
     ]
   },
   {
@@ -44,14 +46,14 @@ export const players: Player[] = [
     characters: [
       {name: 'Strike', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.warlock},
       {name: 'Strikerok', level: 25, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.warrior},
-      {name: 'Arminx', level: 38, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.druid},
+      {name: 'Arminx', level: 38, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.druid},
     ]
   },
   {
     name: 'Sckold',
     discord: { userId: '335448138129211403' },
     characters: [
-      {name: 'Sckold', level: 40, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.rogue},
+      {name: 'Sckold', level: 40, rank: CharacterRank.alt, role: CharacterRole.tank, class: CharacterClass.rogue},
       {name: 'Holighty', level: 40, rank: CharacterRank.main, role: CharacterRole.healer, class: CharacterClass.paladin},
     ]
   },
@@ -72,13 +74,14 @@ export const players: Player[] = [
       {name: 'Darqsad', level: 25, rank: CharacterRank.alt, role: CharacterRole.healer, class: CharacterClass.priest},
       {name: 'Fixik', level: 25, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.mage},
       {name: 'Akantamebiaz', level: 25, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.druid},
+      {name: 'Voidshaker', level: 25, rank: CharacterRank.alt, role: CharacterRole.tank, class: CharacterClass.warlock},
     ]
   },
   {
     name: 'Tomsawyer',
     discord: { userId: '471337826781495297' },
     characters: [
-      {name: 'Tomsawyer', level: 34, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.paladin},
+      {name: 'Tomsawyer', level: 34, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.paladin},
     ]
   },
   {
@@ -111,7 +114,7 @@ export const players: Player[] = [
     discord: { userId: '224987565806059530' },
     characters: [
       {name: 'Dartuas', level: 25, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.druid},
-      {name: 'Dartuasik', level: 40, rank: CharacterRank.alt, role: CharacterRole.healer, class: CharacterClass.priest},
+      {name: 'Dartuasik', level: 40, rank: CharacterRank.main, role: CharacterRole.healer, class: CharacterClass.priest},
       {name: 'Serjantnosok', level: 40, rank: CharacterRank.alt, role: CharacterRole.healer, class: CharacterClass.mage},
     ]
   },
@@ -154,7 +157,7 @@ export const players: Player[] = [
     discord: { userId: '1018985851864227870' },
     characters: [
       {name: 'Souleater', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.warlock},
-      {name: 'Revas', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.hunter},
+      {name: 'Revas', level: 40, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.hunter},
     ]
   },
   {
@@ -175,7 +178,7 @@ export const players: Player[] = [
     name: 'Drio',
     discord: { userId: '' },
     characters: [
-      {name: 'Drio', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.druid},
+      {name: 'Drio', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.druid},
     ]
   },
   {
@@ -189,7 +192,7 @@ export const players: Player[] = [
     name: 'Plotnopopik',
     discord: { userId: '' },
     characters: [
-      {name: 'Plotnopopik', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.warrior},
+      {name: 'Plotnopopik', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.warrior},
     ]
   },
   {
@@ -217,8 +220,29 @@ export const players: Player[] = [
     name: 'Cmpixa',
     discord: { userId: '' },
     characters: [
-      {name: 'Bkompe', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.druid},
+      {name: 'Bkompe', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.druid},
       {name: 'Lilbelly', level: 25, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.warlock},
+    ]
+  },
+  {
+    name: 'Porsche',
+    discord: { userId: '' },
+    characters: [
+      {name: 'Porsche', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.druid},
+    ]
+  },
+  {
+    name: 'Rinn',
+    discord: { userId: '' },
+    characters: [
+      {name: 'Brutality', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.paladin},
+    ]
+  },
+  {
+    name: 'Minerv',
+    discord: { userId: '' },
+    characters: [
+      {name: 'Keknerv', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.priest},
     ]
   },
 ];

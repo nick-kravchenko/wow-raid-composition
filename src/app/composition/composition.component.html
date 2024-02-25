@@ -2,16 +2,16 @@
   <form class="filters" [formGroup]="formGroup">
     <label for="eventId">Event ID</label>
     <input id="eventId" type="string" formControlName="eventId">
-    <label for="player">Player</label>
-    <select id="player" formControlName="player"><option value="">All</option><option *ngFor="let option of players" [value]="option.name">{{option.name}}</option></select>
-    <label for="characterClass">Class</label>
-    <select id="characterClass" formControlName="characterClass"><option value="">All</option><option *ngFor="let option of characterClasses | keyvalue" [value]="option.value">{{option.value}}</option></select>
-    <label for="characterRole">Role</label>
-    <select id="characterRole" formControlName="characterRole"><option value="">All</option><option *ngFor="let option of characterRoles | keyvalue" [value]="option.value">{{option.value}}</option></select>
-    <label for="characterRank">Rank</label>
-    <select id="characterRank" formControlName="characterRank"><option value="">All</option><option *ngFor="let option of characterRank | keyvalue" [value]="option.value">{{option.value}}</option></select>
-    <label for="characterLevel">Level</label>
-    <input type="number" id="characterLevel" formControlName="characterLevel">
+<!--    <label for="player">Player</label>-->
+<!--    <select id="player" formControlName="player"><option value="">All</option><option *ngFor="let option of players" [value]="option.name">{{option.name}}</option></select>-->
+<!--    <label for="characterClass">Class</label>-->
+<!--    <select id="characterClass" formControlName="characterClass"><option value="">All</option><option *ngFor="let option of characterClasses | keyvalue" [value]="option.value">{{option.value}}</option></select>-->
+<!--    <label for="characterRole">Role</label>-->
+<!--    <select id="characterRole" formControlName="characterRole"><option value="">All</option><option *ngFor="let option of characterRoles | keyvalue" [value]="option.value">{{option.value}}</option></select>-->
+<!--    <label for="characterRank">Rank</label>-->
+<!--    <select id="characterRank" formControlName="characterRank"><option value="">All</option><option *ngFor="let option of characterRank | keyvalue" [value]="option.value">{{option.value}}</option></select>-->
+<!--    <label for="characterLevel">Level</label>-->
+<!--    <input type="number" id="characterLevel" formControlName="characterLevel">-->
   </form>
   <ul class="characters">
     <li *ngFor="let character of filteredCharacters">

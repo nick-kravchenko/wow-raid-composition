@@ -1,5 +1,6 @@
 :host {
-  display: block;
+  display: flex;
+  align-items: center;
   background: #383838;
   cursor: default;
   padding: 5px;
@@ -23,6 +24,23 @@
   margin-right: 5px;
   vertical-align: top;
   width: 2em;
+}
+.rank {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  &--Main {
+    background: green;
+  }
+  &--Alt {
+    background: yellow;
+  }
+}
+.name {
+  display: flex;
+  align-items: center;
 }
 sup {
   position: absolute;
