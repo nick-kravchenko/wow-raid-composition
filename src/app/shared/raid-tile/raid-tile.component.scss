@@ -30,8 +30,14 @@ header {
     display: flex;
     align-items: center;
   }
+  .ratio {
+    margin: 0 0 0 16px;
+  }
   .green {
-    color: rgba(0, 255, 0, .5);
+    color: green;
+  }
+  .yellow {
+    color: yellow;
   }
 }
 .raidgroups {

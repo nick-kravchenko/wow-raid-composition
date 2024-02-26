@@ -2,6 +2,7 @@ import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild }
 import html2canvas from 'html2canvas';
 import { Character } from 'src/app/_entities/character';
 import { CharacterRole } from '../../_entities/character-role.enum';
+import { CharacterRank } from '../../_entities/character-rank.enum';
 
 @Component({
   selector: 'app-raid-tile',
@@ -21,16 +22,24 @@ export class RaidTileComponent implements OnInit {
 
   capturingScreenshot = false;
 
-  get tankCount() {
+  get mainCounter(): number {
+    return this.raid.filter((character: Character) => !!character && character.rank === CharacterRank.main).length;
+  }
+
+  get altCounter(): number {
+    return this.raid.filter((character: Character) => !!character && character.rank === CharacterRank.alt).length;
+  }
+
+  get tankCount(): number {
     return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.tank).length;
   }
-  get meleeCount() {
+  get meleeCount(): number {
     return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.melee).length;
   }
-  get rangedCount() {
+  get rangedCount(): number {
     return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.ranged).length;
   }
-  get healerCount() {
+  get healerCount(): number {
     return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.healer).length;
   }
 
