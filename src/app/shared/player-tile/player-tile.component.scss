@@ -1,0 +1,37 @@
+@import "colors";
+
+:host {
+  display: block;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  margin: 0 0 1em;
+  color: $silver-steel;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $mako;
+  color: $silver-steel;
+  padding-right: 1em;
+}
+app-character-tile {
+  box-shadow: none;
+}
+.level {
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 0, 1) 0 0 .5em;
+  &.common { color: $rarity-common; }
+  &.uncommon { color: $rarity-uncommon; }
+  &.rare { color: $rarity-rare; }
+  &.epic { color: $rarity-epic; }
+  &.legendary { color: $rarity-legendary; }
+}

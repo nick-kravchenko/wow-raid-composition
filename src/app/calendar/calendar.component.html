@@ -1,0 +1,26 @@
+<div class="calendar">
+  <ul class="month-list">
+    <li *ngFor="let month of months" class="month-item">
+      <h4>{{month.title}}</h4>
+      <ul class="day-list">
+        <li class="day-item heading">Mon</li>
+        <li class="day-item heading">Tue</li>
+        <li class="day-item heading">Wed</li>
+        <li class="day-item heading">Thu</li>
+        <li class="day-item heading">Fri</li>
+        <li class="day-item heading">Sat</li>
+        <li class="day-item heading">Sun</li>
+        <li
+          *ngFor="let day of month.days"
+          class="day-item"
+          [class.empty]="!day"
+          [class.odd]="day && isOddLockout(day)"
+          [class.even]="day && !isOddLockout(day)"
+          [class.today]="day && isToday(day)"
+        >
+          {{day | date:'d'}}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

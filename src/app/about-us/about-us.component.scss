@@ -1,0 +1,15 @@
+@import "colors";
+
+:host {
+  display: block;
+  background: $deep-space;
+  border: 1px solid $mako;
+  border-radius: 2px;
+
+  font-size: 1.5em;
+  color: #fff;
+  padding: 2em 15%;
+}
+a {
+  color: $regal-gold;
+}

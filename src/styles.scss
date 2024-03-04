@@ -1,3 +1,4 @@
+@import "colors";
 /* You can add global styles to this file, and also import other style files */
 body {
   font: 14px "Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
@@ -6,6 +7,28 @@ body {
 }
 * {
   box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+    transition: height .2s linear,opacity .2s linear,background-color .2s linear;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $silver-steel;
+    height: .5em;
+    border-radius: .25em;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1630px;
+  position: relative;
+  transition: max-width 150ms;
+  width: calc(100% - 20px);
 }
 img {
   max-width: 100%;

@@ -1,0 +1,59 @@
+@import "colors";
+
+:host {
+  display: block;
+  //pointer-events: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+h4 {
+  margin: 0 0 1em;
+  color: $regal-gold;
+}
+.calendar {
+  background: $deep-space;
+  border: 1px solid $mako;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 0 0 2em;
+  color: $silver-steel;
+  text-align: center;
+}
+.month-list, .day-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.month-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+.day-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.day-item {
+  padding: .25em .5em;
+  border: solid $silver-steel;
+  border-width: 0 1px 1px 0;
+  font-family: monospace;
+  color: #000;
+  font-size: 16px;
+  &.empty {
+    background: #ccc;
+  }
+  &.heading {
+    background: rgba(255, 255, 255, 1);
+  }
+  &.odd {
+    background: #b6d7a8;
+  }
+  &.even {
+    background: #a4c2f4;
+  }
+  &.today {
+    box-shadow: inset 0 0 0 .25em $victory-red;
+  }
+}

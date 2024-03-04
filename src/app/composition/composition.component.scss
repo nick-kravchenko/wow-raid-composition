@@ -1,17 +1,11 @@
+@import "colors";
+
 :host {
-  display: block;
-  margin: 0 auto;
-  max-width: 1080px;
-  position: relative;
-  transition: max-width 150ms;
-  width: calc(100% - 20px);
-  position: relative;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-gap: 1rem;
-  background: #242424;
-  border: 1px solid #404040;
+  background: $deep-space;
+  border: 1px solid $mako;
   border-radius: 2px;
   padding: 10px;
 }
@@ -21,7 +15,7 @@ ul {
   padding: 0;
 }
 .characters {
-  max-height: calc(100vh - 60px);
+  max-height: calc(77vh);
   overflow-y: scroll;
 }
 .filters {
@@ -45,7 +39,8 @@ ul {
 .actions {
   button {
     display: block;
-    background: #383838;
+    background: $mako;
+    color: #fff;
     cursor: pointer;
     padding: 2em;
     border-radius: 2px;
@@ -76,4 +71,9 @@ app-raid-tile {
 }
 app-character-tile {
   margin: 0 0 3px;
+}
+.raid-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
 }

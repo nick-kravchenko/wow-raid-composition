@@ -2,5 +2,13 @@
 <ul>
   <li *ngFor="let character of player.characters">
     <app-character-tile [character]="character"></app-character-tile>
+    <div
+      class="level"
+      [class.legendary]="character.level === 40"
+      [class.epic]="character.level >= 35 && character.level < 40"
+      [class.rare]="character.level > 25 && character.level < 35"
+      [class.uncommon]="character.level === 25"
+      [class.common]="character.level < 25"
+    >[{{character.level}}]</div>
   </li>
 </ul>

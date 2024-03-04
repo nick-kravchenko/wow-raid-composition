@@ -3,5 +3,5 @@
   <span class="name {{character.class}}">
     <span class="rank rank--{{character.rank}}"></span>
     {{character.name}}
-    <sup>[{{character.player?.name}}]</sup></span>
+    <sup *ngIf="character.player">[{{character.player.name}}]</sup></span>
 </ng-container>

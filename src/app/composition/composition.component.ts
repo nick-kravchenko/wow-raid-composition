@@ -1,11 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { players } from '../_data/players.data';
 import { Character } from '../_entities/character';
-import { CharacterClass } from '../_entities/character-class.enum';
-import { CharacterRole } from '../_entities/character-role.enum';
-import { CharacterRank } from '../_entities/character-rank.enum';
 import { CompositionService } from './composition.service';
 import { Player } from '../_entities/player';
 import { ActivatedRoute, Params, Router } from '@angular/router';
@@ -30,10 +26,6 @@ export class CompositionComponent implements OnInit {
     characterLevel: new FormControl(''),
   });
   signedPlayers: string[] = [];
-  players = players;
-  characterClasses = CharacterClass;
-  characterRoles = CharacterRole;
-  characterRank = CharacterRank;
   get filteredCharacters(): Character[] {
     return this.characters.filter((c) => {
       const {

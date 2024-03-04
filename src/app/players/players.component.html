@@ -1,4 +1,11 @@
-<ul>
+<div class="totals">
+  <ul>
+    <li>Total players: {{players.length}}</li>
+    <li>Total characters: {{charactersCount}}</li>
+    <li>Total max level characters: {{charactersMaxLevelCount}}</li>
+  </ul>
+</div>
+<ul class="players-list">
   <li *ngFor="let player of players">
     <app-player-tile [player]="player"></app-player-tile>
   </li>

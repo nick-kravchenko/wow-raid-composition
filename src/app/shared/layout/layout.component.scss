@@ -1,0 +1,52 @@
+@import "colors";
+
+:root {
+  display: block;
+}
+header {
+  padding: 1em 0;
+  margin: 0 0 2em;
+  background: $deep-space;
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    margin: 0 2em 0 0;
+    border-left: 1px solid $silver-steel;
+    border-right: 1px solid $silver-steel;
+    padding: 0 2em 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &-image {
+      display: block;
+      width: 64px;
+    }
+  }
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    li {
+      &:last-child {
+        margin: 0;
+      }
+    }
+    a {
+      padding: .5em 1em .5em 0;
+      margin: 0 1em 0 0;
+      color: $regal-gold;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

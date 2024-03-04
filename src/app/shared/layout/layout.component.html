@@ -1,0 +1,21 @@
+<header>
+  <div class="container">
+    <div class="header-wrapper">
+      <a routerLink="/" class="logo">
+        <img class="logo-image" src="assets/images/logo.png" alt="">
+      </a>
+      <nav>
+        <ul>
+          <li><a routerLink="/composition" queryParamsHandling="merge">Composition</a></li>
+          <li><a routerLink="/players">Players</a></li>
+          <li><a routerLink="/calendar">Calendar</a></li>
+          <li><a routerLink="/about-us">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <ng-content></ng-content>
+</div>
+<footer>footer</footer>

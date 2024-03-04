@@ -1,0 +1,41 @@
+@import "colors";
+
+:host {
+  display: block;
+}
+.totals {
+  background: $deep-space;
+  border: 1px solid $mako;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 0 0 2em;
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: $regal-gold;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin-right: 2em;
+    font-weight: 600;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.players-list {
+  background: $deep-space;
+  border: 1px solid $mako;
+  border-radius: 2px;
+  padding: 10px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 0 0 2em;
+  }
+}
