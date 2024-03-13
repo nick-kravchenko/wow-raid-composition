@@ -22,7 +22,7 @@ const players = [
         discord: { userId: '341841825847574528' },
         characters: [
             { name: 'Krava', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warrior },
-            { name: 'Kravà', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warlock },
+            { name: 'Kravà', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warlock },
             { name: 'Kravá', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].hunter },
             { name: 'Kravâ', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].druid },
             { name: 'Kràva', level: 28, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warrior },
@@ -77,18 +77,6 @@ const players = [
         characters: [
             { name: 'Ryzha', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].healer, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].priest },
             { name: 'Ryzhâ', level: 37, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].healer, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].priest },
-        ]
-    },
-    {
-        name: 'Ensitu',
-        discord: { userId: '471337826781495297' },
-        characters: [
-            { name: 'Ensitu', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].paladin },
-            { name: 'Darqsat', level: 25, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].rogue },
-            { name: 'Darqsad', level: 25, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].healer, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].priest },
-            { name: 'Fixik', level: 25, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].mage },
-            { name: 'Akantamebiaz', level: 25, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].druid },
-            { name: 'Voidshaker', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warlock },
         ]
     },
     {
@@ -170,8 +158,9 @@ const players = [
         name: 'Souleater',
         discord: { userId: '1018985851864227870' },
         characters: [
-            { name: 'Souleater', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warlock },
+            { name: 'Souleaterl', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].warlock },
             { name: 'Revas', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].hunter },
+            { name: 'Shadoweaterl', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].alt, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].priest },
         ]
     },
     {
@@ -217,10 +206,17 @@ const players = [
         ]
     },
     {
-        name: 'Nizkosrusch',
+        name: 'Nizkosrushch',
         discord: { userId: '267337287577108482' },
         characters: [
-            { name: 'Nizkosrusch', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].hunter },
+            { name: 'Nizkosrushch', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].hunter },
+        ]
+    },
+    {
+        name: 'Tepesh',
+        discord: { userId: '267337287577108482' },
+        characters: [
+            { name: 'Tepesh', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].hunter },
         ]
     },
     {
@@ -232,17 +228,17 @@ const players = [
         ]
     },
     {
-        name: 'Porsche',
+        name: 'Porche',
         discord: { userId: '259729460696186880' },
         characters: [
-            { name: 'Porsche', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].druid },
+            { name: 'Porche', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].tank, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].druid },
         ]
     },
     {
         name: 'Rinn',
         discord: { userId: '244543163702837259' },
         characters: [
-            { name: 'Brutality', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].paladin },
+            { name: 'Brutaliity', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].melee, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].paladin },
         ]
     },
     {

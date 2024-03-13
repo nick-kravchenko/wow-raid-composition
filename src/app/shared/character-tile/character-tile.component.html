@@ -1,6 +1,6 @@
 <ng-container *ngIf="character">
-  <img class="icon" crossorigin="anonymous" src="assets/icons/{{iconsSpecs[character.class + '_' + character.role]}}" alt="">
-  <span class="name {{character.class}}">
+  <img (click)="toggleRole($event)" class="icon" crossorigin="anonymous" src="assets/icons/{{iconsSpecs[character.class + '_' + character.role]}}" alt="">
+  <span class="name text-{{character.class | lowercase}}">
     <span class="rank rank--{{character.rank}}"></span>
     {{character.name}}
     <sup *ngIf="character.player">[{{character.player.name}}]</sup></span>

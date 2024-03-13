@@ -20,15 +20,16 @@
   </div>
 </header>
 <div class="raidgroups" #raidGroups>
-  <app-character-tile
-    *ngFor="let slot of raid; index as i"
-    class="character-{{i}}"
-    [class.highlight]="slot?.highlight"
-    (click)="onSlotClick.emit(i)"
-    (dragover)="onDragOver.emit(i)"
-    (dragstart)="onSlotDragStart.emit(i)"
-    (dragend)="onSlotDragEnd.emit()"
-    [character]="slot"
-    [draggable]="!!slot"
-  ></app-character-tile>
+  <ng-container *ngFor="let slot of raid; index as i">
+    <app-character-tile
+      class="character-{{i}}"
+      [class.highlight]="slot?.highlight"
+      (click)="onSlotClick.emit(i)"
+      (dragover)="onDragOver.emit(i)"
+      (dragstart)="onSlotDragStart.emit(i)"
+      (dragend)="onSlotDragEnd.emit()"
+      [character]="slot"
+      [draggable]="!!slot"
+    ></app-character-tile>
+  </ng-container>
 </div>

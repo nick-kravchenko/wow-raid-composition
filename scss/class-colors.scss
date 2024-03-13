@@ -1,0 +1,13 @@
+@import "colors";
+
+@each $name, $color in $classcolors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .bg-lighten-#{$name} {
+    background-color: lighten($color, 10%);
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+}

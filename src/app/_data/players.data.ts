@@ -9,7 +9,7 @@ export const players: Player[] = [
     discord: { userId: '341841825847574528' },
     characters: [
       {name: 'Krava', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.warrior},
-      {name: 'Kravà', level: 40, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.warlock},
+      {name: 'Kravà', level: 40, rank: CharacterRank.alt, role: CharacterRole.tank, class: CharacterClass.warlock},
       {name: 'Kravá', level: 40, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.hunter},
       {name: 'Kravâ', level: 40, rank: CharacterRank.alt, role: CharacterRole.tank, class: CharacterClass.druid},
       {name: 'Kràva', level: 28, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.warrior},
@@ -64,18 +64,6 @@ export const players: Player[] = [
     characters: [
       {name: 'Ryzha', level: 40, rank: CharacterRank.main, role: CharacterRole.healer, class: CharacterClass.priest},
       {name: 'Ryzhâ', level: 37, rank: CharacterRank.alt, role: CharacterRole.healer, class: CharacterClass.priest},
-    ]
-  },
-  {
-    name: 'Ensitu',
-    discord: { userId: '471337826781495297' },
-    characters: [
-      {name: 'Ensitu', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.paladin},
-      {name: 'Darqsat', level: 25, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.rogue},
-      {name: 'Darqsad', level: 25, rank: CharacterRank.alt, role: CharacterRole.healer, class: CharacterClass.priest},
-      {name: 'Fixik', level: 25, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.mage},
-      {name: 'Akantamebiaz', level: 25, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.druid},
-      {name: 'Voidshaker', level: 40, rank: CharacterRank.alt, role: CharacterRole.tank, class: CharacterClass.warlock},
     ]
   },
   {
@@ -157,8 +145,9 @@ export const players: Player[] = [
     name: 'Souleater',
     discord: { userId: '1018985851864227870' },
     characters: [
-      {name: 'Souleater', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.warlock},
+      {name: 'Souleaterl', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.warlock},
       {name: 'Revas', level: 40, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.hunter},
+      {name: 'Shadoweaterl', level: 40, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.priest},
     ]
   },
   {
@@ -204,10 +193,17 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Nizkosrusch',
+    name: 'Nizkosrushch',
     discord: { userId: '267337287577108482' },
     characters: [
-      {name: 'Nizkosrusch', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.hunter},
+      {name: 'Nizkosrushch', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.hunter},
+    ]
+  },
+  {
+    name: 'Tepesh',
+    discord: { userId: '267337287577108482' },
+    characters: [
+      {name: 'Tepesh', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.hunter},
     ]
   },
   {
@@ -219,17 +215,17 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Porsche',
+    name: 'Porche',
     discord: { userId: '259729460696186880' },
     characters: [
-      {name: 'Porsche', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.druid},
+      {name: 'Porche', level: 40, rank: CharacterRank.main, role: CharacterRole.tank, class: CharacterClass.druid},
     ]
   },
   {
     name: 'Rinn',
     discord: { userId: '244543163702837259' },
     characters: [
-      {name: 'Brutality', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.paladin},
+      {name: 'Brutaliity', level: 40, rank: CharacterRank.main, role: CharacterRole.melee, class: CharacterClass.paladin},
     ]
   },
   {

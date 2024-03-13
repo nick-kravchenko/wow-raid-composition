@@ -1,26 +1,176 @@
+.bg-warrior {
+  background-color: #c79c6e;
+}
+
+.bg-lighten-warrior {
+  background-color: #d5b593;
+}
+
+.text-warrior {
+  color: #c79c6e;
+}
+
+.bg-paladin {
+  background-color: #f58cba;
+}
+
+.bg-lighten-paladin {
+  background-color: #f9bbd6;
+}
+
+.text-paladin {
+  color: #f58cba;
+}
+
+.bg-hunter {
+  background-color: #abd473;
+}
+
+.bg-lighten-hunter {
+  background-color: #c2e09a;
+}
+
+.text-hunter {
+  color: #abd473;
+}
+
+.bg-rogue {
+  background-color: #fff569;
+}
+
+.bg-lighten-rogue {
+  background-color: #fff89c;
+}
+
+.text-rogue {
+  color: #fff569;
+}
+
+.bg-priest {
+  background-color: #ffffff;
+}
+
+.bg-lighten-priest {
+  background-color: white;
+}
+
+.text-priest {
+  color: #ffffff;
+}
+
+.bg-deathknight {
+  background-color: #c41f3b;
+}
+
+.bg-lighten-deathknight {
+  background-color: #df3753;
+}
+
+.text-deathknight {
+  color: #c41f3b;
+}
+
+.bg-shaman {
+  background-color: #0070de;
+}
+
+.bg-lighten-shaman {
+  background-color: #128aff;
+}
+
+.text-shaman {
+  color: #0070de;
+}
+
+.bg-mage {
+  background-color: #40c7eb;
+}
+
+.bg-lighten-mage {
+  background-color: #6ed5f0;
+}
+
+.text-mage {
+  color: #40c7eb;
+}
+
+.bg-warlock {
+  background-color: #8787ed;
+}
+
+.bg-lighten-warlock {
+  background-color: #b3b3f4;
+}
+
+.text-warlock {
+  color: #8787ed;
+}
+
+.bg-monk {
+  background-color: #00ff96;
+}
+
+.bg-lighten-monk {
+  background-color: #33ffab;
+}
+
+.text-monk {
+  color: #00ff96;
+}
+
+.bg-druid {
+  background-color: #ff7d0a;
+}
+
+.bg-lighten-druid {
+  background-color: #ff983d;
+}
+
+.text-druid {
+  color: #ff7d0a;
+}
+
+.bg-demonhunter {
+  background-color: #a330c9;
+}
+
+.bg-lighten-demonhunter {
+  background-color: #b655d7;
+}
+
+.text-demonhunter {
+  color: #a330c9;
+}
+
 /* You can add global styles to this file, and also import other style files */
+
 body {
   font: 14px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin: 0;
   background: #000;
 }
+
 * {
   box-sizing: border-box;
 }
+
 *::-webkit-scrollbar {
   width: 0.5em;
   height: 0.5em;
   -webkit-transition: height 0.2s linear, opacity 0.2s linear, background-color 0.2s linear;
   transition: height 0.2s linear, opacity 0.2s linear, background-color 0.2s linear;
 }
+
 *::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
 *::-webkit-scrollbar-thumb {
   background-color: #72767D;
   height: 0.5em;
   border-radius: 0.25em;
 }
+
 .container {
   margin: 0 auto;
   max-width: 1630px;
@@ -28,10 +178,12 @@ body {
   transition: max-width 150ms;
   width: calc(100% - 20px);
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .icon-photo {
   display: inline-block;
   position: relative;
@@ -43,6 +195,7 @@ img {
   will-change: border-color, background-color;
   transition: 0.2s border-color, 0.2s background-color;
 }
+
 .icon-photo:before {
   content: "";
   display: block;
@@ -58,6 +211,7 @@ img {
   will-change: border-color, width, height;
   transition: 0.2s border-color, 0.2s width, 0.2s height;
 }
+
 .icon-photo:after {
   content: "";
   display: block;
@@ -74,10 +228,12 @@ img {
   will-change: opacity;
   transition: opacity;
 }
+
 .icon-photo.loading {
   border-color: transparent;
   background-color: transparent;
 }
+
 .icon-photo.loading:before {
   background: transparent;
   border-left-color: transparent;
@@ -90,9 +246,11 @@ img {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .icon-photo.loading:after {
   opacity: 0;
 }
+
 @keyframes spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
