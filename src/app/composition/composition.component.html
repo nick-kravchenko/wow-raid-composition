@@ -39,9 +39,11 @@
       (onPruneClick)="onRaidPruneClick(i)"
       (onRemoveClick)="onRaidRemoveClick(i)"
     ></app-raid-tile>
+    <button class="add-raid" (click)="onAddRaidClick()" type="button">
+      <i class="fa-solid fa-plus"></i>
+    </button>
   </div>
   <div class="actions">
     <button [disabled]="capturingScreenshot" class="capture-screenshot" (click)="screenshot()" type="button"><span class="icon-photo" [class.loading]="capturingScreenshot"></span></button>
-    <button class="add-raid" (click)="onAddRaidClick()" type="button">➕</button>
   </div>
 </section>

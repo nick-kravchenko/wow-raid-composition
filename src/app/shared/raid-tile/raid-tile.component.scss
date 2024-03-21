@@ -1,3 +1,5 @@
+@import "colors";
+
 :host {
   position: relative;
 }
@@ -18,9 +20,13 @@ header {
   .internal-actions, .external-actions {
     display: flex;
     align-items: center;
+    i {
+      color: $regal-gold;
+    }
     button {
       display: block;
       margin: 0 4px 0 0;
+      width: 24px;
       &:last-child {
         margin: 0;
       }
@@ -89,5 +95,28 @@ button {
   cursor: pointer;
   &[disabled] {
     cursor: default;
+  }
+}
+.discord-ping {
+  position: relative;
+  &:after {
+    content: '1';
+    position: absolute;
+    border-radius: 50%;
+    background: $victory-red;
+    color: white;
+    width: 16px;
+    height: 16px;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: .7;
+    font-weight: 600;
   }
 }

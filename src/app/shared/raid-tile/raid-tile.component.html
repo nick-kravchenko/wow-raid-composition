@@ -1,8 +1,12 @@
 <header>
   <div class="internal-actions" data-html2canvas-ignore="true">
-    <button (click)="export()" title="MRT export">⬆️</button>
+    <button (click)="export()" title="MRT export">
+      <i class="fa-solid fa-file-arrow-down"></i>
+    </button>
     <button [disabled]="capturingScreenshot" (click)="screenshot()" title="Screenshot"><span class="icon-photo" [class.loading]="capturingScreenshot"></span></button>
-    <button (click)="ping()" title="Discord pings">✉️</button>
+    <button class="discord-ping" (click)="ping()" title="Discord pings">
+      <i class="fa-brands fa-discord"></i>
+    </button>
   </div>
   <h3>
     <span>{{title}}</span>
@@ -15,8 +19,12 @@
     </span>
   </h3>
   <div class="external-actions" data-html2canvas-ignore="true">
-    <button (click)="onPruneClick.emit()">🗑️</button>
-    <button (click)="onRemoveClick.emit()">💀</button>
+    <button (click)="onPruneClick.emit()">
+      <i class="fa-solid fa-recycle"></i>
+    </button>
+    <button (click)="onRemoveClick.emit()">
+      <i class="fa-solid fa-trash-can"></i>
+    </button>
   </div>
 </header>
 <div class="raidgroups" #raidGroups>

@@ -15,7 +15,7 @@ import html2canvas from 'html2canvas';
 export class CompositionComponent implements OnInit {
   @ViewChild('raidGroups') raidGroups!: ElementRef;
 
-  capturingScreenshot: boolean = false;
+  capturingScreenshot = false;
   characters: Character[] = [];
   formGroup: FormGroup = new FormGroup({
     eventId: new FormControl(''),

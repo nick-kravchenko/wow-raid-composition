@@ -1,5 +1,8 @@
 @import "colors";
 @import "class-colors";
+@import "assets/fontawesome/scss/fontawesome";
+@import "assets/fontawesome/scss/solid";
+@import "assets/fontawesome/scss/brands";
 
 /* You can add global styles to this file, and also import other style files */
 body {
@@ -41,7 +44,7 @@ img {
   position: relative;
   width: 24px;
   height: 16px;
-  border: 1px solid white;
+  border: 1px solid $regal-gold;
   border-radius: 2px;
   background-color: #404040;
   will-change: border-color, background-color;
@@ -49,7 +52,7 @@ img {
   &:before {
     content: '';
     display: block;
-    border: 1px solid white;
+    border: 1px solid $regal-gold;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -57,7 +60,7 @@ img {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-    background: radial-gradient(white 0%, white 40%, transparent 40%, transparent 100%);
+    background: radial-gradient($regal-gold 0%, $regal-gold 40%, transparent 40%, transparent 100%);
     will-change: border-color, width, height;
     transition: .2s border-color, .2s width, .2s height;
   }
@@ -71,9 +74,9 @@ img {
     background: #404040;
     width: 8px;
     height: 3px;
-    border: 1px solid white;
+    border: 1px solid $regal-gold;
     border-bottom: none;
-    border-radius: 4px 4px 0 0;
+    border-radius: 2px 2px 0 0;
     will-change: opacity;
     transition: opacity;
   }
@@ -91,6 +94,7 @@ img {
       animation-duration: 500ms;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
+      border-width: 2px;
     }
     &:after {
       opacity: 0;

@@ -36,38 +36,44 @@ ul {
 .used {
   opacity: .5;
 }
-.actions {
-  button {
-    display: block;
-    background: $mako;
-    color: #fff;
-    cursor: pointer;
-    padding: 2em;
-    border-radius: 2px;
-    font-weight: bold;
-    -webkit-user-select: none;
-    user-select: none;
-    white-space: nowrap;
-    box-shadow: inset 0 0 0 1px #383838;
-    position: relative;
-    border: none;
-    width: 100%;
-    margin: 0 0 1em;
-    text-align: center;
-    &[disabled] {
-      cursor: default;
-    }
-    &:last-child {
-      margin: 0;
-    }
+.add-raid, .capture-screenshot {
+  display: block;
+  background: $mako;
+  color: #fff;
+  cursor: pointer;
+  padding: 2em;
+  border-radius: 2px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border: 1px solid #383838;
+  position: relative;
+  width: 100%;
+  margin: 0 0 1em;
+  text-align: center;
+  &[disabled] {
+    cursor: default;
+  }
+}
+.add-raid {
+  min-height: 202px;
+  display: block;
+  margin: 0;
+  color: $regal-gold;
+  font-size: 2em;
+  &:nth-child(even) {
+    margin-top: 32px;
   }
 }
 app-raid-tile {
   display: block;
-  margin: 0 0 .5em;
 }
 app-character-tile {
   margin: 0 0 3px;
+}
+.icon-photo {
+  scale: 2;
 }
 .raid-groups {
   display: grid;
