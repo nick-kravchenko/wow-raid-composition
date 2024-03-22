@@ -202,7 +202,7 @@ const players = [
     },
     {
         name: 'Tepesh',
-        discord: { userId: '267337287577108482' },
+        discord: { userId: '485392026263879681' },
         characters: [
             { name: 'Tepesh', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].hunter },
         ]
@@ -238,7 +238,7 @@ const players = [
     },
     {
         name: 'Vinika',
-        discord: { userId: '324913033270788097' },
+        discord: { userId: '694602788910399528' },
         characters: [
             { name: 'Vinika', level: 40, rank: _entities_character_rank_enum__WEBPACK_IMPORTED_MODULE_1__["CharacterRank"].main, role: _entities_character_role_enum__WEBPACK_IMPORTED_MODULE_2__["CharacterRole"].ranged, class: _entities_character_class_enum__WEBPACK_IMPORTED_MODULE_0__["CharacterClass"].hunter },
         ]
