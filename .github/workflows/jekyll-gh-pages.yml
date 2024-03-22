@@ -45,6 +45,11 @@ jobs:
           export NODE_OPTIONS=--openssl-legacy-provider
           npm i
           npm run build:gpages
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: "./dist/roster-angular/index.html"
+          target: "./dist/roster-angular/404.html"
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
