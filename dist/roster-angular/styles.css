@@ -7929,9 +7929,10 @@ readers do not read off random characters that represent icons */
 }
 /* You can add global styles to this file, and also import other style files */
 body {
+  background: #000 url('background.jpg') fixed;
+  background-size: cover;
   font: 14px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin: 0;
-  background: #000;
 }
 * {
   box-sizing: border-box;
@@ -7968,7 +7969,7 @@ img {
   height: 16px;
   border: 1px solid #f7b801;
   border-radius: 2px;
-  background-color: #404040;
+  background-color: #282D33;
   will-change: border-color, background-color;
   transition: 0.2s border-color, 0.2s background-color;
 }
@@ -7994,7 +7995,7 @@ img {
   bottom: 100%;
   left: 50%;
   transform: translate(-50%, 0);
-  background: #404040;
+  background: #282D33;
   width: 8px;
   height: 3px;
   border: 1px solid #f7b801;
@@ -8014,8 +8015,8 @@ img {
   width: 16px;
   height: 16px;
   animation-name: spin;
-  animation-delay: 200ms;
-  animation-duration: 500ms;
+  animation-delay: 100ms;
+  animation-duration: 250ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   border-width: 2px;

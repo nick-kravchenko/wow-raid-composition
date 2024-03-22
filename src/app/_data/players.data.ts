@@ -47,8 +47,9 @@ export const players: Player[] = [
     name: 'Strike',
     discord: { userId: '235195687996882954' },
     characters: [
-      {name: 'Strike', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.warlock},
+      {name: 'Strikè', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.warlock},
       {name: 'Strikerok', level: 25, rank: CharacterRank.alt, role: CharacterRole.melee, class: CharacterClass.warrior},
+      {name: 'Devai', level: 40, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.hunter},
       {name: 'Arminx', level: 40, rank: CharacterRank.alt, role: CharacterRole.ranged, class: CharacterClass.druid},
     ]
   },
@@ -173,7 +174,7 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Senninka',
+    name: 'Bavovnik',
     discord: { userId: '318008086872981504' },
     characters: [
       {name: 'Senninka', level: 40, rank: CharacterRank.main, role: CharacterRole.ranged, class: CharacterClass.druid},

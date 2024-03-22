@@ -6,9 +6,10 @@
 
 /* You can add global styles to this file, and also import other style files */
 body {
+  background: #000 url("assets/images/background.jpg") fixed;
+  background-size: cover;
   font: 14px "Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
   margin: 0;
-  background: #000;
 }
 * {
   box-sizing: border-box;
@@ -46,7 +47,7 @@ img {
   height: 16px;
   border: 1px solid $regal-gold;
   border-radius: 2px;
-  background-color: #404040;
+  background-color: $deep-space;
   will-change: border-color, background-color;
   transition: .2s border-color, .2s background-color;
   &:before {
@@ -71,7 +72,7 @@ img {
     bottom: 100%;
     left: 50%;
     transform: translate(-50%, 0);
-    background: #404040;
+    background: $deep-space;
     width: 8px;
     height: 3px;
     border: 1px solid $regal-gold;
@@ -90,8 +91,8 @@ img {
       width: 16px;
       height: 16px;
       animation-name: spin;
-      animation-delay: 200ms;
-      animation-duration: 500ms;
+      animation-delay: 100ms;
+      animation-duration: 250ms;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       border-width: 2px;

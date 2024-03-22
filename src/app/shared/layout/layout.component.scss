@@ -5,23 +5,29 @@
 }
 header {
   padding: 1em 0;
-  margin: 0 0 2em;
-  background: $deep-space;
+  margin: 1em 1em 2em;
+  background: rgba($deep-space, .5);
+  border-radius: .5em;
+  box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(.5em);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: sticky;
+  top: 1em;
+  z-index: 1;
   .header-wrapper {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   .logo {
     margin: 0 2em 0 0;
-    border-left: 1px solid $silver-steel;
-    border-right: 1px solid $silver-steel;
-    padding: 0 2em 0;
     display: flex;
     align-items: center;
     text-decoration: none;
     &-image {
       display: block;
-      width: 64px;
+      width: 2em;
     }
   }
   nav {

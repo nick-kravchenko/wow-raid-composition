@@ -10,8 +10,14 @@
 <!--    <select id="characterRole" formControlName="characterRole"><option value="">All</option><option *ngFor="let option of characterRoles | keyvalue" [value]="option.value">{{option.value}}</option></select>-->
 <!--    <label for="characterRank">Rank</label>-->
 <!--    <select id="characterRank" formControlName="characterRank"><option value="">All</option><option *ngFor="let option of characterRank | keyvalue" [value]="option.value">{{option.value}}</option></select>-->
-<!--    <label for="characterLevel">Level</label>-->
-<!--    <input type="number" id="characterLevel" formControlName="characterLevel">-->
+    <label for="characterLevel">Level</label>
+    <input type="number" id="characterLevel" formControlName="characterLevel">
+    <div class="characterClassAndRole" formGroupName="characterClassAndRole">
+      <label *ngFor="let item of iconsSpecs | keyvalue" [for]="item.key" class="bg-{{item.key.split('_')[0] | lowercase}}" [class.checked]="isCharacterClassAndRoleChecked(item.key)">
+        <input [formControlName]="item.key" [id]="item.key" [value]="item.key"  type="checkbox">
+        <img src="assets/icons/{{item.value}}" alt="">
+      </label>
+    </div>
   </form>
   <ul class="characters">
     <li *ngFor="let character of filteredCharacters">
@@ -30,7 +36,7 @@
   <div #raidGroups class="raid-groups">
     <app-raid-tile
       *ngFor="let raid of raids; index as i"
-      [raid]="raids[i]"
+      [raid]="raid"
       [title]="'Raid #' + (i+1)"
       (onSlotClick)="onRaidSlotClick(i, $event)"
       (onSlotDragStart)="onRaidSlotDragStart(i, $event)"

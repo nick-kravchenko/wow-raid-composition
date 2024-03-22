@@ -5,10 +5,13 @@
 }
 .totals {
   background: $deep-space;
-  border: 1px solid $mako;
-  border-radius: 2px;
   padding: 10px;
   margin: 0 0 2em;
+  background: rgba($deep-space, .9);
+  border-radius: .5em;
+  box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1em);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   ul {
     list-style-type: none;
     display: flex;
@@ -26,10 +29,12 @@
   }
 }
 .players-list {
-  background: $deep-space;
-  border: 1px solid $mako;
-  border-radius: 2px;
   padding: 10px;
+  background: rgba($deep-space, .9);
+  border-radius: .5em;
+  box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1em);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   ul {
     list-style-type: none;
     margin: 0;
