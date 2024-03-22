@@ -1,3 +1,17 @@
+<div class="modal" [class.visible]="pruneModalVisible">
+  <div class="question">Are you sure you want to clear this raid?</div>
+  <div class="actions">
+    <button type="button" (click)="onPruneClick.emit(); pruneModalVisible = false;">Yes, clear it</button>
+    <button type="button" (click)="pruneModalVisible = false;">No, I changed my mind</button>
+  </div>
+</div>
+<div class="modal" [class.visible]="removeModalVisible">
+  <div class="question">Are you sure you want to remove this raid completely?</div>
+  <div class="actions">
+    <button type="button" (click)="onRemoveClick.emit(); removeModalVisible = false;">Yes, remove it</button>
+    <button type="button" (click)="removeModalVisible = false;">No, I changed my mind</button>
+  </div>
+</div>
 <header>
   <div class="internal-actions" data-html2canvas-ignore="true">
     <button (click)="export()" title="MRT export">
@@ -19,10 +33,10 @@
     </span>
   </h3>
   <div class="external-actions" data-html2canvas-ignore="true">
-    <button (click)="onPruneClick.emit()">
+    <button (click)="pruneModalVisible = true;">
       <i class="fa-solid fa-recycle"></i>
     </button>
-    <button (click)="onRemoveClick.emit()">
+    <button (click)="removeModalVisible = true;">
       <i class="fa-solid fa-trash-can"></i>
     </button>
   </div>

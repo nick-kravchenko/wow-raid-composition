@@ -20,6 +20,8 @@ export class RaidTileComponent implements OnInit {
   @Output() onRemoveClick: EventEmitter<any> = new EventEmitter();
   @ViewChild('raidGroups') raidGroups!: ElementRef;
 
+  pruneModalVisible = false;
+  removeModalVisible = false;
   capturingScreenshot = false;
 
   get mainCounter(): number {
