@@ -42,6 +42,7 @@ jobs:
             ${{ runner.os }}-
       - name: npm install and npm run CI commands
         run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
           npm i
           npm run build:gpages
       - name: Setup Pages
