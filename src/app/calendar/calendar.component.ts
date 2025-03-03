@@ -1,23 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+import {DatePipe, NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-calendar',
+  imports: [
+    DatePipe,
+    NgForOf
+  ],
   templateUrl: './calendar.component.html',
-  styleUrls: ['./calendar.component.scss']
+  styleUrl: './calendar.component.scss'
 })
 export class CalendarComponent implements OnInit {
   months: {
     title: string;
     days: (null|Date)[];
   }[] = [];
-  nullPointer: Date = new Date(2023, 11, 30);
+  nullPointer: Date = new Date(2025, 1, 1);
 
   isOddLockout(date: null|Date): boolean {
     if (!date) {
       return false;
     }
     const diff = Math.round((date.getTime() - this.nullPointer.getTime()) / 1000 / 60 / 60 / 24);
-    return (diff % 6) > 2;
+    return (diff % 10) > 4;
   }
 
   isToday(date: Date): boolean {

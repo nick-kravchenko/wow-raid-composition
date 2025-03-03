@@ -1,17 +1,23 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import html2canvas from 'html2canvas';
-import { Character } from 'src/app/_entities/character';
+import { Character } from '../../_entities/character';
 import { CharacterRole } from '../../_entities/character-role.enum';
 import { CharacterRank } from '../../_entities/character-rank.enum';
+import {CharacterTileComponent} from '../character-tile/character-tile.component';
+import {NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-raid-tile',
+  imports: [
+    CharacterTileComponent,
+    NgForOf
+  ],
   templateUrl: './raid-tile.component.html',
-  styleUrls: ['./raid-tile.component.scss']
+  styleUrl: './raid-tile.component.scss'
 })
 export class RaidTileComponent implements OnInit {
   @Input() title = 'Raid #';
-  @Input() raid: any[] = new Array(10);
+  @Input() raid: any[] = new Array(40);
   @Output() onSlotClick: EventEmitter<number> = new EventEmitter();
   @Output() onDragOver: EventEmitter<number> = new EventEmitter();
   @Output() onSlotDragStart: EventEmitter<number> = new EventEmitter();
@@ -57,8 +63,8 @@ export class RaidTileComponent implements OnInit {
     this.capturingScreenshot = true;
     html2canvas(this.raidGroups.nativeElement, {
       backgroundColor: '#404040'
-    }).then(canvas => {
-      canvas.toBlob(blob => {
+    }).then((canvas: any) => {
+      canvas.toBlob((blob: any) => {
         // @ts-ignore
         navigator.clipboard.write([new ClipboardItem({'image/png': blob})])
       });

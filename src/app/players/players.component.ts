@@ -1,11 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { players } from '../_data/players.data';
 import { Player } from '../_entities/player';
+import {NgForOf} from '@angular/common';
+import {PlayerTileComponent} from '../shared/player-tile/player-tile.component';
 
 @Component({
   selector: 'app-players',
+  imports: [
+    NgForOf,
+    PlayerTileComponent
+  ],
   templateUrl: './players.component.html',
-  styleUrls: ['./players.component.scss']
+  styleUrl: './players.component.scss'
 })
 export class PlayersComponent implements OnInit {
   players: Player[] = players.sort((player1: Player, player2: Player) => {

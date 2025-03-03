@@ -8,8 +8,8 @@
 <!--    <select id="characterClass" formControlName="characterClass"><option value="">All</option><option *ngFor="let option of characterClasses | keyvalue" [value]="option.value">{{option.value}}</option></select>-->
 <!--    <label for="characterRole">Role</label>-->
 <!--    <select id="characterRole" formControlName="characterRole"><option value="">All</option><option *ngFor="let option of characterRoles | keyvalue" [value]="option.value">{{option.value}}</option></select>-->
-<!--    <label for="characterRank">Rank</label>-->
-<!--    <select id="characterRank" formControlName="characterRank"><option value="">All</option><option *ngFor="let option of characterRank | keyvalue" [value]="option.value">{{option.value}}</option></select>-->
+    <label for="characterRank">Rank</label>
+    <select id="characterRank" formControlName="characterRank"><option value="">All</option><option *ngFor="let option of characterRank | keyvalue" [value]="option.value">{{option.value}}</option></select>
     <label for="characterLevel">Level</label>
     <input type="number" id="characterLevel" formControlName="characterLevel">
     <div class="characterClassAndRole" formGroupName="characterClassAndRole">

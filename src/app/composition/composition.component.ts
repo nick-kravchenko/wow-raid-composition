@@ -1,21 +1,36 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { AbstractControl, FormControl, FormGroup } from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Character } from '../_entities/character';
 import { CompositionService } from './composition.service';
 import { Player } from '../_entities/player';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import html2canvas from 'html2canvas';
-import { filter } from 'rxjs/operators';
+import { KeyValuePipe, LowerCasePipe, NgForOf } from '@angular/common';
+import { RaidTileComponent } from '../shared/raid-tile/raid-tile.component';
+import { CharacterTileComponent } from '../shared/character-tile/character-tile.component';
+import { CharacterRank } from '../_entities/character-rank.enum';
 
 @Component({
   selector: 'app-composition',
+  imports: [
+    ReactiveFormsModule,
+    KeyValuePipe,
+    LowerCasePipe,
+    RaidTileComponent,
+    CharacterTileComponent,
+    NgForOf
+  ],
+  providers: [
+    HttpClient,
+    CompositionService,
+  ],
   templateUrl: './composition.component.html',
-  styleUrls: ['./composition.component.scss'],
+  styleUrl: './composition.component.scss'
 })
 export class CompositionComponent implements OnInit {
   @ViewChild('raidGroups') raidGroups!: ElementRef;
-
+  characterRank: typeof CharacterRank = CharacterRank;
   capturingScreenshot = false;
   characters: Character[] = [];
   formGroup: FormGroup = new FormGroup({
@@ -28,20 +43,20 @@ export class CompositionComponent implements OnInit {
     characterClassAndRole: new FormGroup({
       Warrior_Melee: new FormControl(false),
       Warrior_Tank: new FormControl(false),
-      Paladin_Melee: new FormControl(false),
-      Paladin_Tank: new FormControl(false),
+      // Paladin_Melee: new FormControl(false),
+      // Paladin_Tank: new FormControl(false),
       Paladin_Healer: new FormControl(false),
       Hunter_Ranged: new FormControl(false),
-      Druid_Melee: new FormControl(false),
+      // Druid_Melee: new FormControl(false),
       Druid_Tank: new FormControl(false),
-      Druid_Ranged: new FormControl(false),
+      // Druid_Ranged: new FormControl(false),
       Druid_Healer: new FormControl(false),
       Rogue_Melee: new FormControl(false),
-      Rogue_Tank: new FormControl(false),
+      // Rogue_Tank: new FormControl(false),
       Warlock_Ranged: new FormControl(false),
-      Warlock_Tank: new FormControl(false),
+      // Warlock_Tank: new FormControl(false),
       Mage_Ranged: new FormControl(false),
-      Mage_Healer: new FormControl(false),
+      // Mage_Healer: new FormControl(false),
       Priest_Ranged: new FormControl(false),
       Priest_Healer: new FormControl(false),
     }),
@@ -49,20 +64,20 @@ export class CompositionComponent implements OnInit {
   iconsSpecs: { [key: string]: string } = {
     Warrior_Melee: 'ability_warrior_innerrage.jpg',
     Warrior_Tank: 'ability_warrior_defensivestance.jpg',
-    Paladin_Melee: 'spell_holy_auraoflight.jpg',
-    Paladin_Tank: 'spell_holy_devotionaura.jpg',
+    // Paladin_Melee: 'spell_holy_auraoflight.jpg',
+    // Paladin_Tank: 'spell_holy_devotionaura.jpg',
     Paladin_Healer: 'spell_holy_holybolt.jpg',
     Hunter_Ranged: 'class_hunter.jpg',
-    Druid_Melee: 'ability_druid_catform.jpg',
+    // Druid_Melee: 'ability_druid_catform.jpg',
     Druid_Tank: 'ability_racial_bearform.jpg',
-    Druid_Ranged: 'spell_nature_starfall.jpg',
+    // Druid_Ranged: 'spell_nature_starfall.jpg',
     Druid_Healer: 'spell_nature_healingtouch.jpg',
     Rogue_Melee: 'class_rogue.jpg',
-    Rogue_Tank: 'achievement_halloween_smiley_01.jpg',
+    // Rogue_Tank: 'achievement_halloween_smiley_01.jpg',
     Warlock_Ranged: 'classicon_warlock.jpg',
-    Warlock_Tank: 'spell_shadow_demonform.jpg',
+    // Warlock_Tank: 'spell_shadow_demonform.jpg',
     Mage_Ranged: 'class_mage.jpg',
-    Mage_Healer: 'inv_enchant_essencenethersmall.jpg',
+    // Mage_Healer: 'inv_enchant_essencenethersmall.jpg',
     Priest_Ranged: 'spell_shadow_shadowwordpain.jpg',
     Priest_Healer: 'spell_holy_guardianspirit.jpg',
   };

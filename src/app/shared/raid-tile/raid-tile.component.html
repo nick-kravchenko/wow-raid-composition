@@ -43,6 +43,9 @@
 </header>
 <div class="raidgroups" #raidGroups>
   <ng-container *ngFor="let slot of raid; index as i">
+    @if (i % 5 === 0) {
+      <span>Group {{i / 5 + 1}}</span>
+    }
     <app-character-tile
       class="character-{{i}}"
       [class.highlight]="slot?.highlight"

@@ -124,11 +124,20 @@ header {
 }
 .raidgroups {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  grid-template-columns: .5fr repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 3px;
+
+  span {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: $regal-gold;
+    transition: color .2s;
+  }
 }
 .highlight {
   animation: shake .2s infinite;

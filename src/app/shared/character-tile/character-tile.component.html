@@ -1,5 +1,5 @@
 <ng-container *ngIf="character">
-  <img (click)="toggleRole($event)" class="icon" crossorigin="anonymous" src="assets/icons/{{iconsSpecs[character.class + '_' + character.role]}}" alt="">
+  <img (click)="toggleRole($event)" class="icon" src="assets/icons/{{iconsSpecs[character.class + '_' + character.role]}}" alt="">
   <span class="name text-{{character.class | lowercase}}">
     <span class="rank rank--{{character.rank}}"></span>
     {{character.name}}

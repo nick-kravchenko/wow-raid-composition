@@ -26,7 +26,7 @@ export class CompositionService {
   }
 
   get emptyRaid(): Character[] {
-    return new Array(10).fill(null);
+    return new Array(40).fill(null);
   }
 
   constructor(

@@ -1,11 +1,15 @@
 import { Component, Input } from '@angular/core';
-import { Character } from 'src/app/_entities/character';
-import { CharacterRole } from '../../_entities/character-role.enum';
+import { Character } from '../../_entities/character';
+import { LowerCasePipe, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-character-tile',
+  imports: [
+    LowerCasePipe,
+    NgIf
+  ],
   templateUrl: './character-tile.component.html',
-  styleUrls: ['./character-tile.component.scss']
+  styleUrl: './character-tile.component.scss'
 })
 export class CharacterTileComponent {
   @Input() character?: Character;
