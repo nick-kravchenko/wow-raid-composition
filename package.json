@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build:gpages": "ng build --base-href https://nick-kravchenko.github.io/wow-raid-composition/",
     "test": "ng test"
   },
   "private": true,

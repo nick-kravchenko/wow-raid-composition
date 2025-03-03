@@ -48,8 +48,8 @@ jobs:
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
-          source: "./dist/roster-angular/index.html"
-          target: "./dist/roster-angular/404.html"
+          source: "./dist/wow-raid-composition/index.html"
+          target: "./dist/wow-raid-composition/404.html"
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
