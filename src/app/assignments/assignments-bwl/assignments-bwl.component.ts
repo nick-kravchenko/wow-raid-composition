@@ -170,6 +170,7 @@ export class AssignmentsBwlComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
     ];
     const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const sacrificeHealer = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
     this.assignments[AssignmentType.vaelastraszAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'Tanks',
@@ -179,6 +180,17 @@ export class AssignmentsBwlComponent implements OnInit {
       headerIcon: IconEnum.layOnHands,
       headerText: 'Paladin CDs',
       actions: [],
+    });
+    this.assignments[AssignmentType.vaelastraszAssignments].assignments.push({
+      headerIcon: IconEnum.blessingOfSacrifice,
+      headerText: `Blessing of Sacrifice Healer`,
+      actions: [
+        {
+          caster: sacrificeHealer[sacrificeHealer.length - 1],
+          target: `Blessing of Sacrifice`,
+          icon: IconEnum.blessingOfSacrifice,
+        },
+      ],
     });
     for (let i = 0; i < tanks.length; i++) {
       this.assignments[AssignmentType.vaelastraszAssignments].assignments[0].actions.push({
