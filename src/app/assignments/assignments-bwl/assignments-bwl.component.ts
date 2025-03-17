@@ -142,6 +142,16 @@ export class AssignmentsBwlComponent implements OnInit {
   fillWarlockAssignments() {
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
     const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const marksToBanish = [
+      {
+        icon: this.iconEnum.triangle,
+        text: 'Triangle',
+      },
+      {
+        icon: this.iconEnum.diamond,
+        text: 'Diamond',
+      },
+    ]
 
     this.assignments.warlocksAssignments.assignments.push({
       headerIcon: this.iconEnum.warlock,
@@ -151,6 +161,11 @@ export class AssignmentsBwlComponent implements OnInit {
     this.assignments.warlocksAssignments.assignments.push({
       headerIcon: this.iconEnum.soulStone,
       headerText: `Soulstone`,
+      actions: [],
+    });
+    this.assignments.warlocksAssignments.assignments.push({
+      headerIcon: this.iconEnum.banish,
+      headerText: `Banish`,
       actions: [],
     });
 
@@ -176,6 +191,15 @@ export class AssignmentsBwlComponent implements OnInit {
         caster: warlock,
         target: paladin,
         icon: this.iconEnum.soulStone,
+      });
+    }
+
+    for (let i = 0; i < marksToBanish.length; i++) {
+      const warlock = warlocks[i];
+      this.assignments.warlocksAssignments.assignments[2].actions.push({
+        caster: warlock,
+        target: marksToBanish[i].text,
+        icon: marksToBanish[i].icon,
       });
     }
   }
