@@ -46,6 +46,7 @@ export enum IconEnum {
   cor = 'spell_shadow_unholystrength.jpg',
   shadowResistance = 'spell_shadow_antishadow.jpg',
   demonForm = 'spell_shadow_demonform.jpg',
+  blessingOfSacrifice = 'spell_holy_sealofsacrifice.jpg',
 
   /**
    * Marks

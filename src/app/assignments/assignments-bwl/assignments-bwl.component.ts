@@ -122,11 +122,6 @@ export class AssignmentsBwlComponent implements OnInit {
     return this.raid.filter((character: Character|undefined) => character?.class === className && character?.role === role);
   }
 
-  getCharacterWithClassGroupAndRole(groupId: number, className: CharacterClass, role: CharacterRole): Character|undefined {
-    const group = this.raid.slice(groupId * 5, (groupId + 1) * 5);
-    return group.find((character: Character|undefined) => character?.class === className && character?.role === role);
-  }
-
   fillAssignments() {
     this.fillRazorgoreAssignments();
     this.fillVaelastraszAssignments();
@@ -174,9 +169,15 @@ export class AssignmentsBwlComponent implements OnInit {
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
     ];
+    const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     this.assignments[AssignmentType.vaelastraszAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'Tanks',
+      actions: [],
+    });
+    this.assignments[AssignmentType.vaelastraszAssignments].assignments.push({
+      headerIcon: IconEnum.layOnHands,
+      headerText: 'Paladin CDs',
       actions: [],
     });
     for (let i = 0; i < tanks.length; i++) {
@@ -184,6 +185,18 @@ export class AssignmentsBwlComponent implements OnInit {
         caster: tanks[i],
         target: `Tank ${i + 1}`,
         icon: undefined,
+      });
+    }
+    for (let i = 0; i < paladins.length; i++) {
+      this.assignments[AssignmentType.vaelastraszAssignments].assignments[1].actions.push({
+        caster: paladins[i],
+        target: `Lay on Hands ${i + 1}`,
+        icon: IconEnum.layOnHands,
+      });
+      this.assignments[AssignmentType.vaelastraszAssignments].assignments[1].actions.push({
+        caster: paladins[i],
+        target: `Blessing of Sacrifice ${i + 1}`,
+        icon: IconEnum.blessingOfSacrifice,
       });
     }
   }
