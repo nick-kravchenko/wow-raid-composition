@@ -17,6 +17,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: "Sckold",
+    characters: [
+      {
+        name: "Sckold",
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      }
+    ]
+  },
+  {
     name: "ferain",
     characters: [
       {
@@ -119,7 +131,7 @@ export const players: Player[] = [
         name: "iwaitfortbc",
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.ranged,
+        role: CharacterRole.healer,
         class: CharacterClass.priest,
       }
     ]
@@ -251,7 +263,7 @@ export const players: Player[] = [
         name: "Vindsval",
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.ranged,
+        role: CharacterRole.healer,
         class: CharacterClass.priest,
       }
     ]
@@ -467,7 +479,7 @@ export const players: Player[] = [
         name: "Vidrochka",
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.healer,
+        role: CharacterRole.ranged,
         class: CharacterClass.priest,
       }
     ]
