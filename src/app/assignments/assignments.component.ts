@@ -6,13 +6,15 @@ import { Character } from '../_entities/character';
 import { ActivatedRoute, Params } from '@angular/router';
 import { players } from '../_data/players.data';
 import {AssignmentsBwlComponent} from './assignments-bwl/assignments-bwl.component';
+import {RaidTileComponent} from '../shared/raid-tile/raid-tile.component';
 
 @Component({
   selector: 'app-assignments',
   imports: [
     AssignmentsRaidWideComponent,
     NgForOf,
-    AssignmentsBwlComponent
+    AssignmentsBwlComponent,
+    RaidTileComponent
   ],
   templateUrl: './assignments.component.html',
   styleUrl: './assignments.component.scss'
