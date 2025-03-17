@@ -24,7 +24,7 @@ enum AssignmentType {
   magesAssignments = 'magesAssignments',
   druidsAssignments = 'druidsAssignments',
   paladinsAssignments = 'paladinsAssignments',
-  tanksAssignments = 'tanksAssignments',
+  tanksHealersAssignments = 'tanksHealersAssignments',
 }
 
 interface ClassAssignment {
@@ -72,9 +72,9 @@ export class AssignmentsRaidWideComponent implements OnInit {
       headerText: 'Paladins',
       assignments: []
     },
-    [AssignmentType.tanksAssignments]: {
+    [AssignmentType.tanksHealersAssignments]: {
       headerIcon: IconEnum.protection,
-      headerText: 'Tanks',
+      headerText: 'Tanks/Heals',
       assignments: [],
     },
   };
@@ -107,7 +107,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
     this.fillMageAssignments();
     this.fillDruidAssignments();
     this.fillPaladinAssignments();
-    this.fillTankAssignments();
+    this.fillTankHealerAssignments();
   }
 
   fillPriestAssignments() {
@@ -307,12 +307,17 @@ export class AssignmentsRaidWideComponent implements OnInit {
     }
   }
 
-  fillTankAssignments() {
+  fillTankHealerAssignments() {
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.melee),
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.melee),
+    ];
+    const healers = [
+      ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer),
+      ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer),
     ];
     const marksToTank = [
       {
@@ -349,17 +354,29 @@ export class AssignmentsRaidWideComponent implements OnInit {
       },
     ];
 
-    this.assignments.tanksAssignments.assignments.push({
+    this.assignments.tanksHealersAssignments.assignments.push({
       headerIcon: this.iconEnum.protection,
       headerText: 'Target to tank',
       actions: [],
     });
 
+    this.assignments.tanksHealersAssignments.assignments.push({
+      headerIcon: this.iconEnum.holyLight,
+      headerText: 'Heal to tank',
+      actions: [],
+    });
+
     for (let i = 0; i < marksToTank.length; i++) {
-      this.assignments.tanksAssignments.assignments[0].actions.push({
+      this.assignments.tanksHealersAssignments.assignments[0].actions.push({
         caster: tanks[i],
         target: marksToTank[i].text,
         icon: marksToTank[i].icon,
+      });
+
+      this.assignments.tanksHealersAssignments.assignments[1].actions.push({
+        caster: healers[i],
+        target: tanks[i],
+        icon: this.iconEnum.holyLight,
       });
     }
   }
