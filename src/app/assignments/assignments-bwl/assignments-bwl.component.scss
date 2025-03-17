@@ -1,0 +1,86 @@
+@import "colors";
+@import "screen-sizes";
+
+:host {
+  color: #fff;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 2rem;
+}
+h4 {
+  width: 100%;
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  img {
+    display: block;
+    margin: 0 .5rem 0 0;
+    width: 36px;
+  }
+}
+h5 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  font-size: 1.25rem;
+  border: 1px solid #000;
+  background: $mako;
+  img {
+    display: block;
+    width: 32px;
+    margin: 0 .25rem 0 0;
+  }
+}
+.card {
+  width: 25%;
+  padding: .25rem;
+  @include screen-tablet() {
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px 1px 1px;
+    &:last-child {
+      border-bottom-width: 1px;
+    }
+    .caster {
+      border-right: 1px solid #000;
+    }
+    .target {
+      span {
+        display: flex;
+        align-items: center;
+        height: 38px;
+        padding: 5px;
+        img {
+          display: block;
+          width: 28px;
+          margin: 0 .25rem 0 0;
+        }
+      }
+    }
+    app-character-tile {
+      width: 100%;
+    }
+  }
+}

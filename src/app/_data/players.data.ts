@@ -311,7 +311,7 @@ export const players: Player[] = [
         name: "LuckyRock",
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.ranged,
+        role: CharacterRole.melee,
         class: CharacterClass.rogue,
       }
     ]

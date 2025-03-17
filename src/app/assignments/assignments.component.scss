@@ -1,0 +1,15 @@
+@import "colors";
+@import "screen-sizes";
+
+:host {
+  display: block;
+  padding: 10px;
+  background: rgba($deep-space, .9);
+  border-radius: .5em;
+  box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1em);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  @include screen-tablet() {
+    grid-template-columns: 1fr;
+  }
+}
