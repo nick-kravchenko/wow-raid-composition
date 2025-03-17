@@ -2,21 +2,25 @@
 @import "screen-sizes";
 
 :host {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   color: #fff;
+
+  @include screen-laptop-l {
+    grid-template-columns: 1fr;
+  }
 }
 
 article {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 0 2rem;
 }
 h4 {
   width: 100%;
-  margin: 0 0 1rem;
-  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   img {
     display: block;
@@ -30,7 +34,7 @@ h5 {
   width: 100%;
   margin: 0;
   padding: 5px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   border: 1px solid #000;
   background: $mako;
   img {
@@ -40,10 +44,27 @@ h5 {
   }
 }
 .card {
-  width: 25%;
   padding: .25rem;
   @include screen-tablet() {
     width: 100%;
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    @include screen-laptop-l {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include screen-laptop() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include screen-tablet() {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   ul {

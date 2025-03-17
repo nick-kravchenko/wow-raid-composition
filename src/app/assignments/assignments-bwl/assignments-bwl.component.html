@@ -1,246 +1,47 @@
-<article>
-  <h4>
-    <img src="assets/icons/{{iconEnum.guardianSpirit}}" alt="">
-    Priests Assignments
-  </h4>
-  @for (assignment of priestsAssignments; track assignment) {
-    <div class="card">
-      <h5 class="card-title">
-        <img src="assets/icons/{{assignment.headerIcon}}" alt="">
-        {{assignment.headerText}}
-      </h5>
-      <ul class="card-body">
-        @for (action of assignment.actions; track action) {
-          <li>
-            <div class="caster">
-              @if (action.caster?.name) {
-                <app-character-tile [character]="action.caster"></app-character-tile>
-              } @else {
-                <span class="empty">-</span>
-              }
-            </div>
-            <div class="target">
-              @if (typeof action.target === 'string') {
-                <span>{{action.target}}</span>
-              } @else {
-                <app-character-tile [character]="getTarget(action)"></app-character-tile>
-              }
-            </div>
-          </li>
-        }
-      </ul>
-    </div>
-  } @empty {
-    <p>No assignments found</p>
-  }
-</article>
+@for (classAssignmentKeyValue of (assignments | keyvalue); track classAssignmentKeyValue.key) {
+  @let classAssignment = getClassAssignmentFromKeyValueObject(classAssignmentKeyValue);
 
-<article>
-  <h4>
-    <img src="assets/icons/{{iconEnum.demonForm}}" alt="">
-    Warlock Assignments
-  </h4>
-  @for (assignment of warlockAssignments; track assignment) {
-    <div class="card">
-      <h5 class="card-title">
-        <img src="assets/icons/{{assignment.headerIcon}}" alt="">
-        {{assignment.headerText}}
-      </h5>
-      <ul class="card-body">
-        @for (action of assignment.actions; track action) {
-          <li>
-            <div class="caster">
-              @if (action.caster?.name) {
-                <app-character-tile [character]="action.caster"></app-character-tile>
-              } @else {
-                <span class="empty">-</span>
-              }
-            </div>
-            <div class="target">
-              @if (typeof action.target === 'string') {
-                <span>
-                  @if (action.icon) {
-                    <img src="assets/icons/{{action.icon}}" alt="">
+  <article>
+    <h4>
+      <img src="assets/icons/{{classAssignment.headerIcon}}" alt="">
+      {{ classAssignment.headerText }}
+    </h4>
+    <div class="card-list">
+      @for (assignment of classAssignment.assignments; track assignment) {
+        <div class="card">
+          <h5 class="card-title">
+            <img src="assets/icons/{{assignment.headerIcon}}" alt="">
+            {{assignment.headerText}}
+          </h5>
+          <ul class="card-body">
+            @for (action of assignment.actions; track action) {
+              <li>
+                <div class="caster">
+                  @if (action.caster?.name) {
+                    <app-character-tile [character]="action.caster"></app-character-tile>
+                  } @else {
+                    <span class="empty">-</span>
                   }
-                  {{action.target}}
-                </span>
-              } @else {
-                <app-character-tile [character]="getTarget(action)"></app-character-tile>
-              }
-            </div>
-          </li>
-        }
-      </ul>
-    </div>
-  } @empty {
-    <p>No assignments found</p>
-  }
-</article>
-
-<article>
-  <h4>
-    <img src="assets/icons/{{iconEnum.mage}}" alt="">
-    Mage Assignments
-  </h4>
-  @for (assignment of mageAssignments; track assignment) {
-    <div class="card">
-      <h5 class="card-title">
-        <img src="assets/icons/{{assignment.headerIcon}}" alt="">
-        {{assignment.headerText}}
-      </h5>
-      <ul class="card-body">
-        @for (action of assignment.actions; track action) {
-          <li>
-            <div class="caster">
-              @if (action.caster?.name) {
-                <app-character-tile [character]="action.caster"></app-character-tile>
-              } @else {
-                <span class="empty">-</span>
-              }
-            </div>
-            <div class="target">
-              @if (typeof action.target === 'string') {
-                <span>
-                  @if (action.icon) {
-                    <img src="assets/icons/{{action.icon}}" alt="">
+                </div>
+                <div class="target">
+                  @if (typeof action.target === 'string') {
+                    <span>
+                    @if (action.icon) {
+                      <img src="assets/icons/{{action.icon}}" alt="">
+                    }
+                      {{action.target}}
+                  </span>
+                  } @else {
+                    <app-character-tile [character]="getTarget(action)"></app-character-tile>
                   }
-                  {{action.target}}
-                </span>
-              } @else {
-                <app-character-tile [character]="getTarget(action)"></app-character-tile>
-              }
-            </div>
-          </li>
-        }
-      </ul>
+                </div>
+              </li>
+            }
+          </ul>
+        </div>
+      } @empty {
+        <p>No assignments found</p>
+      }
     </div>
-  } @empty {
-    <p>No assignments found</p>
-  }
-</article>
-
-<article>
-  <h4>
-    <img src="assets/icons/{{iconEnum.druid}}" alt="">
-    Druid Assignments
-  </h4>
-  @for (assignment of druidAssignments; track assignment) {
-    <div class="card">
-      <h5 class="card-title">
-        <img src="assets/icons/{{assignment.headerIcon}}" alt="">
-        {{assignment.headerText}}
-      </h5>
-      <ul class="card-body">
-        @for (action of assignment.actions; track action) {
-          <li>
-            <div class="caster">
-              @if (action.caster?.name) {
-                <app-character-tile [character]="action.caster"></app-character-tile>
-              } @else {
-                <span class="empty">-</span>
-              }
-            </div>
-            <div class="target">
-              @if (typeof action.target === 'string') {
-                <span>
-                  @if (action.icon) {
-                    <img src="assets/icons/{{action.icon}}" alt="">
-                  }
-                  {{action.target}}
-                </span>
-              } @else {
-                <app-character-tile [character]="getTarget(action)"></app-character-tile>
-              }
-            </div>
-          </li>
-        }
-      </ul>
-    </div>
-  } @empty {
-    <p>No assignments found</p>
-  }
-</article>
-
-<article>
-  <h4>
-    <img src="assets/icons/{{iconEnum.protection}}" alt="">
-    Tank Assignments
-  </h4>
-  @for (assignment of tankAssignments; track assignment) {
-    <div class="card">
-      <h5 class="card-title">
-        <img src="assets/icons/{{assignment.headerIcon}}" alt="">
-        {{assignment.headerText}}
-      </h5>
-      <ul class="card-body">
-        @for (action of assignment.actions; track action) {
-          <li>
-            <div class="caster">
-              @if (action.caster?.name) {
-                <app-character-tile [character]="action.caster"></app-character-tile>
-              } @else {
-                <span class="empty">-</span>
-              }
-            </div>
-            <div class="target">
-              @if (typeof action.target === 'string') {
-                <span>
-                  @if (action.icon) {
-                    <img src="assets/icons/{{action.icon}}" alt="">
-                  }
-                  {{action.target}}
-                </span>
-              } @else {
-                <app-character-tile [character]="getTarget(action)"></app-character-tile>
-              }
-            </div>
-          </li>
-        }
-      </ul>
-    </div>
-  } @empty {
-    <p>No assignments found</p>
-  }
-</article>
-
-<article>
-  <h4>
-    <img src="assets/icons/{{iconEnum.paladin}}" alt="">
-    Paladin Assignments
-  </h4>
-  @for (assignment of paladinAssignments; track assignment) {
-    <div class="card">
-      <h5 class="card-title">
-        <img src="assets/icons/{{assignment.headerIcon}}" alt="">
-        {{assignment.headerText}}
-      </h5>
-      <ul class="card-body">
-        @for (action of assignment.actions; track action) {
-          <li>
-            <div class="caster">
-              @if (action.caster?.name) {
-                <app-character-tile [character]="action.caster"></app-character-tile>
-              } @else {
-                <span class="empty">-</span>
-              }
-            </div>
-            <div class="target">
-              @if (typeof action.target === 'string') {
-                <span>
-                  @if (action.icon) {
-                    <img src="assets/icons/{{action.icon}}" alt="">
-                  }
-                  {{action.target}}
-                </span>
-              } @else {
-                <app-character-tile [character]="getTarget(action)"></app-character-tile>
-              }
-            </div>
-          </li>
-        }
-      </ul>
-    </div>
-  } @empty {
-    <p>No assignments found</p>
-  }
-</article>
+  </article>
+}
