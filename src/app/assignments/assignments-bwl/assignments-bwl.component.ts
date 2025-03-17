@@ -31,6 +31,8 @@ export class AssignmentsBwlComponent implements OnInit {
   warlockAssignments: Assignment[] = [];
   mageAssignments: Assignment[] = [];
   druidAssignments: Assignment[] = [];
+  paladinAssignments: Assignment[] = [];
+  tankAssignments: Assignment[] = [];
   iconEnum: typeof IconEnum = IconEnum;
 
   ngOnInit() {
@@ -55,6 +57,8 @@ export class AssignmentsBwlComponent implements OnInit {
     this.fillWarlockAssignments();
     this.fillMageAssignments();
     this.fillDruidAssignments();
+    this.fillPaladinAssignments();
+    this.fillTankAssignments();
   }
 
   fillPriestAssignments() {
@@ -194,6 +198,77 @@ export class AssignmentsBwlComponent implements OnInit {
         caster: druids[i],
         target: marksToSleep[i].text,
         icon: marksToSleep[i].icon,
+      });
+    }
+  }
+
+  fillPaladinAssignments() {
+    const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
+    ];
+
+    this.paladinAssignments.push({
+      headerIcon: this.iconEnum.paladin,
+      headerText: `Pallypower`,
+      actions: [{
+        caster: paladins[0],
+        target: 'Pallypower',
+        icon: this.iconEnum.paladin,
+      }],
+    });
+
+    this.paladinAssignments.push({
+      headerIcon: this.iconEnum.holyLight,
+      headerText: `Heal`,
+      actions: [],
+    });
+
+    for (let i = 0; i < paladins.length; i++) {
+      this.paladinAssignments[1].actions.push({
+        caster: paladins[i],
+        target: tanks[i],
+        icon: this.iconEnum.holyLight,
+      });
+    }
+  }
+
+  fillTankAssignments() {
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
+    ];
+    const marksToTank = [
+      {
+        icon: this.iconEnum.skull,
+        text: 'Skull',
+      },
+      {
+        icon: this.iconEnum.cross,
+        text: 'Cross',
+      },
+      {
+        icon: this.iconEnum.square,
+        text: 'Square',
+      },
+      {
+        icon: this.iconEnum.moon,
+        text: 'Moon',
+      }
+    ];
+
+    this.tankAssignments.push({
+      headerIcon: this.iconEnum.protection,
+      headerText: 'Target to tank',
+      actions: [],
+    });
+
+    for (let i = 0; i < marksToTank.length; i++) {
+      this.tankAssignments[0].actions.push({
+        caster: tanks[i],
+        target: marksToTank[i].text,
+        icon: marksToTank[i].icon,
       });
     }
   }
