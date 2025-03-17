@@ -1,15 +1,15 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Character } from '../../_entities/character';
-import { CharacterClass } from '../../_entities/character-class.enum';
-import { CharacterRole } from '../../_entities/character-role.enum';
 import { CharacterTileComponent } from '../../shared/character-tile/character-tile.component';
-import {IconEnum} from '../../_entities/icon.enum';
-import {JsonPipe, KeyValuePipe} from '@angular/common';
+import { KeyValuePipe } from '@angular/common';
+import { Character } from '../../_entities/character';
+import { IconEnum } from '../../_entities/icon.enum';
+import {CharacterClass} from '../../_entities/character-class.enum';
+import {CharacterRole} from '../../_entities/character-role.enum';
 
 interface AssignmentAction {
-  caster: Character|undefined;
+  caster: Character|string|undefined;
   target: string|Character;
-  icon: string;
+  icon: string|undefined;
 }
 
 interface Assignment {
@@ -19,12 +19,14 @@ interface Assignment {
 }
 
 enum AssignmentType {
-  priestsAssignments = 'priestsAssignments',
-  warlocksAssignments = 'warlocksAssignments',
-  magesAssignments = 'magesAssignments',
-  druidsAssignments = 'druidsAssignments',
-  paladinsAssignments = 'paladinsAssignments',
-  tanksAssignments = 'tanksAssignments',
+  razorgoreAssignments = 'razorgoreAssignments',
+  vaelastraszAssignments = 'vaelastraszAssignments',
+  broodlordAssignments = 'broodlordAssignments',
+  firemawAssignments = 'firemawAssignments',
+  ebonrocAssignments = 'ebonrocAssignments',
+  flamegorAssignments = 'flamegorAssignments',
+  chromaggusAssignments = 'chromaggusAssignments',
+  nefarianAssignments = 'nefarianAssignments',
 }
 
 interface ClassAssignment {
@@ -37,47 +39,66 @@ interface ClassAssignment {
   selector: 'app-assignments-bwl',
   imports: [
     CharacterTileComponent,
-    KeyValuePipe,
-    JsonPipe,
+    KeyValuePipe
   ],
   templateUrl: './assignments-bwl.component.html',
   styleUrl: './assignments-bwl.component.scss'
 })
 export class AssignmentsBwlComponent implements OnInit {
   @Input() raid: Character[] = [];
+  keys: AssignmentType[] = [
+    AssignmentType.razorgoreAssignments,
+    AssignmentType.vaelastraszAssignments,
+    AssignmentType.broodlordAssignments,
+    AssignmentType.firemawAssignments,
+    AssignmentType.ebonrocAssignments,
+    AssignmentType.flamegorAssignments,
+    AssignmentType.chromaggusAssignments,
+    AssignmentType.nefarianAssignments
+  ];
   assignments: {
     [key in AssignmentType]: ClassAssignment
   } = {
-    [AssignmentType.priestsAssignments]: {
-      headerIcon: IconEnum.priest,
-      headerText: 'Priests',
+    [AssignmentType.razorgoreAssignments]: {
+      headerIcon: IconEnum.skull,
+      headerText: 'Razorgore',
       assignments: []
     },
-    [AssignmentType.warlocksAssignments]: {
-      headerIcon: IconEnum.warlock,
-      headerText: 'Warlocks',
+    [AssignmentType.vaelastraszAssignments]: {
+      headerIcon: IconEnum.skull,
+      headerText: 'Vaelastrasz',
       assignments: []
     },
-    [AssignmentType.magesAssignments]: {
-      headerIcon: IconEnum.mage,
-      headerText: 'Mages',
+    [AssignmentType.broodlordAssignments]: {
+      headerIcon: IconEnum.skull,
+      headerText: 'Broodlord',
       assignments: []
     },
-    [AssignmentType.druidsAssignments]: {
-      headerIcon: IconEnum.druid,
-      headerText: 'Druids',
+    [AssignmentType.firemawAssignments]: {
+      headerIcon: IconEnum.skull,
+      headerText: 'Firemaw',
       assignments: []
     },
-    [AssignmentType.paladinsAssignments]: {
-      headerIcon: IconEnum.paladin,
-      headerText: 'Paladins',
+    [AssignmentType.ebonrocAssignments]: {
+      headerIcon: IconEnum.skull,
+      headerText: 'Ebonroc',
       assignments: []
     },
-    [AssignmentType.tanksAssignments]: {
-      headerIcon: IconEnum.protection,
-      headerText: 'Tanks',
-      assignments: [],
+    [AssignmentType.flamegorAssignments]: {
+      headerIcon: IconEnum.skull,
+      headerText: 'Flamegor',
+      assignments: []
     },
+    [AssignmentType.chromaggusAssignments]: {
+      headerIcon: IconEnum.skull,
+      headerText: 'Chromaggus',
+      assignments: []
+    },
+    [AssignmentType.nefarianAssignments]: {
+      headerIcon: IconEnum.skull,
+      headerText: 'Nefarian',
+      assignments: []
+    }
   };
   iconEnum: typeof IconEnum = IconEnum;
 
@@ -93,6 +114,10 @@ export class AssignmentsBwlComponent implements OnInit {
     return action.target as Character;
   }
 
+  getCaster(action: AssignmentAction): Character {
+    return action.caster as Character;
+  }
+
   getCharactersByClassAndRole(className: CharacterClass, role: CharacterRole) {
     return this.raid.filter((character: Character|undefined) => character?.class === className && character?.role === role);
   }
@@ -103,246 +128,218 @@ export class AssignmentsBwlComponent implements OnInit {
   }
 
   fillAssignments() {
-    this.fillPriestAssignments();
-    this.fillWarlockAssignments();
-    this.fillMageAssignments();
-    this.fillDruidAssignments();
-    this.fillPaladinAssignments();
-    this.fillTankAssignments();
+    this.fillRazorgoreAssignments();
+    this.fillVaelastraszAssignments();
+    this.fillBroodlordAssignments();
+    this.fillFiremawAssignments();
+    this.fillEbonrocAssignments();
+    this.fillFlamegorAssignments();
+    this.fillChromaggusAssignments();
+    this.fillNefarianAssignments();
   }
 
-  fillPriestAssignments() {
-    const raidGroupsQty = 8;
-    const priests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
-
-    this.assignments.priestsAssignments.assignments.push({
-      headerIcon: this.iconEnum.wordOfFortitude,
-      headerText: `Fortitude | Spirit | Shadowres`,
-      actions: []
-    });
-    this.assignments.priestsAssignments.assignments.push({
-      headerIcon: this.iconEnum.dispel,
-      headerText: `Dispel`,
-      actions: []
-    });
-
-    for (let i = 0; i < raidGroupsQty; i++) {
-      for (let priestAssignment of this.assignments.priestsAssignments.assignments) {
-        let groupPriest = this.getCharacterWithClassGroupAndRole(i, CharacterClass.priest, CharacterRole.healer);
-        let priest: Character = groupPriest || (i > 0 ? priests[priests.length - 1] : priests[0]);
-        priestAssignment.actions.push({
-          caster: priest,
-          target: `Group ${i + 1}`,
-          icon: priestAssignment.headerIcon,
-        });
-      }
-    }
-  }
-
-  fillWarlockAssignments() {
-    const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
-    const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
-    const marksToBanish = [
-      {
-        icon: this.iconEnum.triangle,
-        text: 'Triangle',
-      },
-      {
-        icon: this.iconEnum.diamond,
-        text: 'Diamond',
-      },
-    ]
-
-    this.assignments.warlocksAssignments.assignments.push({
-      headerIcon: this.iconEnum.warlock,
-      headerText: `Curse`,
-      actions: [],
-    });
-    this.assignments.warlocksAssignments.assignments.push({
-      headerIcon: this.iconEnum.soulStone,
-      headerText: `Soulstone`,
-      actions: [],
-    });
-    this.assignments.warlocksAssignments.assignments.push({
-      headerIcon: this.iconEnum.banish,
-      headerText: `Banish`,
-      actions: [],
-    });
-
-    const curses = [
-      {icon: this.iconEnum.cor, text: 'CoR'},
-      {icon: this.iconEnum.coe, text: 'CoE'},
-      {icon: this.iconEnum.cos, text: 'CoS'},
-    ];
-
-    for (let i = 0; i < curses.length; i++) {
-      const warlock = warlocks[i];
-      this.assignments.warlocksAssignments.assignments[0].actions.push({
-        caster: warlock,
-        target: curses[i].text,
-        icon: curses[i].icon,
-      });
-    }
-
-    for (let i = 0; i < paladins.length; i++) {
-      const paladin = paladins[i];
-      const warlock = warlocks[i];
-      this.assignments.warlocksAssignments.assignments[1].actions.push({
-        caster: warlock,
-        target: paladin,
-        icon: this.iconEnum.soulStone,
-      });
-    }
-
-    for (let i = 0; i < marksToBanish.length; i++) {
-      const warlock = warlocks[i];
-      this.assignments.warlocksAssignments.assignments[2].actions.push({
-        caster: warlock,
-        target: marksToBanish[i].text,
-        icon: marksToBanish[i].icon,
-      });
-    }
-  }
-
-  fillMageAssignments() {
-    const raidGroupsQty = 8;
-    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
-
-    this.assignments.magesAssignments.assignments.push({
-      headerIcon: this.iconEnum.intellect,
-      headerText: `Intellect`,
-      actions: [],
-    });
-    this.assignments.magesAssignments.assignments.push({
-      headerIcon: this.iconEnum.decurse,
-      headerText: `Decurse`,
-      actions: [],
-    })
-    for (let i = 0; i < raidGroupsQty; i++) {
-      const mage = mages[i] || mages[mages.length - 1];
-      this.assignments.magesAssignments.assignments[0].actions.push({
-        caster: mage,
-        target: `Group ${i + 1}`,
-        icon: this.iconEnum.intellect,
-      });
-      this.assignments.magesAssignments.assignments[1].actions.push({
-        caster: mage,
-        target: `Group ${i + 1}`,
-        icon: this.iconEnum.decurse,
-      });
-    }
-  }
-
-  fillDruidAssignments() {
-    const raidGroupsQty = 8;
-    const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
-    const druidBears = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
-    const marksToSleep = [
-      {
-        icon: this.iconEnum.triangle,
-        text: 'Triangle',
-      },
-      {
-        icon: this.iconEnum.diamond,
-        text: 'Diamond',
-      },
-    ];
-    this.assignments.druidsAssignments.assignments.push({
-      headerIcon: this.iconEnum.motw,
-      headerText: `MotW`,
-      actions: [],
-    });
-    this.assignments.druidsAssignments.assignments.push({
-      headerIcon: this.iconEnum.sleep,
-      headerText: `Sleep`,
-      actions: [],
-    });
-    for (let i = 0; i < raidGroupsQty; i++) {
-      let groupDruid = this.getCharacterWithClassGroupAndRole(i, CharacterClass.druid, CharacterRole.healer);
-      let druid: Character = groupDruid || (i > 0 ? druidHealers[druidHealers.length - 1] : druidHealers[0]);
-      this.assignments.druidsAssignments.assignments[0].actions.push({
-        caster: druid,
-        target: `Group ${i + 1}`,
-        icon: this.iconEnum.motw,
-      });
-    }
-    for (let i = 0; i < marksToSleep.length; i++) {
-      const druids = [...druidHealers, ...druidBears];
-      this.assignments.druidsAssignments.assignments[1].actions.push({
-        caster: druids[i],
-        target: marksToSleep[i].text,
-        icon: marksToSleep[i].icon,
-      });
-    }
-  }
-
-  fillPaladinAssignments() {
-    const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+  fillRazorgoreAssignments() {
+    const numberOfGroups = 8;
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
-      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
     ];
-
-    this.assignments.paladinsAssignments.assignments.push({
-      headerIcon: this.iconEnum.paladin,
-      headerText: `Pallypower`,
-      actions: [{
-        caster: paladins[0],
-        target: 'Pallypower',
-        icon: this.iconEnum.paladin,
-      }],
+    this.assignments[AssignmentType.razorgoreAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Side',
+      actions: [],
     });
-
-    this.assignments.paladinsAssignments.assignments.push({
-      headerIcon: this.iconEnum.holyLight,
-      headerText: `Heal`,
+    this.assignments[AssignmentType.razorgoreAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
       actions: [],
     });
 
-    for (let i = 0; i < paladins.length; i++) {
-      this.assignments.paladinsAssignments.assignments[1].actions.push({
-        caster: paladins[i],
-        target: tanks[i],
-        icon: this.iconEnum.holyLight,
+    for (let i = 0; i < numberOfGroups; i++) {
+      const isEven = i % 2 === 0;
+      this.assignments[AssignmentType.razorgoreAssignments].assignments[0].actions.push({
+        caster: `Group ${i + 1}`,
+        target: isEven ? 'To Vael' : 'To Entrance',
+        icon: undefined,
       });
     }
-  }
-
-  fillTankAssignments() {
-    const tanks = [
-      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
-      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
-    ];
-    const marksToTank = [
-      {
-        icon: this.iconEnum.skull,
-        text: 'Skull',
-      },
-      {
-        icon: this.iconEnum.cross,
-        text: 'Cross',
-      },
-      {
-        icon: this.iconEnum.square,
-        text: 'Square',
-      },
-      {
-        icon: this.iconEnum.moon,
-        text: 'Moon',
-      }
-    ];
-
-    this.assignments.tanksAssignments.assignments.push({
-      headerIcon: this.iconEnum.protection,
-      headerText: 'Target to tank',
-      actions: [],
-    });
-
-    for (let i = 0; i < marksToTank.length; i++) {
-      this.assignments.tanksAssignments.assignments[0].actions.push({
+    for (let i = 0; i < tanks.length; i++) {
+      this.assignments[AssignmentType.razorgoreAssignments].assignments[1].actions.push({
         caster: tanks[i],
-        target: marksToTank[i].text,
-        icon: marksToTank[i].icon,
+        target: `Tank ${i + 1}`,
+        icon: undefined,
+      });
+    }
+  }
+  fillVaelastraszAssignments() {
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+    ];
+    this.assignments[AssignmentType.vaelastraszAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
+      actions: [],
+    });
+    for (let i = 0; i < tanks.length; i++) {
+      this.assignments[AssignmentType.vaelastraszAssignments].assignments[0].actions.push({
+        caster: tanks[i],
+        target: `Tank ${i + 1}`,
+        icon: undefined,
+      });
+    }
+  }
+  fillBroodlordAssignments() {
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
+    ];
+    this.assignments[AssignmentType.broodlordAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
+      actions: [],
+    });
+    this.assignments[AssignmentType.broodlordAssignments].assignments[0].actions.push({
+      caster: tanks[0],
+      target: `Tank 1`,
+      icon: undefined,
+    });
+    this.assignments[AssignmentType.broodlordAssignments].assignments[0].actions.push({
+      caster: tanks[1],
+      target: `Tank 2`,
+      icon: undefined,
+    });
+    this.assignments[AssignmentType.broodlordAssignments].assignments[0].actions.push({
+      caster: tanks[2],
+      target: `Tank 3`,
+      icon: undefined,
+    });
+    this.assignments[AssignmentType.broodlordAssignments].assignments[0].actions.push({
+      caster: tanks[3],
+      target: `Tank 4`,
+      icon: undefined,
+    });
+  }
+  fillFiremawAssignments() {
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
+    ];
+    this.assignments[AssignmentType.firemawAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
+      actions: [],
+    });
+    this.assignments[AssignmentType.firemawAssignments].assignments[0].actions.push({
+      caster: tanks[0],
+      target: `Tank 1`,
+      icon: undefined,
+    });
+    this.assignments[AssignmentType.firemawAssignments].assignments[0].actions.push({
+      caster: tanks[1],
+      target: `Tank 2`,
+      icon: undefined,
+    });
+    this.assignments[AssignmentType.firemawAssignments].assignments[0].actions.push({
+      caster: tanks[2],
+      target: `Wing Buffet Tank`,
+      icon: undefined,
+    });
+    this.assignments[AssignmentType.firemawAssignments].assignments[0].actions.push({
+      caster: tanks[3],
+      target: `Backup Tank`,
+      icon: undefined,
+    });
+  }
+  fillEbonrocAssignments() {
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+    ];
+    this.assignments[AssignmentType.ebonrocAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
+      actions: [],
+    });
+    for (let i = 0; i < tanks.length; i++) {
+      this.assignments[AssignmentType.ebonrocAssignments].assignments[0].actions.push({
+        caster: tanks[i],
+        target: `Tank ${i + 1}`,
+        icon: undefined,
+      });
+    }
+  }
+  fillFlamegorAssignments() {
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+    ];
+    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    this.assignments[AssignmentType.flamegorAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
+      actions: [],
+    });
+    this.assignments[AssignmentType.flamegorAssignments].assignments.push({
+      headerIcon: IconEnum.tranquilizingShot,
+      headerText: 'Tranquilizing Shot',
+      actions: [],
+    });
+    for (let i = 0; i < tanks.length; i++) {
+      this.assignments[AssignmentType.flamegorAssignments].assignments[0].actions.push({
+        caster: tanks[i],
+        target: `Tank ${i + 1}`,
+        icon: undefined,
+      });
+    }
+    for (let i = 0; i < hunters.length; i++) {
+      this.assignments[AssignmentType.flamegorAssignments].assignments[1].actions.push({
+        caster: hunters[i],
+        target: `Shot ${i + 1}`,
+        icon: IconEnum.tranquilizingShot,
+      });
+    }
+  }
+  fillChromaggusAssignments() {
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+    ];
+    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    this.assignments[AssignmentType.chromaggusAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
+      actions: [],
+    });
+    this.assignments[AssignmentType.chromaggusAssignments].assignments.push({
+      headerIcon: IconEnum.tranquilizingShot,
+      headerText: 'Tranquilizing Shot',
+      actions: [],
+    });
+    for (let i = 0; i < tanks.length; i++) {
+      this.assignments[AssignmentType.chromaggusAssignments].assignments[0].actions.push({
+        caster: tanks[i],
+        target: `Tank ${i + 1}`,
+        icon: undefined,
+      });
+    }
+    for (let i = 0; i < hunters.length; i++) {
+      this.assignments[AssignmentType.chromaggusAssignments].assignments[1].actions.push({
+        caster: hunters[i],
+        target: `Shot ${i + 1}`,
+        icon: IconEnum.tranquilizingShot,
+      });
+    }
+  }
+  fillNefarianAssignments() {
+    const tanks = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+    ];
+    this.assignments[AssignmentType.nefarianAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
+      actions: [],
+    });
+    for (let i = 0; i < tanks.length; i++) {
+      this.assignments[AssignmentType.nefarianAssignments].assignments[0].actions.push({
+        caster: tanks[i],
+        target: `Tank ${i + 1}`,
+        icon: undefined,
       });
     }
   }

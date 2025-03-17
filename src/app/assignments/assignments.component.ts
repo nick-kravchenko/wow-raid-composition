@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
-import { AssignmentsBwlComponent } from './assignments-bwl/assignments-bwl.component';
+import { AssignmentsRaidWideComponent } from './assignments-raid-wide/assignments-raid-wide.component';
 import { NgForOf } from '@angular/common';
 import { Player } from '../_entities/player';
 import { Character } from '../_entities/character';
 import { ActivatedRoute, Params } from '@angular/router';
 import { players } from '../_data/players.data';
+import {AssignmentsBwlComponent} from './assignments-bwl/assignments-bwl.component';
 
 @Component({
   selector: 'app-assignments',
   imports: [
-    AssignmentsBwlComponent,
-    NgForOf
+    AssignmentsRaidWideComponent,
+    NgForOf,
+    AssignmentsBwlComponent
   ],
   templateUrl: './assignments.component.html',
   styleUrl: './assignments.component.scss'

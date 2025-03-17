@@ -9,7 +9,13 @@
   box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1em);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
   @include screen-tablet() {
     grid-template-columns: 1fr;
   }
+}
+h3 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+  text-align: center;
 }

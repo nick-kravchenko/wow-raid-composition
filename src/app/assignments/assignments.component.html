@@ -1,3 +1,6 @@
 <section *ngFor="let raid of raids">
+  <h3>Raid Wide Assignments</h3>
+  <app-assignments-raid-wide [raid]="raid"></app-assignments-raid-wide>
+  <h3>BWL Assignments</h3>
   <app-assignments-bwl [raid]="raid"></app-assignments-bwl>
 </section>

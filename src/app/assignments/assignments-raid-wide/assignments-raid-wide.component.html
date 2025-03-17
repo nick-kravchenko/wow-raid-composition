@@ -1,5 +1,5 @@
-@for (key of (keys); track key) {
-  @let classAssignment = assignments[key];
+@for (classAssignmentKeyValue of (assignments | keyvalue); track classAssignmentKeyValue.key) {
+  @let classAssignment = getClassAssignmentFromKeyValueObject(classAssignmentKeyValue);
 
   <article>
     <h4>
@@ -17,10 +17,8 @@
             @for (action of assignment.actions; track action) {
               <li>
                 <div class="caster">
-                  @if (typeof action.caster === 'object') {
-                    <app-character-tile [character]="getCaster(action)"></app-character-tile>
-                  } @else if (typeof action.caster === 'string') {
-                    <span>{{action.caster}}</span>
+                  @if (action.caster?.name) {
+                    <app-character-tile [character]="action.caster"></app-character-tile>
                   } @else {
                     <span class="empty">-</span>
                   }
