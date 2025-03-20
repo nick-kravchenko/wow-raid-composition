@@ -18,7 +18,27 @@ app-raid-tile {
   margin: 0 0 1rem;
 }
 h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   font-size: 2rem;
   margin: 0 0 1rem;
   text-align: center;
+}
+button {
+  display: block;
+  margin: 0 0 0 1.5rem;
+  padding: .5em 1em;
+  font-size: 1rem;
+  font-weight: 700;
+  background: $mako;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: .5em;
+  cursor: pointer;
+  transition: background .3s, color .3s;
+  &:hover {
+    background: #000;
+  }
 }

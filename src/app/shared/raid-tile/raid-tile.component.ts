@@ -3,14 +3,15 @@ import html2canvas from 'html2canvas';
 import { Character } from '../../_entities/character';
 import { CharacterRole } from '../../_entities/character-role.enum';
 import { CharacterRank } from '../../_entities/character-rank.enum';
-import {CharacterTileComponent} from '../character-tile/character-tile.component';
-import {NgForOf} from '@angular/common';
+import { CharacterTileComponent } from '../character-tile/character-tile.component';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-raid-tile',
   imports: [
     CharacterTileComponent,
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './raid-tile.component.html',
   styleUrl: './raid-tile.component.scss'
@@ -18,6 +19,7 @@ import {NgForOf} from '@angular/common';
 export class RaidTileComponent implements OnInit {
   @Input() title = 'Raid #';
   @Input() raid: any[] = new Array(40);
+  @Input() hideControls: boolean = false;
   @Output() onSlotClick: EventEmitter<number> = new EventEmitter();
   @Output() onDragOver: EventEmitter<number> = new EventEmitter();
   @Output() onSlotDragStart: EventEmitter<number> = new EventEmitter();

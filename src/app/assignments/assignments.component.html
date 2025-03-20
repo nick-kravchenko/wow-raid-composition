@@ -1,8 +1,26 @@
 <section *ngFor="let raid of raids">
-  <app-raid-tile [raid]="raid"></app-raid-tile>
 
-  <h3>Raid Wide Assignments</h3>
-  <app-assignments-raid-wide [raid]="raid"></app-assignments-raid-wide>
-  <h3>BWL Assignments</h3>
-  <app-assignments-bwl [raid]="raid"></app-assignments-bwl>
+  <app-raid-tile [raid]="raid" [hideControls]="true"></app-raid-tile>
+
+  <h3>
+    <div class="text">Raid Wide Assignments</div>
+    <button (click)="togglePane('raid-wide')" type="button">
+      <i class="fa"
+         [class.fa-chevron-down]="!isPaneVisible('raid-wide')"
+         [class.fa-chevron-up]="isPaneVisible('raid-wide')"
+      ></i>
+    </button>
+  </h3>
+  <app-assignments-raid-wide *ngIf="isPaneVisible('raid-wide')" [raid]="raid"></app-assignments-raid-wide>
+
+  <h3>
+    <div class="text">BWL Assignments</div>
+    <button (click)="togglePane('bwl')" type="button">
+      <i class="fa"
+         [class.fa-chevron-down]="!isPaneVisible('bwl')"
+         [class.fa-chevron-up]="isPaneVisible('bwl')"
+      ></i>
+    </button>
+  </h3>
+  <app-assignments-bwl *ngIf="isPaneVisible('bwl')" [raid]="raid"></app-assignments-bwl>
 </section>

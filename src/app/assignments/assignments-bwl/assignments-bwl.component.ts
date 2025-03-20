@@ -137,6 +137,7 @@ export class AssignmentsBwlComponent implements OnInit {
     const numberOfGroups = 8;
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
     ];
     this.assignments[AssignmentType.razorgoreAssignments].assignments.push({
       headerIcon: IconEnum.skull,
@@ -153,14 +154,14 @@ export class AssignmentsBwlComponent implements OnInit {
       const isEven = i % 2 === 0;
       this.assignments[AssignmentType.razorgoreAssignments].assignments[0].actions.push({
         caster: `Group ${i + 1}`,
-        target: isEven ? 'To Vael' : 'To Entrance',
+        target: isEven ? 'Vaelastrasz Side' : 'Entrance Side',
         icon: undefined,
       });
     }
     for (let i = 0; i < tanks.length; i++) {
       this.assignments[AssignmentType.razorgoreAssignments].assignments[1].actions.push({
         caster: tanks[i],
-        target: `Tank ${i + 1}`,
+        target: `Tank ${i + 1}. (${i % 2 === 0 ? 'Vaelastrasz Side' : 'Entrance Side'})`,
         icon: undefined,
       });
     }
@@ -352,18 +353,47 @@ export class AssignmentsBwlComponent implements OnInit {
     }
   }
   fillNefarianAssignments() {
+    const numberOfGroups = 8;
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
     ];
+    const healers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    this.assignments[AssignmentType.nefarianAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Side',
+      actions: [],
+    });
     this.assignments[AssignmentType.nefarianAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'Tanks',
       actions: [],
     });
-    for (let i = 0; i < tanks.length; i++) {
+    this.assignments[AssignmentType.nefarianAssignments].assignments.push({
+      headerIcon: IconEnum.triangle,
+      headerText: 'Healers',
+      actions: [],
+    });
+
+    for (let i = 0; i < numberOfGroups; i++) {
+      const isEven = i % 2 === 0;
       this.assignments[AssignmentType.nefarianAssignments].assignments[0].actions.push({
+        caster: `Group ${i + 1}`,
+        target: isEven ? 'Throne Side' : 'Entrance Side',
+        icon: undefined,
+      });
+    }
+    for (let i = 0; i < tanks.length; i++) {
+      this.assignments[AssignmentType.nefarianAssignments].assignments[1].actions.push({
         caster: tanks[i],
-        target: `Tank ${i + 1}`,
+        target: `Tank ${i + 1}. (${i % 2 === 0 ? 'Throne Side' : 'Entrance Side'})`,
+        icon: undefined,
+      });
+    }
+    for (let i = 0; i < healers.length; i++) {
+      this.assignments[AssignmentType.nefarianAssignments].assignments[2].actions.push({
+        caster: healers[i],
+        target: `${i % 2 === 0 ? 'Throne Side' : 'Entrance Side'}`,
         icon: undefined,
       });
     }

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { AssignmentsRaidWideComponent } from './assignments-raid-wide/assignments-raid-wide.component';
-import { NgForOf } from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 import { Player } from '../_entities/player';
 import { Character } from '../_entities/character';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -14,14 +14,16 @@ import {RaidTileComponent} from '../shared/raid-tile/raid-tile.component';
     AssignmentsRaidWideComponent,
     NgForOf,
     AssignmentsBwlComponent,
-    RaidTileComponent
+    RaidTileComponent,
+    NgIf
   ],
   templateUrl: './assignments.component.html',
   styleUrl: './assignments.component.scss'
 })
-export class AssignmentsComponent {
+export class AssignmentsComponent implements OnInit {
   players: Player[] = players;
   raids: Character[][] = [];
+  visiblePanes: string[] = ['raid-wide', 'bwl'];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -29,6 +31,18 @@ export class AssignmentsComponent {
 
   ngOnInit() {
     this.getCharactersFromQueryParams();
+  }
+
+  isPaneVisible(pane: string): boolean {
+    return this.visiblePanes.includes(pane);
+  }
+
+  togglePane(pane: string) {
+    if (this.isPaneVisible(pane)) {
+      this.visiblePanes = this.visiblePanes.filter((visiblePane: string) => visiblePane !== pane);
+    } else {
+      this.visiblePanes.push(pane);
+    }
   }
 
   getCharacterByCharacterName(characterName: string): Character|undefined {

@@ -33,10 +33,10 @@
     </span>
   </h3>
   <div class="external-actions" data-html2canvas-ignore="true">
-    <button (click)="pruneModalVisible = true;">
+    <button *ngIf="!hideControls" (click)="pruneModalVisible = true;">
       <i class="fa-solid fa-recycle"></i>
     </button>
-    <button (click)="removeModalVisible = true;">
+    <button *ngIf="!hideControls" (click)="removeModalVisible = true;">
       <i class="fa-solid fa-trash-can"></i>
     </button>
   </div>
@@ -46,15 +46,23 @@
     @if (i % 5 === 0) {
       <span>Group {{i / 5 + 1}}</span>
     }
-    <app-character-tile
-      class="character-{{i}}"
-      [class.highlight]="slot?.highlight"
-      (click)="onSlotClick.emit(i)"
-      (dragover)="onDragOver.emit(i)"
-      (dragstart)="onSlotDragStart.emit(i)"
-      (dragend)="onSlotDragEnd.emit()"
-      [character]="slot"
-      [draggable]="!!slot"
-    ></app-character-tile>
+    @if (hideControls) {
+      <app-character-tile
+        class="character-{{i}}"
+        [character]="slot"
+        [draggable]="!!slot"
+      ></app-character-tile>
+    } @else {
+      <app-character-tile
+        class="character-{{i}}"
+        [class.highlight]="slot?.highlight"
+        (click)="onSlotClick.emit(i)"
+        (dragover)="onDragOver.emit(i)"
+        (dragstart)="onSlotDragStart.emit(i)"
+        (dragend)="onSlotDragEnd.emit()"
+        [character]="slot"
+        [draggable]="!!slot"
+      ></app-character-tile>
+    }
   </ng-container>
 </div>
