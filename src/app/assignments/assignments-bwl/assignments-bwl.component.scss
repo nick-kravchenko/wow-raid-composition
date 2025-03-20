@@ -82,6 +82,17 @@ h5 {
     }
     .caster {
       border-right: 1px solid #000;
+      span {
+        display: flex;
+        align-items: center;
+        height: 38px;
+        padding: 5px;
+        img {
+          display: block;
+          width: 28px;
+          margin: 0 .25rem 0 0;
+        }
+      }
     }
     .target {
       span {

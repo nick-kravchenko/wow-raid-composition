@@ -38,8 +38,7 @@ interface ClassAssignment {
 @Component({
   selector: 'app-assignments-bwl',
   imports: [
-    CharacterTileComponent,
-    KeyValuePipe
+    CharacterTileComponent
   ],
   templateUrl: './assignments-bwl.component.html',
   styleUrl: './assignments-bwl.component.scss'
@@ -100,14 +99,9 @@ export class AssignmentsBwlComponent implements OnInit {
       assignments: []
     }
   };
-  iconEnum: typeof IconEnum = IconEnum;
 
   ngOnInit() {
     this.fillAssignments();
-  }
-
-  getClassAssignmentFromKeyValueObject(keyValueObject: any): ClassAssignment {
-    return keyValueObject.value as ClassAssignment;
   }
 
   getTarget(action: AssignmentAction): Character {
@@ -200,12 +194,12 @@ export class AssignmentsBwlComponent implements OnInit {
         icon: undefined,
       });
     }
+    this.assignments[AssignmentType.vaelastraszAssignments].assignments[1].actions.push({
+      caster: paladins[0],
+      target: `Lay on Hands`,
+      icon: IconEnum.layOnHands,
+    });
     for (let i = 0; i < paladins.length; i++) {
-      this.assignments[AssignmentType.vaelastraszAssignments].assignments[1].actions.push({
-        caster: paladins[i],
-        target: `Lay on Hands ${i + 1}`,
-        icon: IconEnum.layOnHands,
-      });
       this.assignments[AssignmentType.vaelastraszAssignments].assignments[1].actions.push({
         caster: paladins[i],
         target: `Blessing of Sacrifice ${i + 1}`,
@@ -326,6 +320,10 @@ export class AssignmentsBwlComponent implements OnInit {
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
     ];
+    const priests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
+    const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const druids = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
+    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     this.assignments[AssignmentType.chromaggusAssignments].assignments.push({
       headerIcon: IconEnum.skull,
@@ -337,6 +335,12 @@ export class AssignmentsBwlComponent implements OnInit {
       headerText: 'Tranquilizing Shot',
       actions: [],
     });
+    this.assignments[AssignmentType.chromaggusAssignments].assignments.push({
+      headerIcon: IconEnum.dispel,
+      headerText: 'Dispel/Remove Curse/Cleanse',
+      actions: [],
+    });
+
     for (let i = 0; i < tanks.length; i++) {
       this.assignments[AssignmentType.chromaggusAssignments].assignments[0].actions.push({
         caster: tanks[i],
@@ -351,6 +355,38 @@ export class AssignmentsBwlComponent implements OnInit {
         icon: IconEnum.tranquilizingShot,
       });
     }
+    this.assignments[AssignmentType.chromaggusAssignments].assignments[2].actions.push({
+      caster: priests[priests.length - 3],
+      target: 'Melee',
+      icon: IconEnum.dispel,
+    });
+    this.assignments[AssignmentType.chromaggusAssignments].assignments[2].actions.push({
+      caster: priests[priests.length - 1],
+      target: 'Ranged',
+      icon: IconEnum.dispel,
+    });
+    this.assignments[AssignmentType.chromaggusAssignments].assignments[2].actions.push({
+      caster: paladins[1],
+      target: `Melee`,
+      icon: IconEnum.dispel,
+    });
+    this.assignments[AssignmentType.chromaggusAssignments].assignments[2].actions.push({
+      caster: paladins[2],
+      target: `Ranged`,
+      icon: IconEnum.dispel,
+    });
+    for (let i = 0; i < druids.length; i++) {
+      this.assignments[AssignmentType.chromaggusAssignments].assignments[2].actions.push({
+        caster: druids[i],
+        target: `Melee`,
+        icon: IconEnum.decurse,
+      });
+    }
+    this.assignments[AssignmentType.chromaggusAssignments].assignments[2].actions.push({
+      caster: mages[0],
+      target: `Melee`,
+      icon: IconEnum.decurse,
+    });
   }
   fillNefarianAssignments() {
     const numberOfGroups = 8;
