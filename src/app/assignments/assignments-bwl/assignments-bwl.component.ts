@@ -212,11 +212,18 @@ export class AssignmentsBwlComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
     ];
+    const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     this.assignments[AssignmentType.broodlordAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'Tanks',
       actions: [],
     });
+    this.assignments[AssignmentType.broodlordAssignments].assignments.push({
+      headerIcon: IconEnum.layOnHands,
+      headerText: 'Paladin CDs',
+      actions: [],
+    });
+
     this.assignments[AssignmentType.broodlordAssignments].assignments[0].actions.push({
       caster: tanks[0],
       target: `Tank 1`,
@@ -236,6 +243,11 @@ export class AssignmentsBwlComponent implements OnInit {
       caster: tanks[3],
       target: `Tank 4`,
       icon: undefined,
+    });
+    this.assignments[AssignmentType.broodlordAssignments].assignments[1].actions.push({
+      caster: paladins[1],
+      target: `Lay on Hands`,
+      icon: IconEnum.layOnHands,
     });
   }
   fillFiremawAssignments() {
