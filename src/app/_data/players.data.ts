@@ -17,18 +17,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Sckold',
-    characters: [
-      {
-        name: 'Sckold',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      }
-    ]
-  },
-  {
     name: 'Bachmann',
     characters: [
       {
