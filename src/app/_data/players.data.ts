@@ -99,7 +99,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
-      }
+      },
+      {
+        name: 'Intensive',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      },
     ]
   },
   {
