@@ -358,7 +358,21 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
-      }
+      },
+      {
+        name: 'Nolucky',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
+      {
+        name: 'Luckypala',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      },
     ]
   },
   {
