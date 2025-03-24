@@ -119,6 +119,13 @@ export const players: Player[] = [
         role: CharacterRole.healer,
         class: CharacterClass.priest,
       },
+      {
+        name: 'Arenko',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
+      },
     ]
   },
   {
