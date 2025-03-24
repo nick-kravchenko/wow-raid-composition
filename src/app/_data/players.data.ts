@@ -5,10 +5,10 @@ import { CharacterClass } from '../_entities/character-class.enum';
 
 export const players: Player[] = [
   {
-    name: "Emaru",
+    name: 'Emaru',
     characters: [
       {
-        name: "Emaru",
+        name: 'Emaru',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -17,10 +17,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Sckold",
+    name: 'Sckold',
     characters: [
       {
-        name: "Sckold",
+        name: 'Sckold',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -29,10 +29,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Bachmann",
+    name: 'Bachmann',
     characters: [
       {
-        name: "Bachmann",
+        name: 'Bachmann',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -41,10 +41,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "ferain",
+    name: 'ferain',
     characters: [
       {
-        name: "ferain",
+        name: 'ferain',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -53,10 +53,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Lloydaustin",
+    name: 'Lloydaustin',
     characters: [
       {
-        name: "Lloydaustin",
+        name: 'Lloydaustin',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.tank,
@@ -72,10 +72,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Zloymage",
+    name: 'Zloymage',
     characters: [
       {
-        name: "Zloymage",
+        name: 'Zloymage',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -84,10 +84,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Xtdeigh",
+    name: 'Xtdeigh',
     characters: [
       {
-        name: "Xtdeigh",
+        name: 'Xtdeigh',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -96,10 +96,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Tony",
+    name: 'Tony',
     characters: [
       {
-        name: "Tony",
+        name: 'Tony',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -108,10 +108,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Merrigold",
+    name: 'Merrigold',
     characters: [
       {
-        name: "Merrigold",
+        name: 'Merrigold',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -120,10 +120,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Faniges",
+    name: 'Faniges',
     characters: [
       {
-        name: "Faniges",
+        name: 'Faniges',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -132,10 +132,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Ryzha🍒",
+    name: 'Ryzha🍒',
     characters: [
       {
-        name: "Ryzha🍒",
+        name: 'Ryzha🍒',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -144,10 +144,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Noctiss",
+    name: 'Noctiss',
     characters: [
       {
-        name: "Noctiss",
+        name: 'Noctiss',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -156,10 +156,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "iwaitfortbc",
+    name: 'iwaitfortbc',
     characters: [
       {
-        name: "iwaitfortbc",
+        name: 'iwaitfortbc',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -168,17 +168,17 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Krava",
+    name: 'Krava',
     characters: [
       {
-        name: "Kravà",
+        name: 'Kravà',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
       },
       {
-        name: "Kràvà",
+        name: 'Kràvà',
         level: 60,
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
@@ -187,10 +187,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Bazhenaa",
+    name: 'Bazhenaa',
     characters: [
       {
-        name: "Bazhenaa",
+        name: 'Bazhenaa',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -199,10 +199,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "iPanda",
+    name: 'iPanda',
     characters: [
       {
-        name: "iPanda",
+        name: 'iPanda',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -211,10 +211,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "rozmarin",
+    name: 'rozmarin',
     characters: [
       {
-        name: "rozmarin",
+        name: 'rozmarin',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -223,10 +223,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Dbill",
+    name: 'Dbill',
     characters: [
       {
-        name: "Dbill",
+        name: 'Dbill',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -235,10 +235,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Biruang",
+    name: 'Biruang',
     characters: [
       {
-        name: "Biruang",
+        name: 'Biruang',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -247,10 +247,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Glonya",
+    name: 'Glonya',
     characters: [
       {
-        name: "Glonya",
+        name: 'Glonya',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -259,10 +259,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Nòmi",
+    name: 'Nòmi',
     characters: [
       {
-        name: "Nòmi",
+        name: 'Nòmi',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -271,10 +271,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Heggano",
+    name: 'Heggano',
     characters: [
       {
-        name: "Heggano",
+        name: 'Heggano',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -283,10 +283,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Paganel",
+    name: 'Paganel',
     characters: [
       {
-        name: "Paganel",
+        name: 'Paganel',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -295,10 +295,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Vindsval",
+    name: 'Vindsval',
     characters: [
       {
-        name: "Vindsval",
+        name: 'Vindsval',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -307,10 +307,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Serjoo",
+    name: 'Serjoo',
     characters: [
       {
-        name: "Serjoo",
+        name: 'Serjoo',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -319,10 +319,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Bawovna",
+    name: 'Bawovna',
     characters: [
       {
-        name: "Bawovna",
+        name: 'Bawovna',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -331,10 +331,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Crab",
+    name: 'Crab',
     characters: [
       {
-        name: "Crab",
+        name: 'Crab',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -343,10 +343,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Balabesussi",
+    name: 'Balabesussi',
     characters: [
       {
-        name: "Balabesussi",
+        name: 'Balabesussi',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -355,10 +355,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Luckyrock",
+    name: 'Luckyrock',
     characters: [
       {
-        name: "Luckyrock",
+        name: 'Luckyrock',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -367,29 +367,29 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Lego",
+    name: 'Lego',
     characters: [
       {
-        name: "Legogrizzly",
+        name: 'Legogrizzly',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.druid,
       },
       {
-        name: "Legolambo",
+        name: 'Legolambo',
         level: 60,
-        rank: CharacterRank.main,
+        rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
       },
     ]
   },
   {
-    name: "Lasunya",
+    name: 'Lasunya',
     characters: [
       {
-        name: "Lasunya",
+        name: 'Lasunya',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -398,10 +398,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Zoloto",
+    name: 'Zoloto',
     characters: [
       {
-        name: "Zoloto",
+        name: 'Zoloto',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -410,10 +410,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Lightofdawn",
+    name: 'Lightofdawn',
     characters: [
       {
-        name: "Lightofdawn",
+        name: 'Lightofdawn',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -422,10 +422,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Art",
+    name: 'Art',
     characters: [
       {
-        name: "Art",
+        name: 'Art',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -434,10 +434,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Måssiveatack",
+    name: 'Måssiveatack',
     characters: [
       {
-        name: "Måssiveatack",
+        name: 'Måssiveatack',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -446,10 +446,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Balabesek",
+    name: 'Balabesek',
     characters: [
       {
-        name: "Balabesek",
+        name: 'Balabesek',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.tank,
@@ -458,17 +458,17 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Lucîs",
+    name: 'Lucîs',
     characters: [
       {
-        name: "Lucîs",
+        name: 'Lucîs',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
       },
       {
-        name: "Lucispriest",
+        name: 'Lucispriest',
         level: 60,
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
@@ -477,10 +477,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Letifer",
+    name: 'Letifer',
     characters: [
       {
-        name: "Letifer",
+        name: 'Letifer',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -489,10 +489,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Gloryk",
+    name: 'Gloryk',
     characters: [
       {
-        name: "Gloryk",
+        name: 'Gloryk',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -501,10 +501,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Rinn",
+    name: 'Rinn',
     characters: [
       {
-        name: "Rinn",
+        name: 'Rinn',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.tank,
@@ -520,10 +520,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Pentagrams",
+    name: 'Pentagrams',
     characters: [
       {
-        name: "Pentagrams",
+        name: 'Pentagrams',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -532,22 +532,29 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Vidrochka",
+    name: 'Vidrochka',
     characters: [
       {
-        name: "Vidrochka",
+        name: 'Vidrochka',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.priest,
-      }
+      },
+      {
+        name: 'Shompel',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
     ]
   },
   {
-    name: "xaoc",
+    name: 'xaoc',
     characters: [
       {
-        name: "xaoc",
+        name: 'xaoc',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -556,10 +563,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Oversir",
+    name: 'Oversir',
     characters: [
       {
-        name: "Oversir",
+        name: 'Oversir',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
@@ -568,10 +575,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Strike",
+    name: 'Strike',
     characters: [
       {
-        name: "Strikex",
+        name: 'Strikex',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -587,10 +594,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Sodaredead",
+    name: 'Sodaredead',
     characters: [
       {
-        name: "Sodaredead",
+        name: 'Sodaredead',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -599,10 +606,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Chaklun",
+    name: 'Chaklun',
     characters: [
       {
-        name: "Chaklun",
+        name: 'Chaklun',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -611,10 +618,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Sanya",
+    name: 'Sanya',
     characters: [
       {
-        name: "Sanya",
+        name: 'Sanya',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -623,10 +630,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Bobchix",
+    name: 'Bobchix',
     characters: [
       {
-        name: "Bobchix",
+        name: 'Bobchix',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -635,10 +642,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Pinpong",
+    name: 'Pinpong',
     characters: [
       {
-        name: "Pinpong",
+        name: 'Pinpong',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -647,10 +654,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Anafema",
+    name: 'Anafema',
     characters: [
       {
-        name: "Anafema",
+        name: 'Anafema',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -659,10 +666,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Watchmeflex",
+    name: 'Watchmeflex',
     characters: [
       {
-        name: "Watchmeflex",
+        name: 'Watchmeflex',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -678,10 +685,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Samogon",
+    name: 'Samogon',
     characters: [
       {
-        name: "Samogon",
+        name: 'Samogon',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -690,10 +697,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Olofse",
+    name: 'Olofse',
     characters: [
       {
-        name: "Olofse",
+        name: 'Olofse',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -702,10 +709,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "Ellium",
+    name: 'Ellium',
     characters: [
       {
-        name: "Ellium",
+        name: 'Ellium',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
