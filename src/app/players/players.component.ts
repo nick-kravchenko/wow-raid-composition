@@ -32,10 +32,6 @@ export class PlayersComponent implements OnInit {
     return players.reduce((acc, cur) => cur.characters ? acc + cur.characters.length : acc, 0);
   }
 
-  get charactersMaxLevelCount(): number {
-    return players.reduce((acc, cur) => cur.characters ? acc + cur.characters.filter(c => c.level === 40).length : acc, 0);
-  }
-
   constructor() { }
 
   ngOnInit(): void {
