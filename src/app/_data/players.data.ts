@@ -278,18 +278,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Heggano',
-    characters: [
-      {
-        name: 'Heggano',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.druid,
-      }
-    ]
-  },
-  {
     name: 'Paganel',
     characters: [
       {
