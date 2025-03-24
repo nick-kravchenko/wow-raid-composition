@@ -435,7 +435,7 @@ export const players: Player[] = [
       {
         name: 'Lasunka',
         level: 60,
-        rank: CharacterRank.main,
+        rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
       },
