@@ -72,6 +72,25 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Soltyx',
+    characters: [
+      {
+        name: 'Soltyx',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
+      {
+        name: 'Soltyxx',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
+    ]
+  },
+  {
     name: 'Xtdeigh',
     characters: [
       {
@@ -635,7 +654,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
-      }
+      },
+      {
+        name: 'Bobchixx',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+      },
     ]
   },
   {
