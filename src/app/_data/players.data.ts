@@ -61,6 +61,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.warrior,
+      },
+      {
+        name: 'Beshketnik',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
       }
     ]
   },
@@ -164,12 +171,19 @@ export const players: Player[] = [
     name: "Krava",
     characters: [
       {
-        name: "Krava",
+        name: "Kravà",
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      }
+      },
+      {
+        name: "Kràvà",
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+      },
     ]
   },
   {
@@ -341,10 +355,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "LuckyRock",
+    name: "Luckyrock",
     characters: [
       {
-        name: "LuckyRock",
+        name: "Luckyrock",
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -356,12 +370,19 @@ export const players: Player[] = [
     name: "Lego",
     characters: [
       {
-        name: "Lego",
+        name: "Legogrizzly",
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.druid,
-      }
+      },
+      {
+        name: "Legolambo",
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+      },
     ]
   },
   {
@@ -445,7 +466,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
-      }
+      },
+      {
+        name: "Lucispriest",
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      },
     ]
   },
   {
@@ -481,7 +509,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.warrior,
-      }
+      },
+      {
+        name: 'Rinmage',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
     ]
   },
   {
@@ -533,15 +568,22 @@ export const players: Player[] = [
     ]
   },
   {
-    name: "STRIKE",
+    name: "Strike",
     characters: [
       {
-        name: "STRIKE",
+        name: "Strikex",
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      }
+      },
+      {
+        name: 'Hellpapa',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      },
     ]
   },
   {
@@ -625,7 +667,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      }
+      },
+      {
+        name: 'Pozhezha',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
     ]
   },
   {
