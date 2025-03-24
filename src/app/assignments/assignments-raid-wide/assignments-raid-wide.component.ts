@@ -24,7 +24,7 @@ enum AssignmentType {
   magesAssignments = 'magesAssignments',
   druidsAssignments = 'druidsAssignments',
   paladinsAssignments = 'paladinsAssignments',
-  tanksHealersAssignments = 'tanksHealersAssignments',
+  tanksHealersHuntersAssignments = 'tanksHealersHuntersAssignments',
 }
 
 interface ClassAssignment {
@@ -72,7 +72,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
       headerText: 'Paladins',
       assignments: []
     },
-    [AssignmentType.tanksHealersAssignments]: {
+    [AssignmentType.tanksHealersHuntersAssignments]: {
       headerIcon: IconEnum.protection,
       headerText: 'Tanks/Heals',
       assignments: [],
@@ -319,6 +319,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer),
       ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer),
     ];
+    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     const marksToTank = [
       {
         icon: this.iconEnum.skull,
@@ -354,29 +355,42 @@ export class AssignmentsRaidWideComponent implements OnInit {
       },
     ];
 
-    this.assignments.tanksHealersAssignments.assignments.push({
+    this.assignments.tanksHealersHuntersAssignments.assignments.push({
       headerIcon: this.iconEnum.protection,
       headerText: 'Target to tank',
       actions: [],
     });
 
-    this.assignments.tanksHealersAssignments.assignments.push({
+    this.assignments.tanksHealersHuntersAssignments.assignments.push({
       headerIcon: this.iconEnum.holyLight,
-      headerText: 'Heal to tank',
+      headerText: 'Target to heal',
+      actions: [],
+    });
+
+    this.assignments.tanksHealersHuntersAssignments.assignments.push({
+      headerIcon: this.iconEnum.hunter,
+      headerText: 'Target to pull',
       actions: [],
     });
 
     for (let i = 0; i < marksToTank.length; i++) {
-      this.assignments.tanksHealersAssignments.assignments[0].actions.push({
+      this.assignments.tanksHealersHuntersAssignments.assignments[0].actions.push({
         caster: tanks[i],
         target: marksToTank[i].text,
         icon: marksToTank[i].icon,
       });
 
-      this.assignments.tanksHealersAssignments.assignments[1].actions.push({
+      this.assignments.tanksHealersHuntersAssignments.assignments[1].actions.push({
         caster: healers[i],
         target: tanks[i],
         icon: this.iconEnum.holyLight,
+      });
+    }
+    for (let i = 0; i < hunters.length; i++) {
+      this.assignments.tanksHealersHuntersAssignments.assignments[2].actions.push({
+        caster: hunters[i],
+        target: marksToTank[i].text,
+        icon: marksToTank[i].icon,
       });
     }
   }
