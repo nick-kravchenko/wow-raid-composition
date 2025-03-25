@@ -75,7 +75,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
-      }
+      },
+      {
+        name: 'Zloymag',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
     ]
   },
   {
