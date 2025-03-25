@@ -36,10 +36,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'ferain',
+    name: 'Ferain',
     characters: [
       {
-        name: 'ferain',
+        name: 'Ferain',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
