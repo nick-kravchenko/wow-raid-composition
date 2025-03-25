@@ -241,10 +241,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'iPanda',
+    name: 'Ipanda',
     characters: [
       {
-        name: 'iPanda',
+        name: 'Ipanda',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
@@ -253,10 +253,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'rozmarin',
+    name: 'Rozmarin',
     characters: [
       {
-        name: 'rozmarin',
+        name: 'Rozmarin',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
