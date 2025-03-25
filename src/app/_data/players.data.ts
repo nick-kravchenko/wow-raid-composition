@@ -609,10 +609,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'xaoc',
+    name: 'Xaoc',
     characters: [
       {
-        name: 'xaoc',
+        name: 'Xaoc',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
