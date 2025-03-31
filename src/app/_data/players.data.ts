@@ -621,6 +621,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Manorika',
+    characters: [
+      {
+        name: 'Manorika',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      }
+    ]
+  },
+  {
     name: 'Oversir',
     characters: [
       {
