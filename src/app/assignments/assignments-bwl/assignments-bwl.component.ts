@@ -165,7 +165,6 @@ export class AssignmentsBwlComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
     ];
     const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
-    const sacrificeHealer = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
     this.assignments[AssignmentType.vaelastraszAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'Tanks',
@@ -176,36 +175,16 @@ export class AssignmentsBwlComponent implements OnInit {
       headerText: 'Paladin CDs',
       actions: [],
     });
-    this.assignments[AssignmentType.vaelastraszAssignments].assignments.push({
-      headerIcon: IconEnum.blessingOfSacrifice,
-      headerText: `Blessing of Sacrifice Healer`,
-      actions: [
-        {
-          caster: sacrificeHealer[sacrificeHealer.length - 1],
-          target: `Blessing of Sacrifice`,
-          icon: IconEnum.blessingOfSacrifice,
-        },
-      ],
+    this.assignments[AssignmentType.vaelastraszAssignments].assignments[0].actions.push({
+      caster: tanks[1],
+      target: `Tank`,
+      icon: undefined,
     });
-    for (let i = 0; i < tanks.length; i++) {
-      this.assignments[AssignmentType.vaelastraszAssignments].assignments[0].actions.push({
-        caster: tanks[i],
-        target: `Tank ${i + 1}`,
-        icon: undefined,
-      });
-    }
     this.assignments[AssignmentType.vaelastraszAssignments].assignments[1].actions.push({
       caster: paladins[0],
       target: `Lay on Hands`,
       icon: IconEnum.layOnHands,
     });
-    for (let i = 0; i < paladins.length; i++) {
-      this.assignments[AssignmentType.vaelastraszAssignments].assignments[1].actions.push({
-        caster: paladins[i],
-        target: `Blessing of Sacrifice ${i + 1}`,
-        icon: IconEnum.blessingOfSacrifice,
-      });
-    }
   }
   fillBroodlordAssignments() {
     const tanks = [
