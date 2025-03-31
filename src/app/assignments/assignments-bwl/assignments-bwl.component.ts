@@ -185,6 +185,11 @@ export class AssignmentsBwlComponent implements OnInit {
       target: `Lay on Hands`,
       icon: IconEnum.layOnHands,
     });
+    this.assignments[AssignmentType.vaelastraszAssignments].assignments[1].actions.push({
+      caster: paladins[0],
+      target: `Divine Intervention`,
+      icon: IconEnum.divineIntervention,
+    });
   }
   fillBroodlordAssignments() {
     const tanks = [
