@@ -92,6 +92,13 @@ export const players: Player[] = [
         name: 'Soltyx',
         level: 60,
         rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      },
+      {
+        name: 'Soltyx',
+        level: 60,
+        rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
       },
@@ -241,6 +248,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Vavaviva',
+    characters: [
+      {
+        name: 'Vavaviva',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      }
+    ]
+  },
+  {
     name: 'Ipanda',
     characters: [
       {
@@ -281,6 +300,18 @@ export const players: Player[] = [
     characters: [
       {
         name: 'Biruang',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      }
+    ]
+  },
+  {
+    name: 'Goodtimeqt',
+    characters: [
+      {
+        name: 'Goodtimeqt',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
