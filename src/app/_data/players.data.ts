@@ -138,6 +138,30 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Krieg',
+    characters: [
+      {
+        name: 'Krieg',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      },
+    ]
+  },
+  {
+    name: 'Arikiell',
+    characters: [
+      {
+        name: 'Arikiell',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      },
+    ]
+  },
+  {
     name: 'Tony',
     characters: [
       {
