@@ -24,18 +24,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Bachmann',
-    characters: [
-      {
-        name: 'Bachmann',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      }
-    ]
-  },
-  {
     name: 'Ferain',
     characters: [
       {
@@ -232,18 +220,6 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
-      }
-    ]
-  },
-  {
-    name: 'iwaitfortbc',
-    characters: [
-      {
-        name: 'iwaitfortbc',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
       }
     ]
   },
