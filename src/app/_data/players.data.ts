@@ -805,7 +805,7 @@ export const players: Player[] = [
         class: CharacterClass.warlock,
       },
       {
-        name: 'Anafema',
+        name: 'Anafemap',
         level: 60,
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
