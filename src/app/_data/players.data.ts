@@ -212,18 +212,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Noctiss',
-    characters: [
-      {
-        name: 'Noctiss',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      }
-    ]
-  },
-  {
     name: 'Krava',
     characters: [
       {
@@ -617,7 +605,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
-      }
+      },
+      {
+        name: 'Glorykwtf',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      },
     ]
   },
   {
@@ -734,7 +729,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
-      }
+      },
+      {
+        name: 'Sodare',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      },
     ]
   },
   {
