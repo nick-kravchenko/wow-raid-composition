@@ -96,11 +96,11 @@ export const players: Player[] = [
     name: 'Soltyx',
     characters: [
       {
-        name: 'Valhalla',
+        name: 'Soltyx',
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
       },
       {
         name: 'Soltyxmage',
