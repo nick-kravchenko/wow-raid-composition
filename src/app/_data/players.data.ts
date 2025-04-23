@@ -542,10 +542,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Art',
+    name: 'Adotius',
     characters: [
       {
-        name: 'Art',
+        name: 'Adotius',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
@@ -570,6 +570,18 @@ export const players: Player[] = [
     characters: [
       {
         name: 'Grinchua',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      }
+    ]
+  },
+  {
+    name: 'Einefrau',
+    characters: [
+      {
+        name: 'Einefrau',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
