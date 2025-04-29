@@ -243,6 +243,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Arhon',
+    characters: [
+      {
+        name: 'Arhon',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+      },
+    ]
+  },
+  {
     name: 'Bazhenaa',
     characters: [
       {
@@ -534,6 +546,18 @@ export const players: Player[] = [
     characters: [
       {
         name: 'Måssiveatack',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      }
+    ]
+  },
+  {
+    name: 'Manadramma',
+    characters: [
+      {
+        name: 'Manadramma',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
