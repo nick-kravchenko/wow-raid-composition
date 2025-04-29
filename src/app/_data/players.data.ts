@@ -530,18 +530,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Adotius',
-    characters: [
-      {
-        name: 'Adotius',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      }
-    ]
-  },
-  {
     name: 'Måssiveatack',
     characters: [
       {
