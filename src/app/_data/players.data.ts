@@ -255,6 +255,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Lexy',
+    characters: [
+      {
+        name: 'Lexy',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      }
+    ]
+  },
+  {
     name: 'Bazhenaa',
     characters: [
       {
