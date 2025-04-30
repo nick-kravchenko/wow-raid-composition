@@ -255,10 +255,10 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Lexy',
+    name: 'Lèxy',
     characters: [
       {
-        name: 'Lexy',
+        name: 'Lèxy',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
