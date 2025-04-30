@@ -235,7 +235,6 @@ export class AssignmentsRaidWideComponent implements OnInit {
   fillDruidAssignments() {
     const raidGroupsQty = 8;
     const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
-    const druidBears = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const marksToSleep = [
       {
         icon: this.iconEnum.triangle,
@@ -266,7 +265,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
       });
     }
     for (let i = 0; i < marksToSleep.length; i++) {
-      const druids = [...druidHealers, ...druidBears];
+      const druids = [...druidHealers];
       this.assignments.druidsAssignments.assignments[1].actions.push({
         caster: druids[i],
         target: marksToSleep[i].text,
@@ -311,8 +310,6 @@ export class AssignmentsRaidWideComponent implements OnInit {
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
-      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.melee),
-      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.melee),
     ];
     const healers = [
       ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer),
