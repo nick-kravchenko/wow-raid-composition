@@ -838,6 +838,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Aryastark',
+    characters: [
+      {
+        name: 'Aryastark',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
+      }
+    ]
+  },
+  {
     name: 'Bobchix',
     characters: [
       {
