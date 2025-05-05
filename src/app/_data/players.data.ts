@@ -724,12 +724,19 @@ export const players: Player[] = [
     name: 'Xaoc',
     characters: [
       {
-        name: 'Xaoc',
+        name: 'Aao',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      },
+      {
+        name: 'Xaoc',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
         class: CharacterClass.mage,
-      }
+      },
     ]
   },
   {
