@@ -120,8 +120,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
     assignments.length = 0;
 
     const headers = [
-      { icon: this.iconEnum.wordOfFortitude, text: 'Fortitude | Spirit | Shadowres' },
-      { icon: this.iconEnum.dispel, text: 'Dispel' }
+      { icon: this.iconEnum.wordOfFortitude, text: 'Buffs | Dispels' },
     ];
 
     headers.forEach(header => {
@@ -227,25 +226,15 @@ export class AssignmentsRaidWideComponent implements OnInit {
 
     this.assignments.magesAssignments.assignments.push({
       headerIcon: this.iconEnum.intellect,
-      headerText: `Intellect`,
+      headerText: `Buffs | Decurse`,
       actions: [],
     });
-    this.assignments.magesAssignments.assignments.push({
-      headerIcon: this.iconEnum.decurse,
-      headerText: `Decurse`,
-      actions: [],
-    })
     for (let i = 0; i < raidGroupsQty; i++) {
       const mage = mages[i] || mages[mages.length - 1];
       this.assignments.magesAssignments.assignments[0].actions.push({
         caster: mage,
         target: `Group ${i + 1}`,
         icon: this.iconEnum.intellect,
-      });
-      this.assignments.magesAssignments.assignments[1].actions.push({
-        caster: mage,
-        target: `Group ${i + 1}`,
-        icon: this.iconEnum.decurse,
       });
     }
   }
@@ -255,12 +244,12 @@ export class AssignmentsRaidWideComponent implements OnInit {
     const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
     const marksToSleep = [
       {
-        icon: this.iconEnum.triangle,
-        text: 'Triangle',
-      },
-      {
         icon: this.iconEnum.diamond,
         text: 'Diamond',
+      },
+      {
+        icon: this.iconEnum.triangle,
+        text: 'Triangle',
       },
     ];
     this.assignments.druidsAssignments.assignments.push({
@@ -300,23 +289,13 @@ export class AssignmentsRaidWideComponent implements OnInit {
     ];
 
     this.assignments.paladinsAssignments.assignments.push({
-      headerIcon: this.iconEnum.paladin,
-      headerText: `Pallypower`,
-      actions: [{
-        caster: paladins[0],
-        target: 'Pallypower',
-        icon: this.iconEnum.paladin,
-      }],
-    });
-
-    this.assignments.paladinsAssignments.assignments.push({
       headerIcon: this.iconEnum.holyLight,
       headerText: `Heal`,
       actions: [],
     });
 
     for (let i = 0; i < paladins.length; i++) {
-      this.assignments.paladinsAssignments.assignments[1].actions.push({
+      this.assignments.paladinsAssignments.assignments[0].actions.push({
         caster: paladins[i],
         target: tanks[i],
         icon: this.iconEnum.holyLight,

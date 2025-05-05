@@ -3,11 +3,15 @@
 
 :host {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   color: #fff;
 
   @include screen-laptop-l {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include screen-laptop() {
     grid-template-columns: 1fr;
   }
 }
@@ -47,15 +51,15 @@ h5 {
 .card {
   &-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
 
     @include screen-laptop-l {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
 
     @include screen-laptop() {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
 
     @include screen-tablet() {
