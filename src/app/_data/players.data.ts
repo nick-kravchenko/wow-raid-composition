@@ -542,6 +542,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Milfarion',
+    characters: [
+      {
+        name: 'Milfarion',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.druid,
+      }
+    ]
+  },
+  {
     name: 'Lightofdawn',
     characters: [
       {
