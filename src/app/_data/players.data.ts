@@ -126,18 +126,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Krieg',
-    characters: [
-      {
-        name: 'Krieg',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-    ]
-  },
-  {
     name: 'Arikiell',
     characters: [
       {
@@ -347,18 +335,6 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
-      }
-    ]
-  },
-  {
-    name: 'Glonya',
-    characters: [
-      {
-        name: 'Glonya',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
       }
     ]
   },
@@ -822,6 +798,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
+      },
+      {
+        name: 'Glonya',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
       }
     ]
   },
