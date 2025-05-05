@@ -24,6 +24,7 @@ enum AssignmentType {
   magesAssignments = 'magesAssignments',
   druidsAssignments = 'druidsAssignments',
   paladinsAssignments = 'paladinsAssignments',
+  huntersAssignments = 'huntersAssignments',
   tanksHealersHuntersAssignments = 'tanksHealersHuntersAssignments',
 }
 
@@ -72,6 +73,11 @@ export class AssignmentsRaidWideComponent implements OnInit {
       headerText: 'Paladins',
       assignments: []
     },
+    [AssignmentType.huntersAssignments]: {
+      headerIcon: IconEnum.hunter,
+      headerText: 'Hunters',
+      assignments: []
+    },
     [AssignmentType.tanksHealersHuntersAssignments]: {
       headerIcon: IconEnum.protection,
       headerText: 'Tanks/Heals',
@@ -107,6 +113,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
     this.fillMageAssignments();
     this.fillDruidAssignments();
     this.fillPaladinAssignments();
+    this.fillHuntersAssignments();
     this.fillTankHealerAssignments();
   }
 
@@ -303,6 +310,58 @@ export class AssignmentsRaidWideComponent implements OnInit {
     }
   }
 
+  fillHuntersAssignments() {
+    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    const marksToHunter = [
+      {
+        icon: this.iconEnum.skull,
+        text: 'Skull',
+      },
+      {
+        icon: this.iconEnum.cross,
+        text: 'Cross',
+      },
+      {
+        icon: this.iconEnum.square,
+        text: 'Square',
+      },
+      {
+        icon: this.iconEnum.moon,
+        text: 'Moon',
+      },
+      {
+        icon: this.iconEnum.triangle,
+        text: 'Triangle',
+      },
+      {
+        icon: this.iconEnum.diamond,
+        text: 'Diamond',
+      },
+      {
+        icon: this.iconEnum.circle,
+        text: 'Circle',
+      },
+      {
+        icon: this.iconEnum.star,
+        text: 'Star',
+      },
+    ];
+
+    this.assignments.huntersAssignments.assignments.push({
+      headerIcon: this.iconEnum.hunter,
+      headerText: `Target to pull`,
+      actions: [],
+    });
+
+    for (let i = 0; i < hunters.length; i++) {
+      this.assignments.huntersAssignments.assignments[0].actions.push({
+        caster: hunters[i],
+        target: marksToHunter[i].text,
+        icon: marksToHunter[i].icon,
+      });
+    }
+  }
+
   fillTankHealerAssignments() {
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
@@ -363,12 +422,6 @@ export class AssignmentsRaidWideComponent implements OnInit {
       actions: [],
     });
 
-    this.assignments.tanksHealersHuntersAssignments.assignments.push({
-      headerIcon: this.iconEnum.hunter,
-      headerText: 'Target to pull',
-      actions: [],
-    });
-
     for (let i = 0; i < tanks.length; i++) {
       this.assignments.tanksHealersHuntersAssignments.assignments[0].actions.push({
         caster: tanks[i],
@@ -403,13 +456,5 @@ export class AssignmentsRaidWideComponent implements OnInit {
       target: mageTank,
       icon: this.iconEnum.holyLight,
     });
-    for (let i = 0; i < hunters.length; i++) {
-      this.assignments.tanksHealersHuntersAssignments.assignments[2].actions.push({
-        caster: hunters[i],
-        target: marksToTank[i].text,
-        icon: marksToTank[i].icon,
-      });
-    }
-
   }
 }
