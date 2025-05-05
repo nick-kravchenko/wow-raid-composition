@@ -240,6 +240,13 @@ export const players: Player[] = [
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
       },
+      {
+        name: 'Arhona',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      },
     ]
   },
   {
