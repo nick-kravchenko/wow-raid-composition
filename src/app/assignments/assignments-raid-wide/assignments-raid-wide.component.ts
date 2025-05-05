@@ -114,29 +114,47 @@ export class AssignmentsRaidWideComponent implements OnInit {
     const raidGroupsQty = 8;
     const priests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
 
-    this.assignments.priestsAssignments.assignments.push({
-      headerIcon: this.iconEnum.wordOfFortitude,
-      headerText: `Fortitude | Spirit | Shadowres`,
-      actions: []
-    });
-    this.assignments.priestsAssignments.assignments.push({
-      headerIcon: this.iconEnum.dispel,
-      headerText: `Dispel`,
-      actions: []
+    if (priests.length === 0) return;
+
+    const assignments = this.assignments.priestsAssignments.assignments;
+    assignments.length = 0;
+
+    const headers = [
+      { icon: this.iconEnum.wordOfFortitude, text: 'Fortitude | Spirit | Shadowres' },
+      { icon: this.iconEnum.dispel, text: 'Dispel' }
+    ];
+
+    headers.forEach(header => {
+      assignments.push({
+        headerIcon: header.icon,
+        headerText: header.text,
+        actions: []
+      });
     });
 
-    for (let i = 0; i < raidGroupsQty; i++) {
-      for (let priestAssignment of this.assignments.priestsAssignments.assignments) {
-        let groupPriest = this.getCharacterWithClassGroupAndRole(i, CharacterClass.priest, CharacterRole.healer);
-        let priest: Character = groupPriest || (i > 0 ? priests[priests.length - 1] : priests[0]);
-        priestAssignment.actions.push({
-          caster: priest,
-          target: `Group ${i + 1}`,
-          icon: priestAssignment.headerIcon,
+    const groupsPerPriest = Math.floor(raidGroupsQty / priests.length);
+    let extraGroups = raidGroupsQty % priests.length;
+
+    let currentGroup = 1;
+
+    for (let i = 0; i < priests.length; i++) {
+      const priest = priests[i];
+      let assignedGroups = groupsPerPriest + (extraGroups > 0 ? 1 : 0);
+      if (extraGroups > 0) extraGroups--;
+
+      for (let j = 0; j < assignedGroups; j++) {
+        headers.forEach((header, index) => {
+          assignments[index].actions.push({
+            caster: priest,
+            target: `Group ${currentGroup}`,
+            icon: header.icon
+          });
         });
+        currentGroup++;
       }
     }
   }
+
 
   fillWarlockAssignments() {
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
@@ -316,6 +334,8 @@ export class AssignmentsRaidWideComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer),
       ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer),
     ];
+    const mageTank = this.raid.find((character: Character) => character?.name === 'Bobchix') as Character;
+    const furyTank = this.raid.find((character: Character) => character?.name === 'Kravà') as Character;
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     const marksToTank = [
       {
@@ -370,7 +390,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
       actions: [],
     });
 
-    for (let i = 0; i < marksToTank.length; i++) {
+    for (let i = 0; i < tanks.length; i++) {
       this.assignments.tanksHealersHuntersAssignments.assignments[0].actions.push({
         caster: tanks[i],
         target: marksToTank[i].text,
@@ -383,6 +403,27 @@ export class AssignmentsRaidWideComponent implements OnInit {
         icon: this.iconEnum.holyLight,
       });
     }
+
+    this.assignments.tanksHealersHuntersAssignments.assignments[0].actions.push({
+      caster: furyTank,
+      target: marksToTank[tanks.length].text,
+      icon: marksToTank[tanks.length].icon,
+    });
+    this.assignments.tanksHealersHuntersAssignments.assignments[1].actions.push({
+      caster: healers[healers.length - 1],
+      target: furyTank,
+      icon: this.iconEnum.holyLight,
+    });
+    this.assignments.tanksHealersHuntersAssignments.assignments[0].actions.push({
+      caster: mageTank,
+      target: 'Technicians',
+      icon: 'spell_frost_icestorm.jpg',
+    });
+    this.assignments.tanksHealersHuntersAssignments.assignments[1].actions.push({
+      caster: healers[healers.length - 2],
+      target: mageTank,
+      icon: this.iconEnum.holyLight,
+    });
     for (let i = 0; i < hunters.length; i++) {
       this.assignments.tanksHealersHuntersAssignments.assignments[2].actions.push({
         caster: hunters[i],
@@ -390,5 +431,6 @@ export class AssignmentsRaidWideComponent implements OnInit {
         icon: marksToTank[i].icon,
       });
     }
+
   }
 }

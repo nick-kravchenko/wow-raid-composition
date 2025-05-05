@@ -1,26 +1,18 @@
-<section *ngFor="let raid of raids">
-
+<section *ngFor="let raid of raids; let i = index">
   <app-raid-tile [raid]="raid" [hideControls]="true"></app-raid-tile>
 
-  <h3>
-    <div class="text">Raid Wide Assignments</div>
-    <button (click)="togglePane('raid-wide')" type="button">
-      <i class="fa"
-         [class.fa-chevron-down]="!isPaneVisible('raid-wide')"
-         [class.fa-chevron-up]="isPaneVisible('raid-wide')"
-      ></i>
+  <nav>
+    <button title="Raid wide assignments" (click)="togglePane(i, PaneNameEnum.RaidWide)" [class.active]="isPaneVisible(i, PaneNameEnum.RaidWide)" type="button">
+      <img [src]="getPaneIcon(PaneNameEnum.RaidWide)" alt="">
     </button>
-  </h3>
-  <app-assignments-raid-wide *ngIf="isPaneVisible('raid-wide')" [raid]="raid"></app-assignments-raid-wide>
+    <button title="BWL assignments" (click)="togglePane(i, PaneNameEnum.Bwl)" [class.active]="isPaneVisible(i, PaneNameEnum.Bwl)" type="button">
+      <img [src]="getPaneIcon(PaneNameEnum.Bwl)" alt="">
+    </button>
+    <button title="AQ40 assignments" (click)="togglePane(i, PaneNameEnum.Aq40)" [class.active]="isPaneVisible(i, PaneNameEnum.Aq40)" type="button" disabled>
+      <img [src]="getPaneIcon(PaneNameEnum.Aq40)" alt="">
+    </button>
+  </nav>
 
-  <h3>
-    <div class="text">BWL Assignments</div>
-    <button (click)="togglePane('bwl')" type="button">
-      <i class="fa"
-         [class.fa-chevron-down]="!isPaneVisible('bwl')"
-         [class.fa-chevron-up]="isPaneVisible('bwl')"
-      ></i>
-    </button>
-  </h3>
-  <app-assignments-bwl *ngIf="isPaneVisible('bwl')" [raid]="raid"></app-assignments-bwl>
+  <app-assignments-raid-wide *ngIf="isPaneVisible(i, PaneNameEnum.RaidWide)" [raid]="raid"></app-assignments-raid-wide>
+  <app-assignments-bwl *ngIf="isPaneVisible(i, PaneNameEnum.Bwl)" [raid]="raid"></app-assignments-bwl>
 </section>

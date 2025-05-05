@@ -1,8 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { CharacterTileComponent } from '../../shared/character-tile/character-tile.component';
-import { KeyValuePipe } from '@angular/common';
-import { Character } from '../../_entities/character';
-import { IconEnum } from '../../_entities/icon.enum';
+import {CharacterTileComponent} from '../../shared/character-tile/character-tile.component';
+import {Character} from '../../_entities/character';
+import {IconEnum} from '../../_entities/icon.enum';
 import {CharacterClass} from '../../_entities/character-class.enum';
 import {CharacterRole} from '../../_entities/character-role.enum';
 
@@ -144,14 +143,16 @@ export class AssignmentsBwlComponent implements OnInit {
       actions: [],
     });
 
-    for (let i = 0; i < numberOfGroups; i++) {
-      const isEven = i % 2 === 0;
-      this.assignments[AssignmentType.razorgoreAssignments].assignments[0].actions.push({
-        caster: `Group ${i + 1}`,
-        target: isEven ? 'Vaelastrasz Side' : 'Entrance Side',
-        icon: undefined,
-      });
-    }
+    this.assignments[AssignmentType.razorgoreAssignments].assignments[0].actions.push({
+      caster: `Group 1, 3, 5, 7`,
+      target: 'Vaelastrasz Side',
+      icon: undefined,
+    });
+    this.assignments[AssignmentType.razorgoreAssignments].assignments[0].actions.push({
+      caster: `Group 2, 4, 6, 8`,
+      target: 'Entrance Side',
+      icon: undefined,
+    });
     for (let i = 0; i < tanks.length; i++) {
       this.assignments[AssignmentType.razorgoreAssignments].assignments[1].actions.push({
         caster: tanks[i],
@@ -251,7 +252,7 @@ export class AssignmentsBwlComponent implements OnInit {
     });
     this.assignments[AssignmentType.firemawAssignments].assignments[0].actions.push({
       caster: tanks[2],
-      target: `Wing Buffet Tank`,
+      target: `Backup Tank`,
       icon: undefined,
     });
     this.assignments[AssignmentType.firemawAssignments].assignments[0].actions.push({
@@ -388,11 +389,6 @@ export class AssignmentsBwlComponent implements OnInit {
     const healers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     this.assignments[AssignmentType.nefarianAssignments].assignments.push({
       headerIcon: IconEnum.skull,
-      headerText: 'Side',
-      actions: [],
-    });
-    this.assignments[AssignmentType.nefarianAssignments].assignments.push({
-      headerIcon: IconEnum.skull,
       headerText: 'Tanks',
       actions: [],
     });
@@ -402,23 +398,15 @@ export class AssignmentsBwlComponent implements OnInit {
       actions: [],
     });
 
-    for (let i = 0; i < numberOfGroups; i++) {
-      const isEven = i % 2 === 0;
-      this.assignments[AssignmentType.nefarianAssignments].assignments[0].actions.push({
-        caster: `Group ${i + 1}`,
-        target: isEven ? 'Throne Side' : 'Entrance Side',
-        icon: undefined,
-      });
-    }
     for (let i = 0; i < tanks.length; i++) {
-      this.assignments[AssignmentType.nefarianAssignments].assignments[1].actions.push({
+      this.assignments[AssignmentType.nefarianAssignments].assignments[0].actions.push({
         caster: tanks[i],
-        target: `Tank ${i + 1}. (${i % 2 === 0 ? 'Throne Side' : 'Entrance Side'})`,
+        target: `Tank ${i + 1}`,
         icon: undefined,
       });
     }
     for (let i = 0; i < healers.length; i++) {
-      this.assignments[AssignmentType.nefarianAssignments].assignments[2].actions.push({
+      this.assignments[AssignmentType.nefarianAssignments].assignments[1].actions.push({
         caster: healers[i],
         target: `${i % 2 === 0 ? 'Throne Side' : 'Entrance Side'}`,
         icon: undefined,
