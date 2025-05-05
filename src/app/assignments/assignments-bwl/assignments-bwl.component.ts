@@ -381,7 +381,6 @@ export class AssignmentsBwlComponent implements OnInit {
     });
   }
   fillNefarianAssignments() {
-    const numberOfGroups = 8;
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
@@ -396,6 +395,15 @@ export class AssignmentsBwlComponent implements OnInit {
       headerIcon: IconEnum.triangle,
       headerText: 'Healers',
       actions: [],
+    });
+    this.assignments[AssignmentType.nefarianAssignments].assignments.push({
+      headerIcon: IconEnum.decurse,
+      headerText: 'Decurse',
+      actions: [{
+        caster: this.raid.find((character: Character) => character.name === 'Bobchix'),
+        target: `Backup decurse`,
+        icon: IconEnum.decurse,
+      }],
     });
 
     for (let i = 0; i < tanks.length; i++) {
