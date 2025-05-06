@@ -384,15 +384,9 @@ export class AssignmentsBwlComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
     ];
-    const healers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     this.assignments[AssignmentType.nefarianAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'Tanks',
-      actions: [],
-    });
-    this.assignments[AssignmentType.nefarianAssignments].assignments.push({
-      headerIcon: IconEnum.triangle,
-      headerText: 'Healers',
       actions: [],
     });
     this.assignments[AssignmentType.nefarianAssignments].assignments.push({
@@ -409,13 +403,6 @@ export class AssignmentsBwlComponent implements OnInit {
       this.assignments[AssignmentType.nefarianAssignments].assignments[0].actions.push({
         caster: tanks[i],
         target: `Tank ${i + 1}`,
-        icon: undefined,
-      });
-    }
-    for (let i = 0; i < healers.length; i++) {
-      this.assignments[AssignmentType.nefarianAssignments].assignments[1].actions.push({
-        caster: healers[i],
-        target: `${i % 2 === 0 ? 'Throne Side' : 'Entrance Side'}`,
         icon: undefined,
       });
     }
