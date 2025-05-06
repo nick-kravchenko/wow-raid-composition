@@ -1,49 +1,51 @@
-@for (key of (keys); track key) {
-  @let classAssignment = assignments[key];
-
-  <article>
-    <h4>
-      <img src="assets/icons/{{classAssignment.headerIcon}}" alt="">
-      {{ classAssignment.headerText }}
-    </h4>
-    <div class="card-list">
-      @for (assignment of classAssignment.assignments; track assignment) {
-        <div class="card">
-          <h5 class="card-title">
-            <img src="assets/icons/{{assignment.headerIcon}}" alt="">
-            {{assignment.headerText}}
-          </h5>
-          <ul class="card-body">
-            @for (action of assignment.actions; track action) {
-              <li>
-                <div class="caster">
-                  @if (typeof action.caster === 'object') {
-                    <app-character-tile [character]="getCaster(action)"></app-character-tile>
-                  } @else if (typeof action.caster === 'string') {
-                    <span>{{action.caster}}</span>
-                  } @else {
-                    <span class="empty">-</span>
-                  }
-                </div>
-                <div class="target">
-                  @if (typeof action.target === 'string') {
-                    <span>
+<button (click)="copyMrtNoteToBuffer()" type="button">MRT Note Export</button>
+<section>
+  @for (key of (keys); track key) {
+    @let classAssignment = assignments[key];
+    <article>
+      <h4>
+        <img src="assets/icons/{{classAssignment.headerIcon}}" alt="">
+        {{ classAssignment.headerText }}
+      </h4>
+      <div class="card-list">
+        @for (assignment of classAssignment.assignments; track assignment) {
+          <div class="card">
+            <h5 class="card-title">
+              <img src="assets/icons/{{assignment.headerIcon}}" alt="">
+              {{assignment.headerText}}
+            </h5>
+            <ul class="card-body">
+              @for (action of assignment.actions; track action) {
+                <li>
+                  <div class="caster">
+                    @if (typeof action.caster === 'object') {
+                      <app-character-tile [character]="getCaster(action)"></app-character-tile>
+                    } @else if (typeof action.caster === 'string') {
+                      <span>{{action.caster}}</span>
+                    } @else {
+                      <span class="empty">-</span>
+                    }
+                  </div>
+                  <div class="target">
+                    @if (typeof action.target === 'string') {
+                      <span>
                     @if (action.icon) {
                       <img src="assets/icons/{{action.icon}}" alt="">
                     }
-                      {{action.target}}
+                        {{action.target}}
                   </span>
-                  } @else {
-                    <app-character-tile [character]="getTarget(action)"></app-character-tile>
-                  }
-                </div>
-              </li>
-            }
-          </ul>
-        </div>
-      } @empty {
-        <p>No assignments found</p>
-      }
-    </div>
-  </article>
-}
+                    } @else {
+                      <app-character-tile [character]="getTarget(action)"></app-character-tile>
+                    }
+                  </div>
+                </li>
+              }
+            </ul>
+          </div>
+        } @empty {
+          <p>No assignments found</p>
+        }
+      </div>
+    </article>
+  }
+</section>

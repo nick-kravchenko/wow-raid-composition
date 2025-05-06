@@ -4,7 +4,7 @@ import { Character } from '../../_entities/character';
 import { CharacterRole } from '../../_entities/character-role.enum';
 import { CharacterRank } from '../../_entities/character-rank.enum';
 import { CharacterTileComponent } from '../character-tile/character-tile.component';
-import {NgForOf, NgIf} from '@angular/common';
+import { NgForOf, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-raid-tile',

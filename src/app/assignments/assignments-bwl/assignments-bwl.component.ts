@@ -99,6 +99,53 @@ export class AssignmentsBwlComponent implements OnInit {
     }
   };
 
+  get mrtNote() {
+    let note = '';
+    note += 'Razorgore\n';
+    const tankNames = [
+      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank).map((tank: Character) => tank.name),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank).map((tank: Character) => tank.name),
+    ];
+    note += `{!p:${tankNames.join(',')}}{g1357}Stay on Vaelastrasz side{/g}{/p}`;
+    note += `{!p:${tankNames.join(',')}}{g2468}Stay on Entrance side{/g}{/p}`;
+    note += `{p:${tankNames[0]},${tankNames[2]}}Stay on Vaelastrasz side{/p}`;
+    note += `{p:${tankNames[1]},${tankNames[3]}}Stay on Entrance side{/p}\n`;
+    note += '{c:Warrior}DONT WASTE CDs ON BOSS{/c}\n';
+    note += '\n';
+    note += 'Vaelastrasz\n';
+    const vaelastraszPala = this.assignments.vaelastraszAssignments.assignments[1].actions[0].caster as Character;
+    note += `${vaelastraszPala.name} - {spell:633} Lay on Hands\n`;
+    note += '\n';
+    note += 'Dragon Packs\n';
+    note += `1 - {spell:1161} ${tankNames[1]}\n`;
+    note += `2 - {spell:1161} ${tankNames[2]}\n`;
+    note += `3 - {spell:1161} Kravà\n`;
+    note += '\n';
+    note += 'Broodlord\n';
+    const broodlordPala = this.assignments.broodlordAssignments.assignments[1].actions[0].caster as Character;
+    note += `${broodlordPala.name} - {spell:633} Lay on Hands\n`;
+    note += '\n';
+    note += 'Chromaggus\n';
+    const chromagguseDispellers = this.assignments.chromaggusAssignments.assignments[2].actions;
+    const chromaggusMelee = chromagguseDispellers.filter((action: AssignmentAction) => {
+      return action.target === 'Melee';
+    }).map((action: AssignmentAction) => {
+      return action.caster as Character;
+    });
+    const chromaggusRanged = chromagguseDispellers.filter((action: AssignmentAction) => {
+      return action.target === 'Ranged';
+    }).map((action: AssignmentAction) => {
+      return action.caster as Character;
+    });
+    for (let i = 0; i < chromaggusMelee.length; i++) {
+      note += `${chromaggusMelee[i].name} - Melee\n`;
+    }
+    for (let i = 0; i < chromaggusRanged.length; i++) {
+      note += `${chromaggusRanged[i].name} - Ranged\n`;
+    }
+    return note;
+  }
+
   ngOnInit() {
     this.fillAssignments();
   }
@@ -406,5 +453,9 @@ export class AssignmentsBwlComponent implements OnInit {
         icon: undefined,
       });
     }
+  }
+
+  copyMrtNoteToBuffer() {
+    navigator.clipboard.writeText(this.mrtNote);
   }
 }
