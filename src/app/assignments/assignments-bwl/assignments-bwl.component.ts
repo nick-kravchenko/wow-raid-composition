@@ -127,7 +127,6 @@ export class AssignmentsBwlComponent implements OnInit {
   }
 
   fillRazorgoreAssignments() {
-    const numberOfGroups = 8;
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
@@ -177,7 +176,7 @@ export class AssignmentsBwlComponent implements OnInit {
       actions: [],
     });
     this.assignments[AssignmentType.vaelastraszAssignments].assignments[0].actions.push({
-      caster: tanks[1],
+      caster: tanks[0],
       target: `Tank`,
       icon: undefined,
     });
