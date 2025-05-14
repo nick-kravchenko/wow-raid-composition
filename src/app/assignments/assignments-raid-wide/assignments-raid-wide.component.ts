@@ -269,14 +269,24 @@ export class AssignmentsRaidWideComponent implements OnInit {
       headerText: `Sleep`,
       actions: [],
     });
-    for (let i = 0; i < raidGroupsQty; i++) {
-      let groupDruid = this.getCharacterWithClassGroupAndRole(i, CharacterClass.druid, CharacterRole.healer);
-      let druid: Character = groupDruid || (i > 0 ? druidHealers[druidHealers.length - 1] : druidHealers[0]);
-      this.assignments.druidsAssignments.assignments[0].actions.push({
-        caster: druid,
-        target: `Group ${i + 1}`,
-        icon: this.iconEnum.motw,
-      });
+    const groupsPerDruid = Math.floor(raidGroupsQty / druidHealers.length);
+    let extraGroups = raidGroupsQty % druidHealers.length;
+
+    let currentGroup = 1;
+
+    for (let i = 0; i < druidHealers.length; i++) {
+      const druid = druidHealers[i];
+      let assignedGroups = groupsPerDruid + (extraGroups > 0 ? 1 : 0);
+      if (extraGroups > 0) extraGroups--;
+
+      for (let j = 0; j < assignedGroups; j++) {
+        this.assignments.druidsAssignments.assignments[0].actions.push({
+          caster: druid,
+          target: `Group ${currentGroup}`,
+          icon: this.iconEnum.motw
+        });
+        currentGroup++;
+      }
     }
     for (let i = 0; i < marksToSleep.length; i++) {
       const druids = [...druidHealers];
