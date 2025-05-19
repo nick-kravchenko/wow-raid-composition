@@ -634,8 +634,8 @@ export const players: Player[] = [
         name: 'Remedyforyou',
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.tank,
-        class: CharacterClass.warrior,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
       }
     ]
   },
@@ -646,7 +646,7 @@ export const players: Player[] = [
         name: 'Davyjonespwnz',
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.tank,
+        role: CharacterRole.melee,
         class: CharacterClass.warrior,
       }
     ]
