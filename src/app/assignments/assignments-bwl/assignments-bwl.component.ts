@@ -440,7 +440,7 @@ export class AssignmentsBwlComponent implements OnInit {
       headerIcon: IconEnum.decurse,
       headerText: 'Decurse',
       actions: [{
-        caster: this.raid.find((character: Character) => character.name === 'Bobchix'),
+        caster: this.raid.find((character: Character) => character.name === 'Lasunya'),
         target: `Backup decurse`,
         icon: IconEnum.decurse,
       }],

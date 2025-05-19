@@ -394,7 +394,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer),
       ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer),
     ];
-    const mageTank = this.raid.find((character: Character) => character?.name === 'Bobchix') as Character;
+    const mageTank = this.raid.find((character: Character) => character?.name === 'Lasunya') as Character;
     const furyTank = this.raid.find((character: Character) => character?.name === 'Crab') as Character;
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     const marksToTank = [
