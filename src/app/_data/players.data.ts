@@ -282,7 +282,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
-      }
+      },
+      {
+        name: 'Begleitpanze',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      },
     ]
   },
   {
