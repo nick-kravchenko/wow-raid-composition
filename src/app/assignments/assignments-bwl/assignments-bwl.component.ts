@@ -119,7 +119,7 @@ export class AssignmentsBwlComponent implements OnInit {
     note += 'Dragon Packs\n';
     note += `1 - {spell:1161} ${tankNames[1]}\n`;
     note += `2 - {spell:1161} ${tankNames[2]}\n`;
-    note += `3 - {spell:1161} Kravà\n`;
+    note += `3 - {spell:1161} Crab\n`;
     note += '\n';
     note += 'Broodlord\n';
     const broodlordPala = this.assignments.broodlordAssignments.assignments[1].actions[0].caster as Character;
