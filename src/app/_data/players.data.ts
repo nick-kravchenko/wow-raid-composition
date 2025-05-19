@@ -816,6 +816,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Brisingrr',
+    characters: [
+      {
+        name: 'Brisingrr',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      },
+    ]
+  },
+  {
     name: 'Chaklun',
     characters: [
       {
