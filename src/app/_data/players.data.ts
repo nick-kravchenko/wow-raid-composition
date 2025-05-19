@@ -293,6 +293,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Zepharion',
+    characters: [
+      {
+        name: 'Zepharion',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
+    ]
+  },
+  {
     name: 'Ipanda',
     characters: [
       {
