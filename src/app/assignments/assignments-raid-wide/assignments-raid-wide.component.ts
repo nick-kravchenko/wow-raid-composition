@@ -236,13 +236,25 @@ export class AssignmentsRaidWideComponent implements OnInit {
       headerText: `Buffs | Decurse`,
       actions: [],
     });
-    for (let i = 0; i < raidGroupsQty; i++) {
-      const mage = mages[i] || mages[mages.length - 1];
-      this.assignments.magesAssignments.assignments[0].actions.push({
-        caster: mage,
-        target: `Group ${i + 1}`,
-        icon: this.iconEnum.intellect,
-      });
+
+    const groupsPerMage = Math.floor(raidGroupsQty / mages.length);
+    let extraGroups = raidGroupsQty % mages.length;
+
+    let currentGroup = 1;
+
+    for (let i = 0; i < mages.length; i++) {
+      const mage = mages[i];
+      let assignedGroups = groupsPerMage + (extraGroups > 0 ? 1 : 0);
+      if (extraGroups > 0) extraGroups--;
+
+      for (let j = 0; j < assignedGroups; j++) {
+        this.assignments.magesAssignments.assignments[0].actions.push({
+          caster: mage,
+          target: `Group ${currentGroup}`,
+          icon: this.iconEnum.intellect
+        });
+        currentGroup++;
+      }
     }
   }
 
