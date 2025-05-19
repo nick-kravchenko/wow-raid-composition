@@ -647,6 +647,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Evemode',
+    characters: [
+      {
+        name: 'Evemode',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      },
+    ]
+  },
+  {
     name: 'Letifer',
     characters: [
       {
