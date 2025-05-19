@@ -628,6 +628,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Remedyforyou',
+    characters: [
+      {
+        name: 'Remedyforyou',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.tank,
+        class: CharacterClass.warrior,
+      }
+    ]
+  },
+  {
     name: 'Lucîs',
     characters: [
       {
