@@ -11,6 +11,15 @@
     <button title="AQ40 assignments" (click)="togglePane(i, PaneNameEnum.Aq40)" [class.active]="isPaneVisible(i, PaneNameEnum.Aq40)" type="button" disabled>
       <img [src]="getPaneIcon(PaneNameEnum.Aq40)" alt="">
     </button>
+    <button title="Naxxramas assignments" (click)="togglePane(i, PaneNameEnum.Naxxramas)" [class.active]="isPaneVisible(i, PaneNameEnum.Naxxramas)" type="button" disabled>
+      <img [src]="getPaneIcon(PaneNameEnum.Naxxramas)" alt="">
+    </button>
+    <button title="Magtheridon assignments" (click)="togglePane(i, PaneNameEnum.Magtheridon)" [class.active]="isPaneVisible(i, PaneNameEnum.Magtheridon)" type="button" disabled>
+      <img [src]="getPaneIcon(PaneNameEnum.Magtheridon)" alt="">
+    </button>
+    <button title="SscTk assignments" (click)="togglePane(i, PaneNameEnum.SscTk)" [class.active]="isPaneVisible(i, PaneNameEnum.SscTk)" type="button" disabled>
+      <img [src]="getPaneIcon(PaneNameEnum.SscTk)" alt="">
+    </button>
   </nav>
 
   <app-assignments-raid-wide *ngIf="isPaneVisible(i, PaneNameEnum.RaidWide)" [raid]="raid"></app-assignments-raid-wide>

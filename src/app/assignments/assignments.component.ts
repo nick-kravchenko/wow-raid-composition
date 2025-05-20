@@ -12,6 +12,9 @@ enum PaneNameEnum {
   RaidWide = 'raid-wide',
   Bwl = 'bwl',
   Aq40 = 'aq40',
+  Naxxramas = 'naxxramas',
+  Magtheridon = 'magtheridon',
+  SscTk = 'ssc-tk',
 }
 
 @Component({
@@ -50,6 +53,9 @@ export class AssignmentsComponent implements OnInit {
       [PaneNameEnum.RaidWide]: 'inv_crown_02.jpg',
       [PaneNameEnum.Bwl]: 'raids-blackwing-lair.webp',
       [PaneNameEnum.Aq40]: 'raids-ahnqiraj.webp',
+      [PaneNameEnum.Naxxramas]: 'raids-naxxramas.webp',
+      [PaneNameEnum.Magtheridon]: 'raids-magtheridon.webp',
+      [PaneNameEnum.SscTk]: 'raids-ssc-tk.webp',
     };
     return `assets/icons/${icons[pane as PaneNameEnum]}`;
   }
