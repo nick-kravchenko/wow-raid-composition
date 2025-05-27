@@ -155,13 +155,6 @@ export const players: Player[] = [
         class: CharacterClass.warrior,
       },
       {
-        name: 'Fearwardenko',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-      {
         name: 'Arenko',
         level: 60,
         rank: CharacterRank.alt,
@@ -199,6 +192,42 @@ export const players: Player[] = [
     characters: [
       {
         name: 'Ryzha',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      }
+    ]
+  },
+  {
+    name: 'Meister',
+    characters: [
+      {
+        name: 'Méister',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      }
+    ]
+  },
+  {
+    name: 'Mordovin',
+    characters: [
+      {
+        name: 'Mordovin',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      }
+    ]
+  },
+  {
+    name: 'Evemode',
+    characters: [
+      {
+        name: 'Evemode',
         level: 60,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
