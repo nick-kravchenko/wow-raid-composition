@@ -231,6 +231,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Elmor',
+    characters: [
+      {
+        name: 'Elmor',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+      },
+    ]
+  },
+  {
     name: 'Arhon',
     characters: [
       {
