@@ -599,6 +599,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Badford',
+    characters: [
+      {
+        name: 'Badford',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+      },
+    ]
+  },
+  {
     name: 'Lasunya',
     characters: [
       {
