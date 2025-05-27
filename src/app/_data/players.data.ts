@@ -664,6 +664,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Teplovizor',
+    characters: [
+      {
+        name: 'Teplovizor',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+      }
+    ]
+  },
+  {
     name: 'Grinchua',
     characters: [
       {
