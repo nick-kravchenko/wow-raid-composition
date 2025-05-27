@@ -267,6 +267,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Tankopotamus',
+    characters: [
+      {
+        name: 'Tankopotamus',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+      },
+    ]
+  },
+  {
     name: 'Shudomaf',
     characters: [
       {
@@ -285,7 +297,7 @@ export const players: Player[] = [
         name: 'Elmor',
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
+        role: CharacterRole.tank,
         class: CharacterClass.warrior,
       },
     ]
@@ -825,7 +837,7 @@ export const players: Player[] = [
         name: 'Shømpel',
         level: 60,
         rank: CharacterRank.alt,
-        role: CharacterRole.melee,
+        role: CharacterRole.tank,
         class: CharacterClass.warrior,
       },
     ]
