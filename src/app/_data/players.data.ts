@@ -41,7 +41,7 @@ export const players: Player[] = [
         class: CharacterClass.mage,
       },
       {
-        name: 'Heldana',
+        name: 'Hildana',
         level: 60,
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
