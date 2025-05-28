@@ -440,7 +440,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
-      }
+      },
+      {
+        name: 'Badtripxl',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+      },
     ]
   },
   {
