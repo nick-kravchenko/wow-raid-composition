@@ -26,6 +26,7 @@ enum AssignmentType {
   paladinsAssignments = 'paladinsAssignments',
   huntersAssignments = 'huntersAssignments',
   tanksHealersHuntersAssignments = 'tanksHealersHuntersAssignments',
+  rogueAssignments = 'rogueAssignments',
 }
 
 interface ClassAssignment {
@@ -83,6 +84,11 @@ export class AssignmentsRaidWideComponent implements OnInit {
       headerText: 'Tanks/Heals',
       assignments: [],
     },
+    [AssignmentType.rogueAssignments]: {
+      headerIcon: IconEnum.rogue,
+      headerText: 'Rogues',
+      assignments: []
+    },
   };
   iconEnum: typeof IconEnum = IconEnum;
 
@@ -115,6 +121,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
     this.fillPaladinAssignments();
     this.fillHuntersAssignments();
     this.fillTankHealerAssignments();
+    this.fillRogueAssignments();
   }
 
   fillPriestAssignments() {
@@ -396,7 +403,6 @@ export class AssignmentsRaidWideComponent implements OnInit {
     ];
     const mageTank = this.raid.find((character: Character) => character?.name === 'Manorikaa') as Character;
     const furyTank = this.raid.find((character: Character) => character?.name === 'Crab') as Character;
-    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     const marksToTank = [
       {
         icon: this.iconEnum.skull,
@@ -478,5 +484,27 @@ export class AssignmentsRaidWideComponent implements OnInit {
       target: mageTank,
       icon: this.iconEnum.holyLight,
     });
+  }
+
+  fillRogueAssignments() {
+    const rogues = this.getCharactersByClassAndRole(CharacterClass.rogue, CharacterRole.melee);
+    this.assignments.rogueAssignments.assignments[0] = {
+      headerIcon: 'spell_shadow_grimward.jpg',
+      headerText: 'Disarm Traps',
+      actions: [],
+    };
+    const positions = [
+      'In front of the raid',
+      'Inside the raid',
+      'Behind the raid',
+    ];
+    for (let i = 0; i < positions.length; i++) {
+      const rogue = rogues[i];
+      this.assignments.rogueAssignments.assignments[0].actions.push({
+        caster: rogue || '-',
+        target: positions[i],
+        icon: 'spell_shadow_grimward.jpg',
+      });
+    }
   }
 }
