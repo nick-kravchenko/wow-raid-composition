@@ -337,7 +337,14 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
-      }
+      },
+      {
+        name: 'Lunastrasza',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.druid,
+      },
     ]
   },
   {
