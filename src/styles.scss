@@ -1,8 +1,8 @@
-@import "colors";
-@import "class-colors";
-@import "assets/fontawesome/scss/fontawesome";
-@import "assets/fontawesome/scss/solid";
-@import "assets/fontawesome/scss/brands";
+@use "colors";
+@use "class-colors";
+@use "assets/fontawesome/scss/fontawesome";
+@use "assets/fontawesome/scss/solid";
+@use "assets/fontawesome/scss/brands";
 
 /* You can add global styles to this file, and also import other style files */
 body {
@@ -24,7 +24,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $silver-steel;
+    background-color: colors.$silver-steel;
     height: .5em;
     border-radius: .25em;
   }
@@ -45,15 +45,15 @@ img {
   position: relative;
   width: 24px;
   height: 16px;
-  border: 1px solid $regal-gold;
+  border: 1px solid colors.$regal-gold;
   border-radius: 2px;
-  background-color: $deep-space;
+  background-color: colors.$deep-space;
   will-change: border-color, background-color;
   transition: .2s border-color, .2s background-color;
   &:before {
     content: '';
     display: block;
-    border: 1px solid $regal-gold;
+    border: 1px solid colors.$regal-gold;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -61,7 +61,7 @@ img {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-    background: radial-gradient($regal-gold 0%, $regal-gold 40%, transparent 40%, transparent 100%);
+    background: radial-gradient(colors.$regal-gold 0%, colors.$regal-gold 40%, transparent 40%, transparent 100%);
     will-change: border-color, width, height;
     transition: .2s border-color, .2s width, .2s height;
   }
@@ -72,10 +72,10 @@ img {
     bottom: 100%;
     left: 50%;
     transform: translate(-50%, 0);
-    background: $deep-space;
+    background: colors.$deep-space;
     width: 8px;
     height: 3px;
-    border: 1px solid $regal-gold;
+    border: 1px solid colors.$regal-gold;
     border-bottom: none;
     border-radius: 2px 2px 0 0;
     will-change: opacity;

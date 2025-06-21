@@ -1,6 +1,6 @@
-@import "colors";
+@use "colors";
 
-@each $name, $color in $classcolors {
+@each $name, $color in colors.$classcolors {
   .bg-#{$name} {
     background-color: $color;
   }
