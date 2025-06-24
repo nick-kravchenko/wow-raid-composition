@@ -648,7 +648,19 @@ export const players: Player[] = [
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
       },
-    ]
+    ],
+  },
+  {
+    name: 'Yokibib',
+    characters: [
+      {
+        name: 'Yokibib',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+      },
+    ],
   },
   {
     name: 'Zoloto',
