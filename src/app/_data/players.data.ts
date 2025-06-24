@@ -592,11 +592,11 @@ export const players: Player[] = [
         class: CharacterClass.mage,
       },
       {
-        name: 'Luckypala',
+        name: 'Crazypups',
         level: 60,
         rank: CharacterRank.alt,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
       },
     ]
   },
