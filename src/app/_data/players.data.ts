@@ -1055,11 +1055,11 @@ export const players: Player[] = [
         class: CharacterClass.mage,
       },
       {
-        name: 'Glonya',
+        name: 'Gofman',
         level: 60,
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
-        class: CharacterClass.rogue,
+        class: CharacterClass.warrior,
       }
     ]
   },
