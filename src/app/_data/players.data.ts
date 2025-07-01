@@ -663,6 +663,30 @@ export const players: Player[] = [
     ],
   },
   {
+    name: 'Dtmon',
+    characters: [
+      {
+        name: 'Dtmon',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
+      },
+    ],
+  },
+  {
+    name: 'Pøsipaka',
+    characters: [
+      {
+        name: 'Pøsipaka',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
+      },
+    ],
+  },
+  {
     name: 'Zoloto',
     characters: [
       {
