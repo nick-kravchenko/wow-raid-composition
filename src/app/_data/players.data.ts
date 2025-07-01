@@ -651,14 +651,14 @@ export const players: Player[] = [
     ],
   },
   {
-    name: 'Yokibib',
+    name: 'Nomadx',
     characters: [
       {
-        name: 'Yokibib',
+        name: 'Nomadx',
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
       },
     ],
   },
