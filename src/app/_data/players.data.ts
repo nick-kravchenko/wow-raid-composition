@@ -1083,7 +1083,7 @@ export const players: Player[] = [
       {
         name: 'Truegymx',
         level: 60,
-        rank: CharacterRank.main,
+        rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
       },
