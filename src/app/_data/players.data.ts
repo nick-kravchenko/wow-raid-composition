@@ -973,6 +973,13 @@ export const players: Player[] = [
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
       },
+      {
+        name: 'Manoriky',
+        level: 60,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      },
     ]
   },
   {
