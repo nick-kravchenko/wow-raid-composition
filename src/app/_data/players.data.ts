@@ -298,6 +298,18 @@ export const players: Player[] = [
     ]
   },
   {
+    name: 'Tobipizda',
+    characters: [
+      {
+        name: 'Tobipizda',
+        level: 60,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
+      },
+    ]
+  },
+  {
     name: 'Elmor',
     characters: [
       {
