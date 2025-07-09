@@ -249,14 +249,14 @@ export const players: Player[] = [
         name: 'Kravà',
         level: 60,
         rank: CharacterRank.main,
-        role: CharacterRole.tank,
+        role: CharacterRole.melee,
         class: CharacterClass.warrior,
       },
       {
         name: 'Kràvà',
         level: 60,
         rank: CharacterRank.alt,
-        role: CharacterRole.tank,
+        role: CharacterRole.melee,
         class: CharacterClass.warrior,
       },
     ]
