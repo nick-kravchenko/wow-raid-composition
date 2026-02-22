@@ -23,6 +23,7 @@ export class CharacterTileComponent {
     Warlock: 'class_warlock.jpg',
     Mage: 'class_mage.jpg',
     Priest: 'class_priest.jpg',
+    Shaman: 'class_shaman.jpg',
   };
 
   iconsSpecs: { [key: string]: string } = {
@@ -44,6 +45,9 @@ export class CharacterTileComponent {
     Mage_Healer: 'inv_enchant_essencenethersmall.jpg',
     Priest_Ranged: 'spell_shadow_shadowwordpain.jpg',
     Priest_Healer: 'spell_holy_guardianspirit.jpg',
+    Shaman_Melee: 'spell_nature_lightningshield.jpg',
+    Shaman_Ranged: 'spell_nature_lightning.jpg',
+    Shaman_Healer: 'spell_nature_magicimmunity.jpg',
   };
 
   toggleRole(event: MouseEvent): void {

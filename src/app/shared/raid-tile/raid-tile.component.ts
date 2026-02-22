@@ -18,7 +18,7 @@ import { NgForOf, NgIf } from '@angular/common';
 })
 export class RaidTileComponent implements OnInit {
   @Input() title = 'Raid #';
-  @Input() raid: any[] = new Array(40);
+  @Input() raid: any[] = new Array(25);
   @Input() hideControls: boolean = false;
   @Output() onSlotClick: EventEmitter<number> = new EventEmitter();
   @Output() onDragOver: EventEmitter<number> = new EventEmitter();

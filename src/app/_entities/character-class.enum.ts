@@ -7,4 +7,5 @@ export enum CharacterClass {
   warlock = 'Warlock',
   mage = 'Mage',
   priest = 'Priest',
+  shaman = 'Shaman',
 }

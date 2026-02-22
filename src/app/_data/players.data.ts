@@ -1,244 +1,30 @@
-import { CharacterRank } from '../_entities/character-rank.enum';
-import { Player } from '../_entities/player';
-import { CharacterRole } from '../_entities/character-role.enum';
-import { CharacterClass } from '../_entities/character-class.enum';
+import {CharacterRank} from '../_entities/character-rank.enum';
+import {Player} from '../_entities/player';
+import {CharacterRole} from '../_entities/character-role.enum';
+import {CharacterClass} from '../_entities/character-class.enum';
 
 export const players: Player[] = [
   {
-    name: 'Emaru',
+    name: 'Lazykit',
     characters: [
       {
-        name: 'Emaru',
-        level: 60,
+        name: 'Lazykit',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+      }
+    ]
+  },
+  {
+    name: 'Palayoshka',
+    characters: [
+      {
+        name: 'Palayoshka',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.paladin,
-      },
-      {
-        name: 'Pazak',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ]
-  },
-  {
-    name: 'Ferain',
-    characters: [
-      {
-        name: 'Ferain',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      },
-      {
-        name: 'Viragosa',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Hildana',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Lloydaustin',
-    characters: [
-      {
-        name: 'Lloydaustin',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.tank,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Beshketnik',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      }
-    ]
-  },
-  {
-    name: 'Zloymage',
-    characters: [
-      {
-        name: 'Zloymage',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Zloymag',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-    ]
-  },
-  {
-    name: 'Soltyx',
-    characters: [
-      {
-        name: 'Soltyx',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-      {
-        name: 'Soltyxmage',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Soltyxx',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-    ]
-  },
-  {
-    name: 'Xtdeigh',
-    characters: [
-      {
-        name: 'Xtdeigh',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-      {
-        name: 'Intensive',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-      },
-    ]
-  },
-  {
-    name: 'Arikiell',
-    characters: [
-      {
-        name: 'Arikiell',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-    ]
-  },
-  {
-    name: 'Tony',
-    characters: [
-      {
-        name: 'Tonyfury',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Arenko',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ]
-  },
-  {
-    name: 'Merrigold',
-    characters: [
-      {
-        name: 'Merrigold',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      }
-    ]
-  },
-  {
-    name: 'Faniges',
-    characters: [
-      {
-        name: 'Faniges',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-      {
-        name: 'Artyomhentai',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ]
-  },
-  {
-    name: 'Demobee',
-    characters: [
-      {
-        name: 'Demobee',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-    ]
-  },
-  {
-    name: 'Ryzha🍒',
-    characters: [
-      {
-        name: 'Ryzha',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      }
-    ]
-  },
-  {
-    name: 'Meister',
-    characters: [
-      {
-        name: 'Méister',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      }
-    ]
-  },
-  {
-    name: 'Mordovin',
-    characters: [
-      {
-        name: 'Mordovin',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
       }
     ]
   },
@@ -246,202 +32,239 @@ export const players: Player[] = [
     name: 'Krava',
     characters: [
       {
-        name: 'Kravà',
-        level: 60,
+        name: 'Krava',
+        level: 70,
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Kràvà',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      }
     ]
   },
   {
-    name: 'Barabanshik',
+    name: 'Cambells',
     characters: [
       {
-        name: 'Barabanshik',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Tankopotamus',
-    characters: [
-      {
-        name: 'Tankopotamus',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Shudomaf',
-    characters: [
-      {
-        name: 'Shudowar',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Tobipizda',
-    characters: [
-      {
-        name: 'Tobipizda',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ]
-  },
-  {
-    name: 'Elmor',
-    characters: [
-      {
-        name: 'Elmor',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.tank,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Arhon',
-    characters: [
-      {
-        name: 'Arhon',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Arhona',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      },
-    ]
-  },
-  {
-    name: 'Lèxy',
-    characters: [
-      {
-        name: 'Lèxy',
-        level: 60,
+        name: 'Cambells',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
-      },
+      }
+    ]
+  },
+  {
+    name: 'Bawowna',
+    characters: [
       {
-        name: 'Lunastrasza',
-        level: 60,
-        rank: CharacterRank.alt,
+        name: 'Bawowna',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      }
+    ]
+  },
+  {
+    name: 'Dubasow',
+    characters: [
+      {
+        name: 'Dubasow',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      }
+    ]
+  },
+  {
+    name: 'Lansena',
+    characters: [
+      {
+        name: 'Lansena',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      }
+    ]
+  },
+  {
+    name: 'Edgelord',
+    characters: [
+      {
+        name: 'Edgelord',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      }
+    ]
+  },
+  {
+    name: 'Brokentoy',
+    characters: [
+      {
+        name: 'Brokentoy',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+      }
+    ]
+  },
+  {
+    name: 'Entim',
+    characters: [
+      {
+        name: 'Entim',
+        level: 70,
+        rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
-      },
-    ]
-  },
-  {
-    name: 'Bazhenaa',
-    characters: [
-      {
-        name: 'Bazhenaa',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
       }
     ]
   },
   {
-    name: 'Vavaviva',
+    name: 'Chaiser',
     characters: [
       {
-        name: 'Vavaviva',
-        level: 60,
+        name: 'Chaiser',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+      }
+    ]
+  },
+  {
+    name: 'Legalise',
+    characters: [
+      {
+        name: 'Legalise',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
+        class: CharacterClass.hunter,
+      }
+    ]
+  },
+  {
+    name: 'Zbochenka',
+    characters: [
       {
-        name: 'Begleitpanze',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.healer,
+        name: 'Zbochenka',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.druid,
+      }
+    ]
+  },
+  {
+    name: 'Strike',
+    characters: [
+      {
+        name: 'Hellpapa',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      }
+    ]
+  },
+  {
+    name: 'Saigha',
+    characters: [
+      {
+        name: 'Saigha',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      }
+    ]
+  },
+  {
+    name: 'Swotch',
+    characters: [
+      {
+        name: 'Swotch',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      }
+    ]
+  },
+  {
+    name: 'Art',
+    characters: [
+      {
+        name: 'Art',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
         class: CharacterClass.paladin,
-      },
-    ]
-  },
-  {
-    name: 'Zepharion',
-    characters: [
-      {
-        name: 'Zepharion',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-    ]
-  },
-  {
-    name: 'Ipanda',
-    characters: [
-      {
-        name: 'Ipanda',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
       }
     ]
   },
   {
-    name: 'Rozmarin',
+    name: 'Wlnumberone',
     characters: [
       {
-        name: 'Rozmarin',
-        level: 60,
+        name: 'Wlnumberone',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      }
+    ]
+  },
+  {
+    name: 'Lloydaustin',
+    characters: [
+      {
+        name: 'Lloydaustin',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      },
-      {
-        name: 'Rozmarln',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ],
+      }
+    ]
   },
   {
-    name: 'Dbill',
+    name: 'Zulnani',
     characters: [
       {
-        name: 'Dbill',
-        level: 60,
+        name: 'Zulnani',
+        level: 70,
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+      }
+    ]
+  },
+  {
+    name: 'Amorales',
+    characters: [
+      {
+        name: 'Amorales',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+      }
+    ]
+  },
+  {
+    name: 'Greenbeam',
+    characters: [
+      {
+        name: 'Greenbeam',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
       }
     ]
   },
@@ -450,7 +273,7 @@ export const players: Player[] = [
     characters: [
       {
         name: 'Biruang',
-        level: 60,
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
@@ -458,85 +281,23 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Goodtimeqt',
+    name: 'Antrail',
     characters: [
       {
-        name: 'Goodtimeqt',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-      {
-        name: 'Badtripxl',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Nòmi',
-    characters: [
-      {
-        name: 'Nòmi',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      }
-    ]
-  },
-  {
-    name: 'Paganel',
-    characters: [
-      {
-        name: 'Paganel',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-      {
-        name: 'Drakedoc',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-    ]
-  },
-  {
-    name: 'Vindsval',
-    characters: [
-      {
-        name: 'Vindsval',
-        level: 60,
+        name: 'Antrail',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.healer,
-        class: CharacterClass.priest,
+        class: CharacterClass.shaman,
       }
     ]
   },
   {
-    name: 'Serjoo',
+    name: 'Renko',
     characters: [
       {
-        name: 'Serjoo',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      }
-    ]
-  },
-  {
-    name: 'Bawovna',
-    characters: [
-      {
-        name: 'Bawovna',
-        level: 60,
+        name: 'Renko',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
@@ -544,352 +305,15 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Crab',
+    name: 'puppit',
     characters: [
       {
-        name: 'Crab',
-        level: 60,
+        name: 'puppit',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Ichimi',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-    ]
-  },
-  {
-    name: 'Nahaba',
-    characters: [
-      {
-        name: 'Nahaba',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      }
-    ]
-  },
-  {
-    name: 'Balabesussi',
-    characters: [
-      {
-        name: 'Balabesussi',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      }
-    ]
-  },
-  {
-    name: 'Luckyrock',
-    characters: [
-      {
-        name: 'Luckyrock',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-      {
-        name: 'Nolucky',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Crazypups',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ]
-  },
-  {
-    name: 'Lego',
-    characters: [
-      {
-        name: 'Legogrizzly',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.tank,
-        class: CharacterClass.druid,
-      },
-      {
-        name: 'Legolambo',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Badford',
-    characters: [
-      {
-        name: 'Badford',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.tank,
-        class: CharacterClass.druid,
-      },
-    ]
-  },
-  {
-    name: 'Lasunya',
-    characters: [
-      {
-        name: 'Lasunya',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Lasunka',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-    ],
-  },
-  {
-    name: 'Nomadx',
-    characters: [
-      {
-        name: 'Nomadx',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ],
-  },
-  {
-    name: 'Dtmon',
-    characters: [
-      {
-        name: 'Dtmon',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ],
-  },
-  {
-    name: 'Pøsipaka',
-    characters: [
-      {
-        name: 'Pøsipaka',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ],
-  },
-  {
-    name: 'Zoloto',
-    characters: [
-      {
-        name: 'Zoloto',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.druid,
-      }
-    ]
-  },
-  {
-    name: 'Milfarion',
-    characters: [
-      {
-        name: 'Milfarion',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.druid,
-      }
-    ]
-  },
-  {
-    name: 'Lightofdawn',
-    characters: [
-      {
-        name: 'Lightofdawn',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      }
-    ]
-  },
-  {
-    name: 'Måssiveatack',
-    characters: [
-      {
-        name: 'Måssiveatack',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
         class: CharacterClass.paladin,
       }
-    ]
-  },
-  {
-    name: 'Manadramma',
-    characters: [
-      {
-        name: 'Manadramma',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      }
-    ]
-  },
-  {
-    name: 'Teplovizor',
-    characters: [
-      {
-        name: 'Teplovizor',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      }
-    ]
-  },
-  {
-    name: 'Grinchua',
-    characters: [
-      {
-        name: 'Grinchua',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      }
-    ]
-  },
-  {
-    name: 'Einefrau',
-    characters: [
-      {
-        name: 'Einefrau',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      }
-    ]
-  },
-  {
-    name: 'Balabesek',
-    characters: [
-      {
-        name: 'Balabesek',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.tank,
-        class: CharacterClass.warrior,
-      }
-    ]
-  },
-  {
-    name: 'Remedyforyou',
-    characters: [
-      {
-        name: 'Remedyforyou',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      }
-    ]
-  },
-  {
-    name: 'Davyjonespwnz',
-    characters: [
-      {
-        name: 'Davyjonespwnz',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      }
-    ]
-  },
-  {
-    name: 'Lucîs',
-    characters: [
-      {
-        name: 'Lucîs',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-      {
-        name: 'Lucispriest',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-    ]
-  },
-  {
-    name: 'Evemode',
-    characters: [
-      {
-        name: 'Evemode',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-    ]
-  },
-  {
-    name: 'Letifer',
-    characters: [
-      {
-        name: 'Letifer',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      }
-    ]
-  },
-  {
-    name: 'Gloryk',
-    characters: [
-      {
-        name: 'Gloryk',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-      {
-        name: 'Glorykwtf',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-      },
     ]
   },
   {
@@ -897,304 +321,31 @@ export const players: Player[] = [
     characters: [
       {
         name: 'Rinn',
-        level: 60,
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.tank,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Rinmage',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-    ]
-  },
-  {
-    name: 'Pentagrams',
-    characters: [
-      {
-        name: 'Pentagrams',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      }
-    ]
-  },
-  {
-    name: 'Vidrochka',
-    characters: [
-      {
-        name: 'Vidrochka',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.priest,
-      },
-      {
-        name: 'Shompel',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Shømpel',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Xaoc',
-    characters: [
-      {
-        name: 'Aao',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-      },
-      {
-        name: 'Xaoc',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-    ]
-  },
-  {
-    name: 'Manorika',
-    characters: [
-      {
-        name: 'Manorikaa',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Renokyy',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Manoriky',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-    ]
-  },
-  {
-    name: 'Oversir',
-    characters: [
-      {
-        name: 'Oversir',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-      },
-      {
-        name: 'Oversîr',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-    ]
-  },
-  {
-    name: 'Strike',
-    characters: [
-      {
-        name: 'Strikex',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Hellpapa',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-      },
-    ]
-  },
-  {
-    name: 'Sodaredead',
-    characters: [
-      {
-        name: 'Sodaredead',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-      },
-      {
-        name: 'Sodare',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-      },
-    ]
-  },
-  {
-    name: 'Brisingrr',
-    characters: [
-      {
-        name: 'Brisingrr',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-      },
-    ]
-  },
-  {
-    name: 'Chaklun',
-    characters: [
-      {
-        name: 'Chaklun',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Gofman',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      }
-    ]
-  },
-  {
-    name: 'Sanya',
-    characters: [
-      {
-        name: 'Sanya',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-      {
-        name: 'Truegymx',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      },
-    ]
-  },
-  {
-    name: 'Aryastark',
-    characters: [
-      {
-        name: 'Aryastark',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.rogue,
-      }
-    ]
-  },
-  {
-    name: 'Bobchix',
-    characters: [
-      {
-        name: 'Bobchïx',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Bobchix',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
-      {
-        name: 'Bobchick',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.tank,
-        class: CharacterClass.druid,
-      },
-    ]
-  },
-  {
-    name: 'Pinpong',
-    characters: [
-      {
-        name: 'Pinpong',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      }
-    ]
-  },
-  {
-    name: 'Anafema',
-    characters: [
-      {
-        name: 'Anafema',
-        level: 60,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-      },
-      {
-        name: 'Anafemap',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.healer,
         class: CharacterClass.paladin,
-      },
+      }
     ]
   },
   {
-    name: 'Watchmeflex',
+    name: 'Akatoshi',
     characters: [
       {
-        name: 'Watchmeflex',
-        level: 60,
+        name: 'Akatoshi',
+        level: 70,
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Pozhezha',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
+        role: CharacterRole.tank,
+        class: CharacterClass.paladin,
+      }
     ]
   },
   {
-    name: 'Tanslocki',
+    name: 'Chortenya',
     characters: [
       {
-        name: 'Tanslocki',
-        level: 60,
+        name: 'Chortenya',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
@@ -1202,33 +353,50 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Olofse',
+    name: 'Ryzha',
     characters: [
       {
-        name: 'Olofse',
-        level: 60,
+        name: 'Ryzha',
+        level: 70,
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-      },
-      {
-        name: 'Fererra',
-        level: 60,
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-      },
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      }
     ]
   },
   {
-    name: 'Ellium',
+    name: 'Alarian',
     characters: [
       {
-        name: 'Ellium',
-        level: 60,
+        name: 'Alarian',
+        level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
+        class: CharacterClass.priest,
+      }
+    ]
+  },
+  {
+    name: 'Anvi',
+    characters: [
+      {
+        name: 'Anvi',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.paladin,
+      }
+    ]
+  },
+  {
+    name: 'Serjioo',
+    characters: [
+      {
+        name: 'Serjioo',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
       }
     ]
   }
