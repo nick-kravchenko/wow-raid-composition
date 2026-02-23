@@ -167,16 +167,9 @@ export class AssignmentsRaidWideComponent implements OnInit {
   fillWarlockAssignments() {
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
     const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
-    const marksToBanish = [
-      {
-        icon: this.iconEnum.triangle,
-        text: 'Triangle',
-      },
-      {
-        icon: this.iconEnum.diamond,
-        text: 'Diamond',
-      },
-    ]
+    const priests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
+    const druids = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
+    const ssTargets = [...paladins, ...priests, ...druids];
 
     this.assignments.warlocksAssignments.assignments.push({
       headerIcon: this.iconEnum.warlock,
@@ -188,16 +181,10 @@ export class AssignmentsRaidWideComponent implements OnInit {
       headerText: `Soulstone`,
       actions: [],
     });
-    this.assignments.warlocksAssignments.assignments.push({
-      headerIcon: this.iconEnum.banish,
-      headerText: `Banish`,
-      actions: [],
-    });
 
     const curses = [
       {icon: this.iconEnum.cor, text: 'CoR'},
       {icon: this.iconEnum.coe, text: 'CoE'},
-      {icon: this.iconEnum.cos, text: 'CoS'},
     ];
 
     for (let i = 0; i < curses.length; i++) {
@@ -209,22 +196,13 @@ export class AssignmentsRaidWideComponent implements OnInit {
       });
     }
 
-    for (let i = 0; i < paladins.length; i++) {
-      const paladin = paladins[i];
+    for (let i = 0; i < ssTargets.length; i++) {
+      const paladin = ssTargets[i];
       const warlock = warlocks[i];
       this.assignments.warlocksAssignments.assignments[1].actions.push({
         caster: warlock,
         target: paladin,
         icon: this.iconEnum.soulStone,
-      });
-    }
-
-    for (let i = 0; i < marksToBanish.length; i++) {
-      const warlock = warlocks[i];
-      this.assignments.warlocksAssignments.assignments[2].actions.push({
-        caster: warlock,
-        target: marksToBanish[i].text,
-        icon: marksToBanish[i].icon,
       });
     }
   }
