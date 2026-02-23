@@ -165,7 +165,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
 
 
   fillWarlockAssignments() {
-    const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
+    const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged).reverse();
     const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     const priests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
     const druids = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
@@ -183,8 +183,8 @@ export class AssignmentsRaidWideComponent implements OnInit {
     });
 
     const curses = [
-      {icon: this.iconEnum.cor, text: 'CoR'},
       {icon: this.iconEnum.coe, text: 'CoE'},
+      {icon: this.iconEnum.cor, text: 'CoR'},
     ];
 
     for (let i = 0; i < curses.length; i++) {
@@ -325,8 +325,8 @@ export class AssignmentsRaidWideComponent implements OnInit {
     ];
 
     this.assignments.huntersAssignments.assignments.push({
-      headerIcon: this.iconEnum.hunter,
-      headerText: `Target to pull`,
+      headerIcon: this.iconEnum.misdirect,
+      headerText: `Misdirect`,
       actions: [],
     });
 

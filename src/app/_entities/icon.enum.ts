@@ -48,6 +48,8 @@ export enum IconEnum {
   demonForm = 'spell_shadow_demonform.jpg',
   blessingOfSacrifice = 'spell_holy_sealofsacrifice.jpg',
   divineIntervention = 'spell_nature_timestop.jpg',
+  healingWave = 'spell_nature_magicimmunity.jpg',
+  misdirect = 'ability_hunter_misdirect.png',
 
   /**
    * Marks

@@ -35,7 +35,6 @@ export class AssignmentsComponent implements OnInit {
   PaneNameEnum = PaneNameEnum;
   players: Player[] = players;
   raids: Character[][] = [];
-  visiblePanes: PaneNameEnum[] = [PaneNameEnum.RaidWide, PaneNameEnum.Bwl, PaneNameEnum.Magtheridon];
   activeTabs: PaneNameEnum[] = [];
 
   constructor(
@@ -56,7 +55,7 @@ export class AssignmentsComponent implements OnInit {
       [PaneNameEnum.Bwl]: 'raids-blackwing-lair.webp',
       [PaneNameEnum.Aq40]: 'raids-ahnqiraj.webp',
       [PaneNameEnum.Naxxramas]: 'raids-naxxramas.webp',
-      [PaneNameEnum.Magtheridon]: 'raids-magtheridon.webp',
+      [PaneNameEnum.Magtheridon]: 'pit-lord.gif',
       [PaneNameEnum.SscTk]: 'raids-ssc-tk.webp',
     };
     return `assets/icons/${icons[pane as PaneNameEnum]}`;
