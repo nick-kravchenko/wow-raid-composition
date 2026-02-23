@@ -7,6 +7,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { players } from '../_data/players.data';
 import {AssignmentsBwlComponent} from './assignments-bwl/assignments-bwl.component';
 import {RaidTileComponent} from '../shared/raid-tile/raid-tile.component';
+import {AssignmentsT4Component} from './assignments-t4/assignments-t4.component';
 
 enum PaneNameEnum {
   RaidWide = 'raid-wide',
@@ -25,6 +26,7 @@ enum PaneNameEnum {
     AssignmentsBwlComponent,
     RaidTileComponent,
     NgIf,
+    AssignmentsT4Component,
   ],
   templateUrl: './assignments.component.html',
   styleUrl: './assignments.component.scss'
@@ -33,7 +35,7 @@ export class AssignmentsComponent implements OnInit {
   PaneNameEnum = PaneNameEnum;
   players: Player[] = players;
   raids: Character[][] = [];
-  visiblePanes: PaneNameEnum[] = [PaneNameEnum.RaidWide, PaneNameEnum.Bwl];
+  visiblePanes: PaneNameEnum[] = [PaneNameEnum.RaidWide, PaneNameEnum.Bwl, PaneNameEnum.Magtheridon];
   activeTabs: PaneNameEnum[] = [];
 
   constructor(
