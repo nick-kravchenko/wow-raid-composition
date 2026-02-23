@@ -394,7 +394,7 @@ export class AssignmentsT4Component implements OnInit {
         },
         {
           caster: hunters[hunters.length - 1],
-          target: `Missdirection into ${tankDruid[0]?.name}`,
+          target: `Missdirect into ${tankDruid[0]?.name}`,
           icon: iconsToClick[1],
         },
         {
@@ -404,7 +404,7 @@ export class AssignmentsT4Component implements OnInit {
         },
         {
           caster: hunters[hunters.length - 2],
-          target: `Missdirection into ${tankDruid[1]?.name}`,
+          target: `Missdirect into ${tankDruid[1]?.name}`,
           icon: iconsToClick[2],
         },
       ],
