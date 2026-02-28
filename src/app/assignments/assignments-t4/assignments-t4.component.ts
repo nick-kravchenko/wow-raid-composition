@@ -388,7 +388,7 @@ export class AssignmentsT4Component implements OnInit {
     const crossMd = hunters.shift();
     const crossActions: AssignmentAction[] = [];
     crossActions.push({ caster: crossTank, target: 'Cross Tank', icon: IconEnum.cross });
-    if (hunters[1]) {
+    if (crossMd) {
       crossActions.push({ caster: crossMd, target: crossTank?.name || 'Cross Tank', icon: IconEnum.misdirect });
     }
     for (let i = 0; i < 4; i++) {
