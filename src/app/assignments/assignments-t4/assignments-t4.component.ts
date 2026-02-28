@@ -18,9 +18,17 @@ interface Assignment {
 }
 
 enum AssignmentType {
-  highKingMaulgarAssignments = 'highKingMaulgarAssignments',
-  gruulTheDragonKillerAssignments = 'gruulTheDragonKillerAssignments',
-  magtheridonAssignments = 'magtheridonAssignments',
+  hkmSkullAssignments,
+  hkmCrossAssignments,
+  hkmSquareAssignments,
+  hkmMoonAssignments,
+  hkmTriangleAssignments,
+  gruulTheDragonKillerAssignments,
+  magtheridonSkullAssignments,
+  magtheridonDiamondAssignments,
+  magtheridonCrossAssignments,
+  magtheridonTriangleAssignments,
+  magtheridonMoonAssignments,
 }
 
 interface ClassAssignment {
@@ -40,16 +48,44 @@ interface ClassAssignment {
 export class AssignmentsT4Component implements OnInit {
   @Input() raid: Character[] = [];
   keys: AssignmentType[] = [
-    AssignmentType.highKingMaulgarAssignments,
+    AssignmentType.hkmSkullAssignments,
+    AssignmentType.hkmCrossAssignments,
+    AssignmentType.hkmSquareAssignments,
+    AssignmentType.hkmMoonAssignments,
+    AssignmentType.hkmTriangleAssignments,
     AssignmentType.gruulTheDragonKillerAssignments,
-    AssignmentType.magtheridonAssignments,
+    AssignmentType.magtheridonSkullAssignments,
+    AssignmentType.magtheridonDiamondAssignments,
+    AssignmentType.magtheridonCrossAssignments,
+    AssignmentType.magtheridonTriangleAssignments,
+    AssignmentType.magtheridonMoonAssignments,
   ];
   assignments: {
     [key in AssignmentType]: ClassAssignment
   } = {
-    [AssignmentType.highKingMaulgarAssignments]: {
+    [AssignmentType.hkmSkullAssignments]: {
       headerIcon: IconEnum.skull,
-      headerText: 'High King Maulgar',
+      headerText: 'Maulgar Skull',
+      assignments: []
+    },
+    [AssignmentType.hkmCrossAssignments]: {
+      headerIcon: IconEnum.cross,
+      headerText: 'Maulgar Cross',
+      assignments: []
+    },
+    [AssignmentType.hkmSquareAssignments]: {
+      headerIcon: IconEnum.square,
+      headerText: 'Maulgar Square',
+      assignments: []
+    },
+    [AssignmentType.hkmMoonAssignments]: {
+      headerIcon: IconEnum.moon,
+      headerText: 'Maulgar Moon',
+      assignments: []
+    },
+    [AssignmentType.hkmTriangleAssignments]: {
+      headerIcon: IconEnum.triangle,
+      headerText: 'Maulgar Triangle',
       assignments: []
     },
     [AssignmentType.gruulTheDragonKillerAssignments]: {
@@ -57,9 +93,29 @@ export class AssignmentsT4Component implements OnInit {
       headerText: 'Gruul the Dragon Killer',
       assignments: []
     },
-    [AssignmentType.magtheridonAssignments]: {
+    [AssignmentType.magtheridonSkullAssignments]: {
       headerIcon: IconEnum.skull,
-      headerText: 'Magtheridon',
+      headerText: 'Magtheridon Skull',
+      assignments: []
+    },
+    [AssignmentType.magtheridonDiamondAssignments]: {
+      headerIcon: IconEnum.diamond,
+      headerText: 'Magtheridon Diamond',
+      assignments: []
+    },
+    [AssignmentType.magtheridonCrossAssignments]: {
+      headerIcon: IconEnum.cross,
+      headerText: 'Magtheridon Cross',
+      assignments: []
+    },
+    [AssignmentType.magtheridonTriangleAssignments]: {
+      headerIcon: IconEnum.triangle,
+      headerText: 'Magtheridon Triangle',
+      assignments: []
+    },
+    [AssignmentType.magtheridonMoonAssignments]: {
+      headerIcon: IconEnum.moon,
+      headerText: 'Magtheridon Moon',
       assignments: []
     },
   };
@@ -88,37 +144,69 @@ export class AssignmentsT4Component implements OnInit {
 
     note += '\n\nHigh King Maulgar Assignments\n';
     [
-      ...this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[0].actions,
-      ...this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[1].actions,
+      ...this.assignments[AssignmentType.hkmSkullAssignments].assignments[0].actions,
+      ...this.assignments[AssignmentType.hkmCrossAssignments].assignments[0].actions,
+      ...this.assignments[AssignmentType.hkmSquareAssignments].assignments[0].actions,
+      ...this.assignments[AssignmentType.hkmMoonAssignments].assignments[0].actions,
+      ...this.assignments[AssignmentType.hkmTriangleAssignments].assignments[0].actions,
     ].forEach((action: AssignmentAction, index: number) => {
+      const isEven = index % 2;
       const mark = action.icon;
       const markText = Object.keys(IconEnum).find(key => IconEnum[key as keyof typeof IconEnum] === mark);
-      const mdHunter = this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[2].actions[index]?.caster;
       note += `{${markText}} - ${typeof action.caster === 'string' ? action.caster : action.caster?.name}`;
-      if (mdHunter) {
-        note += ` - {spell:34477} ${typeof mdHunter === 'string' ? mdHunter : mdHunter.name}`;
-      }
-      note += '\n';
+      if (isEven) note += '\n';
     });
 
     note += '\n\nGruul the Dragon Killer Assignments\n';
     this.assignments[AssignmentType.gruulTheDragonKillerAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
       assignment.actions.forEach(action => {
         note += `{spell:34477} ${typeof action.caster === 'string' ? action.caster : action.caster?.name} -> ${typeof action.target === 'string' ? action.target : action.target?.name}\n`;
       });
     });
 
-    note += '\n\nMagtheridon Tank Assignments\n';
-    this.assignments[AssignmentType.magtheridonAssignments].assignments.forEach(assignment => {
-      note += `\n${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
-        const mark = action.icon;
-        const markText = Object.keys(IconEnum).find(key => IconEnum[key as keyof typeof IconEnum] === mark);
-        note += `{${markText?.toLowerCase()}} ${typeof action.caster === 'string' ? action.caster : action.caster?.name} -> ${typeof action.target === 'string' ? action.target : action.target?.name}\n`;
-      });
+    const trashAssignmetns: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
+    const clickAssignments: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
+    this.assignments[AssignmentType.magtheridonSkullAssignments].assignments[0].actions.forEach((action: AssignmentAction, index: number) => {
+      if (index === 0) {
+        trashAssignmetns[0] += `${typeof action.caster === 'string' ? action.caster : action.caster?.name}`;
+      } else {
+        clickAssignments[0] += `| #${index} ${typeof action.caster === 'string' ? action.caster : action.caster?.name} `;
+      }
     });
-
+    this.assignments[AssignmentType.magtheridonDiamondAssignments].assignments[0].actions.forEach((action: AssignmentAction, index: number) => {
+      if (index < 2) {
+        trashAssignmetns[1] += ` ${typeof action.caster === 'string' ? action.caster : action.caster?.name}`;
+      } else {
+        clickAssignments[1] += `| #${index - 1} ${typeof action.caster === 'string' ? action.caster : action.caster?.name} `;
+      }
+    });
+    this.assignments[AssignmentType.magtheridonCrossAssignments].assignments[0].actions.forEach((action: AssignmentAction, index: number) => {
+      if (index < 2) {
+        trashAssignmetns[2] += ` ${typeof action.caster === 'string' ? action.caster : action.caster?.name}`;
+      } else {
+        clickAssignments[2] += `| #${index - 1} ${typeof action.caster === 'string' ? action.caster : action.caster?.name} `;
+      }
+    });
+    this.assignments[AssignmentType.magtheridonTriangleAssignments].assignments[0].actions.forEach((action: AssignmentAction, index: number) => {
+      if (index < 3) {
+        trashAssignmetns[3] += ` ${typeof action.caster === 'string' ? action.caster : action.caster?.name}`;
+      } else {
+        clickAssignments[3] += `| #${index - 2} ${typeof action.caster === 'string' ? action.caster : action.caster?.name} `;
+      }
+    });
+    this.assignments[AssignmentType.magtheridonMoonAssignments].assignments[0].actions.forEach((action: AssignmentAction, index: number) => {
+      if (index < 3) {
+        trashAssignmetns[4] += ` ${typeof action.caster === 'string' ? action.caster : action.caster?.name}`;
+      } else {
+        clickAssignments[4] += `| #${index - 2} ${typeof action.caster === 'string' ? action.caster : action.caster?.name} `;
+      }
+    });
+    note += '\nMagtheridon Trash Assignments\n';
+    note += trashAssignmetns.join('\n');
+    note += '\n';
+    note += '\nMagtheridon Click Assignments\n';
+    note += clickAssignments.join('\n');
+    note += '\n';
     return note;
   }
 
@@ -145,92 +233,82 @@ export class AssignmentsT4Component implements OnInit {
   }
 
   fillHighKingMaulgarAssignments() {
-    const tanks = [
-      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
-      ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank),
-    ];
+    const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
+    const feralTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
+    const warriorTanks = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank);
     const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
-    const rangedDruids = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
+    const druidRangeds = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
+    const tanks = [
+      ...feralTanks,
+      ...paladinTanks,
+      ...warriorTanks,
+    ]
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    const bossTank = tanks.shift();
+    const bossMd = hunters.shift();
+    const crossTank = tanks.shift();
+    const crossMd = hunters.shift();
+    const squareTank = tanks.shift();
+    const squareMd = hunters.shift();
+    const moonTank = mages.shift();
+    const moonMd = hunters.shift();
+    const triangleTank = druidRangeds.shift();
+    const triangleMd = hunters.shift();
 
-    this.assignments[AssignmentType.highKingMaulgarAssignments].assignments.push({
+    const skullActions: AssignmentAction[] = [];
+    skullActions.push({ caster: bossTank, target: 'Boss Tank', icon: IconEnum.skull });
+    if (bossMd) {
+      skullActions.push({ caster: bossMd, target: `${bossTank?.name}`, icon: IconEnum.misdirect });
+    }
+    this.assignments[AssignmentType.hkmSkullAssignments].assignments.push({
       headerIcon: IconEnum.skull,
-      headerText: 'Main Tank',
-      actions: [],
-    });
-    this.assignments[AssignmentType.highKingMaulgarAssignments].assignments.push({
-      headerIcon: IconEnum.skull,
-      headerText: 'Adds',
-      actions: [],
-    });
-    this.assignments[AssignmentType.highKingMaulgarAssignments].assignments.push({
-      headerIcon: IconEnum.misdirect,
-      headerText: 'Misdirect',
-      actions: [],
+      headerText: 'Skull Assignments',
+      actions: skullActions,
     });
 
-    this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[0].actions.push({
-      caster: tanks[0],
-      target: 'High King Maulgar',
-      icon: IconEnum.cross,
+    const crossActions: AssignmentAction[] = [];
+    crossActions.push({ caster: crossTank, target: 'Cross Tank', icon: IconEnum.cross });
+    if (crossMd) {
+      crossActions.push({ caster: crossMd, target: `${crossTank?.name}`, icon: IconEnum.misdirect });
+    }
+    this.assignments[AssignmentType.hkmCrossAssignments].assignments.push({
+      headerIcon: IconEnum.cross,
+      headerText: 'Cross Assignments',
+      actions: crossActions,
     });
 
-    this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[1].actions.push({
-      caster: tanks[2],
-      target: 'Blindeye the Seer (Priest)',
-      icon: IconEnum.skull,
-    });
-    this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[1].actions.push({
-      caster: tanks[1],
-      target: 'Olm the Summoner (Warlock)',
-      icon: IconEnum.square,
-    });
-    this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[1].actions.push({
-      caster: mages[0],
-      target: 'Krosh Firehand (Mage)',
-      icon: IconEnum.moon,
-    });
-    this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[1].actions.push({
-      caster: rangedDruids[0],
-      target: 'Kiggler the Crazed (Shaman)',
-      icon: IconEnum.triangle,
+    const squareActions: AssignmentAction[] = [];
+    squareActions.push({ caster: squareTank, target: 'Square Tank', icon: IconEnum.square });
+    if (squareMd) {
+      squareActions.push({ caster: squareMd, target: `${squareTank?.name}`, icon: IconEnum.misdirect });
+    }
+    this.assignments[AssignmentType.hkmSquareAssignments].assignments.push({
+      headerIcon: IconEnum.square,
+      headerText: 'Square Assignments',
+      actions: squareActions,
     });
 
-    if (hunters[0]) {
-      this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[2].actions.push({
-        caster: hunters[0],
-        target: tanks[0] || 'High King Maulgar Tank',
-        icon: IconEnum.cross,
-      });
+    const moonActions: AssignmentAction[] = [];
+    moonActions.push({ caster: moonTank, target: 'Moon Tank', icon: IconEnum.moon });
+    if (moonMd) {
+      moonActions.push({ caster: moonMd, target: `${moonTank?.name}`, icon: IconEnum.misdirect });
     }
-    if (hunters[2]) {
-      this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[2].actions.push({
-        caster: hunters[2],
-        target: tanks[1] || 'Blindeye the Seer Tank',
-        icon: undefined,
-      });
+    this.assignments[AssignmentType.hkmMoonAssignments].assignments.push({
+      headerIcon: IconEnum.moon,
+      headerText: 'Moon Assignments',
+      actions: moonActions,
+    });
+
+    const triangleActions: AssignmentAction[] = [];
+    triangleActions.push({ caster: triangleTank, target: 'Triangle Tank', icon: IconEnum.triangle });
+    if (triangleMd) {
+      triangleActions.push({ caster: triangleMd, target: `${triangleTank?.name}`, icon: IconEnum.misdirect });
     }
-    if (hunters[3]) {
-      this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[2].actions.push({
-        caster: hunters[3],
-        target: tanks[2] || 'Olm the Summoner Tank',
-        icon: undefined,
-      });
-    }
-    if (hunters[1]) {
-      this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[2].actions.push({
-        caster: hunters[1],
-        target: mages[0] || 'Krosh Firehand Tank',
-        icon: undefined,
-      });
-    }
-    if (hunters[4]) {
-      this.assignments[AssignmentType.highKingMaulgarAssignments].assignments[2].actions.push({
-        caster: hunters[4],
-        target: rangedDruids[0] || 'Kiggler the Crazed Tank',
-        icon: undefined,
-      });
-    }
+    this.assignments[AssignmentType.hkmTriangleAssignments].assignments.push({
+      headerIcon: IconEnum.triangle,
+      headerText: 'Triangle Assignments',
+      actions: triangleActions,
+    });
   }
 
   fillGruulTheDragonslayerAssignments() {
@@ -261,153 +339,94 @@ export class AssignmentsT4Component implements OnInit {
 
   fillMagtheridonAssignments() {
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
-    const rogues = this.getCharactersByClassAndRole(CharacterClass.rogue, CharacterRole.melee);
-    const shamanMelee = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.melee);
-    const shamanHealer = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
-    const priestsHealers = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
-    const priestsRangeds = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.ranged);
-    const tankDruid = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
-    const druids = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
+    const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
+    const warriorTanks = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank);
+    const tanks = [ ...warriorTanks, ...druidTanks, ...paladinTanks ];
+    const shamanHealers = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
+    const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const healers = [ ...shamanHealers, ...paladinHealers ];
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
-    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
+    const groups = this.raid.reduce((resultArray: Character[][], item, index) => {
+      const chunkIndex = Math.floor(index / 5);
+      if (!resultArray[chunkIndex]) {
+        resultArray[chunkIndex] = [];
+      }
+      resultArray[chunkIndex].push(item);
+      return resultArray;
+    }, []);
 
-    const skullClickers = [
-      priestsHealers[priestsHealers.length - 1],
-      hunters[hunters.length - 1],
-    ];
-    const diamondClickers = [
-      priestsRangeds[0],
-      mages[mages.length - 1],
-    ];
-    const crossClickers = [
-      druids[0],
-      warlocks[warlocks.length - 1],
-    ];
-    const triangleClickers = [
-      rogues[rogues.length - 1],
-      shamanMelee[0],
-    ];
-    const moonClickers = [
-      tankDruid[tankDruid.length - 1],
-      shamanMelee[shamanMelee.length - 1],
-    ];
-
-    const iconsToClick = [
-      IconEnum.skull,
-      IconEnum.diamond,
-      IconEnum.cross,
-      IconEnum.triangle,
-      IconEnum.moon,
-    ];
-
-    this.assignments[AssignmentType.magtheridonAssignments].assignments.push({
+    const skullTank = tanks.shift();
+    const skullActions: AssignmentAction[] = [];
+    skullActions.push({ caster: skullTank, target: 'Skull Tank', icon: IconEnum.skull });
+    for (let i = 0; i < 4; i++) {
+      skullActions.push({ caster: groups[0].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    }
+    this.assignments[AssignmentType.magtheridonSkullAssignments].assignments.push({
       headerIcon: IconEnum.skull,
-      headerText: 'Cube Clickers (Blast Nova)',
-      actions: [
-        {
-          caster: skullClickers[0],
-          target: 'Click Cube',
-          icon: iconsToClick[0],
-        },
-        {
-          caster: skullClickers[1],
-          target: 'Backup Clicker',
-          icon: iconsToClick[0],
-        },
-        {
-          caster: diamondClickers[0],
-          target: 'Click Cube',
-          icon: iconsToClick[1],
-        },
-        {
-          caster: diamondClickers[1],
-          target: 'Backup Clicker',
-          icon: iconsToClick[1],
-        },
-        {
-          caster: crossClickers[0],
-          target: 'Click Cube',
-          icon: iconsToClick[2],
-        },
-        {
-          caster: crossClickers[1],
-          target: 'Backup Clicker',
-          icon: iconsToClick[2],
-        },
-        {
-          caster: triangleClickers[0],
-          target: 'Click Cube',
-          icon: iconsToClick[3],
-        },
-        {
-          caster: triangleClickers[1],
-          target: 'Backup Clicker',
-          icon: iconsToClick[3],
-        },
-        {
-          caster: moonClickers[0],
-          target: 'Click Cube',
-          icon: iconsToClick[4],
-        },
-        {
-          caster: moonClickers[1],
-          target: 'Backup Clicker',
-          icon: iconsToClick[4],
-        }
-      ],
+      headerText: 'Skull Assignments',
+      actions: skullActions,
     });
 
-    this.assignments.magtheridonAssignments.assignments.push({
-      headerIcon: IconEnum.skull,
-      headerText: 'Tanks/Missdirects',
-      actions: [
-        {
-          caster: paladinTanks[0],
-          target: 'Tank',
-          icon: iconsToClick[3],
-        },
-        {
-          caster: paladinTanks[0],
-          target: 'Tank',
-          icon: iconsToClick[4],
-        },
-        {
-          caster: warlocks[warlocks.length - 1],
-          target: 'Assist Paladin with Banish/Fear',
-          icon: IconEnum.banish,
-        },
-        {
-          caster: shamanHealer[shamanHealer.length - 1],
-          target: `Heal ${paladinTanks[0]?.name}`,
-          icon: IconEnum.healingWave,
-        },
-        {
-          caster: tankDruid[0],
-          target: 'Tank',
-          icon: iconsToClick[0],
-        },
-        {
-          caster: tankDruid[0],
-          target: 'Tank',
-          icon: iconsToClick[1],
-        },
-        {
-          caster: hunters[hunters.length - 1],
-          target: `Missdirect into ${tankDruid[0]?.name}`,
-          icon: iconsToClick[1],
-        },
-        {
-          caster: tankDruid[1],
-          target: 'Tank',
-          icon: iconsToClick[2],
-        },
-        {
-          caster: hunters[hunters.length - 2],
-          target: `Missdirect into ${tankDruid[1]?.name}`,
-          icon: iconsToClick[2],
-        },
-      ],
+    const diamondTank = tanks.length > 2 ? tanks.shift() : skullTank;
+    const diamondMd = hunters.shift();
+    const diamondActions: AssignmentAction[] = [];
+    diamondActions.push({ caster: diamondTank, target: 'Diamond Tank', icon: IconEnum.diamond });
+    if (diamondMd) {
+      diamondActions.push({ caster: diamondMd, target: diamondTank?.name || 'Diamond Tank', icon: IconEnum.misdirect });
+    }
+    for (let i = 0; i < 4; i++) {
+      diamondActions.push({ caster: groups[1].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    }
+    this.assignments[AssignmentType.magtheridonDiamondAssignments].assignments.push({
+      headerIcon: IconEnum.diamond,
+      headerText: 'Diamond Assignments',
+      actions: diamondActions,
+    });
+
+    const crossTank = tanks.shift();
+    const crossMd = hunters.shift();
+    const crossActions: AssignmentAction[] = [];
+    crossActions.push({ caster: crossTank, target: 'Cross Tank', icon: IconEnum.cross });
+    if (hunters[1]) {
+      crossActions.push({ caster: crossMd, target: crossTank?.name || 'Cross Tank', icon: IconEnum.misdirect });
+    }
+    for (let i = 0; i < 4; i++) {
+      crossActions.push({ caster: groups[2].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    }
+    this.assignments[AssignmentType.magtheridonCrossAssignments].assignments.push({
+      headerIcon: IconEnum.cross,
+      headerText: 'Cross Assignments',
+      actions: crossActions,
+    });
+
+    const triangleTank = tanks.shift();
+    const triangleHeal = healers.shift();
+    const warlockSupport = warlocks.pop();
+    const triangleActions: AssignmentAction[] = [];
+    triangleActions.push({ caster: triangleTank, target: 'Triangle Tank', icon: IconEnum.triangle });
+    triangleActions.push({ caster: triangleHeal, target: triangleTank?.name || 'Triangle Tank', icon: IconEnum.healingWave });
+    triangleActions.push({ caster: warlockSupport, target: 'Banish/Fear', icon: IconEnum.banish });
+    for (let i = 0; i < 4; i++) {
+      triangleActions.push({ caster: groups[3].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    }
+    this.assignments[AssignmentType.magtheridonTriangleAssignments].assignments.push({
+      headerIcon: IconEnum.triangle,
+      headerText: 'Triangle Assignments',
+      actions: triangleActions,
+    });
+
+    const moonActions: AssignmentAction[] = [];
+    moonActions.push({ caster: triangleTank, target: 'Moon Tank', icon: IconEnum.moon });
+    moonActions.push({ caster: triangleHeal, target: triangleTank?.name || 'Moon Tank', icon: IconEnum.healingWave });
+    moonActions.push({ caster: warlockSupport, target: 'Banish/Fear', icon: IconEnum.banish });
+    for (let i = 0; i < 4; i++) {
+      moonActions.push({ caster: groups[4].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    }
+    this.assignments[AssignmentType.magtheridonMoonAssignments].assignments.push({
+      headerIcon: IconEnum.moon,
+      headerText: 'Moon Assignments',
+      actions: moonActions,
     });
   }
 

@@ -2,7 +2,7 @@
 <section>
   @for (key of (keys); track key) {
     @let classAssignment = assignments[key];
-    <article>
+    <article id="assignment-{{key}}">
       <h4>
         <img src="assets/icons/{{classAssignment.headerIcon}}" alt="">
         {{ classAssignment.headerText }}
@@ -47,5 +47,8 @@
         }
       </div>
     </article>
+    @if (key === 5) {
+      <div class="spacer"></div>
+    }
   }
 </section>
