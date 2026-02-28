@@ -13,6 +13,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
+      },
+      {
+        name: 'Lazykit Mage',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
       }
     ]
   },
@@ -25,6 +32,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.paladin,
+      },
+      {
+        name: 'Yoshkap',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
       }
     ]
   },
@@ -37,6 +51,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+      },
+      {
+        name: 'Kravá',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
       }
     ]
   },
@@ -49,6 +70,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
+      },
+      {
+        name: 'Cambells Hunter',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
       }
     ]
   },
@@ -56,23 +84,37 @@ export const players: Player[] = [
     name: 'Bawowna',
     characters: [
       {
-        name: 'Bawowna',
+        name: 'Bawownahunt',
         level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+      },
+      {
+        name: 'Fleabus',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.druid,
       }
     ]
   },
   {
-    name: 'Dubasow',
+    name: 'Dubasaw',
     characters: [
       {
-        name: 'Dubasow',
+        name: 'Dubasaw',
         level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+      },
+      {
+        name: 'Dubasw',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
       }
     ]
   },
@@ -85,6 +127,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
+      },
+      {
+        name: 'Melorin',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.druid,
       }
     ]
   },
@@ -97,6 +146,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+      },
+      {
+        name: 'Udy',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.priest,
       }
     ]
   },
@@ -108,6 +164,13 @@ export const players: Player[] = [
         level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+      },
+      {
+        name: 'Zabyjaka',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
         class: CharacterClass.shaman,
       }
     ]
@@ -121,6 +184,32 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
+      },
+      {
+        name: 'Entimx',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      }
+    ]
+  },
+  {
+    name: 'Serjio',
+    characters: [
+      {
+        name: 'Serjioo',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+      },
+      {
+        name: 'Serjioo Druid',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.druid,
       }
     ]
   },
@@ -133,6 +222,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.druid,
+      },
+      {
+        name: 'Globaldoctor',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
       }
     ]
   },
@@ -145,6 +241,32 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+      },
+      {
+        name: 'Tenten',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+      }
+    ]
+  },
+  {
+    name: 'Dontmissbyte',
+    characters: [
+      {
+        name: 'Dontmissbyte',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.shaman,
+      },
+      {
+        name: 'Kyivstar',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
       }
     ]
   },
@@ -157,6 +279,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
+      },
+      {
+        name: 'Zbochenka Paladin',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.paladin,
       }
     ]
   },
@@ -169,6 +298,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+      },
+      {
+        name: 'Strikex',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
       }
     ]
   },
@@ -181,6 +317,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+      },
+      {
+        name: 'Watchmeflex',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
       }
     ]
   },
@@ -193,6 +336,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+      },
+      {
+        name: 'Swotchw',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
       }
     ]
   },
@@ -205,18 +355,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
-      }
-    ]
-  },
-  {
-    name: 'Wlnumberone',
-    characters: [
+      },
       {
-        name: 'Wlnumberone',
+        name: 'Cherepaha',
         level: 70,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
       }
     ]
   },
@@ -229,6 +374,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
+      },
+      {
+        name: 'Pigtasty',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
       }
     ]
   },
@@ -239,6 +391,13 @@ export const players: Player[] = [
         name: 'Zulnani',
         level: 70,
         rank: CharacterRank.main,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+      },
+      {
+        name: 'Garhard',
+        level: 70,
+        rank: CharacterRank.alt,
         role: CharacterRole.tank,
         class: CharacterClass.druid,
       }
@@ -253,6 +412,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+      },
+      {
+        name: 'Amorales Arms',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
       }
     ]
   },
@@ -265,6 +431,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.shaman,
+      },
+      {
+        name: 'Mapleleaf',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.druid,
       }
     ]
   },
@@ -277,18 +450,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
-      }
-    ]
-  },
-  {
-    name: 'Antrail',
-    characters: [
+      },
       {
-        name: 'Antrail',
+        name: 'Biruang Paladin',
         level: 70,
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.shaman,
+        rank: CharacterRank.alt,
+        role: CharacterRole.tank,
+        class: CharacterClass.paladin,
       }
     ]
   },
@@ -301,18 +469,75 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
+      },
+      {
+        name: 'Anyataylorj',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
       }
     ]
   },
   {
-    name: 'puppit',
+    name: 'Puppit',
     characters: [
       {
-        name: 'puppit',
+        name: 'Pappit',
         level: 70,
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
+      },
+      {
+        name: 'Pappit Shaman',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+      }
+    ]
+  },
+  {
+    name: 'Spectris',
+    characters: [
+      {
+        name: 'Spectris',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+      },
+      {
+        name: 'Peskit',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+      }
+    ]
+  },
+  {
+    name: 'Hanzo',
+    characters: [
+      {
+        name: 'Hanzo',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+      }
+    ]
+  },
+  {
+    name: 'Thundermate',
+    characters: [
+      {
+        name: 'Thundermate',
+        level: 70,
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
       }
     ]
   },
@@ -325,6 +550,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.paladin,
+      },
+      {
+        name: 'Figurehead',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
       }
     ]
   },
@@ -337,6 +569,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.paladin,
+      },
+      {
+        name: 'Akatoshi',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.priest,
       }
     ]
   },
@@ -349,6 +588,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+      },
+      {
+        name: 'Chortenya Druid',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.druid,
       }
     ]
   },
@@ -359,6 +605,13 @@ export const players: Player[] = [
         name: 'Ryzha',
         level: 70,
         rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+      },
+      {
+        name: 'Ryzha Alt Priest',
+        level: 70,
+        rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
       }
@@ -373,6 +626,13 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.priest,
+      },
+      {
+        name: 'Kailraliel',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
       }
     ]
   },
@@ -385,18 +645,6 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
-      }
-    ]
-  },
-  {
-    name: 'Serjioo',
-    characters: [
-      {
-        name: 'Serjioo',
-        level: 70,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
       }
     ]
   }
