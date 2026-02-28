@@ -398,8 +398,8 @@ export const players: Player[] = [
         name: 'Garhard',
         level: 70,
         rank: CharacterRank.alt,
-        role: CharacterRole.tank,
-        class: CharacterClass.druid,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
       }
     ]
   },
@@ -571,7 +571,7 @@ export const players: Player[] = [
         class: CharacterClass.paladin,
       },
       {
-        name: 'Akatoshi',
+        name: 'Akatoshi SP',
         level: 70,
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
