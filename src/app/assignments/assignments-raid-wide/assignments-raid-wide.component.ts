@@ -239,18 +239,23 @@ export class AssignmentsRaidWideComponent implements OnInit {
 
   fillDruidAssignments() {
     const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
+    const druidRanged = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
+    const druids = [
+      ...druidHealers,
+      ...druidRanged,
+    ];
     this.assignments.druidsAssignments.assignments.push({
       headerIcon: this.iconEnum.motw,
       headerText: `MotW`,
       actions: [],
     });
-    const groupsPerDruid = Math.floor(this.raidGroupsQty / druidHealers.length);
-    let extraGroups = this.raidGroupsQty % druidHealers.length;
+    const groupsPerDruid = Math.floor(this.raidGroupsQty / druids.length);
+    let extraGroups = this.raidGroupsQty % druids.length;
 
     let currentGroup = 1;
 
-    for (let i = 0; i < druidHealers.length; i++) {
-      const druid = druidHealers[i];
+    for (let i = 0; i < druids.length; i++) {
+      const druid = druids[i];
       let assignedGroups = groupsPerDruid + (extraGroups > 0 ? 1 : 0);
       if (extraGroups > 0) extraGroups--;
 
