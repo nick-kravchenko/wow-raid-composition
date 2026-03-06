@@ -42,7 +42,7 @@
   </div>
 </header>
 <div class="raidgroups" #raidGroups>
-  <ng-container *ngFor="let slot of raid; index as i">
+  @for (slot of raid; track $index; let i = $index) {
     @if (i % 5 === 0) {
       <span>Group {{i / 5 + 1}}</span>
     }
@@ -64,5 +64,5 @@
         [draggable]="!!slot"
       ></app-character-tile>
     }
-  </ng-container>
+  }
 </div>
