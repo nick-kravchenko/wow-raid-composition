@@ -72,7 +72,7 @@ export const players: Player[] = [
         class: CharacterClass.mage,
       },
       {
-        name: 'Cambells Hunter',
+        name: 'Cambelish',
         level: 70,
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
@@ -132,7 +132,7 @@ export const players: Player[] = [
         name: 'Melorin',
         level: 70,
         rank: CharacterRank.alt,
-        role: CharacterRole.healer,
+        role: CharacterRole.ranged,
         class: CharacterClass.druid,
       }
     ]
@@ -182,7 +182,7 @@ export const players: Player[] = [
         name: 'Entim',
         level: 70,
         rank: CharacterRank.main,
-        role: CharacterRole.healer,
+        role: CharacterRole.ranged,
         class: CharacterClass.druid,
       },
       {
@@ -521,7 +521,7 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
       },
       {
-        name: 'Thundermate Mage',
+        name: 'Thundermate Alt',
         level: 70,
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
@@ -597,7 +597,7 @@ export const players: Player[] = [
         class: CharacterClass.priest,
       },
       {
-        name: 'Ryzha Alt Priest',
+        name: 'Ryzha Alt',
         level: 70,
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
