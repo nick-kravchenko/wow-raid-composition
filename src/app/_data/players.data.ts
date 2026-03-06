@@ -106,7 +106,7 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Feral,
+        spec: CharacterSpecEnum.Restoration,
       },
     ]
   },
