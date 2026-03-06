@@ -1,7 +1,8 @@
-import {CharacterRank} from '../_entities/character-rank.enum';
-import {Player} from '../_entities/player';
-import {CharacterRole} from '../_entities/character-role.enum';
-import {CharacterClass} from '../_entities/character-class.enum';
+import { CharacterRank } from '../_entities/character-rank.enum';
+import { Player } from '../_entities/player';
+import { CharacterRole } from '../_entities/character-role.enum';
+import { CharacterClass } from '../_entities/character-class.enum';
+import { CharacterSpecEnum } from '../_entities/character-spec.enum';
 
 export const players: Player[] = [
   {
@@ -13,6 +14,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
       },
       {
         name: 'Notalazy',
@@ -20,7 +22,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
-      }
+        spec: CharacterSpecEnum.Retribution,
+      },
     ]
   },
   {
@@ -32,6 +35,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Holy,
       },
       {
         name: 'Yoshkap',
@@ -39,7 +43,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
-      }
+        spec: CharacterSpecEnum.Holy,
+      },
     ]
   },
   {
@@ -51,6 +56,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
       },
       {
         name: 'Kravá',
@@ -58,7 +64,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      }
+        spec: CharacterSpecEnum.Fury,
+      },
     ]
   },
   {
@@ -70,6 +77,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
+        spec: CharacterSpecEnum.Arcane,
       },
       {
         name: 'Cambelish',
@@ -77,7 +85,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
-      }
+        spec: CharacterSpecEnum.BeastMastery,
+      },
     ]
   },
   {
@@ -89,6 +98,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
       },
       {
         name: 'Fleabus',
@@ -96,7 +106,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
-      }
+        spec: CharacterSpecEnum.Feral,
+      },
     ]
   },
   {
@@ -108,6 +119,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
       },
       {
         name: 'Dubasw',
@@ -115,7 +127,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
-      }
+        spec: CharacterSpecEnum.Enhancement,
+      },
     ]
   },
   {
@@ -127,6 +140,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Holy,
       },
       {
         name: 'Melorin',
@@ -134,7 +148,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
-      }
+        spec: CharacterSpecEnum.Restoration,
+      },
     ]
   },
   {
@@ -146,6 +161,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
       },
       {
         name: 'Udy',
@@ -153,7 +169,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.priest,
-      }
+        spec: CharacterSpecEnum.Shadow,
+      },
     ]
   },
   {
@@ -165,6 +182,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
       },
       {
         name: 'Zabyjaka',
@@ -172,7 +190,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.shaman,
-      }
+        spec: CharacterSpecEnum.Elemental,
+      },
     ]
   },
   {
@@ -184,6 +203,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Restoration,
       },
       {
         name: 'Entimx',
@@ -191,7 +211,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
-      }
+        spec: CharacterSpecEnum.Holy,
+      },
     ]
   },
   {
@@ -203,6 +224,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
       },
       {
         name: 'Serjioo Druid',
@@ -210,7 +232,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
-      }
+        spec: CharacterSpecEnum.Balance,
+      },
     ]
   },
   {
@@ -222,6 +245,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Feral,
       },
       {
         name: 'Globaldoctor',
@@ -229,7 +253,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.shaman,
-      }
+        spec: CharacterSpecEnum.Restoration,
+      },
     ]
   },
   {
@@ -241,6 +266,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
       },
       {
         name: 'Tenten',
@@ -248,7 +274,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.tank,
         class: CharacterClass.druid,
-      }
+        spec: CharacterSpecEnum.Feral,
+      },
     ]
   },
   {
@@ -260,6 +287,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Elemental,
       },
       {
         name: 'Kyivstar',
@@ -267,7 +295,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
-      }
+        spec: CharacterSpecEnum.Destruction,
+      },
     ]
   },
   {
@@ -279,6 +308,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
       },
       {
         name: 'Strikex',
@@ -286,7 +316,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
-      }
+        spec: CharacterSpecEnum.Assassination,
+      },
     ]
   },
   {
@@ -298,6 +329,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
       },
       {
         name: 'Watchmeflex',
@@ -305,7 +337,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      }
+        spec: CharacterSpecEnum.Fury,
+      },
     ]
   },
   {
@@ -317,6 +350,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
       },
       {
         name: 'Swotchw',
@@ -324,7 +358,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      }
+        spec: CharacterSpecEnum.Arms,
+      },
     ]
   },
   {
@@ -336,6 +371,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Retribution,
       },
       {
         name: 'Cherepaha',
@@ -343,7 +379,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
-      }
+        spec: CharacterSpecEnum.Enhancement,
+      },
     ]
   },
   {
@@ -355,6 +392,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Fury,
       },
       {
         name: 'Pigtasty',
@@ -362,7 +400,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
-      }
+        spec: CharacterSpecEnum.BeastMastery,
+      },
     ]
   },
   {
@@ -374,6 +413,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Feral,
       },
       {
         name: 'Garhard',
@@ -381,7 +421,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
-      }
+        spec: CharacterSpecEnum.Destruction,
+      },
     ]
   },
   {
@@ -393,6 +434,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
       },
       {
         name: 'Bozer',
@@ -400,7 +442,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      }
+        spec: CharacterSpecEnum.Arms,
+      },
     ]
   },
   {
@@ -412,6 +455,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Restoration,
       },
       {
         name: 'Mapleleaf',
@@ -419,7 +463,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
-      }
+        spec: CharacterSpecEnum.Restoration,
+      },
     ]
   },
   {
@@ -431,6 +476,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
       },
       {
         name: 'Biruang Paladin',
@@ -438,7 +484,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.tank,
         class: CharacterClass.paladin,
-      }
+        spec: CharacterSpecEnum.Protection,
+      },
     ]
   },
   {
@@ -450,6 +497,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
+        spec: CharacterSpecEnum.Combat,
       },
       {
         name: 'Anyataylorj',
@@ -457,7 +505,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.tank,
         class: CharacterClass.druid,
-      }
+        spec: CharacterSpecEnum.Feral,
+      },
     ]
   },
   {
@@ -469,6 +518,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Retribution,
       },
       {
         name: 'Puppit',
@@ -476,7 +526,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.shaman,
-      }
+        spec: CharacterSpecEnum.Elemental,
+      },
     ]
   },
   {
@@ -488,6 +539,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Arms,
       },
       {
         name: 'Peskit',
@@ -495,7 +547,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
-      }
+        spec: CharacterSpecEnum.Enhancement,
+      },
     ]
   },
   {
@@ -507,7 +560,8 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-      }
+        spec: CharacterSpecEnum.Fury,
+      },
     ]
   },
   {
@@ -519,6 +573,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
       },
       {
         name: 'Thundermate Alt',
@@ -526,7 +581,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
-      }
+        spec: CharacterSpecEnum.Arcane,
+      },
     ]
   },
   {
@@ -538,6 +594,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Protection,
       },
       {
         name: 'Figurehead',
@@ -545,7 +602,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.shaman,
-      }
+        spec: CharacterSpecEnum.Restoration,
+      },
     ]
   },
   {
@@ -557,6 +615,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Protection,
       },
       {
         name: 'Akatoshi SP',
@@ -564,7 +623,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.priest,
-      }
+        spec: CharacterSpecEnum.Shadow,
+      },
     ]
   },
   {
@@ -576,6 +636,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
       },
       {
         name: 'Sipukha',
@@ -583,7 +644,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
-      }
+        spec: CharacterSpecEnum.Balance,
+      },
     ]
   },
   {
@@ -595,6 +657,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Holy,
       },
       {
         name: 'Ryzha Alt',
@@ -602,7 +665,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.priest,
-      }
+        spec: CharacterSpecEnum.Holy,
+      },
     ]
   },
   {
@@ -614,6 +678,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Shadow,
       },
       {
         name: 'Romovababka',
@@ -621,7 +686,8 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.paladin,
-      }
+        spec: CharacterSpecEnum.Holy,
+      },
     ]
   },
   {
@@ -633,7 +699,8 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
-      }
+        spec: CharacterSpecEnum.Retribution,
+      },
     ]
-  }
+  },
 ];
