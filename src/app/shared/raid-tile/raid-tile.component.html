@@ -42,27 +42,27 @@
   </div>
 </header>
 <div class="raidgroups" #raidGroups>
-  <ng-container *ngFor="let slot of raid; index as i">
-    @if (i % 5 === 0) {
-      <span>Group {{i / 5 + 1}}</span>
+  @for (slot of raid; track slot.id) {
+    @if ($index % 5 === 0) {
+      <span>Group {{$index / 5 + 1}}</span>
     }
     @if (hideControls) {
       <app-character-tile
-        class="character-{{i}}"
+        class="character-{{$index}}"
         [character]="slot"
         [draggable]="!!slot"
       ></app-character-tile>
     } @else {
       <app-character-tile
-        class="character-{{i}}"
+        class="character-{{$index}}"
         [class.highlight]="slot?.highlight"
-        (click)="onSlotClick.emit(i)"
-        (dragover)="onDragOver.emit(i)"
-        (dragstart)="onSlotDragStart.emit(i)"
+        (click)="onSlotClick.emit($index)"
+        (dragover)="onDragOver.emit($index)"
+        (dragstart)="onSlotDragStart.emit($index)"
         (dragend)="onSlotDragEnd.emit()"
         [character]="slot"
         [draggable]="!!slot"
       ></app-character-tile>
     }
-  </ng-container>
+  }
 </div>

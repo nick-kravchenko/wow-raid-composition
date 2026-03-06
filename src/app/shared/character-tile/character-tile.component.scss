@@ -6,7 +6,7 @@
   align-items: center;
   background: $mako;
   cursor: default;
-  padding: 5px;
+  padding: 4px;
   border-radius: 2px;
   font-weight: bold;
   height: 38px;
@@ -15,15 +15,23 @@
   white-space: nowrap;
   position: relative;
   border: 1px solid #383838;
+  overflow: hidden;
+  &:hover {
+    sup {
+      transform: translate(-50%, 0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 .icon {
   background-size: cover;
   border-radius: 2px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
   box-sizing: border-box;
   display: inline-block;
   height: 2em;
-  margin-right: 5px;
+  margin-right: 4px;
   vertical-align: top;
   width: 2em;
   cursor: pointer;
@@ -33,7 +41,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  margin-right: 5px;
+  margin-right: 4px;
   &--Main {
     background: green;
   }
@@ -47,11 +55,19 @@
 }
 sup {
   position: absolute;
-  top: 50%;
-  right: 1em;
-  transform: translateY(-50%);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
   font-size: 0.85em;
   line-height: 1;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 4px;
+  border-radius: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, transform 0.2s;
+  will-change: opacity, transform;
+  color: #fff;
 
   @include screen-tablet() {
     display: none;
