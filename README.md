@@ -1,59 +1,86 @@
-# WowRaidComposition
+# WoW Raid Composition
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+A web application for planning and managing World of Warcraft Classic raid compositions. Build raid groups by assigning characters to slots, manage boss-specific assignments, and share compositions via URL.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- **Composition Builder** — Drag-and-drop interface to assign characters across multiple 25-man raid groups
+- **Filtering** — Filter the character roster by rank, level, class, spec, and role
+- **Shareable URLs** — Raid compositions are serialized into query params so you can share a link directly
+- **Boss Assignments** — Per-raid assignment views for specific encounters:
+  - Raid-wide assignments
+  - Magtheridon (T4)
+  - Blackwing Lair *(coming soon)*
+  - Ahn'Qiraj 40 *(coming soon)*
+  - Naxxramas *(coming soon)*
+  - SSC / The Eye *(coming soon)*
+- **Players & Calendar** — Additional views for managing player roster and raid schedule
+
+## Supported Classes & Roles
+
+| Class | Specs |
+|-------|-------|
+| Warrior | Arms, Fury, Protection |
+| Paladin | Holy, Protection, Retribution |
+| Hunter | Beast Mastery, Marksmanship, Survival |
+| Druid | Balance, Feral, Restoration |
+| Rogue | Assassination, Combat, Subtlety |
+| Warlock | Affliction, Demonology, Destruction |
+| Mage | Arcane, Fire, Frost |
+| Priest | Discipline, Holy, Shadow |
+| Shaman | Elemental, Enhancement, Restoration |
+
+Roles: Tank, Healer, Melee DPS, Ranged DPS
+
+## Tech Stack
+
+- [Angular 19](https://angular.dev)
+- TypeScript 5.7
+- SCSS
+- [html2canvas](https://html2canvas.hertzen.com)
+- Font Awesome
+
+## Getting Started
+
+Install dependencies:
 
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Start the development server:
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
+Open `http://localhost:4200/` in your browser. The app reloads automatically on file changes.
 
 ## Building
 
-To build the project run:
+Production build:
 
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Build for GitHub Pages deployment:
 
 ```bash
-ng test
+npm run build:gpages
 ```
 
-## Running end-to-end tests
+Build artifacts are output to the `dist/` directory.
 
-For end-to-end (e2e) testing, run:
+## Running Tests
 
 ```bash
-ng e2e
+npm test
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Uses [Karma](https://karma-runner.github.io) with Jasmine.
 
-## Additional Resources
+## Deployment
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The app is deployed to GitHub Pages at:
+[https://nick-kravchenko.github.io/wow-raid-composition/](https://nick-kravchenko.github.io/wow-raid-composition/)
