@@ -4,7 +4,7 @@ export enum CharacterSpecEnum {
   Protection = 'Protection',
   Holy = 'Holy',
   Retribution = 'Retribution',
-  BeastMastery = 'Beast Mastery',
+  BeastMastery = 'BeastMastery',
   Marksmanship = 'Marksmanship',
   Survival = 'Survival',
   Balance = 'Balance',

@@ -24,7 +24,7 @@ export const players: Player[] = [
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Retribution,
       },
-    ]
+    ],
   },
   {
     name: 'Palayoshka',
@@ -45,7 +45,7 @@ export const players: Player[] = [
         class: CharacterClass.priest,
         spec: CharacterSpecEnum.Holy,
       },
-    ]
+    ],
   },
   {
     name: 'Krava',
