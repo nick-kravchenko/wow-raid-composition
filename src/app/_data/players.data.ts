@@ -316,7 +316,7 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
-        spec: CharacterSpecEnum.Assassination,
+        spec: CharacterSpecEnum.Combat,
       },
     ]
   },
