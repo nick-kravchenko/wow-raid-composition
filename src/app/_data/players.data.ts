@@ -148,7 +148,7 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Restoration,
+        spec: CharacterSpecEnum.Balance,
       },
     ]
   },
