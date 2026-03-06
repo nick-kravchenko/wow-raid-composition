@@ -182,7 +182,7 @@ export const players: Player[] = [
         name: 'Entim',
         level: 70,
         rank: CharacterRank.main,
-        role: CharacterRole.ranged,
+        role: CharacterRole.healer,
         class: CharacterClass.druid,
       },
       {
@@ -461,7 +461,7 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Puppit',
+    name: 'Pappit',
     characters: [
       {
         name: 'Pappit',
