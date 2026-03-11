@@ -359,8 +359,8 @@ export class AssignmentsT4Component implements OnInit {
     const skullTank = tanks.shift();
     const skullActions: AssignmentAction[] = [];
     skullActions.push({ caster: skullTank, target: 'Skull Tank', icon: IconEnum.skull });
-    for (let i = 0; i < 4; i++) {
-      skullActions.push({ caster: groups[0].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    for (let i = 0; i < 3; i++) {
+      skullActions.push({ caster: groups[4].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonSkullAssignments].assignments.push({
       headerIcon: IconEnum.skull,
@@ -375,8 +375,8 @@ export class AssignmentsT4Component implements OnInit {
     if (diamondMd) {
       diamondActions.push({ caster: diamondMd, target: diamondTank?.name || 'Diamond Tank', icon: IconEnum.misdirect });
     }
-    for (let i = 0; i < 4; i++) {
-      diamondActions.push({ caster: groups[1].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    for (let i = 0; i < 3; i++) {
+      diamondActions.push({ caster: groups[3].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonDiamondAssignments].assignments.push({
       headerIcon: IconEnum.diamond,
@@ -391,8 +391,8 @@ export class AssignmentsT4Component implements OnInit {
     if (crossMd) {
       crossActions.push({ caster: crossMd, target: crossTank?.name || 'Cross Tank', icon: IconEnum.misdirect });
     }
-    for (let i = 0; i < 4; i++) {
-      crossActions.push({ caster: groups[2].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    for (let i = 0; i < 3; i++) {
+      crossActions.push({ caster: groups[2].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonCrossAssignments].assignments.push({
       headerIcon: IconEnum.cross,
@@ -400,15 +400,15 @@ export class AssignmentsT4Component implements OnInit {
       actions: crossActions,
     });
 
-    const triangleTank = tanks.shift();
-    const triangleHeal = healers.shift();
+    const triangleTank = tanks.shift(), moonTank = triangleTank;
+    const triangleHeal = healers.shift(), moonHeal = triangleHeal;
     const warlockSupport = warlocks.pop();
     const triangleActions: AssignmentAction[] = [];
     triangleActions.push({ caster: triangleTank, target: 'Triangle Tank', icon: IconEnum.triangle });
     triangleActions.push({ caster: triangleHeal, target: triangleTank?.name || 'Triangle Tank', icon: IconEnum.healingWave });
     triangleActions.push({ caster: warlockSupport, target: 'Banish/Fear', icon: IconEnum.banish });
-    for (let i = 0; i < 4; i++) {
-      triangleActions.push({ caster: groups[3].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+    for (let i = 0; i < 3; i++) {
+      triangleActions.push({ caster: groups[1].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonTriangleAssignments].assignments.push({
       headerIcon: IconEnum.triangle,
@@ -417,11 +417,16 @@ export class AssignmentsT4Component implements OnInit {
     });
 
     const moonActions: AssignmentAction[] = [];
-    moonActions.push({ caster: triangleTank, target: 'Moon Tank', icon: IconEnum.moon });
-    moonActions.push({ caster: triangleHeal, target: triangleTank?.name || 'Moon Tank', icon: IconEnum.healingWave });
+    moonActions.push({ caster: moonTank, target: 'Moon Tank', icon: IconEnum.moon });
+    moonActions.push({ caster: moonHeal, target: moonTank?.name || 'Moon Tank', icon: IconEnum.healingWave });
     moonActions.push({ caster: warlockSupport, target: 'Banish/Fear', icon: IconEnum.banish });
-    for (let i = 0; i < 4; i++) {
-      moonActions.push({ caster: groups[4].pop(), target: i === 3 ? 'Backup' : `Click ${i + 1}`, icon: undefined });
+
+    // HACK: replace first slot in group #1 (usually bear tank) with moonTank (usually prot pala)
+    groups[0].pop();
+    groups[0].push(moonTank!);
+
+    for (let i = 0; i < 3; i++) {
+      moonActions.push({ caster: groups[0].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonMoonAssignments].assignments.push({
       headerIcon: IconEnum.moon,

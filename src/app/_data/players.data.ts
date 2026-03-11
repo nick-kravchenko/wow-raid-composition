@@ -201,9 +201,9 @@ export const players: Player[] = [
         name: 'Entim',
         level: 70,
         rank: CharacterRank.main,
-        role: CharacterRole.healer,
+        role: CharacterRole.ranged,
         class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Restoration,
+        spec: CharacterSpecEnum.Balance,
       },
       {
         name: 'Entimx',
