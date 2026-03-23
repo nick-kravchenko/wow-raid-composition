@@ -250,8 +250,16 @@ export class AssignmentsT4Component implements OnInit {
       AssignmentType.magtheridonTriangleClickAssignments,
       AssignmentType.magtheridonMoonClickAssignments,
     ];
+    const kickKeys = [
+      AssignmentType.magtheridonSkullKickAssignments,
+      AssignmentType.magtheridonDiamondKickAssignments,
+      AssignmentType.magtheridonCrossKickAssignments,
+      AssignmentType.magtheridonTriangleKickAssignments,
+      AssignmentType.magtheridonMoonKickAssignments,
+    ];
     const trashAssignmetns: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
     const clickAssignments: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
+    const kickAssignments: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
     tankHealKeys.forEach((key, i) => {
       this.assignments[key].assignments[0].actions.forEach(action => {
         trashAssignmetns[i] += `${casterName(action)} `;
@@ -262,11 +270,19 @@ export class AssignmentsT4Component implements OnInit {
         clickAssignments[i] += `| #${index + 1} ${casterName(action)} `;
       });
     });
+    kickKeys.forEach((key, i) => {
+      this.assignments[key].assignments[0].actions.forEach(action => {
+        kickAssignments[i] += `${casterName(action)} `;
+      });
+    });
     note += '\nMagtheridon Trash Assignments\n';
     note += trashAssignmetns.join('\n');
     note += '\n';
     note += '\nMagtheridon Click Assignments\n';
     note += clickAssignments.join('\n');
+    note += '\n';
+    note += '\nMagtheridon Kick Assignments\n';
+    note += kickAssignments.join('\n');
     note += '\n';
     return note;
   }
