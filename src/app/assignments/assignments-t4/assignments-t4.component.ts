@@ -443,7 +443,10 @@ export class AssignmentsT4Component implements OnInit {
     const crossMd = hunters.shift();
     const triangleMd = hunters.shift();
 
-    const assignedTanks = [skullTank, diamondTank, crossTank, triangleTank].filter(Boolean) as Character[];
+    const isFeralDruid = (c: Character) => c.class === CharacterClass.druid && c.role === CharacterRole.tank;
+    const assignedTanks = [skullTank, diamondTank, crossTank, triangleTank]
+      .filter(Boolean)
+      .filter(tank => tank === skullTank || !isFeralDruid(tank!)) as Character[];
     groups.forEach(group => {
       for (const tank of assignedTanks) {
         const idx = group.indexOf(tank);
