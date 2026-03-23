@@ -56,7 +56,7 @@ export const players: Player[] = [
       {
         name: 'Krava',
         level: 70,
-        rank: CharacterRank.main,
+        rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
         spec: CharacterSpecEnum.BeastMastery,
@@ -64,7 +64,7 @@ export const players: Player[] = [
       {
         name: 'Kravá',
         level: 70,
-        rank: CharacterRank.alt,
+        rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
         spec: CharacterSpecEnum.Fury,
