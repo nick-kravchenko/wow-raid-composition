@@ -65,12 +65,16 @@ export class AssignmentsComponent implements OnInit {
     this.activeTabs[raidId] = pane as PaneNameEnum;
   }
 
-  getCharacterByCharacterName(characterName: string): Character|undefined {
-    return this.players.reduce((character: Character|undefined, player: Player) => {
-      if (character) return character;
-      return player?.characters?.find((character: Character) => character.name === characterName);
-    }, undefined)
+getCharacterByCharacterName(characterName: string): (Character & { player: Player }) | undefined {
+  for (const player of this.players) {
+    const foundCharacter = player.characters?.find((c: Character) => c.name === characterName);
+    if (foundCharacter) {
+      return { ...foundCharacter, player };
+    }
   }
+
+  return undefined;
+}
 
   getCharactersFromQueryParams() {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
