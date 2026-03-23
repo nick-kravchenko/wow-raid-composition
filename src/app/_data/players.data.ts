@@ -560,7 +560,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Enhancement,
       },
       {
-        name: 'Thundermate Alt',
+        name: 'Blinkmate',
         level: 70,
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
