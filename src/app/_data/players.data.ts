@@ -89,7 +89,7 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
-        spec: CharacterSpecEnum.BeastMastery,
+        spec: CharacterSpecEnum.Survival,
       },
     ]
   },
@@ -211,9 +211,9 @@ export const players: Player[] = [
         name: 'Entim',
         level: 70,
         rank: CharacterRank.main,
-        role: CharacterRole.ranged,
+        role: CharacterRole.healer,
         class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Balance,
+        spec: CharacterSpecEnum.Restoration,
       },
       {
         name: 'Entimx',
@@ -235,7 +235,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
-        spec: CharacterSpecEnum.BeastMastery,
+        spec: CharacterSpecEnum.Survival,
       },
       {
         name: 'Serjioo Druid',
@@ -336,27 +336,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Saigha',
-    characters: [
-      {
-        name: 'Saigha',
-        level: 70,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-        spec: CharacterSpecEnum.Destruction,
-      },
-      {
-        name: 'Watchmeflex',
-        level: 70,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Fury,
-      },
-    ]
-  },
-  {
     name: 'Swotch',
     discord: { userId: '226071331697852416' },
     characters: [
@@ -449,20 +428,20 @@ export const players: Player[] = [
     discord: { userId: '556582468002775050' },
     characters: [
       {
-        name: 'Amorales',
-        level: 70,
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-        spec: CharacterSpecEnum.Destruction,
-      },
-      {
         name: 'Bozer',
         level: 70,
-        rank: CharacterRank.alt,
+        rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
         spec: CharacterSpecEnum.Arms,
+      },
+      {
+        name: 'Amorales',
+        level: 70,
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
       },
     ]
   },
@@ -555,27 +534,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Spectris',
-    characters: [
-      {
-        name: 'Spectris',
-        level: 70,
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Arms,
-      },
-      {
-        name: 'Peskit',
-        level: 70,
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Enhancement,
-      },
-    ]
-  },
-  {
     name: 'Hanzo',
     discord: { userId: '378933761007419393' },
     characters: [
@@ -646,12 +604,12 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Protection,
       },
       {
-        name: 'Akatoshi SP',
+        name: 'Chd',
         level: 70,
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
-        class: CharacterClass.priest,
-        spec: CharacterSpecEnum.Shadow,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Elemental,
       },
     ]
   },
