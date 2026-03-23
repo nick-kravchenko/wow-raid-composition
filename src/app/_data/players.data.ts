@@ -7,6 +7,7 @@ import { CharacterSpecEnum } from '../_entities/character-spec.enum';
 export const players: Player[] = [
   {
     name: 'Lazykit',
+    discord: { userId: '298460716904611840' },
     characters: [
       {
         name: 'Lazykit',
@@ -28,6 +29,7 @@ export const players: Player[] = [
   },
   {
     name: 'Palayoshka',
+    discord: { userId: '193687671359406080' },
     characters: [
       {
         name: 'Palayoshka',
@@ -49,6 +51,7 @@ export const players: Player[] = [
   },
   {
     name: 'Krava',
+    discord: { userId: '341841825847574528' },
     characters: [
       {
         name: 'Krava',
@@ -70,6 +73,7 @@ export const players: Player[] = [
   },
   {
     name: 'Cambells',
+    discord: { userId: '307413040712777730' },
     characters: [
       {
         name: 'Cambells',
@@ -91,6 +95,7 @@ export const players: Player[] = [
   },
   {
     name: 'Bawowna',
+    discord: { userId: '230324826747699200' },
     characters: [
       {
         name: 'Bawownahunt',
@@ -112,6 +117,7 @@ export const players: Player[] = [
   },
   {
     name: 'Dubasaw',
+    discord: { userId: '526101639002587178' },
     characters: [
       {
         name: 'Dubasaw',
@@ -133,6 +139,7 @@ export const players: Player[] = [
   },
   {
     name: 'Lansena',
+    discord: { userId: '360123145522249729' },
     characters: [
       {
         name: 'Lansena',
@@ -154,6 +161,7 @@ export const players: Player[] = [
   },
   {
     name: 'Edgelord',
+    discord: { userId: '257947077324177411' },
     characters: [
       {
         name: 'Edgelord',
@@ -175,6 +183,7 @@ export const players: Player[] = [
   },
   {
     name: 'Brokentoy',
+    discord: { userId: '234388219020443648' },
     characters: [
       {
         name: 'Brokentoy',
@@ -196,6 +205,7 @@ export const players: Player[] = [
   },
   {
     name: 'Entim',
+    discord: { userId: '486541449568059402' },
     characters: [
       {
         name: 'Entim',
@@ -217,6 +227,7 @@ export const players: Player[] = [
   },
   {
     name: 'Serjio',
+    discord: { userId: '1322931563406688346' },
     characters: [
       {
         name: 'Serjioo',
@@ -238,6 +249,7 @@ export const players: Player[] = [
   },
   {
     name: 'Chaiser',
+    discord: { userId: '353863554585067532' },
     characters: [
       {
         name: 'Chaiser',
@@ -259,6 +271,7 @@ export const players: Player[] = [
   },
   {
     name: 'Legalise',
+    discord: { userId: '364448191724257280' },
     characters: [
       {
         name: 'Legalise',
@@ -280,6 +293,7 @@ export const players: Player[] = [
   },
   {
     name: 'Dontmissbyte',
+    discord: { userId: '287674226440142848' },
     characters: [
       {
         name: 'Dontmissbyte',
@@ -301,6 +315,7 @@ export const players: Player[] = [
   },
   {
     name: 'Strike',
+    discord: { userId: '235195687996882954' },
     characters: [
       {
         name: 'Hellpapa',
@@ -343,6 +358,7 @@ export const players: Player[] = [
   },
   {
     name: 'Swotch',
+    discord: { userId: '226071331697852416' },
     characters: [
       {
         name: 'Swotch',
@@ -364,6 +380,7 @@ export const players: Player[] = [
   },
   {
     name: 'Art',
+    discord: { userId: '211134988119310337' },
     characters: [
       {
         name: 'Art',
@@ -385,6 +402,7 @@ export const players: Player[] = [
   },
   {
     name: 'Lloydaustin',
+    discord: { userId: '625411819334270976' },
     characters: [
       {
         name: 'Lloydaustin',
@@ -406,6 +424,7 @@ export const players: Player[] = [
   },
   {
     name: 'Zulnani',
+    discord: { userId: '521657297693573120' },
     characters: [
       {
         name: 'Zulnani',
@@ -427,6 +446,7 @@ export const players: Player[] = [
   },
   {
     name: 'Amorales',
+    discord: { userId: '556582468002775050' },
     characters: [
       {
         name: 'Amorales',
@@ -448,6 +468,7 @@ export const players: Player[] = [
   },
   {
     name: 'Greenbeam',
+    discord: { userId: '240514249024077824' },
     characters: [
       {
         name: 'Greenbeam',
@@ -469,6 +490,7 @@ export const players: Player[] = [
   },
   {
     name: 'Biruang',
+    discord: { userId: '840952972850233375' },
     characters: [
       {
         name: 'Biruang',
@@ -490,6 +512,7 @@ export const players: Player[] = [
   },
   {
     name: 'Renko',
+    discord: { userId: '319831527821410316' },
     characters: [
       {
         name: 'Renko',
@@ -511,6 +534,7 @@ export const players: Player[] = [
   },
   {
     name: 'Pappit',
+    discord: { userId: '580756767148081152' },
     characters: [
       {
         name: 'Pappit',
@@ -553,6 +577,7 @@ export const players: Player[] = [
   },
   {
     name: 'Hanzo',
+    discord: { userId: '378933761007419393' },
     characters: [
       {
         name: 'Hanzo',
@@ -566,6 +591,7 @@ export const players: Player[] = [
   },
   {
     name: 'Thundermate',
+    discord: { userId: '247320467310903297' },
     characters: [
       {
         name: 'Thundermate',
@@ -587,6 +613,7 @@ export const players: Player[] = [
   },
   {
     name: 'Rinn',
+    discord: { userId: '244543163702837259' },
     characters: [
       {
         name: 'Rinn',
@@ -608,6 +635,7 @@ export const players: Player[] = [
   },
   {
     name: 'Akatoshi',
+    discord: { userId: '509724063262834698' },
     characters: [
       {
         name: 'Akatoshi',
@@ -629,6 +657,7 @@ export const players: Player[] = [
   },
   {
     name: 'Chortenya',
+    discord: { userId: '163288553923543041' },
     characters: [
       {
         name: 'Chortenya',
@@ -650,6 +679,7 @@ export const players: Player[] = [
   },
   {
     name: 'Ryzha',
+    discord: { userId: '128246284447514624' },
     characters: [
       {
         name: 'Ryzha',
@@ -671,6 +701,7 @@ export const players: Player[] = [
   },
   {
     name: 'Alarian',
+    discord: { userId: '532245370944880640' },
     characters: [
       {
         name: 'Alarian',
@@ -692,6 +723,7 @@ export const players: Player[] = [
   },
   {
     name: 'Anvi',
+    discord: { userId: '615983194709295196' },
     characters: [
       {
         name: 'Anvi',
