@@ -342,7 +342,7 @@ export class AssignmentsT4Component implements OnInit {
     const crossActions: AssignmentAction[] = [];
     crossActions.push({ caster: crossTank, target: 'Cross Tank', icon: IconEnum.cross });
     if (crossMd) {
-      crossActions.push({ caster: crossMd, target: `${crossTank?.name}`, icon: IconEnum.misdirect });
+      crossActions.push({ caster: crossMd, target: `${crossTank?.name || '-'}`, icon: IconEnum.misdirect });
     }
     this.assignments[AssignmentType.hkmCrossAssignments].assignments.push({
       headerIcon: IconEnum.cross,
@@ -352,9 +352,6 @@ export class AssignmentsT4Component implements OnInit {
 
     const squareActions: AssignmentAction[] = [];
     squareActions.push({ caster: squareTank, target: 'Square Tank', icon: IconEnum.square });
-    if (squareMd) {
-      squareActions.push({ caster: squareMd, target: `${squareTank?.name}`, icon: IconEnum.misdirect });
-    }
     this.assignments[AssignmentType.hkmSquareAssignments].assignments.push({
       headerIcon: IconEnum.square,
       headerText: 'Square Assignments',
@@ -363,9 +360,6 @@ export class AssignmentsT4Component implements OnInit {
 
     const moonActions: AssignmentAction[] = [];
     moonActions.push({ caster: moonTank, target: 'Moon Tank', icon: IconEnum.moon });
-    if (moonMd) {
-      moonActions.push({ caster: moonMd, target: `${moonTank?.name}`, icon: IconEnum.misdirect });
-    }
     this.assignments[AssignmentType.hkmMoonAssignments].assignments.push({
       headerIcon: IconEnum.moon,
       headerText: 'Moon Assignments',
@@ -374,9 +368,6 @@ export class AssignmentsT4Component implements OnInit {
 
     const triangleActions: AssignmentAction[] = [];
     triangleActions.push({ caster: triangleTank, target: 'Triangle Tank', icon: IconEnum.triangle });
-    if (triangleMd) {
-      triangleActions.push({ caster: triangleMd, target: `${triangleTank?.name}`, icon: IconEnum.misdirect });
-    }
     this.assignments[AssignmentType.hkmTriangleAssignments].assignments.push({
       headerIcon: IconEnum.triangle,
       headerText: 'Triangle Assignments',
