@@ -315,21 +315,17 @@ export class AssignmentsT4Component implements OnInit {
     const warriorTanks = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank);
     const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
     const druidRangeds = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
-    const tanks = [
-      ...feralTanks,
-      ...paladinTanks,
-      ...warriorTanks,
-    ]
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
-    const bossTank = tanks.shift();
+    const bossTank = warriorTanks.shift() ?? feralTanks.shift();
     const bossMd = hunters.shift();
-    const crossTank = tanks.shift();
+    const paladinTank = paladinTanks.shift();
+    const crossTank = paladinTank;
     const crossMd = hunters.shift();
-    const squareTank = tanks.shift();
+    const squareTank = paladinTank;
     const squareMd = hunters.shift();
-    const moonTank = mages.shift();
+    const moonTank = druidRangeds.shift();
     const moonMd = hunters.shift();
-    const triangleTank = druidRangeds.shift();
+    const triangleTank = mages.shift();
     const triangleMd = hunters.shift();
 
     const skullActions: AssignmentAction[] = [];
