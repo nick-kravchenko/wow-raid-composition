@@ -76,12 +76,18 @@ export class RaidTileComponent implements OnInit {
   }
 
   ping(): void {
-    let message = '';
-    for (let i = 0; i < this.raid.length / 2; i++) {
-      message += `<@${this.raid[i]?.player?.discord?.userId}> <@${this.raid[i + 5]?.player?.discord?.userId}>\n`;
+    const rows: string[] = [];
+    for (let i = 0; i < this.raidSize; i += 5) {
+      const group = this.raid.slice(i, i + 5);
+      const mentions = group
+        .filter((c: Character) => c?.player?.discord?.userId)
+        .map((c: Character) => `<@${c.player?.discord?.userId}>`);
+      if (mentions.length > 0) {
+        rows.push(mentions.join(' '));
+      }
     }
     const kravaCharacter = this.raid.find((character: Character) => character?.player?.name === 'Krava');
-    message += `\`\`\`/w ${kravaCharacter?.name} 123\`\`\``;
-    navigator.clipboard.writeText(message);
+    rows.push(`\`\`\`/w ${kravaCharacter?.name} 123\`\`\``);
+    navigator.clipboard.writeText(rows.join('\n'));
   }
 }
