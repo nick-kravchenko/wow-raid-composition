@@ -632,7 +632,7 @@ export const players: Player[] = [
       {
         name: 'Betonnyi',
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
+        role: CharacterRole.tank,
         class: CharacterClass.warrior,
         spec: CharacterSpecEnum.Protection,
       },
