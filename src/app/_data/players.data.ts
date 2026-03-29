@@ -433,26 +433,6 @@ export const players: Player[] = [
     ]
   },
   {
-    name: 'Biruang',
-    discord: { userId: '840952972850233375' },
-    characters: [
-      {
-        name: 'Biruang',
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-        spec: CharacterSpecEnum.BeastMastery,
-      },
-      {
-        name: 'Biruang Paladin',
-        rank: CharacterRank.alt,
-        role: CharacterRole.tank,
-        class: CharacterClass.paladin,
-        spec: CharacterSpecEnum.Protection,
-      },
-    ]
-  },
-  {
     name: 'Renko',
     discord: { userId: '319831527821410316' },
     characters: [
