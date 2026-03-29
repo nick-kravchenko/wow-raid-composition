@@ -39,7 +39,7 @@ export class CompositionComponent implements OnInit {
     characterClass: new FormControl(''),
     characterRole: new FormControl(''),
     characterRank: new FormControl(''),
-    characterLevel: new FormControl(''),
+    raidSize: new FormControl('25'),
     characterClassAndRole: new FormGroup({
       Warrior_Melee: new FormControl(false),
       Warrior_Tank: new FormControl(false),
@@ -95,7 +95,6 @@ export class CompositionComponent implements OnInit {
         characterClass,
         characterRole,
         characterRank,
-        characterLevel,
       } = this.formGroup.getRawValue();
       const filtersPassed = [];
       if (player) {
@@ -110,10 +109,7 @@ export class CompositionComponent implements OnInit {
       if (characterRank) {
         filtersPassed.push(c.rank === characterRank);
       }
-      if (characterLevel && characterLevel !== 'null') {
-        filtersPassed.push(c.level === Number(characterLevel));
-      }
-      if (this.signedPlayers.length && c.player?.discord?.userId) {
+if (this.signedPlayers.length && c.player?.discord?.userId) {
         filtersPassed.push(this.signedPlayers.includes(c.player.discord.userId));
       }
       if (Object.values((this.formGroup.get('characterClassAndRole') as FormGroup).controls)
@@ -135,6 +131,10 @@ export class CompositionComponent implements OnInit {
     );
   }
   raids: Character[][] = [];
+
+  get currentRaidSize(): number {
+    return Number(this.formGroup.get('raidSize')?.value) || 25;
+  }
 
   dragFromRaidIndex?: number;
   dragFromSlotIndex?: number;
@@ -158,18 +158,23 @@ export class CompositionComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const raidSizeFromSnapshot = this.activatedRoute.snapshot.queryParamMap.get('raidSize');
+    if (raidSizeFromSnapshot) {
+      this.formGroup.get('raidSize')?.setValue(raidSizeFromSnapshot, { emitEvent: false });
+    }
     this.updateSignedUpPlayers();
     this.eventIdChangesHandler();
     this.subscribeForRaidChanges();
     this.handleActivatedRouteQueryParams();
     this.handleFormChange();
+    this.handleRaidSizeChange();
   }
 
   handleActivatedRouteQueryParams(): void {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       for (const key in params) {
         if (params.hasOwnProperty(key)) {
-          this.formGroup.get(key)?.setValue(decodeURIComponent(params[key]));
+          this.formGroup.get(key)?.setValue(decodeURIComponent(params[key]), { emitEvent: false });
         }
       }
     });
@@ -191,6 +196,12 @@ export class CompositionComponent implements OnInit {
           queryParamsHandling: 'merge', // remove to replace all query params by provided
         }
       );
+    });
+  }
+
+  handleRaidSizeChange(): void {
+    this.formGroup.get('raidSize')?.valueChanges.subscribe((value) => {
+      this.compositionService.resizeRaids(Number(value) || 25);
     });
   }
 
@@ -291,7 +302,7 @@ export class CompositionComponent implements OnInit {
   }
 
   onRaidPruneClick(raidId: number): void {
-    this.compositionService.resetRaid(raidId);
+    this.compositionService.resetRaid(raidId, this.currentRaidSize);
   }
 
   onRaidRemoveClick(raidId: number): void {
@@ -299,7 +310,7 @@ export class CompositionComponent implements OnInit {
   }
 
   onAddRaidClick(): void {
-    this.compositionService.addRaid();
+    this.compositionService.addRaid(this.currentRaidSize);
   }
 
   screenshot(): void {

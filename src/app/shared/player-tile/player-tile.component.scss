@@ -26,12 +26,3 @@ li {
 app-character-tile {
   border: none;
 }
-.level {
-  font-weight: 600;
-  text-shadow: rgba(0, 0, 0, 1) 0 0 .5em;
-  &.common { color: $rarity-common; }
-  &.uncommon { color: $rarity-uncommon; }
-  &.rare { color: $rarity-rare; }
-  &.epic { color: $rarity-epic; }
-  &.legendary { color: $rarity-legendary; }
-}

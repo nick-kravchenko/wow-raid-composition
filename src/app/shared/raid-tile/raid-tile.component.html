@@ -33,18 +33,20 @@
     </span>
   </h3>
   <div class="external-actions" data-html2canvas-ignore="true">
-    <button *ngIf="!hideControls" (click)="pruneModalVisible = true;">
-      <i class="fa-solid fa-recycle"></i>
-    </button>
-    <button *ngIf="!hideControls" (click)="removeModalVisible = true;">
-      <i class="fa-solid fa-trash-can"></i>
-    </button>
+    @if (!hideControls) {
+      <button (click)="pruneModalVisible = true;">
+        <i class="fa-solid fa-recycle"></i>
+      </button>
+      <button (click)="removeModalVisible = true;">
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+    }
   </div>
 </header>
-<div class="raidgroups" #raidGroups>
+<div class="raidgroups" #raidGroups [style.grid-template-rows]="'repeat(' + raidSize / 5 + ', 1fr)'">
   @for (slot of raid; track $index; let i = $index) {
     @if (i % 5 === 0) {
-      <span>Group {{i / 5 + 1}}</span>
+      <span>G{{i / 5 + 1}}</span>
     }
     @if (hideControls) {
       <app-character-tile

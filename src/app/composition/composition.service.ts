@@ -25,8 +25,8 @@ export class CompositionService {
     this.writeRaidsToQueryParams();
   }
 
-  get emptyRaid(): Character[] {
-    return new Array(25).fill(null);
+  emptyRaid(size: number = 25): Character[] {
+    return new Array(size).fill(null);
   }
 
   constructor(
@@ -147,15 +147,31 @@ export class CompositionService {
     });
   }
 
-  resetRaid(raidId: number): void {
-    this.raids = this.raids.map((raid: Character[], i) => i === raidId ? this.emptyRaid : raid);
+  resetRaid(raidId: number, size: number = 25): void {
+    this.raids = this.raids.map((raid: Character[], i) => i === raidId ? this.emptyRaid(size) : raid);
   }
 
   removeRaid(raidId: number): void {
     this.raids = this.raids.filter((raid: Character[], i) => i !== raidId);
   }
 
-  addRaid(): void {
-    this.raids = [...this.raids, this.emptyRaid];
+  addRaid(size: number = 25): void {
+    this.raids = [...this.raids, this.emptyRaid(size)];
+  }
+
+  resizeRaids(newSize: number): void {
+    if (!this.raids.length) return;
+    const allSlots: (Character | null)[] = this.raids.flat();
+    const newRaids: Character[][] = [];
+    for (let i = 0; i < allSlots.length; i += newSize) {
+      const chunk = allSlots.slice(i, i + newSize);
+      while (chunk.length < newSize) chunk.push(null);
+      newRaids.push(chunk as Character[]);
+    }
+    // drop trailing all-empty raids
+    while (newRaids.length && newRaids[newRaids.length - 1].every(c => !c)) {
+      newRaids.pop();
+    }
+    this.raids = newRaids;
   }
 }

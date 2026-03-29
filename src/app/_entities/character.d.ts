@@ -5,7 +5,6 @@ import { CharacterClassSpec } from './character-class-spec';
 
 export interface Character extends CharacterClassSpec {
   name: string;
-  level: number;
   class: CharacterClassSpec['class'];
   spec: CharacterClassSpec['spec'];
   role: CharacterRole;
