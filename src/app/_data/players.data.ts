@@ -70,7 +70,7 @@ export const players: Player[] = [
         class: CharacterClass.warlock,
         spec: CharacterSpecEnum.Destruction,
       },
-    ]
+    ],
   },
   {
     name: 'Cambells',
@@ -90,7 +90,7 @@ export const players: Player[] = [
         class: CharacterClass.hunter,
         spec: CharacterSpecEnum.Survival,
       },
-    ]
+    ],
   },
   {
     name: 'Bawowna',
@@ -110,7 +110,7 @@ export const players: Player[] = [
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Restoration,
       },
-    ]
+    ],
   },
   {
     name: 'Dubasaw',
@@ -130,7 +130,7 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Enhancement,
       },
-    ]
+    ],
   },
   {
     name: 'Lansena',
@@ -150,7 +150,7 @@ export const players: Player[] = [
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Balance,
       },
-    ]
+    ],
   },
   {
     name: 'Edgelord',
@@ -170,7 +170,7 @@ export const players: Player[] = [
         class: CharacterClass.priest,
         spec: CharacterSpecEnum.Shadow,
       },
-    ]
+    ],
   },
   {
     name: 'Brokentoy',
@@ -190,7 +190,7 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Elemental,
       },
-    ]
+    ],
   },
   {
     name: 'Entim',
@@ -210,7 +210,7 @@ export const players: Player[] = [
         class: CharacterClass.priest,
         spec: CharacterSpecEnum.Holy,
       },
-    ]
+    ],
   },
   {
     name: 'Serjio',
@@ -230,7 +230,7 @@ export const players: Player[] = [
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Balance,
       },
-    ]
+    ],
   },
   {
     name: 'Chaiser',
@@ -250,7 +250,7 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Restoration,
       },
-    ]
+    ],
   },
   {
     name: 'Legalise',
@@ -270,7 +270,7 @@ export const players: Player[] = [
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Feral,
       },
-    ]
+    ],
   },
   {
     name: 'Dontmissbyte',
@@ -290,7 +290,7 @@ export const players: Player[] = [
         class: CharacterClass.warlock,
         spec: CharacterSpecEnum.Destruction,
       },
-    ]
+    ],
   },
   {
     name: 'Strike',
@@ -310,7 +310,7 @@ export const players: Player[] = [
         class: CharacterClass.rogue,
         spec: CharacterSpecEnum.Combat,
       },
-    ]
+    ],
   },
   {
     name: 'Swotch',
@@ -330,7 +330,7 @@ export const players: Player[] = [
         class: CharacterClass.warrior,
         spec: CharacterSpecEnum.Arms,
       },
-    ]
+    ],
   },
   {
     name: 'Art',
@@ -350,7 +350,7 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Enhancement,
       },
-    ]
+    ],
   },
   {
     name: 'Lloydaustin',
@@ -370,7 +370,7 @@ export const players: Player[] = [
         class: CharacterClass.hunter,
         spec: CharacterSpecEnum.BeastMastery,
       },
-    ]
+    ],
   },
   {
     name: 'Zulnani',
@@ -390,7 +390,7 @@ export const players: Player[] = [
         class: CharacterClass.warlock,
         spec: CharacterSpecEnum.Destruction,
       },
-    ]
+    ],
   },
   {
     name: 'Amorales',
@@ -410,7 +410,7 @@ export const players: Player[] = [
         class: CharacterClass.warlock,
         spec: CharacterSpecEnum.Destruction,
       },
-    ]
+    ],
   },
   {
     name: 'Greenbeam',
@@ -430,7 +430,7 @@ export const players: Player[] = [
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Restoration,
       },
-    ]
+    ],
   },
   {
     name: 'Renko',
@@ -477,7 +477,7 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Elemental,
       },
-    ]
+    ],
   },
   {
     name: 'Hanzo',
@@ -490,7 +490,7 @@ export const players: Player[] = [
         class: CharacterClass.warrior,
         spec: CharacterSpecEnum.Fury,
       },
-    ]
+    ],
   },
   {
     name: 'Thundermate',
@@ -510,7 +510,7 @@ export const players: Player[] = [
         class: CharacterClass.mage,
         spec: CharacterSpecEnum.Arcane,
       },
-    ]
+    ],
   },
   {
     name: 'Rinn',
@@ -530,7 +530,7 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Restoration,
       },
-    ]
+    ],
   },
   {
     name: 'Akatoshi',
@@ -550,7 +550,7 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Elemental,
       },
-    ]
+    ],
   },
   {
     name: 'Chortenya',
@@ -570,7 +570,7 @@ export const players: Player[] = [
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Balance,
       },
-    ]
+    ],
   },
   {
     name: 'Ryzha',
@@ -590,7 +590,7 @@ export const players: Player[] = [
         class: CharacterClass.priest,
         spec: CharacterSpecEnum.Holy,
       },
-    ]
+    ],
   },
   {
     name: 'Alarian',
@@ -610,7 +610,7 @@ export const players: Player[] = [
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Holy,
       },
-    ]
+    ],
   },
   {
     name: 'Anvi',
@@ -623,6 +623,32 @@ export const players: Player[] = [
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Retribution,
       },
-    ]
+    ],
+  },
+  {
+    name: 'Betonnyi',
+    discord: { userId: '379260041066446849' },
+    characters: [
+      {
+        name: 'Betonnyi',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Protection,
+      },
+    ],
+  },
+  {
+    name: 'Dullo',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Dullo',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+    ],
   },
 ];
