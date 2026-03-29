@@ -67,17 +67,4 @@ export class CharacterTileComponent {
     Shaman_Elemental_Ranged: 'spell_nature_lightning.jpg',
     Shaman_Restoration_Healer: 'spell_nature_magicimmunity.jpg',
   };
-
-  toggleRole(event: MouseEvent): void {
-    event.preventDefault();
-    event.stopPropagation();
-    const roleQueue = Object.keys(this.iconsSpecs).filter((classRole: string) => {
-      // @ts-ignore
-      return classRole.includes(this.character.class);
-    });
-    const currentRoleIndex = roleQueue.indexOf(`${this.character?.class}_${this.character?.role}`);
-    const nextRoleIndex = roleQueue.length - 1 === currentRoleIndex ? 0 : currentRoleIndex + 1;
-    // @ts-ignore
-    this.character.role = roleQueue[nextRoleIndex].split('_')[1];
-  }
 }
