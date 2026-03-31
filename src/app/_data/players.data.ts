@@ -77,7 +77,7 @@ export const players: Player[] = [
     discord: { userId: '307413040712777730' },
     characters: [
       {
-        name: 'Cambells',
+        name: 'Cambels',
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
@@ -144,7 +144,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Holy,
       },
       {
-        name: 'Melorin',
+        name: 'Mellorin',
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
@@ -157,7 +157,7 @@ export const players: Player[] = [
     discord: { userId: '257947077324177411' },
     characters: [
       {
-        name: 'Edgelord',
+        name: 'Edgelørd',
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
@@ -317,14 +317,14 @@ export const players: Player[] = [
     discord: { userId: '226071331697852416' },
     characters: [
       {
-        name: 'Swotch',
+        name: 'Swotchw',
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
         spec: CharacterSpecEnum.Destruction,
       },
       {
-        name: 'Swotchw',
+        name: 'Swotchww',
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
@@ -337,7 +337,7 @@ export const players: Player[] = [
     discord: { userId: '211134988119310337' },
     characters: [
       {
-        name: 'Art',
+        name: 'Artlicht',
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
@@ -357,7 +357,7 @@ export const players: Player[] = [
     discord: { userId: '625411819334270976' },
     characters: [
       {
-        name: 'Lloydaustin',
+        name: 'Llóydaustin',
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
@@ -564,7 +564,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Destruction,
       },
       {
-        name: 'Sipukha',
+        name: 'Sypukha',
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
@@ -577,7 +577,7 @@ export const players: Player[] = [
     discord: { userId: '128246284447514624' },
     characters: [
       {
-        name: 'Ryzha',
+        name: 'Ryzhã',
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.priest,

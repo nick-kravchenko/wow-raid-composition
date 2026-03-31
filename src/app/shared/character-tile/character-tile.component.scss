@@ -52,6 +52,11 @@
 .name {
   display: flex;
   align-items: center;
+  a {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+  }
 }
 sup {
   position: absolute;

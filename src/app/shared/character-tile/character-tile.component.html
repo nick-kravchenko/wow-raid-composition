@@ -2,6 +2,7 @@
   <img class="icon" src="assets/icons/{{iconsSpecs[character.class + '_' + character.spec + '_' + character.role]}}" alt="">
   <span class="name text-{{character.class | lowercase}}">
     <span class="rank rank--{{character.rank}}"></span>
-    {{character.name}}
+    <a *ngIf="isWCLLinkVisible; else plainName" target="_blank" href="https://fresh.warcraftlogs.com/character/eu/spineshatter/{{character.name}}">{{character.name}}</a>
+    <ng-template #plainName>{{character.name}}</ng-template>
     <sup *ngIf="character.player">{{character.player.name}}</sup></span>
 </ng-container>

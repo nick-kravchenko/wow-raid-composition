@@ -13,6 +13,7 @@ import { LowerCasePipe, NgIf } from '@angular/common';
 })
 export class CharacterTileComponent {
   @Input() character?: Character;
+  @Input() isWCLLinkVisible: boolean = false;
 
   icons = {
     Warrior: 'class_warrior.jpg',
