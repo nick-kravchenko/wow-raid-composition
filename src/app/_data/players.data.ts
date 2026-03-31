@@ -664,4 +664,17 @@ export const players: Player[] = [
       },
     ],
   },
+  {
+    name: 'Manowarr',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Manowarr',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
+      },
+    ],
+  },
 ];
