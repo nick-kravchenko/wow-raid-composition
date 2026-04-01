@@ -313,13 +313,13 @@ export class AssignmentsT4Component implements OnInit {
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const feralTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const warriorTanks = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank);
-    const tanks = [...feralTanks, ...warriorTanks, ...feralTanks];
+    const tanks = [...feralTanks, ...warriorTanks, ...paladinTanks];
     const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
     const druidRangeds = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     const bossTank = tanks.shift();
-    const crossTank = tanks.shift();
-    const squareTank = tanks.shift();
+    const crossTank = paladinTanks.length ? paladinTanks[0] : tanks.shift();
+    const squareTank = paladinTanks.length ? paladinTanks[0] : tanks.shift();
     const moonTank = druidRangeds.shift();
     const triangleTank = mages.shift();
     const md1 = hunters.shift();
