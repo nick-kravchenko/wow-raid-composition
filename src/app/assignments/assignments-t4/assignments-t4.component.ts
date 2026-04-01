@@ -318,8 +318,8 @@ export class AssignmentsT4Component implements OnInit {
     const druidRangeds = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     const bossTank = tanks.shift();
-    const crossTank = paladinTanks.length ? paladinTanks[0] : tanks.shift();
-    const squareTank = paladinTanks.length ? paladinTanks[0] : tanks.shift();
+    const crossTank = paladinTanks.length ? paladinTanks.shift() : tanks.shift();
+    const squareTank = paladinTanks.length ? crossTank : tanks.shift();
     const moonTank = druidRangeds.shift();
     const triangleTank = mages.shift();
     const md1 = hunters.shift();
