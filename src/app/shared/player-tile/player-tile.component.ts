@@ -14,6 +14,7 @@ import {NgForOf} from '@angular/common';
 })
 export class PlayerTileComponent implements OnInit {
   @Input() player!: Player;
+  @Input() isRankingsVisible: boolean = false;
 
   constructor() { }
 

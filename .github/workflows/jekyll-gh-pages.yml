@@ -47,6 +47,22 @@ jobs:
         run: |
           export NODE_OPTIONS=--openssl-legacy-provider
           npm i
+      - name: Bake WCL data
+        # Runs before the Angular build so the generated file is available.
+        # continue-on-error: true so a WCL outage never blocks a deploy.
+        # If WCL_CLIENT_ID/SECRET are not set the script exits 0 silently,
+        # keeping the last committed wcl-baked.data.ts as-is.
+        continue-on-error: true
+        env:
+          WCL_CLIENT_ID: ${{ secrets.WCL_CLIENT_ID }}
+          WCL_CLIENT_SECRET: ${{ secrets.WCL_CLIENT_SECRET }}
+          WCL_DEFAULT_REALM: ${{ vars.WCL_DEFAULT_REALM }}
+          WCL_DEFAULT_REGION: ${{ vars.WCL_DEFAULT_REGION }}
+          WCL_ZONE_ID: ${{ vars.WCL_ZONE_ID }}
+        run: npm run bake:wcl
+      - name: Build Angular app
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
           npm run build:gpages
       - name: copy file
         uses: canastro/copy-file-action@master

@@ -584,7 +584,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Holy,
       },
       {
-        name: 'Ryzha Alt',
+        name: 'Ryzha',
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.priest,

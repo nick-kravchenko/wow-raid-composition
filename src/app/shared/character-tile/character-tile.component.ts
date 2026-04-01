@@ -1,19 +1,84 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Character } from '../../_entities/character';
-import { LowerCasePipe, NgIf } from '@angular/common';
+import { LowerCasePipe } from '@angular/common';
+
+declare const $WowheadPower: { refreshLinks(): void } | undefined;
+
+const GEAR_SLOT_NAMES: Record<number, string> = {
+  0:  'Ammo',
+  1:  'Helm',
+  2:  'Neck',
+  3:  'Shoulder',
+  4:  'Shirt',
+  5:  'Chest',
+  6:  'Belt',
+  7:  'Legs',
+  8:  'Boots',
+  9:  'Bracer',
+  10: 'Hands',
+  11: 'Ring 1',
+  12: 'Ring 2',
+  13: 'Trinket 1',
+  14: 'Trinket 2',
+  15: 'Cloak',
+  16: 'Main Hand',
+  17: 'Off Hand',
+  18: 'Ranged',
+  19: 'Tabard',
+};
+import { wclBakedData, WclBakedCharacter } from '../../_data/wcl-baked.data';
 
 @Component({
   selector: 'app-character-tile',
+  host: { '[class.rankings-visible]': 'isRankingsVisible' },
   imports: [
     LowerCasePipe,
-    NgIf
   ],
   templateUrl: './character-tile.component.html',
   styleUrl: './character-tile.component.scss'
 })
-export class CharacterTileComponent {
+export class CharacterTileComponent implements OnChanges {
   @Input() character?: Character;
   @Input() isWCLLinkVisible: boolean = false;
+  @Input() isRankingsVisible: boolean = false;
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['isRankingsVisible']?.currentValue === true) {
+      setTimeout(() => {
+        if (typeof $WowheadPower !== 'undefined') {
+          $WowheadPower.refreshLinks();
+        }
+      }, 0);
+    }
+  }
+
+  get wclCharacter(): WclBakedCharacter | null {
+    if (!this.character) return null;
+    return wclBakedData.characters[this.character.name.toLowerCase()] ?? null;
+  }
+
+  rankPercentColor(percent: number | null): string {
+    if (percent === null) return '#9d9d9d';
+    if (percent === 100) return '#e5cc80';
+    if (percent >= 99) return '#e268a8';
+    if (percent >= 95) return '#ff8000';
+    if (percent >= 75) return '#a335ee';
+    if (percent >= 50) return '#0070dd';
+    if (percent >= 25) return '#1eff00';
+    return '#9d9d9d';
+  }
+
+  formatPercent(value: number | null): string {
+    return value !== null ? Math.round(value) + '%' : '–';
+  }
+
+  gearIconUrl(icon: string): string {
+    return `https://assets.rpglogs.com/img/warcraft/icons/medium/${icon}.jpg`;
+  }
+
+  gearSlotName(slot: number): string {
+    return GEAR_SLOT_NAMES[slot] ?? `Slot ${slot}`;
+  }
 
   icons = {
     Warrior: 'class_warrior.jpg',

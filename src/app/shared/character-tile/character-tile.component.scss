@@ -22,6 +22,17 @@
       opacity: 1;
       visibility: visible;
     }
+    .gear {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &.rankings-visible {
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    white-space: normal;
+    overflow: visible;
   }
 }
 .icon {
@@ -77,4 +88,27 @@ sup {
   @include screen-tablet() {
     display: none;
   }
+}
+.perf {
+  font-size: 0.85em;
+  font-weight: bold;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+.gear {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: .5rem;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, .7);
+  visibility: hidden;
+  opacity: 0;
+  will-change: visibility, opacity;
+  transition: visibility .2s, opacity .2s;
+  width: 200%;
+  z-index: 1;
+  padding: .5rem;
 }
