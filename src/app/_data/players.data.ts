@@ -339,9 +339,9 @@ export const players: Player[] = [
       {
         name: 'Artlicht',
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
+        role: CharacterRole.tank,
         class: CharacterClass.paladin,
-        spec: CharacterSpecEnum.Retribution,
+        spec: CharacterSpecEnum.Protection,
       },
       {
         name: 'Cherepaha',
