@@ -16,7 +16,7 @@
  *   WCL_SKIP_GEAR      — Set to "true" to skip gear fetching (faster, fewer API calls)
  *   WCL_API_DELAY_MS   — Delay between API calls in ms (default: 300)
  */
-
+import dotenv from 'dotenv';
 import { writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -63,15 +63,32 @@ const OUTPUT_PATH = join(
 
 // ── Config from environment ──────────────────────────────────────────────────
 
-const CLIENT_ID = process.env['WCL_CLIENT_ID'];
-const CLIENT_SECRET = process.env['WCL_CLIENT_SECRET'];
-const DEFAULT_REALM = process.env['WCL_DEFAULT_REALM'] ?? '';
-const DEFAULT_REGION = process.env['WCL_DEFAULT_REGION'] ?? '';
-const ZONE_ID = process.env['WCL_ZONE_ID']
-  ? parseInt(process.env['WCL_ZONE_ID'], 10)
-  : null;
-const SKIP_GEAR = process.env['WCL_SKIP_GEAR'] === 'true';
-const API_DELAY_MS = parseInt(process.env['WCL_API_DELAY_MS'] ?? '300', 10);
+dotenv.config();
+
+function requireEnv(name: string): string {
+  const value = process.env[name];
+  if (typeof value === 'undefined') {
+    throw new Error(`Missing required env var: ${name}`);
+  }
+  return value;
+}
+
+const CLIENT_ID = requireEnv('WCL_CLIENT_ID');
+const CLIENT_SECRET = requireEnv('WCL_CLIENT_SECRET');
+const DEFAULT_REALM = requireEnv('WCL_DEFAULT_REALM');
+const DEFAULT_REGION = requireEnv('WCL_DEFAULT_REGION');
+const ZONE_ID = requireEnv('WCL_ZONE_ID') ? parseInt(requireEnv['WCL_ZONE_ID'], 10) : null;
+const SKIP_GEAR = requireEnv('WCL_SKIP_GEAR') === 'true';
+const API_DELAY_MS = parseInt(requireEnv['WCL_API_DELAY_MS'] ?? '300', 10);
+console.log({
+  CLIENT_ID,
+  CLIENT_SECRET,
+  DEFAULT_REALM,
+  DEFAULT_REGION,
+  ZONE_ID,
+  SKIP_GEAR,
+  API_DELAY_MS,
+});
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 

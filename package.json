@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "build:gpages": "ng build --base-href https://nick-kravchenko.github.io/wow-raid-composition/",
     "test": "ng test",
-    "bake:wcl": "tsx --env-file=.env scripts/wcl-baker/index.ts"
+    "bake:wcl": "tsx scripts/wcl-baker/index.ts"
   },
   "private": true,
   "dependencies": {
@@ -31,13 +31,14 @@
     "@angular/compiler-cli": "^19.1.0",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^22.0.0",
-    "tsx": "^4.19.0",
+    "dotenv": "^17.3.1",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "tsx": "^4.19.0",
     "typescript": "~5.7.2"
   }
 }

@@ -1,6 +1,6 @@
 // AUTO-GENERATED — do not edit manually.
 // Run `npm run bake:wcl` to regenerate.
-// Generated: 2026-04-01T15:25:57.083Z
+// Generated: 2026-04-01T16:10:25.815Z
 
 export interface WclGearItem {
   id: number;
@@ -56,7 +56,7 @@ export interface WclBakedData {
 }
 
 export const wclBakedData: WclBakedData = {
-  "generatedAt": "2026-04-01T15:25:57.083Z",
+  "generatedAt": "2026-04-01T16:10:25.815Z",
   "defaultServerSlug": "spineshatter",
   "defaultServerRegion": "eu",
   "characters": {
@@ -291,7 +291,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 87.65133333333334,
       "medianPerformanceAverage": 82.99980000000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -526,7 +526,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 58.339323074666055,
       "medianPerformanceAverage": 26.664641020009142,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -761,7 +761,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 72.73169999999999,
       "medianPerformanceAverage": 57.8725,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -986,7 +986,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 74.9746,
       "medianPerformanceAverage": 74.9746,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -1221,7 +1221,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 78.8205,
       "medianPerformanceAverage": 78.8205,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -1456,7 +1456,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 84.35860000000001,
       "medianPerformanceAverage": 69.3401,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -1691,7 +1691,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 71.40383333333334,
       "medianPerformanceAverage": 67.18263333333334,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -1911,7 +1911,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -2146,7 +2146,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 54.431900000000006,
       "medianPerformanceAverage": 48.12980000000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -2381,7 +2381,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 67.8079,
       "medianPerformanceAverage": 65.16293333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -2616,7 +2616,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 91.6025,
       "medianPerformanceAverage": 74.89893333333335,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -2630,7 +2630,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -2865,7 +2865,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 91.73406666666666,
       "medianPerformanceAverage": 81.27996666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -3100,7 +3100,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 97.29466666666667,
       "medianPerformanceAverage": 87.13223333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -3320,7 +3320,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -3334,7 +3334,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -3569,7 +3569,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 92.23299999999999,
       "medianPerformanceAverage": 80.40383333333334,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -3804,7 +3804,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 92.30123333333331,
       "medianPerformanceAverage": 74.22796666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -4039,7 +4039,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 95.32143333333333,
       "medianPerformanceAverage": 88.45676666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -4274,7 +4274,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 53.06773333333333,
       "medianPerformanceAverage": 39.44583333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -4288,7 +4288,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -4523,7 +4523,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 98.57926666666667,
       "medianPerformanceAverage": 95.64806666666668,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -4758,7 +4758,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 68.0606,
       "medianPerformanceAverage": 46.770900000000005,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -4993,7 +4993,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 69.05633333333334,
       "medianPerformanceAverage": 69.05633333333334,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -5213,7 +5213,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -5448,7 +5448,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 88.33262869365132,
       "medianPerformanceAverage": 73.39441858550403,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -5668,7 +5668,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -5903,7 +5903,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 85.9517,
       "medianPerformanceAverage": 85.9517,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -6138,7 +6138,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 45.74583075844316,
       "medianPerformanceAverage": 45.74583075844316,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -6373,7 +6373,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 97.5107274806226,
       "medianPerformanceAverage": 65.2311364838662,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -6426,7 +6426,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 16.7174,
       "medianPerformanceAverage": 16.7174,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": true
     },
@@ -6661,7 +6661,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 97.6124,
       "medianPerformanceAverage": 93.26616666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -6886,7 +6886,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 40.2216,
       "medianPerformanceAverage": 40.2216,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -7121,7 +7121,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 70.64453333333333,
       "medianPerformanceAverage": 70.64453333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -7356,7 +7356,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 97.41090000000001,
       "medianPerformanceAverage": 93.41906666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -7591,7 +7591,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 21.857933333333335,
       "medianPerformanceAverage": 21.857933333333335,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -7826,7 +7826,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 93.91129999999998,
       "medianPerformanceAverage": 88.61836666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -8061,7 +8061,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 97.22930000000001,
       "medianPerformanceAverage": 94.71556666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -8296,7 +8296,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 96.69426666666665,
       "medianPerformanceAverage": 94.41236666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -8531,7 +8531,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 98.97743333333334,
       "medianPerformanceAverage": 93.02859999999998,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -8766,7 +8766,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 33.19023333333333,
       "medianPerformanceAverage": 29.955966666666665,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -9001,7 +9001,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 81.66666666666667,
       "medianPerformanceAverage": 81.66666666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -9236,7 +9236,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 0.8324866666666666,
       "medianPerformanceAverage": 0.8324866666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -9471,7 +9471,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 72.36263333333333,
       "medianPerformanceAverage": 66.10346666666668,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -9706,7 +9706,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 29.460317,
       "medianPerformanceAverage": 29.460317,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -9941,7 +9941,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 67.28801284803724,
       "medianPerformanceAverage": 53.333333333333336,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -10004,7 +10004,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 85.5595,
       "medianPerformanceAverage": 66.5609,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": true
     },
@@ -10239,7 +10239,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 92.75473333333333,
       "medianPerformanceAverage": 65.61786666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -10253,7 +10253,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -10488,7 +10488,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 99.28016666666667,
       "medianPerformanceAverage": 94.0969,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -10708,7 +10708,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -10943,7 +10943,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 51.666666666666664,
       "medianPerformanceAverage": 51.666666666666664,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -11163,7 +11163,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -11398,7 +11398,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 92.23926666666667,
       "medianPerformanceAverage": 81.08476666666668,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -11633,7 +11633,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 72.86483333333332,
       "medianPerformanceAverage": 58.53113333333334,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -11647,7 +11647,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -11882,7 +11882,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 58.33462666666666,
       "medianPerformanceAverage": 53.32132333333334,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -12117,7 +12117,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 93.0011,
       "medianPerformanceAverage": 72.57236666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -12352,7 +12352,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 55.12338333333333,
       "medianPerformanceAverage": 55.12338333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -12587,7 +12587,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 49.79996666666667,
       "medianPerformanceAverage": 49.79996666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -12822,7 +12822,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 41.1714,
       "medianPerformanceAverage": 41.1714,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -13057,7 +13057,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 87.17423333333333,
       "medianPerformanceAverage": 80.73096666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -13292,7 +13292,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 67.87390822964962,
       "medianPerformanceAverage": 67.87390822964962,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -13512,7 +13512,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -13747,7 +13747,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 35.92586666666667,
       "medianPerformanceAverage": 21.383533333333332,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     },
@@ -13982,7 +13982,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.0573,
       "medianPerformanceAverage": 71.72853333333335,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T15:25:57.083Z",
+      "fetchedAt": "2026-04-01T16:10:25.815Z",
       "error": null,
       "partial": false
     }
