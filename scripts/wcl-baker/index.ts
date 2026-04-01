@@ -80,15 +80,6 @@ const DEFAULT_REGION = requireEnv('WCL_DEFAULT_REGION');
 const ZONE_ID = requireEnv('WCL_ZONE_ID') ? parseInt(requireEnv['WCL_ZONE_ID'], 10) : null;
 const SKIP_GEAR = requireEnv('WCL_SKIP_GEAR') === 'true';
 const API_DELAY_MS = parseInt(requireEnv['WCL_API_DELAY_MS'] ?? '300', 10);
-console.log({
-  CLIENT_ID,
-  CLIENT_SECRET,
-  DEFAULT_REALM,
-  DEFAULT_REGION,
-  ZONE_ID,
-  SKIP_GEAR,
-  API_DELAY_MS,
-});
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
