@@ -56,6 +56,7 @@ jobs:
         env:
           WCL_CLIENT_ID: ${{ secrets.WCL_CLIENT_ID }}
           WCL_CLIENT_SECRET: ${{ secrets.WCL_CLIENT_SECRET }}
+          WCL_SKIP_GEAR: ${{ vars.WCL_SKIP_GEAR }}
           WCL_DEFAULT_REALM: ${{ vars.WCL_DEFAULT_REALM }}
           WCL_DEFAULT_REGION: ${{ vars.WCL_DEFAULT_REGION }}
           WCL_ZONE_ID: ${{ vars.WCL_ZONE_ID }}
