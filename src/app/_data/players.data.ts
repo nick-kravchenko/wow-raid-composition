@@ -52,9 +52,9 @@ export const players: Player[] = [
       {
         name: 'Kravá',
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
+        role: CharacterRole.tank,
         class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Fury,
+        spec: CharacterSpecEnum.Protection,
       },
       {
         name: 'Kravä',
@@ -426,9 +426,9 @@ export const players: Player[] = [
       {
         name: 'Mapleleaf',
         rank: CharacterRank.alt,
-        role: CharacterRole.healer,
+        role: CharacterRole.ranged,
         class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Restoration,
+        spec: CharacterSpecEnum.Balance,
       },
     ],
   },
@@ -626,15 +626,15 @@ export const players: Player[] = [
     ],
   },
   {
-    name: 'Betonnyi',
+    name: 'Sustainable',
     discord: { userId: '379260041066446849' },
     characters: [
       {
         name: 'Betonnyi',
         rank: CharacterRank.main,
-        role: CharacterRole.tank,
+        role: CharacterRole.melee,
         class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Protection,
+        spec: CharacterSpecEnum.Arms,
       },
     ],
   },
