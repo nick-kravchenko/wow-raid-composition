@@ -383,6 +383,8 @@ export class AssignmentsT4Component implements OnInit {
 
   fillGruulTheDragonslayerAssignments() {
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
+    const warriorTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
+    const mainTanks = [...paladinTanks, ...warriorTanks];
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
 
@@ -396,7 +398,7 @@ export class AssignmentsT4Component implements OnInit {
 
     hunters.forEach((hunter, index) => {
       const target = index < halfPoint
-        ? (paladinTanks[0] || 'Paladin Tank')
+        ? (mainTanks[0] || 'Paladin Tank')
         : (druidTanks[0] || 'Druid Tank');
 
       this.assignments[AssignmentType.gruulTheDragonKillerAssignments].assignments[0].actions.push({
