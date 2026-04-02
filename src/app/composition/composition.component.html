@@ -17,16 +17,19 @@
     </div>
   </form>
   <ul class="characters">
-    <li *ngFor="let character of filteredCharacters">
-      <app-character-tile
-        [class.used]="!isCharacterAvailable(character)"
-        [draggable]="isCharacterAvailable(character)"
-        [character]="character"
-        (dragstart)="dragFromSidebar(character)"
-        (dragend)="onSidebarDragend()"
-        (click)="onSidebarCharacterClick(character)"
-      ></app-character-tile>
-    </li>
+    @for (character of filteredCharacters; track character.name) {
+      <li>
+        @if (isCharacterAvailable(character)) {
+          <app-character-tile
+            [draggable]="isCharacterAvailable(character)"
+            [character]="character"
+            (dragstart)="dragFromSidebar(character)"
+            (dragend)="onSidebarDragend()"
+            (click)="onSidebarCharacterClick(character)"
+          ></app-character-tile>
+        }
+      </li>
+    }
   </ul>
 </aside>
 <section>
