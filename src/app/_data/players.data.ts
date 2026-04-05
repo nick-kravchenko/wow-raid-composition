@@ -193,6 +193,19 @@ export const players: Player[] = [
     ],
   },
   {
+    name: 'Antagonist',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Antagonist',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+    ],
+  },
+  {
     name: 'Entim',
     discord: { userId: '486541449568059402' },
     characters: [
