@@ -270,6 +270,13 @@ export const players: Player[] = [
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Feral,
       },
+      {
+        name: 'Alpine',
+        rank: CharacterRank.alt,
+        role: CharacterRole.tank,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Protection,
+      },
     ],
   },
   {
