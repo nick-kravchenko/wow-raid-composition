@@ -52,9 +52,9 @@ export const players: Player[] = [
       {
         name: 'Kravá',
         rank: CharacterRank.main,
-        role: CharacterRole.tank,
+        role: CharacterRole.melee,
         class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Protection,
+        spec: CharacterSpecEnum.Fury,
       },
       {
         name: 'Kravä',
@@ -359,9 +359,9 @@ export const players: Player[] = [
       {
         name: 'Artlicht',
         rank: CharacterRank.main,
-        role: CharacterRole.tank,
+        role: CharacterRole.melee,
         class: CharacterClass.paladin,
-        spec: CharacterSpecEnum.Protection,
+        spec: CharacterSpecEnum.Retribution,
       },
       {
         name: 'Cherepaha',
@@ -686,7 +686,7 @@ export const players: Player[] = [
   },
   {
     name: 'Manowarr',
-    discord: { userId: '' },
+    discord: { userId: '283222297807028224' },
     characters: [
       {
         name: 'Manowarr',
@@ -694,6 +694,58 @@ export const players: Player[] = [
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
         spec: CharacterSpecEnum.BeastMastery,
+      },
+    ],
+  },
+  {
+    name: 'Professor',
+    discord: { userId: '1002921317051420703' },
+    characters: [
+      {
+        name: 'Professor',
+        rank: CharacterRank.main,
+        role: CharacterRole.tank,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Protection,
+      },
+    ],
+  },
+  {
+    name: 'Benzobak',
+    discord: { userId: '817226698071998484' },
+    characters: [
+      {
+        name: 'Benzobak',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Balance,
+      },
+    ],
+  },
+  {
+    name: 'Fline',
+    discord: { userId: '431791718535528448' },
+    characters: [
+      {
+        name: 'Flinesham',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Elemental,
+      },
+    ],
+  },
+  {
+    name: 'Nevercome',
+    discord: { userId: '252177261006946304' },
+    characters: [
+      {
+        name: 'Monkablaze',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+        spec: CharacterSpecEnum.Arcane,
       },
     ],
   },
