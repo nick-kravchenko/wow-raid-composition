@@ -533,8 +533,7 @@ export class AssignmentsT4Component implements OnInit {
       ],
     });
 
-    // Add moonTank so prot pala clicks their own pillar without displacing anyone
-    groups[0].push(moonTank!);
+    groups[0][2] = moonTank!;
 
     const moonClickActions: AssignmentAction[] = [];
     for (let i = 0; i < 3; i++) {
