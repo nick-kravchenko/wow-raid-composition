@@ -4,11 +4,13 @@ import { Character } from '../../_entities/character';
 import { CharacterRole } from '../../_entities/character-role.enum';
 import { CharacterRank } from '../../_entities/character-rank.enum';
 import { CharacterTileComponent } from '../character-tile/character-tile.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-raid-tile',
   imports: [
     CharacterTileComponent,
+    RouterLink,
   ],
   templateUrl: './raid-tile.component.html',
   styleUrl: './raid-tile.component.scss'
@@ -49,6 +51,10 @@ export class RaidTileComponent implements OnInit {
   }
   get healerCount(): number {
     return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.healer).length;
+  }
+
+  get queryParamsRaid(): string {
+    return this.raid.map((character: Character) => character?.name || '').join('_');
   }
 
   constructor() {}
