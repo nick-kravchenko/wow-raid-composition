@@ -702,7 +702,7 @@ export const players: Player[] = [
     discord: { userId: '1002921317051420703' },
     characters: [
       {
-        name: 'Professor',
+        name: 'Prõfessõr',
         rank: CharacterRank.main,
         role: CharacterRole.tank,
         class: CharacterClass.paladin,
@@ -715,7 +715,7 @@ export const players: Player[] = [
     discord: { userId: '817226698071998484' },
     characters: [
       {
-        name: 'Benzobak',
+        name: 'Benzöbak',
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
