@@ -1,6 +1,12 @@
 <h4>{{player.name}}:</h4>
 <ul>
-  <li *ngFor="let character of player.characters">
-    <app-character-tile [character]="character" [isWCLLinkVisible]="true" [isRankingsVisible]="isRankingsVisible"></app-character-tile>
-  </li>
+  @for (character of player.characters; track character.name) {
+    <li>
+      <app-character-tile [character]="character"
+                          [isWCLLinkVisible]="isWCLLinkVisible"
+                          [isRankingsVisible]="isRankingsVisible"
+                          [isGearVisible]="isGearVisible"
+      ></app-character-tile>
+    </li>
+  }
 </ul>

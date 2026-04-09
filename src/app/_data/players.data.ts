@@ -553,26 +553,6 @@ export const players: Player[] = [
     ],
   },
   {
-    name: 'Akatoshi',
-    discord: { userId: '509724063262834698' },
-    characters: [
-      {
-        name: 'Akatoshi',
-        rank: CharacterRank.main,
-        role: CharacterRole.tank,
-        class: CharacterClass.paladin,
-        spec: CharacterSpecEnum.Protection,
-      },
-      {
-        name: 'Chd',
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Elemental,
-      },
-    ],
-  },
-  {
     name: 'Chortenya',
     discord: { userId: '163288553923543041' },
     characters: [
@@ -660,7 +640,7 @@ export const players: Player[] = [
   },
   {
     name: 'Dullo',
-    discord: { userId: '' },
+    discord: { userId: '363760292913479680' },
     characters: [
       {
         name: 'Dullo',

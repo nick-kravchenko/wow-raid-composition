@@ -5,7 +5,13 @@
   </ul>
 </div>
 <ul class="players-list">
-  <li *ngFor="let player of players">
-    <app-player-tile [player]="player" [isRankingsVisible]="true"></app-player-tile>
-  </li>
+  @for (player of players; track player.name) {
+    <li>
+      <app-player-tile [player]="player"
+                       [isWCLLinkVisible]="true"
+                       [isRankingsVisible]="true"
+                       [isGearVisible]="true"
+      ></app-player-tile>
+    </li>
+  }
 </ul>

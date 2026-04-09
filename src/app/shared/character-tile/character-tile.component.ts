@@ -41,6 +41,7 @@ export class CharacterTileComponent implements OnChanges {
   @Input() character?: Character;
   @Input() isWCLLinkVisible: boolean = false;
   @Input() isRankingsVisible: boolean = false;
+  @Input() isGearVisible: boolean = false;
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['isRankingsVisible']?.currentValue === true) {
@@ -69,7 +70,7 @@ export class CharacterTileComponent implements OnChanges {
   }
 
   formatPercent(value: number | null): string {
-    return value !== null ? Math.round(value) + '%' : '–';
+    return value !== null ? `${Math.round(value * 10) / 10}` : '–';
   }
 
   gearIconUrl(icon: string): string {
