@@ -59,6 +59,7 @@
 .name {
   display: flex;
   align-items: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   a {
     color: inherit;
     font: inherit;

@@ -191,6 +191,7 @@ export class AssignmentsT4Component implements OnInit {
   };
 
   get mrtNote() {
+    let raidLeaderCharacterName = this.raid.find(character => character.player!.name === 'Krava')!.name;
     let note = '';
     note += 'Trash Assignments\n';
     const tanks = [
@@ -212,19 +213,18 @@ export class AssignmentsT4Component implements OnInit {
       note += `{${marksToTank[i].text.toLowerCase()}} on ${tanks[i].name}\n`;
     }
 
-    note += '\n\nHigh King Maulgar Assignments\n';
+    note += '\nHigh King Maulgar Assignments';
     [
       ...this.assignments[AssignmentType.hkmSkullAssignments].assignments[0].actions,
       ...this.assignments[AssignmentType.hkmCrossAssignments].assignments[0].actions,
       ...this.assignments[AssignmentType.hkmSquareAssignments].assignments[0].actions,
       ...this.assignments[AssignmentType.hkmMoonAssignments].assignments[0].actions,
       ...this.assignments[AssignmentType.hkmTriangleAssignments].assignments[0].actions,
-    ].forEach((action: AssignmentAction, index: number) => {
-      const isEven = index % 2;
+    ].forEach((action: AssignmentAction) => {
       const mark = action.icon;
       const markText = Object.keys(IconEnum).find(key => IconEnum[key as keyof typeof IconEnum] === mark);
-      note += `{${markText}} - ${typeof action.caster === 'string' ? action.caster : action.caster?.name}`;
-      if (isEven) note += '\n';
+      if (markText !== 'misdirect') note += `\n{${markText}} `;
+      note += ` -> ${typeof action.caster === 'string' ? action.caster : action.caster?.name}`;
     });
 
     note += '\n\nGruul the Dragon Killer Assignments\n';
@@ -257,9 +257,10 @@ export class AssignmentsT4Component implements OnInit {
       AssignmentType.magtheridonTriangleKickAssignments,
       AssignmentType.magtheridonMoonKickAssignments,
     ];
-    const trashAssignmetns: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
-    const clickAssignments: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
-    const kickAssignments: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
+    const marks: string[] = ['{skull} ', '{diamond} ', '{cross} ', '{triangle} ', '{moon} '];
+    const trashAssignmetns: string[] = [...marks];
+    const clickAssignments: string[] = [...marks];
+    const kickAssignments: string[] = [...marks];
     tankHealKeys.forEach((key, i) => {
       this.assignments[key].assignments[0].actions.forEach(action => {
         trashAssignmetns[i] += `${casterName(action)} `;
@@ -279,7 +280,14 @@ export class AssignmentsT4Component implements OnInit {
     note += trashAssignmetns.join('\n');
     note += '\n';
     note += '\nMagtheridon Click Assignments\n';
+    note += `{p:${raidLeaderCharacterName}}`;
     note += clickAssignments.join('\n');
+    note += '{/p}';
+    clickKeys.forEach((key, i) => {
+      this.assignments[key].assignments[0].actions.forEach((action, index) => {
+        note += `{p:${casterName(action)}}YOU ARE #${index + 1} CLICKER AT ${marks[i]}{/p}`;
+      });
+    });
     note += '\n';
     note += '\nMagtheridon Kick Assignments\n';
     note += kickAssignments.join('\n');
