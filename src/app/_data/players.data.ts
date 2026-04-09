@@ -193,11 +193,11 @@ export const players: Player[] = [
     ],
   },
   {
-    name: 'Antagonist',
+    name: 'Antagonyst',
     discord: { userId: '' },
     characters: [
       {
-        name: 'Antagonist',
+        name: 'Antagonyst',
         rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
