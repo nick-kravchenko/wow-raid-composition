@@ -44,7 +44,7 @@ export class CharacterTileComponent implements OnChanges {
   @Input() isGearVisible: boolean = false;
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['isRankingsVisible']?.currentValue === true) {
+    if (changes['isGearVisible']?.currentValue === true) {
       setTimeout(() => {
         if (typeof $WowheadPower !== 'undefined') {
           $WowheadPower.refreshLinks();
@@ -71,10 +71,6 @@ export class CharacterTileComponent implements OnChanges {
 
   formatPercent(value: number | null): string {
     return value !== null ? `${Math.round(value * 10) / 10}` : '–';
-  }
-
-  gearIconUrl(icon: string): string {
-    return `https://assets.rpglogs.com/img/warcraft/icons/medium/${icon}.jpg`;
   }
 
   gearSlotName(slot: number): string {
