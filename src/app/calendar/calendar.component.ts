@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {DatePipe, NgForOf} from '@angular/common';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-calendar',
   imports: [
     DatePipe,
-    NgForOf
   ],
   templateUrl: './calendar.component.html',
   styleUrl: './calendar.component.scss'
@@ -35,6 +34,7 @@ export class CalendarComponent implements OnInit {
   ngOnInit(): void {
     for (let i = 1; i <= 12; i++) {
       const days = this.generateMonth(i);
+      // @ts-ignore
       const monthTitle = days.find(day => !!day)?.toLocaleString('default', { month: 'long' }) || '';
       this.months.push({
         title: monthTitle,
