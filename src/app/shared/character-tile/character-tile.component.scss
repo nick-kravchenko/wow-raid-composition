@@ -42,6 +42,7 @@
   vertical-align: top;
   width: 2em;
   cursor: pointer;
+  z-index: 0;
 }
 .rank {
   display: block;
@@ -49,6 +50,7 @@
   height: 8px;
   border-radius: 50%;
   margin-right: 4px;
+  z-index: 0;
   &--Main {
     background: green;
   }
@@ -60,6 +62,7 @@
   display: flex;
   align-items: center;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  z-index: 0;
   a {
     color: inherit;
     font: inherit;
@@ -81,6 +84,7 @@ sup {
   transition: opacity 0.2s, transform 0.2s;
   will-change: opacity, transform;
   color: #fff;
+  z-index: 0;
 
   @include screen-tablet() {
     display: none;
@@ -92,10 +96,12 @@ sup {
   margin-left: auto;
   flex-shrink: 0;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  z-index: 0;
 }
 .gear {
   display: flex;
   align-items: center;
-  padding: 4px 0 0;
+  padding: 8px 0 0;
   width: 100%;
+  z-index: 1;
 }
