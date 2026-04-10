@@ -1,28 +1,41 @@
-<section *ngFor="let raid of raids; let i = index">
-  <app-raid-tile [raid]="raid" [hideControls]="true"></app-raid-tile>
+@if (raids.length) {
+  @for (raid of raids; track $index) {
+    <section>
+      <app-raid-tile [raid]="raid" [hideControls]="true"></app-raid-tile>
 
-  <nav>
-    <button title="Raid wide assignments" (click)="togglePane(i, PaneNameEnum.RaidWide)" [class.active]="isPaneVisible(i, PaneNameEnum.RaidWide)" type="button">
-      <img [src]="getPaneIcon(PaneNameEnum.RaidWide)" alt="">
-    </button>
-    <button title="Magtheridon assignments" (click)="togglePane(i, PaneNameEnum.Magtheridon)" [class.active]="isPaneVisible(i, PaneNameEnum.Magtheridon)" type="button">
-      <img [src]="getPaneIcon(PaneNameEnum.Magtheridon)" alt="">
-    </button>
-    <button title="BWL assignments" (click)="togglePane(i, PaneNameEnum.Bwl)" [class.active]="isPaneVisible(i, PaneNameEnum.Bwl)" type="button" disabled>
-      <img [src]="getPaneIcon(PaneNameEnum.Bwl)" alt="">
-    </button>
-    <button title="AQ40 assignments" (click)="togglePane(i, PaneNameEnum.Aq40)" [class.active]="isPaneVisible(i, PaneNameEnum.Aq40)" type="button" disabled>
-      <img [src]="getPaneIcon(PaneNameEnum.Aq40)" alt="">
-    </button>
-    <button title="Naxxramas assignments" (click)="togglePane(i, PaneNameEnum.Naxxramas)" [class.active]="isPaneVisible(i, PaneNameEnum.Naxxramas)" type="button" disabled>
-      <img [src]="getPaneIcon(PaneNameEnum.Naxxramas)" alt="">
-    </button>
-    <button title="SscTk assignments" (click)="togglePane(i, PaneNameEnum.SscTk)" [class.active]="isPaneVisible(i, PaneNameEnum.SscTk)" type="button" disabled>
-      <img [src]="getPaneIcon(PaneNameEnum.SscTk)" alt="">
-    </button>
-  </nav>
+      <nav>
+        <button title="Raid wide assignments" (click)="togglePane($index, PaneNameEnum.RaidWide)" [class.active]="isPaneVisible($index, PaneNameEnum.RaidWide)" type="button">
+          <img [src]="getPaneIcon(PaneNameEnum.RaidWide)" alt="">
+        </button>
+        <button title="Magtheridon assignments" (click)="togglePane($index, PaneNameEnum.Magtheridon)" [class.active]="isPaneVisible($index, PaneNameEnum.Magtheridon)" type="button">
+          <img [src]="getPaneIcon(PaneNameEnum.Magtheridon)" alt="">
+        </button>
+        <button title="BWL assignments" (click)="togglePane($index, PaneNameEnum.Bwl)" [class.active]="isPaneVisible($index, PaneNameEnum.Bwl)" type="button" disabled>
+          <img [src]="getPaneIcon(PaneNameEnum.Bwl)" alt="">
+        </button>
+        <button title="AQ40 assignments" (click)="togglePane($index, PaneNameEnum.Aq40)" [class.active]="isPaneVisible($index, PaneNameEnum.Aq40)" type="button" disabled>
+          <img [src]="getPaneIcon(PaneNameEnum.Aq40)" alt="">
+        </button>
+        <button title="Naxxramas assignments" (click)="togglePane($index, PaneNameEnum.Naxxramas)" [class.active]="isPaneVisible($index, PaneNameEnum.Naxxramas)" type="button" disabled>
+          <img [src]="getPaneIcon(PaneNameEnum.Naxxramas)" alt="">
+        </button>
+        <button title="SscTk assignments" (click)="togglePane($index, PaneNameEnum.SscTk)" [class.active]="isPaneVisible($index, PaneNameEnum.SscTk)" type="button" disabled>
+          <img [src]="getPaneIcon(PaneNameEnum.SscTk)" alt="">
+        </button>
+      </nav>
 
-  <app-assignments-raid-wide *ngIf="isPaneVisible(i, PaneNameEnum.RaidWide)" [raid]="raid"></app-assignments-raid-wide>
-  <app-assignments-bwl *ngIf="isPaneVisible(i, PaneNameEnum.Bwl)" [raid]="raid"></app-assignments-bwl>
-  <app-assignments-t4 *ngIf="isPaneVisible(i, PaneNameEnum.Magtheridon)" [raid]="raid"></app-assignments-t4>
-</section>
+      @if (isPaneVisible($index, PaneNameEnum.RaidWide)) {
+        <app-assignments-raid-wide [raid]="raid"></app-assignments-raid-wide>
+      }
+      @if (isPaneVisible($index, PaneNameEnum.Bwl)) {
+        <app-assignments-bwl [raid]="raid"></app-assignments-bwl>
+      }
+      @if (isPaneVisible($index, PaneNameEnum.Magtheridon)) {
+        <app-assignments-t4 [raid]="raid"></app-assignments-t4>
+      }
+    </section>
+
+  }
+} @else {
+  You have no raids. <a class="link" routerLink="/composition">Create a raid composition</a> to get started.
+}

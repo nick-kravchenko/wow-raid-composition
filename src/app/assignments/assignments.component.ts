@@ -1,13 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import { AssignmentsRaidWideComponent } from './assignments-raid-wide/assignments-raid-wide.component';
-import {KeyValuePipe, NgForOf, NgIf} from '@angular/common';
 import { Player } from '../_entities/player';
 import { Character } from '../_entities/character';
-import { ActivatedRoute, Params } from '@angular/router';
+import {ActivatedRoute, Params, RouterLink} from '@angular/router';
 import { players } from '../_data/players.data';
-import {AssignmentsBwlComponent} from './assignments-bwl/assignments-bwl.component';
-import {RaidTileComponent} from '../shared/raid-tile/raid-tile.component';
-import {AssignmentsT4Component} from './assignments-t4/assignments-t4.component';
+import { AssignmentsBwlComponent } from './assignments-bwl/assignments-bwl.component';
+import { RaidTileComponent } from '../shared/raid-tile/raid-tile.component';
+import { AssignmentsT4Component } from './assignments-t4/assignments-t4.component';
 
 enum PaneNameEnum {
   RaidWide = 'raid-wide',
@@ -22,11 +21,10 @@ enum PaneNameEnum {
   selector: 'app-assignments',
   imports: [
     AssignmentsRaidWideComponent,
-    NgForOf,
     AssignmentsBwlComponent,
     RaidTileComponent,
-    NgIf,
     AssignmentsT4Component,
+    RouterLink,
   ],
   templateUrl: './assignments.component.html',
   styleUrl: './assignments.component.scss'
