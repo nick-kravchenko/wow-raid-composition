@@ -1,19 +1,26 @@
 <aside>
   <form class="filters" [formGroup]="formGroup">
     <label for="eventId">Event ID</label>
-    <input id="eventId" type="string" formControlName="eventId">
+    <input id="eventId" type="text" formControlName="eventId">
     <label for="raidSize">Raid Size</label>
     <select id="raidSize" formControlName="raidSize">
       <option value="25">25 man</option>
       <option value="10">10 man</option>
     </select>
     <label for="characterRank">Rank</label>
-    <select id="characterRank" formControlName="characterRank"><option value="">All</option><option *ngFor="let option of characterRank | keyvalue" [value]="option.value">{{option.value}}</option></select>
+    <select id="characterRank" formControlName="characterRank">
+      <option value="">All</option>
+      @for (option of characterRank | keyvalue; track option.value) {
+        <option [value]="option.value">{{option.value}}</option>
+      }
+    </select>
     <div class="characterClassAndRole" formGroupName="characterClassAndRole">
-      <label *ngFor="let item of iconsSpecs | keyvalue" [for]="item.key" class="bg-{{item.key.split('_')[0] | lowercase}}" [class.checked]="isCharacterClassAndRoleChecked(item.key)">
-        <input [formControlName]="item.key" [id]="item.key" [value]="item.key"  type="checkbox">
-        <img src="assets/icons/{{item.value}}" alt="">
-      </label>
+      @for (item of iconsSpecs | keyvalue; track item.key) {
+        <label [for]="item.key" class="bg-{{item.key.split('_')[0] | lowercase}}" [class.checked]="isCharacterClassAndRoleChecked(item.key)">
+          <input [formControlName]="item.key" [id]="item.key" [value]="item.key"  type="checkbox">
+          <img src="assets/icons/{{item.value}}" alt="">
+        </label>
+      }
     </div>
   </form>
   <ul class="characters">
@@ -34,18 +41,19 @@
 </aside>
 <section>
   <div #raidGroups class="raid-groups">
-    <app-raid-tile
-      *ngFor="let raid of raids; index as i"
-      [raid]="raid"
-      [raidSize]="currentRaidSize"
-      [title]="'Raid #' + (i+1)"
-      (onSlotClick)="onRaidSlotClick(i, $event)"
-      (onSlotDragStart)="onRaidSlotDragStart(i, $event)"
-      (onSlotDragEnd)="onRaidSlotDragEnd()"
-      (onDragOver)="onRaidDragOver(i, $event)"
-      (onPruneClick)="onRaidPruneClick(i)"
-      (onRemoveClick)="onRaidRemoveClick(i)"
-    ></app-raid-tile>
+    @for (raid of raids; track $index) {
+      <app-raid-tile
+        [raid]="raid"
+        [raidSize]="currentRaidSize"
+        [title]="'Raid #' + ($index+1)"
+        (onSlotClick)="onRaidSlotClick($index, $event)"
+        (onSlotDragStart)="onRaidSlotDragStart($index, $event)"
+        (onSlotDragEnd)="onRaidSlotDragEnd()"
+        (onDragOver)="onRaidDragOver($index, $event)"
+        (onPruneClick)="onRaidPruneClick($index)"
+        (onRemoveClick)="onRaidRemoveClick($index)"
+      ></app-raid-tile>
+    }
     <button class="add-raid" (click)="onAddRaidClick()" type="button">
       <i class="fa-solid fa-plus"></i>
     </button>

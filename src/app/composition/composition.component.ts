@@ -6,7 +6,7 @@ import { CompositionService } from './composition.service';
 import { Player } from '../_entities/player';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import html2canvas from 'html2canvas';
-import { KeyValuePipe, LowerCasePipe, NgForOf } from '@angular/common';
+import { KeyValuePipe, LowerCasePipe } from '@angular/common';
 import { RaidTileComponent } from '../shared/raid-tile/raid-tile.component';
 import { CharacterTileComponent } from '../shared/character-tile/character-tile.component';
 import { CharacterRank } from '../_entities/character-rank.enum';
@@ -19,7 +19,6 @@ import { CharacterRank } from '../_entities/character-rank.enum';
     LowerCasePipe,
     RaidTileComponent,
     CharacterTileComponent,
-    NgForOf
   ],
   providers: [
     HttpClient,
@@ -200,13 +199,13 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
   }
 
   handleRaidSizeChange(): void {
-    this.formGroup.get('raidSize')?.valueChanges.subscribe((value) => {
+    this.formGroup.get('raidSize')?.valueChanges!.subscribe((value) => {
       this.compositionService.resizeRaids(Number(value) || 25);
     });
   }
 
   eventIdChangesHandler(): void {
-    this.formGroup.get('eventId')?.valueChanges.subscribe(() => {
+    this.formGroup.get('eventId')?.valueChanges!.subscribe(() => {
       this.updateSignedUpPlayers();
     });
   }
