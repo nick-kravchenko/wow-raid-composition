@@ -1,16 +1,16 @@
-@import "colors";
-@import "screen-sizes";
+@use "colors";
+@use "screen-sizes";
 
 :host {
   display: block;
   padding: 10px;
-  background: rgba($deep-space, .9);
+  background: rgba(colors.$deep-space, .9);
   border-radius: .5em;
   box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1em);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
-  @include screen-tablet() {
+  @include screen-sizes.screen-tablet() {
     grid-template-columns: 1fr;
   }
 }
@@ -36,7 +36,7 @@ nav {
     padding: 0.5em;
     font-size: 1rem;
     font-weight: 700;
-    background: $deep-space;
+    background: colors.$deep-space;
     color: #fff;
     border: none;
     border-radius: .5em .5em 0 0;
@@ -46,7 +46,7 @@ nav {
     &:focus,
     &:active,
     &.active {
-      background: $mako;
+      background: colors.$mako;
     }
     &[disabled],
     &[disabled]:hover,
@@ -68,7 +68,7 @@ nav {
 app-assignments-raid-wide,
 app-assignments-bwl,
 app-assignments-t4 {
-  border: .25rem solid $mako;
+  border: .25rem solid colors.$mako;
   border-radius: .25rem;
   padding: .5rem;
 }

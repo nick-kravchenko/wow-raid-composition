@@ -1,5 +1,5 @@
-@import "colors";
-@import "screen-sizes";
+@use "colors";
+@use "screen-sizes";
 
 :host {
   display: block;
@@ -12,20 +12,20 @@ ul {
   margin: 0;
   padding: 0;
 
-  @include screen-laptop-l {
+  @include screen-sizes.screen-laptop-l {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 h4 {
   margin: 0 0 1em;
-  color: $silver-steel;
+  color: colors.$silver-steel;
 }
 li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $mako;
-  color: $silver-steel;
+  background: colors.$mako;
+  color: colors.$silver-steel;
 }
 app-character-tile {
   border: none;

@@ -1,5 +1,5 @@
-@import "colors";
-@import "screen-sizes";
+@use "colors";
+@use "screen-sizes";
 
 :host {
   display: block;
@@ -10,11 +10,11 @@ section {
   grid-gap: 1rem;
   color: #fff;
 
-  @include screen-laptop-l {
+  @include screen-sizes.screen-laptop-l {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include screen-laptop() {
+  @include screen-sizes.screen-laptop() {
     grid-template-columns: 1fr;
   }
 }
@@ -36,7 +36,7 @@ button {
   line-height: 1.2;
   border-radius: 5px;
   border: none;
-  background-color: $mako;
+  background-color: colors.$mako;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -67,7 +67,7 @@ h5 {
   padding: 5px;
   font-size: 1rem;
   border: 1px solid #000;
-  background: $mako;
+  background: colors.$mako;
   img {
     display: block;
     width: 24px;
@@ -80,15 +80,15 @@ h5 {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
 
-    @include screen-laptop-l {
+    @include screen-sizes.screen-laptop-l {
       grid-template-columns: repeat(1, 1fr);
     }
 
-    @include screen-laptop() {
+    @include screen-sizes.screen-laptop() {
       grid-template-columns: repeat(1, 1fr);
     }
 
-    @include screen-tablet() {
+    @include screen-sizes.screen-tablet() {
       grid-template-columns: repeat(1, 1fr);
     }
   }

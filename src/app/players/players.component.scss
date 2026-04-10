@@ -1,13 +1,13 @@
-@import "colors";
+@use "colors";
 
 :host {
   display: block;
 }
 .totals {
-  background: $deep-space;
+  background: colors.$deep-space;
   padding: 10px;
   margin: 0 0 2em;
-  background: rgba($deep-space, .9);
+  background: rgba(colors.$deep-space, .9);
   border-radius: .5em;
   box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1em);
@@ -16,7 +16,7 @@
     list-style-type: none;
     display: flex;
     align-items: center;
-    color: $regal-gold;
+    color: colors.$regal-gold;
     margin: 0;
     padding: 0;
   }
@@ -30,7 +30,7 @@
 }
 .players-list {
   padding: 10px;
-  background: rgba($deep-space, .9);
+  background: rgba(colors.$deep-space, .9);
   border-radius: .5em;
   box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1em);

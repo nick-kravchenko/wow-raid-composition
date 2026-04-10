@@ -1,10 +1,10 @@
-@import "colors";
-@import "screen-sizes";
+@use "colors";
+@use "screen-sizes";
 
 :host {
   display: flex;
   align-items: center;
-  background: $mako;
+  background: colors.$mako;
   cursor: default;
   padding: 4px 12px 4px 4px;
   border-radius: 2px;
@@ -86,7 +86,7 @@ sup {
   color: #fff;
   z-index: 0;
 
-  @include screen-tablet() {
+  @include screen-sizes.screen-tablet() {
     display: none;
   }
 }
