@@ -5,7 +5,6 @@ import { Character } from '../_entities/character';
 import { CompositionService } from './composition.service';
 import { Player } from '../_entities/player';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import html2canvas from 'html2canvas';
 import { KeyValuePipe, LowerCasePipe } from '@angular/common';
 import { RaidTileComponent } from '../shared/raid-tile/raid-tile.component';
 import { CharacterTileComponent } from '../shared/character-tile/character-tile.component';
@@ -312,8 +311,9 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
     this.compositionService.addRaid(this.currentRaidSize);
   }
 
-  screenshot(): void {
+  async screenshot(): Promise<void> {
     this.capturingScreenshot = true;
+    const { default: html2canvas } = await import('html2canvas');
     html2canvas(this.raidGroups.nativeElement, {
       backgroundColor: '#404040'
     }).then(canvas => {
