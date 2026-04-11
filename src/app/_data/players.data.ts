@@ -652,19 +652,6 @@ export const players: Player[] = [
     ],
   },
   {
-    name: 'Monkablaze',
-    discord: { userId: '' },
-    characters: [
-      {
-        name: 'Monkablaze',
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-        spec: CharacterSpecEnum.Arcane,
-      },
-    ],
-  },
-  {
     name: 'Manowarr',
     discord: { userId: '283222297807028224' },
     characters: [
