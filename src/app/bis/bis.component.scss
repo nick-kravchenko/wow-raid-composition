@@ -1,0 +1,82 @@
+@use "colors";
+@use "screen-sizes";
+
+
+:host {
+  display: block;
+  padding: 10px;
+  background: rgba(colors.$deep-space, .9);
+  border-radius: .5em;
+  box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1em);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  @include screen-sizes.screen-tablet() {
+    grid-template-columns: 1fr;
+  }
+}
+.spec {
+  &-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1rem;
+  }
+  &-item {
+    margin: 0 .25rem 0 0;
+  }
+  &-button {
+    display: block;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: 32px;
+    cursor: pointer;
+
+    img {
+      display: block;
+    }
+  }
+}
+.slot {
+  &-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1rem;
+  }
+  &-item {
+    margin: 0 .25rem 0 0;
+  }
+}
+.item {
+  &-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  &-item {
+    display: block;
+    a {
+      display: block;
+    }
+  }
+}
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+table th {
+  text-align: center;
+}
+table td {
+  border: 1px solid #fff;
+}
+b {
+  display: block;
+  width: 32px;
+  text-align: center;
+}

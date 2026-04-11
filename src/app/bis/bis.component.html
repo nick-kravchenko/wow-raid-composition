@@ -1,0 +1,49 @@
+<ul class="spec-list">
+  @for (item of list; track item.id) {
+    <li class="spec-item">
+      <button class="spec-button" type="button" (click)="selectBisList(item.id)" [class.active]="item.id === selectedBisListId()">
+        <img src="assets/icons/{{item.icon}}" alt="{{item.id}}" />
+      </button>
+    </li>
+  }
+</ul>
+
+@if (selectedBisList()) {
+  <ul class="slot-list">
+    @for (slot of selectedBisList(); track $index) {
+      <li class="slot-item">
+        <table>
+          <tr>
+            <th>BIS</th>
+            <th>ALT</th>
+          </tr>
+          <tr>
+            <td>
+              @if (slot && slot.item) {
+                <a class="gear-icon-link"
+                   data-wh-icon-size="medium"
+                   href="https://www.wowhead.com/tbc/item={{slot.item.id}}"
+                   target="_blank"></a>
+              }
+            </td>
+            <td>
+              <ul class="item-list">
+                @if (slot && slot.alts && slot.alts.length) {
+                  @for (alt of slot.alts; track $index) {
+                    <li class="item-item">
+                      <a class="gear-icon-link"
+                         data-wh-icon-size="medium"
+                         href="https://www.wowhead.com/tbc/item={{alt.id}}"
+                         target="_blank"></a>
+                    </li>
+                  }
+                } @else {
+                  <li><b>-</b></li>
+                }
+              </ul>
+            </td>
+        </table>
+      </li>
+    }
+  </ul>
+}

@@ -7,5 +7,6 @@ export const routes: Routes = [
   { path: 'about-us', loadComponent: () => import('./about-us/about-us.component').then(m => m.AboutUsComponent) },
   { path: 'calendar', loadComponent: () => import('./calendar/calendar.component').then(m => m.CalendarComponent) },
   { path: 'players', loadComponent: () => import('./players/players.component').then(m => m.PlayersComponent) },
+  { path: 'bis', loadComponent: () => import('./bis/bis.component').then(m => m.BisComponent) },
   { path: '**', redirectTo: '' },
 ];

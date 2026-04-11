@@ -1,6 +1,6 @@
 // AUTO-GENERATED — do not edit manually.
 // Run `npm run bake:wcl` to regenerate.
-// Generated: 2026-04-01T16:10:25.815Z
+// Generated: 2026-04-11T16:13:16.969Z
 
 export interface WclGearItem {
   id: number;
@@ -56,130 +56,130 @@ export interface WclBakedData {
 }
 
 export const wclBakedData: WclBakedData = {
-  "generatedAt": "2026-04-01T16:10:25.815Z",
+  "generatedAt": "2026-04-11T16:13:16.969Z",
   "defaultServerSlug": "spineshatter",
   "defaultServerRegion": "eu",
   "characters": {
-    "akatoshi": {
-      "characterName": "Akatoshi",
+    "alarian": {
+      "characterName": "Alarian",
       "serverSlug": "spineshatter",
       "serverRegion": "EU",
-      "wclId": 104995178,
+      "wclId": 104876708,
       "gear": [
         {
-          "id": 29068,
+          "id": 28804,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_77.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 2999,
+          "icon": "inv_helmet_27.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
         {
-          "id": 28516,
+          "id": 29368,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_ahnqiraj_02.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_necklace_30naxxramas.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29070,
+          "id": 21869,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_40.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 2991,
+          "icon": "inv_shoulder_25.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2981,
           "temporaryEnchantID": null
         },
         {
-          "id": 14617,
+          "id": 5107,
           "slot": 4,
           "quality": 2,
-          "icon": "inv_shirt_red_01.jpg",
-          "itemLevel": 1,
+          "icon": "inv_shirt_12.jpg",
+          "itemLevel": 14,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28262,
+          "id": 29056,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_plate07.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2661,
+          "quality": 4,
+          "icon": "inv_chest_cloth_64.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28566,
+          "id": 28799,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_27.jpg",
-          "itemLevel": 115,
+          "icon": "inv_belt_03.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29069,
+          "id": 28594,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_plate_22.jpg",
-          "itemLevel": 120,
+          "icon": "inv_pants_cloth_05.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2748,
           "temporaryEnchantID": null
         },
         {
-          "id": 30641,
+          "id": 21870,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_plate_04.jpg",
-          "itemLevel": 115,
+          "icon": "inv_boots_cloth_03.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": 2649,
           "temporaryEnchantID": null
         },
         {
-          "id": 23538,
+          "id": 24668,
           "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_06.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 1891,
+          "quality": 2,
+          "icon": "inv_bracer_07.jpg",
+          "itemLevel": 111,
+          "permanentEnchantID": 369,
           "temporaryEnchantID": null
         },
         {
-          "id": 28518,
+          "id": 27889,
           "slot": 10,
-          "quality": 4,
-          "icon": "inv_gauntlets_31.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2613,
+          "quality": 3,
+          "icon": "inv_gauntlets_19.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2935,
           "temporaryEnchantID": null
         },
         {
-          "id": 29279,
+          "id": 29352,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
-          "permanentEnchantID": 2928,
+          "icon": "inv_jewelry_ring_57.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28510,
+          "id": 28753,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_31.jpg",
+          "icon": "inv_jewelry_ring_15.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2928,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28789,
+          "id": 27683,
           "slot": 13,
-          "quality": 4,
-          "icon": "inv_elemental_mote_life01.jpg",
-          "itemLevel": 125,
+          "quality": 3,
+          "icon": "inv_misc_gem_pearl_01.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -193,264 +193,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28660,
+          "id": 25036,
           "slot": 15,
-          "quality": 4,
-          "icon": "inv_misc_cape_20.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2622,
+          "quality": 2,
+          "icon": "inv_misc_cape_22.jpg",
+          "itemLevel": 99,
+          "permanentEnchantID": 2662,
           "temporaryEnchantID": null
         },
         {
-          "id": 29155,
+          "id": 28770,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_sword_01.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": 2669,
+          "icon": "inv_weapon_shortblade_41.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2672,
           "temporaryEnchantID": 2678
         },
         {
-          "id": 28825,
+          "id": 29272,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_shield_30.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 1071,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29388,
-          "slot": 18,
-          "quality": 4,
-          "icon": "inv_relics_libramofhope.jpg",
+          "icon": "inv_misc_orb_04.jpg",
           "itemLevel": 110,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 31780,
-          "slot": 19,
-          "quality": 2,
-          "icon": "inv_shirt_guildtabard_01.jpg",
-          "itemLevel": 20,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        }
-      ],
-      "rankings": [
-        {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 94.2193,
-          "medianPerformance": 90.6437,
-          "totalKills": 5,
-          "fastestKill": 26349,
-          "bestAmount": 959.88727101926,
-          "spec": "Protection",
-          "allStars": {
-            "points": 101.04,
-            "rank": 454,
-            "rankPercent": 93.72836771424616,
-            "total": 7223
-          }
-        },
-        {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 78.7139,
-          "medianPerformance": 78.4713,
-          "totalKills": 5,
-          "fastestKill": 145352,
-          "bestAmount": 494.98068991745,
-          "spec": "Protection",
-          "allStars": {
-            "points": 85.21,
-            "rank": 2463,
-            "rankPercent": 76.81295912601243,
-            "total": 10618
-          }
-        },
-        {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 90.0208,
-          "medianPerformance": 79.8844,
-          "totalKills": 5,
-          "fastestKill": 198723,
-          "bestAmount": 425.7182107758,
-          "spec": "Justicar",
-          "allStars": {
-            "points": 95.62,
-            "rank": 1816,
-            "rankPercent": 87.81142972265127,
-            "total": 14891
-          }
-        }
-      ],
-      "bestPerformanceAverage": 87.65133333333334,
-      "medianPerformanceAverage": 82.99980000000001,
-      "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
-      "error": null,
-      "partial": false
-    },
-    "alarian": {
-      "characterName": "Alarian",
-      "serverSlug": "spineshatter",
-      "serverRegion": "EU",
-      "wclId": 104876708,
-      "gear": [
-        {
-          "id": 29049,
-          "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_91.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 3001,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28419,
-          "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_30naxxramas.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27775,
-          "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_22.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2979,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 5107,
-          "slot": 4,
-          "quality": 2,
-          "icon": "inv_shirt_12.jpg",
-          "itemLevel": 14,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28230,
-          "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_39.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 3150,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28652,
-          "slot": 6,
-          "quality": 4,
-          "icon": "inv_belt_08.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28742,
-          "slot": 7,
-          "quality": 4,
-          "icon": "inv_pants_cloth_13.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27525,
-          "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_cloth_12.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": 929,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28511,
-          "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_13.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 369,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28508,
-          "slot": 10,
-          "quality": 4,
-          "icon": "inv_gauntlets_17.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28763,
-          "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_08.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29168,
-          "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_22.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28190,
-          "slot": 13,
-          "quality": 3,
-          "icon": "inv_misc_ahnqirajtrinket_06.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29376,
-          "slot": 14,
-          "quality": 4,
-          "icon": "inv_valentineperfumebottle.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27946,
-          "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_16.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28522,
-          "slot": 16,
-          "quality": 4,
-          "icon": "inv_hammer_26.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": 2629
-        },
-        {
-          "id": 29170,
-          "slot": 17,
-          "quality": 4,
-          "icon": "inv_misc_orb_01.jpg",
-          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -477,14 +242,14 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 43.0713939717154,
+          "rankPercent": 79.33430460124694,
           "medianPerformance": 16.737661634233163,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
-          "bestAmount": 65.786305632212,
+          "bestAmount": 164.89787745294,
           "spec": "Shadow",
           "allStars": {
-            "points": 44.703855921883516,
+            "points": 83.42618220432065,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -494,13 +259,13 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 60.43743789710873,
-          "medianPerformance": 8.81904617048847,
-          "totalKills": 5,
+          "medianPerformance": 11.328174372688228,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 129.45769954724,
+          "bestAmount": 160.56195552066,
           "spec": "Shadow",
           "allStars": {
-            "points": 63.74207648341099,
+            "points": 64.5360680717636,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -510,9 +275,9 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 71.50913735517403,
-          "medianPerformance": 54.437215255305794,
-          "totalKills": 5,
-          "fastestKill": 198723,
+          "medianPerformance": 36.73976670102814,
+          "totalKills": 7,
+          "fastestKill": 198308,
           "bestAmount": 141.27202185957,
           "spec": "Shadow",
           "allStars": {
@@ -523,12 +288,60 @@ export const wclBakedData: WclBakedData = {
           }
         }
       ],
-      "bestPerformanceAverage": 58.339323074666055,
-      "medianPerformanceAverage": 26.664641020009142,
+      "bestPerformanceAverage": 70.42695995117657,
+      "medianPerformanceAverage": 21.60186756931651,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
+    },
+    "alpine": {
+      "characterName": "Alpine",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 105988641,
+      "gear": [],
+      "rankings": [
+        {
+          "encounterID": 50649,
+          "encounterName": "High King Maulgar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50650,
+          "encounterName": "Gruul the Dragonkiller",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50651,
+          "encounterName": "Magtheridon",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
+      "error": null,
+      "partial": true
     },
     "amorales": {
       "characterName": "Amorales",
@@ -596,7 +409,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_pants_leather_05.jpg",
           "itemLevel": 112,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2841,
           "temporaryEnchantID": null
         },
         {
@@ -623,21 +436,12 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_gauntlets_52.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29286,
-          "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2841,
           "temporaryEnchantID": null
         },
         {
           "id": 29172,
-          "slot": 12,
+          "slot": 11,
           "quality": 4,
           "icon": "inv_jewelry_ring_51naxxramas.jpg",
           "itemLevel": 105,
@@ -645,20 +449,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29370,
-          "slot": 13,
+          "id": 28753,
+          "slot": 12,
           "quality": 4,
-          "icon": "inv_weapon_shortblade_23.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_ring_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
           "id": 27683,
-          "slot": 14,
+          "slot": 13,
           "quality": 3,
           "icon": "inv_misc_gem_pearl_01.jpg",
           "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29370,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -699,11 +512,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 0,
+          "id": 31405,
           "slot": 19,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 2,
+          "icon": "inv_shirt_15.jpg",
+          "itemLevel": 1,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         }
@@ -713,55 +526,275 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 83.4367,
-          "medianPerformance": 80.9608,
-          "totalKills": 5,
+          "medianPerformance": 76.5561,
+          "totalKills": 7,
           "fastestKill": 31935,
           "bestAmount": 1619.1012995146,
           "spec": "Destruction",
           "allStars": {
-            "points": 89.96,
-            "rank": 5730,
-            "rankPercent": 82.24061502216436,
-            "total": 32259
+            "points": 87.12,
+            "rank": 7444,
+            "rankPercent": 79.38455572789718,
+            "total": 36104
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 63.6306,
-          "medianPerformance": 35.5995,
-          "totalKills": 5,
-          "fastestKill": 152511,
-          "bestAmount": 931.13776262909,
+          "rankPercent": 64.7408,
+          "medianPerformance": 49.6151,
+          "totalKills": 7,
+          "fastestKill": 134241,
+          "bestAmount": 1171.5198784276,
           "spec": "Destruction",
           "allStars": {
-            "points": 48.74,
-            "rank": 19438,
-            "rankPercent": 40.3827868601049,
-            "total": 32603
+            "points": 73.69,
+            "rank": 13109,
+            "rankPercent": 64.04531365718518,
+            "total": 36457
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 71.1278,
-          "medianPerformance": 57.0572,
-          "totalKills": 5,
-          "fastestKill": 252930,
+          "medianPerformance": 42.9865,
+          "totalKills": 7,
+          "fastestKill": 199708,
           "bestAmount": 1058.4904914403,
           "spec": "Affliction",
           "allStars": {
-            "points": 74.12,
-            "rank": 2287,
-            "rankPercent": 65.70657065706571,
-            "total": 6666
+            "points": 69.19,
+            "rank": 3026,
+            "rankPercent": 60.760150473472564,
+            "total": 7709
           }
         }
       ],
-      "bestPerformanceAverage": 72.73169999999999,
-      "medianPerformanceAverage": 57.8725,
+      "bestPerformanceAverage": 73.10176666666666,
+      "medianPerformanceAverage": 56.3859,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
+      "error": null,
+      "partial": false
+    },
+    "antagonyst": {
+      "characterName": "Antagonyst",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 107976519,
+      "gear": [
+        {
+          "id": 28192,
+          "slot": 1,
+          "quality": 3,
+          "icon": "inv_helmet_18.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2841,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29335,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_04.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27776,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_24.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2841,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25512,
+          "slot": 5,
+          "quality": 2,
+          "icon": "inv_chest_chain_06.jpg",
+          "itemLevel": 93,
+          "permanentEnchantID": 2841,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30950,
+          "slot": 6,
+          "quality": 2,
+          "icon": "inv_belt_13.jpg",
+          "itemLevel": 111,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27936,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_cloth_20.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2841,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28384,
+          "slot": 8,
+          "quality": 3,
+          "icon": "inv_boots_chain_09.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2841,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28170,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27528,
+          "slot": 10,
+          "quality": 3,
+          "icon": "inv_gauntlets_10.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2841,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25811,
+          "slot": 11,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_43.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25055,
+          "slot": 12,
+          "quality": 2,
+          "icon": "inv_jewelry_ring_33.jpg",
+          "itemLevel": 114,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 185985,
+          "slot": 13,
+          "quality": 2,
+          "icon": "inv_misc_stonetablet_06.jpg",
+          "itemLevel": 52,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28041,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_datacrystal06.jpg",
+          "itemLevel": 88,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27731,
+          "slot": 15,
+          "quality": 2,
+          "icon": "inv_misc_cape_13.jpg",
+          "itemLevel": 90,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31153,
+          "slot": 16,
+          "quality": 3,
+          "icon": "inv_axe_18.jpg",
+          "itemLevel": 94,
+          "permanentEnchantID": 1900,
+          "temporaryEnchantID": 2636
+        },
+        {
+          "id": 31153,
+          "slot": 17,
+          "quality": 3,
+          "icon": "inv_axe_18.jpg",
+          "itemLevel": 94,
+          "permanentEnchantID": 1900,
+          "temporaryEnchantID": 2636
+        },
+        {
+          "id": 186073,
+          "slot": 18,
+          "quality": 2,
+          "icon": "spell_nature_manaregentotem.jpg",
+          "itemLevel": 52,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 23705,
+          "slot": 19,
+          "quality": 4,
+          "icon": "inv_misc_tabardpvp_02.jpg",
+          "itemLevel": 1,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 50649,
+          "encounterName": "High King Maulgar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50650,
+          "encounterName": "Gruul the Dragonkiller",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50651,
+          "encounterName": "Magtheridon",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -808,12 +841,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31720,
+          "id": 28599,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_plate02.jpg",
-          "itemLevel": 88,
-          "permanentEnchantID": 928,
+          "quality": 4,
+          "icon": "inv_chest_chain_07.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 866,
           "temporaryEnchantID": null
         },
         {
@@ -853,11 +886,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30341,
+          "id": 30644,
           "slot": 10,
-          "quality": 2,
-          "icon": "inv_gauntlets_23.jpg",
-          "itemLevel": 114,
+          "quality": 4,
+          "icon": "inv_gauntlets_28.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 684,
           "temporaryEnchantID": null
         },
@@ -871,20 +904,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27925,
+          "id": 28730,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_16.jpg",
+          "quality": 4,
+          "icon": "inv_jewelry_ring_24.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28288,
+          "id": 28034,
           "slot": 13,
           "quality": 3,
-          "icon": "inv_misc_enggizmos_18.jpg",
-          "itemLevel": 115,
+          "icon": "inv_gizmo_khoriumpowercore.jpg",
+          "itemLevel": 112,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -913,7 +946,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_sword_2h_blacksmithing_02.jpg",
           "itemLevel": 123,
           "permanentEnchantID": 2673,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": null
         },
         {
           "id": 0,
@@ -947,46 +980,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 57.57814064592281,
+          "medianPerformance": 57.407893112115985,
+          "totalKills": 2,
+          "fastestKill": 116728,
+          "bestAmount": 894.30128161195,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 60.65,
+            "rank": 6147,
+            "rankPercent": 56.67559565769068,
+            "total": 14186
+          }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 56.992463674273274,
+          "medianPerformance": 51.395328911060986,
+          "totalKills": 2,
+          "fastestKill": 196499,
+          "bestAmount": 884.11361839062,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 63.93,
+            "rank": 7126,
+            "rankPercent": 56.04565083281925,
+            "total": 16210
+          }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 74.9746,
-          "medianPerformance": 74.9746,
-          "totalKills": 1,
+          "rankPercent": 75.01296549653463,
+          "medianPerformance": 74.97456702452368,
+          "totalKills": 3,
           "fastestKill": 237599,
-          "bestAmount": 1277.135004777,
+          "bestAmount": 1294.6964510899,
           "spec": "Retribution",
           "allStars": {
-            "points": 80.98,
-            "rank": 3073,
-            "rankPercent": 74.55689912208051,
-            "total": 12074
+            "points": 80.54,
+            "rank": 3611,
+            "rankPercent": 74.01569135535881,
+            "total": 13893
           }
         }
       ],
-      "bestPerformanceAverage": 74.9746,
-      "medianPerformanceAverage": 74.9746,
+      "bestPerformanceAverage": 63.19452327224357,
+      "medianPerformanceAverage": 61.25926301590022,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -1015,12 +1058,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27776,
+          "id": 29100,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_24.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
+          "quality": 4,
+          "icon": "inv_shoulder_44.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -1051,11 +1094,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30538,
+          "id": 29099,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_leather_09.jpg",
-          "itemLevel": 110,
+          "icon": "inv_pants_leather_22.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3013,
           "temporaryEnchantID": null
         },
@@ -1096,11 +1139,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27740,
+          "id": 30834,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_24.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_41.jpg",
+          "itemLevel": 100,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -1172,56 +1215,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 83.8102,
+          "rankPercent": 85.3605,
           "medianPerformance": 83.8102,
-          "totalKills": 1,
-          "fastestKill": 53993,
-          "bestAmount": 724.85322171393,
+          "totalKills": 3,
+          "fastestKill": 29964,
+          "bestAmount": 763.51621946336,
           "spec": "Guardian",
           "allStars": {
-            "points": 92.39,
-            "rank": 1495,
-            "rankPercent": 83.62560280578694,
-            "total": 9124
+            "points": 93.02,
+            "rank": 1627,
+            "rankPercent": 84.75529720607538,
+            "total": 10666
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 73.7798,
+          "rankPercent": 76.6256,
           "medianPerformance": 73.7798,
-          "totalKills": 1,
-          "fastestKill": 171879,
-          "bestAmount": 626.10906509812,
+          "totalKills": 3,
+          "fastestKill": 132466,
+          "bestAmount": 663.75399468121,
           "spec": "Guardian",
           "allStars": {
-            "points": 80.75,
-            "rank": 3340,
-            "rankPercent": 72.04922149673531,
-            "total": 11946
+            "points": 85.44,
+            "rank": 3257,
+            "rankPercent": 76.18316143661765,
+            "total": 13671
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 78.8715,
+          "rankPercent": 82.9346,
           "medianPerformance": 78.8715,
-          "totalKills": 1,
-          "fastestKill": 268799,
-          "bestAmount": 715.75787112303,
+          "totalKills": 3,
+          "fastestKill": 198308,
+          "bestAmount": 778.85713141186,
           "spec": "Guardian",
           "allStars": {
-            "points": 83.8,
-            "rank": 1741,
-            "rankPercent": 77.34669964848327,
-            "total": 7681
+            "points": 90.34,
+            "rank": 1492,
+            "rankPercent": 83.28850033624748,
+            "total": 8922
           }
         }
       ],
-      "bestPerformanceAverage": 78.8205,
+      "bestPerformanceAverage": 81.64023333333334,
       "medianPerformanceAverage": 78.8205,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -1232,30 +1275,30 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105379028,
       "gear": [
         {
-          "id": 32087,
+          "id": 28593,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_73.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 3003,
+          "icon": "inv_helmet_03.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2999,
           "temporaryEnchantID": null
         },
         {
-          "id": 29381,
+          "id": 29173,
           "slot": 2,
-          "quality": 4,
-          "icon": "inv_jewelry_necklace_04.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 30705,
+          "id": 27739,
           "slot": 3,
           "quality": 3,
-          "icon": "inv_shoulder_26.jpg",
+          "icon": "inv_shoulder_10.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2983,
+          "permanentEnchantID": 2977,
           "temporaryEnchantID": null
         },
         {
@@ -1268,7 +1311,7 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28403,
+          "id": 28203,
           "slot": 5,
           "quality": 3,
           "icon": "inv_chest_chain_15.jpg",
@@ -1277,119 +1320,119 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28375,
+          "id": 29238,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_23.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 30257,
-          "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_leather_05.jpg",
-          "itemLevel": 109,
-          "permanentEnchantID": 3012,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28176,
-          "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_chain_01.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2657,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28646,
-          "slot": 9,
           "quality": 4,
-          "icon": "inv_bracer_19.jpg",
-          "itemLevel": 113,
-          "permanentEnchantID": 2647,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 30341,
-          "slot": 10,
-          "quality": 2,
-          "icon": "inv_gauntlets_23.jpg",
-          "itemLevel": 114,
-          "permanentEnchantID": 684,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 30834,
-          "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_41.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29177,
-          "slot": 12,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_48naxxramas.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28034,
-          "slot": 13,
-          "quality": 3,
-          "icon": "inv_gizmo_khoriumpowercore.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29383,
-          "slot": 14,
-          "quality": 4,
-          "icon": "inv_misc_monsterscales_15.jpg",
+          "icon": "inv_belt_27.jpg",
           "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28777,
-          "slot": 15,
-          "quality": 4,
-          "icon": "inv_misc_cape_14.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 368,
+          "id": 27839,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_04.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2748,
           "temporaryEnchantID": null
         },
         {
-          "id": 28794,
-          "slot": 16,
+          "id": 29254,
+          "slot": 8,
           "quality": 4,
-          "icon": "inv_axe_64.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 1900,
-          "temporaryEnchantID": 2639
+          "icon": "inv_boots_chain_05.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2649,
+          "temporaryEnchantID": null
         },
         {
-          "id": 0,
-          "slot": 17,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "id": 29463,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_02.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27535,
+          "slot": 10,
+          "quality": 3,
+          "icon": "inv_gauntlets_29.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27484,
+          "id": 29172,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_51naxxramas.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28555,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_60.jpg",
+          "itemLevel": 95,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28528,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_pocketwatch_02.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27891,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_qirajidol_sage.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27804,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_13.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29155,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_sword_01.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28606,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_shield_29.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 1704,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27917,
           "slot": 18,
           "quality": 3,
-          "icon": "inv_misc_stonetablet_05.jpg",
-          "itemLevel": 115,
+          "icon": "inv_relics_libramoftruth.jpg",
+          "itemLevel": 112,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -1408,55 +1451,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 87.6223,
-          "medianPerformance": 77.8612,
-          "totalKills": 4,
+          "medianPerformance": 76.2561,
+          "totalKills": 6,
           "fastestKill": 26349,
-          "bestAmount": 1320.3916657179,
+          "bestAmount": 1345.9150981177,
           "spec": "Retribution",
           "allStars": {
-            "points": 88.19,
-            "rank": 2272,
-            "rankPercent": 81.59792561380763,
-            "total": 12341
+            "points": 86.19,
+            "rank": 2824,
+            "rankPercent": 80.10009868884816,
+            "total": 14186
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 82.5285,
-          "medianPerformance": 64.656,
-          "totalKills": 4,
+          "rankPercent": 82.5525,
+          "medianPerformance": 76.9168,
+          "totalKills": 6,
           "fastestKill": 123192,
-          "bestAmount": 1103.8297941425,
+          "bestAmount": 1206.4831730406,
           "spec": "Retribution",
           "allStars": {
-            "points": 86.68,
-            "rank": 3380,
-            "rankPercent": 76.12182884601795,
-            "total": 14151
+            "points": 92.09,
+            "rank": 3032,
+            "rankPercent": 81.30166563849475,
+            "total": 16210
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 82.925,
-          "medianPerformance": 65.5031,
-          "totalKills": 4,
-          "fastestKill": 198723,
-          "bestAmount": 1319.4098317271,
+          "rankPercent": 92.1204,
+          "medianPerformance": 68.345,
+          "totalKills": 6,
+          "fastestKill": 198308,
+          "bestAmount": 1638.031526028,
           "spec": "Retribution",
           "allStars": {
-            "points": 84.18,
-            "rank": 2713,
-            "rankPercent": 77.53851250621169,
-            "total": 12074
+            "points": 100.54,
+            "rank": 1075,
+            "rankPercent": 92.26948823148348,
+            "total": 13893
           }
         }
       ],
-      "bestPerformanceAverage": 84.35860000000001,
-      "medianPerformanceAverage": 69.3401,
+      "bestPerformanceAverage": 87.43173333333334,
+      "medianPerformanceAverage": 73.8393,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -1490,7 +1533,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_shoulder_23.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2983,
+          "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
         {
@@ -1512,11 +1555,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27760,
+          "id": 28828,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_24.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_26.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -1539,11 +1582,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30332,
+          "id": 28514,
           "slot": 9,
-          "quality": 2,
-          "icon": "inv_bracer_08.jpg",
-          "itemLevel": 114,
+          "quality": 4,
+          "icon": "inv_bracer_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 1593,
           "temporaryEnchantID": null
         },
@@ -1642,56 +1685,291 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 89.7872,
+          "rankPercent": 91.9198,
           "medianPerformance": 89.7872,
-          "totalKills": 3,
+          "totalKills": 5,
           "fastestKill": 26349,
-          "bestAmount": 1754.9891325825,
+          "bestAmount": 2317.1389239417,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 89.43,
-            "rank": 5699,
-            "rankPercent": 81.43127158965001,
-            "total": 30686
+            "points": 102.66,
+            "rank": 2736,
+            "rankPercent": 92.11383754793691,
+            "total": 34681
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 34.8819,
-          "medianPerformance": 33.2233,
-          "totalKills": 3,
-          "fastestKill": 145352,
-          "bestAmount": 956.93901700699,
-          "spec": "Survival",
+          "rankPercent": 92.9828,
+          "medianPerformance": 77.1833,
+          "totalKills": 5,
+          "fastestKill": 130187,
+          "bestAmount": 1816.8096660957,
+          "spec": "BeastMastery",
           "allStars": {
-            "points": 53.66,
-            "rank": 5051,
-            "rankPercent": 30.084452443583,
-            "total": 7223
+            "points": 106.97,
+            "rank": 2415,
+            "rankPercent": 93.09851906912917,
+            "total": 34978
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 89.5424,
-          "medianPerformance": 78.5374,
-          "totalKills": 3,
-          "fastestKill": 198723,
-          "bestAmount": 1386.9557122225,
-          "spec": "Survival",
+          "rankPercent": 90.6886,
+          "medianPerformance": 84.6055,
+          "totalKills": 5,
+          "fastestKill": 198308,
+          "bestAmount": 1807.0224095851,
+          "spec": "BeastMastery",
           "allStars": {
-            "points": 95.3,
-            "rank": 985,
-            "rankPercent": 86.15254714325921,
-            "total": 7106
+            "points": 99.29,
+            "rank": 3371,
+            "rankPercent": 89.9782912540518,
+            "total": 33627
           }
         }
       ],
-      "bestPerformanceAverage": 71.40383333333334,
-      "medianPerformanceAverage": 67.18263333333334,
+      "bestPerformanceAverage": 91.86373333333334,
+      "medianPerformanceAverage": 83.85866666666668,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
+      "error": null,
+      "partial": false
+    },
+    "benzöbak": {
+      "characterName": "Benzöbak",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 108294213,
+      "gear": [
+        {
+          "id": 28193,
+          "slot": 1,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_56.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24116,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_28.jpg",
+          "itemLevel": 114,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29095,
+          "slot": 3,
+          "quality": 4,
+          "icon": "inv_shoulder_44.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 10056,
+          "slot": 4,
+          "quality": 2,
+          "icon": "inv_shirt_orange_01.jpg",
+          "itemLevel": 43,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 21848,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_cloth_02.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 21846,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_04.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24262,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_cloth_14.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2748,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27914,
+          "slot": 8,
+          "quality": 3,
+          "icon": "inv_boots_cloth_14.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 911,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24250,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_10.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 369,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 21847,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_19.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2937,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29285,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29320,
+          "slot": 12,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_38.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29132,
+          "slot": 13,
+          "quality": 3,
+          "icon": "inv_misc_gem_bloodstone_02.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28040,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_datacrystal06.jpg",
+          "itemLevel": 88,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27981,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_11.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30832,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_hammer_08.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2628
+        },
+        {
+          "id": 28187,
+          "slot": 17,
+          "quality": 3,
+          "icon": "inv_offhand_outlandraid_03blue.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27518,
+          "slot": 18,
+          "quality": 3,
+          "icon": "spell_arcane_arcane03.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31778,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_guildtabard_01.jpg",
+          "itemLevel": 20,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 50649,
+          "encounterName": "High King Maulgar",
+          "rankPercent": 73.2847,
+          "medianPerformance": 73.2847,
+          "totalKills": 1,
+          "fastestKill": 35242,
+          "bestAmount": 985.92588388854,
+          "spec": "Balance",
+          "allStars": {
+            "points": 79.52,
+            "rank": 3026,
+            "rankPercent": 72.60956175298804,
+            "total": 11044
+          }
+        },
+        {
+          "encounterID": 50650,
+          "encounterName": "Gruul the Dragonkiller",
+          "rankPercent": 62.0244,
+          "medianPerformance": 62.0244,
+          "totalKills": 1,
+          "fastestKill": 134241,
+          "bestAmount": 841.24075357007,
+          "spec": "Balance",
+          "allStars": {
+            "points": 70.79,
+            "rank": 4087,
+            "rankPercent": 61.57968970380818,
+            "total": 10635
+          }
+        },
+        {
+          "encounterID": 50651,
+          "encounterName": "Magtheridon",
+          "rankPercent": 57.9936,
+          "medianPerformance": 57.9936,
+          "totalKills": 1,
+          "fastestKill": 199708,
+          "bestAmount": 794.28966290785,
+          "spec": "Balance",
+          "allStars": {
+            "points": 64.92,
+            "rank": 4253,
+            "rankPercent": 57.60717846460618,
+            "total": 10030
+          }
+        }
+      ],
+      "bestPerformanceAverage": 64.43423333333334,
+      "medianPerformanceAverage": 64.43423333333334,
+      "totalKills": 0,
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -1702,28 +1980,28 @@ export const wclBakedData: WclBakedData = {
       "wclId": 107023331,
       "gear": [
         {
-          "id": 28180,
+          "id": 24545,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_25.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_helmet_07.jpg",
+          "itemLevel": 123,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 28516,
+          "id": 28244,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_ahnqiraj_02.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_necklace_36.jpg",
+          "itemLevel": 113,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27847,
+          "id": 35411,
           "slot": 3,
           "quality": 3,
-          "icon": "inv_shoulder_34.jpg",
+          "icon": "inv_shoulder_22.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2996,
           "temporaryEnchantID": null
@@ -1738,13 +2016,13 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25819,
+          "id": 24544,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_chain_07.jpg",
-          "itemLevel": 103,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": 2718
+          "quality": 4,
+          "icon": "inv_chest_plate20.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
         },
         {
           "id": 28385,
@@ -1792,11 +2070,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29281,
+          "id": 29282,
           "slot": 11,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -1810,8 +2088,17 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29383,
+          "id": 28041,
           "slot": 13,
+          "quality": 3,
+          "icon": "inv_datacrystal06.jpg",
+          "itemLevel": 88,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 14,
           "quality": 4,
           "icon": "inv_misc_monsterscales_15.jpg",
           "itemLevel": 110,
@@ -1819,47 +2106,38 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27891,
-          "slot": 14,
-          "quality": 3,
-          "icon": "inv_qirajidol_sage.jpg",
-          "itemLevel": 112,
+          "id": 28672,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_10.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27804,
-          "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_13.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 368,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29348,
+          "id": 28729,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_weapon_hand_10.jpg",
-          "itemLevel": 105,
+          "icon": "inv_sword_74.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": 2639
         },
         {
-          "id": 28316,
+          "id": 28189,
           "slot": 17,
           "quality": 3,
-          "icon": "inv_shield_35.jpg",
+          "icon": "inv_sword_76.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 1071,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28258,
+          "id": 27916,
           "slot": 18,
           "quality": 3,
-          "icon": "inv_misc_coin_10.jpg",
-          "itemLevel": 115,
+          "icon": "inv_throwingknife_06.jpg",
+          "itemLevel": 112,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -1877,41 +2155,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 69.784,
+          "medianPerformance": 67.1336,
+          "totalKills": 2,
+          "fastestKill": 29404,
+          "bestAmount": 1425.2028829238,
+          "spec": "Arms",
+          "allStars": {
+            "points": 73.86,
+            "rank": 3190,
+            "rankPercent": 69.24189814814815,
+            "total": 10368
+          }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 78.0258,
+          "medianPerformance": 66.2878,
+          "totalKills": 2,
+          "fastestKill": 131874,
+          "bestAmount": 1079.3181370096,
+          "spec": "Arms",
+          "allStars": {
+            "points": 86.88,
+            "rank": 2635,
+            "rankPercent": 76.18875429397939,
+            "total": 11062
+          }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 62.3427,
+          "medianPerformance": 56.6765,
+          "totalKills": 2,
+          "fastestKill": 199708,
+          "bestAmount": 1069.5467679686,
+          "spec": "Arms",
+          "allStars": {
+            "points": 67.26,
+            "rank": 4042,
+            "rankPercent": 60.73267903993781,
+            "total": 10291
+          }
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 70.05083333333333,
+      "medianPerformanceAverage": 63.36596666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -1927,7 +2220,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_jewelry_ring_56.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2841,
+          "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
         {
@@ -1940,10 +2233,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 35343,
+          "id": 27796,
           "slot": 3,
           "quality": 3,
-          "icon": "inv_shoulder_19.jpg",
+          "icon": "inv_shoulder_22.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2994,
           "temporaryEnchantID": null
@@ -1958,30 +2251,30 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31297,
+          "id": 28602,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_25.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_chest_cloth_12.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 1144,
           "temporaryEnchantID": null
         },
         {
-          "id": 27843,
+          "id": 28799,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_10.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_03.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 30531,
+          "id": 28594,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_mail_20.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 2747,
+          "icon": "inv_pants_cloth_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2748,
           "temporaryEnchantID": null
         },
         {
@@ -2003,11 +2296,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27537,
+          "id": 29080,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_16.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_gauntlets_47.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2934,
           "temporaryEnchantID": null
         },
@@ -2021,11 +2314,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29367,
+          "id": 29286,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_56.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2057,20 +2350,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29355,
+          "id": 28770,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_weapon_halberd19.jpg",
-          "itemLevel": 105,
+          "icon": "inv_weapon_shortblade_41.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": 2669,
           "temporaryEnchantID": 2628
         },
         {
-          "id": 0,
+          "id": 29271,
           "slot": 17,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 4,
+          "icon": "inv_offhand_outlandraid_02.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2097,56 +2390,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 44.5307,
+          "rankPercent": 73.259,
           "medianPerformance": 44.5307,
-          "totalKills": 2,
-          "fastestKill": 53993,
-          "bestAmount": 562.99890726576,
+          "totalKills": 4,
+          "fastestKill": 29964,
+          "bestAmount": 789.77859355283,
           "spec": "Frost",
           "allStars": {
-            "points": 46.17,
-            "rank": 7706,
-            "rankPercent": 42.51287025292845,
-            "total": 13403
+            "points": 77.45,
+            "rank": 4496,
+            "rankPercent": 72.37416262061336,
+            "total": 16271
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 49.5244,
-          "medianPerformance": 43.8043,
-          "totalKills": 2,
-          "fastestKill": 171879,
-          "bestAmount": 928.36239447518,
+          "rankPercent": 91.5178,
+          "medianPerformance": 66.9143,
+          "totalKills": 4,
+          "fastestKill": 130187,
+          "bestAmount": 1419.3122201141,
           "spec": "Arcane",
           "allStars": {
-            "points": 55.32,
-            "rank": 14476,
-            "rankPercent": 47.62456127654956,
-            "total": 27637
+            "points": 103.33,
+            "rank": 2680,
+            "rankPercent": 91.49091602083598,
+            "total": 31484
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 69.2406,
-          "medianPerformance": 56.0544,
-          "totalKills": 2,
-          "fastestKill": 268799,
-          "bestAmount": 1112.4901274963,
+          "rankPercent": 91.2426,
+          "medianPerformance": 77.2413,
+          "totalKills": 4,
+          "fastestKill": 198308,
+          "bestAmount": 1592.9652117879,
           "spec": "Arcane",
           "allStars": {
-            "points": 73.22,
-            "rank": 8938,
-            "rankPercent": 66.04225245079414,
-            "total": 26318
+            "points": 100.51,
+            "rank": 2608,
+            "rankPercent": 91.33311170212765,
+            "total": 30080
           }
         }
       ],
-      "bestPerformanceAverage": 54.431900000000006,
-      "medianPerformanceAverage": 48.12980000000001,
+      "bestPerformanceAverage": 85.33979999999998,
+      "medianPerformanceAverage": 62.89543333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -2157,11 +2450,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 98116473,
       "gear": [
         {
-          "id": 28182,
+          "id": 29021,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_15.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_helmet_58.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
@@ -2180,7 +2473,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_shoulder_54.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": 2983,
+          "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
         {
@@ -2247,29 +2540,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27925,
+          "id": 28730,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_16.jpg",
+          "quality": 4,
+          "icon": "inv_jewelry_ring_24.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29281,
+          "id": 29282,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28041,
+          "id": 29383,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_datacrystal06.jpg",
-          "itemLevel": 88,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2292,21 +2585,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28657,
+          "id": 28438,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_weapon_shortblade_44.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 1900,
+          "icon": "inv_mace_38.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
           "temporaryEnchantID": 2639
         },
         {
-          "id": 28749,
+          "id": 29124,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_sword_74.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 1900,
+          "icon": "inv_sword_draenei_01.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 2673,
           "temporaryEnchantID": 2506
         },
         {
@@ -2333,55 +2626,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 74.8431,
-          "medianPerformance": 72.9719,
-          "totalKills": 3,
+          "medianPerformance": 57.5634,
+          "totalKills": 5,
           "fastestKill": 26349,
           "bestAmount": 1361.3799385176,
           "spec": "Arms",
           "allStars": {
-            "points": 74.61,
-            "rank": 2707,
-            "rankPercent": 69.88984088127295,
-            "total": 8987
+            "points": 72.07,
+            "rank": 3354,
+            "rankPercent": 67.66010802469135,
+            "total": 10368
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 62.5911,
-          "medianPerformance": 60.6918,
-          "totalKills": 3,
+          "rankPercent": 88.7221,
+          "medianPerformance": 61.6414,
+          "totalKills": 5,
           "fastestKill": 123192,
-          "bestAmount": 877.06395508834,
+          "bestAmount": 1245.0628711008,
           "spec": "Arms",
           "allStars": {
-            "points": 65.87,
-            "rank": 4102,
-            "rankPercent": 57.21886083872314,
-            "total": 9586
+            "points": 100.95,
+            "rank": 1260,
+            "rankPercent": 88.61869463026578,
+            "total": 11062
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 65.9895,
-          "medianPerformance": 61.8251,
-          "totalKills": 3,
+          "medianPerformance": 49.0984,
+          "totalKills": 5,
           "fastestKill": 198723,
           "bestAmount": 1096.9423249342,
           "spec": "Arms",
           "allStars": {
-            "points": 71.95,
-            "rank": 3110,
-            "rankPercent": 65.26256983240224,
-            "total": 8950
+            "points": 69.78,
+            "rank": 3800,
+            "rankPercent": 63.0842483723642,
+            "total": 10291
           }
         }
       ],
-      "bestPerformanceAverage": 67.8079,
-      "medianPerformanceAverage": 65.16293333333333,
+      "bestPerformanceAverage": 76.51823333333334,
+      "medianPerformanceAverage": 56.10106666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -2482,20 +2775,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29283,
+          "id": 28649,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
+          "icon": "inv_jewelry_ring_47.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28649,
+          "id": 28757,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_47.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_ring_ahnqiraj_05.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2568,55 +2861,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 91.6475,
-          "medianPerformance": 72.5001,
-          "totalKills": 3,
-          "fastestKill": 31935,
-          "bestAmount": 1289.0275761974,
+          "medianPerformance": 83.178,
+          "totalKills": 5,
+          "fastestKill": 29404,
+          "bestAmount": 1399.4694599374,
           "spec": "Enhancement",
           "allStars": {
-            "points": 95.11,
-            "rank": 2709,
-            "rankPercent": 85.53959523682384,
-            "total": 18727
+            "points": 96.93,
+            "rank": 2513,
+            "rankPercent": 88.02897445672893,
+            "total": 20984
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 96.2111,
-          "medianPerformance": 72.926,
-          "totalKills": 3,
+          "medianPerformance": 73.7216,
+          "totalKills": 5,
           "fastestKill": 123192,
           "bestAmount": 1373.2060523411,
           "spec": "Enhancement",
           "allStars": {
-            "points": 106.15,
-            "rank": 1469,
-            "rankPercent": 92.24224488717434,
-            "total": 18923
+            "points": 103.63,
+            "rank": 2050,
+            "rankPercent": 90.33262561924982,
+            "total": 21195
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 86.9489,
-          "medianPerformance": 79.2707,
-          "totalKills": 3,
-          "fastestKill": 226715,
+          "medianPerformance": 60.9221,
+          "totalKills": 5,
+          "fastestKill": 220362,
           "bestAmount": 1385.3207771872,
           "spec": "Enhancement",
           "allStars": {
-            "points": 90.69,
-            "rank": 3490,
-            "rankPercent": 80.94171628338887,
-            "total": 18307
+            "points": 86.82,
+            "rank": 4429,
+            "rankPercent": 78.45255474452554,
+            "total": 20550
           }
         }
       ],
       "bestPerformanceAverage": 91.6025,
-      "medianPerformanceAverage": 74.89893333333335,
+      "medianPerformanceAverage": 72.60723333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -2630,7 +2923,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -2677,19 +2970,19 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 21848,
+          "id": 35346,
           "slot": 5,
-          "quality": 4,
-          "icon": "inv_chest_cloth_02.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 3150,
+          "quality": 3,
+          "icon": "inv_chest_leather_01.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 21846,
+          "id": 24255,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_04.jpg",
+          "icon": "inv_belt_03.jpg",
           "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -2722,12 +3015,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 21847,
+          "id": 29080,
           "slot": 10,
           "quality": 4,
-          "icon": "inv_gauntlets_19.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 2937,
+          "icon": "inv_gauntlets_47.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -2740,11 +3033,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29286,
+          "id": 29287,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2785,11 +3078,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2628
         },
         {
-          "id": 29271,
+          "id": 28781,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_offhand_outlandraid_02.jpg",
-          "itemLevel": 110,
+          "icon": "inv_offhand_draenei_a_01.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2817,55 +3110,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 80.7947,
-          "medianPerformance": 80.3922,
-          "totalKills": 5,
+          "medianPerformance": 78.5842,
+          "totalKills": 7,
           "fastestKill": 26349,
-          "bestAmount": 1518.0522937216,
+          "bestAmount": 1530.8370044053,
           "spec": "Arcane",
           "allStars": {
-            "points": 84.07,
-            "rank": 5867,
-            "rankPercent": 76.64251015369913,
-            "total": 25114
+            "points": 80.55,
+            "rank": 7616,
+            "rankPercent": 73.64322303751904,
+            "total": 28892
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 99.1499,
-          "medianPerformance": 71.895,
-          "totalKills": 5,
+          "medianPerformance": 79.0118,
+          "totalKills": 7,
           "fastestKill": 123192,
           "bestAmount": 1406.5199038899,
           "spec": "Arcane",
           "allStars": {
-            "points": 104.61,
-            "rank": 1971,
-            "rankPercent": 92.87187466078083,
-            "total": 27637
+            "points": 102.64,
+            "rank": 2864,
+            "rankPercent": 90.90649218650744,
+            "total": 31484
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 95.2576,
-          "medianPerformance": 91.5527,
-          "totalKills": 5,
-          "fastestKill": 198723,
-          "bestAmount": 1463.6755685049,
+          "rankPercent": 96.4031,
+          "medianPerformance": 92.6919,
+          "totalKills": 7,
+          "fastestKill": 198308,
+          "bestAmount": 1781.8343183331,
           "spec": "Arcane",
           "allStars": {
-            "points": 98.06,
-            "rank": 3002,
-            "rankPercent": 88.59715783874155,
-            "total": 26318
+            "points": 105.87,
+            "rank": 1322,
+            "rankPercent": 95.60837765957447,
+            "total": 30080
           }
         }
       ],
-      "bestPerformanceAverage": 91.73406666666666,
-      "medianPerformanceAverage": 81.27996666666667,
+      "bestPerformanceAverage": 92.11590000000001,
+      "medianPerformanceAverage": 83.4293,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -2918,7 +3211,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_chest_leather_11.jpg",
           "itemLevel": 120,
           "permanentEnchantID": 2661,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2791
         },
         {
           "id": 28423,
@@ -2966,11 +3259,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29279,
+          "id": 24088,
           "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_65.jpg",
+          "itemLevel": 101,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2984,11 +3277,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29383,
+          "id": 28528,
           "slot": 13,
           "quality": 4,
-          "icon": "inv_misc_monsterscales_15.jpg",
-          "itemLevel": 110,
+          "icon": "inv_misc_pocketwatch_02.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3017,7 +3310,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_staff_55.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": 2955
         },
         {
           "id": 0,
@@ -3053,274 +3346,54 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 96.655,
           "medianPerformance": 87.8615,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
           "bestAmount": 934.19105089377,
           "spec": "Guardian",
           "allStars": {
-            "points": 106.82,
-            "rank": 412,
-            "rankPercent": 95.49539675580886,
-            "total": 9124
+            "points": 104.56,
+            "rank": 595,
+            "rankPercent": 94.43090193137071,
+            "total": 10666
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 97.6804,
-          "medianPerformance": 91.1549,
-          "totalKills": 5,
+          "medianPerformance": 95.3516,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 820.23183323592,
+          "bestAmount": 864.26437356871,
           "spec": "Guardian",
           "allStars": {
-            "points": 106.57,
-            "rank": 585,
-            "rankPercent": 95.11133433785368,
-            "total": 11946
+            "points": 108.39,
+            "rank": 505,
+            "rankPercent": 96.31336405529954,
+            "total": 13671
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 97.5486,
-          "medianPerformance": 82.3803,
-          "totalKills": 5,
+          "medianPerformance": 86.377,
+          "totalKills": 7,
           "fastestKill": 198723,
           "bestAmount": 960.88022020602,
           "spec": "Guardian",
           "allStars": {
-            "points": 105.05,
-            "rank": 282,
-            "rankPercent": 96.34162218461138,
-            "total": 7681
+            "points": 103.98,
+            "rank": 423,
+            "rankPercent": 95.27011880744227,
+            "total": 8922
           }
         }
       ],
       "bestPerformanceAverage": 97.29466666666667,
-      "medianPerformanceAverage": 87.13223333333333,
+      "medianPerformanceAverage": 89.86336666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
-      "error": null,
-      "partial": false
-    },
-    "chd": {
-      "characterName": "Chd",
-      "serverSlug": "spineshatter",
-      "serverRegion": "EU",
-      "wclId": 94979341,
-      "gear": [
-        {
-          "id": 18870,
-          "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_18.jpg",
-          "itemLevel": 62,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 18723,
-          "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_01.jpg",
-          "itemLevel": 62,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 16844,
-          "slot": 3,
-          "quality": 4,
-          "icon": "inv_shoulder_29.jpg",
-          "itemLevel": 66,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 154,
-          "slot": 4,
-          "quality": 2,
-          "icon": "inv_misc_cape_14.jpg",
-          "itemLevel": 1,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 13346,
-          "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_08.jpg",
-          "itemLevel": 63,
-          "permanentEnchantID": 1891,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 16838,
-          "slot": 6,
-          "quality": 4,
-          "icon": "inv_belt_14.jpg",
-          "itemLevel": 66,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 18682,
-          "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_02.jpg",
-          "itemLevel": 61,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 16837,
-          "slot": 8,
-          "quality": 4,
-          "icon": "inv_boots_plate_06.jpg",
-          "itemLevel": 66,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 16840,
-          "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_16.jpg",
-          "itemLevel": 66,
-          "permanentEnchantID": 66,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 16948,
-          "slot": 10,
-          "quality": 4,
-          "icon": "inv_gauntlets_11.jpg",
-          "itemLevel": 76,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 16058,
-          "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_19.jpg",
-          "itemLevel": 63,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 13178,
-          "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_22.jpg",
-          "itemLevel": 60,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 18471,
-          "slot": 13,
-          "quality": 3,
-          "icon": "inv_jewelry_talisman_10.jpg",
-          "itemLevel": 62,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 12930,
-          "slot": 14,
-          "quality": 3,
-          "icon": "inv_misc_root_02.jpg",
-          "itemLevel": 60,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 19430,
-          "slot": 15,
-          "quality": 4,
-          "icon": "inv_misc_cape_16.jpg",
-          "itemLevel": 75,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 22713,
-          "slot": 16,
-          "quality": 3,
-          "icon": "inv_waepon_bow_zulgrub_d_01.jpg",
-          "itemLevel": 68,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": 29
-        },
-        {
-          "id": 19312,
-          "slot": 17,
-          "quality": 4,
-          "icon": "inv_misc_flower_04.jpg",
-          "itemLevel": 65,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 0,
-          "slot": 18,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 5976,
-          "slot": 19,
-          "quality": 2,
-          "icon": "inv_shirt_guildtabard_01.jpg",
-          "itemLevel": 1,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        }
-      ],
-      "rankings": [
-        {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        }
-      ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
-      "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -3334,7 +3407,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -3368,7 +3441,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_shoulder_18.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2994,
+          "permanentEnchantID": 2995,
           "temporaryEnchantID": null
         },
         {
@@ -3413,7 +3486,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_boots_cloth_03.jpg",
           "itemLevel": 105,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2940,
           "temporaryEnchantID": null
         },
         {
@@ -3426,29 +3499,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27889,
+          "id": 28780,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_19.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": 2935,
+          "quality": 4,
+          "icon": "inv_gauntlets_15.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2937,
           "temporaryEnchantID": null
         },
         {
-          "id": 28555,
+          "id": 28753,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_60.jpg",
-          "itemLevel": 95,
+          "icon": "inv_jewelry_ring_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29172,
+          "id": 29287,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_51naxxramas.jpg",
-          "itemLevel": 105,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3476,7 +3549,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_misc_cape_18.jpg",
           "itemLevel": 125,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2621,
           "temporaryEnchantID": null
         },
         {
@@ -3522,54 +3595,54 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 99.5012,
           "medianPerformance": 85.7164,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
           "bestAmount": 2648.7912254735,
           "spec": "Destruction",
           "allStars": {
-            "points": 111.76,
-            "rank": 297,
-            "rankPercent": 99.08242660962831,
-            "total": 32259
+            "points": 111.23,
+            "rank": 521,
+            "rankPercent": 98.5597163749169,
+            "total": 36104
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 84.8605,
-          "medianPerformance": 82.0403,
-          "totalKills": 5,
+          "rankPercent": 87.2709,
+          "medianPerformance": 82.9644,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 1097.1248132996,
-          "spec": "Affliction",
+          "bestAmount": 1447.4266431269,
+          "spec": "Destruction",
           "allStars": {
-            "points": 85.56,
-            "rank": 1726,
-            "rankPercent": 74.33035714285714,
-            "total": 6720
+            "points": 99.18,
+            "rank": 4652,
+            "rankPercent": 87.24250486874949,
+            "total": 36457
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 92.3373,
-          "medianPerformance": 73.4548,
-          "totalKills": 6,
-          "fastestKill": 198723,
-          "bestAmount": 1618.5745988134,
+          "rankPercent": 97.803,
+          "medianPerformance": 89.6244,
+          "totalKills": 8,
+          "fastestKill": 198308,
+          "bestAmount": 2075.7305666273,
           "spec": "Destruction",
           "allStars": {
-            "points": 99.49,
-            "rank": 3430,
-            "rankPercent": 89.24471488614265,
-            "total": 31882
+            "points": 110.18,
+            "rank": 734,
+            "rankPercent": 97.94510947268088,
+            "total": 35671
           }
         }
       ],
-      "bestPerformanceAverage": 92.23299999999999,
-      "medianPerformanceAverage": 80.40383333333334,
+      "bestPerformanceAverage": 94.85836666666667,
+      "medianPerformanceAverage": 86.10173333333331,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -3598,12 +3671,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27778,
+          "id": 29037,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_18.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2981,
+          "quality": 4,
+          "icon": "inv_shoulder_14.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2982,
           "temporaryEnchantID": null
         },
         {
@@ -3755,56 +3828,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 94.0576,
-          "medianPerformance": 85.9451,
-          "totalKills": 4,
+          "rankPercent": 97.1991,
+          "medianPerformance": 91.4769,
+          "totalKills": 6,
           "fastestKill": 26349,
-          "bestAmount": 1890.6979392007,
+          "bestAmount": 2245.6128417902,
           "spec": "Elemental",
           "allStars": {
-            "points": 102.52,
-            "rank": 1200,
-            "rankPercent": 91.56821378340366,
-            "total": 14220
+            "points": 109.5,
+            "rank": 556,
+            "rankPercent": 96.67286133924824,
+            "total": 16681
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 97.6223,
-          "medianPerformance": 85.9915,
-          "totalKills": 4,
+          "rankPercent": 97.7572,
+          "medianPerformance": 88.6657,
+          "totalKills": 6,
           "fastestKill": 123192,
-          "bestAmount": 1220.9802584583,
+          "bestAmount": 1325.97782732,
           "spec": "Elemental",
           "allStars": {
-            "points": 108.61,
-            "rank": 757,
-            "rankPercent": 94.74598651747863,
-            "total": 14389
+            "points": 111.07,
+            "rank": 457,
+            "rankPercent": 97.29873822640839,
+            "total": 16881
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 85.2238,
-          "medianPerformance": 50.7473,
-          "totalKills": 4,
+          "rankPercent": 93.9815,
+          "medianPerformance": 72.297,
+          "totalKills": 6,
           "fastestKill": 198723,
-          "bestAmount": 1185.0817469543,
+          "bestAmount": 1406.3041722257,
           "spec": "Elemental",
           "allStars": {
-            "points": 89.71,
-            "rank": 2647,
-            "rankPercent": 80.9448365259974,
-            "total": 13886
+            "points": 104.58,
+            "rank": 958,
+            "rankPercent": 94.15000916926462,
+            "total": 16359
           }
         }
       ],
-      "bestPerformanceAverage": 92.30123333333331,
-      "medianPerformanceAverage": 74.22796666666666,
+      "bestPerformanceAverage": 96.31259999999999,
+      "medianPerformanceAverage": 84.14653333333334,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -3824,11 +3897,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28674,
+          "id": 29381,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_34.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_necklace_04.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3860,10 +3933,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28656,
+          "id": 28750,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_22.jpg",
+          "icon": "inv_belt_26.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -3878,11 +3951,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29248,
+          "id": 28545,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_cloth_05.jpg",
-          "itemLevel": 110,
+          "icon": "inv_boots_plate_06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2657,
           "temporaryEnchantID": null
         },
@@ -3950,11 +4023,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27903,
+          "id": 29356,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_spear_08.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_sword_81.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": 2670,
           "temporaryEnchantID": 2677
         },
@@ -3990,17 +4063,17 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 97.2298,
+          "rankPercent": 97.2591,
           "medianPerformance": 95.4601,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
-          "bestAmount": 2647.9724440269,
+          "bestAmount": 2712.896204598,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 109.09,
-            "rank": 920,
-            "rankPercent": 97.00514892784983,
-            "total": 30686
+            "points": 109.23,
+            "rank": 1085,
+            "rankPercent": 96.874369251175,
+            "total": 34681
           }
         },
         {
@@ -4008,15 +4081,15 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 95.9884,
           "medianPerformance": 79.9116,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 1793.0466264043,
+          "bestAmount": 1854.4216449035,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 107.22,
-            "rank": 2003,
-            "rankPercent": 93.53463587921847,
-            "total": 30965
+            "points": 108.35,
+            "rank": 2033,
+            "rankPercent": 94.19063411287095,
+            "total": 34978
           }
         },
         {
@@ -4024,22 +4097,22 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Magtheridon",
           "rankPercent": 92.7461,
           "medianPerformance": 89.9986,
-          "totalKills": 4,
+          "totalKills": 6,
           "fastestKill": 198723,
           "bestAmount": 1855.1935750492,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 102.81,
-            "rank": 2233,
-            "rankPercent": 92.47369840841651,
-            "total": 29656
+            "points": 101.07,
+            "rank": 2857,
+            "rankPercent": 91.50682487287001,
+            "total": 33627
           }
         }
       ],
-      "bestPerformanceAverage": 95.32143333333333,
+      "bestPerformanceAverage": 95.33120000000001,
       "medianPerformanceAverage": 88.45676666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -4122,12 +4195,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28171,
+          "id": 28454,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_08.jpg",
+          "quality": 4,
+          "icon": "inv_bracer_02.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2647,
+          "permanentEnchantID": 1593,
           "temporaryEnchantID": null
         },
         {
@@ -4176,11 +4249,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27878,
+          "id": 28764,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_21.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_misc_cape_17.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -4225,56 +4298,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 44.1996,
-          "medianPerformance": 27.7802,
-          "totalKills": 2,
-          "fastestKill": 53993,
-          "bestAmount": 762.8396273591,
+          "rankPercent": 77.9624,
+          "medianPerformance": 50.6191,
+          "totalKills": 4,
+          "fastestKill": 29964,
+          "bestAmount": 1139.4339874516,
           "spec": "Enhancement",
           "allStars": {
-            "points": 48.13,
-            "rank": 10766,
-            "rankPercent": 42.516153147861374,
-            "total": 18727
+            "points": 83.03,
+            "rank": 5079,
+            "rankPercent": 75.80060998856271,
+            "total": 20984
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 67.057,
-          "medianPerformance": 53.0806,
-          "totalKills": 2,
-          "fastestKill": 171879,
-          "bestAmount": 1068.0711430716,
+          "medianPerformance": 61.2747,
+          "totalKills": 4,
+          "fastestKill": 130187,
+          "bestAmount": 1081.6825028613,
           "spec": "Enhancement",
           "allStars": {
-            "points": 75.98,
-            "rank": 6588,
-            "rankPercent": 65.19050890450774,
-            "total": 18923
+            "points": 74.74,
+            "rank": 7571,
+            "rankPercent": 64.28402925218212,
+            "total": 21195
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 47.9466,
-          "medianPerformance": 37.4767,
-          "totalKills": 2,
-          "fastestKill": 268799,
+          "medianPerformance": 31.4903,
+          "totalKills": 4,
+          "fastestKill": 198308,
           "bestAmount": 1070.7108285373,
           "spec": "Enhancement",
           "allStars": {
-            "points": 53.98,
-            "rank": 9798,
-            "rankPercent": 46.48495111159666,
-            "total": 18307
+            "points": 50.31,
+            "rank": 11537,
+            "rankPercent": 43.86374695863747,
+            "total": 20550
           }
         }
       ],
-      "bestPerformanceAverage": 53.06773333333333,
-      "medianPerformanceAverage": 39.44583333333333,
+      "bestPerformanceAverage": 64.322,
+      "medianPerformanceAverage": 47.7947,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -4288,7 +4361,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -4308,11 +4381,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28134,
+          "id": 28762,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_27.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_29naxxramas.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -4389,20 +4462,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28227,
+          "id": 28753,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_63.jpg",
+          "quality": 4,
+          "icon": "inv_jewelry_ring_15.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29286,
+          "id": 29287,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -4452,11 +4525,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28673,
+          "id": 29350,
           "slot": 18,
           "quality": 4,
-          "icon": "inv_wand_21.jpg",
-          "itemLevel": 115,
+          "icon": "inv_wand_1h_stratholme_d_01.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -4476,54 +4549,54 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 98.4461,
           "medianPerformance": 98.4461,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
           "bestAmount": 1899.9582526851,
           "spec": "Affliction",
           "allStars": {
-            "points": 109.38,
-            "rank": 199,
-            "rankPercent": 97.06405693950178,
-            "total": 6744
+            "points": 108,
+            "rank": 336,
+            "rankPercent": 95.68132009797603,
+            "total": 7757
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 99.7114,
-          "medianPerformance": 90.9178,
-          "totalKills": 5,
+          "medianPerformance": 93.9422,
+          "totalKills": 7,
           "fastestKill": 123192,
           "bestAmount": 1746.9884408078,
           "spec": "Destruction",
           "allStars": {
-            "points": 113.89,
-            "rank": 439,
-            "rankPercent": 98.65656534674723,
-            "total": 32603
+            "points": 112.31,
+            "rank": 771,
+            "rankPercent": 97.88792275831801,
+            "total": 36457
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 97.5803,
-          "medianPerformance": 97.5803,
-          "totalKills": 5,
-          "fastestKill": 198723,
-          "bestAmount": 1578.4836179003,
-          "spec": "Affliction",
+          "rankPercent": 98.7789,
+          "medianPerformance": 91.4635,
+          "totalKills": 7,
+          "fastestKill": 198308,
+          "bestAmount": 2135.430744095,
+          "spec": "Destruction",
           "allStars": {
-            "points": 108.39,
-            "rank": 280,
-            "rankPercent": 95.81458145814581,
-            "total": 6666
+            "points": 111.01,
+            "rank": 562,
+            "rankPercent": 98.42729388018279,
+            "total": 35671
           }
         }
       ],
-      "bestPerformanceAverage": 98.57926666666667,
-      "medianPerformanceAverage": 95.64806666666668,
+      "bestPerformanceAverage": 98.97879999999999,
+      "medianPerformanceAverage": 94.61726666666668,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -4615,11 +4688,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29090,
+          "id": 28521,
           "slot": 10,
           "quality": 4,
-          "icon": "inv_gauntlets_44.jpg",
-          "itemLevel": 120,
+          "icon": "inv_gauntlets_25.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2322,
           "temporaryEnchantID": null
         },
@@ -4696,11 +4769,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31404,
+          "id": 28788,
           "slot": 19,
           "quality": 2,
-          "icon": "inv_shirt_15.jpg",
-          "itemLevel": 1,
+          "icon": "inv_shirt_guildtabard_01.jpg",
+          "itemLevel": 60,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         }
@@ -4711,15 +4784,15 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 60.1175,
           "medianPerformance": 46.4378,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
           "bestAmount": 752.07468879668,
           "spec": "Balance",
           "allStars": {
-            "points": 51.73,
-            "rank": 5084,
-            "rankPercent": 45.94278421780283,
-            "total": 9403
+            "points": 48.03,
+            "rank": 6320,
+            "rankPercent": 42.78341180731619,
+            "total": 11044
           }
         },
         {
@@ -4727,15 +4800,15 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 82.3539,
           "medianPerformance": 54.5462,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 123192,
           "bestAmount": 908.13526852393,
           "spec": "Balance",
           "allStars": {
-            "points": 84.2,
-            "rank": 2355,
-            "rankPercent": 73.80952380952381,
-            "total": 8988
+            "points": 80.51,
+            "rank": 3132,
+            "rankPercent": 70.5594734367654,
+            "total": 10635
           }
         },
         {
@@ -4743,22 +4816,22 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Magtheridon",
           "rankPercent": 61.7104,
           "medianPerformance": 39.3287,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 198723,
           "bestAmount": 756.6411537668,
           "spec": "Balance",
           "allStars": {
-            "points": 64.02,
-            "rank": 3694,
-            "rankPercent": 56.48639095086603,
-            "total": 8487
+            "points": 59.87,
+            "rank": 4725,
+            "rankPercent": 52.901296111665005,
+            "total": 10030
           }
         }
       ],
       "bestPerformanceAverage": 68.0606,
       "medianPerformanceAverage": 46.770900000000005,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -4778,7 +4851,7 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29334,
+          "id": 28233,
           "slot": 2,
           "quality": 3,
           "icon": "inv_jewelry_necklace_12.jpg",
@@ -4814,11 +4887,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27542,
+          "id": 29250,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_30.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_15.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -4832,11 +4905,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27525,
+          "id": 28663,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_cloth_12.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_boots_fabric_01.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -4944,56 +5017,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 82.7722,
-          "medianPerformance": 82.7722,
-          "totalKills": 1,
-          "fastestKill": 53993,
-          "bestAmount": 1014.242587002,
+          "rankPercent": 96.4816,
+          "medianPerformance": 89.6269,
+          "totalKills": 2,
+          "fastestKill": 29964,
+          "bestAmount": 1434.1876918969,
           "spec": "Holy",
           "allStars": {
-            "points": 89.24,
-            "rank": 3605,
-            "rankPercent": 81.90127052679155,
-            "total": 19913
+            "points": 104.33,
+            "rank": 924,
+            "rankPercent": 95.88754232757084,
+            "total": 22444
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 62.3804,
-          "medianPerformance": 62.3804,
-          "totalKills": 1,
-          "fastestKill": 171879,
-          "bestAmount": 680.48452690556,
+          "rankPercent": 82.9673,
+          "medianPerformance": 72.6738,
+          "totalKills": 2,
+          "fastestKill": 132488,
+          "bestAmount": 849.89583962321,
           "spec": "Holy",
           "allStars": {
-            "points": 67.08,
-            "rank": 7830,
-            "rankPercent": 60.88042772198071,
-            "total": 20013
+            "points": 88.7,
+            "rank": 4121,
+            "rankPercent": 81.73596950084227,
+            "total": 22558
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 62.0164,
-          "medianPerformance": 62.0164,
-          "totalKills": 1,
-          "fastestKill": 268799,
-          "bestAmount": 659.46301883564,
+          "rankPercent": 80.5361,
+          "medianPerformance": 71.2763,
+          "totalKills": 2,
+          "fastestKill": 198308,
+          "bestAmount": 795.86804364927,
           "spec": "Holy",
           "allStars": {
-            "points": 67.13,
-            "rank": 7614,
-            "rankPercent": 60.47042940962667,
-            "total": 19259
+            "points": 86.83,
+            "rank": 4561,
+            "rankPercent": 79.07296925195044,
+            "total": 21790
           }
         }
       ],
-      "bestPerformanceAverage": 69.05633333333334,
-      "medianPerformanceAverage": 69.05633333333334,
+      "bestPerformanceAverage": 86.66166666666668,
+      "medianPerformanceAverage": 77.859,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -5004,29 +5077,29 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105376756,
       "gear": [
         {
-          "id": 22267,
+          "id": 27781,
           "slot": 1,
           "quality": 3,
-          "icon": "inv_helmet_62.jpg",
-          "itemLevel": 63,
+          "icon": "inv_helmet_72.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 12023,
+          "id": 28134,
           "slot": 2,
-          "quality": 2,
-          "icon": "inv_jewelry_necklace_03.jpg",
-          "itemLevel": 45,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_27.jpg",
+          "itemLevel": 112,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 21468,
+          "id": 27796,
           "slot": 3,
           "quality": 3,
-          "icon": "inv_shoulder_25.jpg",
-          "itemLevel": 74,
+          "icon": "inv_shoulder_22.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5040,83 +5113,83 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 940,
+          "id": 28252,
           "slot": 5,
-          "quality": 4,
-          "icon": "inv_chest_cloth_26.jpg",
-          "itemLevel": 47,
-          "permanentEnchantID": 1893,
+          "quality": 3,
+          "icon": "inv_chest_cloth_25.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 18740,
+          "id": 27547,
           "slot": 6,
           "quality": 3,
-          "icon": "inv_belt_13.jpg",
-          "itemLevel": 61,
+          "icon": "inv_belt_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 14632,
+          "id": 27838,
           "slot": 7,
           "quality": 3,
-          "icon": "inv_pants_08.jpg",
-          "itemLevel": 61,
+          "icon": "inv_pants_cloth_20.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 22311,
+          "id": 31230,
           "slot": 8,
           "quality": 3,
           "icon": "inv_boots_cloth_05.jpg",
-          "itemLevel": 61,
+          "itemLevel": 100,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 16703,
+          "id": 28174,
           "slot": 9,
           "quality": 3,
-          "icon": "inv_bracer_13.jpg",
-          "itemLevel": 57,
-          "permanentEnchantID": 1883,
+          "icon": "inv_bracer_07.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 16684,
+          "id": 27537,
           "slot": 10,
           "quality": 3,
-          "icon": "inv_gauntlets_17.jpg",
-          "itemLevel": 59,
-          "permanentEnchantID": 930,
+          "icon": "inv_gauntlets_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 11988,
+          "id": 25824,
           "slot": 11,
-          "quality": 2,
-          "icon": "inv_jewelry_ring_12.jpg",
-          "itemLevel": 47,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_17.jpg",
+          "itemLevel": 85,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 11988,
+          "id": 28555,
           "slot": 12,
-          "quality": 2,
-          "icon": "inv_jewelry_ring_12.jpg",
-          "itemLevel": 47,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_60.jpg",
+          "itemLevel": 95,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 0,
+          "id": 27896,
           "slot": 13,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 3,
+          "icon": "inv_potion_130.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5130,38 +5203,38 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 13376,
+          "id": 27981,
           "slot": 15,
           "quality": 3,
-          "icon": "inv_misc_cape_14.jpg",
-          "itemLevel": 59,
+          "icon": "inv_misc_cape_11.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 22394,
+          "id": 29155,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_staff_29.jpg",
-          "itemLevel": 62,
+          "quality": 4,
+          "icon": "inv_sword_01.jpg",
+          "itemLevel": 100,
           "permanentEnchantID": null,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2628
         },
         {
-          "id": 0,
+          "id": 29330,
           "slot": 17,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 3,
+          "icon": "inv_misc_book_07.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 5216,
+          "id": 25808,
           "slot": 18,
-          "quality": 2,
-          "icon": "inv_wand_06.jpg",
-          "itemLevel": 45,
+          "quality": 3,
+          "icon": "inv_wand_05.jpg",
+          "itemLevel": 109,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5213,7 +5286,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -5323,11 +5396,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29289,
+          "id": 29291,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5365,7 +5438,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_hammer_04.jpg",
           "itemLevel": 100,
           "permanentEnchantID": 2343,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2677
         },
         {
           "id": 28754,
@@ -5400,8 +5473,8 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 99.82881064604565,
-          "medianPerformance": 90.14218529842952,
-          "totalKills": 3,
+          "medianPerformance": 93.85017892991686,
+          "totalKills": 4,
           "fastestKill": 26349,
           "bestAmount": 573.60810656951,
           "spec": "Restoration",
@@ -5417,12 +5490,12 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 75.11508085215226,
           "medianPerformance": 40,
-          "totalKills": 3,
-          "fastestKill": 145355,
+          "totalKills": 4,
+          "fastestKill": 131902,
           "bestAmount": 21.806955714013,
           "spec": "Restoration",
           "allStars": {
-            "points": 75.88678776250806,
+            "points": 75.80996455769068,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -5432,13 +5505,13 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 90.05399458275605,
-          "medianPerformance": 90.04107045808254,
-          "totalKills": 3,
+          "medianPerformance": 86.97665897888717,
+          "totalKills": 4,
           "fastestKill": 198723,
           "bestAmount": 118.67214757492,
           "spec": "Restoration",
           "allStars": {
-            "points": 94.12083896634151,
+            "points": 93.06951246636126,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -5446,9 +5519,9 @@ export const wclBakedData: WclBakedData = {
         }
       ],
       "bestPerformanceAverage": 88.33262869365132,
-      "medianPerformanceAverage": 73.39441858550403,
+      "medianPerformanceAverage": 73.60894596960135,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -5459,20 +5532,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105245557,
       "gear": [
         {
-          "id": 16900,
+          "id": 28183,
           "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_09.jpg",
-          "itemLevel": 76,
+          "quality": 3,
+          "icon": "inv_helmet_62.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 24096,
+          "id": 28254,
           "slot": 2,
           "quality": 3,
-          "icon": "inv_jewelry_amulet_05.jpg",
-          "itemLevel": 85,
+          "icon": "inv_jewelry_necklace_30naxxramas.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5495,20 +5568,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 24397,
+          "id": 28600,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_31.jpg",
-          "itemLevel": 88,
+          "quality": 4,
+          "icon": "inv_chest_leather_07.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 17755,
+          "id": 27742,
           "slot": 6,
           "quality": 3,
-          "icon": "inv_belt_24.jpg",
-          "itemLevel": 50,
+          "icon": "inv_belt_13.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5522,20 +5595,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28251,
+          "id": 28585,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_05.jpg",
+          "quality": 4,
+          "icon": "inv_boots_cloth_09.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28029,
+          "id": 28174,
           "slot": 9,
           "quality": 3,
-          "icon": "inv_bracer_12.jpg",
-          "itemLevel": 94,
+          "icon": "inv_bracer_07.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5549,20 +5622,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28259,
+          "id": 29320,
           "slot": 11,
           "quality": 3,
-          "icon": "inv_jewelry_ring_62.jpg",
+          "icon": "inv_jewelry_ring_38.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 24045,
+          "id": 29288,
           "slot": 12,
           "quality": 3,
-          "icon": "inv_jewelry_ring_26.jpg",
-          "itemLevel": 85,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5585,20 +5658,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27519,
+          "id": 27981,
           "slot": 15,
           "quality": 3,
-          "icon": "inv_misc_cape_06.jpg",
-          "itemLevel": 112,
+          "icon": "inv_misc_cape_11.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 31289,
+          "id": 28604,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_staff_47.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_staff_57.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5634,41 +5707,291 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 51.7797,
+          "medianPerformance": 51.7797,
+          "totalKills": 1,
+          "fastestKill": 29404,
+          "bestAmount": 798.63283906951,
+          "spec": "Balance",
+          "allStars": {
+            "points": 54.71,
+            "rank": 5619,
+            "rankPercent": 49.13074972835929,
+            "total": 11044
+          }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 32.8279,
+          "medianPerformance": 32.8279,
+          "totalKills": 1,
+          "fastestKill": 131874,
+          "bestAmount": 640.85414865705,
+          "spec": "Balance",
+          "allStars": {
+            "points": 42.23,
+            "rank": 7274,
+            "rankPercent": 31.61259990597085,
+            "total": 10635
+          }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 33.469,
+          "medianPerformance": 33.469,
+          "totalKills": 1,
+          "fastestKill": 247445,
+          "bestAmount": 608.36953666471,
+          "spec": "Balance",
+          "allStars": {
+            "points": 36.79,
+            "rank": 6900,
+            "rankPercent": 31.216350947158524,
+            "total": 10030
+          }
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 39.358866666666664,
+      "medianPerformanceAverage": 39.358866666666664,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
+      "error": null,
+      "partial": false
+    },
+    "flinesham": {
+      "characterName": "Flinesham",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 106796178,
+      "gear": [
+        {
+          "id": 29035,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_15.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3002,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28530,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_ahnqiraj_04.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 32078,
+          "slot": 3,
+          "quality": 4,
+          "icon": "inv_shoulder_33.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2981,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 154,
+          "slot": 4,
+          "quality": 2,
+          "icon": "inv_misc_cape_14.jpg",
+          "itemLevel": 1,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29519,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_plate07.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29520,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_03.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30531,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_mail_20.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2747,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28406,
+          "slot": 8,
+          "quality": 3,
+          "icon": "inv_boots_cloth_04.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29521,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_12.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2650,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29034,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_25.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2937,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27784,
+          "slot": 11,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29286,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29370,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27683,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_misc_gem_pearl_01.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27981,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_11.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28770,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_41.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2678
+        },
+        {
+          "id": 29268,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_shield_37.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2654,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28248,
+          "slot": 18,
+          "quality": 3,
+          "icon": "spell_arcane_blast.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 23192,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_tabard_scarletcrusade_b_01.jpg",
+          "itemLevel": 1,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 50649,
+          "encounterName": "High King Maulgar",
+          "rankPercent": 97.2156,
+          "medianPerformance": 70.2885,
+          "totalKills": 5,
+          "fastestKill": 35242,
+          "bestAmount": 2247.8343775538,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 109.54,
+            "rank": 552,
+            "rankPercent": 96.69684071698339,
+            "total": 16681
+          }
+        },
+        {
+          "encounterID": 50650,
+          "encounterName": "Gruul the Dragonkiller",
+          "rankPercent": 95.619,
+          "medianPerformance": 72.2847,
+          "totalKills": 5,
+          "fastestKill": 134241,
+          "bestAmount": 1195.1694515302,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 104.06,
+            "rank": 1410,
+            "rankPercent": 91.65333807238908,
+            "total": 16881
+          }
+        },
+        {
+          "encounterID": 50651,
+          "encounterName": "Magtheridon",
+          "rankPercent": 87.3576,
+          "medianPerformance": 84.702,
+          "totalKills": 5,
+          "fastestKill": 199708,
+          "bestAmount": 1288.2308169928,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 97.16,
+            "rank": 2027,
+            "rankPercent": 87.61537991319763,
+            "total": 16359
+          }
+        }
+      ],
+      "bestPerformanceAverage": 93.3974,
+      "medianPerformanceAverage": 75.7584,
+      "totalKills": 0,
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -5684,15 +6007,15 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_jewelry_ring_56.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
         {
-          "id": 28134,
+          "id": 28530,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_27.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_ahnqiraj_04.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5724,30 +6047,30 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31461,
+          "id": 24256,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_10.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_13.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28185,
+          "id": 24262,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_leather_05.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_pants_cloth_14.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2748,
           "temporaryEnchantID": null
         },
         {
-          "id": 28179,
+          "id": 21870,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_fabric_01.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_boots_cloth_03.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2841,
           "temporaryEnchantID": null
         },
         {
@@ -5756,15 +6079,15 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_bracer_13.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 369,
           "temporaryEnchantID": null
         },
         {
-          "id": 31149,
+          "id": 28968,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_15.jpg",
-          "itemLevel": 91,
+          "quality": 4,
+          "icon": "inv_gauntlets_52.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2935,
           "temporaryEnchantID": null
         },
@@ -5823,11 +6146,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2628
         },
         {
-          "id": 28187,
+          "id": 29273,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_offhand_outlandraid_03blue.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_misc_bag_10_green.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5855,55 +6178,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 96.9542,
-          "medianPerformance": 96.9542,
-          "totalKills": 1,
-          "fastestKill": 31935,
+          "medianPerformance": 91.9328,
+          "totalKills": 3,
+          "fastestKill": 29404,
           "bestAmount": 1831.8772506654,
           "spec": "Affliction",
           "allStars": {
-            "points": 107.99,
-            "rank": 263,
-            "rankPercent": 96.11506524317912,
-            "total": 6744
+            "points": 106.45,
+            "rank": 422,
+            "rankPercent": 94.57264406342658,
+            "total": 7757
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 70.1276,
+          "rankPercent": 92.9295,
           "medianPerformance": 70.1276,
-          "totalKills": 1,
-          "fastestKill": 152511,
-          "bestAmount": 1051.0258276452,
+          "totalKills": 3,
+          "fastestKill": 130187,
+          "bestAmount": 1334.11438191,
           "spec": "Affliction",
           "allStars": {
-            "points": 78.48,
-            "rank": 2170,
-            "rankPercent": 67.72321428571429,
-            "total": 6720
+            "points": 104.6,
+            "rank": 704,
+            "rankPercent": 90.91026635634859,
+            "total": 7734
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 90.7733,
-          "medianPerformance": 90.7733,
-          "totalKills": 1,
-          "fastestKill": 273434,
-          "bestAmount": 1377.769406877,
+          "medianPerformance": 88.5547,
+          "totalKills": 3,
+          "fastestKill": 220362,
+          "bestAmount": 1378.7589161228,
           "spec": "Affliction",
           "allStars": {
-            "points": 100.41,
-            "rank": 705,
-            "rankPercent": 89.43894389438944,
-            "total": 6666
+            "points": 97.34,
+            "rank": 1053,
+            "rankPercent": 86.35361266052665,
+            "total": 7709
           }
         }
       ],
-      "bestPerformanceAverage": 85.9517,
-      "medianPerformanceAverage": 85.9517,
+      "bestPerformanceAverage": 93.55233333333335,
+      "medianPerformanceAverage": 83.53836666666668,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -5914,30 +6237,30 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105376753,
       "gear": [
         {
-          "id": 35393,
+          "id": 28192,
           "slot": 1,
           "quality": 3,
-          "icon": "inv_helmet_09.jpg",
+          "icon": "inv_helmet_18.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 3001,
+          "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 29334,
+          "id": 27546,
           "slot": 2,
           "quality": 3,
-          "icon": "inv_jewelry_necklace_12.jpg",
+          "icon": "inv_misc_noose_01.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28647,
+          "id": 32078,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_01.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
+          "icon": "inv_shoulder_33.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2982,
           "temporaryEnchantID": null
         },
         {
@@ -5950,128 +6273,128 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29781,
+          "id": 28204,
           "slot": 5,
           "quality": 3,
-          "icon": "inv_chest_leather_08.jpg",
-          "itemLevel": 106,
+          "icon": "inv_chest_chain_17.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28655,
+          "id": 29261,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_22.jpg",
-          "itemLevel": 115,
+          "icon": "inv_belt_30.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27800,
+          "id": 30538,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_14.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28752,
-          "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_chain_05.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
+          "icon": "inv_pants_leather_09.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28174,
+          "id": 30939,
+          "slot": 8,
+          "quality": 3,
+          "icon": "inv_boots_chain_11.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27712,
           "slot": 9,
           "quality": 3,
-          "icon": "inv_bracer_07.jpg",
+          "icon": "inv_bracer_08.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 369,
+          "permanentEnchantID": 2647,
           "temporaryEnchantID": null
         },
         {
-          "id": 29032,
+          "id": 27528,
           "slot": 10,
-          "quality": 4,
-          "icon": "inv_gauntlets_25.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 2841,
+          "quality": 3,
+          "icon": "inv_gauntlets_10.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 684,
           "temporaryEnchantID": null
         },
         {
-          "id": 25713,
+          "id": 27740,
           "slot": 11,
           "quality": 3,
-          "icon": "inv_jewelry_ring_35.jpg",
-          "itemLevel": 88,
-          "permanentEnchantID": 2928,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29168,
+          "id": 30365,
           "slot": 12,
           "quality": 3,
-          "icon": "inv_jewelry_ring_22.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2928,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28190,
-          "slot": 13,
-          "quality": 3,
-          "icon": "inv_misc_ahnqirajtrinket_06.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 109,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 30841,
+          "id": 29383,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28288,
           "slot": 14,
           "quality": 3,
-          "icon": "inv_misc_book_11.jpg",
+          "icon": "inv_misc_enggizmos_18.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27946,
+          "id": 29792,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_16.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2662,
+          "quality": 2,
+          "icon": "inv_misc_cape_22.jpg",
+          "itemLevel": 111,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 31304,
+          "id": 28657,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_mace_34.jpg",
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_44.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
+          "permanentEnchantID": 1900,
+          "temporaryEnchantID": 2636
         },
         {
-          "id": 31292,
+          "id": 25197,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_shield_35.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
+          "quality": 2,
+          "icon": "inv_gauntlets_02.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 1900,
+          "temporaryEnchantID": 2636
         },
         {
-          "id": 24413,
+          "id": 27815,
           "slot": 18,
           "quality": 3,
-          "icon": "spell_nature_lightning.jpg",
-          "itemLevel": 94,
+          "icon": "spell_unused.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -6090,9 +6413,9 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 60,
-          "medianPerformance": 60,
-          "totalKills": 1,
-          "fastestKill": 53993,
+          "medianPerformance": 50,
+          "totalKills": 3,
+          "fastestKill": 30000,
           "bestAmount": 0,
           "spec": "Restoration",
           "allStars": {
@@ -6105,14 +6428,14 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 40,
-          "medianPerformance": 40,
-          "totalKills": 1,
-          "fastestKill": 171879,
-          "bestAmount": 0,
+          "rankPercent": 52.35455211603492,
+          "medianPerformance": 41.33464754786722,
+          "totalKills": 3,
+          "fastestKill": 132466,
+          "bestAmount": 8.4776470943487,
           "spec": "Restoration",
           "allStars": {
-            "points": 40,
+            "points": 52.62469430848145,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -6121,24 +6444,24 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 37.23749227532949,
+          "rankPercent": 56.14408685297784,
           "medianPerformance": 37.23749227532949,
-          "totalKills": 1,
-          "fastestKill": 268799,
-          "bestAmount": 4.2448074583611,
+          "totalKills": 3,
+          "fastestKill": 198308,
+          "bestAmount": 36.806381991649,
           "spec": "Restoration",
           "allStars": {
-            "points": 37.38296003439687,
+            "points": 57.07935519853932,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         }
       ],
-      "bestPerformanceAverage": 45.74583075844316,
-      "medianPerformanceAverage": 45.74583075844316,
+      "bestPerformanceAverage": 56.16621298967092,
+      "medianPerformanceAverage": 42.857379941065574,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -6203,10 +6526,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27875,
+          "id": 28591,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_cloth_18.jpg",
+          "quality": 4,
+          "icon": "inv_pants_mail_15.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2745,
           "temporaryEnchantID": null
@@ -6257,20 +6580,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28190,
+          "id": 29376,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_misc_ahnqirajtrinket_06.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_valentineperfumebottle.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29376,
+          "id": 28190,
           "slot": 14,
-          "quality": 4,
-          "icon": "inv_valentineperfumebottle.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_misc_ahnqirajtrinket_06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -6293,12 +6616,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2629
         },
         {
-          "id": 29274,
+          "id": 29458,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_potion_75.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
+          "icon": "inv_shield_33.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2654,
           "temporaryEnchantID": null
         },
         {
@@ -6325,8 +6648,8 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 99.54321246971311,
-          "medianPerformance": 97.115590884423,
-          "totalKills": 5,
+          "medianPerformance": 93.48996597594672,
+          "totalKills": 7,
           "fastestKill": 26349,
           "bestAmount": 404.10208235478,
           "spec": "Restoration",
@@ -6341,13 +6664,13 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 94.96412431067354,
-          "medianPerformance": 50,
-          "totalKills": 5,
+          "medianPerformance": 40,
+          "totalKills": 7,
           "fastestKill": 123214,
           "bestAmount": 81.873070513346,
           "spec": "Restoration",
           "allStars": {
-            "points": 97.86145739630902,
+            "points": 97.57302870651102,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -6357,13 +6680,13 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 98.02484566148118,
-          "medianPerformance": 48.57781856717558,
-          "totalKills": 5,
+          "medianPerformance": 30.124293452186883,
+          "totalKills": 7,
           "fastestKill": 198723,
           "bestAmount": 131.81914909787,
           "spec": "Restoration",
           "allStars": {
-            "points": 102.54223223543903,
+            "points": 101.37443534726064,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -6371,9 +6694,9 @@ export const wclBakedData: WclBakedData = {
         }
       ],
       "bestPerformanceAverage": 97.5107274806226,
-      "medianPerformanceAverage": 65.2311364838662,
+      "medianPerformanceAverage": 54.53808647604453,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -6382,7 +6705,179 @@ export const wclBakedData: WclBakedData = {
       "serverSlug": "spineshatter",
       "serverRegion": "EU",
       "wclId": 91345969,
-      "gear": [],
+      "gear": [
+        {
+          "id": 29021,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_58.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3003,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28745,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 35411,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_22.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2983,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 6125,
+          "slot": 4,
+          "quality": 2,
+          "icon": "inv_chest_leather_04.jpg",
+          "itemLevel": 1,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28601,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_leather_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28779,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_22.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30538,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_leather_09.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 3012,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28383,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_plate_04.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29463,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_02.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29020,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_54.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 684,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30834,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_41.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28553,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_60.jpg",
+          "itemLevel": 95,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28034,
+          "slot": 13,
+          "quality": 3,
+          "icon": "inv_gizmo_khoriumpowercore.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28529,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_10.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28767,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_axe_66.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28729,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_sword_74.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2713
+        },
+        {
+          "id": 28581,
+          "slot": 18,
+          "quality": 4,
+          "icon": "inv_weapon_rifle_23.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 19,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
       "rankings": [
         {
           "encounterID": 50649,
@@ -6409,26 +6904,26 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 16.7174,
-          "medianPerformance": 16.7174,
-          "totalKills": 1,
-          "fastestKill": 453620,
-          "bestAmount": 696.54997575063,
+          "rankPercent": 31.1214,
+          "medianPerformance": 23.9194,
+          "totalKills": 2,
+          "fastestKill": 292742,
+          "bestAmount": 903.36883672312,
           "spec": "Fury",
           "allStars": {
-            "points": 20.07,
-            "rank": 16366,
-            "rankPercent": 16.180086047940996,
-            "total": 19524
+            "points": 35.46,
+            "rank": 15317,
+            "rankPercent": 31.160951053979954,
+            "total": 22249
           }
         }
       ],
-      "bestPerformanceAverage": 16.7174,
-      "medianPerformanceAverage": 16.7174,
+      "bestPerformanceAverage": 31.1214,
+      "medianPerformanceAverage": 23.9194,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
-      "partial": true
+      "partial": false
     },
     "hellpapa": {
       "characterName": "Hellpapa",
@@ -6455,12 +6950,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27994,
+          "id": 27796,
           "slot": 3,
           "quality": 3,
-          "icon": "inv_shoulder_36.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": 2981,
+          "icon": "inv_shoulder_22.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2982,
           "temporaryEnchantID": null
         },
         {
@@ -6514,15 +7009,15 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_bracer_10.jpg",
           "itemLevel": 112,
-          "permanentEnchantID": 369,
+          "permanentEnchantID": 2650,
           "temporaryEnchantID": null
         },
         {
-          "id": 27465,
+          "id": 28968,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_15.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_gauntlets_52.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2935,
           "temporaryEnchantID": null
         },
@@ -6536,11 +7031,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29287,
+          "id": 28753,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
+          "icon": "inv_jewelry_ring_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -6577,8 +7072,8 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_weapon_shortblade_41.jpg",
           "itemLevel": 125,
-          "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2628
+          "permanentEnchantID": 2672,
+          "temporaryEnchantID": null
         },
         {
           "id": 29273,
@@ -6613,55 +7108,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 99.487,
-          "medianPerformance": 93.9424,
-          "totalKills": 5,
+          "medianPerformance": 93.1529,
+          "totalKills": 7,
           "fastestKill": 26349,
           "bestAmount": 2643.4020266424,
           "spec": "Destruction",
           "allStars": {
-            "points": 111.7,
-            "rank": 307,
-            "rankPercent": 99.05142750860225,
-            "total": 32259
+            "points": 111.17,
+            "rank": 535,
+            "rankPercent": 98.52093950808775,
+            "total": 36104
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 96.3387,
-          "medianPerformance": 90.2159,
-          "totalKills": 5,
+          "rankPercent": 98.8173,
+          "medianPerformance": 92.2602,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 1460.5006818625,
+          "bestAmount": 1823.5384485394,
           "spec": "Destruction",
           "allStars": {
-            "points": 103.35,
-            "rank": 3057,
-            "rankPercent": 90.6266294512775,
-            "total": 32603
+            "points": 113.85,
+            "rank": 440,
+            "rankPercent": 98.7958416764956,
+            "total": 36457
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 97.0115,
-          "medianPerformance": 95.6402,
-          "totalKills": 5,
+          "rankPercent": 98.6236,
+          "medianPerformance": 96.9996,
+          "totalKills": 7,
           "fastestKill": 198723,
-          "bestAmount": 1873.1686622732,
+          "bestAmount": 2172.2665432334,
           "spec": "Destruction",
           "allStars": {
-            "points": 108.18,
-            "rank": 1177,
-            "rankPercent": 96.31139828116179,
-            "total": 31882
+            "points": 111.47,
+            "rank": 478,
+            "rankPercent": 98.66277928849766,
+            "total": 35671
           }
         }
       ],
-      "bestPerformanceAverage": 97.6124,
-      "medianPerformanceAverage": 93.26616666666666,
+      "bestPerformanceAverage": 98.97596666666668,
+      "medianPerformanceAverage": 94.13756666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -6771,20 +7266,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29284,
+          "id": 29285,
           "slot": 12,
-          "quality": 3,
+          "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 115,
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28040,
+          "id": 30340,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_datacrystal06.jpg",
-          "itemLevel": 88,
+          "quality": 2,
+          "icon": "spell_arcane_arcaneresilience.jpg",
+          "itemLevel": 114,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -6876,17 +7371,17 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 967.78527019831,
           "spec": "Destruction",
           "allStars": {
-            "points": 46.15,
-            "rank": 19107,
-            "rankPercent": 40.07276833322878,
-            "total": 31882
+            "points": 42.45,
+            "rank": 22551,
+            "rankPercent": 36.78338145832749,
+            "total": 35671
           }
         }
       ],
       "bestPerformanceAverage": 40.2216,
       "medianPerformanceAverage": 40.2216,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -6897,11 +7392,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 102028091,
       "gear": [
         {
-          "id": 32087,
+          "id": 29021,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_73.jpg",
-          "itemLevel": 110,
+          "icon": "inv_helmet_58.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
@@ -6915,11 +7410,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 33173,
+          "id": 29023,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_16.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_shoulder_54.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
@@ -6933,11 +7428,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 23522,
+          "id": 29019,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_chain_16.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_chest_plate20.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
@@ -6951,11 +7446,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31544,
+          "id": 30538,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_14.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_pants_leather_09.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": 3012,
           "temporaryEnchantID": null
         },
@@ -6978,11 +7473,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 23520,
+          "id": 29020,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_26.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_gauntlets_54.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 684,
           "temporaryEnchantID": null
         },
@@ -7073,55 +7568,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 98.1978,
-          "medianPerformance": 98.1978,
-          "totalKills": 1,
-          "fastestKill": 31935,
+          "medianPerformance": 84.8206,
+          "totalKills": 3,
+          "fastestKill": 29404,
           "bestAmount": 3951.5578518866,
           "spec": "Fury",
           "allStars": {
-            "points": 110.43,
-            "rank": 374,
-            "rankPercent": 98.1173026448617,
-            "total": 19812
+            "points": 107.42,
+            "rank": 540,
+            "rankPercent": 97.60646565122785,
+            "total": 22519
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 92.1248,
-          "medianPerformance": 92.1248,
-          "totalKills": 1,
-          "fastestKill": 152511,
-          "bestAmount": 1467.913789825,
-          "spec": "Fury",
+          "rankPercent": 96.8964,
+          "medianPerformance": 96.8964,
+          "totalKills": 3,
+          "fastestKill": 130187,
+          "bestAmount": 587.28786568998,
+          "spec": "Gladiator",
           "allStars": {
-            "points": 103.15,
-            "rank": 1779,
-            "rankPercent": 91.41145783016134,
-            "total": 20702
+            "points": 104.41,
+            "rank": 143,
+            "rankPercent": 96.40779155072097,
+            "total": 3953
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 21.611,
-          "medianPerformance": 21.611,
-          "totalKills": 1,
-          "fastestKill": 273434,
-          "bestAmount": 767.278392592,
-          "spec": "Fury",
+          "rankPercent": 96.7422,
+          "medianPerformance": 96.7422,
+          "totalKills": 3,
+          "fastestKill": 220362,
+          "bestAmount": 539.51383135646,
+          "spec": "Gladiator",
           "allStars": {
-            "points": 24.53,
-            "rank": 15440,
-            "rankPercent": 20.92296660520385,
-            "total": 19524
+            "points": 101.87,
+            "rank": 305,
+            "rankPercent": 96.20758483033931,
+            "total": 8016
           }
         }
       ],
-      "bestPerformanceAverage": 70.64453333333333,
-      "medianPerformanceAverage": 70.64453333333333,
+      "bestPerformanceAverage": 97.2788,
+      "medianPerformanceAverage": 92.81973333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -7222,11 +7717,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29283,
+          "id": 29379,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
+          "icon": "inv_jewelry_ring_ahnqiraj_01.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7309,15 +7804,15 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 99.0488,
           "medianPerformance": 94.4921,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
-          "bestAmount": 2519.0823047062,
+          "bestAmount": 2621.4123615005,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 107.2,
-            "rank": 1320,
-            "rankPercent": 95.70162288991723,
-            "total": 30686
+            "points": 107.99,
+            "rank": 1371,
+            "rankPercent": 96.0497102159684,
+            "total": 34681
           }
         },
         {
@@ -7325,38 +7820,38 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 98.1536,
           "medianPerformance": 93.6008,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 1924.524319761,
+          "bestAmount": 2016.283423671,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 111.42,
-            "rank": 1014,
-            "rankPercent": 96.72856450831584,
-            "total": 30965
+            "points": 112.96,
+            "rank": 853,
+            "rankPercent": 97.56418320086912,
+            "total": 34978
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 95.0303,
+          "rankPercent": 96.7658,
           "medianPerformance": 92.1643,
-          "totalKills": 5,
-          "fastestKill": 198723,
-          "bestAmount": 1899.9612525978,
+          "totalKills": 7,
+          "fastestKill": 198308,
+          "bestAmount": 2071.3788651996,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 104.2,
-            "rank": 1896,
-            "rankPercent": 93.61006204478015,
-            "total": 29656
+            "points": 106.94,
+            "rank": 1259,
+            "rankPercent": 96.25895857495465,
+            "total": 33627
           }
         }
       ],
-      "bestPerformanceAverage": 97.41090000000001,
+      "bestPerformanceAverage": 97.9894,
       "medianPerformanceAverage": 93.41906666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -7403,11 +7898,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29341,
+          "id": 28964,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_46.jpg",
-          "itemLevel": 100,
+          "quality": 4,
+          "icon": "inv_chest_cloth_62.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2841,
           "temporaryEnchantID": null
         },
@@ -7421,11 +7916,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25711,
+          "id": 28966,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_14.jpg",
-          "itemLevel": 88,
+          "quality": 4,
+          "icon": "inv_pants_cloth_23.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2841,
           "temporaryEnchantID": null
         },
@@ -7520,11 +8015,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25640,
+          "id": 25808,
           "slot": 18,
           "quality": 3,
           "icon": "inv_wand_05.jpg",
-          "itemLevel": 103,
+          "itemLevel": 109,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7542,56 +8037,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 40.4624,
+          "rankPercent": 49.4012,
           "medianPerformance": 40.4624,
-          "totalKills": 1,
-          "fastestKill": 53993,
-          "bestAmount": 798.21458337192,
+          "totalKills": 3,
+          "fastestKill": 29964,
+          "bestAmount": 908.49018822587,
           "spec": "Affliction",
           "allStars": {
-            "points": 44.16,
-            "rank": 4112,
-            "rankPercent": 39.04211150652432,
-            "total": 6744
+            "points": 52.56,
+            "rank": 4135,
+            "rankPercent": 46.7062008508444,
+            "total": 7757
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 6.4003,
-          "medianPerformance": 6.4003,
-          "totalKills": 1,
-          "fastestKill": 171879,
-          "bestAmount": 510.58011740818,
+          "rankPercent": 46.5205,
+          "medianPerformance": 26.904,
+          "totalKills": 3,
+          "fastestKill": 132466,
+          "bestAmount": 924.15878904359,
           "spec": "Affliction",
           "allStars": {
-            "points": 31.47,
-            "rank": 6302,
-            "rankPercent": 6.2351190476190474,
-            "total": 6720
+            "points": 56.97,
+            "rank": 4170,
+            "rankPercent": 46.095164209981895,
+            "total": 7734
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 18.7111,
-          "medianPerformance": 18.7111,
-          "totalKills": 1,
-          "fastestKill": 268799,
-          "bestAmount": 634.16158542256,
+          "rankPercent": 66.8391,
+          "medianPerformance": 39.1798,
+          "totalKills": 3,
+          "fastestKill": 198308,
+          "bestAmount": 1109.9004546638,
           "spec": "Affliction",
           "allStars": {
-            "points": 30.37,
-            "rank": 5461,
-            "rankPercent": 18.09180918091809,
-            "total": 6666
+            "points": 75,
+            "rank": 2610,
+            "rankPercent": 66.15644052406279,
+            "total": 7709
           }
         }
       ],
-      "bestPerformanceAverage": 21.857933333333335,
-      "medianPerformanceAverage": 21.857933333333335,
+      "bestPerformanceAverage": 54.253600000000006,
+      "medianPerformanceAverage": 35.5154,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -7602,20 +8097,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105245556,
       "gear": [
         {
-          "id": 28804,
+          "id": 29049,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_27.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": null,
+          "icon": "inv_helmet_91.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3001,
           "temporaryEnchantID": null
         },
         {
-          "id": 28134,
+          "id": 28609,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_27.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_17.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7625,7 +8120,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_shoulder_55.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2980,
           "temporaryEnchantID": null
         },
         {
@@ -7647,30 +8142,30 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28799,
+          "id": 21873,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_03.jpg",
-          "itemLevel": 125,
+          "icon": "inv_belt_31.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29053,
+          "id": 28742,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_cloth_25.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": null,
+          "icon": "inv_pants_cloth_13.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2746,
           "temporaryEnchantID": null
         },
         {
-          "id": 29242,
+          "id": 28663,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_cloth_11.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
+          "icon": "inv_boots_fabric_01.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2940,
           "temporaryEnchantID": null
         },
         {
@@ -7683,21 +8178,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27537,
+          "id": 28508,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_16.jpg",
+          "quality": 4,
+          "icon": "inv_gauntlets_17.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 684,
+          "permanentEnchantID": 2322,
           "temporaryEnchantID": null
         },
         {
-          "id": 29172,
+          "id": 29291,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_51naxxramas.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": null,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2930,
           "temporaryEnchantID": null
         },
         {
@@ -7706,14 +8201,14 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_jewelry_ring_31.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2928,
+          "permanentEnchantID": 2930,
           "temporaryEnchantID": null
         },
         {
-          "id": 29370,
+          "id": 29376,
           "slot": 13,
           "quality": 4,
-          "icon": "inv_weapon_shortblade_23.jpg",
+          "icon": "inv_valentineperfumebottle.jpg",
           "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -7733,24 +8228,24 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_misc_cape_06.jpg",
           "itemLevel": 110,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2621,
           "temporaryEnchantID": null
         },
         {
-          "id": 30832,
+          "id": 28522,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_hammer_08.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": null,
+          "icon": "inv_hammer_26.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2343,
           "temporaryEnchantID": null
         },
         {
-          "id": 29272,
+          "id": 29170,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_misc_orb_04.jpg",
-          "itemLevel": 110,
+          "icon": "inv_misc_orb_01.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7777,56 +8272,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 93.902,
-          "medianPerformance": 81.8721,
-          "totalKills": 5,
+          "rankPercent": 96.4536,
+          "medianPerformance": 85.4769,
+          "totalKills": 7,
           "fastestKill": 26349,
-          "bestAmount": 1235.8343770162,
+          "bestAmount": 1459.7639180523,
           "spec": "Holy",
           "allStars": {
-            "points": 101.16,
-            "rank": 1553,
-            "rankPercent": 92.20609651986139,
-            "total": 19913
+            "points": 104.94,
+            "rank": 823,
+            "rankPercent": 96.33755123863838,
+            "total": 22444
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 90.219,
-          "medianPerformance": 87.5101,
-          "totalKills": 5,
+          "medianPerformance": 78.7313,
+          "totalKills": 7,
           "fastestKill": 123192,
           "bestAmount": 857.66965710826,
           "spec": "Holy",
           "allStars": {
-            "points": 92.6,
-            "rank": 3050,
-            "rankPercent": 84.76490281317143,
-            "total": 20013
+            "points": 89.52,
+            "rank": 3949,
+            "rankPercent": 82.49844844401099,
+            "total": 22558
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 97.6129,
-          "medianPerformance": 96.4729,
-          "totalKills": 5,
+          "medianPerformance": 95.6026,
+          "totalKills": 6,
           "fastestKill": 198723,
           "bestAmount": 1052.3140250499,
           "spec": "Holy",
           "allStars": {
-            "points": 106.92,
-            "rank": 722,
-            "rankPercent": 96.25629575782752,
-            "total": 19259
+            "points": 105.68,
+            "rank": 1004,
+            "rankPercent": 95.39697108765489,
+            "total": 21790
           }
         }
       ],
-      "bestPerformanceAverage": 93.91129999999998,
-      "medianPerformanceAverage": 88.61836666666666,
+      "bestPerformanceAverage": 94.76183333333331,
+      "medianPerformanceAverage": 86.60359999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -7860,7 +8355,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_shoulder_14.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": 2983,
+          "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
         {
@@ -7927,17 +8422,8 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29283,
-          "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
           "id": 30834,
-          "slot": 12,
+          "slot": 11,
           "quality": 4,
           "icon": "inv_jewelry_ring_41.jpg",
           "itemLevel": 100,
@@ -7945,17 +8431,17 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28288,
-          "slot": 13,
-          "quality": 3,
-          "icon": "inv_misc_enggizmos_18.jpg",
-          "itemLevel": 115,
+          "id": 28757,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_ahnqiraj_05.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
           "id": 29383,
-          "slot": 14,
+          "slot": 13,
           "quality": 4,
           "icon": "inv_misc_monsterscales_15.jpg",
           "itemLevel": 110,
@@ -7963,11 +8449,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27878,
-          "slot": 15,
+          "id": 28288,
+          "slot": 14,
           "quality": 3,
-          "icon": "inv_misc_cape_21.jpg",
+          "icon": "inv_misc_enggizmos_18.jpg",
           "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24259,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_18.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": 368,
           "temporaryEnchantID": null
         },
@@ -8012,56 +8507,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 97.4241,
+          "rankPercent": 97.9037,
           "medianPerformance": 93.0039,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26373,
-          "bestAmount": 1676.8285746786,
+          "bestAmount": 1839.7666666667,
           "spec": "Enhancement",
           "allStars": {
-            "points": 108.89,
-            "rank": 669,
-            "rankPercent": 96.4329577615208,
-            "total": 18727
+            "points": 109.47,
+            "rank": 471,
+            "rankPercent": 97.76019824628288,
+            "total": 20984
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 99.102,
-          "medianPerformance": 97.7296,
-          "totalKills": 5,
+          "medianPerformance": 97.6644,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 1519.4411974804,
+          "bestAmount": 1553.5382664231,
           "spec": "Enhancement",
           "allStars": {
-            "points": 112.68,
-            "rank": 515,
-            "rankPercent": 97.28372879564552,
-            "total": 18923
+            "points": 112.21,
+            "rank": 604,
+            "rankPercent": 97.15498938428875,
+            "total": 21195
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 95.1618,
+          "rankPercent": 95.2995,
           "medianPerformance": 93.4132,
-          "totalKills": 5,
-          "fastestKill": 198723,
-          "bestAmount": 1604.0116141564,
+          "totalKills": 7,
+          "fastestKill": 198323,
+          "bestAmount": 1704.2431950648,
           "spec": "Enhancement",
           "allStars": {
-            "points": 104.69,
-            "rank": 1212,
-            "rankPercent": 93.38504397225105,
-            "total": 18307
+            "points": 105.59,
+            "rank": 972,
+            "rankPercent": 95.2749391727494,
+            "total": 20550
           }
         }
       ],
-      "bestPerformanceAverage": 97.22930000000001,
-      "medianPerformanceAverage": 94.71556666666667,
+      "bestPerformanceAverage": 97.43506666666667,
+      "medianPerformanceAverage": 94.69383333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -8126,29 +8621,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25687,
+          "id": 30538,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_leather_03.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_pants_leather_09.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": 3012,
           "temporaryEnchantID": null
         },
         {
-          "id": 25686,
+          "id": 28746,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_cloth_05.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_boots_chain_05.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2657,
           "temporaryEnchantID": null
         },
         {
-          "id": 27712,
+          "id": 29246,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_08.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_bracer_15.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": 1593,
           "temporaryEnchantID": null
         },
@@ -8171,11 +8666,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27453,
+          "id": 28791,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_38.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_71.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": 2929,
           "temporaryEnchantID": null
         },
@@ -8207,30 +8702,30 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27846,
+          "id": 27903,
           "slot": 16,
           "quality": 3,
-          "icon": "inv_weapon_hand_07.jpg",
+          "icon": "inv_spear_08.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2564,
-          "temporaryEnchantID": 2955
+          "permanentEnchantID": 2670,
+          "temporaryEnchantID": 2639
         },
         {
-          "id": 28524,
+          "id": 0,
           "slot": 17,
-          "quality": 4,
-          "icon": "inv_weapon_shortblade_38.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2564,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29152,
+          "id": 28772,
           "slot": 18,
           "quality": 4,
-          "icon": "inv_weapon_bow_08.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": 2723,
+          "icon": "inv_weapon_bow_18.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2724,
           "temporaryEnchantID": null
         },
         {
@@ -8248,55 +8743,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 98.2849,
-          "medianPerformance": 96.9053,
-          "totalKills": 3,
+          "medianPerformance": 95.2271,
+          "totalKills": 5,
           "fastestKill": 26349,
           "bestAmount": 2742.6467797639,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 110.29,
-            "rank": 685,
-            "rankPercent": 97.77097047513524,
-            "total": 30686
+            "points": 109.66,
+            "rank": 982,
+            "rankPercent": 97.17136184077737,
+            "total": 34681
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 93.8008,
+          "rankPercent": 94.9158,
           "medianPerformance": 91.065,
-          "totalKills": 3,
-          "fastestKill": 145352,
-          "bestAmount": 1711.7041639758,
+          "totalKills": 5,
+          "fastestKill": 132466,
+          "bestAmount": 1851.5845575468,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 103.51,
-            "rank": 2958,
-            "rankPercent": 90.45050863878572,
-            "total": 30965
+            "points": 108.24,
+            "rank": 2063,
+            "rankPercent": 94.10486591571845,
+            "total": 34978
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 97.9971,
+          "rankPercent": 98.617,
           "medianPerformance": 95.2668,
-          "totalKills": 3,
-          "fastestKill": 198723,
-          "bestAmount": 2113.7362056732,
+          "totalKills": 5,
+          "fastestKill": 198308,
+          "bestAmount": 2324.7725759929,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 109.31,
-            "rank": 735,
-            "rankPercent": 97.5249527920151,
-            "total": 29656
+            "points": 110.53,
+            "rank": 494,
+            "rankPercent": 98.53391619829304,
+            "total": 33627
           }
         }
       ],
-      "bestPerformanceAverage": 96.69426666666665,
-      "medianPerformanceAverage": 94.41236666666667,
+      "bestPerformanceAverage": 97.27256666666666,
+      "medianPerformanceAverage": 93.85296666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -8361,11 +8856,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30538,
+          "id": 28741,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_leather_09.jpg",
-          "itemLevel": 110,
+          "icon": "inv_pants_leather_13.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 3012,
           "temporaryEnchantID": null
         },
@@ -8415,11 +8910,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 23206,
+          "id": 28034,
           "slot": 13,
-          "quality": 4,
-          "icon": "inv_misc_token_argentdawn2.jpg",
-          "itemLevel": 90,
+          "quality": 3,
+          "icon": "inv_gizmo_khoriumpowercore.jpg",
+          "itemLevel": 112,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -8482,56 +8977,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 98.0791,
+          "rankPercent": 98.2943,
           "medianPerformance": 97.2269,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
-          "bestAmount": 3778.4356142548,
+          "bestAmount": 4135.8964090242,
           "spec": "Fury",
           "allStars": {
-            "points": 109.35,
-            "rank": 482,
-            "rankPercent": 97.57217847769029,
-            "total": 19812
+            "points": 108.41,
+            "rank": 420,
+            "rankPercent": 98.1393489941827,
+            "total": 22519
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 99.5947,
-          "medianPerformance": 86.2349,
-          "totalKills": 5,
+          "medianPerformance": 92.6797,
+          "totalKills": 7,
           "fastestKill": 123192,
           "bestAmount": 1792.3485291253,
           "spec": "Fury",
           "allStars": {
-            "points": 112.88,
-            "rank": 304,
-            "rankPercent": 98.53637329726597,
-            "total": 20702
+            "points": 111.47,
+            "rank": 506,
+            "rankPercent": 97.85343874861854,
+            "total": 23526
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 99.2585,
-          "medianPerformance": 95.624,
-          "totalKills": 5,
-          "fastestKill": 198723,
+          "medianPerformance": 95.3747,
+          "totalKills": 7,
+          "fastestKill": 198308,
           "bestAmount": 2126.1319277507,
           "spec": "Fury",
           "allStars": {
-            "points": 108.18,
-            "rank": 396,
-            "rankPercent": 97.97684900635116,
-            "total": 19524
+            "points": 107.44,
+            "rank": 617,
+            "rankPercent": 97.23133623983101,
+            "total": 22249
           }
         }
       ],
-      "bestPerformanceAverage": 98.97743333333334,
-      "medianPerformanceAverage": 93.02859999999998,
+      "bestPerformanceAverage": 99.04916666666668,
+      "medianPerformanceAverage": 95.09376666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -8565,7 +9060,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_shoulder_23.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2983,
+          "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
         {
@@ -8587,21 +9082,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31293,
+          "id": 28750,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_31.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_belt_26.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27874,
+          "id": 30538,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_03.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_pants_leather_09.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 3010,
           "temporaryEnchantID": null
         },
         {
@@ -8614,7 +9109,7 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28171,
+          "id": 27712,
           "slot": 9,
           "quality": 3,
           "icon": "inv_bracer_08.jpg",
@@ -8641,11 +9136,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30860,
+          "id": 29282,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_34.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -8686,12 +9181,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2955
         },
         {
-          "id": 27747,
+          "id": 28315,
           "slot": 17,
           "quality": 3,
-          "icon": "inv_weapon_hand_11.jpg",
+          "icon": "inv_weapon_hand_08.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2564,
           "temporaryEnchantID": 2955
         },
         {
@@ -8700,7 +9195,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_weapon_crossbow_16.jpg",
           "itemLevel": 105,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 664,
           "temporaryEnchantID": null
         },
         {
@@ -8717,56 +9212,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 29.2945,
-          "medianPerformance": 25.0052,
-          "totalKills": 2,
-          "fastestKill": 156223,
-          "bestAmount": 839.85925616224,
+          "rankPercent": 98.5601,
+          "medianPerformance": 29.2945,
+          "totalKills": 3,
+          "fastestKill": 29404,
+          "bestAmount": 2937.1514079717,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 31.43,
-            "rank": 22201,
-            "rankPercent": 27.65430489474027,
-            "total": 30686
+            "points": 111.81,
+            "rank": 544,
+            "rankPercent": 98.43430120238747,
+            "total": 34681
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 42.909,
-          "medianPerformance": 37.4955,
-          "totalKills": 2,
-          "fastestKill": 219913,
-          "bestAmount": 1098.7708775743,
+          "rankPercent": 95.8314,
+          "medianPerformance": 42.909,
+          "totalKills": 3,
+          "fastestKill": 131874,
+          "bestAmount": 1894.444697211,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 50.55,
-            "rank": 17896,
-            "rankPercent": 42.20894558372356,
-            "total": 30965
+            "points": 109.64,
+            "rank": 1687,
+            "rankPercent": 95.17982732002973,
+            "total": 34978
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 27.3672,
-          "medianPerformance": 27.3672,
-          "totalKills": 1,
-          "fastestKill": 424636,
-          "bestAmount": 972.54589813393,
+          "rankPercent": 90.8817,
+          "medianPerformance": 59.1245,
+          "totalKills": 2,
+          "fastestKill": 247445,
+          "bestAmount": 1814.2213421164,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 32.54,
-            "rank": 21734,
-            "rankPercent": 26.716347450768815,
-            "total": 29656
+            "points": 99.58,
+            "rank": 3289,
+            "rankPercent": 90.22214292086716,
+            "total": 33627
           }
         }
       ],
-      "bestPerformanceAverage": 33.19023333333333,
-      "medianPerformanceAverage": 29.955966666666665,
+      "bestPerformanceAverage": 95.09106666666666,
+      "medianPerformanceAverage": 43.77599999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -8786,11 +9281,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30377,
+          "id": 28609,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_11.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_17.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -8885,10 +9380,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30841,
+          "id": 28785,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_misc_book_11.jpg",
+          "quality": 4,
+          "icon": "inv_trinket_naxxramas06.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -8912,13 +9407,13 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27543,
+          "id": 28770,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_weapon_shortblade_37.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": 2629
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_41.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2628
         },
         {
           "id": 29330,
@@ -8952,56 +9447,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 90,
-          "medianPerformance": 90,
-          "totalKills": 1,
-          "fastestKill": 53993,
-          "bestAmount": 0,
-          "spec": "Restoration",
+          "rankPercent": 13.4662,
+          "medianPerformance": 13.4662,
+          "totalKills": 2,
+          "fastestKill": 29964,
+          "bestAmount": 501.63529568816,
+          "spec": "Balance",
           "allStars": {
-            "points": 90,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 21.16,
+            "rank": 9711,
+            "rankPercent": 12.078956899674031,
+            "total": 11044
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 80,
-          "medianPerformance": 80,
-          "totalKills": 1,
-          "fastestKill": 171879,
-          "bestAmount": 0,
-          "spec": "Restoration",
+          "rankPercent": 83.905,
+          "medianPerformance": 83.905,
+          "totalKills": 2,
+          "fastestKill": 132466,
+          "bestAmount": 1008.0473479987,
+          "spec": "Balance",
           "allStars": {
-            "points": 80,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 93.32,
+            "rank": 1887,
+            "rankPercent": 82.26610249177244,
+            "total": 10635
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 75,
-          "medianPerformance": 75,
-          "totalKills": 1,
-          "fastestKill": 268799,
-          "bestAmount": 0,
-          "spec": "Restoration",
+          "rankPercent": 81.3303,
+          "medianPerformance": 81.3303,
+          "totalKills": 2,
+          "fastestKill": 198308,
+          "bestAmount": 988.68931157593,
+          "spec": "Balance",
           "allStars": {
-            "points": 75,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 88,
+            "rank": 2121,
+            "rankPercent": 78.86340977068794,
+            "total": 10030
           }
         }
       ],
-      "bestPerformanceAverage": 81.66666666666667,
-      "medianPerformanceAverage": 81.66666666666667,
+      "bestPerformanceAverage": 59.56716666666667,
+      "medianPerformanceAverage": 59.56716666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -9194,10 +9689,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 74.157761191266,
           "spec": "Balance",
           "allStars": {
-            "points": 3.47,
-            "rank": 9346,
-            "rankPercent": 0.6168244177390194,
-            "total": 9403
+            "points": 3.13,
+            "rank": 10987,
+            "rankPercent": 0.5251720391162622,
+            "total": 11044
           }
         },
         {
@@ -9210,10 +9705,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 173.73850208577,
           "spec": "Balance",
           "allStars": {
-            "points": 11.97,
-            "rank": 8892,
-            "rankPercent": 1.0792167334223408,
-            "total": 8988
+            "points": 11.45,
+            "rank": 10533,
+            "rankPercent": 0.9685002350728726,
+            "total": 10635
           }
         },
         {
@@ -9226,17 +9721,17 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 149.14862034457,
           "spec": "Balance",
           "allStars": {
-            "points": 8.96,
-            "rank": 8447,
-            "rankPercent": 0.4830917874396135,
-            "total": 8487
+            "points": 8.3,
+            "rank": 9986,
+            "rankPercent": 0.44865403788634095,
+            "total": 10030
           }
         }
       ],
       "bestPerformanceAverage": 0.8324866666666666,
       "medianPerformanceAverage": 0.8324866666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -9265,11 +9760,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28612,
+          "id": 29079,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_25.jpg",
-          "itemLevel": 115,
+          "icon": "inv_shoulder_47.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2995,
           "temporaryEnchantID": null
         },
@@ -9310,12 +9805,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28670,
+          "id": 28517,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_05.jpg",
+          "icon": "inv_boots_cloth_05.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 911,
+          "permanentEnchantID": 2940,
           "temporaryEnchantID": null
         },
         {
@@ -9342,7 +9837,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_jewelry_ring_63.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2928,
           "temporaryEnchantID": null
         },
         {
@@ -9355,20 +9850,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28785,
+          "id": 29370,
           "slot": 13,
           "quality": 4,
-          "icon": "inv_trinket_naxxramas06.jpg",
-          "itemLevel": 115,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29370,
+          "id": 28785,
           "slot": 14,
           "quality": 4,
-          "icon": "inv_weapon_shortblade_23.jpg",
-          "itemLevel": 110,
+          "icon": "inv_trinket_naxxramas06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -9388,7 +9883,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_weapon_shortblade_41.jpg",
           "itemLevel": 125,
           "permanentEnchantID": 2671,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2628
         },
         {
           "id": 29271,
@@ -9400,11 +9895,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28386,
+          "id": 28783,
           "slot": 18,
-          "quality": 3,
-          "icon": "inv_wand_17.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_wand_20.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -9424,54 +9919,54 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 91.9936,
           "medianPerformance": 91.9936,
-          "totalKills": 3,
-          "fastestKill": 33510,
+          "totalKills": 5,
+          "fastestKill": 29404,
           "bestAmount": 995.01641301104,
           "spec": "Frost",
           "allStars": {
-            "points": 97.86,
-            "rank": 1181,
-            "rankPercent": 91.19600089532194,
-            "total": 13403
+            "points": 95.69,
+            "rank": 1750,
+            "rankPercent": 89.25081433224756,
+            "total": 16271
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 47.2017,
-          "medianPerformance": 35.3193,
-          "totalKills": 3,
-          "fastestKill": 225622,
-          "bestAmount": 917.18111848288,
+          "rankPercent": 97.1401,
+          "medianPerformance": 47.2017,
+          "totalKills": 5,
+          "fastestKill": 130187,
+          "bestAmount": 1578.3626795274,
           "spec": "Arcane",
           "allStars": {
-            "points": 53.77,
-            "rank": 14880,
-            "rankPercent": 46.16275283134928,
-            "total": 27637
+            "points": 109.47,
+            "rank": 1168,
+            "rankPercent": 96.293355355101,
+            "total": 31484
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 77.8926,
-          "medianPerformance": 70.9975,
-          "totalKills": 2,
-          "fastestKill": 298549,
-          "bestAmount": 1210.7962177063,
+          "rankPercent": 79.5396,
+          "medianPerformance": 77.6675,
+          "totalKills": 4,
+          "fastestKill": 220362,
+          "bestAmount": 1316.9875023824,
           "spec": "Arcane",
           "allStars": {
-            "points": 82.07,
-            "rank": 6776,
-            "rankPercent": 74.25716239835853,
-            "total": 26318
+            "points": 86.73,
+            "rank": 6272,
+            "rankPercent": 79.15226063829788,
+            "total": 30080
           }
         }
       ],
-      "bestPerformanceAverage": 72.36263333333333,
-      "medianPerformanceAverage": 66.10346666666668,
+      "bestPerformanceAverage": 89.55776666666667,
+      "medianPerformanceAverage": 72.2876,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -9482,128 +9977,128 @@ export const wclBakedData: WclBakedData = {
       "wclId": 107619028,
       "gear": [
         {
-          "id": 27520,
+          "id": 28182,
           "slot": 1,
           "quality": 3,
-          "icon": "inv_helmet_71.jpg",
-          "itemLevel": 112,
+          "icon": "inv_helmet_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29336,
+          "id": 27495,
           "slot": 2,
           "quality": 3,
-          "icon": "inv_jewelry_necklace_34.jpg",
+          "icon": "inv_jewelry_necklace_39.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 24457,
+          "id": 27713,
           "slot": 3,
           "quality": 3,
-          "icon": "inv_shoulder_21.jpg",
-          "itemLevel": 94,
+          "icon": "inv_shoulder_20.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 0,
+          "id": 4335,
           "slot": 4,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 2,
+          "icon": "inv_shirt_16.jpg",
+          "itemLevel": 37,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 35412,
+          "id": 28403,
           "slot": 5,
           "quality": 3,
-          "icon": "inv_chest_plate05.jpg",
+          "icon": "inv_chest_chain_15.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2792,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29253,
+          "id": 27985,
           "slot": 6,
+          "quality": 3,
+          "icon": "inv_belt_23.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27936,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_cloth_20.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28669,
+          "slot": 8,
           "quality": 4,
-          "icon": "inv_belt_11.jpg",
+          "icon": "inv_boots_plate_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28646,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_19.jpg",
+          "itemLevel": 113,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30644,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_28.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28730,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30365,
+          "slot": 12,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
           "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27839,
-          "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_04.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2792,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29325,
-          "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_plate_04.jpg",
-          "itemLevel": 97,
-          "permanentEnchantID": 2792,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 24941,
-          "slot": 9,
-          "quality": 2,
-          "icon": "inv_bracer_09.jpg",
-          "itemLevel": 87,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28070,
-          "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_10.jpg",
-          "itemLevel": 91,
-          "permanentEnchantID": 2792,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 25541,
-          "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_24.jpg",
-          "itemLevel": 94,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27805,
-          "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_66.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27529,
-          "slot": 13,
-          "quality": 3,
-          "icon": "inv_qirajidol_rebirth.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27891,
+          "id": 28288,
           "slot": 14,
           "quality": 3,
-          "icon": "inv_qirajidol_sage.jpg",
-          "itemLevel": 112,
+          "icon": "inv_misc_enggizmos_18.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -9617,38 +10112,38 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 24361,
+          "id": 28773,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_sword_05.jpg",
-          "itemLevel": 91,
+          "quality": 4,
+          "icon": "inv_axe_60.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
-          "temporaryEnchantID": 2678
-        },
-        {
-          "id": 28166,
-          "slot": 17,
-          "quality": 3,
-          "icon": "inv_shield_13.jpg",
-          "itemLevel": 97,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27917,
-          "slot": 18,
-          "quality": 3,
-          "icon": "inv_relics_libramoftruth.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2639
         },
         {
           "id": 0,
-          "slot": 19,
+          "slot": 17,
           "quality": 1,
           "icon": "inv_axe_02.jpg",
           "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27484,
+          "slot": 18,
+          "quality": 3,
+          "icon": "inv_misc_stonetablet_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31405,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_15.jpg",
+          "itemLevel": 1,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         }
@@ -9657,56 +10152,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 0.687151,
-          "medianPerformance": 0.687151,
-          "totalKills": 1,
-          "fastestKill": 31935,
-          "bestAmount": 57.554407390011,
+          "rankPercent": 64.2088,
+          "medianPerformance": 56.1044,
+          "totalKills": 3,
+          "fastestKill": 29404,
+          "bestAmount": 973.20092504421,
           "spec": "Retribution",
           "allStars": {
-            "points": 1.73,
-            "rank": 12250,
-            "rankPercent": 0.7454825378818573,
-            "total": 12341
+            "points": 67.51,
+            "rank": 5231,
+            "rankPercent": 63.13266600874101,
+            "total": 14186
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 42.9623,
-          "medianPerformance": 42.9623,
-          "totalKills": 1,
-          "fastestKill": 152511,
-          "bestAmount": 712.61745054455,
+          "rankPercent": 76.4582,
+          "medianPerformance": 76.4415,
+          "totalKills": 3,
+          "fastestKill": 130187,
+          "bestAmount": 1129.1680428921,
           "spec": "Retribution",
           "allStars": {
-            "points": 49.3,
-            "rank": 8134,
-            "rankPercent": 42.52702989188043,
-            "total": 14151
+            "points": 86.41,
+            "rank": 3840,
+            "rankPercent": 76.3170882171499,
+            "total": 16210
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 44.7315,
+          "rankPercent": 88.7016,
           "medianPerformance": 44.7315,
-          "totalKills": 1,
-          "fastestKill": 273434,
-          "bestAmount": 909.18832332482,
+          "totalKills": 3,
+          "fastestKill": 220362,
+          "bestAmount": 1544.404207622,
           "spec": "Retribution",
           "allStars": {
-            "points": 48.6,
-            "rank": 6755,
-            "rankPercent": 44.061620009938714,
-            "total": 12074
+            "points": 96.49,
+            "rank": 1572,
+            "rankPercent": 88.69214712445117,
+            "total": 13893
           }
         }
       ],
-      "bestPerformanceAverage": 29.460317,
-      "medianPerformanceAverage": 29.460317,
+      "bestPerformanceAverage": 76.45620000000001,
+      "medianPerformanceAverage": 59.09246666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -9717,30 +10212,30 @@ export const wclBakedData: WclBakedData = {
       "wclId": 104876715,
       "gear": [
         {
-          "id": 32084,
+          "id": 29061,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_16.jpg",
-          "itemLevel": 110,
+          "icon": "inv_helmet_77.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3001,
           "temporaryEnchantID": null
         },
         {
-          "id": 28731,
+          "id": 29374,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_32.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_necklace_31.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28666,
+          "id": 29064,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_35.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2979,
+          "icon": "inv_shoulder_40.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2980,
           "temporaryEnchantID": null
         },
         {
@@ -9776,15 +10271,15 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_pants_plate_18.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2745,
+          "permanentEnchantID": 2746,
           "temporaryEnchantID": null
         },
         {
-          "id": 29251,
+          "id": 28569,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_cloth_03.jpg",
-          "itemLevel": 110,
+          "icon": "inv_boots_chain_05.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 911,
           "temporaryEnchantID": null
         },
@@ -9798,20 +10293,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28520,
+          "id": 29065,
           "slot": 10,
           "quality": 4,
-          "icon": "inv_gauntlets_25.jpg",
-          "itemLevel": 115,
+          "icon": "inv_gauntlets_40.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2322,
           "temporaryEnchantID": null
         },
         {
-          "id": 28763,
+          "id": 29290,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_08.jpg",
-          "itemLevel": 125,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 130,
           "permanentEnchantID": 2930,
           "temporaryEnchantID": null
         },
@@ -9848,7 +10343,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_misc_cape_18.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2662,
           "temporaryEnchantID": null
         },
         {
@@ -9879,11 +10374,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28788,
+          "id": 31405,
           "slot": 19,
           "quality": 2,
-          "icon": "inv_shirt_guildtabard_01.jpg",
-          "itemLevel": 60,
+          "icon": "inv_shirt_15.jpg",
+          "itemLevel": 1,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         }
@@ -9894,7 +10389,7 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 80,
           "medianPerformance": 80,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
           "bestAmount": 0,
           "spec": "Holy",
@@ -9910,7 +10405,7 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 60,
           "medianPerformance": 50,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 123214,
           "bestAmount": 0,
           "spec": "Holy",
@@ -9924,24 +10419,24 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 61.86403854411171,
+          "rankPercent": 69.95820469257282,
           "medianPerformance": 30,
-          "totalKills": 5,
-          "fastestKill": 198730,
-          "bestAmount": 1.3604097949505,
+          "totalKills": 7,
+          "fastestKill": 198308,
+          "bestAmount": 6.6865683683966,
           "spec": "Holy",
           "allStars": {
-            "points": 61.89804684164823,
+            "points": 70.12535933039945,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         }
       ],
-      "bestPerformanceAverage": 67.28801284803724,
+      "bestPerformanceAverage": 69.98606823085761,
       "medianPerformanceAverage": 53.333333333333336,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -9950,63 +10445,235 @@ export const wclBakedData: WclBakedData = {
       "serverSlug": "spineshatter",
       "serverRegion": "EU",
       "wclId": 105987565,
-      "gear": [],
+      "gear": [
+        {
+          "id": 32087,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_73.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 3003,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28745,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 33173,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2986,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27879,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_plate18.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27985,
+          "slot": 6,
+          "quality": 3,
+          "icon": "inv_belt_23.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30257,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_leather_05.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": 3012,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28608,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_plate_04.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2657,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28381,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_19.jpg",
+          "itemLevel": 113,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30341,
+          "slot": 10,
+          "quality": 2,
+          "icon": "inv_gauntlets_23.jpg",
+          "itemLevel": 114,
+          "permanentEnchantID": 684,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30834,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_41.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28730,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28288,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_misc_enggizmos_18.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24259,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_18.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 368,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28429,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_sword_2h_blacksmithing_02.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2639
+        },
+        {
+          "id": 0,
+          "slot": 17,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27484,
+          "slot": 18,
+          "quality": 3,
+          "icon": "inv_misc_stonetablet_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 19031,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_guildtabard_01.jpg",
+          "itemLevel": 20,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
       "rankings": [
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 86.4055,
-          "medianPerformance": 61.9417,
-          "totalKills": 4,
-          "fastestKill": 45854,
-          "bestAmount": 1178.7426268666,
+          "rankPercent": 97.0238,
+          "medianPerformance": 80.8959,
+          "totalKills": 6,
+          "fastestKill": 29404,
+          "bestAmount": 2169.7388110461,
           "spec": "Retribution",
           "allStars": {
-            "points": 82.19,
-            "rank": 2924,
-            "rankPercent": 76.31472328012316,
-            "total": 12341
+            "points": 106.3,
+            "rank": 504,
+            "rankPercent": 96.45425066967432,
+            "total": 14186
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 79.8609,
-          "medianPerformance": 47.3289,
-          "totalKills": 4,
-          "fastestKill": 157256,
-          "bestAmount": 953.10194841532,
+          "rankPercent": 97.4414,
+          "medianPerformance": 63.5955,
+          "totalKills": 6,
+          "fastestKill": 130187,
+          "bestAmount": 1596.5770356552,
           "spec": "Retribution",
           "allStars": {
-            "points": 72.71,
-            "rank": 5151,
-            "rankPercent": 63.60681223941771,
-            "total": 14151
+            "points": 111.22,
+            "rank": 498,
+            "rankPercent": 96.93399136335596,
+            "total": 16210
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 90.4121,
+          "rankPercent": 90.535,
           "medianPerformance": 90.4121,
-          "totalKills": 1,
-          "fastestKill": 263156,
-          "bestAmount": 1332.4187934153,
+          "totalKills": 3,
+          "fastestKill": 220362,
+          "bestAmount": 1560.7508739316,
           "spec": "Retribution",
           "allStars": {
-            "points": 85.22,
-            "rank": 2595,
-            "rankPercent": 78.51581911545469,
-            "total": 12074
+            "points": 97.35,
+            "rank": 1463,
+            "rankPercent": 89.47671489239185,
+            "total": 13893
           }
         }
       ],
-      "bestPerformanceAverage": 85.5595,
-      "medianPerformanceAverage": 66.5609,
+      "bestPerformanceAverage": 95.00006666666665,
+      "medianPerformanceAverage": 78.30116666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
-      "partial": true
+      "partial": false
     },
     "pigtasty": {
       "characterName": "Pigtasty",
@@ -10038,7 +10705,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_shoulder_23.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
         {
@@ -10156,7 +10823,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_spear_08.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": 2713
         },
         {
           "id": 0,
@@ -10191,55 +10858,290 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 93.8179,
-          "medianPerformance": 67.2169,
-          "totalKills": 2,
-          "fastestKill": 31935,
+          "medianPerformance": 82.2988,
+          "totalKills": 4,
+          "fastestKill": 29404,
           "bestAmount": 2345.6708940034,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 104.26,
-            "rank": 1978,
-            "rankPercent": 93.55732255751809,
-            "total": 30686
+            "points": 103.23,
+            "rank": 2583,
+            "rankPercent": 92.55500129754044,
+            "total": 34681
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 91.7419,
-          "medianPerformance": 56.6902,
-          "totalKills": 2,
-          "fastestKill": 152511,
+          "medianPerformance": 80.7535,
+          "totalKills": 4,
+          "fastestKill": 130187,
           "bestAmount": 1731.7963950141,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 104.52,
-            "rank": 2693,
-            "rankPercent": 91.30631357984822,
-            "total": 30965
+            "points": 103.27,
+            "rank": 3480,
+            "rankPercent": 90.05374807021556,
+            "total": 34978
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 92.7044,
-          "medianPerformance": 72.9465,
-          "totalKills": 2,
-          "fastestKill": 273434,
+          "medianPerformance": 71.6174,
+          "totalKills": 4,
+          "fastestKill": 220362,
           "bestAmount": 1853.7270419919,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 102.76,
-            "rank": 2247,
-            "rankPercent": 92.42649042352306,
-            "total": 29656
+            "points": 101.01,
+            "rank": 2877,
+            "rankPercent": 91.44734885657358,
+            "total": 33627
           }
         }
       ],
       "bestPerformanceAverage": 92.75473333333333,
-      "medianPerformanceAverage": 65.61786666666666,
+      "medianPerformanceAverage": 78.22323333333334,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
+      "error": null,
+      "partial": false
+    },
+    "prõfessõr": {
+      "characterName": "Prõfessõr",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 106035081,
+      "gear": [
+        {
+          "id": 32083,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_01.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 3002,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28516,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_ahnqiraj_02.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27739,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_10.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2982,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29066,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_plate18.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28566,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_27.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29069,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_plate_22.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2748,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28747,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_plate_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2649,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29252,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_02.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2650,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29067,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_40.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2937,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29279,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 130,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28555,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_60.jpg",
+          "itemLevel": 95,
+          "permanentEnchantID": 2928,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29370,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28789,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_elemental_mote_life01.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27804,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_13.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 368,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29155,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_sword_01.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2678
+        },
+        {
+          "id": 28825,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_shield_30.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 1071,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29388,
+          "slot": 18,
+          "quality": 4,
+          "icon": "inv_relics_libramofhope.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28788,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_guildtabard_01.jpg",
+          "itemLevel": 60,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 50649,
+          "encounterName": "High King Maulgar",
+          "rankPercent": 94.2622,
+          "medianPerformance": 83.0841,
+          "totalKills": 8,
+          "fastestKill": 35242,
+          "bestAmount": 512.73585320972,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 98.2,
+            "rank": 1334,
+            "rankPercent": 92.20102972150714,
+            "total": 17092
+          }
+        },
+        {
+          "encounterID": 50650,
+          "encounterName": "Gruul the Dragonkiller",
+          "rankPercent": 99.6075,
+          "medianPerformance": 93.1317,
+          "totalKills": 8,
+          "fastestKill": 134241,
+          "bestAmount": 527.90456996568,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 113.88,
+            "rank": 50,
+            "rankPercent": 99.52834729040332,
+            "total": 10389
+          }
+        },
+        {
+          "encounterID": 50651,
+          "encounterName": "Magtheridon",
+          "rankPercent": 99.2584,
+          "medianPerformance": 88.8318,
+          "totalKills": 8,
+          "fastestKill": 199708,
+          "bestAmount": 729.7554429467,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 112.2,
+            "rank": 134,
+            "rankPercent": 99.22800092872069,
+            "total": 17228
+          }
+        }
+      ],
+      "bestPerformanceAverage": 97.70936666666667,
+      "medianPerformanceAverage": 88.3492,
+      "totalKills": 0,
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -10253,7 +11155,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -10440,32 +11342,32 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 99.6343,
-          "medianPerformance": 96.5317,
-          "totalKills": 5,
+          "medianPerformance": 95.6408,
+          "totalKills": 7,
           "fastestKill": 26349,
           "bestAmount": 3194.3686502177,
           "spec": "Combat",
           "allStars": {
-            "points": 110.47,
-            "rank": 173,
-            "rankPercent": 99.10940817066225,
-            "total": 19313
+            "points": 110.1,
+            "rank": 269,
+            "rankPercent": 98.77502513940945,
+            "total": 21878
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 99.5866,
-          "medianPerformance": 97.5198,
-          "totalKills": 5,
+          "medianPerformance": 99.0563,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 1636.4549507403,
+          "bestAmount": 1658.5219722399,
           "spec": "Combat",
           "allStars": {
-            "points": 115.73,
-            "rank": 168,
-            "rankPercent": 99.1461294610901,
-            "total": 19558
+            "points": 113.87,
+            "rank": 222,
+            "rankPercent": 99.00257255043553,
+            "total": 22157
           }
         },
         {
@@ -10473,22 +11375,22 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Magtheridon",
           "rankPercent": 98.6196,
           "medianPerformance": 88.2392,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 198723,
           "bestAmount": 1687.4594284507,
           "spec": "Combat",
           "allStars": {
-            "points": 109.68,
-            "rank": 408,
-            "rankPercent": 97.84405127661829,
-            "total": 18878
+            "points": 108.93,
+            "rank": 603,
+            "rankPercent": 97.1973929236499,
+            "total": 21480
           }
         }
       ],
       "bestPerformanceAverage": 99.28016666666667,
-      "medianPerformanceAverage": 94.0969,
+      "medianPerformanceAverage": 94.31209999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -10708,7 +11610,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -10719,30 +11621,30 @@ export const wclBakedData: WclBakedData = {
       "wclId": 107101385,
       "gear": [
         {
-          "id": 28180,
+          "id": 27790,
           "slot": 1,
           "quality": 3,
-          "icon": "inv_helmet_25.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27792,
-          "slot": 2,
-          "quality": 3,
-          "icon": "ability_rogue_nervesofsteel.jpg",
+          "icon": "inv_helmet_74.jpg",
           "itemLevel": 112,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28743,
-          "slot": 3,
-          "quality": 4,
-          "icon": "inv_shoulder_29.jpg",
+          "id": 28233,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_12.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2841,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27775,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_22.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -10755,82 +11657,82 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28203,
+          "id": 28662,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_chain_15.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2661,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 31460,
-          "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_23.jpg",
+          "quality": 4,
+          "icon": "inv_chest_plate03.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27839,
-          "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_04.jpg",
+          "id": 28733,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_22.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2841,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 24064,
+          "id": 28748,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_plate_18.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28221,
           "slot": 8,
           "quality": 3,
-          "icon": "inv_boots_plate_04.jpg",
-          "itemLevel": 85,
-          "permanentEnchantID": 2841,
+          "icon": "inv_boots_chain_08.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28167,
+          "id": 28194,
           "slot": 9,
           "quality": 3,
-          "icon": "inv_bracer_17.jpg",
+          "icon": "inv_bracer_12.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27535,
+          "id": 28505,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_29.jpg",
+          "quality": 4,
+          "icon": "inv_gauntlets_25.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2841,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 25541,
+          "id": 29168,
           "slot": 11,
           "quality": 3,
-          "icon": "inv_jewelry_ring_24.jpg",
-          "itemLevel": 94,
+          "icon": "inv_jewelry_ring_22.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28555,
+          "id": 28661,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_60.jpg",
-          "itemLevel": 95,
+          "icon": "inv_jewelry_ring_36.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27529,
+          "id": 28727,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_qirajidol_rebirth.jpg",
+          "quality": 4,
+          "icon": "inv_trinket_naxxramas02.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -10845,38 +11747,38 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27804,
+          "id": 25810,
           "slot": 15,
           "quality": 3,
-          "icon": "inv_misc_cape_13.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2662,
+          "icon": "inv_misc_cape_19.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27899,
+          "id": 27538,
           "slot": 16,
           "quality": 3,
-          "icon": "inv_sword_draenei_04.jpg",
+          "icon": "inv_hammer_23.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
-          "temporaryEnchantID": 2678
+          "temporaryEnchantID": 2629
         },
         {
-          "id": 28316,
+          "id": 28728,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_shield_35.jpg",
+          "quality": 4,
+          "icon": "inv_misc_gem_sapphire_02.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 1071,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 23201,
+          "id": 28296,
           "slot": 18,
           "quality": 3,
-          "icon": "inv_relics_libramofhope.jpg",
-          "itemLevel": 65,
+          "icon": "inv_misc_book_12.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10896,8 +11798,8 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 75,
           "medianPerformance": 75,
-          "totalKills": 1,
-          "fastestKill": 31969,
+          "totalKills": 3,
+          "fastestKill": 29443,
           "bestAmount": 0,
           "spec": "Holy",
           "allStars": {
@@ -10911,9 +11813,9 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 50,
-          "medianPerformance": 50,
-          "totalKills": 1,
-          "fastestKill": 152538,
+          "medianPerformance": 40,
+          "totalKills": 3,
+          "fastestKill": 130187,
           "bestAmount": 0,
           "spec": "Holy",
           "allStars": {
@@ -10928,8 +11830,8 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Magtheridon",
           "rankPercent": 30,
           "medianPerformance": 30,
-          "totalKills": 1,
-          "fastestKill": 273452,
+          "totalKills": 3,
+          "fastestKill": 220362,
           "bestAmount": 0,
           "spec": "Holy",
           "allStars": {
@@ -10941,9 +11843,9 @@ export const wclBakedData: WclBakedData = {
         }
       ],
       "bestPerformanceAverage": 51.666666666666664,
-      "medianPerformanceAverage": 51.666666666666664,
+      "medianPerformanceAverage": 48.333333333333336,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -10959,14 +11861,14 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_jewelry_ring_62.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 3001,
           "temporaryEnchantID": null
         },
         {
-          "id": 29334,
+          "id": 28731,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_12.jpg",
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_32.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -10977,7 +11879,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_shoulder_02.jpg",
           "itemLevel": 105,
-          "permanentEnchantID": 2604,
+          "permanentEnchantID": 2980,
           "temporaryEnchantID": null
         },
         {
@@ -11035,44 +11937,35 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 24393,
+          "id": 29055,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_misc_surgeonglove_01.jpg",
-          "itemLevel": 88,
+          "quality": 4,
+          "icon": "inv_gauntlets_55.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2322,
           "temporaryEnchantID": null
         },
         {
-          "id": 25713,
+          "id": 29168,
           "slot": 11,
           "quality": 3,
-          "icon": "inv_jewelry_ring_35.jpg",
-          "itemLevel": 88,
+          "icon": "inv_jewelry_ring_22.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29289,
+          "id": 29291,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 18469,
-          "slot": 13,
-          "quality": 3,
-          "icon": "inv_jewelry_talisman_10.jpg",
-          "itemLevel": 62,
-          "permanentEnchantID": null,
+          "itemLevel": 120,
+          "permanentEnchantID": 2928,
           "temporaryEnchantID": null
         },
         {
           "id": 19288,
-          "slot": 14,
+          "slot": 13,
           "quality": 4,
           "icon": "inv_misc_ticket_tarot_bluedragon_01.jpg",
           "itemLevel": 66,
@@ -11080,12 +11973,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25945,
-          "slot": 15,
+          "id": 28190,
+          "slot": 14,
           "quality": 3,
-          "icon": "inv_misc_cape_17.jpg",
-          "itemLevel": 97,
+          "icon": "inv_misc_ahnqirajtrinket_06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31329,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_16.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 2621,
           "temporaryEnchantID": null
         },
         {
@@ -11129,41 +12031,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 85.1509,
+          "medianPerformance": 83.5756,
+          "totalKills": 2,
+          "fastestKill": 29964,
+          "bestAmount": 897.2433586971,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 92.47,
+            "rank": 838,
+            "rankPercent": 84.56858407079646,
+            "total": 5424
+          }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 62.6762,
+          "medianPerformance": 57.2418,
+          "totalKills": 2,
+          "fastestKill": 132466,
+          "bestAmount": 536.21306599429,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 67.72,
+            "rank": 2013,
+            "rankPercent": 62.39252336448598,
+            "total": 5350
+          }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 69.1919,
+          "medianPerformance": 68.4897,
+          "totalKills": 2,
+          "fastestKill": 198308,
+          "bestAmount": 535.13629899653,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 75.39,
+            "rank": 1614,
+            "rankPercent": 69.18815663801337,
+            "total": 5235
+          }
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 72.33966666666667,
+      "medianPerformanceAverage": 69.76903333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -11228,11 +12145,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27875,
+          "id": 29053,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_cloth_18.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_pants_cloth_25.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2746,
           "temporaryEnchantID": null
         },
@@ -11350,16 +12267,16 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 91.5167,
-          "medianPerformance": 85.6693,
-          "totalKills": 4,
-          "fastestKill": 34450,
+          "medianPerformance": 83.9356,
+          "totalKills": 6,
+          "fastestKill": 29404,
           "bestAmount": 962.14324079047,
           "spec": "Discipline",
           "allStars": {
-            "points": 97.93,
-            "rank": 474,
-            "rankPercent": 89.45373467112597,
-            "total": 4485
+            "points": 96.85,
+            "rank": 632,
+            "rankPercent": 88.3665191740413,
+            "total": 5424
           }
         },
         {
@@ -11367,38 +12284,38 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 90.2312,
           "medianPerformance": 80.0163,
-          "totalKills": 4,
+          "totalKills": 6,
           "fastestKill": 123192,
-          "bestAmount": 676.96636887687,
+          "bestAmount": 721.82322351694,
           "spec": "Discipline",
           "allStars": {
-            "points": 91.6,
-            "rank": 671,
-            "rankPercent": 84.83819868748586,
-            "total": 4419
+            "points": 95.14,
+            "rank": 648,
+            "rankPercent": 87.90654205607477,
+            "total": 5350
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
           "rankPercent": 94.9699,
-          "medianPerformance": 77.5687,
-          "totalKills": 4,
-          "fastestKill": 226715,
+          "medianPerformance": 85.3771,
+          "totalKills": 6,
+          "fastestKill": 220362,
           "bestAmount": 772.91582185946,
           "spec": "Discipline",
           "allStars": {
-            "points": 103.95,
-            "rank": 249,
-            "rankPercent": 94.25925925925925,
-            "total": 4320
+            "points": 102.45,
+            "rank": 345,
+            "rankPercent": 93.42884431709646,
+            "total": 5235
           }
         }
       ],
       "bestPerformanceAverage": 92.23926666666667,
-      "medianPerformanceAverage": 81.08476666666668,
+      "medianPerformanceAverage": 83.10966666666667,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -11445,11 +12362,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28228,
+          "id": 29082,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_chain_03.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_chest_chain_15.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
@@ -11481,11 +12398,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28451,
+          "id": 29246,
           "slot": 9,
           "quality": 4,
-          "icon": "inv_bracer_16.jpg",
-          "itemLevel": 113,
+          "icon": "inv_bracer_15.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": 1593,
           "temporaryEnchantID": null
         },
@@ -11571,11 +12488,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 0,
+          "id": 24004,
           "slot": 19,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 2,
+          "icon": "inv_shirt_guildtabard_01.jpg",
+          "itemLevel": 20,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         }
@@ -11585,16 +12502,16 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 75.3409,
-          "medianPerformance": 69.6913,
-          "totalKills": 3,
-          "fastestKill": 31935,
+          "medianPerformance": 62.7382,
+          "totalKills": 5,
+          "fastestKill": 29964,
           "bestAmount": 1412.087051824,
           "spec": "Survival",
           "allStars": {
-            "points": 76.48,
-            "rank": 2339,
-            "rankPercent": 67.35092864125122,
-            "total": 7161
+            "points": 72.55,
+            "rank": 2993,
+            "rankPercent": 63.41851082039369,
+            "total": 8179
           }
         },
         {
@@ -11602,38 +12519,38 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 70.5611,
           "medianPerformance": 53.3489,
-          "totalKills": 3,
+          "totalKills": 5,
           "fastestKill": 123192,
           "bestAmount": 1161.6014026885,
           "spec": "Survival",
           "allStars": {
-            "points": 69.5,
-            "rank": 2985,
-            "rankPercent": 58.6875259587429,
-            "total": 7223
+            "points": 65.45,
+            "rank": 3749,
+            "rankPercent": 54.6301900496308,
+            "total": 8261
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 72.6925,
-          "medianPerformance": 52.5532,
-          "totalKills": 3,
-          "fastestKill": 226715,
-          "bestAmount": 1221.2343746571,
+          "rankPercent": 94.1401,
+          "medianPerformance": 72.6925,
+          "totalKills": 5,
+          "fastestKill": 198308,
+          "bestAmount": 1561.6566149626,
           "spec": "Survival",
           "allStars": {
-            "points": 78.73,
-            "rank": 2084,
-            "rankPercent": 70.68674359696031,
-            "total": 7106
+            "points": 101.79,
+            "rank": 559,
+            "rankPercent": 93.12892500923532,
+            "total": 8121
           }
         }
       ],
-      "bestPerformanceAverage": 72.86483333333332,
-      "medianPerformanceAverage": 58.53113333333334,
+      "bestPerformanceAverage": 80.01403333333333,
+      "medianPerformanceAverage": 62.92653333333333,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -11647,7 +12564,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -11658,7 +12575,7 @@ export const wclBakedData: WclBakedData = {
       "wclId": 91410246,
       "gear": [
         {
-          "id": 28182,
+          "id": 28224,
           "slot": 1,
           "quality": 3,
           "icon": "inv_helmet_15.jpg",
@@ -11676,12 +12593,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27776,
+          "id": 27797,
           "slot": 3,
           "quality": 3,
-          "icon": "inv_shoulder_24.jpg",
+          "icon": "inv_shoulder_15.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2983,
+          "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
         {
@@ -11833,56 +12750,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 8.94128,
-          "medianPerformance": 5.57917,
-          "totalKills": 2,
-          "fastestKill": 53993,
-          "bestAmount": 424.05497008872,
+          "rankPercent": 97.3037,
+          "medianPerformance": 49.2858,
+          "totalKills": 4,
+          "fastestKill": 29964,
+          "bestAmount": 2692.731277533,
           "spec": "Combat",
           "allStars": {
-            "points": 9.62,
-            "rank": 17726,
-            "rankPercent": 8.222440842955523,
-            "total": 19313
+            "points": 106.46,
+            "rank": 676,
+            "rankPercent": 96.91470883993053,
+            "total": 21878
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 75.3795,
-          "medianPerformance": 73.8832,
-          "totalKills": 2,
-          "fastestKill": 171879,
-          "bestAmount": 1056.7957691166,
+          "rankPercent": 97.4885,
+          "medianPerformance": 84.0614,
+          "totalKills": 4,
+          "fastestKill": 132466,
+          "bestAmount": 1549.3180175952,
           "spec": "Combat",
           "allStars": {
-            "points": 84.28,
-            "rank": 5164,
-            "rankPercent": 73.60159525513856,
-            "total": 19558
+            "points": 111.35,
+            "rank": 564,
+            "rankPercent": 97.45904228911856,
+            "total": 22157
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 90.6831,
-          "medianPerformance": 80.5016,
-          "totalKills": 2,
-          "fastestKill": 268799,
-          "bestAmount": 1391.4077061299,
+          "rankPercent": 97.3081,
+          "medianPerformance": 91.2589,
+          "totalKills": 4,
+          "fastestKill": 198308,
+          "bestAmount": 1676.4880892349,
           "spec": "Combat",
           "allStars": {
-            "points": 99.68,
-            "rank": 1903,
-            "rankPercent": 89.92478016739061,
-            "total": 18878
+            "points": 108.63,
+            "rank": 650,
+            "rankPercent": 96.97858472998138,
+            "total": 21480
           }
         }
       ],
-      "bestPerformanceAverage": 58.33462666666666,
-      "medianPerformanceAverage": 53.32132333333334,
+      "bestPerformanceAverage": 97.36676666666666,
+      "medianPerformanceAverage": 74.8687,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -11961,7 +12878,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_boots_cloth_03.jpg",
           "itemLevel": 105,
-          "permanentEnchantID": 911,
+          "permanentEnchantID": 2940,
           "temporaryEnchantID": null
         },
         {
@@ -11992,11 +12909,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28555,
+          "id": 28793,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_60.jpg",
-          "itemLevel": 95,
+          "icon": "inv_jewelry_ring_65.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12024,7 +12941,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_misc_cape_16.jpg",
           "itemLevel": 125,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2621,
           "temporaryEnchantID": null
         },
         {
@@ -12046,20 +12963,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25640,
+          "id": 28673,
           "slot": 18,
-          "quality": 3,
-          "icon": "inv_wand_05.jpg",
-          "itemLevel": 103,
+          "quality": 4,
+          "icon": "inv_wand_21.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 0,
+          "id": 31405,
           "slot": 19,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 2,
+          "icon": "inv_shirt_15.jpg",
+          "itemLevel": 1,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         }
@@ -12068,33 +12985,33 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 86.3637,
-          "medianPerformance": 66.5254,
-          "totalKills": 4,
-          "fastestKill": 34450,
-          "bestAmount": 1606.0230029819,
+          "rankPercent": 94.904,
+          "medianPerformance": 84.7044,
+          "totalKills": 6,
+          "fastestKill": 29404,
+          "bestAmount": 2171.6773228132,
           "spec": "Destruction",
           "allStars": {
-            "points": 89.43,
-            "rank": 5883,
-            "rankPercent": 81.76632877646549,
-            "total": 32259
+            "points": 104.09,
+            "rank": 2274,
+            "rankPercent": 93.70429869266563,
+            "total": 36104
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 98.4186,
-          "medianPerformance": 85.8829,
-          "totalKills": 4,
+          "medianPerformance": 86.5473,
+          "totalKills": 6,
           "fastestKill": 123192,
           "bestAmount": 1570.1506591337,
           "spec": "Destruction",
           "allStars": {
-            "points": 108.75,
-            "rank": 1610,
-            "rankPercent": 95.06487133085912,
-            "total": 32603
+            "points": 106.26,
+            "rank": 2442,
+            "rankPercent": 93.30444084812244,
+            "total": 36457
           }
         },
         {
@@ -12102,22 +13019,22 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "Magtheridon",
           "rankPercent": 94.221,
           "medianPerformance": 65.3088,
-          "totalKills": 4,
-          "fastestKill": 226715,
-          "bestAmount": 1510.7047823646,
+          "totalKills": 6,
+          "fastestKill": 220362,
+          "bestAmount": 1780.0982020494,
           "spec": "Destruction",
           "allStars": {
-            "points": 93.66,
-            "rank": 5070,
-            "rankPercent": 84.10074650272881,
-            "total": 31882
+            "points": 103.17,
+            "rank": 2610,
+            "rankPercent": 92.68593535364862,
+            "total": 35671
           }
         }
       ],
-      "bestPerformanceAverage": 93.0011,
-      "medianPerformanceAverage": 72.57236666666667,
+      "bestPerformanceAverage": 95.84786666666666,
+      "medianPerformanceAverage": 78.85350000000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -12128,20 +13045,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 104995183,
       "gear": [
         {
-          "id": 28182,
+          "id": 29021,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_15.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_helmet_58.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 31275,
+          "id": 29349,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_19.jpg",
-          "itemLevel": 106,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_06.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12200,11 +13117,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25956,
+          "id": 28381,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_05.jpg",
-          "itemLevel": 97,
+          "quality": 4,
+          "icon": "inv_bracer_19.jpg",
+          "itemLevel": 113,
           "permanentEnchantID": 2647,
           "temporaryEnchantID": null
         },
@@ -12245,11 +13162,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28041,
+          "id": 29383,
           "slot": 14,
-          "quality": 3,
-          "icon": "inv_datacrystal06.jpg",
-          "itemLevel": 88,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12263,11 +13180,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31318,
+          "id": 28773,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_axe_72.jpg",
-          "itemLevel": 100,
+          "icon": "inv_axe_60.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": 1900,
           "temporaryEnchantID": 2639
         },
@@ -12281,11 +13198,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28504,
+          "id": 30279,
           "slot": 18,
-          "quality": 4,
-          "icon": "inv_weapon_crossbow_18.jpg",
-          "itemLevel": 115,
+          "quality": 2,
+          "icon": "inv_weapon_rifle_06.jpg",
+          "itemLevel": 111,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12304,55 +13221,55 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 90.6858,
-          "medianPerformance": 90.6858,
-          "totalKills": 1,
-          "fastestKill": 31935,
+          "medianPerformance": 73.4205,
+          "totalKills": 3,
+          "fastestKill": 29964,
           "bestAmount": 2385.940191013,
           "spec": "Arms",
           "allStars": {
-            "points": 97.99,
-            "rank": 929,
-            "rankPercent": 89.67397351730277,
-            "total": 8987
+            "points": 95.74,
+            "rank": 1248,
+            "rankPercent": 87.97260802469135,
+            "total": 10368
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 67.6398,
+          "rankPercent": 70.2218,
           "medianPerformance": 67.6398,
-          "totalKills": 1,
-          "fastestKill": 152511,
-          "bestAmount": 958.18006570018,
+          "totalKills": 3,
+          "fastestKill": 132466,
+          "bestAmount": 999.70558482931,
           "spec": "Arms",
           "allStars": {
-            "points": 75.41,
-            "rank": 3265,
-            "rankPercent": 65.95034425203421,
-            "total": 9586
+            "points": 78.35,
+            "rank": 3491,
+            "rankPercent": 68.4505514373531,
+            "total": 11062
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 7.04455,
-          "medianPerformance": 7.04455,
-          "totalKills": 1,
-          "fastestKill": 273434,
-          "bestAmount": 422.36883489252,
+          "rankPercent": 58.7664,
+          "medianPerformance": 57.0897,
+          "totalKills": 3,
+          "fastestKill": 198308,
+          "bestAmount": 1030.9568953345,
           "spec": "Arms",
           "allStars": {
-            "points": 15.55,
-            "rank": 8323,
-            "rankPercent": 7.016759776536313,
-            "total": 8950
+            "points": 63.32,
+            "rank": 4423,
+            "rankPercent": 57.0304149256632,
+            "total": 10291
           }
         }
       ],
-      "bestPerformanceAverage": 55.12338333333333,
-      "medianPerformanceAverage": 55.12338333333333,
+      "bestPerformanceAverage": 73.22466666666666,
+      "medianPerformanceAverage": 66.05,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -12372,11 +13289,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31693,
+          "id": 28762,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_32.jpg",
-          "itemLevel": 103,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_29naxxramas.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12408,11 +13325,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31513,
+          "id": 28654,
           "slot": 6,
-          "quality": 2,
-          "icon": "inv_belt_13.jpg",
-          "itemLevel": 105,
+          "quality": 4,
+          "icon": "inv_belt_03.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12444,10 +13361,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27493,
+          "id": 28507,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_19.jpg",
+          "quality": 4,
+          "icon": "inv_gauntlets_17.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -12462,11 +13379,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29285,
+          "id": 29286,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12504,7 +13421,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_weapon_shortblade_41.jpg",
           "itemLevel": 125,
           "permanentEnchantID": 2669,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2628
         },
         {
           "id": 28781,
@@ -12538,56 +13455,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 46.9218,
-          "medianPerformance": 46.9218,
-          "totalKills": 1,
-          "fastestKill": 31935,
-          "bestAmount": 746.17191169563,
+          "rankPercent": 86.3591,
+          "medianPerformance": 48.0386,
+          "totalKills": 3,
+          "fastestKill": 29404,
+          "bestAmount": 1163.6170700929,
           "spec": "Balance",
           "allStars": {
-            "points": 50.8,
-            "rank": 5167,
-            "rankPercent": 45.06008720621078,
-            "total": 9403
+            "points": 94.98,
+            "rank": 1457,
+            "rankPercent": 86.8163708801159,
+            "total": 11044
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 50.0108,
-          "medianPerformance": 50.0108,
-          "totalKills": 1,
-          "fastestKill": 152511,
-          "bestAmount": 735.40924916891,
+          "rankPercent": 88.1402,
+          "medianPerformance": 64.301,
+          "totalKills": 3,
+          "fastestKill": 130187,
+          "bestAmount": 1053.8923517903,
           "spec": "Balance",
           "allStars": {
-            "points": 56.47,
-            "rank": 4666,
-            "rankPercent": 48.097463284379174,
-            "total": 8988
+            "points": 98,
+            "rank": 1443,
+            "rankPercent": 86.44099670897978,
+            "total": 10635
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 52.4673,
-          "medianPerformance": 52.4673,
-          "totalKills": 1,
-          "fastestKill": 273434,
-          "bestAmount": 717.22243759006,
+          "rankPercent": 78.239,
+          "medianPerformance": 75.6209,
+          "totalKills": 3,
+          "fastestKill": 220362,
+          "bestAmount": 976.61575044699,
           "spec": "Balance",
           "allStars": {
-            "points": 57.95,
-            "rank": 4176,
-            "rankPercent": 50.807116766819846,
-            "total": 8487
+            "points": 86.74,
+            "rank": 2236,
+            "rankPercent": 77.71684945164506,
+            "total": 10030
           }
         }
       ],
-      "bestPerformanceAverage": 49.79996666666667,
-      "medianPerformanceAverage": 49.79996666666667,
+      "bestPerformanceAverage": 84.2461,
+      "medianPerformanceAverage": 62.65350000000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -12598,20 +13515,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105988638,
       "gear": [
         {
-          "id": 28182,
+          "id": 29098,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_15.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_helmet_81.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 29381,
+          "id": 28509,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_04.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_necklace_22.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12733,11 +13650,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29171,
+          "id": 28658,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_hammer_10.jpg",
-          "itemLevel": 100,
+          "icon": "inv_staff_55.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2670,
           "temporaryEnchantID": 2955
         },
@@ -12775,54 +13692,54 @@ export const wclBakedData: WclBakedData = {
           "encounterName": "High King Maulgar",
           "rankPercent": 22.3861,
           "medianPerformance": 22.3861,
-          "totalKills": 1,
-          "fastestKill": 31935,
+          "totalKills": 3,
+          "fastestKill": 29404,
           "bestAmount": 336.77782996712,
           "spec": "Feral",
           "allStars": {
-            "points": 23.96,
-            "rank": 10882,
-            "rankPercent": 21.487841835630277,
-            "total": 13859
+            "points": 22.61,
+            "rank": 12799,
+            "rankPercent": 20.087418045582268,
+            "total": 16015
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 77.4703,
-          "medianPerformance": 77.4703,
-          "totalKills": 1,
-          "fastestKill": 152511,
-          "bestAmount": 1035.289257824,
-          "spec": "Feral",
+          "rankPercent": 96.1741,
+          "medianPerformance": 96.1741,
+          "totalKills": 3,
+          "fastestKill": 130187,
+          "bestAmount": 847.65761256957,
+          "spec": "Guardian",
           "allStars": {
-            "points": 86.27,
-            "rank": 2429,
-            "rankPercent": 76.45461598138091,
-            "total": 10312
+            "points": 107.36,
+            "rank": 614,
+            "rankPercent": 95.51605588471948,
+            "total": 13671
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 23.6578,
-          "medianPerformance": 23.6578,
-          "totalKills": 1,
-          "fastestKill": 273434,
-          "bestAmount": 487.00966229511,
+          "rankPercent": 85.2189,
+          "medianPerformance": 42.2742,
+          "totalKills": 3,
+          "fastestKill": 220362,
+          "bestAmount": 1261.8827202512,
           "spec": "Feral",
           "allStars": {
-            "points": 26.12,
-            "rank": 10746,
-            "rankPercent": 22.808908045977013,
-            "total": 13920
+            "points": 94.36,
+            "rank": 2318,
+            "rankPercent": 85.57105492589363,
+            "total": 16058
           }
         }
       ],
-      "bestPerformanceAverage": 41.1714,
-      "medianPerformanceAverage": 41.1714,
+      "bestPerformanceAverage": 67.92636666666667,
+      "medianPerformanceAverage": 53.611466666666665,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -12869,20 +13786,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30933,
+          "id": 29038,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_leather_05.jpg",
-          "itemLevel": 109,
-          "permanentEnchantID": 3150,
+          "quality": 4,
+          "icon": "inv_chest_chain_15.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
         {
-          "id": 31462,
+          "id": 28828,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_11.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_26.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12923,11 +13840,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31077,
+          "id": 29283,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_39.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12968,12 +13885,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28657,
+          "id": 28767,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_weapon_shortblade_44.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 1900,
+          "icon": "inv_axe_66.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2673,
           "temporaryEnchantID": 2636
         },
         {
@@ -12982,7 +13899,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_axe_62.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 1900,
+          "permanentEnchantID": 2673,
           "temporaryEnchantID": 2636
         },
         {
@@ -13008,56 +13925,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 93.1044,
+          "rankPercent": 97.017,
           "medianPerformance": 81.8804,
-          "totalKills": 6,
+          "totalKills": 8,
           "fastestKill": 26349,
-          "bestAmount": 1449.2563018632,
+          "bestAmount": 1732.9076520735,
           "spec": "Enhancement",
           "allStars": {
-            "points": 102.18,
-            "rank": 1608,
-            "rankPercent": 91.41880707000587,
-            "total": 18727
+            "points": 107.57,
+            "rank": 726,
+            "rankPercent": 96.54498665650019,
+            "total": 20984
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 88.1772,
-          "medianPerformance": 83.4241,
-          "totalKills": 6,
-          "fastestKill": 145352,
-          "bestAmount": 1276.3997351011,
+          "rankPercent": 96.22,
+          "medianPerformance": 87.1067,
+          "totalKills": 8,
+          "fastestKill": 131874,
+          "bestAmount": 1489.6947085855,
           "spec": "Enhancement",
           "allStars": {
-            "points": 99.56,
-            "rank": 2530,
-            "rankPercent": 86.6353115256566,
-            "total": 18923
+            "points": 109.87,
+            "rank": 969,
+            "rankPercent": 95.43288511441378,
+            "total": 21195
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 80.2411,
+          "rankPercent": 88.9027,
           "medianPerformance": 76.8884,
-          "totalKills": 6,
+          "totalKills": 8,
           "fastestKill": 198723,
-          "bestAmount": 1360.701302691,
+          "bestAmount": 1516.5632766877,
           "spec": "Enhancement",
           "allStars": {
-            "points": 88.52,
-            "rank": 3855,
-            "rankPercent": 78.94794340962473,
-            "total": 18307
+            "points": 96.95,
+            "rank": 2513,
+            "rankPercent": 87.77615571776155,
+            "total": 20550
           }
         }
       ],
-      "bestPerformanceAverage": 87.17423333333333,
-      "medianPerformanceAverage": 80.73096666666667,
+      "bestPerformanceAverage": 94.04656666666666,
+      "medianPerformanceAverage": 81.9585,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -13167,11 +14084,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30366,
+          "id": 29286,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_09.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -13203,11 +14120,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27543,
+          "id": 30832,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_weapon_shortblade_37.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_hammer_08.jpg",
+          "itemLevel": 100,
           "permanentEnchantID": 2669,
           "temporaryEnchantID": 2678
         },
@@ -13221,11 +14138,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30859,
+          "id": 25939,
           "slot": 18,
           "quality": 3,
-          "icon": "inv_wand_11.jpg",
-          "itemLevel": 109,
+          "icon": "inv_wand_06.jpg",
+          "itemLevel": 97,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -13244,13 +14161,13 @@ export const wclBakedData: WclBakedData = {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
           "rankPercent": 79.19238050067344,
-          "medianPerformance": 79.19238050067344,
-          "totalKills": 1,
-          "fastestKill": 31935,
-          "bestAmount": 156.2548927509,
+          "medianPerformance": 75.89715401665305,
+          "totalKills": 3,
+          "fastestKill": 29404,
+          "bestAmount": 158.39738442125,
           "spec": "Shadow",
           "allStars": {
-            "points": 83.06978575229992,
+            "points": 83.12295086161541,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -13259,14 +14176,14 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 43.72430165582197,
+          "rankPercent": 49.91887836972873,
           "medianPerformance": 43.72430165582197,
-          "totalKills": 1,
-          "fastestKill": 152511,
-          "bestAmount": 127.71537790717,
+          "totalKills": 3,
+          "fastestKill": 130187,
+          "bestAmount": 145.43694838962,
           "spec": "Shadow",
           "allStars": {
-            "points": 46.98446437594043,
+            "points": 53.63141577154629,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -13275,24 +14192,24 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 80.70504253245346,
+          "rankPercent": 80.91208633987074,
           "medianPerformance": 80.70504253245346,
-          "totalKills": 1,
-          "fastestKill": 273434,
-          "bestAmount": 168.29289700622,
+          "totalKills": 3,
+          "fastestKill": 220362,
+          "bestAmount": 179.35487969795,
           "spec": "Shadow",
           "allStars": {
-            "points": 86.27247166527013,
+            "points": 86.84546558585457,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         }
       ],
-      "bestPerformanceAverage": 67.87390822964962,
-      "medianPerformanceAverage": 67.87390822964962,
+      "bestPerformanceAverage": 70.00778173675764,
+      "medianPerformanceAverage": 66.77549940164282,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -13512,7 +14429,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -13546,7 +14463,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_shoulder_33.jpg",
           "itemLevel": 110,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2981,
           "temporaryEnchantID": null
         },
         {
@@ -13559,29 +14476,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28252,
+          "id": 28191,
           "slot": 5,
           "quality": 3,
-          "icon": "inv_chest_cloth_25.jpg",
+          "icon": "inv_chest_cloth_42.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 3150,
+          "permanentEnchantID": 1144,
           "temporaryEnchantID": null
         },
         {
-          "id": 27783,
+          "id": 29244,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_08.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_belt_22.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27838,
+          "id": 30541,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_cloth_20.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_pants_leather_03.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -13591,7 +14508,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_boots_cloth_11.jpg",
           "itemLevel": 110,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2792,
           "temporaryEnchantID": null
         },
         {
@@ -13609,15 +14526,15 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_gauntlets_15.jpg",
           "itemLevel": 125,
-          "permanentEnchantID": 1887,
+          "permanentEnchantID": 2792,
           "temporaryEnchantID": null
         },
         {
-          "id": 29320,
+          "id": 29367,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_38.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_56.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -13654,17 +14571,17 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_misc_cape_05.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 884,
+          "permanentEnchantID": 2662,
           "temporaryEnchantID": null
         },
         {
-          "id": 27741,
+          "id": 30832,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_mace_1h_stratholme_d_01.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_hammer_08.jpg",
+          "itemLevel": 100,
           "permanentEnchantID": null,
-          "temporaryEnchantID": 2628
+          "temporaryEnchantID": 2634
         },
         {
           "id": 29268,
@@ -13698,56 +14615,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 45.4759,
-          "medianPerformance": 25.8919,
-          "totalKills": 2,
-          "fastestKill": 53993,
-          "bestAmount": 971.90376530291,
+          "rankPercent": 72.7435,
+          "medianPerformance": 45.4759,
+          "totalKills": 3,
+          "fastestKill": 29964,
+          "bestAmount": 1372.8474169003,
           "spec": "Elemental",
           "allStars": {
-            "points": 48.51,
-            "rank": 8110,
-            "rankPercent": 42.9746835443038,
-            "total": 14220
+            "points": 78.1,
+            "rank": 4955,
+            "rankPercent": 70.30154067501948,
+            "total": 16681
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 43.4671,
-          "medianPerformance": 26.4004,
-          "totalKills": 2,
-          "fastestKill": 171879,
+          "medianPerformance": 36.3658,
+          "totalKills": 3,
+          "fastestKill": 132466,
           "bestAmount": 802.587867046,
           "spec": "Elemental",
           "allStars": {
-            "points": 54.75,
-            "rank": 8337,
-            "rankPercent": 42.066856626589754,
-            "total": 14389
+            "points": 50.04,
+            "rank": 10121,
+            "rankPercent": 40.05094484923879,
+            "total": 16881
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 18.8346,
-          "medianPerformance": 11.8583,
-          "totalKills": 2,
-          "fastestKill": 268799,
-          "bestAmount": 652.640076786,
+          "rankPercent": 71.4963,
+          "medianPerformance": 18.8346,
+          "totalKills": 3,
+          "fastestKill": 198308,
+          "bestAmount": 1098.0646267422,
           "spec": "Elemental",
           "allStars": {
-            "points": 29.08,
-            "rank": 11362,
-            "rankPercent": 18.183782226703155,
-            "total": 13886
+            "points": 77.35,
+            "rank": 5034,
+            "rankPercent": 69.23406076166025,
+            "total": 16359
           }
         }
       ],
-      "bestPerformanceAverage": 35.92586666666667,
-      "medianPerformanceAverage": 21.383533333333332,
+      "bestPerformanceAverage": 62.568966666666675,
+      "medianPerformanceAverage": 33.55876666666666,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     },
@@ -13848,11 +14765,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29384,
+          "id": 29279,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_46.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -13884,12 +14801,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27804,
+          "id": 28660,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_13.jpg",
+          "quality": 4,
+          "icon": "inv_misc_cape_20.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2662,
+          "permanentEnchantID": 368,
           "temporaryEnchantID": null
         },
         {
@@ -13899,7 +14816,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_staff_55.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": 2955
+          "temporaryEnchantID": 2639
         },
         {
           "id": 0,
@@ -13933,56 +14850,56 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 50649,
           "encounterName": "High King Maulgar",
-          "rankPercent": 51.8249,
+          "rankPercent": 52.1585,
           "medianPerformance": 47.6675,
-          "totalKills": 5,
+          "totalKills": 7,
           "fastestKill": 26349,
-          "bestAmount": 507.25093993666,
+          "bestAmount": 524.496061941,
           "spec": "Feral",
           "allStars": {
-            "points": 54.01,
-            "rank": 6903,
-            "rankPercent": 50.198427014936144,
-            "total": 13859
+            "points": 54.07,
+            "rank": 7993,
+            "rankPercent": 50.0967842647518,
+            "total": 16015
           }
         },
         {
           "encounterID": 50650,
           "encounterName": "Gruul the Dragonkiller",
           "rankPercent": 93.6145,
-          "medianPerformance": 89.343,
-          "totalKills": 5,
+          "medianPerformance": 90.7326,
+          "totalKills": 7,
           "fastestKill": 123192,
-          "bestAmount": 1292.8280941825,
+          "bestAmount": 1392.2348611825,
           "spec": "Feral",
           "allStars": {
-            "points": 103.27,
-            "rank": 931,
-            "rankPercent": 90.98138091543832,
-            "total": 10312
+            "points": 106.4,
+            "rank": 831,
+            "rankPercent": 93.14842331187056,
+            "total": 12114
           }
         },
         {
           "encounterID": 50651,
           "encounterName": "Magtheridon",
-          "rankPercent": 91.7325,
-          "medianPerformance": 78.1751,
-          "totalKills": 5,
-          "fastestKill": 198723,
-          "bestAmount": 1333.9623496022,
+          "rankPercent": 98.1129,
+          "medianPerformance": 87.6349,
+          "totalKills": 7,
+          "fastestKill": 198308,
+          "bestAmount": 1718.4631986607,
           "spec": "Feral",
           "allStars": {
-            "points": 99.47,
-            "rank": 1369,
-            "rankPercent": 90.17241379310344,
-            "total": 13920
+            "points": 109.96,
+            "rank": 327,
+            "rankPercent": 97.96985926018183,
+            "total": 16058
           }
         }
       ],
-      "bestPerformanceAverage": 79.0573,
-      "medianPerformanceAverage": 71.72853333333335,
+      "bestPerformanceAverage": 81.2953,
+      "medianPerformanceAverage": 75.34500000000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-01T16:10:25.815Z",
+      "fetchedAt": "2026-04-11T16:13:16.969Z",
       "error": null,
       "partial": false
     }
