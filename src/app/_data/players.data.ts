@@ -499,19 +499,19 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Hanzo',
-    discord: { userId: '378933761007419393' },
-    characters: [
-      {
-        name: 'Hanzo',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Fury,
-      },
-    ],
-  },
+  // {
+  //   name: 'Hanzo',
+  //   discord: { userId: '378933761007419393' },
+  //   characters: [
+  //     {
+  //       name: 'Hanzo',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.melee,
+  //       class: CharacterClass.warrior,
+  //       spec: CharacterSpecEnum.Fury,
+  //     },
+  //   ],
+  // },
   {
     name: 'Thundermate',
     discord: { userId: '247320467310903297' },
@@ -612,19 +612,19 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Anvi',
-    discord: { userId: '615983194709295196' },
-    characters: [
-      {
-        name: 'Anvi',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.paladin,
-        spec: CharacterSpecEnum.Retribution,
-      },
-    ],
-  },
+  // {
+  //   name: 'Anvi',
+  //   discord: { userId: '615983194709295196' },
+  //   characters: [
+  //     {
+  //       name: 'Anvi',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.melee,
+  //       class: CharacterClass.paladin,
+  //       spec: CharacterSpecEnum.Retribution,
+  //     },
+  //   ],
+  // },
   {
     name: 'Sustainable',
     discord: { userId: '379260041066446849' },
