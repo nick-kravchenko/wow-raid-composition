@@ -189,11 +189,32 @@ export class AssignmentsT4Component implements OnInit {
       assignments: []
     },
   };
+  numberOfClickers = 4;
+
+  get fojjiCubeAssignments() {
+    const clickKeys = [
+      AssignmentType.magtheridonSkullClickAssignments,
+      AssignmentType.magtheridonDiamondClickAssignments,
+      AssignmentType.magtheridonCrossClickAssignments,
+      AssignmentType.magtheridonTriangleClickAssignments,
+      AssignmentType.magtheridonMoonClickAssignments,
+    ];
+    const clickAssignments: string[] = new Array(this.numberOfClickers).fill('').map((_, i) => `${i + 1}-`);
+    const casterName = (action: AssignmentAction) => typeof action.caster === 'string' ? action.caster : action.caster?.name ?? '-';
+
+    let assignments = '';
+    for (let team = 0; team < this.numberOfClickers; team++) {
+      for (let key of clickKeys) {
+        clickAssignments[team] += ',' + casterName(this.assignments[key].assignments[0].actions[team]);
+      }
+    }
+    assignments += clickAssignments.map(assignment => assignment.replace('-,', '-')).join(',');
+
+    return assignments;
+  }
 
   get mrtNote() {
     let raidLeaderCharacterName = this.raid.find(character => character.player!.name === 'Krava')!.name;
-    let note = '';
-    note += 'Trash Assignments\n';
     const tanks = [
       ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
       ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank),
@@ -209,6 +230,8 @@ export class AssignmentsT4Component implements OnInit {
       { icon: IconEnum.circle, text: 'Circle', },
       { icon: IconEnum.star, text: 'Star', },
     ];
+    let note = '';
+    note += 'Trash Assignments\n';
     for (let i = 0; i < tanks.length; i++) {
       note += `{${marksToTank[i].text.toLowerCase()}} on ${tanks[i].name}\n`;
     }
@@ -285,7 +308,7 @@ export class AssignmentsT4Component implements OnInit {
     note += '{/p}';
     clickKeys.forEach((key, i) => {
       this.assignments[key].assignments[0].actions.forEach((action, index) => {
-        note += `{p:${casterName(action)}}YOU ARE #${index + 1} CLICKER AT ${marks[i]}{/p}`;
+        note += `{p:${casterName(action)}}\nYOU ARE #${index + 1} CLICKER AT ${marks[i]}{/p}`;
       });
     });
     note += '\n';
@@ -417,7 +440,6 @@ export class AssignmentsT4Component implements OnInit {
   }
 
   fillMagtheridonAssignments() {
-    const numberOfClickers = 4;
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const warriorTanks = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank);
@@ -452,7 +474,7 @@ export class AssignmentsT4Component implements OnInit {
       actions: [{ caster: skullTank, target: 'Skull Tank', icon: IconEnum.skull }],
     });
     const skullClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < numberOfClickers; i++) {
+    for (let i = 0; i < this.numberOfClickers; i++) {
       skullClickActions.push({ caster: groups[4].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonSkullClickAssignments].assignments.push({
@@ -472,7 +494,7 @@ export class AssignmentsT4Component implements OnInit {
       actions: diamondTankHealActions,
     });
     const diamondClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < numberOfClickers; i++) {
+    for (let i = 0; i < this.numberOfClickers; i++) {
       diamondClickActions.push({ caster: groups[3].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonDiamondClickAssignments].assignments.push({
@@ -492,7 +514,7 @@ export class AssignmentsT4Component implements OnInit {
       actions: crossTankHealActions,
     });
     const crossClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < numberOfClickers; i++) {
+    for (let i = 0; i < this.numberOfClickers; i++) {
       crossClickActions.push({ caster: groups[2].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonCrossClickAssignments].assignments.push({
@@ -513,7 +535,7 @@ export class AssignmentsT4Component implements OnInit {
       actions: triangleTankActions,
     });
     const triangleClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < numberOfClickers; i++) {
+    for (let i = 0; i < this.numberOfClickers; i++) {
       triangleClickActions.push({ caster: groups[1].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonTriangleClickAssignments].assignments.push({
@@ -531,7 +553,7 @@ export class AssignmentsT4Component implements OnInit {
     });
 
     const moonClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < numberOfClickers; i++) {
+    for (let i = 0; i < this.numberOfClickers; i++) {
       moonClickActions.push({ caster: groups[0].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonMoonClickAssignments].assignments.push({
@@ -570,5 +592,9 @@ export class AssignmentsT4Component implements OnInit {
 
   copyMrtNoteToBuffer() {
     navigator.clipboard.writeText(this.mrtNote);
+  }
+
+  copyFojjiCubeAssignmentsToBufer() {
+    navigator.clipboard.writeText(this.fojjiCubeAssignments);
   }
 }
