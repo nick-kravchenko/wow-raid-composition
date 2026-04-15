@@ -334,7 +334,6 @@ export class AssignmentsT4Component implements OnInit {
     const md2 = hunters.shift();
     const md3 = hunters.shift();
     const md4 = hunters.shift();
-    const md5 = hunters.shift();
 
     const skullActions: AssignmentAction[] = [];
     skullActions.push({ caster: bossTank, target: 'Boss Tank', icon: IconEnum.skull });
@@ -418,6 +417,7 @@ export class AssignmentsT4Component implements OnInit {
   }
 
   fillMagtheridonAssignments() {
+    const numberOfClickers = 4;
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const warriorTanks = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank);
@@ -446,24 +446,13 @@ export class AssignmentsT4Component implements OnInit {
     const crossMd = hunters.shift();
     const triangleMd = hunters.shift();
 
-    const isFeralDruid = (c: Character) => c.class === CharacterClass.druid && c.role === CharacterRole.tank;
-    const assignedTanks = [skullTank, diamondTank, crossTank, triangleTank]
-      .filter(Boolean)
-      .filter(tank => tank === skullTank || !isFeralDruid(tank!)) as Character[];
-    groups.forEach(group => {
-      for (const tank of assignedTanks) {
-        const idx = group.indexOf(tank);
-        if (idx !== -1) group.splice(idx, 1);
-      }
-    });
-
     this.assignments[AssignmentType.magtheridonSkullTankHealAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'Skull Tank',
       actions: [{ caster: skullTank, target: 'Skull Tank', icon: IconEnum.skull }],
     });
     const skullClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < numberOfClickers; i++) {
       skullClickActions.push({ caster: groups[4].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonSkullClickAssignments].assignments.push({
@@ -483,7 +472,7 @@ export class AssignmentsT4Component implements OnInit {
       actions: diamondTankHealActions,
     });
     const diamondClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < numberOfClickers; i++) {
       diamondClickActions.push({ caster: groups[3].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonDiamondClickAssignments].assignments.push({
@@ -503,7 +492,7 @@ export class AssignmentsT4Component implements OnInit {
       actions: crossTankHealActions,
     });
     const crossClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < numberOfClickers; i++) {
       crossClickActions.push({ caster: groups[2].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonCrossClickAssignments].assignments.push({
@@ -524,7 +513,7 @@ export class AssignmentsT4Component implements OnInit {
       actions: triangleTankActions,
     });
     const triangleClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < numberOfClickers; i++) {
       triangleClickActions.push({ caster: groups[1].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonTriangleClickAssignments].assignments.push({
@@ -541,10 +530,8 @@ export class AssignmentsT4Component implements OnInit {
       ],
     });
 
-    groups[0][2] = moonTank!;
-
     const moonClickActions: AssignmentAction[] = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < numberOfClickers; i++) {
       moonClickActions.push({ caster: groups[0].pop(), target: `Click ${i + 1}`, icon: undefined });
     }
     this.assignments[AssignmentType.magtheridonMoonClickAssignments].assignments.push({
