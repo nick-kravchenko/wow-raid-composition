@@ -84,7 +84,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Arcane,
       },
       {
-        name: 'Cambelish',
+        name: 'Cambellsh',
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
@@ -700,6 +700,13 @@ export const players: Player[] = [
         role: CharacterRole.ranged,
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Elemental,
+      },
+      {
+        name: 'Flinemage',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+        spec: CharacterSpecEnum.Arcane,
       },
     ],
   },
