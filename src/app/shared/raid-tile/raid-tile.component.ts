@@ -1,4 +1,6 @@
-import { Component, ElementRef, computed, input, output, viewChild, WritableSignal, signal } from '@angular/core';
+import { Component, ElementRef, computed, inject, input, linkedSignal, output, signal, viewChild } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute, Router } from '@angular/router';
 import html2canvas from 'html2canvas';
 import { Character } from '../../_entities/character';
 import { CharacterRole } from '../../_entities/character-role.enum';
@@ -16,7 +18,12 @@ import { RouterLink } from '@angular/router';
   styleUrl: './raid-tile.component.scss'
 })
 export class RaidTileComponent {
+  private route = inject(ActivatedRoute);
+  private router = inject(Router);
+  private queryParams = toSignal(this.route.queryParams, { initialValue: {} });
+
   title = input('Raid #');
+  titleKey = input<string>('title');
   raid = input<any[]>(new Array(25));
   raidSize = input<number>(25);
   hideControls = input<boolean>(false);
@@ -30,9 +37,10 @@ export class RaidTileComponent {
 
   raidGroups = viewChild<ElementRef>('raidGroups');
 
-  pruneModalVisible: WritableSignal<boolean> = signal(false);
-  removeModalVisible: WritableSignal<boolean> = signal(false);
-  capturingScreenshot: WritableSignal<boolean> = signal(false);
+  pruneModalVisible = signal(false);
+  removeModalVisible = signal(false);
+  capturingScreenshot = signal(false);
+  titleValue = linkedSignal(() => (this.queryParams() as Record<string, string>)[this.titleKey()] ?? this.title());
 
   mainCounter = computed(() =>
     this.raid().filter((c: Character) => !!c && c.rank === CharacterRank.main).length
@@ -61,6 +69,16 @@ export class RaidTileComponent {
   queryParamsRaid = computed(() =>
     this.raid().map((c: Character) => c?.name || '').join('_')
   );
+
+  onTitleChange(event: Event): void {
+    const value = (event.target as HTMLInputElement).value;
+    this.titleValue.set(value);
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { [this.titleKey()]: value },
+      queryParamsHandling: 'merge',
+    });
+  }
 
   export(): void {
     navigator.clipboard.writeText(this.raid().map(c => c?.name).join('\n'));
