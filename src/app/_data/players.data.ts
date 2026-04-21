@@ -237,7 +237,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Survival,
       },
       {
-        name: 'Serjioo Druid',
+        name: 'Serj',
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
@@ -350,6 +350,14 @@ export const players: Player[] = [
         class: CharacterClass.warrior,
         spec: CharacterSpecEnum.Arms,
       },
+      {
+        name: 'Lazyswotch',
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Restoration,
+
+      }
     ],
   },
   {
@@ -362,14 +370,7 @@ export const players: Player[] = [
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Retribution,
-      },
-      {
-        name: 'Cherepaha',
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Enhancement,
-      },
+      }
     ],
   },
   {
@@ -702,8 +703,8 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Elemental,
       },
       {
-        name: 'Flinemage',
-        rank: CharacterRank.main,
+        name: 'Skifon',
+        rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.mage,
         spec: CharacterSpecEnum.Arcane,
@@ -721,6 +722,33 @@ export const players: Player[] = [
         class: CharacterClass.mage,
         spec: CharacterSpecEnum.Arcane,
       },
+      {
+        name: 'Monkablazé',
+        rank: CharacterRank.alt,
+        role: CharacterRole.tank,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Protection,
+      }
+    ],
+  },
+  {
+    name: 'Deserve',
+    discord: { userId: '961651735187841114' },
+    characters: [
+      {
+        name: 'Deserve',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
+      },
+      {
+        name: 'Deserv',
+        rank: CharacterRank.alt,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Feral,
+      }
     ],
   },
 ];
