@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, computed, input, output, viewChild, WritableSignal, signal } from '@angular/core';
 import html2canvas from 'html2canvas';
 import { Character } from '../../_entities/character';
 import { CharacterRole } from '../../_entities/character-role.enum';
@@ -15,76 +15,74 @@ import { RouterLink } from '@angular/router';
   templateUrl: './raid-tile.component.html',
   styleUrl: './raid-tile.component.scss'
 })
-export class RaidTileComponent implements OnInit {
-  @Input() title = 'Raid #';
-  @Input() raid: any[] = new Array(25);
-  @Input() raidSize: number = 25;
-  @Input() hideControls: boolean = false;
-  @Output() onSlotClick: EventEmitter<number> = new EventEmitter();
-  @Output() onDragOver: EventEmitter<number> = new EventEmitter();
-  @Output() onSlotDragStart: EventEmitter<number> = new EventEmitter();
-  @Output() onSlotDragEnd: EventEmitter<any> = new EventEmitter();
-  @Output() onPruneClick: EventEmitter<any> = new EventEmitter();
-  @Output() onRemoveClick: EventEmitter<any> = new EventEmitter();
-  @ViewChild('raidGroups') raidGroups!: ElementRef;
+export class RaidTileComponent {
+  title = input('Raid #');
+  raid = input<any[]>(new Array(25));
+  raidSize = input<number>(25);
+  hideControls = input<boolean>(false);
 
-  pruneModalVisible = false;
-  removeModalVisible = false;
-  capturingScreenshot = false;
+  onSlotClick = output<number>();
+  onDragOver = output<number>();
+  onSlotDragStart = output<number>();
+  onSlotDragEnd = output<void>();
+  onPruneClick = output<void>();
+  onRemoveClick = output<void>();
 
-  get mainCounter(): number {
-    return this.raid.filter((character: Character) => !!character && character.rank === CharacterRank.main).length;
-  }
+  raidGroups = viewChild<ElementRef>('raidGroups');
 
-  get altCounter(): number {
-    return this.raid.filter((character: Character) => !!character && character.rank === CharacterRank.alt).length;
-  }
+  pruneModalVisible: WritableSignal<boolean> = signal(false);
+  removeModalVisible: WritableSignal<boolean> = signal(false);
+  capturingScreenshot: WritableSignal<boolean> = signal(false);
 
-  get tankCount(): number {
-    return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.tank).length;
-  }
-  get meleeCount(): number {
-    return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.melee).length;
-  }
-  get rangedCount(): number {
-    return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.ranged).length;
-  }
-  get healerCount(): number {
-    return this.raid.filter((character: Character) => !!character && character.role === CharacterRole.healer).length;
-  }
+  mainCounter = computed(() =>
+    this.raid().filter((c: Character) => !!c && c.rank === CharacterRank.main).length
+  );
 
-  get queryParamsRaid(): string {
-    return this.raid.map((character: Character) => character?.name || '').join('_');
-  }
+  altCounter = computed(() =>
+    this.raid().filter((c: Character) => !!c && c.rank === CharacterRank.alt).length
+  );
 
-  constructor() {}
+  tankCount = computed(() =>
+    this.raid().filter((c: Character) => !!c && c.role === CharacterRole.tank).length
+  );
 
-  ngOnInit(): void {}
+  meleeCount = computed(() =>
+    this.raid().filter((c: Character) => !!c && c.role === CharacterRole.melee).length
+  );
+
+  rangedCount = computed(() =>
+    this.raid().filter((c: Character) => !!c && c.role === CharacterRole.ranged).length
+  );
+
+  healerCount = computed(() =>
+    this.raid().filter((c: Character) => !!c && c.role === CharacterRole.healer).length
+  );
+
+  queryParamsRaid = computed(() =>
+    this.raid().map((c: Character) => c?.name || '').join('_')
+  );
 
   export(): void {
-    navigator.clipboard.writeText(this.raid.map(c => c?.name).join('\n'));
+    navigator.clipboard.writeText(this.raid().map(c => c?.name).join('\n'));
   }
 
   screenshot(): void {
-    this.capturingScreenshot = true;
-    html2canvas(this.raidGroups.nativeElement, {
+    this.capturingScreenshot.set(true);
+    html2canvas(this.raidGroups()!.nativeElement, {
       backgroundColor: '#404040'
     }).then((canvas: any) => {
       canvas.toBlob((blob: any) => {
-        // @ts-ignore
-        navigator.clipboard.write([new ClipboardItem({'image/png': blob})])
+        navigator.clipboard.write([new ClipboardItem({'image/png': blob})]);
       });
     }).finally(() => {
-      setTimeout(() => {
-        this.capturingScreenshot = false;
-      }, 500);
+      this.capturingScreenshot.set(false);
     });
   }
 
   ping(): void {
     const rows: string[] = [];
-    for (let i = 0; i < this.raidSize; i += 5) {
-      const group = this.raid.slice(i, i + 5);
+    for (let i = 0; i < this.raidSize(); i += 5) {
+      const group = this.raid().slice(i, i + 5);
       const mentions = group
         .filter((c: Character) => c?.player?.discord?.userId)
         .map((c: Character) => `<@${c.player?.discord?.userId}>`);
@@ -92,7 +90,7 @@ export class RaidTileComponent implements OnInit {
         rows.push(mentions.join(' '));
       }
     }
-    const kravaCharacter = this.raid.find((character: Character) => character?.player?.name === 'Krava');
+    const kravaCharacter = this.raid().find((c: Character) => c?.player?.name === 'Krava');
     rows.push(`\`\`\`/w ${kravaCharacter?.name} 123\`\`\``);
     navigator.clipboard.writeText(rows.join('\n'));
   }

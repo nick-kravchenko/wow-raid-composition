@@ -1,15 +1,15 @@
-<div class="modal" [class.visible]="pruneModalVisible">
+<div class="modal" [class.visible]="pruneModalVisible()">
   <div class="question">Are you sure you want to clear this raid?</div>
   <div class="actions">
-    <button type="button" (click)="onPruneClick.emit(); pruneModalVisible = false;">Yes, clear it</button>
-    <button type="button" (click)="pruneModalVisible = false;">No, I changed my mind</button>
+    <button type="button" (click)="onPruneClick.emit(); pruneModalVisible.set(false)">Yes, clear it</button>
+    <button type="button" (click)="pruneModalVisible.set(false);">No, I changed my mind</button>
   </div>
 </div>
-<div class="modal" [class.visible]="removeModalVisible">
+<div class="modal" [class.visible]="removeModalVisible()">
   <div class="question">Are you sure you want to remove this raid completely?</div>
   <div class="actions">
-    <button type="button" (click)="onRemoveClick.emit(); removeModalVisible = false;">Yes, remove it</button>
-    <button type="button" (click)="removeModalVisible = false;">No, I changed my mind</button>
+    <button type="button" (click)="onRemoveClick.emit(); removeModalVisible.set(false)">Yes, remove it</button>
+    <button type="button" (click)="removeModalVisible.set(false)">No, I changed my mind</button>
   </div>
 </div>
 <header>
@@ -17,41 +17,41 @@
     <button (click)="export()" title="MRT export">
       <i class="fa-solid fa-file-arrow-down"></i>
     </button>
-    <button [disabled]="capturingScreenshot" (click)="screenshot()" title="Screenshot"><span class="icon-photo" [class.loading]="capturingScreenshot"></span></button>
+    <button [disabled]="capturingScreenshot()" (click)="screenshot()" title="Screenshot"><span class="icon-photo" [class.loading]="capturingScreenshot()"></span></button>
     <button class="discord-ping" (click)="ping()" title="Discord pings">
       <i class="fa-brands fa-discord"></i>
     </button>
-    <a [routerLink]="'/assignments'" [queryParams]="{raids: queryParamsRaid}" title="Assignments">
+    <a [routerLink]="'/assignments'" [queryParams]="{raids: queryParamsRaid()}" title="Assignments">
       <i class="fa fa-link"></i>
     </a>
   </div>
   <h3>
-    <span>{{title}}</span>
-    <span [class.green]="tankCount === 2"><img src="assets/icons/icon_tank.png" width="24px" height="24px"> {{tankCount}}</span>
-    <span [class.green]="meleeCount + rangedCount === 6"><img src="assets/icons/icon_melee.png" width="24px" height="24px"> {{meleeCount}}</span>
-    <span [class.green]="meleeCount + rangedCount === 6"><img src="assets/icons/icon_ranged.png" width="24px" height="24px"> {{rangedCount}}</span>
-    <span [class.green]="healerCount === 2"><img src="assets/icons/icon_heal.png" width="24px" height="24px"> {{healerCount}}</span>
+    <span>{{title()}}</span>
+    <span [class.green]="tankCount() === 2"><img src="assets/icons/icon_tank.png" width="24px" height="24px"> {{tankCount()}}</span>
+    <span [class.green]="meleeCount() + rangedCount() === 6"><img src="assets/icons/icon_melee.png" width="24px" height="24px"> {{meleeCount()}}</span>
+    <span [class.green]="meleeCount() + rangedCount() === 6"><img src="assets/icons/icon_ranged.png" width="24px" height="24px"> {{rangedCount()}}</span>
+    <span [class.green]="healerCount() === 2"><img src="assets/icons/icon_heal.png" width="24px" height="24px"> {{healerCount()}}</span>
     <span class="ratio">
-      [<span class="yellow">{{altCounter}}</span>/<span class="green">{{mainCounter}}</span>]
+      [<span class="yellow">{{altCounter()}}</span>/<span class="green">{{mainCounter()}}</span>]
     </span>
   </h3>
   <div class="external-actions" data-html2canvas-ignore="true">
-    @if (!hideControls) {
-      <button (click)="pruneModalVisible = true;">
+    @if (!hideControls()) {
+      <button (click)="pruneModalVisible.set(true)">
         <i class="fa-solid fa-recycle"></i>
       </button>
-      <button (click)="removeModalVisible = true;">
+      <button (click)="removeModalVisible.set(true)">
         <i class="fa-solid fa-trash-can"></i>
       </button>
     }
   </div>
 </header>
-<div class="raidgroups" #raidGroups [style.grid-template-rows]="'repeat(' + raidSize / 5 + ', 1fr)'">
-  @for (slot of raid; track $index; let i = $index) {
+<div class="raidgroups" #raidGroups [style.grid-template-rows]="'repeat(' + raidSize() / 5 + ', 1fr)'">
+  @for (slot of raid(); track $index; let i = $index) {
     @if (i % 5 === 0) {
       <span>G{{i / 5 + 1}}</span>
     }
-    @if (hideControls) {
+    @if (hideControls()) {
       <app-character-tile
         class="character-{{i}}"
         [character]="slot"
