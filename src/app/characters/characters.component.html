@@ -1,0 +1,16 @@
+<div class="spec-groups">
+  @for (group of charactersByClass(); track group.class) {
+    <section class="spec-group">
+      <h2 class="spec-group__title" [class]="'spec-group__title class-' + group.class.toLowerCase()">{{ group.class }}</h2>
+      <ul class="character-list">
+        @for (character of group.characters; track character.name) {
+          <li class="character-item">
+            <a [routerLink]="['/', 'character', character.name]">
+              <app-character-tile [character]="character" [isRankingsVisible]="true"></app-character-tile>
+            </a>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+</div>

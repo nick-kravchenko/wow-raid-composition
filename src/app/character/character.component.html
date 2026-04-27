@@ -1,0 +1,66 @@
+@if (character(); as char) {
+<!--  <div class="basics">-->
+<!--    <div class="basics-avatar">-->
+<!--      <img src="{{ bnetData()?.avatarUrl }}" alt="">-->
+<!--      <span class="basics-avatar-level">{{ bnetData()?.level }}</span>-->
+<!--    </div>-->
+<!--    <div class="basics-info">-->
+<!--      <div class="basics-info-name">{{ char.name }}</div>-->
+<!--      <div class="basics-info-class text-{{char.class | lowercase }}">-->
+<!--        {{ bnetData()?.raceName }} {{ bnetData()?.className }}-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+  <div class="f">
+    <div class="l">
+      <div class="gear">
+        <header class="gear-header">
+          <img class="gear-header-avatar" src="{{ bnetData()?.avatarUrl }}" alt="">
+          <div class="gear-header-top-row">{{ char.name }}</div>
+          <div class="gear-header-bottom-row">Level {{ bnetData()?.level }} {{ bnetData()?.raceName }} {{ bnetData()?.className }}</div>
+          <div class="gear-header-links">
+            <a target="_blank" href="https://fresh.warcraftlogs.com/character/eu/spineshatter/{{char.name}}">WCL</a>
+          </div>
+        </header>
+        <aside class="gear-left-col">
+          @for (slot of leftSlots; track $index) {
+            <a class="gear-icon-link"
+               data-wh-icon-size="large"
+               href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
+               [title]="slot"
+               target="_blank"></a>
+          }
+        </aside>
+        <section class="gear-main"></section>
+        <aside class="gear-right-col">
+          @for (slot of rightSlots; track $index) {
+            <a class="gear-icon-link"
+               data-wh-icon-size="large"
+               href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
+               [title]="slot"
+               target="_blank"></a>
+          }
+        </aside>
+        <footer class="gear-footer"></footer>
+      </div></div>
+    <div class="r">
+      <img src="/assets/gear.png" alt="">
+    </div>
+  </div>
+<!--  <div class="gear">-->
+<!--    @for (item of wclData()?.gear; track item.id) {-->
+<!--      @if (gearSlotName(item.slot) !== 'Shirt' && gearSlotName(item.slot) !== 'Tabard') {-->
+<!--        <a class="gear-icon-link"-->
+<!--           data-wh-icon-size="medium"-->
+<!--           href="https://www.wowhead.com/tbc/item={{item.id}}&ench={{item.permanentEnchantID}}"-->
+<!--           [title]="gearSlotName(item.slot)"-->
+<!--           target="_blank"></a>-->
+<!--      }-->
+<!--    }-->
+<!--  </div>-->
+<!--  <pre>{{char | json}}</pre>-->
+  <pre>{{wclData() | json}}</pre>
+  <pre>{{bnetData() | json}}</pre>
+} @else {
+  <p class="not-found">Character not found.</p>
+}

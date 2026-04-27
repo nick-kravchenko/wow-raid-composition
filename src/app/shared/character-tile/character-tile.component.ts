@@ -4,29 +4,8 @@ import { LowerCasePipe } from '@angular/common';
 
 declare const $WowheadPower: { refreshLinks(): void } | undefined;
 
-const GEAR_SLOT_NAMES: Record<number, string> = {
-  0:  'Ammo',
-  1:  'Helm',
-  2:  'Neck',
-  3:  'Shoulder',
-  4:  'Shirt',
-  5:  'Chest',
-  6:  'Belt',
-  7:  'Legs',
-  8:  'Boots',
-  9:  'Bracer',
-  10: 'Hands',
-  11: 'Ring 1',
-  12: 'Ring 2',
-  13: 'Trinket 1',
-  14: 'Trinket 2',
-  15: 'Cloak',
-  16: 'Main Hand',
-  17: 'Off Hand',
-  18: 'Ranged',
-  19: 'Tabard',
-};
 import { wclBakedData, WclBakedCharacter } from '../../_data/wcl-baked.data';
+import { GEAR_SLOT_NAMES } from '../types/gear-slot-names';
 
 @Component({
   selector: 'app-character-tile',

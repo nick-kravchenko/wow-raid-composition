@@ -1,0 +1,132 @@
+@use "colors";
+@use "screen-sizes";
+
+:host {
+  display: block;
+  padding: 10px;
+  background: rgba(colors.$deep-space, .75);
+  border-radius: .5em;
+  box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1em);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  @include screen-sizes.screen-tablet() {
+    grid-template-columns: 1fr;
+  }
+}
+.basics {
+  display: flex;
+  align-items: center;
+  &-avatar {
+    margin: 0 1rem 0 0;
+    position: relative;
+    img {
+      display: block;
+    }
+    &-level {
+      position: absolute;
+      display: block;
+      padding: .125rem .25rem;
+      bottom: 0;
+      left: 0;
+      background: #000;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+  &-info {
+    &-name {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    &-class {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.f {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .r img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.gear {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 68px 1fr 68px;
+  grid-column-gap: 1rem;
+  grid-template-areas: "header header header"
+                       "left-col main right-col"
+                       "left-col footer right-col";
+  &-header {
+    grid-area: header;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 112px 1fr 48px;
+    grid-column-gap: 1rem;
+    grid-row-gap: .75rem;
+    grid-template-areas: "avatar . ."
+                         "avatar top-row links"
+                         "avatar bottom-row links"
+                         "avatar . .";
+    &-avatar {
+      grid-area: avatar;
+      border-radius: 50%;
+      width: 100%;
+      border: 3px solid colors.$regal-gold;
+    }
+    &-top-row {
+      grid-area: top-row;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    &-bottom-row {
+      grid-area: bottom-row;
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1;
+    }
+    &-links {
+      grid-area: links;
+      a {
+        display: block;
+        border: 2px solid;
+        padding: .25rem;
+        margin: 0;
+        font-size: 1rem;
+        color: colors.$regal-gold;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+  &-left-col {
+    grid-area: left-col;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+  }
+  &-main {
+    grid-area: main;
+  }
+  &-right-col {
+    grid-area: right-col;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+  }
+  &-footer {
+    grid-area: footer;
+  }
+}

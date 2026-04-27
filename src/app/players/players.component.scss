@@ -7,7 +7,7 @@
   background: colors.$deep-space;
   padding: 10px;
   margin: 0 0 2em;
-  background: rgba(colors.$deep-space, .9);
+  background: rgba(colors.$deep-space, .75);
   border-radius: .5em;
   box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1em);
@@ -30,7 +30,7 @@
 }
 .players-list {
   padding: 10px;
-  background: rgba(colors.$deep-space, .9);
+  background: rgba(colors.$deep-space, .75);
   border-radius: .5em;
   box-shadow: 0 .25em 2em rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1em);
