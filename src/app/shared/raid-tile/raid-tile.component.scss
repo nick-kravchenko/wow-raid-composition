@@ -103,9 +103,9 @@ header {
       &:hover { color: #fff; }
     }
     input {
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #9d9d9d;
+      border: 1px solid #9d9d9d;
+      height: 1.5rem;
+      padding: 0;
       color: inherit;
       font: inherit;
       text-align: center;
