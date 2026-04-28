@@ -94,6 +94,29 @@ header {
       display: block;
       margin: 0 4px 0 8px;
     }
+    .title-edit-btn {
+      margin-right: .375rem;
+      font-size: .75rem;
+      padding: .25rem;
+      color: #9d9d9d;
+      opacity: .75;
+      &:hover { color: #fff; }
+    }
+    input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #9d9d9d;
+      color: inherit;
+      font: inherit;
+      text-align: center;
+      outline: none;
+      width: 7rem;
+    }
+    .title {
+      width: 7rem;
+      text-align: center;
+      justify-content: center;
+    }
   }
   .internal-actions, .external-actions {
     display: flex;
