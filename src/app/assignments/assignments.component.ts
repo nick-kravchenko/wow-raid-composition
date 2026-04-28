@@ -7,6 +7,8 @@ import { players } from '../_data/players.data';
 import { AssignmentsBwlComponent } from './assignments-bwl/assignments-bwl.component';
 import { RaidTileComponent } from '../shared/raid-tile/raid-tile.component';
 import { AssignmentsT4Component } from './assignments-t4/assignments-t4.component';
+import { AssignmentsSscComponent } from './assignments-ssc/assignments-ssc.component';
+import { AssignmentsTkComponent } from './assignments-tk/assignments-tk.component';
 
 enum PaneNameEnum {
   RaidWide = 'raid-wide',
@@ -14,7 +16,8 @@ enum PaneNameEnum {
   Aq40 = 'aq40',
   Naxxramas = 'naxxramas',
   Magtheridon = 'magtheridon',
-  SscTk = 'ssc-tk',
+  Ssc = 'ssc',
+  Tk = 'tk',
 }
 
 @Component({
@@ -24,6 +27,8 @@ enum PaneNameEnum {
     AssignmentsBwlComponent,
     RaidTileComponent,
     AssignmentsT4Component,
+    AssignmentsSscComponent,
+    AssignmentsTkComponent,
     RouterLink,
   ],
   templateUrl: './assignments.component.html',
@@ -54,7 +59,8 @@ export class AssignmentsComponent implements OnInit {
       [PaneNameEnum.Aq40]: 'raids-ahnqiraj.webp',
       [PaneNameEnum.Naxxramas]: 'raids-naxxramas.webp',
       [PaneNameEnum.Magtheridon]: 'pit-lord.gif',
-      [PaneNameEnum.SscTk]: 'raids-ssc-tk.webp',
+      [PaneNameEnum.Ssc]: 'naga-sea-witch.png',
+      [PaneNameEnum.Tk]: 'hero-blood-elf-prince.png',
     };
     return `assets/icons/${icons[pane as PaneNameEnum]}`;
   }

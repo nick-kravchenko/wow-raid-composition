@@ -10,6 +10,12 @@
         <button title="Magtheridon assignments" (click)="togglePane($index, PaneNameEnum.Magtheridon)" [class.active]="isPaneVisible($index, PaneNameEnum.Magtheridon)" type="button">
           <img [src]="getPaneIcon(PaneNameEnum.Magtheridon)" alt="">
         </button>
+        <button title="Ssc assignments" (click)="togglePane($index, PaneNameEnum.Ssc)" [class.active]="isPaneVisible($index, PaneNameEnum.Ssc)" type="button">
+          <img [src]="getPaneIcon(PaneNameEnum.Ssc)" alt="">
+        </button>
+        <button title="Tk assignments" (click)="togglePane($index, PaneNameEnum.Tk)" [class.active]="isPaneVisible($index, PaneNameEnum.Tk)" type="button">
+          <img [src]="getPaneIcon(PaneNameEnum.Tk)" alt="">
+        </button>
         <button title="BWL assignments" (click)="togglePane($index, PaneNameEnum.Bwl)" [class.active]="isPaneVisible($index, PaneNameEnum.Bwl)" type="button" disabled>
           <img [src]="getPaneIcon(PaneNameEnum.Bwl)" alt="">
         </button>
@@ -18,9 +24,6 @@
         </button>
         <button title="Naxxramas assignments" (click)="togglePane($index, PaneNameEnum.Naxxramas)" [class.active]="isPaneVisible($index, PaneNameEnum.Naxxramas)" type="button" disabled>
           <img [src]="getPaneIcon(PaneNameEnum.Naxxramas)" alt="">
-        </button>
-        <button title="SscTk assignments" (click)="togglePane($index, PaneNameEnum.SscTk)" [class.active]="isPaneVisible($index, PaneNameEnum.SscTk)" type="button" disabled>
-          <img [src]="getPaneIcon(PaneNameEnum.SscTk)" alt="">
         </button>
       </nav>
 
@@ -32,6 +35,12 @@
       }
       @if (isPaneVisible($index, PaneNameEnum.Magtheridon)) {
         <app-assignments-t4 [raid]="raid"></app-assignments-t4>
+      }
+      @if (isPaneVisible($index, PaneNameEnum.Ssc)) {
+        <app-assignments-ssc [raid]="raid"></app-assignments-ssc>
+      }
+      @if (isPaneVisible($index, PaneNameEnum.Tk)) {
+        <app-assignments-tk [raid]="raid"></app-assignments-tk>
       }
     </section>
 
