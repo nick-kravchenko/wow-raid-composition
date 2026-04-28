@@ -10,4 +10,7 @@
   .text-#{$name} {
     color: $color;
   }
+  .border-color-#{$name} {
+    border-color: $color;
+  }
 }

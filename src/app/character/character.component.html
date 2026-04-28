@@ -11,41 +11,90 @@
 <!--      </div>-->
 <!--    </div>-->
 <!--  </div>-->
-  <div class="f">
-    <div class="l">
-      <div class="gear">
-        <header class="gear-header">
-          <img class="gear-header-avatar" src="{{ bnetData()?.avatarUrl }}" alt="">
-          <div class="gear-header-top-row">{{ char.name }}</div>
-          <div class="gear-header-bottom-row">Level {{ bnetData()?.level }} {{ bnetData()?.raceName }} {{ bnetData()?.className }}</div>
-          <div class="gear-header-links">
-            <a target="_blank" href="https://fresh.warcraftlogs.com/character/eu/spineshatter/{{char.name}}">WCL</a>
+  <div class="gear">
+    <header class="gear-header">
+      <img class="gear-header-avatar border-color-{{char.class | lowercase}}" src="{{ bnetData()?.avatarUrl }}" alt="">
+      <div class="gear-header-top-row text-{{char.class | lowercase}}">{{ char.name }}</div>
+      <div class="gear-header-bottom-row">Level {{ bnetData()?.level }} {{ bnetData()?.raceName }} {{ bnetData()?.className }}</div>
+      <div class="gear-header-links">
+        <a target="_blank" href="https://fresh.warcraftlogs.com/character/eu/spineshatter/{{char.name}}">WCL</a>
+      </div>
+    </header>
+    <aside class="gear-left-col">
+      @for (slot of leftSlots; track $index) {
+        <div class="gear-slot">
+          <a class="gear-icon-link"
+             data-wh-icon-size="large"
+             href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
+             [title]="slot"
+             target="_blank"></a>
+          @if (isBis(slot, getItemBySlotName(slot)?.id)) {
+            <span class="bis-badge">BiS</span>
+          }
+        </div>
+      }
+    </aside>
+    <section class="gear-main">
+      @if (wclData(); as wcl) {
+        <div class="parses">
+          <div class="parses-best-label">Best Perf. Avg</div>
+          <div class="parses-best-val" [class]="parseColorClass(wcl.bestPerformanceAverage)">
+            {{ wcl.bestPerformanceAverage !== null ? (wcl.bestPerformanceAverage | number:'1.1-1') : '—' }}
           </div>
-        </header>
-        <aside class="gear-left-col">
-          @for (slot of leftSlots; track $index) {
-            <a class="gear-icon-link"
-               data-wh-icon-size="large"
-               href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
-               [title]="slot"
-               target="_blank"></a>
+          <div class="parses-stat">
+            <span class="parses-stat-label">Median Perf. Avg: </span>
+            <span [class]="parseColorClass(wcl.medianPerformanceAverage)">
+              {{ wcl.medianPerformanceAverage !== null ? (wcl.medianPerformanceAverage | number:'1.1-1') : '—' }}
+            </span>
+          </div>
+          <div class="parses-stat">
+            <span class="parses-stat-label">Kills Logged: </span>
+            <span>{{ wclTotalKills(wcl) }}</span>
+          </div>
+        </div>
+        <div class="parses-list">
+          @for (r of wcl.rankings; track r.encounterID) {
+            <div class="parse-row">
+              <span class="parse-row-boss">{{ r.encounterName }}</span>
+              <span [class]="parseColorClass(r.rankPercent)" class="parse-row-val">
+                  {{ r.rankPercent !== null ? (r.rankPercent | number:'1.1-1') : '—' }}
+                </span>
+              <span [class]="parseColorClass(r.medianPerformance)" class="parse-row-val parse-row-median">
+                  {{ r.medianPerformance !== null ? (r.medianPerformance | number:'1.1-1') : '—' }}
+                </span>
+            </div>
           }
-        </aside>
-        <section class="gear-main"></section>
-        <aside class="gear-right-col">
-          @for (slot of rightSlots; track $index) {
-            <a class="gear-icon-link"
-               data-wh-icon-size="large"
-               href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
-               [title]="slot"
-               target="_blank"></a>
+        </div>
+      }
+    </section>
+    <aside class="gear-right-col">
+      @for (slot of rightSlots; track $index) {
+        <div class="gear-slot">
+          <a class="gear-icon-link"
+             data-wh-icon-size="large"
+             href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
+             [title]="slot"
+             target="_blank"></a>
+          @if (isBis(slot, getItemBySlotName(slot)?.id)) {
+            <span class="bis-badge">BiS</span>
           }
-        </aside>
-        <footer class="gear-footer"></footer>
-      </div></div>
-    <div class="r">
-      <img src="/assets/gear.png" alt="">
-    </div>
+        </div>
+      }
+    </aside>
+    <footer class="gear-footer">
+      @for (slot of weaponSlots; track $index) {
+        <div class="gear-slot">
+          <a class="gear-icon-link"
+             data-wh-icon-size="large"
+             href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
+             [title]="slot"
+             target="_blank"></a>
+          @if (isBis(slot, getItemBySlotName(slot)?.id)) {
+            <span class="bis-badge">BiS</span>
+          }
+        </div>
+      }
+    </footer>
   </div>
 <!--  <div class="gear">-->
 <!--    @for (item of wclData()?.gear; track item.id) {-->
@@ -59,8 +108,6 @@
 <!--    }-->
 <!--  </div>-->
 <!--  <pre>{{char | json}}</pre>-->
-  <pre>{{wclData() | json}}</pre>
-  <pre>{{bnetData() | json}}</pre>
 } @else {
   <p class="not-found">Character not found.</p>
 }

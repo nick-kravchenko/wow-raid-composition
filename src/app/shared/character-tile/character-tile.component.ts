@@ -6,12 +6,14 @@ declare const $WowheadPower: { refreshLinks(): void } | undefined;
 
 import { wclBakedData, WclBakedCharacter } from '../../_data/wcl-baked.data';
 import { GEAR_SLOT_NAMES } from '../types/gear-slot-names';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-character-tile',
   host: { '[class.rankings-visible]': 'isRankingsVisible' },
   imports: [
     LowerCasePipe,
+    RouterLink,
   ],
   templateUrl: './character-tile.component.html',
   styleUrl: './character-tile.component.scss'
