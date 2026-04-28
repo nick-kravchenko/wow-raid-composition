@@ -1,6 +1,6 @@
 // AUTO-GENERATED — do not edit manually.
 // Run `npm run bake:bnet` to regenerate.
-// Generated: 2026-04-24T23:12:53.091Z
+// Generated: 2026-04-28T21:40:28.852Z
 
 export type BnetFaction = 'ALLIANCE' | 'HORDE';
 export type BnetGender = 'MALE' | 'FEMALE';
@@ -40,7 +40,7 @@ export interface BnetBakedData {
 }
 
 export const bnetBakedData: BnetBakedData = {
-  "generatedAt": "2026-04-24T23:12:53.091Z",
+  "generatedAt": "2026-04-28T21:40:28.852Z",
   "defaultRealmSlug": "spineshatter",
   "defaultRegion": "eu",
   "gameVersion": "classicann",
@@ -60,10 +60,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 118,
-      "equippedItemLevel": 112,
+      "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/49/51937073-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "alpine": {
@@ -84,7 +84,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 107,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/19/53670419-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "amorales": {
@@ -102,10 +102,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 117,
-      "equippedItemLevel": 116,
+      "equippedItemLevel": 117,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/165/48472229-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "antagonyst": {
@@ -126,7 +126,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 109,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/109/55889005-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "anyataylorj": {
@@ -144,10 +144,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 114,
-      "equippedItemLevel": 110,
+      "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/239/47190511-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "artlicht": {
@@ -168,7 +168,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/131/54118275-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "bawownahunt": {
@@ -189,7 +189,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/71/52055367-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "benzöbak": {
@@ -210,7 +210,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 111,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/21/57429269-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "betonnyi": {
@@ -228,10 +228,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 120,
-      "equippedItemLevel": 116,
+      "equippedItemLevel": 110,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/103/55515751-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "blinkmate": {
@@ -248,11 +248,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 116,
-      "equippedItemLevel": 115,
+      "averageItemLevel": 119,
+      "equippedItemLevel": 118,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/54/56164662-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "bozer": {
@@ -273,7 +273,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/220/43383772-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "brokentoy": {
@@ -294,7 +294,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/178/51898290-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "cambellsh": {
@@ -315,7 +315,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/124/56390780-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "cambels": {
@@ -336,7 +336,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/92/54594908-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "chaiser": {
@@ -354,10 +354,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 119,
-      "equippedItemLevel": 115,
+      "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/189/52355005-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "chortenya": {
@@ -375,10 +375,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 117,
-      "equippedItemLevel": 114,
+      "equippedItemLevel": 109,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/24/55510552-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "deserv": {
@@ -395,11 +395,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 115,
-      "equippedItemLevel": 114,
+      "averageItemLevel": 114,
+      "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/222/51434718-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "deserve": {
@@ -420,7 +420,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/116/44103540-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "dontmissbyte": {
@@ -437,11 +437,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 117,
+      "averageItemLevel": 118,
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/195/48485827-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "dubasaw": {
@@ -462,7 +462,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/150/52423830-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "dubasw": {
@@ -483,7 +483,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/10/52467978-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "dullo": {
@@ -525,7 +525,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/253/52479229-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "entim": {
@@ -546,7 +546,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/1/53752321-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "entimx": {
@@ -563,11 +563,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 114,
+      "averageItemLevel": 115,
       "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/65/53752641-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "fantagodx": {
@@ -584,11 +584,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 113,
+      "averageItemLevel": 112,
       "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/218/51900122-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "figurehead": {
@@ -606,10 +606,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 115,
-      "equippedItemLevel": 115,
+      "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/73/51901769-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "fleabus": {
@@ -630,7 +630,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 111,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/165/52095909-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "flinesham": {
@@ -651,7 +651,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/255/54151167-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "garhard": {
@@ -672,7 +672,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/207/51935695-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "globaldoctor": {
@@ -690,10 +690,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 118,
-      "equippedItemLevel": 113,
+      "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/105/53354089-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "greenbeam": {
@@ -714,7 +714,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 118,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/68/51330628-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "hellpapa": {
@@ -735,7 +735,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/216/52485592-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "kravarlocka": {
@@ -753,10 +753,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 114,
-      "equippedItemLevel": 111,
+      "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/88/52434776-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "kravá": {
@@ -774,10 +774,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 119,
-      "equippedItemLevel": 113,
+      "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/158/49361054-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "kravä": {
@@ -798,7 +798,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/13/46835981-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "kyivstar": {
@@ -819,7 +819,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/246/52441590-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "lansena": {
@@ -840,7 +840,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/196/54610884-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "lazykit": {
@@ -858,10 +858,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 121,
-      "equippedItemLevel": 116,
+      "equippedItemLevel": 118,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/154/55414938-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "lazyswotch": {
@@ -878,11 +878,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 116,
-      "equippedItemLevel": 113,
+      "averageItemLevel": 117,
+      "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/67/57231939-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "legalise": {
@@ -903,7 +903,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/196/42796740-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "llóydaustin": {
@@ -924,7 +924,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/62/46831422-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "manowarr": {
@@ -941,11 +941,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 114,
-      "equippedItemLevel": 114,
+      "averageItemLevel": 116,
+      "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/0/48176896-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "mapleleaf": {
@@ -966,7 +966,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/211/53263571-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "mellorin": {
@@ -987,7 +987,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 107,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/187/53483963-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "monkablaze": {
@@ -1008,7 +1008,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/100/53025124-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "monkablazé": {
@@ -1025,11 +1025,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 113,
-      "equippedItemLevel": 112,
+      "averageItemLevel": 115,
+      "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/138/57390218-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "notalazy": {
@@ -1046,11 +1046,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 117,
+      "averageItemLevel": 118,
       "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/134/56312710-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "palayoshka": {
@@ -1071,7 +1071,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 117,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/228/53670116-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "pappit": {
@@ -1089,10 +1089,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 118,
-      "equippedItemLevel": 112,
+      "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/191/53682111-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "pigtasty": {
@@ -1113,7 +1113,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/109/52020845-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "prõfessõr": {
@@ -1131,10 +1131,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 118,
-      "equippedItemLevel": 113,
+      "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/75/54917963-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "puppit": {
@@ -1152,10 +1152,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 115,
-      "equippedItemLevel": 106,
+      "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/98/46821474-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "renko": {
@@ -1176,7 +1176,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/17/53226257-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "rinn": {
@@ -1194,10 +1194,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 117,
-      "equippedItemLevel": 112,
+      "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/5/53674501-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "romovababka": {
@@ -1215,10 +1215,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 116,
-      "equippedItemLevel": 113,
+      "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/147/53942163-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "ryzha": {
@@ -1239,7 +1239,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 111,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/167/52441767-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "ryzhã": {
@@ -1260,7 +1260,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/22/46846486-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "serj": {
@@ -1299,10 +1299,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 116,
-      "equippedItemLevel": 111,
+      "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/217/52043737-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "skifon": {
@@ -1320,10 +1320,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 115,
-      "equippedItemLevel": 115,
+      "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/33/57081889-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "strikex": {
@@ -1344,7 +1344,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 112,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/112/53497456-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "swotchw": {
@@ -1365,7 +1365,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 114,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/242/52493042-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "swotchww": {
@@ -1382,11 +1382,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 118,
-      "equippedItemLevel": 116,
+      "averageItemLevel": 119,
+      "equippedItemLevel": 117,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/25/53699353-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "sypukha": {
@@ -1407,7 +1407,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 115,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/187/55941563-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "tenten": {
@@ -1428,7 +1428,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 109,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/183/45349559-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "thundermate": {
@@ -1446,10 +1446,10 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecName": null,
       "faction": "HORDE",
       "averageItemLevel": 120,
-      "equippedItemLevel": 113,
+      "equippedItemLevel": 117,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/119/53680759-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "udy": {
@@ -1470,7 +1470,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 110,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/100/53118564-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "yoshkap": {
@@ -1487,11 +1487,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 115,
-      "equippedItemLevel": 115,
+      "averageItemLevel": 117,
+      "equippedItemLevel": 116,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/248/52420600-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "zabyjaka": {
@@ -1512,7 +1512,7 @@ export const bnetBakedData: BnetBakedData = {
       "equippedItemLevel": 113,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/143/56260751-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     },
     "zulnani": {
@@ -1529,11 +1529,11 @@ export const bnetBakedData: BnetBakedData = {
       "activeSpecId": null,
       "activeSpecName": null,
       "faction": "HORDE",
-      "averageItemLevel": 118,
+      "averageItemLevel": 119,
       "equippedItemLevel": 117,
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/246/53472502-avatar.jpg",
       "mainRawUrl": null,
-      "fetchedAt": "2026-04-24T23:12:53.091Z",
+      "fetchedAt": "2026-04-28T21:40:28.852Z",
       "error": null
     }
   }
