@@ -19,7 +19,7 @@
  *   WCL_BATCH_DELAY_MS — Delay between batches in ms (default: 1000)
  */
 import dotenv from 'dotenv';
-import { writeFileSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -232,6 +232,58 @@ async function fetchGear(
   }
 }
 
+// ── Existing data merging ────────────────────────────────────────────────────
+
+function readExistingCharacters(): Record<string, WclBakedCharacter> {
+  if (!existsSync(OUTPUT_PATH)) return {};
+  try {
+    const content = readFileSync(OUTPUT_PATH, 'utf-8');
+    const marker = 'export const wclBakedData: WclBakedData = ';
+    const idx = content.indexOf(marker);
+    if (idx === -1) return {};
+    const jsonStr = content.slice(idx + marker.length).trimEnd().replace(/;$/, '');
+    const parsed = JSON.parse(jsonStr) as WclBakedData;
+    return parsed.characters ?? {};
+  } catch {
+    warn('Could not parse existing baked data — starting fresh');
+    return {};
+  }
+}
+
+/**
+ * Merge freshly fetched character data with the previously baked entry.
+ *
+ * Priority rules:
+ *  - Fresh complete (no error, no partial)  → use fresh entirely
+ *  - Fresh partial (rankings ok, gear empty) and existing has gear → use fresh
+ *    rankings + existing gear, clear partial flag
+ *  - Fresh errored but existing was good    → keep existing (avoid regressing)
+ *  - Everything else                        → use fresh
+ */
+function mergeCharacter(
+  fresh: WclBakedCharacter,
+  existing: WclBakedCharacter | undefined,
+): WclBakedCharacter {
+  if (!existing) return fresh;
+
+  // Fresh complete — nothing to inherit
+  if (!fresh.error && !fresh.partial) return fresh;
+
+  // Fresh errored but existing succeeded — preserve existing, note stale
+  if (fresh.error && !existing.error) {
+    warn(`Using existing data for "${existing.characterName}" (fresh fetch errored: ${fresh.error})`);
+    return existing;
+  }
+
+  // Fresh rankings ok but gear missing — fill gear from existing
+  if (!fresh.error && fresh.partial && existing.gear.length > 0) {
+    log(`  ↩ "${fresh.characterName}": gear partial — reusing ${existing.gear.length} slot(s) from previous bake`);
+    return { ...fresh, gear: existing.gear, partial: false };
+  }
+
+  return fresh;
+}
+
 // ── Rankings fetching ────────────────────────────────────────────────────────
 
 async function fetchCharacterData(
@@ -391,6 +443,9 @@ async function main(): Promise<void> {
     `Config: realm=${DEFAULT_REALM} region=${DEFAULT_REGION} zoneID=${ZONE_ID ?? 'all'} skipGear=${SKIP_GEAR} batchSize=${BATCH_SIZE}`,
   );
 
+  const existingCharacters = readExistingCharacters();
+  log(`Loaded ${Object.keys(existingCharacters).length} existing character(s) from previous bake`);
+
   const generatedAt = new Date().toISOString();
   const results: Record<string, WclBakedCharacter> = {};
   const failed: string[] = [];
@@ -410,15 +465,18 @@ async function main(): Promise<void> {
     );
 
     for (const { charName, playerName, baked } of batchResults) {
-      if (baked.error) {
-        err(`  ✗ ${charName}: ${baked.error}`);
-        failed.push(`${charName} (${playerName}): ${baked.error}`);
-      } else if (baked.partial) {
+      const key = charKey(charName);
+      const merged = mergeCharacter(baked, existingCharacters[key]);
+
+      if (merged.error) {
+        err(`  ✗ ${charName}: ${merged.error}`);
+        failed.push(`${charName} (${playerName}): ${merged.error}`);
+      } else if (merged.partial) {
         log(`  ~ ${charName}: rankings OK, gear partial`);
       } else {
-        log(`  ✓ ${charName}: ${baked.rankings.length} encounter(s), ${baked.gear.length} gear slot(s)`);
+        log(`  ✓ ${charName}: ${merged.rankings.length} encounter(s), ${merged.gear.length} gear slot(s)`);
       }
-      results[charKey(charName)] = baked;
+      results[key] = merged;
     }
 
     if (batchEnd < characters.length) {
