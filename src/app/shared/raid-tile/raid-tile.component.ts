@@ -40,35 +40,26 @@ export class RaidTileComponent {
   pruneModalVisible = signal(false);
   removeModalVisible = signal(false);
   capturingScreenshot = signal(false);
+  editingTitle = signal(false);
   titleValue = linkedSignal(() => (this.queryParams() as Record<string, string>)[this.titleKey()] ?? this.title());
 
-  mainCounter = computed(() =>
-    this.raid().filter((c: Character) => !!c && c.rank === CharacterRank.main).length
-  );
+  titleInput = viewChild<ElementRef<HTMLInputElement>>('titleInput');
 
-  altCounter = computed(() =>
-    this.raid().filter((c: Character) => !!c && c.rank === CharacterRank.alt).length
-  );
+  mainCounter = computed(() => this.raid().filter((c: Character) => !!c && c.rank === CharacterRank.main).length);
+  altCounter = computed(() => this.raid().filter((c: Character) => !!c && c.rank === CharacterRank.alt).length);
+  tankCount = computed(() => this.raid().filter((c: Character) => !!c && c.role === CharacterRole.tank).length);
+  meleeCount = computed(() => this.raid().filter((c: Character) => !!c && c.role === CharacterRole.melee).length);
+  rangedCount = computed(() => this.raid().filter((c: Character) => !!c && c.role === CharacterRole.ranged).length);
+  healerCount = computed(() => this.raid().filter((c: Character) => !!c && c.role === CharacterRole.healer).length);
+  queryParamsRaid = computed(() => this.raid().map((c: Character) => c?.name || '').join('_'));
 
-  tankCount = computed(() =>
-    this.raid().filter((c: Character) => !!c && c.role === CharacterRole.tank).length
-  );
-
-  meleeCount = computed(() =>
-    this.raid().filter((c: Character) => !!c && c.role === CharacterRole.melee).length
-  );
-
-  rangedCount = computed(() =>
-    this.raid().filter((c: Character) => !!c && c.role === CharacterRole.ranged).length
-  );
-
-  healerCount = computed(() =>
-    this.raid().filter((c: Character) => !!c && c.role === CharacterRole.healer).length
-  );
-
-  queryParamsRaid = computed(() =>
-    this.raid().map((c: Character) => c?.name || '').join('_')
-  );
+  toggleTitleEdit(): void {
+    const nowEditing = !this.editingTitle();
+    this.editingTitle.set(nowEditing);
+    if (nowEditing) {
+      setTimeout(() => this.titleInput()?.nativeElement.focus(), 0);
+    }
+  }
 
   onTitleChange(event: Event): void {
     const value = (event.target as HTMLInputElement).value;

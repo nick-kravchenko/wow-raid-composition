@@ -9,6 +9,7 @@
     "build:gpages": "ng build --base-href https://nick-kravchenko.github.io/wow-raid-composition/",
     "test": "ng test",
     "bake:wcl": "tsx scripts/wcl-baker/index.ts",
+    "bake:bnet": "tsx scripts/battlenet-baker/index.ts",
     "bake:bis:t4": "tsx scripts/bis-baker/t4/_parser.ts",
     "attendance": "tsx src/app/_data/raid-helper-attendance.ts"
   },

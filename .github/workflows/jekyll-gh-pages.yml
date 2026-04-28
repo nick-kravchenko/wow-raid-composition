@@ -61,6 +61,15 @@ jobs:
           WCL_DEFAULT_REGION: ${{ vars.WCL_DEFAULT_REGION }}
           WCL_ZONE_ID: ${{ vars.WCL_ZONE_ID }}
         run: npm run bake:wcl
+      - name: Bake Battle.net data
+        continue-on-error: true
+        env:
+          BNET_CLIENT_ID: ${{ secrets.BNET_CLIENT_ID }}
+          BNET_CLIENT_SECRET: ${{ secrets.BNET_CLIENT_SECRET }}
+          BNET_REALM_SLUG: ${{ vars.BNET_REALM_SLUG }}
+          BNET_REGION: ${{ vars.BNET_REGION }}
+          BNET_GAME_VERSION: ${{ vars.BNET_GAME_VERSION }}
+        run: npm run bake:bnet
       - name: Build Angular app
         run: |
           export NODE_OPTIONS=--openssl-legacy-provider

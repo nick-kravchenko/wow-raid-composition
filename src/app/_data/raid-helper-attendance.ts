@@ -1,6 +1,7 @@
 import { players } from './players.data';
 
 export interface RaidAttendanceResult {
+  days: [string, string];
   byDay: Record<string, string[]>;
   both: string[];
   absent: string[];
@@ -31,52 +32,74 @@ async function fetchEvent(eventId: string): Promise<RaidHelperEvent> {
   return response.json();
 }
 
+function classifySingups(signups: RaidHelperSignup[]): { participating: Set<string>; late: Set<string>; tentative: Set<string>; absent: Set<string> } {
+  const participating = new Set<string>();
+  const late = new Set<string>();
+  const tentative = new Set<string>();
+  const absent = new Set<string>();
+  for (const signup of signups) {
+    if (signup.class === 'Absence') {
+      absent.add(signup.userid);
+    } else if (signup.class === 'Late') {
+      late.add(signup.userid);
+    } else if (signup.class === 'Tentative') {
+      tentative.add(signup.userid);
+    } else {
+      participating.add(signup.userid);
+    }
+  }
+  return { participating, late, tentative, absent };
+}
+
 export async function getRaidAttendance(eventId1: string, eventId2: string): Promise<RaidAttendanceResult> {
   const [event1, event2] = await Promise.all([fetchEvent(eventId1), fetchEvent(eventId2)]);
 
   const day1 = getDayOfWeek(event1.date);
   const day2 = getDayOfWeek(event2.date);
 
-  const participating1 = new Set<string>();
-  const absent1 = new Set<string>();
-  for (const signup of event1.signups) {
-    if (signup.class === 'Absence') {
-      absent1.add(signup.userid);
-    } else {
-      participating1.add(signup.userid);
-    }
-  }
-
-  const participating2 = new Set<string>();
-  const absent2 = new Set<string>();
-  for (const signup of event2.signups) {
-    if (signup.class === 'Absence') {
-      absent2.add(signup.userid);
-    } else {
-      participating2.add(signup.userid);
-    }
-  }
+  const c1 = classifySingups(event1.signups);
+  const c2 = classifySingups(event2.signups);
 
   const result: RaidAttendanceResult = {
-    byDay: { [day1]: [], [day2]: [] },
+    days: [day1, day2],
+    byDay: {
+      [day1]: [],
+      [day2]: [],
+      [`${day1} (late)`]: [],
+      [`${day2} (late)`]: [],
+      [`${day1} (tentative)`]: [],
+      [`${day2} (tentative)`]: [],
+    },
     both: [],
     absent: [],
     unregistered: [],
   };
 
   for (const player of players) {
-    const userId = player.discord?.userId;
-    const canParticipate1 = !!userId && participating1.has(userId);
-    const canParticipate2 = !!userId && participating2.has(userId);
-    const isAbsent = !!userId && (absent1.has(userId) || absent2.has(userId));
+    const id = player.discord?.userId;
+    const p1 = !!id && c1.participating.has(id);
+    const p2 = !!id && c2.participating.has(id);
+    const l1 = !!id && c1.late.has(id);
+    const l2 = !!id && c2.late.has(id);
+    const t1 = !!id && c1.tentative.has(id);
+    const t2 = !!id && c2.tentative.has(id);
+    const absent = !!id && (c1.absent.has(id) || c2.absent.has(id));
 
-    if (canParticipate1 && canParticipate2) {
+    if (p1 && p2) {
       result.both.push(player.name);
-    } else if (canParticipate1) {
+    } else if (p1) {
       result.byDay[day1].push(player.name);
-    } else if (canParticipate2) {
+    } else if (p2) {
       result.byDay[day2].push(player.name);
-    } else if (isAbsent) {
+    } else if (l1) {
+      result.byDay[`${day1} (late)`].push(player.name);
+    } else if (l2) {
+      result.byDay[`${day2} (late)`].push(player.name);
+    } else if (t1) {
+      result.byDay[`${day1} (tentative)`].push(player.name);
+    } else if (t2) {
+      result.byDay[`${day2} (tentative)`].push(player.name);
+    } else if (absent) {
       result.absent.push(player.name);
     } else {
       result.unregistered.push(player.name);
@@ -86,16 +109,22 @@ export async function getRaidAttendance(eventId1: string, eventId2: string): Pro
   return result;
 }
 
-const id1 = '1493629842665640068';
-const id2 = '1493629951667343472';
+const id1 = '1495704933339500656';
+const id2 = '1495704990155538494';
 
 getRaidAttendance(id1, id2).then(result => {
-  for (const [day, names] of Object.entries(result.byDay)) {
-    console.log(`${day}: ${names.join(', ')}`);
+  for (const day of result.days) {
+    for (const suffix of ['', ' (late)', ' (tentative)']) {
+      const key = `${day}${suffix}`;
+      const names = result.byDay[key];
+      if (names?.length > 0) {
+        console.log(`${key}: ${names.join(', ')}`);
+      }
+    }
   }
   console.log(`Both: ${result.both.join(', ')}`);
   console.log(`Absent: ${result.absent.join(', ')}`);
   console.log(`Unregistered: ${result.unregistered.join(', ')}`);
 }).catch(error => {
   console.error(error);
-})
+});

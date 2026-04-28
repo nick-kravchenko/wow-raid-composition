@@ -3,7 +3,7 @@
   <span class="name text-{{character.class | lowercase}}">
     <span class="rank rank--{{character.rank}}"></span>
     @if (isWCLLinkVisible) {
-      <a target="_blank" href="https://fresh.warcraftlogs.com/character/eu/spineshatter/{{character.name}}">{{character.name}}</a>
+      <a [routerLink]="['/', 'character', character.name]" href="https://fresh.warcraftlogs.com/character/eu/spineshatter/{{character.name}}">{{character.name}}</a>
     } @else {
       {{character.name}}
     }

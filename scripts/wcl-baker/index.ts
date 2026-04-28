@@ -14,7 +14,9 @@
  * Optional env vars:
  *   WCL_ZONE_ID        — Filter rankings to a single zone ID (e.g. "1012")
  *   WCL_SKIP_GEAR      — Set to "true" to skip gear fetching (faster, fewer API calls)
- *   WCL_API_DELAY_MS   — Delay between API calls in ms (default: 300)
+ *   WCL_API_DELAY_MS   — Delay between API calls within a single character fetch in ms (default: 300)
+ *   WCL_BATCH_SIZE     — Number of characters to fetch concurrently (default: 5)
+ *   WCL_BATCH_DELAY_MS — Delay between batches in ms (default: 1000)
  */
 import dotenv from 'dotenv';
 import { writeFileSync } from 'fs';
@@ -77,9 +79,11 @@ const CLIENT_ID = requireEnv('WCL_CLIENT_ID');
 const CLIENT_SECRET = requireEnv('WCL_CLIENT_SECRET');
 const DEFAULT_REALM = requireEnv('WCL_DEFAULT_REALM');
 const DEFAULT_REGION = requireEnv('WCL_DEFAULT_REGION');
-const ZONE_ID = requireEnv('WCL_ZONE_ID') ? parseInt(requireEnv['WCL_ZONE_ID'], 10) : null;
-const SKIP_GEAR = requireEnv('WCL_SKIP_GEAR') === 'true';
-const API_DELAY_MS = parseInt(requireEnv['WCL_API_DELAY_MS'] ?? '300', 10);
+const ZONE_ID = process.env['WCL_ZONE_ID'] ? parseInt(process.env['WCL_ZONE_ID'], 10) : null;
+const SKIP_GEAR = process.env['WCL_SKIP_GEAR'] === 'true';
+const API_DELAY_MS = parseInt(process.env['WCL_API_DELAY_MS'] ?? '300', 10);
+const BATCH_SIZE = parseInt(process.env['WCL_BATCH_SIZE'] ?? '10', 10);
+const BATCH_DELAY_MS = parseInt(process.env['WCL_BATCH_DELAY_MS'] ?? '500', 10);
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -384,35 +388,43 @@ async function main(): Promise<void> {
 
   log(`Found ${characters.length} characters across ${players.length} players`);
   log(
-    `Config: realm=${DEFAULT_REALM} region=${DEFAULT_REGION} zoneID=${ZONE_ID ?? 'all'} skipGear=${SKIP_GEAR}`,
+    `Config: realm=${DEFAULT_REALM} region=${DEFAULT_REGION} zoneID=${ZONE_ID ?? 'all'} skipGear=${SKIP_GEAR} batchSize=${BATCH_SIZE}`,
   );
 
   const generatedAt = new Date().toISOString();
   const results: Record<string, WclBakedCharacter> = {};
   const failed: string[] = [];
 
-  for (let i = 0; i < characters.length; i++) {
-    const { playerName, charName } = characters[i];
-    log(`[${i + 1}/${characters.length}] Fetching "${charName}" (${playerName})...`);
+  for (let batchStart = 0; batchStart < characters.length; batchStart += BATCH_SIZE) {
+    const batch = characters.slice(batchStart, batchStart + BATCH_SIZE);
+    const batchEnd = Math.min(batchStart + BATCH_SIZE, characters.length);
+    log(`Batch ${Math.floor(batchStart / BATCH_SIZE) + 1}: characters ${batchStart + 1}–${batchEnd} of ${characters.length}`);
 
-    const baked = await fetchCharacterData(
-      client,
-      charName,
-      DEFAULT_REALM,
-      DEFAULT_REGION,
-      generatedAt,
+    const batchResults = await Promise.all(
+      batch.map(({ playerName, charName }, j) => {
+        const idx = batchStart + j + 1;
+        log(`  [${idx}/${characters.length}] Queuing "${charName}" (${playerName})`);
+        return fetchCharacterData(client, charName, DEFAULT_REALM, DEFAULT_REGION, generatedAt)
+          .then((baked) => ({ charName, playerName, baked }));
+      }),
     );
 
-    if (baked.error) {
-      err(`  ✗ ${charName}: ${baked.error}`);
-      failed.push(`${charName} (${playerName}): ${baked.error}`);
-    } else if (baked.partial) {
-      log(`  ~ ${charName}: rankings OK, gear partial`);
-    } else {
-      log(`  ✓ ${charName}: ${baked.rankings.length} encounter(s), ${baked.gear.length} gear slot(s)`);
+    for (const { charName, playerName, baked } of batchResults) {
+      if (baked.error) {
+        err(`  ✗ ${charName}: ${baked.error}`);
+        failed.push(`${charName} (${playerName}): ${baked.error}`);
+      } else if (baked.partial) {
+        log(`  ~ ${charName}: rankings OK, gear partial`);
+      } else {
+        log(`  ✓ ${charName}: ${baked.rankings.length} encounter(s), ${baked.gear.length} gear slot(s)`);
+      }
+      results[charKey(charName)] = baked;
     }
 
-    results[charKey(charName)] = baked;
+    if (batchEnd < characters.length) {
+      log(`Batch done — waiting ${BATCH_DELAY_MS}ms before next batch...`);
+      await sleep(BATCH_DELAY_MS);
+    }
   }
 
   // Sort keys for a deterministic file
