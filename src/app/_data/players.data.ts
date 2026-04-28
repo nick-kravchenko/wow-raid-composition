@@ -494,9 +494,9 @@ export const players: Player[] = [
       {
         name: 'Puppit',
         rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
+        role: CharacterRole.melee,
         class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Elemental,
+        spec: CharacterSpecEnum.Enhancement,
       },
     ],
   },
