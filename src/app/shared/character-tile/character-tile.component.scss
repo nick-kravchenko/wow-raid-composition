@@ -98,6 +98,7 @@ sup {
 }
 .gear {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 8px 0 0;
   width: 100%;

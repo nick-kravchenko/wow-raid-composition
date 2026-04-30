@@ -18,6 +18,7 @@
 .spec {
   &-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
     padding: 0;
@@ -53,6 +54,7 @@
 .item {
   &-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
     padding: 0;

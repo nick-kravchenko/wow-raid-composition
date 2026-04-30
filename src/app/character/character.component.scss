@@ -75,6 +75,10 @@
   grid-template-areas: "header header header"
                        "left-col main right-col"
                        "left-col footer right-col";
+  @include screen-sizes.screen-tablet() {
+    width: 100%;
+    grid-column-gap: .125rem;
+  }
   &-header { grid-area: header; }
   &-left-col { grid-area: left-col; }
   &-main { grid-area: main; }
@@ -90,6 +94,12 @@
                          "avatar top-row links"
                          "avatar bottom-row links"
                          "avatar . .";
+    @include screen-sizes.screen-tablet() {
+      grid-template-columns: 112px 1fr;
+      grid-template-areas: "avatar top-row"
+                           "avatar bottom-row"
+                           "avatar links";
+    }
     &-avatar {
       grid-area: avatar;
       border-radius: 50%;

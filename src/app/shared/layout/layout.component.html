@@ -1,10 +1,22 @@
 <header>
   <div class="container">
     <div class="header-wrapper">
+
       <a routerLink="/" class="logo">
-        <img class="logo-image" src="assets/favicon/favicon-32x32.png" alt="">
+        <img class="logo-image" src="assets/favicon/favicon-32x32.png" alt="Home">
       </a>
-      <nav>
+
+      <button
+        #hamburgerBtn
+        class="hamburger"
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="menuOpen()"
+        aria-label="Open navigation"
+        aria-controls="mobile-nav">
+        <i [class]="menuOpen() ? 'fas fa-xmark' : 'fas fa-bars'"></i>
+      </button>
+
+      <nav class="desktop-nav">
         <ul>
           <li><a routerLink="/composition" queryParamsHandling="merge">Composition</a></li>
           <li><a routerLink="/assignments" queryParamsHandling="merge">Assignments</a></li>
@@ -15,9 +27,43 @@
           <li><a routerLink="/about-us">About Us</a></li>
         </ul>
       </nav>
+
     </div>
   </div>
 </header>
+
+<div
+  class="nav-overlay"
+  [class.visible]="menuOpen()"
+  (click)="closeMenu()"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Navigation"
+  [attr.aria-hidden]="!menuOpen()">
+
+  <nav #overlayNav id="mobile-nav" (click)="$event.stopPropagation()">
+
+    <button
+      #navCloseBtn
+      class="nav-close"
+      (click)="closeMenu()"
+      aria-label="Close navigation">
+      <i class="fas fa-xmark"></i>
+    </button>
+
+    <ul>
+      <li><a routerLink="/composition" queryParamsHandling="merge" (click)="closeMenu()">Composition</a></li>
+      <li><a routerLink="/assignments" queryParamsHandling="merge" (click)="closeMenu()">Assignments</a></li>
+      <li><a routerLink="/players" (click)="closeMenu()">Players</a></li>
+      <li><a routerLink="/characters" (click)="closeMenu()">Characters</a></li>
+      <li><a routerLink="/bis" (click)="closeMenu()">BIS</a></li>
+      <li><a routerLink="/calendar" (click)="closeMenu()">Calendar</a></li>
+      <li><a routerLink="/about-us" (click)="closeMenu()">About Us</a></li>
+    </ul>
+
+  </nav>
+</div>
+
 <div class="container">
   <ng-content></ng-content>
 </div>
