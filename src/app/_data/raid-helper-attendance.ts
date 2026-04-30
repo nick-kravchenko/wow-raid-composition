@@ -83,23 +83,26 @@ export async function getRaidAttendance(eventId1: string, eventId2: string): Pro
     const l2 = !!id && c2.late.has(id);
     const t1 = !!id && c1.tentative.has(id);
     const t2 = !!id && c2.tentative.has(id);
-    const absent = !!id && (c1.absent.has(id) || c2.absent.has(id));
+    const a1 = !!id && c1.absent.has(id);
+    const a2 = !!id && c2.absent.has(id);
+
+    const positive1 = p1 || l1 || t1;
+    const positive2 = p2 || l2 || t2;
 
     if (p1 && p2) {
       result.both.push(player.name);
-    } else if (p1) {
-      result.byDay[day1].push(player.name);
-    } else if (p2) {
-      result.byDay[day2].push(player.name);
-    } else if (l1) {
-      result.byDay[`${day1} (late)`].push(player.name);
-    } else if (l2) {
-      result.byDay[`${day2} (late)`].push(player.name);
-    } else if (t1) {
-      result.byDay[`${day1} (tentative)`].push(player.name);
-    } else if (t2) {
-      result.byDay[`${day2} (tentative)`].push(player.name);
-    } else if (absent) {
+      continue;
+    }
+
+    if (positive1 || positive2) {
+      if (p1) result.byDay[day1].push(player.name);
+      else if (l1) result.byDay[`${day1} (late)`].push(player.name);
+      else if (t1) result.byDay[`${day1} (tentative)`].push(player.name);
+
+      if (p2) result.byDay[day2].push(player.name);
+      else if (l2) result.byDay[`${day2} (late)`].push(player.name);
+      else if (t2) result.byDay[`${day2} (tentative)`].push(player.name);
+    } else if (a1 || a2) {
       result.absent.push(player.name);
     } else {
       result.unregistered.push(player.name);
@@ -109,8 +112,8 @@ export async function getRaidAttendance(eventId1: string, eventId2: string): Pro
   return result;
 }
 
-const id1 = '1495704933339500656';
-const id2 = '1495704990155538494';
+const id1 = '1498059827874758868';
+const id2 = '1498059922318037217';
 
 getRaidAttendance(id1, id2).then(result => {
   for (const day of result.days) {
