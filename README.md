@@ -104,6 +104,33 @@ npm run bake:wcl
 
 This writes `src/app/_data/wcl-baked.data.ts`, which is imported by the app at build time. The script is a no-op if `WCL_CLIENT_ID` is not set, so the existing baked file is preserved.
 
+## Battle.net Data Baking
+
+Character profile data (race, class, gender, level, active spec, item level, avatar) is fetched from the [Blizzard Battle.net Profile API](https://develop.battle.net/documentation/world-of-warcraft) and baked into a static TypeScript file before the Angular build.
+
+Add to your `.env` file:
+
+```env
+BNET_CLIENT_ID=your_client_id
+BNET_CLIENT_SECRET=your_client_secret
+BNET_REALM_SLUG=gehennas
+BNET_REGION=eu
+
+# Optional
+BNET_GAME_VERSION=classic       # "retail" | "classic" | "classic1x" (default: "classic")
+BNET_BATCH_SIZE=10              # Characters per concurrent batch (default: 10)
+BNET_BATCH_DELAY_MS=500        # Delay between batches in ms (default: 500)
+BNET_DEBUG=false               # Set to "true" to log raw API responses
+```
+
+Then run:
+
+```bash
+npm run bake:bnet
+```
+
+This writes `src/app/_data/battlenet-baked.data.ts`, which is imported by the app at build time. If a character fetch fails and existing data is present, the existing entry is preserved. The script is a no-op if `BNET_CLIENT_ID` is not set.
+
 ## Running Tests
 
 ```bash
