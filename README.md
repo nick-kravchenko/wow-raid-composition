@@ -9,10 +9,13 @@ A web application for planning and managing World of Warcraft Classic raid compo
 - **Boss Assignments** — Per-boss assignment views with automatic role-based logic and one-click MRT addon note generation:
   - **Raid-wide** — Generic cross-raid assignments
   - **T4 (Gruul's Lair / Magtheridon's Lair)** — High King Maulgar, Gruul the Dragon Killer, Magtheridon (tank assignments, Manticron cube clickers, interrupt rotations)
-  - **Blackwing Lair** — Razorgore, Vaelastrasz, Broodlord Lashlayer, Firemaw, Ebonroc, Flamegor, Chromaggus, Nefarian
-  - Ahn'Qiraj 40 *(coming soon)*
-  - Naxxramas *(coming soon)*
-  - SSC / The Eye *(coming soon)*
+  - **SSC (Serpentshrine Cavern)** *(assignments coming soon)*
+  - **TK (The Eye)** *(assignments coming soon)*
+  - Blackwing Lair *(disabled)*
+  - Ahn'Qiraj 40 *(disabled)*
+  - Naxxramas *(disabled)*
+- **BIS** — Best in Slot gear lists per spec
+- **Characters** — Roster view grouped by class with WCL performance rankings, linked to individual character pages
 - **Warcraft Logs Integration** — Character performance percentiles and gear are pre-fetched via the WCL API and bundled at build time
 - **Players** — Roster view showing all players and their characters
 - **Calendar** — Raid schedule pulled from Raid Helper event data
