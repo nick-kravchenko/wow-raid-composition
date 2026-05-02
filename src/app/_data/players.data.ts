@@ -500,19 +500,19 @@ export const players: Player[] = [
       },
     ],
   },
-  // {
-  //   name: 'Hanzo',
-  //   discord: { userId: '378933761007419393' },
-  //   characters: [
-  //     {
-  //       name: 'Hanzo',
-  //       rank: CharacterRank.main,
-  //       role: CharacterRole.melee,
-  //       class: CharacterClass.warrior,
-  //       spec: CharacterSpecEnum.Fury,
-  //     },
-  //   ],
-  // },
+  {
+    name: 'Bigfrendd',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Bigfrendd',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+    ],
+  },
   {
     name: 'Thundermate',
     discord: { userId: '247320467310903297' },
