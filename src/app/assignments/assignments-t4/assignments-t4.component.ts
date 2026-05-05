@@ -350,7 +350,7 @@ export class AssignmentsT4Component implements OnInit {
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     const bossTank = tanks.shift();
     const crossTank = paladinTanks.length ? paladinTanks.shift() : tanks.shift();
-    const squareTank = paladinTanks.length ? crossTank : tanks.shift();
+    const squareTank = crossTank;
     const moonTank = druidRangeds.shift();
     const triangleTank = mages.shift();
     const md1 = hunters.shift();
@@ -456,8 +456,10 @@ export class AssignmentsT4Component implements OnInit {
 
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
     const enhaShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.melee);
+    const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
     const meleeWarriors = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.melee);
     const rogues = this.getCharactersByClassAndRole(CharacterClass.rogue, CharacterRole.melee);
+    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
 
     // Determine all tanks and MDs upfront, then remove them from click groups
     const skullTank = tanks.shift();
@@ -563,30 +565,58 @@ export class AssignmentsT4Component implements OnInit {
     });
 
     // Kick assignments
-    this.assignments[AssignmentType.magtheridonSkullKickAssignments].assignments.push({
-      headerIcon: IconEnum.kick,
-      headerText: 'Skull Kicks',
-      actions: restoShamans.map(c => ({ caster: c, target: 'Skull Kick', icon: IconEnum.kick })),
+    const kickers = [
+      ...restoShamans,
+      ...enhaShamans,
+      ...eleShamans,
+      ...meleeWarriors,
+      ...rogues,
+      ...mages,
+    ];
+    const kickAssignments = [
+      {
+        key: AssignmentType.magtheridonSkullKickAssignments,
+        headerText: 'Skull Kicks',
+        target: 'Skull Kick',
+      },
+      {
+        key: AssignmentType.magtheridonDiamondKickAssignments,
+        headerText: 'Diamond Kicks',
+        target: 'Diamond Kick',
+      },
+      {
+        key: AssignmentType.magtheridonCrossKickAssignments,
+        headerText: 'Cross Kicks',
+        target: 'Cross Kick',
+      },
+      {
+        key: AssignmentType.magtheridonTriangleKickAssignments,
+        headerText: 'Triangle Kicks',
+        target: 'Triangle Kick',
+      },
+      {
+        key: AssignmentType.magtheridonMoonKickAssignments,
+        headerText: 'Moon Kicks',
+        target: 'Moon Kick',
+      },
+    ];
+    const kickActions: AssignmentAction[][] = kickAssignments.map(() => []);
+
+    kickers.forEach((kicker, index) => {
+      const assignmentIndex = index % kickAssignments.length;
+      kickActions[assignmentIndex].push({
+        caster: kicker,
+        target: kickAssignments[assignmentIndex].target,
+        icon: IconEnum.kick,
+      });
     });
-    this.assignments[AssignmentType.magtheridonDiamondKickAssignments].assignments.push({
-      headerIcon: IconEnum.kick,
-      headerText: 'Diamond Kicks',
-      actions: enhaShamans[0] ? [{ caster: enhaShamans[0], target: 'Diamond Kick', icon: IconEnum.kick }] : [],
-    });
-    this.assignments[AssignmentType.magtheridonCrossKickAssignments].assignments.push({
-      headerIcon: IconEnum.kick,
-      headerText: 'Cross Kicks',
-      actions: enhaShamans[1] ? [{ caster: enhaShamans[1], target: 'Cross Kick', icon: IconEnum.kick }] : [],
-    });
-    this.assignments[AssignmentType.magtheridonTriangleKickAssignments].assignments.push({
-      headerIcon: IconEnum.kick,
-      headerText: 'Triangle Kicks',
-      actions: meleeWarriors.map(c => ({ caster: c, target: 'Triangle Kick', icon: IconEnum.kick })),
-    });
-    this.assignments[AssignmentType.magtheridonMoonKickAssignments].assignments.push({
-      headerIcon: IconEnum.kick,
-      headerText: 'Moon Kicks',
-      actions: rogues.map(c => ({ caster: c, target: 'Moon Kick', icon: IconEnum.kick })),
+
+    kickAssignments.forEach((assignment, index) => {
+      this.assignments[assignment.key].assignments.push({
+        headerIcon: IconEnum.kick,
+        headerText: assignment.headerText,
+        actions: kickActions[index],
+      });
     });
   }
 
