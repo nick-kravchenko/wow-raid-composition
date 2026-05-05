@@ -8,6 +8,7 @@ export enum IconEnum {
   paladin = 'class_paladin.jpg',
   priest = 'class_priest.jpg',
   rogue = 'class_rogue.jpg',
+  shaman = 'class_shaman.png',
   warlock = 'class_warlock.jpg',
   warrior = 'class_warrior.jpg',
 

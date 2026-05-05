@@ -19,6 +19,7 @@ interface Assignment {
 }
 
 enum AssignmentType {
+  bloodLustAssignment = 'bloodLustAssignment',
   priestsAssignments = 'priestsAssignments',
   warlocksAssignments = 'warlocksAssignments',
   magesAssignments = 'magesAssignments',
@@ -51,6 +52,11 @@ export class AssignmentsRaidWideComponent implements OnInit {
   assignments: {
     [key in AssignmentType]: ClassAssignment
   } = {
+    [AssignmentType.bloodLustAssignment]: {
+      headerIcon: IconEnum.shaman,
+      headerText: 'Shamans',
+      assignments: []
+    },
     [AssignmentType.priestsAssignments]: {
       headerIcon: IconEnum.priest,
       headerText: 'Priests',
@@ -111,6 +117,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
   }
 
   fillAssignments() {
+    this.fillBloodLustAssignment();
     this.fillPriestAssignments();
     this.fillWarlockAssignments();
     this.fillMageAssignments();
@@ -118,6 +125,24 @@ export class AssignmentsRaidWideComponent implements OnInit {
     this.fillPaladinAssignments();
     this.fillHuntersAssignments();
     this.fillTankHealerAssignments();
+  }
+
+  fillBloodLustAssignment() {
+    const shaman = this.raid.find((character: Character|undefined) => character?.class === CharacterClass.shaman);
+
+    if (!shaman) return;
+
+    this.assignments.bloodLustAssignment.assignments.push({
+      headerIcon: this.iconEnum.shaman,
+      headerText: 'Bloodlust',
+      actions: [
+        {
+          caster: shaman,
+          target: 'Bloodlust',
+          icon: this.iconEnum.shaman,
+        },
+      ],
+    });
   }
 
   fillPriestAssignments() {
