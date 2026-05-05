@@ -54,7 +54,7 @@ export class AssignmentsComponent implements OnInit {
 
   getPaneIcon(pane: string): string {
     const icons = {
-      [PaneNameEnum.RaidWide]: 'inv_crown_02.jpg',
+      [PaneNameEnum.RaidWide]: 'inv_misc_rune_01.png',
       [PaneNameEnum.Bwl]: 'raids-blackwing-lair.webp',
       [PaneNameEnum.Aq40]: 'raids-ahnqiraj.webp',
       [PaneNameEnum.Naxxramas]: 'raids-naxxramas.webp',

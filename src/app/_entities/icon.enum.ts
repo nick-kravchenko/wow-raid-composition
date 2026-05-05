@@ -51,6 +51,7 @@ export enum IconEnum {
   divineIntervention = 'spell_nature_timestop.jpg',
   healingWave = 'spell_nature_magicimmunity.jpg',
   misdirect = 'ability_hunter_misdirect.png',
+  hearthstone = 'inv_misc_rune_01.png',
 
   /**
    * Marks
