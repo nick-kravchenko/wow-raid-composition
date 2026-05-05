@@ -371,9 +371,9 @@ export class AssignmentsT4Component implements OnInit {
 
     const crossActions: AssignmentAction[] = [];
     crossActions.push({ caster: crossTank, target: 'Cross Tank', icon: IconEnum.cross });
-    if (md2) {
-      crossActions.push({ caster: md2, target: `${crossTank?.name || '-'}`, icon: IconEnum.misdirect });
-    }
+    // if (md2) {
+    //   crossActions.push({ caster: md2, target: `${crossTank?.name || '-'}`, icon: IconEnum.misdirect });
+    // }
     this.assignments[AssignmentType.hkmCrossAssignments].assignments.push({
       headerIcon: IconEnum.cross,
       headerText: 'Cross Assignments',
@@ -387,9 +387,9 @@ export class AssignmentsT4Component implements OnInit {
       headerText: 'Square Assignments',
       actions: squareActions,
     });
-    if (md3) {
-      squareActions.push({ caster: md3, target: `${squareTank?.name || '-'}`, icon: IconEnum.misdirect });
-    }
+    // if (md3) {
+    //   squareActions.push({ caster: md3, target: `${squareTank?.name || '-'}`, icon: IconEnum.misdirect });
+    // }
 
     const moonActions: AssignmentAction[] = [];
     moonActions.push({ caster: moonTank, target: 'Moon Tank', icon: IconEnum.moon });
@@ -401,9 +401,9 @@ export class AssignmentsT4Component implements OnInit {
 
     const triangleActions: AssignmentAction[] = [];
     triangleActions.push({ caster: triangleTank, target: 'Triangle Tank', icon: IconEnum.triangle });
-    if (md4) {
-      triangleActions.push({ caster: md4, target: `${triangleTank?.name || '-'}`, icon: IconEnum.misdirect });
-    }
+    // if (md4) {
+    //   triangleActions.push({ caster: md4, target: `${triangleTank?.name || '-'}`, icon: IconEnum.misdirect });
+    // }
     this.assignments[AssignmentType.hkmTriangleAssignments].assignments.push({
       headerIcon: IconEnum.triangle,
       headerText: 'Triangle Assignments',
