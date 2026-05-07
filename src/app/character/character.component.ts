@@ -10,7 +10,7 @@ import { GEAR_SLOT_NAMES } from '../shared/types/gear-slot-names';
 import { CharacterClass } from '../_entities/character-class.enum';
 import { CharacterSpecEnum } from '../_entities/character-spec.enum';
 import { CharacterRole } from '../_entities/character-role.enum';
-import {DecimalPipe, LowerCasePipe} from '@angular/common';
+import { DecimalPipe, LowerCasePipe } from '@angular/common';
 
 interface BisItem { id: number; name: string; source: string; }
 interface BisEntry { slot: string; item: BisItem; alts?: BisItem[]; }

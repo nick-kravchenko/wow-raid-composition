@@ -23,6 +23,13 @@ export const players: Player[] = [
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Retribution,
       },
+      {
+        name: 'Moneylazy',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
+        spec: CharacterSpecEnum.Combat,
+      },
     ],
   },
   {
