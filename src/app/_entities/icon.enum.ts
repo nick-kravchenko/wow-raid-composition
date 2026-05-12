@@ -28,6 +28,8 @@ export enum IconEnum {
   devotion = 'spell_holy_devotionaura.jpg',
   dispel = 'spell_holy_dispelmagic.jpg',
   fearWard = 'spell_holy_excorcism.jpg',
+  fear = 'spell_shadow_possession.png',
+  freezingTrap = 'spell_frost_chainsofice.jpg',
   guardianSpirit = 'spell_holy_guardianspirit.jpg',
   holyLight = 'spell_holy_holybolt.jpg',
   layOnHands = 'spell_holy_layonhands.jpg',
@@ -52,6 +54,17 @@ export enum IconEnum {
   healingWave = 'spell_nature_magicimmunity.jpg',
   misdirect = 'ability_hunter_misdirect.png',
   hearthstone = 'inv_misc_rune_01.png',
+
+  /**
+   * Raid icons
+   */
+  raidWide = 'BTNFortress.webp',
+  hydross = 'BTNSeaElemental.webp',
+  lurkerBelow = 'BTNSeaTurtleGreen.webp',
+  leotheras = 'BTNEvilIllidan.webp',
+  karathress = 'BTNNagaMyrmidonRoyalGuard.webp',
+  morogrim = 'BTNSeaGiant.webp',
+  ladyVashj = 'naga-sea-witch.png',
 
   /**
    * Marks
