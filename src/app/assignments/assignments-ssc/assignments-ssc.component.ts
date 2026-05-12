@@ -116,7 +116,7 @@ export class AssignmentsSscComponent implements OnInit {
     });
 
     note += '\nFathom-Lord Karathress\n';
-    note += 'Kill Order: Tidalvess => Sharkkis => Karathress (Caribdis - hold separately)\n';
+    note += 'Kill Order: Tidalvess ➜ Sharkkis ➜ Karathress (Caribdis - hold separately)\n';
     this.assignments[AssignmentType.karathressAssignments].assignments.forEach(assignment => {
       note += `${assignment.headerText}\n`;
       assignment.actions.forEach(action => {
@@ -292,7 +292,7 @@ export class AssignmentsSscComponent implements OnInit {
 
     this.assignments[AssignmentType.karathressAssignments].assignments.push({
       headerIcon: IconEnum.skull,
-      headerText: 'Tanks (Tidalvess => Sharkkis => Karathress)',
+      headerText: 'Tanks (Tidalvess ➜ Sharkkis ➜ Karathress)',
       actions: actions,
     });
 
