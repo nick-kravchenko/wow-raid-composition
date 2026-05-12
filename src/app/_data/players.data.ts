@@ -368,19 +368,6 @@ export const players: Player[] = [
     ],
   },
   {
-    name: 'Art',
-    discord: { userId: '211134988119310337' },
-    characters: [
-      {
-        name: 'Artlicht',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.paladin,
-        spec: CharacterSpecEnum.Retribution,
-      }
-    ],
-  },
-  {
     name: 'Lloydaustin',
     discord: { userId: '625411819334270976' },
     characters: [
@@ -440,26 +427,26 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Greenbeam',
-    discord: { userId: '240514249024077824' },
-    characters: [
-      {
-        name: 'Greenbeam',
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Restoration,
-      },
-      {
-        name: 'Mapleleaf',
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Balance,
-      },
-    ],
-  },
+  // {
+  //   name: 'Greenbeam',
+  //   discord: { userId: '240514249024077824' },
+  //   characters: [
+  //     {
+  //       name: 'Greenbeam',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.healer,
+  //       class: CharacterClass.shaman,
+  //       spec: CharacterSpecEnum.Restoration,
+  //     },
+  //     {
+  //       name: 'Mapleleaf',
+  //       rank: CharacterRank.alt,
+  //       role: CharacterRole.ranged,
+  //       class: CharacterClass.druid,
+  //       spec: CharacterSpecEnum.Balance,
+  //     },
+  //   ],
+  // },
   {
     name: 'Renko',
     discord: { userId: '319831527821410316' },
@@ -507,9 +494,10 @@ export const players: Player[] = [
       },
     ],
   },
+  //notwink here
   {
     name: 'Bigfrendd',
-    discord: { userId: '' },
+    discord: { userId: '1213795318831779902' },
     characters: [
       {
         name: 'Bigfrendd',
@@ -517,6 +505,27 @@ export const players: Player[] = [
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Enhancement,
+      },
+    ],
+  },
+  //userId have to be updated later
+  {
+    name: 'Blackberry',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Blackbary',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+      {
+        name: 'Blackdye',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
       },
     ],
   },
@@ -620,19 +629,6 @@ export const players: Player[] = [
       },
     ],
   },
-  // {
-  //   name: 'Anvi',
-  //   discord: { userId: '615983194709295196' },
-  //   characters: [
-  //     {
-  //       name: 'Anvi',
-  //       rank: CharacterRank.main,
-  //       role: CharacterRole.melee,
-  //       class: CharacterClass.paladin,
-  //       spec: CharacterSpecEnum.Retribution,
-  //     },
-  //   ],
-  // },
   {
     name: 'Sustainable',
     discord: { userId: '379260041066446849' },
@@ -643,19 +639,6 @@ export const players: Player[] = [
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
         spec: CharacterSpecEnum.Arms,
-      },
-    ],
-  },
-  {
-    name: 'Dullo',
-    discord: { userId: '363760292913479680' },
-    characters: [
-      {
-        name: 'Dullo',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Enhancement,
       },
     ],
   },
@@ -695,6 +678,13 @@ export const players: Player[] = [
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Balance,
+      },
+      {
+        name: 'Möxentöxen',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Affliction,
       },
     ],
   },
