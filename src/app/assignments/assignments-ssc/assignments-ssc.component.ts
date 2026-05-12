@@ -299,10 +299,9 @@ export class AssignmentsSscComponent implements OnInit {
       actions: actions,
     });
 
-    const interrupters = [...restoShamans, ...eleShamans, ...enhaShamans, ...rogues];
+    const interrupters = [...restoShamans];
     const interruptActions: AssignmentAction[] = [];
     if (interrupters[0]) interruptActions.push({ caster: interrupters[0], target: 'Healing Wave interrupt #1', icon: IconEnum.kick });
-    if (interrupters[1]) interruptActions.push({ caster: interrupters[1], target: 'Healing Wave interrupt #2', icon: IconEnum.kick });
 
     this.assignments[AssignmentType.karathressAssignments].assignments.push({
       headerIcon: IconEnum.kick,
