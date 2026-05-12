@@ -160,10 +160,10 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
     if (raidSizeFromSnapshot) {
       this.formGroup.get('raidSize')?.setValue(raidSizeFromSnapshot, { emitEvent: false });
     }
+    this.handleActivatedRouteQueryParams();
     this.updateSignedUpPlayers();
     this.eventIdChangesHandler();
     this.subscribeForRaidChanges();
-    this.handleActivatedRouteQueryParams();
     this.handleFormChange();
     this.handleRaidSizeChange();
   }
@@ -204,6 +204,9 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
   }
 
   eventIdChangesHandler(): void {
+    if (this.formGroup.get('eventId')?.value) {
+      this.updateSignedUpPlayers();
+    }
     this.formGroup.get('eventId')?.valueChanges!.subscribe(() => {
       this.updateSignedUpPlayers();
     });
@@ -233,10 +236,12 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
 
   updateSignedUpPlayers(): void {
     if (this.formGroup.get('eventId')?.value) {
-      this.httpClient.get(`https://raid-helper.dev/api/v2/events/${this.formGroup.get('eventId')?.value}`).subscribe((response: any) => {
+      this.httpClient.get(`https://raid-helper.xyz/api/v4/events/${this.formGroup.get('eventId')?.value}`).subscribe((response: any) => {
         if (response) {
           this.signedPlayers = response.signUps
-            .filter((player: any) => player.className !== 'Absence')
+            .filter((player: any) => player.className !== 'Absence'
+                                            && player.className !== 'Tentative'
+                                            && player.className !== 'Late')
             .map((player: any) => player.userId);
         }
       }, () => {
