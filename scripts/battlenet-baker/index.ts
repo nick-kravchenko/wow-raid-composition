@@ -1,21 +1,21 @@
 /**
- * Battle.net Baker — fetches character profile data from Blizzard's API.
+ * Battle.net Baker - fetches character profile data from Blizzard's API.
  *
  * Reads characters from src/app/_data/players.data.ts, fetches race, class,
  * gender, level, and spec from the Battle.net Profile API, and writes a static
  * TypeScript file that the Angular app imports at build time.
  *
  * Required env vars:
- *   BNET_CLIENT_ID     — Blizzard API client ID
- *   BNET_CLIENT_SECRET — Blizzard API client secret
- *   BNET_REALM_SLUG    — Realm slug (e.g. "gehennas")
- *   BNET_REGION        — Region slug (e.g. "eu" or "us")
+ *   BNET_CLIENT_ID     - Blizzard API client ID
+ *   BNET_CLIENT_SECRET - Blizzard API client secret
+ *   BNET_REALM_SLUG    - Realm slug (e.g. "gehennas")
+ *   BNET_REGION        - Region slug (e.g. "eu" or "us")
  *
  * Optional env vars:
- *   BNET_GAME_VERSION  — "retail" | "classic" | "classic1x" (default: "classic")
- *   BNET_BATCH_SIZE    — Characters per concurrent batch (default: 10)
- *   BNET_BATCH_DELAY_MS — Delay between batches in ms (default: 500)
- *   BNET_DEBUG         — Set to "true" to log raw API responses
+ *   BNET_GAME_VERSION  - "retail" | "classic" | "classic1x" (default: "classic")
+ *   BNET_BATCH_SIZE    - Characters per concurrent batch (default: 10)
+ *   BNET_BATCH_DELAY_MS - Delay between batches in ms (default: 500)
+ *   BNET_DEBUG         - Set to "true" to log raw API responses
  */
 import dotenv from 'dotenv';
 import { writeFileSync, readFileSync } from 'fs';
@@ -115,7 +115,7 @@ async function fetchCharacterData(
     try {
       media = (await client.getCharacterMedia(realmSlug, name)) as BnetRawCharacterMedia | null;
     } catch {
-      // media is best-effort — silently skip
+      // media is best-effort - silently skip
     }
 
     return normalizeCharacter(raw as BnetRawCharacter, media, realmSlug, region, fetchedAt);
@@ -131,7 +131,7 @@ async function fetchCharacterData(
 }
 
 function renderOutputFile(data: BnetBakedData): string {
-  return `// AUTO-GENERATED — do not edit manually.
+  return `// AUTO-GENERATED - do not edit manually.
 // Run \`npm run bake:bnet\` to regenerate.
 // Generated: ${data.generatedAt}
 
@@ -178,7 +178,7 @@ export const bnetBakedData: BnetBakedData = ${JSON.stringify(data, null, 2)};
 
 async function main(): Promise<void> {
   if (!CLIENT_ID || !CLIENT_SECRET) {
-    warn('BNET_CLIENT_ID or BNET_CLIENT_SECRET not set — skipping bake (existing file preserved)');
+    warn('BNET_CLIENT_ID or BNET_CLIENT_SECRET not set - skipping bake (existing file preserved)');
     process.exit(0);
   }
 
@@ -238,7 +238,7 @@ async function main(): Promise<void> {
     }
 
     if (batchEnd < characters.length) {
-      log(`Batch done — waiting ${BATCH_DELAY_MS}ms before next batch...`);
+      log(`Batch done - waiting ${BATCH_DELAY_MS}ms before next batch...`);
       await sleep(BATCH_DELAY_MS);
     }
   }
@@ -268,7 +268,7 @@ async function main(): Promise<void> {
   }
 
   if (failed.length > 0 && failed.length === characters.length) {
-    err('All characters failed — likely an API or credentials issue');
+    err('All characters failed - likely an API or credentials issue');
     process.exit(1);
   }
 }

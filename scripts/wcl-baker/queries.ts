@@ -4,7 +4,7 @@
  * zoneID is optional (null = all zones). When omitted, WCL returns rankings
  * for every zone the character has logged.
  *
- * zoneRankings returns a JSON scalar, not a typed object — see WclRawZoneRankings
+ * zoneRankings returns a JSON scalar, not a typed object - see WclRawZoneRankings
  * in types.ts for the expected shape.
  */
 export const GET_CHARACTER_RANKINGS = /* GraphQL */ `
@@ -93,7 +93,7 @@ export const GET_REPORT_MASTER_DATA = /* GraphQL */ `
 /**
  * Fetch the CombatantInfo event for a specific actor in a specific fight.
  * The CombatantInfo event contains the character's gear, talents, and auras
- * at the start of that fight — the only way WCL v2 exposes gear data.
+ * at the start of that fight - the only way WCL v2 exposes gear data.
  */
 export const GET_REPORT_COMBATANT_INFO = /* GraphQL */ `
   query GetReportCombatantInfo(

@@ -1,4 +1,4 @@
-// AUTO-GENERATED — do not edit manually.
+// AUTO-GENERATED - do not edit manually.
 // Run `npm run bake:bnet` to regenerate.
 // Generated: 2026-04-28T21:40:28.852Z
 

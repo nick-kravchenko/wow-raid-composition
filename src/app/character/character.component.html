@@ -27,12 +27,12 @@
         <div class="parses">
           <div class="parses-best-label">Best Perf. Avg</div>
           <div class="parses-best-val" [class]="parseColorClass(wcl.bestPerformanceAverage)">
-            {{ wcl.bestPerformanceAverage !== null ? (wcl.bestPerformanceAverage | number:'1.1-1') : '—' }}
+            {{ wcl.bestPerformanceAverage !== null ? (wcl.bestPerformanceAverage | number:'1.1-1') : '-' }}
           </div>
           <div class="parses-stat">
             <span class="parses-stat-label">Median Perf. Avg: </span>
             <span [class]="parseColorClass(wcl.medianPerformanceAverage)">
-              {{ wcl.medianPerformanceAverage !== null ? (wcl.medianPerformanceAverage | number:'1.1-1') : '—' }}
+              {{ wcl.medianPerformanceAverage !== null ? (wcl.medianPerformanceAverage | number:'1.1-1') : '-' }}
             </span>
           </div>
           <div class="parses-stat">
@@ -45,10 +45,10 @@
             <div class="parse-row">
               <span class="parse-row-boss">{{ r.encounterName }}</span>
               <span [class]="parseColorClass(r.rankPercent)" class="parse-row-val">
-                  {{ r.rankPercent !== null ? (r.rankPercent | number:'1.1-1') : '—' }}
+                  {{ r.rankPercent !== null ? (r.rankPercent | number:'1.1-1') : '-' }}
                 </span>
               <span [class]="parseColorClass(r.medianPerformance)" class="parse-row-val parse-row-median">
-                  {{ r.medianPerformance !== null ? (r.medianPerformance | number:'1.1-1') : '—' }}
+                  {{ r.medianPerformance !== null ? (r.medianPerformance | number:'1.1-1') : '-' }}
                 </span>
             </div>
           }

@@ -8,7 +8,7 @@ interface TokenResponse {
 
 /**
  * Fetches a bearer token via the WCL v2 OAuth2 client-credentials flow.
- * Credentials are never stored — call this once per bake run.
+ * Credentials are never stored - call this once per bake run.
  */
 export async function getAccessToken(
   clientId: string,

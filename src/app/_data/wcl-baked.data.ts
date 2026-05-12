@@ -1,4 +1,4 @@
-// AUTO-GENERATED — do not edit manually.
+// AUTO-GENERATED - do not edit manually.
 // Run `npm run bake:wcl` to regenerate.
 // Generated: 2026-04-28T21:51:38.555Z
 

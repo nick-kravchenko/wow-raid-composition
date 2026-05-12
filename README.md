@@ -4,21 +4,21 @@ A web application for planning and managing World of Warcraft Classic raid compo
 
 ## Features
 
-- **Composition Builder** — Assign characters across multiple raid groups (25-man), filter the roster by rank, class, spec, and role, copy the composition as an image to clipboard
-- **Shareable URLs** — Raid compositions are serialized into query params so you can share a link directly
-- **Boss Assignments** — Per-boss assignment views with automatic role-based logic and one-click MRT addon note generation:
-  - **Raid-wide** — Generic cross-raid assignments
-  - **T4 (Gruul's Lair / Magtheridon's Lair)** — High King Maulgar, Gruul the Dragon Killer, Magtheridon (tank assignments, Manticron cube clickers, interrupt rotations)
+- **Composition Builder** - Assign characters across multiple raid groups (25-man), filter the roster by rank, class, spec, and role, copy the composition as an image to clipboard
+- **Shareable URLs** - Raid compositions are serialized into query params so you can share a link directly
+- **Boss Assignments** - Per-boss assignment views with automatic role-based logic and one-click MRT addon note generation:
+  - **Raid-wide** - Generic cross-raid assignments
+  - **T4 (Gruul's Lair / Magtheridon's Lair)** - High King Maulgar, Gruul the Dragon Killer, Magtheridon (tank assignments, Manticron cube clickers, interrupt rotations)
   - **SSC (Serpentshrine Cavern)** *(assignments coming soon)*
   - **TK (The Eye)** *(assignments coming soon)*
   - Blackwing Lair *(disabled)*
   - Ahn'Qiraj 40 *(disabled)*
   - Naxxramas *(disabled)*
-- **BIS** — Best in Slot gear lists per spec
-- **Characters** — Roster view grouped by class with WCL performance rankings, linked to individual character pages
-- **Warcraft Logs Integration** — Character performance percentiles and gear are pre-fetched via the WCL API and bundled at build time
-- **Players** — Roster view showing all players and their characters
-- **Calendar** — Raid schedule pulled from Raid Helper event data
+- **BIS** - Best in Slot gear lists per spec
+- **Characters** - Roster view grouped by class with WCL performance rankings, linked to individual character pages
+- **Warcraft Logs Integration** - Character performance percentiles and gear are pre-fetched via the WCL API and bundled at build time
+- **Players** - Roster view showing all players and their characters
+- **Calendar** - Raid schedule pulled from Raid Helper event data
 
 ## Supported Classes & Roles
 
@@ -38,8 +38,8 @@ A web application for planning and managing World of Warcraft Classic raid compo
 
 - [Angular 21](https://angular.dev)
 - TypeScript 5.9
-- SCSS (Sass module system — `@use`/`@forward`)
-- [html2canvas](https://html2canvas.hertzen.com) — screenshot to clipboard
+- SCSS (Sass module system - `@use`/`@forward`)
+- [html2canvas](https://html2canvas.hertzen.com) - screenshot to clipboard
 - Font Awesome 6
 
 ## Requirements

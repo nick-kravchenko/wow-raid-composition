@@ -277,7 +277,7 @@ export const bisList = [
     "item": {
       "id": 29290,
       "name": "Violet Signet of the Grand Restorer",
-      "source": "Reputation: The Violet Eye—Exalted"
+      "source": "Reputation: The Violet Eye-Exalted"
     },
     "alts": [
       {

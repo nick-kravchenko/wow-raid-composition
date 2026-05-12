@@ -1,29 +1,29 @@
 /**
- * WCL Baker — standalone data-baking service
+ * WCL Baker - standalone data-baking service
  *
  * Reads characters from src/app/_data/players.data.ts, fetches their
  * rankings and gear from Warcraft Logs API v2, and writes a static
  * TypeScript file that the Angular app imports at build time.
  *
  * Required env vars:
- *   WCL_CLIENT_ID      — WCL API client ID
- *   WCL_CLIENT_SECRET  — WCL API client secret
- *   WCL_DEFAULT_REALM  — Realm slug (e.g. "gehennas") for all characters
- *   WCL_DEFAULT_REGION — Region slug (e.g. "eu" or "us") for all characters
+ *   WCL_CLIENT_ID      - WCL API client ID
+ *   WCL_CLIENT_SECRET  - WCL API client secret
+ *   WCL_DEFAULT_REALM  - Realm slug (e.g. "gehennas") for all characters
+ *   WCL_DEFAULT_REGION - Region slug (e.g. "eu" or "us") for all characters
  *
  * Optional env vars:
- *   WCL_ZONE_ID        — Filter rankings to a single zone ID (e.g. "1012")
- *   WCL_SKIP_GEAR      — Set to "true" to skip gear fetching (faster, fewer API calls)
- *   WCL_API_DELAY_MS   — Delay between API calls within a single character fetch in ms (default: 300)
- *   WCL_BATCH_SIZE     — Number of characters to fetch concurrently (default: 5)
- *   WCL_BATCH_DELAY_MS — Delay between batches in ms (default: 1000)
+ *   WCL_ZONE_ID        - Filter rankings to a single zone ID (e.g. "1012")
+ *   WCL_SKIP_GEAR      - Set to "true" to skip gear fetching (faster, fewer API calls)
+ *   WCL_API_DELAY_MS   - Delay between API calls within a single character fetch in ms (default: 300)
+ *   WCL_BATCH_SIZE     - Number of characters to fetch concurrently (default: 5)
+ *   WCL_BATCH_DELAY_MS - Delay between batches in ms (default: 1000)
  */
 import dotenv from 'dotenv';
 import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
-// players.data.ts uses only plain string enums — no Angular runtime required.
+// players.data.ts uses only plain string enums - no Angular runtime required.
 // tsx (esbuild) resolves its relative imports correctly.
 import { players } from '../../src/app/_data/players.data';
 
@@ -115,7 +115,7 @@ function charKey(name: string): string {
  * most recent logged report. Returns an empty array if no report exists or any
  * step fails, along with a diagnostic message.
  *
- * This is the only way WCL v2 exposes gear data — it is snapshot of equipment
+ * This is the only way WCL v2 exposes gear data - it is snapshot of equipment
  * at the start of a specific fight, not live armory data.
  */
 async function fetchGear(
@@ -245,7 +245,7 @@ function readExistingCharacters(): Record<string, WclBakedCharacter> {
     const parsed = JSON.parse(jsonStr) as WclBakedData;
     return parsed.characters ?? {};
   } catch {
-    warn('Could not parse existing baked data — starting fresh');
+    warn('Could not parse existing baked data - starting fresh');
     return {};
   }
 }
@@ -266,18 +266,18 @@ function mergeCharacter(
 ): WclBakedCharacter {
   if (!existing) return fresh;
 
-  // Fresh complete — nothing to inherit
+  // Fresh complete - nothing to inherit
   if (!fresh.error && !fresh.partial) return fresh;
 
-  // Fresh errored but existing succeeded — preserve existing, note stale
+  // Fresh errored but existing succeeded - preserve existing, note stale
   if (fresh.error && !existing.error) {
     warn(`Using existing data for "${existing.characterName}" (fresh fetch errored: ${fresh.error})`);
     return existing;
   }
 
-  // Fresh rankings ok but gear missing — fill gear from existing
+  // Fresh rankings ok but gear missing - fill gear from existing
   if (!fresh.error && fresh.partial && existing.gear.length > 0) {
-    log(`  ↩ "${fresh.characterName}": gear partial — reusing ${existing.gear.length} slot(s) from previous bake`);
+    log(`  ↩ "${fresh.characterName}": gear partial - reusing ${existing.gear.length} slot(s) from previous bake`);
     return { ...fresh, gear: existing.gear, partial: false };
   }
 
@@ -344,7 +344,7 @@ async function fetchCharacterData(
 // ── Output file generation ───────────────────────────────────────────────────
 
 function renderOutputFile(data: WclBakedData): string {
-  return `// AUTO-GENERATED — do not edit manually.
+  return `// AUTO-GENERATED - do not edit manually.
 // Run \`npm run bake:wcl\` to regenerate.
 // Generated: ${data.generatedAt}
 
@@ -411,7 +411,7 @@ async function main(): Promise<void> {
   // Validate required env vars early
   if (!CLIENT_ID || !CLIENT_SECRET) {
     warn(
-      'WCL_CLIENT_ID or WCL_CLIENT_SECRET not set — skipping bake (existing file preserved)',
+      'WCL_CLIENT_ID or WCL_CLIENT_SECRET not set - skipping bake (existing file preserved)',
     );
     process.exit(0);
   }
@@ -480,7 +480,7 @@ async function main(): Promise<void> {
     }
 
     if (batchEnd < characters.length) {
-      log(`Batch done — waiting ${BATCH_DELAY_MS}ms before next batch...`);
+      log(`Batch done - waiting ${BATCH_DELAY_MS}ms before next batch...`);
       await sleep(BATCH_DELAY_MS);
     }
   }
@@ -521,7 +521,7 @@ async function main(): Promise<void> {
 
   // Exit non-zero only if every single character failed (total failure)
   if (errorCount > 0 && errorCount === characters.length) {
-    err('All characters failed — this is likely an API or credentials issue');
+    err('All characters failed - this is likely an API or credentials issue');
     process.exit(1);
   }
 }

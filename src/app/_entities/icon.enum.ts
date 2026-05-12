@@ -16,6 +16,7 @@ export enum IconEnum {
    * Abilities
    */
   aoeTaunt = 'ability_bullrush.jpg',
+  knockAway = 'inv_gauntlets_05.jpg',
   catForm = 'ability_druid_catform.jpg',
   kick = 'ability_kick.jpg',
   bearForm = 'ability_racial_bearform.jpg',
@@ -65,6 +66,10 @@ export enum IconEnum {
   karathress = 'BTNNagaMyrmidonRoyalGuard.webp',
   morogrim = 'BTNSeaGiant.webp',
   ladyVashj = 'naga-sea-witch.png',
+  alar = 'BTNPhoenixEgg.png',
+  voidReaver = 'BTNArmorGolem.png',
+  solarian = 'BTNSorceress.png',
+  kaelthas = 'BTNHeroBloodElfPrince.png',
 
   /**
    * Marks
