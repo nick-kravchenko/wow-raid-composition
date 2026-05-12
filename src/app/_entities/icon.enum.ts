@@ -55,6 +55,7 @@ export enum IconEnum {
   healingWave = 'spell_nature_magicimmunity.jpg',
   misdirect = 'ability_hunter_misdirect.png',
   hearthstone = 'inv_misc_rune_01.png',
+  taintedCore = 'spell_nature_elementalshields.jpg',
 
   /**
    * Raid icons

@@ -270,9 +270,6 @@ export class AssignmentsSscComponent implements OnInit {
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
-    const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
-    const enhaShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.melee);
-    const rogues = this.getCharactersByClassAndRole(CharacterClass.rogue, CharacterRole.melee);
     const tank1 = druidTanks.shift();
     const tank2 = paladinTanks.shift();
     const tank3 = druidTanks.shift();
@@ -329,7 +326,9 @@ export class AssignmentsSscComponent implements OnInit {
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
+    const rogues = this.getCharactersByClassAndRole(CharacterClass.rogue, CharacterRole.melee);
 
     const mt = druidTanks[0] ?? paladinTanks[0];
     const eliteTank = druidTanks[0] ?? paladinTanks[0];
@@ -351,6 +350,31 @@ export class AssignmentsSscComponent implements OnInit {
       headerIcon: IconEnum.skull,
       headerText: 'Phase 2 - Adds',
       actions: p2Actions,
+    });
+
+    const rangedDps = [...hunters, ...mages, ...warlocks];
+    const taintedCoreCarriers = rangedDps.slice(0, 4);
+    const positions = [
+      'in front of the boss (entrance)',
+      'behind the boss (back wall)',
+      'left side of the room',
+      'right side of the room',
+    ];
+    const taintedCoreActions: AssignmentAction[] = positions.map((position, i) => ({
+      caster: taintedCoreCarriers[i],
+      target: position,
+      icon: undefined,
+    }));
+    taintedCoreActions.push({
+      caster: rogues[0],
+      target: 'dunk duty',
+      icon: undefined,
+    });
+
+    this.assignments[AssignmentType.vashjAssignments].assignments.push({
+      headerIcon: IconEnum.taintedCore,
+      headerText: 'Phase 2 - Tainted Core Duty',
+      actions: taintedCoreActions,
     });
 
     const sporebatActions: AssignmentAction[] = [];
