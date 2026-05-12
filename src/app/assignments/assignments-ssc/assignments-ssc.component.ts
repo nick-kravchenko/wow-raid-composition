@@ -213,9 +213,9 @@ export class AssignmentsSscComponent implements OnInit {
     for (let i = 0; i < tanks.length; i++) {
       const tank = tanks[i];
       if (i === 0) {
-        actions.push({ caster: tank, target: 'Main Tank (The Lurker Below)', icon: IconEnum.skull });
+        actions.push({ caster: tank, target: 'MT', icon: IconEnum.skull });
       } else {
-        actions.push({ caster: tank, target: `Secondary Tank ${i} (adds)`, icon: IconEnum.skull });
+        actions.push({ caster: tank, target: `OT ${i} (melee adds)`, icon: IconEnum.skull });
       }
     }
 
@@ -228,7 +228,7 @@ export class AssignmentsSscComponent implements OnInit {
     const ambusherActions: AssignmentAction[] = [];
     if (mages[0]) ambusherActions.push({ caster: mages[0], target: 'Ambusher #1 (sheep)', icon: IconEnum.polymorph });
     if (warlocks[0]) ambusherActions.push({ caster: warlocks[0], target: 'Ambusher #2 (fear)', icon: IconEnum.fear });
-    if (hunters[0]) ambusherActions.push({ caster: hunters[0], target: 'Ambusher #3 (trap/kill)', icon: IconEnum.freezingTrap });
+    if (hunters[0]) ambusherActions.push({ caster: hunters[0], target: 'Ambusher #3 (trap)', icon: IconEnum.freezingTrap });
 
     this.assignments[AssignmentType.lurkerBelowAssignments].assignments.push({
       headerIcon: IconEnum.polymorph,
@@ -258,16 +258,15 @@ export class AssignmentsSscComponent implements OnInit {
     this.assignments[AssignmentType.leoterasAssignments].assignments.push({
       headerIcon: IconEnum.misdirect,
       headerText: 'Misdirect (after Whirlwind / phase switch)',
-      actions: hunters.map(hunter => ({
+      actions: hunters.map((hunter, i) => ({
         caster: hunter,
-        target: humanTankName,
+        target: `MD #${i + 1}`,
         icon: IconEnum.misdirect,
       })),
     });
   }
 
   fillKarathressAssignments() {
-    const warriorTanks = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank);
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
@@ -334,18 +333,18 @@ export class AssignmentsSscComponent implements OnInit {
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
 
     const mt = druidTanks[0] ?? paladinTanks[0];
-    const eliteTank = druidTanks[0] ?? druidTanks[0];
+    const eliteTank = druidTanks[0] ?? paladinTanks[0];
 
     this.assignments[AssignmentType.vashjAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'Phase 1 - Boss',
       actions: [
-        { caster: mt, target: 'Lady Vashj (MT)', icon: IconEnum.skull },
+        { caster: mt, target: 'MT', icon: undefined },
       ],
     });
 
     const p2Actions: AssignmentAction[] = [
-      { caster: eliteTank, target: 'Coilfang Elite (center)', icon: IconEnum.skull },
+      { caster: eliteTank, target: 'Coilfang Elite', icon: undefined },
     ];
     if (eleShamans[0]) p2Actions.push({ caster: eleShamans[0], target: 'Coilfang Strider (kite)', icon: undefined });
 
