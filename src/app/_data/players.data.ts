@@ -745,7 +745,14 @@ export const players: Player[] = [
         role: CharacterRole.tank,
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Feral,
-      }
+      },
+      {
+        name: 'Deserving',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Shadow,
+      },
     ],
   },
 ];
