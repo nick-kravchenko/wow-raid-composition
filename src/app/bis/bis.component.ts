@@ -100,6 +100,7 @@ export class BisComponent {
 
     try {
       const loader = this.list.find(l => l.id === id)?.loader;
+      if (!loader) throw new Error(`No loader found for ${this.selectedBisListId}`);
 
       const mod = await loader();
       this.selectedBisList.set(mod.bisList ?? []);
