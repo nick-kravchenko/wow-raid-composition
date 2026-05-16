@@ -22,7 +22,7 @@ export interface WclEncounterRanking {
   bestAmount: number;
   spec: string;
   allStars: {
-    points: number;
+    points: number | null;
     rank: number | null;
     rankPercent: number | null;
     total: number;
@@ -363,7 +363,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 83.322709387175,
           "spec": "Shadow",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -6336,7 +6336,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 821.85402247702,
           "spec": "Elemental",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -7574,7 +7574,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 0,
           "spec": "Restoration",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -7638,7 +7638,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 0,
           "spec": "Restoration",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -8515,7 +8515,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 36.409253535815,
           "spec": "Restoration",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -8579,7 +8579,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 8.988938851447,
           "spec": "Restoration",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -15449,7 +15449,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 0,
           "spec": "Holy",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -15513,7 +15513,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 0.27226112867363,
           "spec": "Holy",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -21159,7 +21159,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 89.071075724721,
           "spec": "Shadow",
           "allStars": {
-            "points": "-",
+            "points": null,
             "rank": null,
             "rankPercent": null,
             "total": 0

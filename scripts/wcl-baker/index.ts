@@ -368,7 +368,7 @@ export interface WclEncounterRanking {
   bestAmount: number;
   spec: string;
   allStars: {
-    points: number;
+    points: number | null;
     rank: number | null;
     rankPercent: number | null;
     total: number;

@@ -244,7 +244,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Survival,
       },
       {
-        name: 'Serj',
+        name: 'Serjo',
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.druid,
@@ -522,7 +522,7 @@ export const players: Player[] = [
       },
       {
         name: 'Blackdye',
-        rank: CharacterRank.main,
+        rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
         spec: CharacterSpecEnum.BeastMastery,

@@ -13,7 +13,7 @@ export interface WclRawGearItem {
 }
 
 export interface WclRawAllStars {
-  points: number;
+  points: number | string;
   rank: number | string;
   rankPercent: number | string;
   total: number;
@@ -133,7 +133,7 @@ export interface WclEncounterRanking {
   bestAmount: number;
   spec: string;
   allStars: {
-    points: number;
+    points: number | null;
     rank: number | null;
     rankPercent: number | null;
     total: number;

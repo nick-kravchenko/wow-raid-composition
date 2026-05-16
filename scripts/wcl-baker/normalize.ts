@@ -49,7 +49,7 @@ export function normalizeZoneRankings(
       spec: r.spec ?? '',
       allStars: r.allStars
         ? {
-            points: r.allStars.points,
+            points: typeof r.allStars.points === 'number' ? r.allStars.points : null,
             rank: typeof r.allStars.rank === 'number' ? r.allStars.rank : null,
             rankPercent: typeof r.allStars.rankPercent === 'number' ? r.allStars.rankPercent : null,
             total: r.allStars.total,
