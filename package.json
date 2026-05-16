@@ -11,6 +11,7 @@
     "bake:wcl": "tsx scripts/wcl-baker/index.ts",
     "bake:bnet": "tsx scripts/battlenet-baker/index.ts",
     "bake:bis:t4": "tsx scripts/bis-baker/t4/_parser.ts",
+    "bake:bis:t5": "tsx scripts/bis-baker/t5/_parser.ts",
     "attendance": "tsx src/app/_data/raid-helper-attendance.ts"
   },
   "private": true,

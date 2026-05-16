@@ -83,57 +83,103 @@ export class AssignmentsSscComponent implements OnInit {
     },
   };
 
-  get mrtNote() {
+  private buildPositionalMrtNote(
+    bossName: string,
+    allAssignments: Assignment[],
+    plainCount: number,
+    casterName: (a: AssignmentAction) => string,
+    targetName: (a: AssignmentAction) => string,
+  ): string {
+    let note = `${bossName}\n`;
+
+    allAssignments.slice(0, plainCount).forEach(assignment => {
+      note += `\n${assignment.headerText}\n`;
+      assignment.actions.forEach(action => {
+        note += `${casterName(action)} -> ${targetName(action)}\n`;
+      });
+    });
+
+    note += '\n';
+
+    const groupAssignments = allAssignments.slice(plainCount);
+    groupAssignments.forEach(assignment => {
+      const members: string[] = [];
+      assignment.actions.forEach(action => {
+        if (action.caster) members.push(casterName(action));
+        if (typeof action.target !== 'string') members.push(targetName(action));
+        else if (action.target !== '-') members.push(action.target);
+      });
+      note += `${assignment.headerText}: ${members.join(', ')}\n`;
+    });
+
+    note += '\n';
+
+    groupAssignments.forEach(assignment => {
+      const groupName = assignment.headerText.toUpperCase();
+      assignment.actions.forEach(action => {
+        if (action.caster) note += `{p:${casterName(action)}}\nYOU ARE IN ${groupName}{/p}`;
+        if (typeof action.target !== 'string') note += `{p:${targetName(action)}}\nYOU ARE IN ${groupName}{/p}`;
+      });
+    });
+
+    return note;
+  }
+
+  getMrtNoteForBoss(key: AssignmentType): string {
     const casterName = (action: AssignmentAction) =>
       typeof action.caster === 'string' ? action.caster : action.caster?.name ?? '-';
     const targetName = (action: AssignmentAction) =>
       typeof action.target === 'string' ? action.target : (action.target as Character).name;
 
-    let note = '';
+    const classAssignment = this.assignments[key];
 
-    note += 'Hydross the Unstable\n';
-    this.assignments[AssignmentType.hydrossAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
+    if (key === AssignmentType.hydrossAssignments) {
+      return this.buildPositionalMrtNote('Hydross the Unstable', classAssignment.assignments, 1, casterName, targetName);
+    }
+
+    if (key === AssignmentType.lurkerBelowAssignments) {
+      return this.buildPositionalMrtNote('The Lurker Below', classAssignment.assignments, 2, casterName, targetName);
+    }
+
+    if (key === AssignmentType.leoterasAssignments) {
+      return this.buildPositionalMrtNote('Leotheras the Blind', classAssignment.assignments, 2, casterName, targetName);
+    }
+
+    if (key === AssignmentType.vashjAssignments) {
+      let note = 'Lady Vashj\n';
+      const taintedCoreIndex = 2;
+
+      classAssignment.assignments.forEach((assignment, i) => {
+        if (i === taintedCoreIndex) return;
+        note += `\n${assignment.headerText}\n`;
+        assignment.actions.forEach(action => {
+          note += `${casterName(action)} -> ${targetName(action)}\n`;
+        });
+      });
+
+      const taintedCore = classAssignment.assignments[taintedCoreIndex];
+      note += `\n${taintedCore.headerText}\n`;
+      taintedCore.actions.forEach(action => {
         note += `${casterName(action)} -> ${targetName(action)}\n`;
       });
-    });
 
-    note += '\nThe Lurker Below\n';
-    this.assignments[AssignmentType.lurkerBelowAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
-        note += `${casterName(action)} -> ${targetName(action)}\n`;
+      note += '\n';
+      taintedCore.actions.forEach(action => {
+        if (action.caster) {
+          note += `{p:${casterName(action)}}\nTAINTED CORE DUTY: ${targetName(action).toUpperCase()}{/p}`;
+        }
       });
-    });
 
-    note += '\nLeotheras the Blind\n';
-    this.assignments[AssignmentType.leoterasAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
-        note += `${casterName(action)} -> ${targetName(action)}\n`;
-      });
-    });
+      return note;
+    }
 
-    note += '\nFathom-Lord Karathress\n';
-    note += 'Kill Order: Tidalvess ➜ Sharkkis ➜ Karathress (Caribdis - hold separately)\n';
-    this.assignments[AssignmentType.karathressAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
-        note += `${casterName(action)} -> ${targetName(action)}\n`;
-      });
-    });
+    let note = classAssignment.headerText + '\n';
 
-    note += '\nMorogrim Tidewalker\n';
-    this.assignments[AssignmentType.morogrimAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
-        note += `${casterName(action)} -> ${targetName(action)}\n`;
-      });
-    });
+    if (key === AssignmentType.karathressAssignments) {
+      note += 'Kill Order: Tidalvess ➜ Sharkkis ➜ Karathress (Caribdis - hold separately)\n';
+    }
 
-    note += '\nLady Vashj\n';
-    this.assignments[AssignmentType.vashjAssignments].assignments.forEach(assignment => {
+    classAssignment.assignments.forEach(assignment => {
       note += `${assignment.headerText}\n`;
       assignment.actions.forEach(action => {
         note += `${casterName(action)} -> ${targetName(action)}\n`;
@@ -141,6 +187,10 @@ export class AssignmentsSscComponent implements OnInit {
     });
 
     return note;
+  }
+
+  get mrtNote() {
+    return this.keys.map(key => this.getMrtNoteForBoss(key)).join('\n');
   }
 
   ngOnInit() {
@@ -168,6 +218,14 @@ export class AssignmentsSscComponent implements OnInit {
     this.fillVashjAssignments();
   }
 
+  pairUp(chars: (Character | undefined)[]): AssignmentAction[] {
+    const actions: AssignmentAction[] = [];
+    for (let i = 0; i < chars.length; i += 2) {
+      actions.push({ caster: chars[i], target: chars[i + 1] ?? '-', icon: undefined });
+    }
+    return actions;
+  }
+
   fillHydrossAssignments() {
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
@@ -183,16 +241,49 @@ export class AssignmentsSscComponent implements OnInit {
       ],
     });
 
-    const addActions: AssignmentAction[] = [ nrTank, frTank ].map((tank, i) => ({
-      caster: tank,
-      target: `Add Tank ${i + 1} (Pure/Tainted Spawn)`,
-      icon: undefined,
-    }));
+    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
+    const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
+    const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
+    const rangedDps = [...hunters, ...mages, ...warlocks, ...eleShamans];
 
-    this.assignments[AssignmentType.hydrossAssignments].assignments.push({
-      headerIcon: IconEnum.skull,
-      headerText: 'Adds (after each transition)',
-      actions: addActions,
+    const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
+    const priestHealers = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
+    const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
+    const healers = [...paladinHealers, ...druidHealers, ...priestHealers, ...restoShamans];
+
+    const rangedGroupNames = ['Left', 'Middle', 'Right'];
+    const rangedGroups: Character[][] = [[], [], []];
+    const healerGroups: Character[][] = [[], [], []];
+    rangedDps.forEach((char, i) => rangedGroups[i % 3].push(char));
+    healers.forEach((char, i) => healerGroups[2 - (i % 3)].push(char));
+
+    rangedGroupNames.forEach((groupName, i) => {
+      const members = [...rangedGroups[i], ...healerGroups[i]];
+      this.assignments[AssignmentType.hydrossAssignments].assignments.push({
+        headerIcon: IconEnum.skull,
+        headerText: `${groupName} Ranged Group`,
+        actions: this.pairUp(members),
+      });
+    });
+
+    const warriors = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.melee);
+    const rogues = this.getCharactersByClassAndRole(CharacterClass.rogue, CharacterRole.melee);
+    const enhShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.melee);
+    const retPaladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.melee);
+    const ferals = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.melee);
+    const meleeDps = [...warriors, ...rogues, ...enhShamans, ...retPaladins, ...ferals];
+
+    const meleeGroups: Character[][] = [[], []];
+    meleeDps.forEach((char, i) => meleeGroups[i % 2].push(char));
+
+    ['Left', 'Right'].forEach((groupName, i) => {
+      this.assignments[AssignmentType.hydrossAssignments].assignments.push({
+        headerIcon: IconEnum.skull,
+        headerText: `${groupName} Melee Group`,
+        actions: this.pairUp(meleeGroups[i]),
+      });
     });
   }
 
@@ -206,8 +297,10 @@ export class AssignmentsSscComponent implements OnInit {
     const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    const rangedPriests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.ranged);
+    const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
+    const boomies = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
 
-    const mt = druidTanks[0];
     const actions = [];
 
     for (let i = 0; i < tanks.length; i++) {
@@ -227,13 +320,29 @@ export class AssignmentsSscComponent implements OnInit {
 
     const ambusherActions: AssignmentAction[] = [];
     if (mages[0]) ambusherActions.push({ caster: mages[0], target: 'Ambusher #1 (sheep)', icon: IconEnum.polymorph });
-    if (warlocks[0]) ambusherActions.push({ caster: warlocks[0], target: 'Ambusher #2 (fear)', icon: IconEnum.fear });
-    if (hunters[0]) ambusherActions.push({ caster: hunters[0], target: 'Ambusher #3 (trap)', icon: IconEnum.freezingTrap });
+    if (hunters[0]) ambusherActions.push({ caster: hunters[0], target: 'Ambusher #2 (trap)', icon: IconEnum.freezingTrap });
+    if (warlocks[0]) ambusherActions.push({ caster: warlocks[0], target: 'Ambusher #3 (fear)', icon: IconEnum.fear });
 
     this.assignments[AssignmentType.lurkerBelowAssignments].assignments.push({
       headerIcon: IconEnum.polymorph,
       headerText: 'Ambusher Control (small platforms, Submerge)',
       actions: ambusherActions,
+    });
+
+    const rangedGroup1 = [...mages, ...rangedPriests];
+    const rangedGroup2 = [...hunters];
+    const rangedGroup3 = [...warlocks, ...eleShamans, ...boomies];
+
+    [
+      { label: 'Left Platform', members: rangedGroup1 },
+      { label: 'Platform Behind the Boss', members: rangedGroup2 },
+      { label: 'Right Platform', members: rangedGroup3 },
+    ].forEach(group => {
+      this.assignments[AssignmentType.lurkerBelowAssignments].assignments.push({
+        headerIcon: IconEnum.skull,
+        headerText: group.label,
+        actions: this.pairUp(group.members),
+      });
     });
   }
 
@@ -241,6 +350,19 @@ export class AssignmentsSscComponent implements OnInit {
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
+    const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
+    const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
+    const boomies = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
+    const shadowPriests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.ranged);
+
+    const groups: Character[][] = this.raid.reduce((result: Character[][], char, index) => {
+      const chunkIndex = Math.floor(index / 5);
+      if (!result[chunkIndex]) result[chunkIndex] = [];
+      result[chunkIndex].push(char);
+      return result;
+    }, []);
+    const group4 = groups[3] ?? [];
 
     const humanPhaseTank = druidTanks[0] ?? paladinTanks[0];
     const demonPhaseTank = paladinTanks[0];
@@ -254,7 +376,6 @@ export class AssignmentsSscComponent implements OnInit {
       ],
     });
 
-    const humanTankName = humanPhaseTank?.name ?? 'Main Tank';
     this.assignments[AssignmentType.leoterasAssignments].assignments.push({
       headerIcon: IconEnum.misdirect,
       headerText: 'Misdirect (after Whirlwind / phase switch)',
@@ -264,52 +385,92 @@ export class AssignmentsSscComponent implements OnInit {
         icon: IconEnum.misdirect,
       })),
     });
+
+    const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
+    const priestHealers = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
+    const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
+    const leftHealers = [...restoShamans, ...paladinHealers];
+    const rightHealers = [...priestHealers, ...druidHealers];
+
+    const otherRanged = [...mages, ...warlocks, ...eleShamans, ...boomies, ...shadowPriests]
+      .filter(char => !group4.includes(char));
+
+    [
+      { label: 'Left ', members: [...hunters, ...leftHealers] },
+      { label: 'Middle', members: group4 },
+      { label: 'Right', members: [...otherRanged, ...rightHealers] },
+    ].forEach(group => {
+      this.assignments[AssignmentType.leoterasAssignments].assignments.push({
+        headerIcon: IconEnum.skull,
+        headerText: group.label,
+        actions: this.pairUp(group.members),
+      });
+    });
   }
 
   fillKarathressAssignments() {
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
+    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
     const tank1 = druidTanks.shift();
     const tank2 = paladinTanks.shift();
     const tank3 = druidTanks.shift();
+    const md1 = hunters.shift();
+    const md2 = hunters.shift();
+    const md3 = hunters.shift();
+    const md4 = hunters.shift();
 
+    const actionsTidalvess = [{ caster: tank2, target: 'Tidalvess', icon: IconEnum.skull }];
+    const actionsSharkkis = [{ caster: tank1, target: 'Sharkkis', icon: IconEnum.cross }];
+    const actionsKarathress = [{ caster: tank1, target: 'Karathress', icon: IconEnum.square }];
+    const actionsCaribdis = [{ caster: tank3, target: 'Caribdis', icon: IconEnum.moon }];
 
-    const actions = [];
-
-    actions.push({
-      caster: tank1, target: 'Tidalvess', icon: IconEnum.skull,
-    });
-    actions.push({
-      caster: tank2, target: 'Sharkkis', icon: IconEnum.cross,
-    });
-    actions.push({
-      caster: tank2, target: 'Karathress', icon: IconEnum.square,
-    });
-    actions.push({
-      caster: tank3, target: 'Caribdis', icon: IconEnum.aoeTaunt,
-    });
+    if (md1) {
+      actionsTidalvess.push({ caster: md1, target: tank2?.name ?? 'Tidalvess Tank', icon: IconEnum.misdirect });
+    }
+    if (md2) {
+      actionsSharkkis.push({ caster: md2, target: tank1?.name ?? 'Sharkkis Tank', icon: IconEnum.misdirect });
+    }
+    if (md3) {
+      actionsCaribdis.push({ caster: md3, target: tank1?.name ?? 'Sharkkis Tank', icon: IconEnum.misdirect });
+    }
+    if (md4) {
+      actionsKarathress.push({ caster: md4, target: tank1?.name ?? 'Sharkkis Tank', icon: IconEnum.misdirect });
+    }
+    actionsCaribdis.push(...(restoShamans[0] ? [{ caster: restoShamans[0], target: 'Healing Wave interrupt', icon: IconEnum.kick }] : []));
 
     this.assignments[AssignmentType.karathressAssignments].assignments.push({
       headerIcon: IconEnum.skull,
-      headerText: 'Tanks (Tidalvess ➜ Sharkkis ➜ Karathress)',
-      actions: actions,
+      headerText: 'Tidalvess',
+      actions: actionsTidalvess,
     });
-
-    const interrupters = [...restoShamans];
-    const interruptActions: AssignmentAction[] = [];
-    if (interrupters[0]) interruptActions.push({ caster: interrupters[0], target: 'Healing Wave interrupt #1', icon: IconEnum.kick });
-
     this.assignments[AssignmentType.karathressAssignments].assignments.push({
-      headerIcon: IconEnum.kick,
-      headerText: 'Caribdis Healing Wave Interrupt',
-      actions: interruptActions,
+      headerIcon: IconEnum.cross,
+      headerText: 'Sharkkis',
+      actions: actionsSharkkis,
+    });
+    this.assignments[AssignmentType.karathressAssignments].assignments.push({
+      headerIcon: IconEnum.square,
+      headerText: 'Karathress',
+      actions: actionsKarathress,
+    });
+    this.assignments[AssignmentType.karathressAssignments].assignments.push({
+      headerIcon: IconEnum.moon,
+      headerText: 'Caribdis',
+      actions: actionsCaribdis,
     });
   }
 
   fillMorogrimAssignments() {
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
+    const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
+    const priestHealers = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
+    const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
+    const healers = [...druidHealers, ...priestHealers, ...paladinHealers, ...restoShamans];
 
     this.assignments[AssignmentType.morogrimAssignments].assignments.push({
       headerIcon: IconEnum.skull,
@@ -319,16 +480,29 @@ export class AssignmentsSscComponent implements OnInit {
         { caster: paladinTanks[0], target: 'Murloc AoE Tank', icon: IconEnum.aoeTaunt },
       ],
     });
+
+    this.assignments[AssignmentType.morogrimAssignments].assignments.push({
+      headerIcon: IconEnum.wateryGrave,
+      headerText: 'Watery Grave Healers',
+      actions: [
+        { caster: healers.shift(), target: 'Healer', icon: undefined },
+        { caster: healers.shift(), target: 'Backup', icon: undefined },
+      ],
+    });
   }
 
   fillVashjAssignments() {
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
-    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
-    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
-    const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
+    const warriors = this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.melee);
     const rogues = this.getCharactersByClassAndRole(CharacterClass.rogue, CharacterRole.melee);
+    const enhShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.melee);
+    const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
+    const priestHealers = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
+    const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
+    const staticChargeHealer = [...druidHealers, ...priestHealers, ...paladinHealers, ...restoShamans][0];
 
     const mt = druidTanks[0] ?? paladinTanks[0];
     const eliteTank = druidTanks[0] ?? paladinTanks[0];
@@ -342,7 +516,8 @@ export class AssignmentsSscComponent implements OnInit {
     });
 
     const p2Actions: AssignmentAction[] = [
-      { caster: eliteTank, target: 'Coilfang Elite', icon: undefined },
+      { caster: eliteTank, target: 'Naga (Behind the boss)', icon: undefined },
+      { caster: paladinTanks[0], target: 'Naga (In front of the boss)', icon: undefined },
     ];
     if (eleShamans[0]) p2Actions.push({ caster: eleShamans[0], target: 'Coilfang Strider (kite)', icon: undefined });
 
@@ -352,24 +527,19 @@ export class AssignmentsSscComponent implements OnInit {
       actions: p2Actions,
     });
 
-    const rangedDps = [...hunters, ...mages, ...warlocks];
-    const taintedCoreCarriers = rangedDps.slice(0, 4);
+    const elementalKillers = [...warriors, ...rogues, ...enhShamans].slice(0, 5);
     const positions = [
-      'in front of the boss (entrance)',
-      'behind the boss (back wall)',
-      'left side of the room',
-      'right side of the room',
+      'Entrance',
+      'Entrance',
+      'Behind the boss',
+      'Left',
+      'Right',
     ];
     const taintedCoreActions: AssignmentAction[] = positions.map((position, i) => ({
-      caster: taintedCoreCarriers[i],
+      caster: elementalKillers[i],
       target: position,
       icon: undefined,
     }));
-    taintedCoreActions.push({
-      caster: rogues[0],
-      target: 'dunk duty',
-      icon: undefined,
-    });
 
     this.assignments[AssignmentType.vashjAssignments].assignments.push({
       headerIcon: IconEnum.taintedCore,
@@ -377,18 +547,17 @@ export class AssignmentsSscComponent implements OnInit {
       actions: taintedCoreActions,
     });
 
-    const sporebatActions: AssignmentAction[] = [];
-    if (hunters[0]) sporebatActions.push({ caster: hunters[0], target: 'Toxic Sporebats', icon: undefined });
-    if (hunters[1]) sporebatActions.push({ caster: hunters[1], target: 'Toxic Sporebats', icon: undefined });
-    if (warlocks[0]) sporebatActions.push({ caster: warlocks[0], target: 'Toxic Sporebats', icon: undefined });
+    this.assignments[AssignmentType.vashjAssignments].assignments.push({
+      headerIcon: IconEnum.staticCharge,
+      headerText: 'Static Charge Healer',
+      actions: [
+        { caster: staticChargeHealer, target: 'Static Charge', icon: IconEnum.staticCharge },
+      ],
+    });
+  }
 
-    if (sporebatActions.length > 0) {
-      this.assignments[AssignmentType.vashjAssignments].assignments.push({
-        headerIcon: IconEnum.skull,
-        headerText: 'Phase 3 - Toxic Sporebats',
-        actions: sporebatActions,
-      });
-    }
+  copyMrtNoteForBoss(key: AssignmentType) {
+    navigator.clipboard.writeText(this.getMrtNoteForBoss(key));
   }
 
   copyMrtNoteToBuffer() {

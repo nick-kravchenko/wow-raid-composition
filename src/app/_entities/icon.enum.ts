@@ -56,6 +56,8 @@ export enum IconEnum {
   misdirect = 'ability_hunter_misdirect.png',
   hearthstone = 'inv_misc_rune_01.png',
   taintedCore = 'spell_nature_elementalshields.jpg',
+  wateryGrave = 'spell_frost_arcticwinds.jpg',
+  staticCharge = 'spell_nature_lightningoverload.jpg',
 
   /**
    * Raid icons

@@ -1,49 +1,80 @@
-<ul class="spec-list">
-  @for (item of list; track item.id) {
-    <li class="spec-item">
-      <button class="spec-button" type="button" (click)="selectBisList(item.id)" [class.active]="item.id === selectedBisListId()">
-        <img src="assets/icons/{{item.icon}}" alt="{{item.id}}" />
-      </button>
-    </li>
-  }
-</ul>
-
-@if (selectedBisList()) {
-  <ul class="slot-list">
-    @for (slot of selectedBisList(); track $index) {
-      <li class="slot-item">
-        <table>
-          <tr>
-            <th>BIS</th>
-            <th>ALT</th>
-          </tr>
-          <tr>
-            <td>
-              @if (slot && slot.item) {
+<div class="gear">
+  <aside class="gear-left-col">
+    @for (slot of leftSlots(); track slot.slot) {
+      <div class="gear-slot">
+        @if (slot.placeholder) {
+          <img class="gear-slot-placeholder" src="assets/icons/{{slot.placeholder}}" alt="{{slot.slot}}" />
+        } @else {
+          @if (slot.alts && slot.alts.length) {
+            <div class="gear-slot-alts">
+              @for (alt of slot.alts; track alt.id) {
                 <a class="gear-icon-link"
                    data-wh-icon-size="medium"
-                   href="https://www.wowhead.com/tbc/item={{slot.item.id}}"
+                   href="https://www.wowhead.com/tbc/item={{alt.id}}"
                    target="_blank"></a>
               }
-            </td>
-            <td>
-              <ul class="item-list">
-                @if (slot && slot.alts && slot.alts.length) {
-                  @for (alt of slot.alts; track $index) {
-                    <li class="item-item">
-                      <a class="gear-icon-link"
-                         data-wh-icon-size="medium"
-                         href="https://www.wowhead.com/tbc/item={{alt.id}}"
-                         target="_blank"></a>
-                    </li>
-                  }
-                } @else {
-                  <li><b>-</b></li>
-                }
-              </ul>
-            </td>
-        </table>
-      </li>
+            </div>
+          }
+          <a class="gear-icon-link"
+             data-wh-icon-size="large"
+             href="https://www.wowhead.com/tbc/item={{slot.item.id}}"
+             target="_blank"></a>
+        }
+      </div>
     }
-  </ul>
-}
+  </aside>
+  <section class="gear-main">
+    @for (group of specGroups; track group.cls) {
+      <ul class="spec-list">
+        @for (item of group.specs; track item.id) {
+          <li class="spec-item">
+            <button class="spec-button" type="button" (click)="selectBisList(item.id)" [class.active]="item.id === selectedBisListId()">
+              <img src="assets/icons/{{item.icon}}" alt="{{item.id}}" />
+            </button>
+          </li>
+        }
+      </ul>
+    }
+  </section>
+  <aside class="gear-right-col">
+    @for (slot of rightSlots(); track slot.slot) {
+      <div class="gear-slot">
+        <a class="gear-icon-link"
+           data-wh-icon-size="large"
+           href="https://www.wowhead.com/tbc/item={{slot.item.id}}"
+           target="_blank"></a>
+        @if (slot.alts && slot.alts.length) {
+          <div class="gear-slot-alts">
+            @for (alt of slot.alts; track alt.id) {
+              <a class="gear-icon-link"
+                 data-wh-icon-size="medium"
+                 href="https://www.wowhead.com/tbc/item={{alt.id}}"
+                 target="_blank"></a>
+            }
+          </div>
+        }
+      </div>
+    }
+  </aside>
+  <footer class="gear-footer">
+    @for (slot of weaponSlots(); track slot.slot) {
+      <div class="gear-slot">
+        <span class="gear-slot-label">{{ slotLabels[slot.slot] }}</span>
+        <a class="gear-icon-link"
+           data-wh-icon-size="large"
+           href="https://www.wowhead.com/tbc/item={{slot.item.id}}"
+           target="_blank"></a>
+        @if (slot.alts && slot.alts.length) {
+          <div class="gear-slot-alts">
+            @for (alt of slot.alts; track alt.id) {
+              <a class="gear-icon-link"
+                 data-wh-icon-size="medium"
+                 href="https://www.wowhead.com/tbc/item={{alt.id}}"
+                 target="_blank"></a>
+            }
+          </div>
+        }
+      </div>
+    }
+  </footer>
+</div>

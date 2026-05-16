@@ -69,41 +69,20 @@ export class AssignmentsTkComponent implements OnInit {
     },
   };
 
-  get mrtNote() {
+  getMrtNoteForBoss(key: AssignmentType): string {
     const casterName = (action: AssignmentAction) =>
       typeof action.caster === 'string' ? action.caster : action.caster?.name ?? '-';
     const targetName = (action: AssignmentAction) =>
       typeof action.target === 'string' ? action.target : (action.target as Character).name;
 
-    let note = '';
+    const classAssignment = this.assignments[key];
+    let note = classAssignment.headerText + '\n';
 
-    note += 'Al\'ar\n';
-    this.assignments[AssignmentType.alarAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
-        note += `${casterName(action)} -> ${targetName(action)}\n`;
-      });
-    });
+    if (key === AssignmentType.kaelthasAssignments) {
+      note += 'Kill Order: Thaladred ➜ Sanguinar ➜ Capernian ➜ Telonicus\n';
+    }
 
-    note += '\nVoid Reaver\n';
-    this.assignments[AssignmentType.voidReaverAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
-        note += `${casterName(action)} -> ${targetName(action)}\n`;
-      });
-    });
-
-    note += '\nHigh Astromancer Solarian\n';
-    this.assignments[AssignmentType.solarianAssignments].assignments.forEach(assignment => {
-      note += `${assignment.headerText}\n`;
-      assignment.actions.forEach(action => {
-        note += `${casterName(action)} -> ${targetName(action)}\n`;
-      });
-    });
-
-    note += '\nKael\'thas Sunstrider\n';
-    note += 'Kill Order: Thaladred ➜ Sanguinar ➜ Capernian ➜ Telonicus\n';
-    this.assignments[AssignmentType.kaelthasAssignments].assignments.forEach(assignment => {
+    classAssignment.assignments.forEach(assignment => {
       note += `${assignment.headerText}\n`;
       assignment.actions.forEach(action => {
         note += `${casterName(action)} -> ${targetName(action)}\n`;
@@ -111,6 +90,10 @@ export class AssignmentsTkComponent implements OnInit {
     });
 
     return note;
+  }
+
+  get mrtNote() {
+    return this.keys.map(key => this.getMrtNoteForBoss(key)).join('\n');
   }
 
   ngOnInit() {
@@ -222,8 +205,7 @@ export class AssignmentsTkComponent implements OnInit {
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
-    const rogues = this.getCharactersByClassAndRole(CharacterClass.rogue, CharacterRole.melee);
-    const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
+    const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
 
     this.assignments[AssignmentType.kaelthasAssignments].assignments.push({
       headerIcon: IconEnum.skull,
@@ -233,6 +215,16 @@ export class AssignmentsTkComponent implements OnInit {
         { caster: (druidTanks[0] ?? paladinTanks[0]), target: 'Sanguinar', icon: IconEnum.cross },
         { caster: warlocks[0], target: 'Capernian', icon: IconEnum.square },
         { caster: (druidTanks[1] ?? paladinTanks[0]), target: 'Telonicus', icon: IconEnum.moon },
+      ],
+    });
+
+    this.assignments[AssignmentType.kaelthasAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'P2 Weapon Phase - Tanks',
+      actions: [
+        { caster: druidTanks[0], target: 'Axe (Devastation)', icon: undefined },
+        { caster: hunters[0], target: 'Bow (Netherstrand Longbow )', icon: IconEnum.hunter },
+        { caster: paladinTanks[0], target: 'All other weapons', icon: IconEnum.protection },
       ],
     });
 
@@ -278,9 +270,14 @@ export class AssignmentsTkComponent implements OnInit {
     const all = this.assignments[AssignmentType.kaelthasAssignments].assignments;
     return [
       all.slice(0, 1),
-      all.slice(1, 3),
-      all.slice(3),
+      all.slice(1, 2),
+      all.slice(2, 4),
+      all.slice(4),
     ];
+  }
+
+  copyMrtNoteForBoss(key: AssignmentType) {
+    navigator.clipboard.writeText(this.getMrtNoteForBoss(key));
   }
 
   copyMrtNoteToBuffer() {

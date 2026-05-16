@@ -6,6 +6,7 @@
       <h4>
         <img src="assets/icons/{{classAssignment.headerIcon}}" alt="">
         {{ classAssignment.headerText }}
+        <button (click)="copyMrtNoteForBoss(key)" type="button">MRT</button>
       </h4>
       @if (key === AssignmentType.kaelthasAssignments) {
         <div class="kaelthas-phases">
