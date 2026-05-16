@@ -1,6 +1,6 @@
 // AUTO-GENERATED - do not edit manually.
 // Run `npm run bake:wcl` to regenerate.
-// Generated: 2026-04-28T21:51:38.555Z
+// Generated: 2026-05-16T22:37:47.068Z
 
 export interface WclGearItem {
   id: number;
@@ -56,7 +56,7 @@ export interface WclBakedData {
 }
 
 export const wclBakedData: WclBakedData = {
-  "generatedAt": "2026-04-28T21:51:38.555Z",
+  "generatedAt": "2026-05-16T22:37:47.068Z",
   "defaultServerSlug": "spineshatter",
   "defaultServerRegion": "eu",
   "characters": {
@@ -240,58 +240,140 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 93.33264314116504,
-          "medianPerformance": 17.559420300959207,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 269.00200992658,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 50.282502936391026,
+          "medianPerformance": 50.282502936391026,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 65.432293560359,
           "spec": "Shadow",
           "allStars": {
-            "points": 98.64954330696797,
+            "points": 54.874442941036456,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 85.10650080146725,
-          "medianPerformance": 33.24488566644049,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 233.18187182816,
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 56.49434794079491,
+          "medianPerformance": 56.49434794079491,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 434.28520975757,
           "spec": "Shadow",
           "allStars": {
-            "points": 91.05888381124208,
+            "points": 63.9782397863037,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 71.50913735517403,
-          "medianPerformance": 36.73976670102814,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 141.27202185957,
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 77.93173753804683,
+          "medianPerformance": 77.93173753804683,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 122.74171781812,
           "spec": "Shadow",
           "allStars": {
-            "points": 76.16005930806922,
+            "points": 86.03769046227436,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 56.123554623538816,
+          "medianPerformance": 56.123554623538816,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 83.322709387175,
+          "spec": "Shadow",
+          "allStars": {
+            "points": "-",
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         }
       ],
-      "bestPerformanceAverage": 83.31609376593543,
-      "medianPerformanceAverage": 29.181357556142615,
+      "bestPerformanceAverage": 61.56952947174426,
+      "medianPerformanceAverage": 61.56952947174426,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -311,10 +393,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29173,
+          "id": 28530,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_06.jpg",
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_ahnqiraj_04.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -338,12 +420,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28203,
+          "id": 29066,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_chain_15.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2659,
+          "quality": 4,
+          "icon": "inv_chest_plate18.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -365,12 +447,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29325,
+          "id": 28569,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_plate_04.jpg",
-          "itemLevel": 97,
-          "permanentEnchantID": 2649,
+          "quality": 4,
+          "icon": "inv_boots_chain_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -383,12 +465,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28518,
+          "id": 29067,
           "slot": 10,
           "quality": 4,
-          "icon": "inv_gauntlets_31.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2937,
+          "icon": "inv_gauntlets_40.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2841,
           "temporaryEnchantID": null
         },
         {
@@ -401,11 +483,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29277,
+          "id": 28510,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_ring_31.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -419,11 +501,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27891,
+          "id": 28528,
           "slot": 14,
-          "quality": 3,
-          "icon": "inv_qirajidol_sage.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_misc_pocketwatch_02.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -446,20 +528,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2678
         },
         {
-          "id": 29176,
+          "id": 28606,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_shield_30.jpg",
-          "itemLevel": 105,
+          "icon": "inv_shield_29.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29388,
+          "id": 27917,
           "slot": 18,
-          "quality": 4,
-          "icon": "inv_relics_libramofhope.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_relics_libramoftruth.jpg",
+          "itemLevel": 112,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -475,8 +557,8 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -486,8 +568,8 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -497,8 +579,85 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -511,7 +670,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -545,7 +704,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_shoulder_52.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2995,
           "temporaryEnchantID": null
         },
         {
@@ -567,10 +726,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27795,
+          "id": 28654,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_13.jpg",
+          "quality": 4,
+          "icon": "inv_belt_03.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -581,7 +740,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_pants_cloth_23.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2748,
           "temporaryEnchantID": null
         },
         {
@@ -612,11 +771,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29172,
+          "id": 29287,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_51naxxramas.jpg",
-          "itemLevel": 105,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -648,11 +807,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28269,
+          "id": 28766,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_05.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_misc_cape_18.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -663,7 +822,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_weapon_shortblade_41.jpg",
           "itemLevel": 125,
           "permanentEnchantID": 2669,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2628
         },
         {
           "id": 29273,
@@ -675,11 +834,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25808,
+          "id": 28673,
           "slot": 18,
-          "quality": 3,
-          "icon": "inv_wand_05.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_wand_21.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -695,58 +854,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 91.3175,
-          "medianPerformance": 82.1987,
-          "totalKills": 9,
-          "fastestKill": 24379,
-          "bestAmount": 2138.5652273247,
-          "spec": "Destruction",
-          "allStars": {
-            "points": 101.65,
-            "rank": 3616,
-            "rankPercent": 91.36076856897046,
-            "total": 41844
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 69.6045,
-          "medianPerformance": 58.1843,
-          "totalKills": 9,
-          "fastestKill": 114560,
-          "bestAmount": 1241.6288407821,
-          "spec": "Destruction",
-          "allStars": {
-            "points": 76.77,
-            "rank": 14041,
-            "rankPercent": 66.72118324681789,
-            "total": 42189
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 71.1278,
-          "medianPerformance": 42.9865,
-          "totalKills": 9,
-          "fastestKill": 199708,
-          "bestAmount": 1058.4904914403,
-          "spec": "Affliction",
-          "allStars": {
-            "points": 63.35,
-            "rank": 3992,
-            "rankPercent": 56.25342540830867,
-            "total": 9123
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 77.34993333333334,
-      "medianPerformanceAverage": 61.12316666666667,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -930,8 +1151,8 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -941,8 +1162,8 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -952,8 +1173,85 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -966,7 +1264,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -1022,11 +1320,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29264,
+          "id": 28750,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_22.jpg",
-          "itemLevel": 110,
+          "icon": "inv_belt_26.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -1118,7 +1416,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_hammer_10.jpg",
           "itemLevel": 100,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2639
         },
         {
           "id": 0,
@@ -1150,293 +1448,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 89.3946,
-          "medianPerformance": 83.8102,
-          "totalKills": 5,
-          "fastestKill": 24379,
-          "bestAmount": 864.66186885995,
-          "spec": "Guardian",
-          "allStars": {
-            "points": 98.72,
-            "rank": 1383,
-            "rankPercent": 89.25433481066791,
-            "total": 12861
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 89.4677,
-          "medianPerformance": 73.7798,
-          "totalKills": 5,
-          "fastestKill": 114560,
-          "bestAmount": 771.09811452514,
-          "spec": "Guardian",
-          "allStars": {
-            "points": 99.01,
-            "rank": 1921,
-            "rankPercent": 88.14009512632035,
-            "total": 16189
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 82.9346,
-          "medianPerformance": 78.8715,
-          "totalKills": 5,
-          "fastestKill": 198308,
-          "bestAmount": 778.85713141186,
-          "spec": "Guardian",
-          "allStars": {
-            "points": 87.97,
-            "rank": 2074,
-            "rankPercent": 80.7449377670444,
-            "total": 10766
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 87.26563333333333,
-      "medianPerformanceAverage": 78.8205,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
-      "error": null,
-      "partial": false
-    },
-    "artlicht": {
-      "characterName": "Artlicht",
-      "serverSlug": "spineshatter",
-      "serverRegion": "EU",
-      "wclId": 105379028,
-      "gear": [
-        {
-          "id": 28593,
-          "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_03.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2999,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29173,
-          "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_06.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27739,
-          "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_10.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2977,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 0,
-          "slot": 4,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28203,
-          "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_chain_15.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2661,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29238,
-          "slot": 6,
-          "quality": 4,
-          "icon": "inv_belt_27.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27839,
-          "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_04.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2748,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29254,
-          "slot": 8,
-          "quality": 4,
-          "icon": "inv_boots_chain_05.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 2649,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29463,
-          "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_02.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 2647,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27535,
-          "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_29.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29172,
-          "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_51naxxramas.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28555,
-          "slot": 12,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_60.jpg",
-          "itemLevel": 95,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28528,
-          "slot": 13,
-          "quality": 4,
-          "icon": "inv_misc_pocketwatch_02.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27891,
-          "slot": 14,
-          "quality": 3,
-          "icon": "inv_qirajidol_sage.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27804,
-          "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_13.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29155,
-          "slot": 16,
-          "quality": 4,
-          "icon": "inv_sword_01.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2678
-        },
-        {
-          "id": 28606,
-          "slot": 17,
-          "quality": 4,
-          "icon": "inv_shield_29.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 1704,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27917,
-          "slot": 18,
-          "quality": 3,
-          "icon": "inv_relics_libramoftruth.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 0,
-          "slot": 19,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        }
-      ],
-      "rankings": [
-        {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 87.6223,
-          "medianPerformance": 81.5488,
-          "totalKills": 7,
-          "fastestKill": 26349,
-          "bestAmount": 1574.1456057095,
-          "spec": "Retribution",
-          "allStars": {
-            "points": 91.8,
-            "rank": 2651,
-            "rankPercent": 84.44653128301444,
-            "total": 17038
-          }
-        },
-        {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 82.5525,
-          "medianPerformance": 76.7758,
-          "totalKills": 7,
-          "fastestKill": 123192,
-          "bestAmount": 1206.4831730406,
-          "spec": "Retribution",
-          "allStars": {
-            "points": 88.91,
-            "rank": 4070,
-            "rankPercent": 79.03333848611325,
-            "total": 19407
-          }
-        },
-        {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 92.1204,
-          "medianPerformance": 65.0054,
-          "totalKills": 7,
-          "fastestKill": 198308,
-          "bestAmount": 1638.031526028,
-          "spec": "Retribution",
-          "allStars": {
-            "points": 99.16,
-            "rank": 1543,
-            "rankPercent": 90.81048867699643,
-            "total": 16780
-          }
-        }
-      ],
-      "bestPerformanceAverage": 87.43173333333334,
-      "medianPerformanceAverage": 74.44333333333333,
-      "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -1492,20 +1617,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28828,
+          "id": 27760,
           "slot": 6,
-          "quality": 4,
-          "icon": "inv_belt_26.jpg",
-          "itemLevel": 125,
+          "quality": 3,
+          "icon": "inv_belt_24.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 30538,
+          "id": 28741,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_leather_09.jpg",
-          "itemLevel": 110,
+          "icon": "inv_pants_leather_13.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 3012,
           "temporaryEnchantID": null
         },
@@ -1542,7 +1667,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_jewelry_ring_47.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2929,
           "temporaryEnchantID": null
         },
         {
@@ -1551,7 +1676,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_jewelry_ring_71.jpg",
           "itemLevel": 125,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2929,
           "temporaryEnchantID": null
         },
         {
@@ -1573,11 +1698,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28672,
+          "id": 29382,
           "slot": 15,
           "quality": 4,
-          "icon": "inv_misc_cape_10.jpg",
-          "itemLevel": 115,
+          "icon": "inv_misc_cape_18.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": 368,
           "temporaryEnchantID": null
         },
@@ -1600,12 +1725,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29351,
+          "id": 28772,
           "slot": 18,
           "quality": 4,
-          "icon": "inv_weapon_crossbow_16.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 2723,
+          "icon": "inv_weapon_bow_18.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2724,
           "temporaryEnchantID": null
         },
         {
@@ -1620,58 +1745,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 93.963,
-          "medianPerformance": 89.7872,
-          "totalKills": 7,
-          "fastestKill": 18587,
-          "bestAmount": 2519.7718835745,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 105.5,
-            "rank": 2432,
-            "rankPercent": 94.01408450704226,
-            "total": 40612
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 96.024,
-          "medianPerformance": 77.1833,
-          "totalKills": 7,
-          "fastestKill": 101676,
-          "bestAmount": 1975.7169833589,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 109.48,
-            "rank": 1686,
-            "rankPercent": 95.87737326286944,
-            "total": 40872
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 94.151,
-          "medianPerformance": 84.6055,
-          "totalKills": 7,
-          "fastestKill": 163693,
-          "bestAmount": 2000.6108996719,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 102.97,
-            "rank": 2338,
-            "rankPercent": 94.06882899345212,
-            "total": 39402
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 94.71266666666666,
-      "medianPerformanceAverage": 83.85866666666668,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -1745,12 +1932,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27914,
+          "id": 28517,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_cloth_14.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": 911,
+          "quality": 4,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2940,
           "temporaryEnchantID": null
         },
         {
@@ -1790,20 +1977,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29370,
+          "id": 27683,
           "slot": 13,
-          "quality": 4,
-          "icon": "inv_weapon_shortblade_23.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_misc_gem_pearl_01.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27683,
+          "id": 29370,
           "slot": 14,
-          "quality": 3,
-          "icon": "inv_misc_gem_pearl_01.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -1855,58 +2042,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 88.1531,
-          "medianPerformance": 73.2847,
-          "totalKills": 3,
-          "fastestKill": 24379,
-          "bestAmount": 1225.3578899873,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 79.2162,
+          "medianPerformance": 79.2162,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1099.5775944249,
           "spec": "Balance",
           "allStars": {
-            "points": 94.95,
-            "rank": 1812,
-            "rankPercent": 86.75976019885948,
-            "total": 13678
+            "points": 91.18,
+            "rank": 241,
+            "rankPercent": 79.96661101836393,
+            "total": 1198
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 87.7198,
-          "medianPerformance": 86.3348,
-          "totalKills": 3,
-          "fastestKill": 114560,
-          "bestAmount": 1089.7628627905,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 96.5614,
+          "medianPerformance": 96.5614,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1006.3168495095,
           "spec": "Balance",
           "allStars": {
-            "points": 98.37,
-            "rank": 1771,
-            "rankPercent": 86.62636947487722,
-            "total": 13235
+            "points": 112.06,
+            "rank": 38,
+            "rankPercent": 96.87763713080169,
+            "total": 1185
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 85.2709,
-          "medianPerformance": 73.1224,
-          "totalKills": 3,
-          "fastestKill": 199708,
-          "bestAmount": 1084.6955692322,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 76.8215,
+          "medianPerformance": 76.8215,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 888.1365401488,
           "spec": "Balance",
           "allStars": {
-            "points": 92.35,
-            "rank": 2050,
-            "rankPercent": 83.6654974489796,
-            "total": 12544
+            "points": 89.8,
+            "rank": 231,
+            "rankPercent": 78.64438254410399,
+            "total": 1077
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 96.8587,
+          "medianPerformance": 96.8587,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1308.7351922217,
+          "spec": "Balance",
+          "allStars": {
+            "points": 113.08,
+            "rank": 28,
+            "rankPercent": 96.97648376259798,
+            "total": 893
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 56.1424,
+          "medianPerformance": 56.1424,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1034.1801345023,
+          "spec": "Balance",
+          "allStars": {
+            "points": 74.76,
+            "rank": 362,
+            "rankPercent": 57.77777777777778,
+            "total": 855
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 70.5566,
+          "medianPerformance": 70.5566,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 654.16529711247,
+          "spec": "Balance",
+          "allStars": {
+            "points": 0,
+            "rank": 151,
+            "rankPercent": 72.6775956284153,
+            "total": 549
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 96.3071,
+          "medianPerformance": 96.3071,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1037.3673414786,
+          "spec": "Balance",
+          "allStars": {
+            "points": 113.9,
+            "rank": 21,
+            "rankPercent": 96.78972712680577,
+            "total": 623
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 57.6549,
+          "medianPerformance": 57.6549,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1010.6329305517,
+          "spec": "Balance",
+          "allStars": {
+            "points": 81.33,
+            "rank": 235,
+            "rankPercent": 60,
+            "total": 585
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 29.1832,
+          "medianPerformance": 29.1832,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 793.65286665796,
+          "spec": "Balance",
+          "allStars": {
+            "points": 45.01,
+            "rank": 383,
+            "rankPercent": 32.74647887323944,
+            "total": 568
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 77.2813,
+          "medianPerformance": 77.2813,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 745.03825701018,
+          "spec": "Balance",
+          "allStars": {
+            "points": 0,
+            "rank": 78,
+            "rankPercent": 78.78787878787878,
+            "total": 363
           }
         }
       ],
-      "bestPerformanceAverage": 87.04793333333333,
-      "medianPerformanceAverage": 77.58063333333334,
+      "bestPerformanceAverage": 73.593175,
+      "medianPerformanceAverage": 73.593175,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -1926,21 +2225,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28244,
+          "id": 24114,
           "slot": 2,
-          "quality": 4,
-          "icon": "inv_jewelry_necklace_36.jpg",
-          "itemLevel": 113,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_07.jpg",
+          "itemLevel": 102,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 35411,
+          "id": 29023,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_22.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2996,
+          "quality": 4,
+          "icon": "inv_shoulder_54.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2997,
           "temporaryEnchantID": null
         },
         {
@@ -1971,12 +2270,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 24547,
+          "id": 29022,
           "slot": 7,
           "quality": 4,
           "icon": "inv_pants_plate_24.jpg",
-          "itemLevel": 123,
-          "permanentEnchantID": 3012,
+          "itemLevel": 120,
+          "permanentEnchantID": 3010,
           "temporaryEnchantID": null
         },
         {
@@ -2007,11 +2306,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29282,
+          "id": 28649,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "icon": "inv_jewelry_ring_47.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2043,38 +2342,38 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28672,
+          "id": 28377,
           "slot": 15,
           "quality": 4,
-          "icon": "inv_misc_cape_10.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "icon": "inv_misc_cape_07.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 368,
           "temporaryEnchantID": null
         },
         {
-          "id": 28729,
+          "id": 28441,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_sword_74.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": 2639
+          "icon": "inv_mace_2h_blacksmithing_02.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": null
         },
         {
-          "id": 28189,
+          "id": 0,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_sword_76.jpg",
-          "itemLevel": 115,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27916,
+          "id": 28319,
           "slot": 18,
-          "quality": 3,
-          "icon": "inv_throwingknife_06.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_axe_03.jpg",
+          "itemLevel": 123,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2090,59 +2389,779 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 69.784,
-          "medianPerformance": 67.1336,
-          "totalKills": 2,
-          "fastestKill": 29404,
-          "bestAmount": 1425.2028829238,
-          "spec": "Arms",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "error": null,
+      "partial": false
+    },
+    "bigfrendd": {
+      "characterName": "Bigfrendd",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 109310604,
+      "gear": [
+        {
+          "id": 29040,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_15.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3003,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27551,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_talisman_12.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27776,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_24.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28601,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_leather_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28656,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_22.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31544,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_14.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": 3010,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25686,
+          "slot": 8,
+          "quality": 3,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2657,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28171,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_08.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30644,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_28.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 684,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30834,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_41.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29281,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28034,
+          "slot": 13,
+          "quality": 3,
+          "icon": "inv_gizmo_khoriumpowercore.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27892,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_08.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 368,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27533,
+          "slot": 16,
+          "quality": 3,
+          "icon": "inv_weapon_hand_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": 2636
+        },
+        {
+          "id": 27872,
+          "slot": 17,
+          "quality": 3,
+          "icon": "inv_axe_62.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": 2636
+        },
+        {
+          "id": 186073,
+          "slot": 18,
+          "quality": 2,
+          "icon": "spell_nature_manaregentotem.jpg",
+          "itemLevel": 52,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 19,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 49.1515,
+          "medianPerformance": 49.1515,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1002.5640182768,
+          "spec": "Enhancement",
           "allStars": {
-            "points": 71.16,
-            "rank": 4210,
-            "rankPercent": 66.29294466244895,
-            "total": 12487
+            "points": 59.48,
+            "rank": 1344,
+            "rankPercent": 50.332840236686394,
+            "total": 2704
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 78.0258,
-          "medianPerformance": 66.2878,
-          "totalKills": 2,
-          "fastestKill": 131874,
-          "bestAmount": 1079.3181370096,
-          "spec": "Arms",
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 20,
+          "medianPerformance": 20,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 610.38465646409,
+          "spec": "Enhancement",
           "allStars": {
-            "points": 82.67,
-            "rank": 3561,
-            "rankPercent": 73.32334207568378,
-            "total": 13345
+            "points": 40.13,
+            "rank": 2087,
+            "rankPercent": 22.338049143708115,
+            "total": 2686
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 62.3427,
-          "medianPerformance": 56.6765,
-          "totalKills": 2,
-          "fastestKill": 199708,
-          "bestAmount": 1069.5467679686,
-          "spec": "Arms",
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 8.94365,
+          "medianPerformance": 8.94365,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 469.65971192169,
+          "spec": "Enhancement",
           "allStars": {
-            "points": 62.94,
-            "rank": 5205,
-            "rankPercent": 58.167202572347264,
-            "total": 12440
+            "points": 28.86,
+            "rank": 2195,
+            "rankPercent": 11.13811259619279,
+            "total": 2469
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 7.24437,
+          "medianPerformance": 7.24437,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 665.28134778721,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 34.07,
+            "rank": 1927,
+            "rankPercent": 9.915809167446211,
+            "total": 2138
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 15.282,
+          "medianPerformance": 15.282,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1024.959508468,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 58.05,
+            "rank": 1688,
+            "rankPercent": 17.30392156862745,
+            "total": 2040
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 9.93796,
+          "medianPerformance": 9.93796,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 480.38364858697,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 0,
+            "rank": 1234,
+            "rankPercent": 12.985179957657023,
+            "total": 1417
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 18.204,
+          "medianPerformance": 18.204,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 505.9546268411,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 50.6,
+            "rank": 1201,
+            "rankPercent": 20.424403183023873,
+            "total": 1508
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 8.88811,
+          "medianPerformance": 8.88811,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 954.31497691784,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 58.48,
+            "rank": 1266,
+            "rankPercent": 12.274618585298198,
+            "total": 1442
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 22.2522,
+          "medianPerformance": 22.2522,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 922.83749074921,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 44.82,
+            "rank": 1040,
+            "rankPercent": 25.25179856115108,
+            "total": 1390
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 14.5235,
+          "medianPerformance": 14.5235,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 481.23667054891,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 0,
+            "rank": 796,
+            "rankPercent": 18.29393627954779,
+            "total": 973
           }
         }
       ],
-      "bestPerformanceAverage": 70.05083333333333,
-      "medianPerformanceAverage": 63.36596666666667,
+      "bestPerformanceAverage": 18.74572875,
+      "medianPerformanceAverage": 18.74572875,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
+      "partial": false
+    },
+    "blackbary": {
+      "characterName": "Blackbary",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 109654811,
+      "gear": [
+        {
+          "id": 35383,
+          "slot": 1,
+          "quality": 3,
+          "icon": "inv_helmet_09.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31275,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_19.jpg",
+          "itemLevel": 106,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 35385,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_29.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2983,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 35381,
+          "slot": 5,
+          "quality": 3,
+          "icon": "inv_chest_chain_11.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31293,
+          "slot": 6,
+          "quality": 3,
+          "icon": "inv_belt_31.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31544,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_14.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": 3012,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25686,
+          "slot": 8,
+          "quality": 3,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28171,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_08.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 35382,
+          "slot": 10,
+          "quality": 3,
+          "icon": "inv_gauntlets_11.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 684,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27925,
+          "slot": 11,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28553,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_60.jpg",
+          "itemLevel": 95,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31617,
+          "slot": 13,
+          "quality": 2,
+          "icon": "inv_jewelry_talisman_14.jpg",
+          "itemLevel": 102,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25937,
+          "slot": 14,
+          "quality": 2,
+          "icon": "inv_misc_stonetablet_11.jpg",
+          "itemLevel": 99,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27892,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_08.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 368,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27533,
+          "slot": 16,
+          "quality": 3,
+          "icon": "inv_weapon_hand_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2636
+        },
+        {
+          "id": 27872,
+          "slot": 17,
+          "quality": 3,
+          "icon": "inv_axe_62.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2636
+        },
+        {
+          "id": 24413,
+          "slot": 18,
+          "quality": 3,
+          "icon": "spell_nature_lightning.jpg",
+          "itemLevel": 94,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 19,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "error": null,
+      "partial": false
+    },
+    "blackdye": {
+      "characterName": "Blackdye",
+      "serverSlug": "spineshatter",
+      "serverRegion": "eu",
+      "wclId": null,
+      "gear": [],
+      "rankings": [],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "error": "Character not found on spineshatter-eu",
       "partial": false
     },
     "blinkmate": {
@@ -2152,29 +3171,29 @@ export const wclBakedData: WclBakedData = {
       "wclId": 107402610,
       "gear": [
         {
-          "id": 28193,
+          "id": 29076,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_56.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_helmet_84.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
         {
-          "id": 28134,
+          "id": 28762,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_27.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_29naxxramas.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27796,
+          "id": 29079,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_22.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_shoulder_47.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2994,
           "temporaryEnchantID": null
         },
@@ -2206,11 +3225,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28594,
+          "id": 29078,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_cloth_05.jpg",
-          "itemLevel": 115,
+          "icon": "inv_pants_cloth_21.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2748,
           "temporaryEnchantID": null
         },
@@ -2251,11 +3270,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29286,
+          "id": 29287,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2269,10 +3288,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27683,
+          "id": 28727,
           "slot": 14,
-          "quality": 3,
-          "icon": "inv_misc_gem_pearl_01.jpg",
+          "quality": 4,
+          "icon": "inv_trinket_naxxramas02.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -2293,7 +3312,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_weapon_shortblade_41.jpg",
           "itemLevel": 125,
           "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2628
+          "temporaryEnchantID": null
         },
         {
           "id": 29271,
@@ -2325,58 +3344,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 73.259,
-          "medianPerformance": 44.5307,
-          "totalKills": 6,
-          "fastestKill": 27183,
-          "bestAmount": 789.77859355283,
-          "spec": "Frost",
-          "allStars": {
-            "points": 73.28,
-            "rank": 6526,
-            "rankPercent": 68.20485332813566,
-            "total": 20522
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 91.5178,
-          "medianPerformance": 80.2074,
-          "totalKills": 6,
-          "fastestKill": 129192,
-          "bestAmount": 1419.3122201141,
-          "spec": "Arcane",
-          "allStars": {
-            "points": 100.69,
-            "rank": 3983,
-            "rankPercent": 89.33697514995715,
-            "total": 37344
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 91.2426,
-          "medianPerformance": 77.3169,
-          "totalKills": 6,
-          "fastestKill": 198308,
-          "bestAmount": 1592.9652117879,
-          "spec": "Arcane",
-          "allStars": {
-            "points": 97.72,
-            "rank": 3940,
-            "rankPercent": 88.98150997230692,
-            "total": 35749
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 85.33979999999998,
-      "medianPerformanceAverage": 67.35166666666667,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -2396,11 +3477,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28745,
+          "id": 29349,
           "slot": 2,
           "quality": 4,
           "icon": "inv_jewelry_necklace_06.jpg",
-          "itemLevel": 115,
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2477,20 +3558,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28730,
+          "id": 29283,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_24.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 30834,
+          "id": 28730,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_41.jpg",
-          "itemLevel": 100,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -2528,7 +3609,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_mace_38.jpg",
           "itemLevel": 123,
           "permanentEnchantID": 2673,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": null
         },
         {
           "id": 28729,
@@ -2537,7 +3618,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_sword_74.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2673,
-          "temporaryEnchantID": 1643
+          "temporaryEnchantID": 2506
         },
         {
           "id": 28504,
@@ -2560,58 +3641,150 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 76.1928,
-          "medianPerformance": 72.8063,
-          "totalKills": 7,
-          "fastestKill": 18587,
-          "bestAmount": 1767.943199794,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 28.0439,
+          "medianPerformance": 28.0439,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 740.89444791427,
           "spec": "Arms",
           "allStars": {
-            "points": 80.35,
-            "rank": 3193,
-            "rankPercent": 74.43741491150797,
-            "total": 12487
+            "points": 45.11,
+            "rank": 831,
+            "rankPercent": 29.481733220050977,
+            "total": 1177
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 90.2386,
-          "medianPerformance": 73.2337,
-          "totalKills": 7,
-          "fastestKill": 101676,
-          "bestAmount": 1310.2502065384,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 17.7687,
+          "medianPerformance": 17.7687,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 498.31398098842,
           "spec": "Arms",
           "allStars": {
-            "points": 100.98,
-            "rank": 1364,
-            "rankPercent": 89.78643686774073,
-            "total": 13345
+            "points": 26.38,
+            "rank": 973,
+            "rankPercent": 19.5364238410596,
+            "total": 1208
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 68.8681,
-          "medianPerformance": 49.0984,
-          "totalKills": 7,
-          "fastestKill": 163693,
-          "bestAmount": 1190.2769208213,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 29.6323,
+          "medianPerformance": 29.6323,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 631.19130335567,
           "spec": "Arms",
           "allStars": {
-            "points": 73.58,
-            "rank": 3934,
-            "rankPercent": 68.38424437299035,
-            "total": 12440
+            "points": 42.87,
+            "rank": 775,
+            "rankPercent": 31.685789938217123,
+            "total": 1133
           }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 9.80232,
+          "medianPerformance": 9.80232,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 688.31722172553,
+          "spec": "Arms",
+          "allStars": {
+            "points": 30.33,
+            "rank": 720,
+            "rankPercent": 12.953995157384988,
+            "total": 826
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 39.5049,
+          "medianPerformance": 39.5049,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1031.2973134749,
+          "spec": "Arms",
+          "allStars": {
+            "points": 68.04,
+            "rank": 545,
+            "rankPercent": 41.316073354908305,
+            "total": 927
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 50.5287,
+          "medianPerformance": 50.5287,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 629.15152274721,
+          "spec": "Arms",
+          "allStars": {
+            "points": 0,
+            "rank": 316,
+            "rankPercent": 51.08695652173913,
+            "total": 644
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 78.43316666666666,
-      "medianPerformanceAverage": 65.04613333333333,
+      "bestPerformanceAverage": 24.950423999999998,
+      "medianPerformanceAverage": 24.950423999999998,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -2795,58 +3968,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 92.7869,
-          "medianPerformance": 89.2776,
-          "totalKills": 7,
-          "fastestKill": 18587,
-          "bestAmount": 1606.5529671276,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 102.97,
-            "rank": 1808,
-            "rankPercent": 92.69633402045189,
-            "total": 24741
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 96.2111,
-          "medianPerformance": 85.8921,
-          "totalKills": 7,
-          "fastestKill": 101676,
-          "bestAmount": 1387.4463983634,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 102.67,
-            "rank": 2710,
-            "rankPercent": 89.14663461538461,
-            "total": 24960
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 86.9489,
-          "medianPerformance": 60.9221,
-          "totalKills": 7,
-          "fastestKill": 163693,
-          "bestAmount": 1385.3207771872,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 84.21,
-            "rank": 5905,
-            "rankPercent": 75.64356435643565,
-            "total": 24240
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 91.9823,
-      "medianPerformanceAverage": 78.69726666666666,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -3030,58 +4265,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 69.2472,
-          "medianPerformance": 60.1665,
-          "totalKills": 3,
-          "fastestKill": 24379,
-          "bestAmount": 1520.1197752164,
-          "spec": "Survival",
-          "allStars": {
-            "points": 75.65,
-            "rank": 3295,
-            "rankPercent": 66.23962283488777,
-            "total": 9757
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 73.6604,
-          "medianPerformance": 36.2587,
-          "totalKills": 3,
-          "fastestKill": 114560,
-          "bestAmount": 1314.6648044693,
-          "spec": "Survival",
-          "allStars": {
-            "points": 82.55,
-            "rank": 2906,
-            "rankPercent": 70.47764227642277,
-            "total": 9840
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 66.4565,
-          "medianPerformance": 44.1457,
-          "totalKills": 3,
-          "fastestKill": 220165,
-          "bestAmount": 1251.4576753866,
-          "spec": "Survival",
-          "allStars": {
-            "points": 73.26,
-            "rank": 3275,
-            "rankPercent": 66.12869853093316,
-            "total": 9666
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 69.78803333333333,
-      "medianPerformanceAverage": 46.856966666666665,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -3227,13 +4524,13 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29155,
+          "id": 28770,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_sword_01.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2678
+          "icon": "inv_weapon_shortblade_41.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2671,
+          "temporaryEnchantID": 2628
         },
         {
           "id": 29271,
@@ -3265,58 +4562,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 95.8617,
-          "medianPerformance": 80.1926,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 2569.6575065298,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 99.7107,
+          "medianPerformance": 99.7107,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 2100.0706748628,
           "spec": "Arcane",
           "allStars": {
-            "points": 106.9,
-            "rank": 1650,
-            "rankPercent": 95.25084960543748,
-            "total": 34722
+            "points": 116.04,
+            "rank": 14,
+            "rankPercent": 99.63005122367672,
+            "total": 3514
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 99.1499,
-          "medianPerformance": 88.0336,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 1542.576419214,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 81.6384,
+          "medianPerformance": 81.6384,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1152.8809818073,
           "spec": "Arcane",
           "allStars": {
-            "points": 106.19,
-            "rank": 2285,
-            "rankPercent": 93.88389031705228,
-            "total": 37344
+            "points": 89.91,
+            "rank": 615,
+            "rankPercent": 82.23893549320219,
+            "total": 3457
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.1801,
-          "medianPerformance": 92.6919,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 1961.0429279199,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 60.3359,
+          "medianPerformance": 60.3359,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 1045.1710883002,
           "spec": "Arcane",
           "allStars": {
-            "points": 107.79,
-            "rank": 1033,
-            "rankPercent": 97.11320596380318,
-            "total": 35749
+            "points": 70.11,
+            "rank": 1193,
+            "rankPercent": 61.794871794871796,
+            "total": 3120
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 97.4782,
+          "medianPerformance": 97.4782,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1832.4136678587,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 113.07,
+            "rank": 60,
+            "rankPercent": 97.74205893608878,
+            "total": 2613
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 91.2177,
+          "medianPerformance": 91.2177,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1569.0380620401,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 104.3,
+            "rank": 200,
+            "rankPercent": 91.7904290429043,
+            "total": 2424
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 89.0723,
+          "medianPerformance": 89.0723,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 961.45778896017,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 0,
+            "rank": 171,
+            "rankPercent": 89.57055214723927,
+            "total": 1630
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 93.5809,
+          "medianPerformance": 93.5809,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1304.083858708,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 107.46,
+            "rank": 114,
+            "rankPercent": 93.98616285258116,
+            "total": 1879
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 92.9347,
+          "medianPerformance": 92.9347,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1744.2231527963,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 108.66,
+            "rank": 115,
+            "rankPercent": 93.51535836177474,
+            "total": 1758
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 16.5258,
+          "medianPerformance": 16.5258,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 870.95323088532,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 35.72,
+            "rank": 1330,
+            "rankPercent": 21.221102548903378,
+            "total": 1687
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 46.4022,
+          "medianPerformance": 46.4022,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 921.16527763072,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 0,
+            "rank": 591,
+            "rankPercent": 48.82914137033825,
+            "total": 1153
           }
         }
       ],
-      "bestPerformanceAverage": 97.39723333333332,
-      "medianPerformanceAverage": 86.97269999999999,
+      "bestPerformanceAverage": 79.17778750000001,
+      "medianPerformanceAverage": 79.17778750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -3327,20 +4736,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105987217,
       "gear": [
         {
-          "id": 29098,
+          "id": 23758,
           "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_81.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 2999,
+          "quality": 3,
+          "icon": "inv_gizmo_newgoggles.jpg",
+          "itemLevel": 106,
+          "permanentEnchantID": 3005,
           "temporaryEnchantID": null
         },
         {
-          "id": 29381,
+          "id": 24095,
           "slot": 2,
-          "quality": 4,
-          "icon": "inv_jewelry_necklace_04.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_31.jpg",
+          "itemLevel": 114,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3390,11 +4799,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28422,
+          "id": 28545,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_08.jpg",
-          "itemLevel": 123,
+          "icon": "inv_boots_plate_06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2657,
           "temporaryEnchantID": null
         },
@@ -3408,57 +4817,57 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29097,
+          "id": 24801,
           "slot": 10,
-          "quality": 4,
-          "icon": "inv_gauntlets_44.jpg",
+          "quality": 2,
+          "icon": "inv_gauntlets_23.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": 2564,
+          "permanentEnchantID": 2988,
           "temporaryEnchantID": null
         },
         {
-          "id": 29279,
+          "id": 25057,
           "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
+          "quality": 2,
+          "icon": "inv_jewelry_ring_04.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 30834,
+          "id": 31399,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_41.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28528,
-          "slot": 13,
-          "quality": 4,
-          "icon": "inv_misc_pocketwatch_02.jpg",
+          "icon": "inv_jewelry_ring_69.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29383,
+          "id": 24125,
+          "slot": 13,
+          "quality": 3,
+          "icon": "inv_jewelcrafting_truesilvercrab.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29181,
           "slot": 14,
           "quality": 4,
-          "icon": "inv_misc_monsterscales_15.jpg",
-          "itemLevel": 110,
+          "icon": "inv_datacrystal02.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28660,
+          "id": 25043,
           "slot": 15,
-          "quality": 4,
-          "icon": "inv_misc_cape_20.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 368,
+          "quality": 2,
+          "icon": "inv_misc_cape_14.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2620,
           "temporaryEnchantID": null
         },
         {
@@ -3480,11 +4889,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 23198,
+          "id": 32387,
           "slot": 18,
           "quality": 3,
-          "icon": "inv_relics_idolofferocity.jpg",
-          "itemLevel": 65,
+          "icon": "inv-mount_raven_54.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3500,58 +4909,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 97.9802,
-          "medianPerformance": 89.3292,
-          "totalKills": 8,
-          "fastestKill": 18587,
-          "bestAmount": 1112.4441814171,
-          "spec": "Guardian",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 57.7272,
+          "medianPerformance": 57.7272,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 625.99026987936,
+          "spec": "Warden",
           "allStars": {
-            "points": 110.15,
-            "rank": 250,
-            "rankPercent": 98.06391415908561,
-            "total": 12861
+            "points": 66.31,
+            "rank": 191,
+            "rankPercent": 59.05172413793103,
+            "total": 464
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 97.6804,
-          "medianPerformance": 95.7141,
-          "totalKills": 8,
-          "fastestKill": 101676,
-          "bestAmount": 922.12518195051,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 80.3339,
+          "medianPerformance": 80.3339,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 573.86695962201,
           "spec": "Guardian",
           "allStars": {
-            "points": 110.44,
-            "rank": 401,
-            "rankPercent": 97.52918648465007,
-            "total": 16189
+            "points": 94.44,
+            "rank": 160,
+            "rankPercent": 80.95808383233533,
+            "total": 835
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.5486,
-          "medianPerformance": 86.5427,
-          "totalKills": 8,
-          "fastestKill": 163693,
-          "bestAmount": 1019.9336562956,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 67.8815,
+          "medianPerformance": 67.8815,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 589.79725928228,
           "spec": "Guardian",
           "allStars": {
-            "points": 105.02,
-            "rank": 461,
-            "rankPercent": 95.72728961545606,
-            "total": 10766
+            "points": 77.71,
+            "rank": 233,
+            "rankPercent": 68.2626538987688,
+            "total": 731
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 72.4593,
+          "medianPerformance": 72.4593,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 767.19658024139,
+          "spec": "Warden",
+          "allStars": {
+            "points": 83.98,
+            "rank": 52,
+            "rankPercent": 71.97802197802197,
+            "total": 182
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 67.0177,
+          "medianPerformance": 67.0177,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 709.64930812295,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 85.26,
+            "rank": 286,
+            "rankPercent": 67.94150731158605,
+            "total": 889
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 75.7437,
+          "medianPerformance": 75.7437,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 442.93156327813,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 0,
+            "rank": 103,
+            "rankPercent": 76.71232876712328,
+            "total": 438
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 85.5368,
+          "medianPerformance": 85.5368,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 484.84931638414,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 98.24,
+            "rank": 118,
+            "rankPercent": 86.17021276595744,
+            "total": 846
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 67.8433,
+          "medianPerformance": 67.8433,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 816.03012032996,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 91.68,
+            "rank": 247,
+            "rankPercent": 68.09338521400778,
+            "total": 771
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 91.905,
+          "medianPerformance": 91.905,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 850.61599407949,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 107.75,
+            "rank": 40,
+            "rankPercent": 91.64882226980728,
+            "total": 467
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 60.306,
+          "medianPerformance": 60.306,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 482.19606690709,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 0,
+            "rank": 100,
+            "rankPercent": 61.478599221789885,
+            "total": 257
           }
         }
       ],
-      "bestPerformanceAverage": 97.7364,
-      "medianPerformanceAverage": 90.52866666666667,
+      "bestPerformanceAverage": 73.8380875,
+      "medianPerformanceAverage": 73.8380875,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -3562,11 +5083,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 106035284,
       "gear": [
         {
-          "id": 28963,
+          "id": 32494,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_89.jpg",
-          "itemLevel": 120,
+          "icon": "inv_gizmo_newgoggles.jpg",
+          "itemLevel": 127,
           "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
@@ -3643,11 +5164,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28780,
+          "id": 28968,
           "slot": 10,
           "quality": 4,
-          "icon": "inv_gauntlets_15.jpg",
-          "itemLevel": 125,
+          "icon": "inv_gauntlets_52.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2937,
           "temporaryEnchantID": null
         },
@@ -3661,11 +5182,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29287,
+          "id": 28793,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
+          "icon": "inv_jewelry_ring_65.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3679,21 +5200,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27683,
+          "id": 23046,
           "slot": 14,
-          "quality": 3,
-          "icon": "inv_misc_gem_pearl_01.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_trinket_naxxramas06.jpg",
+          "itemLevel": 90,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28766,
+          "id": 29369,
           "slot": 15,
           "quality": 4,
-          "icon": "inv_misc_cape_18.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 2621,
+          "icon": "inv_misc_cape_16.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -3715,11 +5236,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28673,
+          "id": 28783,
           "slot": 18,
           "quality": 4,
-          "icon": "inv_wand_21.jpg",
-          "itemLevel": 115,
+          "icon": "inv_wand_20.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3735,58 +5256,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.5012,
-          "medianPerformance": 92.2126,
-          "totalKills": 9,
-          "fastestKill": 24379,
-          "bestAmount": 2947.0856064646,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 93.6255,
+          "medianPerformance": 93.6255,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1726.1595608297,
           "spec": "Destruction",
           "allStars": {
-            "points": 113.42,
-            "rank": 288,
-            "rankPercent": 99.3141191090718,
-            "total": 41844
+            "points": 108.1,
+            "rank": 245,
+            "rankPercent": 94.00638663718988,
+            "total": 4071
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 97.1045,
-          "medianPerformance": 83.3536,
-          "totalKills": 9,
-          "fastestKill": 114560,
-          "bestAmount": 1735.9375,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 89.1851,
+          "medianPerformance": 89.1851,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1249.4392651704,
           "spec": "Destruction",
           "allStars": {
-            "points": 110.04,
-            "rank": 1590,
-            "rankPercent": 96.23361539737846,
-            "total": 42189
+            "points": 99.51,
+            "rank": 431,
+            "rankPercent": 89.42709613966068,
+            "total": 4067
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.803,
-          "medianPerformance": 89.6244,
-          "totalKills": 10,
-          "fastestKill": 198308,
-          "bestAmount": 2099.1392819022,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 3.28668,
+          "medianPerformance": 3.28668,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 239.18132566384,
           "spec": "Destruction",
           "allStars": {
-            "points": 107.97,
-            "rank": 1152,
-            "rankPercent": 97.21906786827418,
-            "total": 41389
+            "points": 14.32,
+            "rank": 3307,
+            "rankPercent": 7.369010927430653,
+            "total": 3569
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 16.5785,
+          "medianPerformance": 16.5785,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 823.91316495306,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 39.69,
+            "rank": 2591,
+            "rankPercent": 18.9358372456964,
+            "total": 3195
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 69.3914,
+          "medianPerformance": 69.3914,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1431.4724833633,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 81.23,
+            "rank": 912,
+            "rankPercent": 69.96373227827233,
+            "total": 3033
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 27.4644,
+          "medianPerformance": 27.4644,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 703.5662009,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 0,
+            "rank": 1443,
+            "rankPercent": 31.528964862298196,
+            "total": 2106
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 78.4191,
+          "medianPerformance": 78.4191,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1262.9742949461,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 92.3,
+            "rank": 485,
+            "rankPercent": 79.23637923637924,
+            "total": 2331
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 55.959,
+          "medianPerformance": 55.959,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1460.5963522615,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 78.9,
+            "rank": 953,
+            "rankPercent": 57.000903342366755,
+            "total": 2214
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 13.242,
+          "medianPerformance": 13.242,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 870.30023362791,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 35.21,
+            "rank": 1758,
+            "rankPercent": 17.627754336615094,
+            "total": 2133
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 54.6543,
+          "medianPerformance": 54.6543,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 951.72766972564,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 0,
+            "rank": 638,
+            "rankPercent": 57.95379537953795,
+            "total": 1515
           }
         }
       ],
-      "bestPerformanceAverage": 98.13623333333334,
-      "medianPerformanceAverage": 88.39686666666665,
+      "bestPerformanceAverage": 52.460910000000005,
+      "medianPerformanceAverage": 52.460910000000005,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -3797,11 +5430,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 102085054,
       "gear": [
         {
-          "id": 28127,
+          "id": 8345,
           "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_81.jpg",
-          "itemLevel": 123,
+          "quality": 3,
+          "icon": "inv_helmet_04.jpg",
+          "itemLevel": 45,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
@@ -3887,20 +5520,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30834,
+          "id": 28649,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_41.jpg",
-          "itemLevel": 100,
+          "icon": "inv_jewelry_ring_47.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28649,
+          "id": 30834,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_47.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_ring_41.jpg",
+          "itemLevel": 100,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3950,11 +5583,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28064,
+          "id": 29390,
           "slot": 18,
-          "quality": 2,
-          "icon": "spell_nature_spiritwolf.jpg",
-          "itemLevel": 93,
+          "quality": 4,
+          "icon": "inv_relics_idolofhealth.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3970,58 +5603,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 61.8858,
-          "medianPerformance": 28.091,
-          "totalKills": 3,
-          "fastestKill": 35016,
-          "bestAmount": 654.72926662097,
-          "spec": "Feral",
-          "allStars": {
-            "points": 66.18,
-            "rank": 7477,
-            "rankPercent": 61.34236516882983,
-            "total": 19339
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 63.4969,
-          "medianPerformance": 59.5775,
-          "totalKills": 3,
-          "fastestKill": 156323,
-          "bestAmount": 927.61529808774,
-          "spec": "Feral",
-          "allStars": {
-            "points": 71.01,
-            "rank": 5710,
-            "rankPercent": 62.02859993348853,
-            "total": 15035
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 56.7457,
-          "medianPerformance": 18.3651,
-          "totalKills": 3,
-          "fastestKill": 273895,
-          "bestAmount": 854.17039376403,
-          "spec": "Feral",
-          "allStars": {
-            "points": 61.67,
-            "rank": 8518,
-            "rankPercent": 56.20629370629371,
-            "total": 19448
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 60.709466666666664,
-      "medianPerformanceAverage": 35.34453333333333,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -4086,12 +5781,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30538,
+          "id": 28741,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_leather_09.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 3010,
+          "icon": "inv_pants_leather_13.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 3012,
           "temporaryEnchantID": null
         },
         {
@@ -4173,7 +5868,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_weapon_shortblade_38.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2564,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": null
         },
         {
           "id": 28572,
@@ -4205,58 +5900,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 95.1541,
-          "medianPerformance": 81.3994,
-          "totalKills": 10,
-          "fastestKill": 18587,
-          "bestAmount": 2602.6792919783,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 74.706,
+          "medianPerformance": 74.706,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1642.6070806351,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 106.85,
-            "rank": 2031,
-            "rankPercent": 95.0014773958436,
-            "total": 40612
+            "points": 86.07,
+            "rank": 818,
+            "rankPercent": 75.42117930204573,
+            "total": 3324
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 97.9475,
-          "medianPerformance": 77.2072,
-          "totalKills": 10,
-          "fastestKill": 101676,
-          "bestAmount": 2100.3481647586,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 74.3984,
+          "medianPerformance": 74.3984,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1115.0358310828,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 112.42,
-            "rank": 830,
-            "rankPercent": 97.97171657858681,
-            "total": 40872
+            "points": 82.41,
+            "rank": 819,
+            "rankPercent": 75.21212121212122,
+            "total": 3300
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 98.0615,
-          "medianPerformance": 75.3588,
-          "totalKills": 10,
-          "fastestKill": 163693,
-          "bestAmount": 2372.4166580123,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 60.2859,
+          "medianPerformance": 60.2859,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 1019.0150570294,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 108.81,
-            "rank": 673,
-            "rankPercent": 98.29450281711588,
-            "total": 39402
+            "points": 68.55,
+            "rank": 1145,
+            "rankPercent": 61.72632987621278,
+            "total": 2989
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 87.5071,
+          "medianPerformance": 87.5071,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 2017.8042579347,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 100.61,
+            "rank": 300,
+            "rankPercent": 88.26990976853668,
+            "total": 2549
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 3.77813,
+          "medianPerformance": 3.77813,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 645.20615471286,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 27.31,
+            "rank": 2211,
+            "rankPercent": 8.639933856965689,
+            "total": 2419
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 64.49,
+          "medianPerformance": 64.49,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 893.33557191401,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 0,
+            "rank": 572,
+            "rankPercent": 65.97139451728248,
+            "total": 1678
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 64.7309,
+          "medianPerformance": 64.7309,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1027.1422593281,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 74.95,
+            "rank": 627,
+            "rankPercent": 66.1987041036717,
+            "total": 1852
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 96.7334,
+          "medianPerformance": 96.7334,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1768.9008854469,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 112.04,
+            "rank": 61,
+            "rankPercent": 96.60056657223797,
+            "total": 1765
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 67.6887,
+          "medianPerformance": 67.6887,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1648.0417337803,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 75.54,
+            "rank": 535,
+            "rankPercent": 68.49557522123894,
+            "total": 1695
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 59.2198,
+          "medianPerformance": 59.2198,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 948.83867663805,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 0,
+            "rank": 466,
+            "rankPercent": 61.34663341645885,
+            "total": 1203
           }
         }
       ],
-      "bestPerformanceAverage": 97.05436666666667,
-      "medianPerformanceAverage": 77.98846666666667,
+      "bestPerformanceAverage": 66.22856625,
+      "medianPerformanceAverage": 66.22856625,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -4276,11 +6083,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 24116,
+          "id": 29333,
           "slot": 2,
           "quality": 3,
-          "icon": "inv_jewelry_necklace_28.jpg",
-          "itemLevel": 114,
+          "icon": "inv_jewelry_necklace_29naxxramas.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -4348,20 +6155,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27508,
+          "id": 28780,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_17.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
+          "quality": 4,
+          "icon": "inv_gauntlets_15.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2937,
           "temporaryEnchantID": null
         },
         {
-          "id": 29286,
+          "id": 30667,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "icon": "inv_jewelry_ring_51naxxramas.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -4408,7 +6215,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_weapon_shortblade_05.jpg",
           "itemLevel": 105,
           "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2628
+          "temporaryEnchantID": 2636
         },
         {
           "id": 29268,
@@ -4440,58 +6247,150 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.7627,
-          "medianPerformance": 94.0852,
-          "totalKills": 8,
-          "fastestKill": 18587,
-          "bestAmount": 2963.3614892129,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 87.6285,
+          "medianPerformance": 87.6285,
+          "totalKills": 1,
+          "fastestKill": 207895,
+          "bestAmount": 955.13600615695,
           "spec": "Elemental",
           "allStars": {
-            "points": 116.36,
-            "rank": 47,
-            "rankPercent": 99.77717496609185,
-            "total": 20644
+            "points": 96.81905729636284,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 98.2875,
-          "medianPerformance": 88.6657,
-          "totalKills": 8,
-          "fastestKill": 101676,
-          "bestAmount": 1424.0430386719,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 85.456,
+          "medianPerformance": 85.456,
+          "totalKills": 1,
+          "fastestKill": 230935,
+          "bestAmount": 1010.617706281,
           "spec": "Elemental",
           "allStars": {
-            "points": 113.12,
-            "rank": 345,
-            "rankPercent": 98.35217474611994,
-            "total": 20876
+            "points": 98.89518021599464,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 93.9815,
-          "medianPerformance": 83.2038,
-          "totalKills": 8,
-          "fastestKill": 163693,
-          "bestAmount": 1428.3384139823,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 60.8305,
+          "medianPerformance": 60.8305,
+          "totalKills": 1,
+          "fastestKill": 329399,
+          "bestAmount": 890.80112568648,
           "spec": "Elemental",
           "allStars": {
-            "points": 104.02,
-            "rank": 1343,
-            "rankPercent": 93.36497577375656,
-            "total": 20226
+            "points": 72.16330291585155,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
           }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 54.2151,
+          "medianPerformance": 54.2151,
+          "totalKills": 1,
+          "fastestKill": 241779,
+          "bestAmount": 1090.2559775663,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 63.43609267982789,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 38.2551,
+          "medianPerformance": 38.2551,
+          "totalKills": 1,
+          "fastestKill": 293249,
+          "bestAmount": 1025.2481679392,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 68.01249060144752,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 95.9413,
+          "medianPerformance": 95.9413,
+          "totalKills": 1,
+          "fastestKill": 528095,
+          "bestAmount": 821.85402247702,
+          "spec": "Elemental",
+          "allStars": {
+            "points": "-",
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 97.3439,
-      "medianPerformanceAverage": 88.65156666666667,
+      "bestPerformanceAverage": 65.27703999999999,
+      "medianPerformanceAverage": 65.27703999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -4675,58 +6574,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 97.2591,
-          "medianPerformance": 95.4601,
-          "totalKills": 7,
-          "fastestKill": 26349,
-          "bestAmount": 2712.896204598,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 108.44,
-            "rank": 1588,
-            "rankPercent": 96.09228799369644,
-            "total": 40612
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 95.9884,
-          "medianPerformance": 79.9116,
-          "totalKills": 7,
-          "fastestKill": 123192,
-          "bestAmount": 1854.4216449035,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 105.71,
-            "rank": 2896,
-            "rankPercent": 92.91691133294186,
-            "total": 40872
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 92.7461,
-          "medianPerformance": 89.9986,
-          "totalKills": 6,
-          "fastestKill": 198723,
-          "bestAmount": 1855.1935750492,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 98.47,
-            "rank": 3866,
-            "rankPercent": 90.19085325617989,
-            "total": 39402
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 95.33120000000001,
-      "medianPerformanceAverage": 88.45676666666667,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -4910,73 +6871,121 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 77.9624,
-          "medianPerformance": 50.6191,
-          "totalKills": 4,
-          "fastestKill": 29964,
-          "bestAmount": 1139.4339874516,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 80.01,
-            "rank": 6789,
-            "rankPercent": 72.56376055939533,
-            "total": 24741
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 67.057,
-          "medianPerformance": 61.2747,
-          "totalKills": 4,
-          "fastestKill": 130187,
-          "bestAmount": 1081.6825028613,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 71.51,
-            "rank": 9798,
-            "rankPercent": 60.749198717948715,
-            "total": 24960
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 47.9466,
-          "medianPerformance": 31.4903,
-          "totalKills": 4,
-          "fastestKill": 198308,
-          "bestAmount": 1070.7108285373,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 47.97,
-            "rank": 14290,
-            "rankPercent": 41.051980198019805,
-            "total": 24240
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 64.322,
-      "medianPerformanceAverage": 47.7947,
-      "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
-      "error": null,
-      "partial": false
-    },
-    "dullo": {
-      "characterName": "Dullo",
-      "serverSlug": "spineshatter",
-      "serverRegion": "eu",
-      "wclId": null,
-      "gear": [],
-      "rankings": [],
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
-      "error": "Character not found on spineshatter-eu",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "error": null,
       "partial": false
     },
     "edgelørd": {
@@ -5159,58 +7168,140 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 98.4461,
-          "medianPerformance": 98.4461,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 1899.9582526851,
-          "spec": "Affliction",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 73.001,
+          "medianPerformance": 73.001,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1224.0016738813,
+          "spec": "Destruction",
           "allStars": {
-            "points": 104.31,
-            "rank": 555,
-            "rankPercent": 93.99067143941859,
-            "total": 9219
+            "points": 86.4,
+            "rank": 604,
+            "rankPercent": 74.13127413127413,
+            "total": 2331
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 99.7114,
-          "medianPerformance": 95.2408,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 1848.0097765363,
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 35.3865,
+          "medianPerformance": 35.3865,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1257.4102570571,
           "spec": "Destruction",
           "allStars": {
-            "points": 112.92,
-            "rank": 744,
-            "rankPercent": 98.2388774325061,
-            "total": 42189
+            "points": 67.92,
+            "rank": 1375,
+            "rankPercent": 37.94037940379404,
+            "total": 2214
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 98.7789,
-          "medianPerformance": 95.0002,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 2270.9278955117,
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 7.67395,
+          "medianPerformance": 7.67395,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 751.50552145459,
           "spec": "Destruction",
           "allStars": {
-            "points": 110.28,
-            "rank": 556,
-            "rankPercent": 98.65906400251275,
-            "total": 41389
+            "points": 30.4,
+            "rank": 1866,
+            "rankPercent": 12.56446319737459,
+            "total": 2133
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 28.1615,
+          "medianPerformance": 28.1615,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 803.46635954459,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 0,
+            "rank": 1025,
+            "rankPercent": 32.40924092409241,
+            "total": 1515
           }
         }
       ],
-      "bestPerformanceAverage": 98.97879999999999,
-      "medianPerformanceAverage": 96.22903333333333,
+      "bestPerformanceAverage": 38.68715,
+      "medianPerformanceAverage": 38.68715,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -5239,11 +7330,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 21874,
+          "id": 29089,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_02.jpg",
-          "itemLevel": 105,
+          "icon": "inv_shoulder_44.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2980,
           "temporaryEnchantID": null
         },
@@ -5347,12 +7438,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27946,
+          "id": 28765,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_16.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2662,
+          "quality": 4,
+          "icon": "inv_misc_cape_06.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2938,
           "temporaryEnchantID": null
         },
         {
@@ -5394,58 +7485,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 60.1175,
-          "medianPerformance": 46.4378,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 752.07468879668,
-          "spec": "Balance",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 95,
+          "medianPerformance": 95,
+          "totalKills": 1,
+          "fastestKill": 121734,
+          "bestAmount": 0,
+          "spec": "Restoration",
           "allStars": {
-            "points": 44.73,
-            "rank": 8318,
-            "rankPercent": 39.194326655943854,
-            "total": 13678
+            "points": 95,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 82.3539,
-          "medianPerformance": 54.5462,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 908.13526852393,
-          "spec": "Balance",
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 80,
+          "medianPerformance": 80,
+          "totalKills": 1,
+          "fastestKill": 196631,
+          "bestAmount": 0,
+          "spec": "Restoration",
           "allStars": {
-            "points": 76.55,
-            "rank": 4431,
-            "rankPercent": 66.52814506989044,
-            "total": 13235
+            "points": 80,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 61.7104,
-          "medianPerformance": 39.3287,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 756.6411537668,
-          "spec": "Balance",
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 60,
+          "medianPerformance": 60,
+          "totalKills": 1,
+          "fastestKill": 254171,
+          "bestAmount": 0,
+          "spec": "Restoration",
           "allStars": {
-            "points": 55.47,
-            "rank": 6398,
-            "rankPercent": 49.00350765306123,
-            "total": 12544
+            "points": 60,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 95,
+          "medianPerformance": 95,
+          "totalKills": 1,
+          "fastestKill": 143210,
+          "bestAmount": 0,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 95,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 90,
+          "medianPerformance": 90,
+          "totalKills": 1,
+          "fastestKill": 227248,
+          "bestAmount": 0,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 90,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 80,
+          "medianPerformance": 80,
+          "totalKills": 1,
+          "fastestKill": 422890,
+          "bestAmount": 0,
+          "spec": "Restoration",
+          "allStars": {
+            "points": "-",
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 90,
+          "medianPerformance": 90,
+          "totalKills": 1,
+          "fastestKill": 291582,
+          "bestAmount": 0,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 90,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 80,
+          "medianPerformance": 80,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 0,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 80,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 95,
+          "medianPerformance": 95,
+          "totalKills": 1,
+          "fastestKill": 137856,
+          "bestAmount": 0,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 95,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 70,
+          "medianPerformance": 70,
+          "totalKills": 1,
+          "fastestKill": 462841,
+          "bestAmount": 0,
+          "spec": "Restoration",
+          "allStars": {
+            "points": "-",
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
           }
         }
       ],
-      "bestPerformanceAverage": 68.0606,
-      "medianPerformanceAverage": 46.770900000000005,
+      "bestPerformanceAverage": 85.625,
+      "medianPerformanceAverage": 85.625,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -5465,11 +7668,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31691,
+          "id": 28609,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_31.jpg",
-          "itemLevel": 103,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_17.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5546,29 +7749,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29291,
+          "id": 29290,
           "slot": 11,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27780,
+          "id": 28763,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_31.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_08.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28190,
+          "id": 28823,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_misc_ahnqirajtrinket_06.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "spell_shadow_unholyfrenzy.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5591,20 +7794,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28604,
+          "id": 32451,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_staff_57.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "icon": "inv_mace_47.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2343,
           "temporaryEnchantID": 2678
         },
         {
-          "id": 0,
+          "id": 29170,
           "slot": 17,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 4,
+          "icon": "inv_misc_orb_01.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5629,58 +7832,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 96.4816,
-          "medianPerformance": 85.5845,
-          "totalKills": 4,
-          "fastestKill": 27183,
-          "bestAmount": 1434.1876918969,
-          "spec": "Holy",
-          "allStars": {
-            "points": 103.37,
-            "rank": 1350,
-            "rankPercent": 94.88898992195196,
-            "total": 26394
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 92.1069,
-          "medianPerformance": 82.9673,
-          "totalKills": 4,
-          "fastestKill": 129192,
-          "bestAmount": 1025.8375131587,
-          "spec": "Holy",
-          "allStars": {
-            "points": 98.96,
-            "rank": 2372,
-            "rankPercent": 91.0626107278827,
-            "total": 26529
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 83.7186,
-          "medianPerformance": 80.5361,
-          "totalKills": 4,
-          "fastestKill": 198308,
-          "bestAmount": 856.02665244354,
-          "spec": "Holy",
-          "allStars": {
-            "points": 90.43,
-            "rank": 4443,
-            "rankPercent": 82.6788847728602,
-            "total": 25645
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 90.76903333333333,
-      "medianPerformanceAverage": 83.0293,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -5691,20 +7956,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105376756,
       "gear": [
         {
-          "id": 27781,
+          "id": 28278,
           "slot": 1,
           "quality": 3,
-          "icon": "inv_helmet_72.jpg",
+          "icon": "inv_helmet_34.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
         {
-          "id": 28134,
+          "id": 27758,
           "slot": 2,
           "quality": 3,
-          "icon": "inv_jewelry_necklace_27.jpg",
-          "itemLevel": 112,
+          "icon": "inv_jewelry_necklace_34.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5727,20 +7992,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28252,
+          "id": 21848,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_25.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_chest_cloth_02.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27547,
+          "id": 21846,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_15.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_04.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5754,74 +8019,74 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31230,
+          "id": 28517,
           "slot": 8,
-          "quality": 3,
+          "quality": 4,
           "icon": "inv_boots_cloth_05.jpg",
-          "itemLevel": 100,
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28174,
+          "id": 28411,
           "slot": 9,
-          "quality": 3,
+          "quality": 4,
           "icon": "inv_bracer_07.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "itemLevel": 113,
+          "permanentEnchantID": 2647,
           "temporaryEnchantID": null
         },
         {
-          "id": 27537,
+          "id": 21847,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_16.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_gauntlets_19.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 25824,
+          "id": 29352,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_17.jpg",
-          "itemLevel": 85,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_57.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28555,
+          "id": 29367,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_60.jpg",
-          "itemLevel": 95,
+          "icon": "inv_jewelry_ring_56.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27896,
+          "id": 29370,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_potion_130.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 0,
+          "id": 28727,
           "slot": 14,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
+          "quality": 4,
+          "icon": "inv_trinket_naxxramas02.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27981,
+          "id": 28766,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_11.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_misc_cape_18.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5832,14 +8097,14 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_sword_01.jpg",
           "itemLevel": 100,
           "permanentEnchantID": null,
-          "temporaryEnchantID": 2628
+          "temporaryEnchantID": 2678
         },
         {
-          "id": 29330,
+          "id": 29271,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_misc_book_07.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_offhand_outlandraid_02.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5864,8 +8129,8 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -5875,8 +8140,8 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -5886,8 +8151,85 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -5900,7 +8242,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -5974,11 +8316,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28810,
+          "id": 28752,
           "slot": 8,
           "quality": 4,
           "icon": "inv_boots_chain_05.jpg",
-          "itemLevel": 125,
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -5988,7 +8330,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_bracer_12.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 369,
+          "permanentEnchantID": 2617,
           "temporaryEnchantID": null
         },
         {
@@ -6055,12 +8397,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2677
         },
         {
-          "id": 28754,
+          "id": 28728,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_shield_31.jpg",
+          "icon": "inv_misc_gem_sapphire_02.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2654,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -6084,58 +8426,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.82881064604565,
-          "medianPerformance": 94.89102016943518,
-          "totalKills": 7,
-          "fastestKill": 24379,
-          "bestAmount": 573.60810656951,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 75,
+          "medianPerformance": 75,
+          "totalKills": 1,
+          "fastestKill": 121722,
+          "bestAmount": 0,
           "spec": "Restoration",
           "allStars": {
-            "points": 109.04310642572153,
+            "points": 75,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 75.11508085215226,
-          "medianPerformance": 40,
-          "totalKills": 7,
-          "fastestKill": 114560,
-          "bestAmount": 21.806955714013,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 70,
+          "medianPerformance": 70,
+          "totalKills": 1,
+          "fastestKill": 196631,
+          "bestAmount": 0,
           "spec": "Restoration",
           "allStars": {
-            "points": 75.80993838448309,
+            "points": 70,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 90.05399458275605,
-          "medianPerformance": 86.01917669486048,
-          "totalKills": 6,
-          "fastestKill": 198723,
-          "bestAmount": 127.48166148116,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 88.44204024485751,
+          "medianPerformance": 88.44204024485751,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 58.323857935924,
           "spec": "Restoration",
           "allStars": {
-            "points": 93.29333614559664,
+            "points": 93.13759873247983,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 65.9934146740568,
+          "medianPerformance": 65.9934146740568,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 0.95691774698257,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 66.0290585491393,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 75.61371140527753,
+          "medianPerformance": 75.61371140527753,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 16.971233407274,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 76.95814376408175,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 92.12421193376834,
+          "medianPerformance": 92.12421193376834,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 36.409253535815,
+          "spec": "Restoration",
+          "allStars": {
+            "points": "-",
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 89.5582096337939,
+          "medianPerformance": 89.5582096337939,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 0.25382625935556,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 89.58403414993022,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 80.83437714503454,
+          "medianPerformance": 80.83437714503454,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 11.585227416059,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 83.00726952872617,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 87.68744745148594,
+          "medianPerformance": 87.68744745148594,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 39.636933524879,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 88.79100378565238,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 67.3829592495676,
+          "medianPerformance": 67.3829592495676,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 8.988938851447,
+          "spec": "Restoration",
+          "allStars": {
+            "points": "-",
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         }
       ],
-      "bestPerformanceAverage": 88.33262869365132,
-      "medianPerformanceAverage": 73.63673228809856,
+      "bestPerformanceAverage": 79.14115006931327,
+      "medianPerformanceAverage": 79.14115006931327,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -6182,29 +8636,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28600,
+          "id": 29087,
           "slot": 5,
           "quality": 4,
-          "icon": "inv_chest_leather_07.jpg",
-          "itemLevel": 115,
+          "icon": "inv_chest_leather_11.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27742,
+          "id": 28565,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_13.jpg",
+          "quality": 4,
+          "icon": "inv_belt_08.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 24083,
+          "id": 29088,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_plate_01.jpg",
-          "itemLevel": 85,
+          "quality": 4,
+          "icon": "inv_pants_leather_22.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -6236,20 +8690,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28259,
+          "id": 29289,
           "slot": 11,
-          "quality": 3,
+          "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 115,
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29289,
+          "id": 28763,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_ring_08.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -6319,58 +8773,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 51.7797,
-          "medianPerformance": 51.7797,
-          "totalKills": 1,
-          "fastestKill": 29404,
-          "bestAmount": 798.63283906951,
-          "spec": "Balance",
-          "allStars": {
-            "points": 51.14,
-            "rank": 7474,
-            "rankPercent": 45.364819418043574,
-            "total": 13678
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 32.8279,
-          "medianPerformance": 32.8279,
-          "totalKills": 1,
-          "fastestKill": 131874,
-          "bestAmount": 640.85414865705,
-          "spec": "Balance",
-          "allStars": {
-            "points": 40.95,
-            "rank": 9505,
-            "rankPercent": 28.19040423120514,
-            "total": 13235
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 33.469,
-          "medianPerformance": 33.469,
-          "totalKills": 1,
-          "fastestKill": 247445,
-          "bestAmount": 608.36953666471,
-          "spec": "Balance",
-          "allStars": {
-            "points": 33.76,
-            "rank": 9003,
-            "rankPercent": 28.236607142857142,
-            "total": 12544
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 39.358866666666664,
-      "medianPerformanceAverage": 39.358866666666664,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -6399,12 +8915,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 32078,
+          "id": 29037,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_33.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 2981,
+          "icon": "inv_shoulder_14.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2982,
           "temporaryEnchantID": null
         },
         {
@@ -6471,11 +8987,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27784,
+          "id": 28753,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -6507,10 +9023,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27981,
+          "id": 28570,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_11.jpg",
+          "quality": 4,
+          "icon": "inv_misc_cape_20.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -6554,58 +9070,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.7642,
-          "medianPerformance": 87.7791,
-          "totalKills": 7,
-          "fastestKill": 24379,
-          "bestAmount": 2910.3736822675,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 82.6978,
+          "medianPerformance": 82.6978,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 899.99506919562,
           "spec": "Elemental",
           "allStars": {
-            "points": 115.99,
-            "rank": 64,
-            "rankPercent": 99.69482658399535,
-            "total": 20644
+            "points": 91.41,
+            "rank": 310,
+            "rankPercent": 83.51120597652081,
+            "total": 1874
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 95.619,
-          "medianPerformance": 72.2847,
-          "totalKills": 7,
-          "fastestKill": 114560,
-          "bestAmount": 1289.2894553073,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 90.0888,
+          "medianPerformance": 90.0888,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1049.3344929482,
           "spec": "Elemental",
           "allStars": {
-            "points": 108.13,
-            "rank": 1100,
-            "rankPercent": 94.73558152902855,
-            "total": 20876
+            "points": 103.94,
+            "rank": 181,
+            "rankPercent": 90.50131926121372,
+            "total": 1895
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 92.2189,
-          "medianPerformance": 86.8657,
-          "totalKills": 7,
-          "fastestKill": 199708,
-          "bestAmount": 1406.4623304551,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 80.9494,
+          "medianPerformance": 80.9494,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 1026.4983259038,
           "spec": "Elemental",
           "allStars": {
-            "points": 102.81,
-            "rank": 1557,
-            "rankPercent": 92.30693167210521,
-            "total": 20226
+            "points": 93.83,
+            "rank": 314,
+            "rankPercent": 81.81289947704823,
+            "total": 1721
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 91.8686,
+          "medianPerformance": 91.8686,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1514.6261734466,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 104.33,
+            "rank": 115,
+            "rankPercent": 92.0223932820154,
+            "total": 1429
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 70.735,
+          "medianPerformance": 70.735,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1223.6673004472,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 83.87,
+            "rank": 388,
+            "rankPercent": 72.07792207792208,
+            "total": 1386
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 86.5723,
+          "medianPerformance": 86.5723,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 738.43367140631,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 0,
+            "rank": 110,
+            "rankPercent": 88.85480572597137,
+            "total": 978
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 81.8895,
+          "medianPerformance": 81.8895,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 964.35113089889,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 97.22,
+            "rank": 179,
+            "rankPercent": 83.04761904761905,
+            "total": 1050
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 95.573,
+          "medianPerformance": 95.573,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1411.5372972428,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 113.42,
+            "rank": 40,
+            "rankPercent": 96.02446483180428,
+            "total": 981
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 39.0966,
+          "medianPerformance": 39.0966,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 898.90876902761,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 58.86,
+            "rank": 557,
+            "rankPercent": 42.2037422037422,
+            "total": 962
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 65.1807,
+          "medianPerformance": 65.1807,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 802.200129216,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 0,
+            "rank": 220,
+            "rankPercent": 67.55555555555556,
+            "total": 675
           }
         }
       ],
-      "bestPerformanceAverage": 95.86736666666667,
-      "medianPerformanceAverage": 82.30983333333334,
+      "bestPerformanceAverage": 79.1123375,
+      "medianPerformanceAverage": 79.1123375,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -6616,11 +9244,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105376758,
       "gear": [
         {
-          "id": 28193,
+          "id": 28963,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_56.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_helmet_89.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
@@ -6634,12 +9262,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27796,
+          "id": 28967,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_22.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2981,
+          "quality": 4,
+          "icon": "inv_shoulder_52.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2982,
           "temporaryEnchantID": null
         },
         {
@@ -6760,11 +9388,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2628
         },
         {
-          "id": 29273,
+          "id": 28412,
           "slot": 17,
-          "quality": 4,
-          "icon": "inv_misc_bag_10_green.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_offhand_outlandraid_03white.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -6789,58 +9417,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 98.0464,
-          "medianPerformance": 94.4435,
-          "totalKills": 5,
-          "fastestKill": 27183,
-          "bestAmount": 2157.1202589854,
-          "spec": "Affliction",
-          "allStars": {
-            "points": 109.24,
-            "rank": 226,
-            "rankPercent": 97.55938821998048,
-            "total": 9219
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 92.9295,
-          "medianPerformance": 75.4538,
-          "totalKills": 5,
-          "fastestKill": 129192,
-          "bestAmount": 1334.11438191,
-          "spec": "Affliction",
-          "allStars": {
-            "points": 100.26,
-            "rank": 1193,
-            "rankPercent": 87.00534176387224,
-            "total": 9173
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 90.7733,
-          "medianPerformance": 83.2979,
-          "totalKills": 5,
-          "fastestKill": 220362,
-          "bestAmount": 1378.7589161228,
-          "spec": "Affliction",
-          "allStars": {
-            "points": 90.68,
-            "rank": 1667,
-            "rankPercent": 81.7384632248164,
-            "total": 9123
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 93.91640000000001,
-      "medianPerformanceAverage": 84.3984,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -6851,12 +9541,12 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105376753,
       "gear": [
         {
-          "id": 35393,
+          "id": 29035,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_09.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 3001,
+          "quality": 4,
+          "icon": "inv_helmet_15.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
         {
@@ -6992,7 +9682,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_mace_54.jpg",
           "itemLevel": 105,
           "permanentEnchantID": 2343,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2629
         },
         {
           "id": 29458,
@@ -7024,293 +9714,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 54.3518,
-          "medianPerformance": 54.3518,
-          "totalKills": 5,
-          "fastestKill": 29964,
-          "bestAmount": 910.32670779072,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 59.86,
-            "rank": 11448,
-            "rankPercent": 53.732670466028054,
-            "total": 24741
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 65.7742,
-          "medianPerformance": 65.7742,
-          "totalKills": 5,
-          "fastestKill": 132466,
-          "bestAmount": 1119.1827178342,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 76.59,
-            "rank": 8612,
-            "rankPercent": 65.50080128205128,
-            "total": 24960
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 22.46,
-          "medianPerformance": 22.46,
-          "totalKills": 4,
-          "fastestKill": 198308,
-          "bestAmount": 886.98588875299,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 32.22,
-            "rank": 18992,
-            "rankPercent": 21.654290429042906,
-            "total": 24240
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 47.52866666666666,
-      "medianPerformanceAverage": 47.52866666666666,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
-      "error": null,
-      "partial": false
-    },
-    "greenbeam": {
-      "characterName": "Greenbeam",
-      "serverSlug": "spineshatter",
-      "serverRegion": "EU",
-      "wclId": 104876710,
-      "gear": [
-        {
-          "id": 28803,
-          "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_15.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 3001,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28609,
-          "slot": 2,
-          "quality": 4,
-          "icon": "inv_jewelry_necklace_17.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28631,
-          "slot": 3,
-          "quality": 4,
-          "icon": "inv_shoulder_14.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2980,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 6134,
-          "slot": 4,
-          "quality": 2,
-          "icon": "inv_misc_cape_13.jpg",
-          "itemLevel": 1,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 21875,
-          "slot": 5,
-          "quality": 4,
-          "icon": "inv_chest_cloth_04.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 3150,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 21873,
-          "slot": 6,
-          "quality": 4,
-          "icon": "inv_belt_31.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28591,
-          "slot": 7,
-          "quality": 4,
-          "icon": "inv_pants_mail_15.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2745,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28752,
-          "slot": 8,
-          "quality": 4,
-          "icon": "inv_boots_chain_05.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2940,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29183,
-          "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_10.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 2617,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28521,
-          "slot": 10,
-          "quality": 4,
-          "icon": "inv_gauntlets_25.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2617,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28763,
-          "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_08.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28790,
-          "slot": 12,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_70.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29376,
-          "slot": 13,
-          "quality": 4,
-          "icon": "inv_valentineperfumebottle.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28190,
-          "slot": 14,
-          "quality": 3,
-          "icon": "inv_misc_ahnqirajtrinket_06.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28765,
-          "slot": 15,
-          "quality": 4,
-          "icon": "inv_misc_cape_06.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28771,
-          "slot": 16,
-          "quality": 4,
-          "icon": "inv_mace_46.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 2343,
-          "temporaryEnchantID": 2629
-        },
-        {
-          "id": 29458,
-          "slot": 17,
-          "quality": 4,
-          "icon": "inv_shield_33.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 2654,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27544,
-          "slot": 18,
-          "quality": 3,
-          "icon": "spell_nature_protectionformnature.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28788,
-          "slot": 19,
-          "quality": 2,
-          "icon": "inv_shirt_guildtabard_01.jpg",
-          "itemLevel": 60,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        }
-      ],
-      "rankings": [
-        {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.54321246971311,
-          "medianPerformance": 75,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 404.10208235478,
-          "spec": "Restoration",
-          "allStars": {
-            "points": 106.03460627910073,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
-        },
-        {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 94.96412431067354,
-          "medianPerformance": 40,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 81.873070513346,
-          "spec": "Restoration",
-          "allStars": {
-            "points": 97.57293044057705,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
-        },
-        {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 98.02484566148118,
-          "medianPerformance": 30.124293452186883,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 162.12375713478,
-          "spec": "Restoration",
-          "allStars": {
-            "points": 102.14445171860949,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
-        }
-      ],
-      "bestPerformanceAverage": 97.5107274806226,
-      "medianPerformanceAverage": 48.3747644840623,
-      "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -7494,58 +10011,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.487,
-          "medianPerformance": 90.5878,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 2643.4020266424,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 72.8242,
+          "medianPerformance": 72.8242,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1374.0343841425,
           "spec": "Destruction",
           "allStars": {
-            "points": 110.56,
-            "rank": 882,
-            "rankPercent": 97.89456074945033,
-            "total": 41844
+            "points": 83.75,
+            "rank": 1083,
+            "rankPercent": 73.42176369442397,
+            "total": 4071
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 98.8173,
-          "medianPerformance": 92.2602,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 1823.5384485394,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 96.3979,
+          "medianPerformance": 96.3979,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1387.3011997945,
           "spec": "Destruction",
           "allStars": {
-            "points": 112.41,
-            "rank": 881,
-            "rankPercent": 97.91414823769229,
-            "total": 42189
+            "points": 108.06,
+            "rank": 143,
+            "rankPercent": 96.50848291123678,
+            "total": 4067
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 98.6236,
-          "medianPerformance": 95.9337,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 2172.2665432334,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 64.3509,
+          "medianPerformance": 64.3509,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 964.78299700591,
           "spec": "Destruction",
           "allStars": {
-            "points": 109.06,
-            "rank": 853,
-            "rankPercent": 97.94148203628984,
-            "total": 41389
+            "points": 73.81,
+            "rank": 1219,
+            "rankPercent": 65.87279349957971,
+            "total": 3569
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 94.4519,
+          "medianPerformance": 94.4519,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1720.7336835047,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 108.25,
+            "rank": 169,
+            "rankPercent": 94.74178403755869,
+            "total": 3195
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 71.6413,
+          "medianPerformance": 71.6413,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1452.5896975459,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 83.92,
+            "rank": 840,
+            "rankPercent": 72.33761951862841,
+            "total": 3033
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 18.316,
+          "medianPerformance": 18.316,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 651.94484578623,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 0,
+            "rank": 1631,
+            "rankPercent": 22.602089268755936,
+            "total": 2106
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 72.5359,
+          "medianPerformance": 72.5359,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1220.7225130172,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 85.86,
+            "rank": 615,
+            "rankPercent": 73.65937365937366,
+            "total": 2331
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 87.3943,
+          "medianPerformance": 87.3943,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1758.677884009,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 103.21,
+            "rank": 262,
+            "rankPercent": 88.21138211382114,
+            "total": 2214
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 8.8159,
+          "medianPerformance": 8.8159,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 786.17242029806,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 31.8,
+            "rank": 1836,
+            "rankPercent": 13.97093295827473,
+            "total": 2133
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 51.5683,
+          "medianPerformance": 51.5683,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 934.33104792444,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 0,
+            "rank": 684,
+            "rankPercent": 54.917491749174914,
+            "total": 1515
           }
         }
       ],
-      "bestPerformanceAverage": 98.97596666666668,
-      "medianPerformanceAverage": 92.92723333333333,
+      "bestPerformanceAverage": 71.0515375,
+      "medianPerformanceAverage": 71.0515375,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -7729,8 +10358,8 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -7740,8 +10369,8 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -7751,26 +10380,98 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 40.2216,
-          "medianPerformance": 40.2216,
-          "totalKills": 1,
-          "fastestKill": 456313,
-          "bestAmount": 967.78527019831,
-          "spec": "Destruction",
-          "allStars": {
-            "points": 38.34,
-            "rank": 27735,
-            "rankPercent": 32.991857739979224,
-            "total": 41389
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 40.2216,
-      "medianPerformanceAverage": 40.2216,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -7781,11 +10482,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 102028091,
       "gear": [
         {
-          "id": 29021,
+          "id": 32461,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_58.jpg",
-          "itemLevel": 120,
+          "icon": "inv_gizmo_newgoggles.jpg",
+          "itemLevel": 127,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
@@ -7826,11 +10527,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27985,
+          "id": 28779,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_23.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_22.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7862,11 +10563,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29020,
+          "id": 28824,
           "slot": 10,
           "quality": 4,
-          "icon": "inv_gauntlets_54.jpg",
-          "itemLevel": 120,
+          "icon": "inv_gauntlets_31.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": 684,
           "temporaryEnchantID": null
         },
@@ -7898,11 +10599,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28034,
+          "id": 28830,
           "slot": 14,
-          "quality": 3,
-          "icon": "inv_gizmo_khoriumpowercore.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_misc_bone_03.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7925,20 +10626,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29124,
+          "id": 28295,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_sword_draenei_01.jpg",
-          "itemLevel": 100,
+          "icon": "inv_sword_71.jpg",
+          "itemLevel": 123,
           "permanentEnchantID": 2673,
           "temporaryEnchantID": null
         },
         {
-          "id": 30279,
+          "id": 28772,
           "slot": 18,
-          "quality": 2,
-          "icon": "inv_weapon_rifle_06.jpg",
-          "itemLevel": 111,
+          "quality": 4,
+          "icon": "inv_weapon_bow_18.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7954,58 +10655,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 98.1978,
-          "medianPerformance": 79.3079,
-          "totalKills": 5,
-          "fastestKill": 27183,
-          "bestAmount": 3951.5578518866,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 95.5342,
+          "medianPerformance": 95.5342,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1804.4114263173,
           "spec": "Fury",
           "allStars": {
-            "points": 106.66,
-            "rank": 855,
-            "rankPercent": 96.81924838913926,
-            "total": 26849
+            "points": 110.44,
+            "rank": 101,
+            "rankPercent": 95.68593615185505,
+            "total": 2318
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 96.8964,
-          "medianPerformance": 96.8964,
-          "totalKills": 5,
-          "fastestKill": 129192,
-          "bestAmount": 587.28786568998,
-          "spec": "Gladiator",
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 86.5279,
+          "medianPerformance": 86.5279,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1281.9339121236,
+          "spec": "Fury",
           "allStars": {
-            "points": 103.68,
-            "rank": 223,
-            "rankPercent": 95.64193168433451,
-            "total": 5094
+            "points": 96.17,
+            "rank": 329,
+            "rankPercent": 86.01279317697228,
+            "total": 2345
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 96.7422,
-          "medianPerformance": 96.7422,
-          "totalKills": 5,
-          "fastestKill": 220362,
-          "bestAmount": 539.51383135646,
-          "spec": "Gladiator",
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 2.79252,
+          "medianPerformance": 2.79252,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 188.98598165773,
+          "spec": "Fury",
           "allStars": {
-            "points": 101.25,
-            "rank": 448,
-            "rankPercent": 95.54203650144609,
-            "total": 10027
+            "points": 9.86,
+            "rank": 2034,
+            "rankPercent": 5.661252900232019,
+            "total": 2155
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 73.7878,
+          "medianPerformance": 73.7878,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 2014.0743741618,
+          "spec": "Fury",
+          "allStars": {
+            "points": 84.37,
+            "rank": 379,
+            "rankPercent": 74.35549525101764,
+            "total": 1474
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 83.0483,
+          "medianPerformance": 83.0483,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1654.1539030316,
+          "spec": "Fury",
+          "allStars": {
+            "points": 98.23,
+            "rank": 260,
+            "rankPercent": 84.17837507635919,
+            "total": 1637
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 88.9398,
+          "medianPerformance": 88.9398,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 974.82306147978,
+          "spec": "Fury",
+          "allStars": {
+            "points": 0,
+            "rank": 121,
+            "rankPercent": 89.23766816143498,
+            "total": 1115
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 70.9222,
+          "medianPerformance": 70.9222,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 808.02502589714,
+          "spec": "Arms",
+          "allStars": {
+            "points": 84.69,
+            "rank": 182,
+            "rankPercent": 72.28177641653905,
+            "total": 653
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 94.6145,
+          "medianPerformance": 94.6145,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1556.6332837214,
+          "spec": "Arms",
+          "allStars": {
+            "points": 110.98,
+            "rank": 36,
+            "rankPercent": 94.5141065830721,
+            "total": 638
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 89.7632,
+          "medianPerformance": 89.7632,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1512.8132572954,
+          "spec": "Arms",
+          "allStars": {
+            "points": 100.21,
+            "rank": 61,
+            "rankPercent": 90.2439024390244,
+            "total": 615
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 24.8851,
+          "medianPerformance": 24.8851,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 574.90098122046,
+          "spec": "Arms",
+          "allStars": {
+            "points": 0,
+            "rank": 314,
+            "rankPercent": 28.37528604118993,
+            "total": 437
           }
         }
       ],
-      "bestPerformanceAverage": 97.2788,
-      "medianPerformanceAverage": 90.98216666666667,
+      "bestPerformanceAverage": 74.6238275,
+      "medianPerformanceAverage": 74.6238275,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -8189,58 +11002,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.5459,
-          "medianPerformance": 96.5204,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 3430.8387582719,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 115.14,
-            "rank": 181,
-            "rankPercent": 99.55678124692209,
-            "total": 40612
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 98.1536,
-          "medianPerformance": 95.9566,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 2063.7023486368,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 111.72,
-            "rank": 1013,
-            "rankPercent": 97.52397729496965,
-            "total": 40872
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 96.9504,
-          "medianPerformance": 92.1643,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 2175.322096852,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 106.48,
-            "rank": 1253,
-            "rankPercent": 96.82249631998376,
-            "total": 39402
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 98.21663333333333,
-      "medianPerformanceAverage": 94.88043333333333,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -8251,29 +11126,29 @@ export const wclBakedData: WclBakedData = {
       "wclId": 107614860,
       "gear": [
         {
-          "id": 28744,
+          "id": 28963,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_53.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 31692,
-          "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_35.jpg",
-          "itemLevel": 103,
+          "icon": "inv_helmet_89.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 21869,
+          "id": 24121,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_ahnqiraj_02.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28967,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_25.jpg",
-          "itemLevel": 105,
+          "icon": "inv_shoulder_52.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2995,
           "temporaryEnchantID": null
         },
@@ -8292,14 +11167,14 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_chest_cloth_62.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": 2841,
+          "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
         {
-          "id": 27742,
+          "id": 28654,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_13.jpg",
+          "quality": 4,
+          "icon": "inv_belt_03.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -8323,12 +11198,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28477,
+          "id": 24250,
           "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_13.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 3,
+          "icon": "inv_bracer_10.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2650,
           "temporaryEnchantID": null
         },
         {
@@ -8337,7 +11212,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_gauntlets_52.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2935,
           "temporaryEnchantID": null
         },
         {
@@ -8391,7 +11266,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_weapon_halberd17.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2669,
           "temporaryEnchantID": 2628
         },
         {
@@ -8404,11 +11279,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25808,
+          "id": 28673,
           "slot": 18,
-          "quality": 3,
-          "icon": "inv_wand_05.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_wand_21.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -8424,58 +11299,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 84.7375,
-          "medianPerformance": 49.4012,
-          "totalKills": 5,
-          "fastestKill": 24379,
-          "bestAmount": 1540.6292300751,
-          "spec": "Affliction",
-          "allStars": {
-            "points": 91.61,
-            "rank": 1553,
-            "rankPercent": 83.16520229959866,
-            "total": 9219
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 59.0709,
-          "medianPerformance": 46.5205,
-          "totalKills": 5,
-          "fastestKill": 114560,
-          "bestAmount": 1036.094622905,
-          "spec": "Affliction",
-          "allStars": {
-            "points": 66.13,
-            "rank": 4074,
-            "rankPercent": 55.59795050692249,
-            "total": 9173
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 83.6983,
-          "medianPerformance": 48.4815,
-          "totalKills": 5,
-          "fastestKill": 198308,
-          "bestAmount": 1372.7522539913,
-          "spec": "Affliction",
-          "allStars": {
-            "points": 90.24,
-            "rank": 1704,
-            "rankPercent": 81.33289488106982,
-            "total": 9123
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 75.83556666666668,
-      "medianPerformanceAverage": 48.1344,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -8603,10 +11540,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28590,
+          "id": 28190,
           "slot": 14,
-          "quality": 4,
-          "icon": "inv_misc_bandage_16.jpg",
+          "quality": 3,
+          "icon": "inv_misc_ahnqirajtrinket_06.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -8627,7 +11564,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_hammer_26.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2343,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2639
         },
         {
           "id": 29170,
@@ -8659,58 +11596,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 96.4536,
-          "medianPerformance": 85.4769,
-          "totalKills": 7,
-          "fastestKill": 26349,
-          "bestAmount": 1459.7639180523,
-          "spec": "Holy",
-          "allStars": {
-            "points": 104.09,
-            "rank": 1199,
-            "rankPercent": 95.4610896415852,
-            "total": 26394
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 90.219,
-          "medianPerformance": 78.7313,
-          "totalKills": 7,
-          "fastestKill": 123192,
-          "bestAmount": 857.66965710826,
-          "spec": "Holy",
-          "allStars": {
-            "points": 85.65,
-            "rank": 5584,
-            "rankPercent": 78.95510573334842,
-            "total": 26529
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.6129,
-          "medianPerformance": 95.6026,
-          "totalKills": 6,
-          "fastestKill": 198723,
-          "bestAmount": 1052.3140250499,
-          "spec": "Holy",
-          "allStars": {
-            "points": 103.69,
-            "rank": 1469,
-            "rankPercent": 94.27568726847339,
-            "total": 25645
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 94.76183333333331,
-      "medianPerformanceAverage": 86.60359999999999,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -8721,11 +11720,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105987216,
       "gear": [
         {
-          "id": 29040,
+          "id": 32474,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_15.jpg",
-          "itemLevel": 120,
+          "icon": "inv_gizmo_newgoggles.jpg",
+          "itemLevel": 127,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
@@ -8757,20 +11756,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29515,
+          "id": 29038,
           "slot": 5,
           "quality": 4,
-          "icon": "inv_chest_plate08.jpg",
+          "icon": "inv_chest_chain_15.jpg",
           "itemLevel": 120,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
         {
-          "id": 29516,
+          "id": 28828,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_29.jpg",
-          "itemLevel": 115,
+          "icon": "inv_belt_26.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -8793,11 +11792,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29517,
+          "id": 28514,
           "slot": 9,
           "quality": 4,
-          "icon": "inv_bracer_19.jpg",
-          "itemLevel": 105,
+          "icon": "inv_bracer_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2647,
           "temporaryEnchantID": null
         },
@@ -8894,58 +11893,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 97.9037,
-          "medianPerformance": 93.0039,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 1839.7666666667,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 97.8472,
+          "medianPerformance": 97.8472,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1646.2312218533,
           "spec": "Enhancement",
           "allStars": {
-            "points": 108.81,
-            "rank": 723,
-            "rankPercent": 97.08176710723092,
-            "total": 24741
+            "points": 114.56,
+            "rank": 45,
+            "rankPercent": 98.37278106508876,
+            "total": 2704
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 99.102,
-          "medianPerformance": 97.6644,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 1615.5202513966,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 77.7761,
+          "medianPerformance": 77.7761,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1065.3402299903,
           "spec": "Enhancement",
           "allStars": {
-            "points": 113.28,
-            "rank": 599,
-            "rankPercent": 97.60416666666667,
-            "total": 24960
+            "points": 89.24,
+            "rank": 584,
+            "rankPercent": 78.29486224869694,
+            "total": 2686
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.9751,
-          "medianPerformance": 93.4132,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 1932.471150263,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 87.2562,
+          "medianPerformance": 87.2562,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 1152.1637348672,
           "spec": "Enhancement",
           "allStars": {
-            "points": 109.92,
-            "rank": 434,
-            "rankPercent": 98.21369636963696,
-            "total": 24240
+            "points": 99.07,
+            "rank": 303,
+            "rankPercent": 87.76832725799919,
+            "total": 2469
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 81.8216,
+          "medianPerformance": 81.8216,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1533.9461332141,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 94.65,
+            "rank": 380,
+            "rankPercent": 82.2731524789523,
+            "total": 2138
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 0.964257,
+          "medianPerformance": 0.964257,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 592.22386535685,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 33.54,
+            "rank": 1954,
+            "rankPercent": 4.264705882352941,
+            "total": 2040
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 84.7365,
+          "medianPerformance": 84.7365,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 799.36720684249,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 0,
+            "rank": 214,
+            "rankPercent": 84.9682427664079,
+            "total": 1417
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 97.0914,
+          "medianPerformance": 97.0914,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1034.1636424754,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 114.25,
+            "rank": 43,
+            "rankPercent": 97.21485411140584,
+            "total": 1508
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 93.1923,
+          "medianPerformance": 93.1923,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1676.9821649302,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 110.36,
+            "rank": 93,
+            "rankPercent": 93.61997226074897,
+            "total": 1442
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 83.3634,
+          "medianPerformance": 83.3634,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1425.5945902805,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 95.43,
+            "rank": 213,
+            "rankPercent": 84.74820143884892,
+            "total": 1390
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 99.3854,
+          "medianPerformance": 99.3854,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 1039.3503763038,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 0,
+            "rank": 7,
+            "rankPercent": 99.38335046248716,
+            "total": 973
           }
         }
       ],
-      "bestPerformanceAverage": 98.32693333333333,
-      "medianPerformanceAverage": 94.69383333333333,
+      "bestPerformanceAverage": 77.414057125,
+      "medianPerformanceAverage": 77.414057125,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -9028,12 +12139,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27827,
+          "id": 29183,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_06.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_bracer_10.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2617,
           "temporaryEnchantID": null
         },
         {
@@ -9046,20 +12157,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29289,
+          "id": 29291,
           "slot": 11,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28259,
+          "id": 28763,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_08.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -9091,12 +12202,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29175,
+          "id": 32451,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_hammer_04.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": 2505,
+          "icon": "inv_mace_47.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2343,
           "temporaryEnchantID": 2629
         },
         {
@@ -9129,58 +12240,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 90,
-          "medianPerformance": 90,
-          "totalKills": 1,
-          "fastestKill": 123522,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
           "bestAmount": 0,
-          "spec": "Restoration",
-          "allStars": {
-            "points": 90,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 80,
-          "medianPerformance": 80,
-          "totalKills": 2,
-          "fastestKill": 225589,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
           "bestAmount": 0,
-          "spec": "Restoration",
-          "allStars": {
-            "points": 0,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 70,
-          "medianPerformance": 70,
-          "totalKills": 3,
-          "fastestKill": 376014,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
           "bestAmount": 0,
-          "spec": "Restoration",
-          "allStars": {
-            "points": 70,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 80,
-      "medianPerformanceAverage": 80,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -9200,11 +12373,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 24114,
+          "id": 29381,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_07.jpg",
-          "itemLevel": 102,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_04.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -9254,10 +12427,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28746,
+          "id": 28545,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_chain_05.jpg",
+          "icon": "inv_boots_plate_06.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2657,
           "temporaryEnchantID": null
@@ -9299,11 +12472,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28034,
+          "id": 28830,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_gizmo_khoriumpowercore.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_misc_bone_03.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -9326,22 +12499,22 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27846,
+          "id": 27903,
           "slot": 16,
           "quality": 3,
-          "icon": "inv_weapon_hand_07.jpg",
+          "icon": "inv_spear_08.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2564,
-          "temporaryEnchantID": 2955
+          "permanentEnchantID": 2670,
+          "temporaryEnchantID": 2639
         },
         {
-          "id": 28315,
+          "id": 0,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_weapon_hand_08.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2564,
-          "temporaryEnchantID": 2955
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
         },
         {
           "id": 28772,
@@ -9364,58 +12537,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 98.3863,
-          "medianPerformance": 96.9053,
-          "totalKills": 7,
-          "fastestKill": 18587,
-          "bestAmount": 3056.3834938398,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 79.5547,
+          "medianPerformance": 79.5547,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1726.7512573551,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 112.36,
-            "rank": 623,
-            "rankPercent": 98.46843297547522,
-            "total": 40612
+            "points": 91.54,
+            "rank": 663,
+            "rankPercent": 80.08423586040915,
+            "total": 3324
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 98.733,
-          "medianPerformance": 93.8008,
-          "totalKills": 7,
-          "fastestKill": 101676,
-          "bestAmount": 2165.3487548684,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 28.0649,
+          "medianPerformance": 28.0649,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 624.08133579497,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 113.61,
-            "rank": 524,
-            "rankPercent": 98.72039538070072,
-            "total": 40872
+            "points": 32.43,
+            "rank": 2280,
+            "rankPercent": 30.939393939393938,
+            "total": 3300
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 98.617,
-          "medianPerformance": 95.2668,
-          "totalKills": 7,
-          "fastestKill": 163693,
-          "bestAmount": 2324.7725759929,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 87.7805,
+          "medianPerformance": 87.7805,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 1413.2558514677,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 108.36,
-            "rank": 769,
-            "rankPercent": 98.05086036241815,
-            "total": 39402
+            "points": 99.59,
+            "rank": 359,
+            "rankPercent": 88.02275008364002,
+            "total": 2989
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 93.1129,
+          "medianPerformance": 93.1129,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 2173.6840634779,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 107.05,
+            "rank": 169,
+            "rankPercent": 93.40918007061593,
+            "total": 2549
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 82.4702,
+          "medianPerformance": 82.4702,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1941.8110277807,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 95.94,
+            "rank": 405,
+            "rankPercent": 83.29888383629599,
+            "total": 2419
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 50.3625,
+          "medianPerformance": 50.3625,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 826.461915358,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 0,
+            "rank": 797,
+            "rankPercent": 52.56257449344458,
+            "total": 1678
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 92.4626,
+          "medianPerformance": 92.4626,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1337.6883973959,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 106.48,
+            "rank": 140,
+            "rankPercent": 92.49460043196544,
+            "total": 1852
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 71.3036,
+          "medianPerformance": 71.3036,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1320.9177366868,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 81.96,
+            "rank": 491,
+            "rankPercent": 72.23796033994334,
+            "total": 1765
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 32.2173,
+          "medianPerformance": 32.2173,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1172.601686184,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 40.22,
+            "rank": 1078,
+            "rankPercent": 36.46017699115044,
+            "total": 1695
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 81.6964,
+          "medianPerformance": 81.6964,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 1093.5908433829,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 0,
+            "rank": 214,
+            "rankPercent": 82.29426433915212,
+            "total": 1203
           }
         }
       ],
-      "bestPerformanceAverage": 98.57876666666668,
-      "medianPerformanceAverage": 95.3243,
+      "bestPerformanceAverage": 70.87083750000001,
+      "medianPerformanceAverage": 70.87083750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -9426,20 +12711,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 96959436,
       "gear": [
         {
-          "id": 29021,
+          "id": 32461,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_58.jpg",
-          "itemLevel": 120,
+          "icon": "inv_gizmo_newgoggles.jpg",
+          "itemLevel": 127,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 29381,
+          "id": 28745,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_04.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_necklace_06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -9468,7 +12753,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_chest_plate20.jpg",
           "itemLevel": 120,
           "permanentEnchantID": 2661,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2791
         },
         {
           "id": 28779,
@@ -9507,29 +12792,29 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25685,
+          "id": 28824,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_22.jpg",
-          "itemLevel": 106,
+          "quality": 4,
+          "icon": "inv_gauntlets_31.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": 684,
           "temporaryEnchantID": null
         },
         {
-          "id": 30834,
+          "id": 28730,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_41.jpg",
-          "itemLevel": 100,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29379,
+          "id": 28757,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_ahnqiraj_01.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_ring_ahnqiraj_05.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -9599,58 +12884,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 98.2943,
-          "medianPerformance": 92.2564,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 4135.8964090242,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 67.3675,
+          "medianPerformance": 67.3675,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1260.8066795963,
           "spec": "Fury",
           "allStars": {
-            "points": 107.81,
-            "rank": 667,
-            "rankPercent": 97.51946068754889,
-            "total": 26849
+            "points": 77.08,
+            "rank": 752,
+            "rankPercent": 67.6013805004314,
+            "total": 2318
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 99.5947,
-          "medianPerformance": 93.7427,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 1792.3485291253,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 66.7684,
+          "medianPerformance": 66.7684,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1059.3743165647,
           "spec": "Fury",
           "allStars": {
-            "points": 110.28,
-            "rank": 858,
-            "rankPercent": 96.94408786193125,
-            "total": 28044
+            "points": 74.8,
+            "rank": 773,
+            "rankPercent": 67.07889125799574,
+            "total": 2345
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 99.2585,
-          "medianPerformance": 95.3747,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 2307.6429657957,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 69.8823,
+          "medianPerformance": 69.8823,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 1102.7946192857,
           "spec": "Fury",
           "allStars": {
-            "points": 106.65,
-            "rank": 541,
-            "rankPercent": 97.96449168834106,
-            "total": 26529
+            "points": 79.15,
+            "rank": 635,
+            "rankPercent": 70.5800464037123,
+            "total": 2155
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 95.1466,
+          "medianPerformance": 95.1466,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 2636.3433169423,
+          "spec": "Fury",
+          "allStars": {
+            "points": 109.88,
+            "rank": 67,
+            "rankPercent": 95.5223880597015,
+            "total": 1474
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 79.2658,
+          "medianPerformance": 79.2658,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1605.7137072638,
+          "spec": "Fury",
+          "allStars": {
+            "points": 92.95,
+            "rank": 337,
+            "rankPercent": 79.47464874770922,
+            "total": 1637
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 95.891,
+          "medianPerformance": 95.891,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 1037.6980138902,
+          "spec": "Fury",
+          "allStars": {
+            "points": 0,
+            "rank": 46,
+            "rankPercent": 95.96412556053812,
+            "total": 1115
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 85.6708,
+          "medianPerformance": 85.6708,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1097.5824763839,
+          "spec": "Fury",
+          "allStars": {
+            "points": 100,
+            "rank": 157,
+            "rankPercent": 85.93327321911632,
+            "total": 1109
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 89.5069,
+          "medianPerformance": 89.5069,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1784.5223379834,
+          "spec": "Fury",
+          "allStars": {
+            "points": 104.78,
+            "rank": 117,
+            "rankPercent": 89.54012623985572,
+            "total": 1109
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 98.9984,
+          "medianPerformance": 98.9984,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 2313.308084106,
+          "spec": "Fury",
+          "allStars": {
+            "points": 111.7,
+            "rank": 13,
+            "rankPercent": 98.92280071813285,
+            "total": 1114
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 99.7264,
+          "medianPerformance": 99.7264,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 1463.9718577068,
+          "spec": "Fury",
+          "allStars": {
+            "points": 0,
+            "rank": 3,
+            "rankPercent": 99.72260748959778,
+            "total": 721
           }
         }
       ],
-      "bestPerformanceAverage": 99.04916666666668,
-      "medianPerformanceAverage": 93.79126666666667,
+      "bestPerformanceAverage": 81.5758375,
+      "medianPerformanceAverage": 81.5758375,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -9715,20 +13112,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30538,
+          "id": 28741,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_leather_09.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 3010,
+          "icon": "inv_pants_leather_13.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 3012,
           "temporaryEnchantID": null
         },
         {
-          "id": 25686,
+          "id": 28545,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_cloth_05.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_boots_plate_06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2657,
           "temporaryEnchantID": null
         },
@@ -9814,12 +13211,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2955
         },
         {
-          "id": 29351,
+          "id": 28772,
           "slot": 18,
           "quality": 4,
-          "icon": "inv_weapon_crossbow_16.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 664,
+          "icon": "inv_weapon_bow_18.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2724,
           "temporaryEnchantID": null
         },
         {
@@ -9834,293 +13231,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 98.5601,
-          "medianPerformance": 59.6767,
-          "totalKills": 4,
-          "fastestKill": 27183,
-          "bestAmount": 2937.1514079717,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 111.23,
-            "rank": 862,
-            "rankPercent": 97.87993696444401,
-            "total": 40612
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 96.5163,
-          "medianPerformance": 69.3702,
-          "totalKills": 4,
-          "fastestKill": 129192,
-          "bestAmount": 1979.6504427519,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 109.6,
-            "rank": 1648,
-            "rankPercent": 95.97034644744568,
-            "total": 40872
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 90.8817,
-          "medianPerformance": 45.2791,
-          "totalKills": 3,
-          "fastestKill": 247445,
-          "bestAmount": 1814.2213421164,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 96.83,
-            "rank": 4446,
-            "rankPercent": 88.71884675904776,
-            "total": 39402
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 95.31936666666667,
-      "medianPerformanceAverage": 58.108666666666664,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
-      "error": null,
-      "partial": false
-    },
-    "mapleleaf": {
-      "characterName": "Mapleleaf",
-      "serverSlug": "spineshatter",
-      "serverRegion": "EU",
-      "wclId": 105992606,
-      "gear": [
-        {
-          "id": 28744,
-          "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_53.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28609,
-          "slot": 2,
-          "quality": 4,
-          "icon": "inv_jewelry_necklace_17.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27994,
-          "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_36.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 0,
-          "slot": 4,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27799,
-          "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_18.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27795,
-          "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_13.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29343,
-          "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_leather_01.jpg",
-          "itemLevel": 97,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28179,
-          "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_fabric_01.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28453,
-          "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_02.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27508,
-          "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_17.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28510,
-          "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_31.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28227,
-          "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_63.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28785,
-          "slot": 13,
-          "quality": 4,
-          "icon": "inv_trinket_naxxramas06.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 25634,
-          "slot": 14,
-          "quality": 2,
-          "icon": "inv_jewelry_talisman_06.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27981,
-          "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_11.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28770,
-          "slot": 16,
-          "quality": 4,
-          "icon": "inv_weapon_shortblade_41.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2628
-        },
-        {
-          "id": 29330,
-          "slot": 17,
-          "quality": 3,
-          "icon": "inv_misc_book_07.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27518,
-          "slot": 18,
-          "quality": 3,
-          "icon": "spell_arcane_arcane03.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28788,
-          "slot": 19,
-          "quality": 2,
-          "icon": "inv_shirt_guildtabard_01.jpg",
-          "itemLevel": 60,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        }
-      ],
-      "rankings": [
-        {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 13.4662,
-          "medianPerformance": 13.4662,
-          "totalKills": 2,
-          "fastestKill": 29964,
-          "bestAmount": 501.63529568816,
-          "spec": "Balance",
-          "allStars": {
-            "points": 19.82,
-            "rank": 12320,
-            "rankPercent": 9.935663108641615,
-            "total": 13678
-          }
-        },
-        {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 83.905,
-          "medianPerformance": 83.905,
-          "totalKills": 2,
-          "fastestKill": 132466,
-          "bestAmount": 1008.0473479987,
-          "spec": "Balance",
-          "allStars": {
-            "points": 89.76,
-            "rank": 2806,
-            "rankPercent": 78.80619569323763,
-            "total": 13235
-          }
-        },
-        {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 81.3303,
-          "medianPerformance": 81.3303,
-          "totalKills": 2,
-          "fastestKill": 198308,
-          "bestAmount": 988.68931157593,
-          "spec": "Balance",
-          "allStars": {
-            "points": 83.35,
-            "rank": 3096,
-            "rankPercent": 75.32684948979592,
-            "total": 12544
-          }
-        }
-      ],
-      "bestPerformanceAverage": 59.56716666666667,
-      "medianPerformanceAverage": 59.56716666666667,
-      "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -10131,10 +13355,10 @@ export const wclBakedData: WclBakedData = {
       "wclId": 107614853,
       "gear": [
         {
-          "id": 28278,
+          "id": 28586,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_34.jpg",
+          "quality": 4,
+          "icon": "inv_helmet_30.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -10194,11 +13418,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29242,
+          "id": 28517,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_cloth_11.jpg",
-          "itemLevel": 110,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10304,58 +13528,417 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 0.561466,
-          "medianPerformance": 0.561466,
-          "totalKills": 1,
-          "fastestKill": 53993,
-          "bestAmount": 74.157761191266,
-          "spec": "Balance",
-          "allStars": {
-            "points": 2.93,
-            "rank": 13751,
-            "rankPercent": -0.5263927474777014,
-            "total": 13678
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 1.31174,
-          "medianPerformance": 1.31174,
-          "totalKills": 1,
-          "fastestKill": 171879,
-          "bestAmount": 173.73850208577,
-          "spec": "Balance",
-          "allStars": {
-            "points": 11.1,
-            "rank": 13251,
-            "rankPercent": -0.11333585190782017,
-            "total": 13235
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 0.624254,
-          "medianPerformance": 0.624254,
-          "totalKills": 1,
-          "fastestKill": 268799,
-          "bestAmount": 149.14862034457,
-          "spec": "Balance",
-          "allStars": {
-            "points": 7.03,
-            "rank": 12626,
-            "rankPercent": -0.6457270408163265,
-            "total": 12544
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 0.8324866666666666,
-      "medianPerformanceAverage": 0.8324866666666666,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "error": null,
+      "partial": false
+    },
+    "moneylazy": {
+      "characterName": "Moneylazy",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 109070276,
+      "gear": [
+        {
+          "id": 28224,
+          "slot": 1,
+          "quality": 3,
+          "icon": "inv_helmet_15.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 3003,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29381,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_04.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27797,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_15.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2986,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 4333,
+          "slot": 4,
+          "quality": 2,
+          "icon": "inv_shirt_black_01.jpg",
+          "itemLevel": 31,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28264,
+          "slot": 5,
+          "quality": 3,
+          "icon": "inv_chest_chain_17.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29247,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_26.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30538,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_leather_09.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 3010,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25686,
+          "slot": 8,
+          "quality": 3,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2939,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28424,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_07.jpg",
+          "itemLevel": 113,
+          "permanentEnchantID": 1593,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27531,
+          "slot": 10,
+          "quality": 3,
+          "icon": "inv_gauntlets_25.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2564,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29281,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27925,
+          "slot": 12,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28034,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_gizmo_khoriumpowercore.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27878,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_21.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 368,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28295,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_sword_71.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28189,
+          "slot": 17,
+          "quality": 3,
+          "icon": "inv_sword_76.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2643
+        },
+        {
+          "id": 28826,
+          "slot": 18,
+          "quality": 4,
+          "icon": "inv_misc_ahnqirajtrinket_03.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 19,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -10456,11 +14039,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28227,
+          "id": 28793,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_63.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_65.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": 2928,
           "temporaryEnchantID": null
         },
@@ -10539,58 +14122,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 91.9936,
-          "medianPerformance": 91.9936,
-          "totalKills": 7,
-          "fastestKill": 24379,
-          "bestAmount": 995.01641301104,
-          "spec": "Frost",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 82.763,
+          "medianPerformance": 82.763,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1517.1345452155,
+          "spec": "Arcane",
           "allStars": {
-            "points": 92.8,
-            "rank": 2745,
-            "rankPercent": 86.62898352987038,
-            "total": 20522
+            "points": 94.92,
+            "rank": 576,
+            "rankPercent": 83.63688104723961,
+            "total": 3514
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 97.1401,
-          "medianPerformance": 87.084,
-          "totalKills": 7,
-          "fastestKill": 114560,
-          "bestAmount": 1578.3626795274,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 71.5813,
+          "medianPerformance": 71.5813,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1045.1792062741,
           "spec": "Arcane",
           "allStars": {
-            "points": 107.52,
-            "rank": 1888,
-            "rankPercent": 94.9469794344473,
-            "total": 37344
+            "points": 79.08,
+            "rank": 950,
+            "rankPercent": 72.54845241538906,
+            "total": 3457
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.2332,
-          "medianPerformance": 78.7161,
-          "totalKills": 6,
-          "fastestKill": 220165,
-          "bestAmount": 1930.8155247201,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 44.0544,
+          "medianPerformance": 44.0544,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 930.71091054307,
           "spec": "Arcane",
           "allStars": {
-            "points": 107.22,
-            "rank": 1177,
-            "rankPercent": 96.71039749363618,
-            "total": 35749
+            "points": 53.07,
+            "rank": 1689,
+            "rankPercent": 45.8974358974359,
+            "total": 3120
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 67.1645,
+          "medianPerformance": 67.1645,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1285.3570630308,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 77.53,
+            "rank": 832,
+            "rankPercent": 68.19747416762343,
+            "total": 2613
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 20.0935,
+          "medianPerformance": 20.0935,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 923.05728671526,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 45.66,
+            "rank": 1871,
+            "rankPercent": 22.854785478547853,
+            "total": 2424
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 25.2849,
+          "medianPerformance": 25.2849,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 668.89500031923,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 0,
+            "rank": 1162,
+            "rankPercent": 28.773006134969325,
+            "total": 1630
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 61.8308,
+          "medianPerformance": 61.8308,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1028.4491215553,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 71.86,
+            "rank": 690,
+            "rankPercent": 63.331559340074506,
+            "total": 1879
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 55.2777,
+          "medianPerformance": 55.2777,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1391.5832093035,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 74.8,
+            "rank": 767,
+            "rankPercent": 56.42775881683732,
+            "total": 1758
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 25.7255,
+          "medianPerformance": 25.7255,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 986.70787804913,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 40.47,
+            "rank": 1194,
+            "rankPercent": 29.28275044457617,
+            "total": 1687
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 32.8555,
+          "medianPerformance": 32.8555,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 843.47578064396,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 0,
+            "rank": 737,
+            "rankPercent": 36.16652211621856,
+            "total": 1153
           }
         }
       ],
-      "bestPerformanceAverage": 95.45563333333332,
-      "medianPerformanceAverage": 85.93123333333334,
+      "bestPerformanceAverage": 53.56133750000001,
+      "medianPerformanceAverage": 53.56133750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -10637,11 +14332,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28597,
+          "id": 29066,
           "slot": 5,
           "quality": 4,
-          "icon": "inv_chest_plate02.jpg",
-          "itemLevel": 115,
+          "icon": "inv_chest_plate18.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2659,
           "temporaryEnchantID": null
         },
@@ -10709,11 +14404,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27529,
+          "id": 28789,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_qirajidol_rebirth.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_elemental_mote_life01.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10742,7 +14437,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_hammer_08.jpg",
           "itemLevel": 100,
           "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2678
+          "temporaryEnchantID": null
         },
         {
           "id": 28611,
@@ -10774,163 +14469,225 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 38.5755,
-          "medianPerformance": 38.5755,
-          "totalKills": 2,
-          "fastestKill": 81902,
-          "bestAmount": 190.89675890617,
-          "spec": "Justicar",
-          "allStars": {
-            "points": 37.02,
-            "rank": 13575,
-            "rankPercent": 34.291799787007456,
-            "total": 20658
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 45.1994,
-          "medianPerformance": 45.1994,
-          "totalKills": 2,
-          "fastestKill": 222400,
-          "bestAmount": 401.2904676259,
-          "spec": "Protection",
-          "allStars": {
-            "points": 50.02,
-            "rank": 8538,
-            "rankPercent": 43.12079419015257,
-            "total": 15009
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 20.9025,
-          "medianPerformance": 20.9025,
-          "totalKills": 1,
-          "fastestKill": 441479,
-          "bestAmount": 182.7674702534,
-          "spec": "Justicar",
-          "allStars": {
-            "points": 22.23,
-            "rank": 16810,
-            "rankPercent": 19.27288444914033,
-            "total": 20822
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 34.89246666666667,
-      "medianPerformanceAverage": 34.89246666666667,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
-    "notalazy": {
-      "characterName": "Notalazy",
+    "möxentöxen": {
+      "characterName": "Möxentöxen",
       "serverSlug": "spineshatter",
       "serverRegion": "EU",
-      "wclId": 107619028,
+      "wclId": 109399069,
       "gear": [
         {
-          "id": 32083,
+          "id": 28963,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_01.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 2999,
+          "icon": "inv_helmet_89.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
         {
-          "id": 29173,
+          "id": 24116,
           "slot": 2,
           "quality": 3,
-          "icon": "inv_jewelry_necklace_06.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_necklace_28.jpg",
+          "itemLevel": 114,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28743,
+          "id": 28967,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_29.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2977,
+          "icon": "inv_shoulder_52.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2995,
           "temporaryEnchantID": null
         },
         {
-          "id": 4335,
+          "id": 0,
           "slot": 4,
-          "quality": 2,
-          "icon": "inv_shirt_16.jpg",
-          "itemLevel": 37,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28597,
+          "id": 31297,
           "slot": 5,
-          "quality": 4,
-          "icon": "inv_chest_plate02.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2659,
+          "quality": 3,
+          "icon": "inv_chest_cloth_25.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29253,
+          "id": 24256,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_11.jpg",
-          "itemLevel": 110,
+          "icon": "inv_belt_13.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29069,
+          "id": 24262,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_plate_22.jpg",
-          "itemLevel": 120,
+          "icon": "inv_pants_cloth_14.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": 2748,
           "temporaryEnchantID": null
         },
         {
-          "id": 29254,
+          "id": 28406,
           "slot": 8,
-          "quality": 4,
-          "icon": "inv_boots_chain_05.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 2649,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29252,
-          "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_02.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 2649,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28518,
-          "slot": 10,
-          "quality": 4,
-          "icon": "inv_gauntlets_31.jpg",
+          "quality": 3,
+          "icon": "inv_boots_cloth_04.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28675,
+          "id": 24250,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_10.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28968,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_52.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29126,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_19.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_ring_52naxxramas.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10944,17 +14701,8 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28789,
-          "slot": 13,
-          "quality": 4,
-          "icon": "inv_elemental_mote_life01.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
           "id": 29370,
-          "slot": 14,
+          "slot": 13,
           "quality": 4,
           "icon": "inv_weapon_shortblade_23.jpg",
           "itemLevel": 110,
@@ -10962,38 +14710,344 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27804,
-          "slot": 15,
+          "id": 27683,
+          "slot": 14,
           "quality": 3,
-          "icon": "inv_misc_cape_13.jpg",
+          "icon": "inv_misc_gem_pearl_01.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2622,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29155,
+          "id": 28570,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_20.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28770,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_sword_01.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2678
+          "icon": "inv_weapon_shortblade_41.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2672,
+          "temporaryEnchantID": 2628
         },
         {
-          "id": 28606,
+          "id": 29273,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_shield_29.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 1071,
+          "icon": "inv_misc_bag_10_green.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29388,
+          "id": 28386,
           "slot": 18,
+          "quality": 3,
+          "icon": "inv_wand_17.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31778,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_guildtabard_01.jpg",
+          "itemLevel": 20,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "error": null,
+      "partial": false
+    },
+    "notalazy": {
+      "characterName": "Notalazy",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 107619028,
+      "gear": [
+        {
+          "id": 32087,
+          "slot": 1,
           "quality": 4,
-          "icon": "inv_relics_libramofhope.jpg",
+          "icon": "inv_helmet_73.jpg",
           "itemLevel": 110,
+          "permanentEnchantID": 3003,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28745,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 33173,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2983,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 4335,
+          "slot": 4,
+          "quality": 2,
+          "icon": "inv_shirt_16.jpg",
+          "itemLevel": 37,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29071,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_plate18.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27985,
+          "slot": 6,
+          "quality": 3,
+          "icon": "inv_belt_23.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30257,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_leather_05.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": 3012,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28669,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_plate_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2657,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28646,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_19.jpg",
+          "itemLevel": 113,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30644,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_28.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 684,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28730,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30834,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_41.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28288,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_misc_enggizmos_18.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28777,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_14.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 368,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28429,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_sword_2h_blacksmithing_02.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2639
+        },
+        {
+          "id": 0,
+          "slot": 17,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27484,
+          "slot": 18,
+          "quality": 3,
+          "icon": "inv_misc_stonetablet_05.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -11009,58 +15063,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 78.507,
-          "medianPerformance": 56.1044,
-          "totalKills": 5,
-          "fastestKill": 27183,
-          "bestAmount": 1364.7761023532,
-          "spec": "Retribution",
-          "allStars": {
-            "points": 84.53,
-            "rank": 3735,
-            "rankPercent": 78.08428219274563,
-            "total": 17038
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 86.9859,
-          "medianPerformance": 76.4415,
-          "totalKills": 5,
-          "fastestKill": 129192,
-          "bestAmount": 1325.8715709951,
-          "spec": "Retribution",
-          "allStars": {
-            "points": 96.85,
-            "rank": 2704,
-            "rankPercent": 86.07203586334828,
-            "total": 19407
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 88.7016,
-          "medianPerformance": 44.7315,
-          "totalKills": 5,
-          "fastestKill": 220362,
-          "bestAmount": 1544.404207622,
-          "spec": "Retribution",
-          "allStars": {
-            "points": 94.78,
-            "rank": 2203,
-            "rankPercent": 86.8772348033373,
-            "total": 16780
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 84.7315,
-      "medianPerformanceAverage": 59.09246666666667,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -11143,11 +15259,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28512,
+          "id": 29183,
           "slot": 9,
           "quality": 4,
-          "icon": "inv_bracer_02.jpg",
-          "itemLevel": 115,
+          "icon": "inv_bracer_10.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": 2617,
           "temporaryEnchantID": null
         },
@@ -11224,11 +15340,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28296,
+          "id": 25644,
           "slot": 18,
           "quality": 3,
-          "icon": "inv_misc_book_12.jpg",
-          "itemLevel": 115,
+          "icon": "inv_relics_libramofhope.jpg",
+          "itemLevel": 103,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -11244,12 +15360,12 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
           "rankPercent": 80,
-          "medianPerformance": 75,
-          "totalKills": 9,
-          "fastestKill": 18587,
+          "medianPerformance": 80,
+          "totalKills": 1,
+          "fastestKill": 121734,
           "bestAmount": 0,
           "spec": "Holy",
           "allStars": {
@@ -11260,42 +15376,154 @@ export const wclBakedData: WclBakedData = {
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 60,
-          "medianPerformance": 50,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 0,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 73.0379117766678,
+          "medianPerformance": 73.0379117766678,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1.8157127817025,
           "spec": "Holy",
           "allStars": {
-            "points": 0,
+            "points": 73.10894024181687,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 69.95820469257282,
-          "medianPerformance": 30,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 6.6865683683966,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 88.13241548381997,
+          "medianPerformance": 88.13241548381997,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 40.886503755405,
           "spec": "Holy",
           "allStars": {
-            "points": 0,
+            "points": 89.59104660391466,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 77.59585675253157,
+          "medianPerformance": 77.59585675253157,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 0.60069289226643,
+          "spec": "Holy",
+          "allStars": {
+            "points": 77.60650260572267,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 94.16086096414378,
+          "medianPerformance": 94.16086096414378,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 11.773353050949,
+          "spec": "Holy",
+          "allStars": {
+            "points": 94.54354796126472,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 50,
+          "medianPerformance": 50,
+          "totalKills": 1,
+          "fastestKill": 422890,
+          "bestAmount": 0,
+          "spec": "Holy",
+          "allStars": {
+            "points": "-",
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 97.00046584018394,
+          "medianPerformance": 97.00046584018394,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 6.7058153654069,
+          "spec": "Holy",
+          "allStars": {
+            "points": 98.52723002726984,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 57.99409498168005,
+          "medianPerformance": 57.99409498168005,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1.2487071466411,
+          "spec": "Holy",
+          "allStars": {
+            "points": 58.07255878583837,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 70,
+          "medianPerformance": 70,
+          "totalKills": 1,
+          "fastestKill": 137856,
+          "bestAmount": 0,
+          "spec": "Holy",
+          "allStars": {
+            "points": 70,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 49.20044205426875,
+          "medianPerformance": 49.20044205426875,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 0.27226112867363,
+          "spec": "Holy",
+          "allStars": {
+            "points": "-",
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         }
       ],
-      "bestPerformanceAverage": 69.98606823085761,
-      "medianPerformanceAverage": 51.666666666666664,
+      "bestPerformanceAverage": 79.74020072487838,
+      "medianPerformanceAverage": 79.74020072487838,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -11306,29 +15534,29 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105987565,
       "gear": [
         {
-          "id": 32087,
+          "id": 32461,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_73.jpg",
-          "itemLevel": 110,
+          "icon": "inv_gizmo_newgoggles.jpg",
+          "itemLevel": 127,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 24114,
+          "id": 28745,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_07.jpg",
-          "itemLevel": 102,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_06.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 33173,
+          "id": 29075,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_16.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_shoulder_40.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
@@ -11351,11 +15579,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27985,
+          "id": 28828,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_23.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_26.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -11479,58 +15707,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 97.6175,
-          "medianPerformance": 83.9986,
-          "totalKills": 8,
-          "fastestKill": 18587,
-          "bestAmount": 2424.1136278044,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 98.7716,
+          "medianPerformance": 98.7716,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1889.648598008,
           "spec": "Retribution",
           "allStars": {
-            "points": 108.81,
-            "rank": 398,
-            "rankPercent": 97.66991430919121,
-            "total": 17038
+            "points": 114.88,
+            "rank": 20,
+            "rankPercent": 98.80277252678009,
+            "total": 1587
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 97.4414,
-          "medianPerformance": 82.6451,
-          "totalKills": 8,
-          "fastestKill": 101676,
-          "bestAmount": 1596.5770356552,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 91.5241,
+          "medianPerformance": 91.5241,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1243.5089539562,
           "spec": "Retribution",
           "allStars": {
-            "points": 108.56,
-            "rank": 838,
-            "rankPercent": 95.687123202968,
-            "total": 19407
+            "points": 104.46,
+            "rank": 131,
+            "rankPercent": 91.890205864005,
+            "total": 1603
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 90.535,
-          "medianPerformance": 88.5671,
-          "totalKills": 5,
-          "fastestKill": 163693,
-          "bestAmount": 1560.7508739316,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 21.6994,
+          "medianPerformance": 21.6994,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 594.08577824816,
           "spec": "Retribution",
           "allStars": {
-            "points": 95.65,
-            "rank": 2071,
-            "rankPercent": 87.66388557806913,
-            "total": 16780
+            "points": 36.79,
+            "rank": 1164,
+            "rankPercent": 24.036577400391902,
+            "total": 1531
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 93.0298,
+          "medianPerformance": 93.0298,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1718.3728207421,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 106.63,
+            "rank": 79,
+            "rankPercent": 93.31046312178388,
+            "total": 1166
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 0.931646,
+          "medianPerformance": 0.931646,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 369.00989401782,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 21.35,
+            "rank": 1109,
+            "rankPercent": 4.317789291882556,
+            "total": 1158
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 19.8276,
+          "medianPerformance": 19.8276,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 525.8520597701,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 0,
+            "rank": 648,
+            "rankPercent": 22.607655502392344,
+            "total": 836
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 96.9595,
+          "medianPerformance": 96.9595,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 1169.1203205071,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 113.51,
+            "rank": 27,
+            "rankPercent": 96.95550351288057,
+            "total": 854
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 98.9172,
+          "medianPerformance": 98.9172,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1890.7192048637,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 116.77,
+            "rank": 10,
+            "rankPercent": 98.94982497082847,
+            "total": 857
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 85.5506,
+          "medianPerformance": 85.5506,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1531.1479691785,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 96.03,
+            "rank": 116,
+            "rankPercent": 85.97560975609755,
+            "total": 820
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 10.6139,
+          "medianPerformance": 10.6139,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 399.14994025381,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 0,
+            "rank": 498,
+            "rankPercent": 14.310344827586206,
+            "total": 580
           }
         }
       ],
-      "bestPerformanceAverage": 95.19796666666666,
-      "medianPerformanceAverage": 85.07026666666667,
+      "bestPerformanceAverage": 73.42298075,
+      "medianPerformanceAverage": 73.42298075,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -11550,11 +15890,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29381,
+          "id": 24114,
           "slot": 2,
-          "quality": 4,
-          "icon": "inv_jewelry_necklace_04.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_07.jpg",
+          "itemLevel": 102,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -11631,11 +15971,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29282,
+          "id": 28791,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "icon": "inv_jewelry_ring_71.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -11682,7 +16022,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_spear_08.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2639
         },
         {
           "id": 0,
@@ -11714,58 +16054,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 93.8179,
-          "medianPerformance": 86.4264,
-          "totalKills": 6,
-          "fastestKill": 27183,
-          "bestAmount": 2345.6708940034,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 102.01,
-            "rank": 3536,
-            "rankPercent": 91.29567615483109,
-            "total": 40612
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 91.7419,
-          "medianPerformance": 80.7535,
-          "totalKills": 6,
-          "fastestKill": 129192,
-          "bestAmount": 1759.1259520713,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 101.72,
-            "rank": 4265,
-            "rankPercent": 89.56743002544529,
-            "total": 40872
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 92.7044,
-          "medianPerformance": 71.6174,
-          "totalKills": 6,
-          "fastestKill": 220362,
-          "bestAmount": 1853.7270419919,
-          "spec": "BeastMastery",
-          "allStars": {
-            "points": 98.41,
-            "rank": 3886,
-            "rankPercent": 90.1400944114512,
-            "total": 39402
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 92.75473333333333,
-      "medianPerformanceAverage": 79.5991,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -11776,12 +16178,12 @@ export const wclBakedData: WclBakedData = {
       "wclId": 106035081,
       "gear": [
         {
-          "id": 27704,
+          "id": 31371,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_77.jpg",
-          "itemLevel": 123,
-          "permanentEnchantID": 3002,
+          "icon": "inv_helmet_06.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 3008,
           "temporaryEnchantID": null
         },
         {
@@ -11812,20 +16214,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29066,
+          "id": 31369,
           "slot": 5,
           "quality": 4,
-          "icon": "inv_chest_plate18.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 2661,
+          "icon": "inv_chest_plate11.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2987,
           "temporaryEnchantID": null
         },
         {
-          "id": 30371,
+          "id": 28566,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_08.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_belt_27.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -11839,11 +16241,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29254,
+          "id": 28642,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_chain_05.jpg",
-          "itemLevel": 110,
+          "icon": "inv_boots_plate_04.jpg",
+          "itemLevel": 123,
           "permanentEnchantID": 2649,
           "temporaryEnchantID": null
         },
@@ -11866,11 +16268,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29172,
+          "id": 31398,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_51naxxramas.jpg",
-          "itemLevel": 105,
+          "icon": "inv_jewelry_ring_70.jpg",
+          "itemLevel": 100,
           "permanentEnchantID": 2928,
           "temporaryEnchantID": null
         },
@@ -11911,13 +16313,13 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29155,
+          "id": 32450,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_sword_01.jpg",
-          "itemLevel": 100,
+          "icon": "inv_mace_47.jpg",
+          "itemLevel": 123,
           "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": 2678
         },
         {
           "id": 28825,
@@ -11949,58 +16351,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.7903,
-          "medianPerformance": 88.151,
-          "totalKills": 10,
-          "fastestKill": 24379,
-          "bestAmount": 1263.3653187114,
-          "spec": "Justicar",
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 97.9719,
+          "medianPerformance": 97.9719,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 615.24933434141,
+          "spec": "Protection",
           "allStars": {
-            "points": 114.23,
-            "rank": 37,
-            "rankPercent": 99.82573337205925,
-            "total": 20658
+            "points": 113.51,
+            "rank": 21,
+            "rankPercent": 98.18511796733212,
+            "total": 1102
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 99.6075,
-          "medianPerformance": 93.1317,
-          "totalKills": 10,
-          "fastestKill": 114560,
-          "bestAmount": 527.90456996568,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 98.4448,
+          "medianPerformance": 98.4448,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 475.17762960476,
           "spec": "Justicar",
           "allStars": {
-            "points": 112.75,
-            "rank": 98,
-            "rankPercent": 99.26803501358286,
-            "total": 13252
+            "points": 115.5,
+            "rank": 20,
+            "rankPercent": 98.63013698630137,
+            "total": 1387
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 99.2584,
-          "medianPerformance": 95.0481,
-          "totalKills": 10,
-          "fastestKill": 199708,
-          "bestAmount": 756.27521495464,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 96.9982,
+          "medianPerformance": 96.9982,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 512.69047516003,
           "spec": "Justicar",
           "allStars": {
-            "points": 108.88,
-            "rank": 197,
-            "rankPercent": 99.05868792623187,
-            "total": 20822
+            "points": 112.07,
+            "rank": 36,
+            "rankPercent": 96.99312714776632,
+            "total": 1164
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 98.6987,
+          "medianPerformance": 98.6987,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1061.5081582477,
+          "spec": "Protection",
+          "allStars": {
+            "points": 116.18,
+            "rank": 12,
+            "rankPercent": 98.85892116182572,
+            "total": 964
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 90.9946,
+          "medianPerformance": 90.9946,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 328.99369740502,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 99.48,
+            "rank": 118,
+            "rankPercent": 91.2490650710546,
+            "total": 1337
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 97.0276,
+          "medianPerformance": 97.0276,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 339.80472324758,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 0,
+            "rank": 20,
+            "rankPercent": 97.0404984423676,
+            "total": 642
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 95.0004,
+          "medianPerformance": 95.0004,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 168.40686291324,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 105.49,
+            "rank": 43,
+            "rankPercent": 95.23269012485811,
+            "total": 881
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 80.7701,
+          "medianPerformance": 80.7701,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 672.81980777478,
+          "spec": "Protection",
+          "allStars": {
+            "points": 94.4,
+            "rank": 80,
+            "rankPercent": 81.41176470588235,
+            "total": 425
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 98.9805,
+          "medianPerformance": 98.9805,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 635.1631767591,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 115.58,
+            "rank": 8,
+            "rankPercent": 98.98255813953489,
+            "total": 688
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 90.1851,
+          "medianPerformance": 90.1851,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 400.77702461802,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 0,
+            "rank": 36,
+            "rankPercent": 90.59139784946237,
+            "total": 372
           }
         }
       ],
-      "bestPerformanceAverage": 99.55206666666668,
-      "medianPerformanceAverage": 92.11026666666665,
+      "bestPerformanceAverage": 94.7324,
+      "medianPerformanceAverage": 94.7324,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -12011,20 +16525,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 108619453,
       "gear": [
         {
-          "id": 28796,
+          "id": 29040,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_58.jpg",
-          "itemLevel": 125,
+          "icon": "inv_helmet_15.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 28674,
+          "id": 29381,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_34.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_necklace_04.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12034,7 +16548,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_shoulder_15.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2986,
           "temporaryEnchantID": null
         },
         {
@@ -12052,7 +16566,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_chest_leather_06.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
         {
@@ -12074,19 +16588,19 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27867,
+          "id": 28746,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_chain_06.jpg",
+          "quality": 4,
+          "icon": "inv_boots_chain_05.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2657,
           "temporaryEnchantID": null
         },
         {
-          "id": 27712,
+          "id": 28454,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_08.jpg",
+          "quality": 4,
+          "icon": "inv_bracer_02.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2647,
           "temporaryEnchantID": null
@@ -12101,20 +16615,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29281,
+          "id": 29282,
           "slot": 11,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28553,
+          "id": 28730,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_60.jpg",
-          "itemLevel": 95,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12128,11 +16642,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29776,
+          "id": 28288,
           "slot": 14,
-          "quality": 2,
-          "icon": "spell_nature_abolishmagic.jpg",
-          "itemLevel": 108,
+          "quality": 3,
+          "icon": "inv_misc_enggizmos_18.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12142,33 +16656,33 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_misc_cape_10.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 368,
           "temporaryEnchantID": null
         },
         {
-          "id": 28657,
+          "id": 28308,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_weapon_shortblade_44.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 1900,
+          "icon": "inv_axe_54.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
           "temporaryEnchantID": 2636
         },
         {
-          "id": 27872,
+          "id": 28308,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_axe_62.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 1900,
+          "quality": 4,
+          "icon": "inv_axe_54.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
           "temporaryEnchantID": 2636
         },
         {
-          "id": 28066,
+          "id": 27815,
           "slot": 18,
-          "quality": 2,
-          "icon": "inv_relics_totemofrage.jpg",
-          "itemLevel": 93,
+          "quality": 3,
+          "icon": "spell_unused.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -12184,58 +16698,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 57.5199,
-          "medianPerformance": 55.0732,
-          "totalKills": 2,
-          "fastestKill": 27183,
-          "bestAmount": 943.78027098277,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 63.54,
-            "rank": 10583,
-            "rankPercent": 57.228891314013175,
-            "total": 24741
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 53.1977,
-          "medianPerformance": 42.0159,
-          "totalKills": 2,
-          "fastestKill": 129192,
-          "bestAmount": 1007.9416682148,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 61.07,
-            "rank": 12243,
-            "rankPercent": 50.95352564102564,
-            "total": 24960
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 5.29344,
-          "medianPerformance": 5.29344,
-          "totalKills": 1,
-          "fastestKill": 251234,
-          "bestAmount": 609.34029629748,
-          "spec": "Enhancement",
-          "allStars": {
-            "points": 22.13,
-            "rank": 23190,
-            "rankPercent": 4.335808580858086,
-            "total": 24240
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 38.67034666666667,
-      "medianPerformanceAverage": 34.12751333333333,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -12246,11 +16822,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 104876719,
       "gear": [
         {
-          "id": 28224,
+          "id": 29044,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_15.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_helmet_58.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
@@ -12282,11 +16858,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28264,
+          "id": 29045,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_chain_17.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_chest_plate02.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
@@ -12387,7 +16963,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_mace_38.jpg",
           "itemLevel": 123,
           "permanentEnchantID": 2673,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": null
         },
         {
           "id": 28189,
@@ -12419,58 +16995,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.6343,
-          "medianPerformance": 96.5317,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 3934.3627266369,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 82.4324,
+          "medianPerformance": 82.4324,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1269.164393018,
           "spec": "Combat",
           "allStars": {
-            "points": 112.89,
-            "rank": 108,
-            "rankPercent": 99.58626556337484,
-            "total": 25862
+            "points": 94.57,
+            "rank": 338,
+            "rankPercent": 83.08232931726907,
+            "total": 1992
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 99.8018,
-          "medianPerformance": 99.0563,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 1928.2524882962,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 91.9524,
+          "medianPerformance": 91.9524,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1191.1889612801,
           "spec": "Combat",
           "allStars": {
-            "points": 116.66,
-            "rank": 28,
-            "rankPercent": 99.89665071770335,
-            "total": 26125
+            "points": 103.56,
+            "rank": 153,
+            "rankPercent": 92.29989868287741,
+            "total": 1974
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 98.6196,
-          "medianPerformance": 85.3769,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 1687.4594284507,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 48.9494,
+          "medianPerformance": 48.9494,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 811.8127058194,
           "spec": "Combat",
           "allStars": {
-            "points": 107.13,
-            "rank": 933,
-            "rankPercent": 96.32882971599638,
-            "total": 25387
+            "points": 56.8,
+            "rank": 855,
+            "rankPercent": 50.5787037037037,
+            "total": 1728
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 2.59025,
+          "medianPerformance": 2.59025,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 303.45468261064,
+          "spec": "Combat",
+          "allStars": {
+            "points": 13.84,
+            "rank": 1291,
+            "rankPercent": 6.589427950760318,
+            "total": 1381
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 77.1407,
+          "medianPerformance": 77.1407,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1472.8222597796,
+          "spec": "Combat",
+          "allStars": {
+            "points": 92.95,
+            "rank": 282,
+            "rankPercent": 78.02971071149335,
+            "total": 1279
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 65.2808,
+          "medianPerformance": 65.2808,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 760.11558643326,
+          "spec": "Combat",
+          "allStars": {
+            "points": 0,
+            "rank": 257,
+            "rankPercent": 67.01030927835052,
+            "total": 776
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 86.0946,
+          "medianPerformance": 86.0946,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 946.37062749967,
+          "spec": "Combat",
+          "allStars": {
+            "points": 101.59,
+            "rank": 123,
+            "rankPercent": 86.83926645091694,
+            "total": 927
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 99.7782,
+          "medianPerformance": 99.7782,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1754.402008022,
+          "spec": "Combat",
+          "allStars": {
+            "points": 119.22,
+            "rank": 3,
+            "rankPercent": 99.77168949771689,
+            "total": 876
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 81.5004,
+          "medianPerformance": 81.5004,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1432.5671498846,
+          "spec": "Combat",
+          "allStars": {
+            "points": 92.09,
+            "rank": 152,
+            "rankPercent": 81.85096153846153,
+            "total": 832
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 60.1303,
+          "medianPerformance": 60.1303,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 771.27472228284,
+          "spec": "Combat",
+          "allStars": {
+            "points": 0,
+            "rank": 194,
+            "rankPercent": 63.09751434034417,
+            "total": 523
           }
         }
       ],
-      "bestPerformanceAverage": 99.3519,
-      "medianPerformanceAverage": 93.65496666666667,
+      "bestPerformanceAverage": 71.30479375,
+      "medianPerformanceAverage": 71.30479375,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -12517,11 +17205,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28597,
+          "id": 29066,
           "slot": 5,
           "quality": 4,
-          "icon": "inv_chest_plate02.jpg",
-          "itemLevel": 115,
+          "icon": "inv_chest_plate18.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
@@ -12616,11 +17304,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30832,
+          "id": 32450,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_hammer_08.jpg",
-          "itemLevel": 100,
+          "icon": "inv_mace_47.jpg",
+          "itemLevel": 123,
           "permanentEnchantID": 2669,
           "temporaryEnchantID": 2678
         },
@@ -12654,58 +17342,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 96.2502,
-          "medianPerformance": 96.2502,
-          "totalKills": 2,
-          "fastestKill": 18587,
-          "bestAmount": 1177.1327668028,
-          "spec": "Protection",
-          "allStars": {
-            "points": 104.13,
-            "rank": 474,
-            "rankPercent": 95.80189935209017,
-            "total": 11267
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 95.2474,
-          "medianPerformance": 92.073,
-          "totalKills": 2,
-          "fastestKill": 101676,
-          "bestAmount": 660.32726484612,
-          "spec": "Protection",
-          "allStars": {
-            "points": 105.15,
-            "rank": 838,
-            "rankPercent": 94.42334599240456,
-            "total": 15009
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 90.2965,
-          "medianPerformance": 88.7215,
-          "totalKills": 2,
-          "fastestKill": 163693,
-          "bestAmount": 471.99821680187,
-          "spec": "Justicar",
-          "allStars": {
-            "points": 95.33,
-            "rank": 2265,
-            "rankPercent": 89.12688502545384,
-            "total": 20822
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 93.93136666666668,
-      "medianPerformanceAverage": 92.34823333333333,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -12721,7 +17471,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_helmet_74.jpg",
           "itemLevel": 112,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 3001,
           "temporaryEnchantID": null
         },
         {
@@ -12734,10 +17484,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27775,
+          "id": 28631,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_22.jpg",
+          "quality": 4,
+          "icon": "inv_shoulder_14.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -12857,7 +17607,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_hammer_23.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
-          "temporaryEnchantID": 2629
+          "temporaryEnchantID": null
         },
         {
           "id": 28728,
@@ -12889,58 +17639,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 75,
-          "medianPerformance": 75,
-          "totalKills": 5,
-          "fastestKill": 27183,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
           "bestAmount": 0,
-          "spec": "Holy",
-          "allStars": {
-            "points": 75,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 50,
-          "medianPerformance": 40,
-          "totalKills": 5,
-          "fastestKill": 129192,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
           "bestAmount": 0,
-          "spec": "Holy",
-          "allStars": {
-            "points": 0,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 70.36789011778852,
-          "medianPerformance": 30,
-          "totalKills": 5,
-          "fastestKill": 220362,
-          "bestAmount": 7.6900419529204,
-          "spec": "Holy",
-          "allStars": {
-            "points": 0,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 65.12263003926284,
-      "medianPerformanceAverage": 48.333333333333336,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -12951,11 +17763,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 91156121,
       "gear": [
         {
-          "id": 28413,
+          "id": 29049,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_helmet_91.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3001,
           "temporaryEnchantID": null
         },
@@ -13023,11 +17835,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28029,
+          "id": 28511,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_12.jpg",
-          "itemLevel": 94,
+          "quality": 4,
+          "icon": "inv_bracer_13.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2617,
           "temporaryEnchantID": null
         },
@@ -13086,10 +17898,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31304,
+          "id": 28522,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_mace_34.jpg",
+          "quality": 4,
+          "icon": "inv_hammer_26.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2343,
           "temporaryEnchantID": 2629
@@ -13124,58 +17936,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 90.575,
-          "medianPerformance": 85.1509,
-          "totalKills": 3,
-          "fastestKill": 24379,
-          "bestAmount": 1029.6156528159,
-          "spec": "Discipline",
-          "allStars": {
-            "points": 97.6,
-            "rank": 708,
-            "rankPercent": 89.61515863689776,
-            "total": 6808
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 86.7949,
-          "medianPerformance": 62.6762,
-          "totalKills": 3,
-          "fastestKill": 114560,
-          "bestAmount": 722.1281424581,
-          "spec": "Discipline",
-          "allStars": {
-            "points": 93.49,
-            "rank": 931,
-            "rankPercent": 86.13388996570747,
-            "total": 6707
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 84.3143,
-          "medianPerformance": 69.1919,
-          "totalKills": 3,
-          "fastestKill": 198308,
-          "bestAmount": 658.05191560875,
-          "spec": "Discipline",
-          "allStars": {
-            "points": 92.01,
-            "rank": 1034,
-            "rankPercent": 84.26024683833613,
-            "total": 6563
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 87.22806666666668,
-      "medianPerformanceAverage": 72.33966666666667,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -13359,58 +18233,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 91.5167,
-          "medianPerformance": 86.1568,
-          "totalKills": 8,
-          "fastestKill": 27183,
-          "bestAmount": 963.10193871169,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 95.1298,
+          "medianPerformance": 95.1298,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 766.53463068275,
           "spec": "Discipline",
           "allStars": {
-            "points": 93.91,
-            "rank": 926,
-            "rankPercent": 86.41304347826087,
-            "total": 6808
+            "points": 110.82,
+            "rank": 18,
+            "rankPercent": 95.68527918781726,
+            "total": 394
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 90.2312,
-          "medianPerformance": 74.4897,
-          "totalKills": 8,
-          "fastestKill": 123192,
-          "bestAmount": 721.82322351694,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 69.8843,
+          "medianPerformance": 69.8843,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 647.27363351084,
           "spec": "Discipline",
           "allStars": {
-            "points": 93.44,
-            "rank": 934,
-            "rankPercent": 86.08916057850007,
-            "total": 6707
+            "points": 80.06,
+            "rank": 103,
+            "rankPercent": 72.1311475409836,
+            "total": 366
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 95.9663,
-          "medianPerformance": 87.0505,
-          "totalKills": 8,
-          "fastestKill": 220362,
-          "bestAmount": 856.5162358598,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 61.4988,
+          "medianPerformance": 61.4988,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 627.09950544327,
           "spec": "Discipline",
           "allStars": {
-            "points": 105.53,
-            "rank": 293,
-            "rankPercent": 95.55081517598659,
-            "total": 6563
+            "points": 71.14,
+            "rank": 113,
+            "rankPercent": 64.89028213166144,
+            "total": 319
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 80.3388,
+          "medianPerformance": 80.3388,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 893.97770451498,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 91.99,
+            "rank": 58,
+            "rankPercent": 81.78913738019169,
+            "total": 313
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 91.9065,
+          "medianPerformance": 91.9065,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 800.75965635013,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 105.48,
+            "rank": 24,
+            "rankPercent": 92.04152249134948,
+            "total": 289
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 94.4118,
+          "medianPerformance": 94.4118,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 720.07415692608,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 0,
+            "rank": 14,
+            "rankPercent": 94.00921658986175,
+            "total": 217
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 88.4708,
+          "medianPerformance": 88.4708,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 590.07402122536,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 100.36,
+            "rank": 23,
+            "rankPercent": 89.90825688073394,
+            "total": 218
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 95.0298,
+          "medianPerformance": 95.0298,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 2916.109583512,
+          "spec": "Holy",
+          "allStars": {
+            "points": 112.07,
+            "rank": 57,
+            "rankPercent": 95.07908611599296,
+            "total": 1138
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 99.7284,
+          "medianPerformance": 99.7284,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1323.2699200441,
+          "spec": "Holy",
+          "allStars": {
+            "points": 116.71,
+            "rank": 4,
+            "rankPercent": 99.71428571428571,
+            "total": 1050
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 98.3214,
+          "medianPerformance": 98.3214,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 957.22475156172,
+          "spec": "Holy",
+          "allStars": {
+            "points": 0,
+            "rank": 13,
+            "rankPercent": 98.24046920821114,
+            "total": 682
           }
         }
       ],
-      "bestPerformanceAverage": 92.5714,
-      "medianPerformanceAverage": 82.56566666666667,
+      "bestPerformanceAverage": 85.24839999999999,
+      "medianPerformanceAverage": 85.24839999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -13424,7 +18410,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -13471,11 +18457,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29082,
+          "id": 28228,
           "slot": 5,
-          "quality": 4,
-          "icon": "inv_chest_chain_15.jpg",
-          "itemLevel": 120,
+          "quality": 3,
+          "icon": "inv_chest_chain_03.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
@@ -13489,20 +18475,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27874,
+          "id": 29083,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_03.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_pants_mail_15.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3012,
           "temporaryEnchantID": null
         },
         {
-          "id": 25686,
+          "id": 28746,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_cloth_05.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_boots_chain_05.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2657,
           "temporaryEnchantID": null
         },
@@ -13576,7 +18562,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_axe_46.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": 2677
+          "temporaryEnchantID": null
         },
         {
           "id": 0,
@@ -13608,58 +18594,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 93.0149,
-          "medianPerformance": 69.6913,
-          "totalKills": 7,
-          "fastestKill": 18587,
-          "bestAmount": 2042.6104266423,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 66.6735,
+          "medianPerformance": 66.6735,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1213.7257157884,
           "spec": "Survival",
           "allStars": {
-            "points": 105.61,
-            "rank": 666,
-            "rankPercent": 93.18438044480885,
-            "total": 9757
+            "points": 76.1,
+            "rank": 372,
+            "rankPercent": 66.66666666666667,
+            "total": 1113
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 70.5611,
-          "medianPerformance": 54.4834,
-          "totalKills": 7,
-          "fastestKill": 101676,
-          "bestAmount": 1266.0706558086,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 58.4192,
+          "medianPerformance": 58.4192,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 806.34940010274,
           "spec": "Survival",
           "allStars": {
-            "points": 75.5,
-            "rank": 3560,
-            "rankPercent": 63.83130081300813,
-            "total": 9840
+            "points": 66.4,
+            "rank": 453,
+            "rankPercent": 59.570661896243294,
+            "total": 1118
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 94.1401,
-          "medianPerformance": 72.6925,
-          "totalKills": 7,
-          "fastestKill": 163693,
-          "bestAmount": 1561.6566149626,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 54.032,
+          "medianPerformance": 54.032,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 847.51364260506,
           "spec": "Survival",
           "allStars": {
-            "points": 99.74,
-            "rank": 869,
-            "rankPercent": 91.02007034967929,
-            "total": 9666
+            "points": 64.12,
+            "rank": 468,
+            "rankPercent": 55.09615384615385,
+            "total": 1040
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 83.2923,
+          "medianPerformance": 83.2923,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1516.5679481448,
+          "spec": "Survival",
+          "allStars": {
+            "points": 96.2,
+            "rank": 143,
+            "rankPercent": 84.64864864864865,
+            "total": 925
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 63.8642,
+          "medianPerformance": 63.8642,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1327.4928699694,
+          "spec": "Survival",
+          "allStars": {
+            "points": 76.18,
+            "rank": 310,
+            "rankPercent": 65.20270270270271,
+            "total": 888
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 69.3283,
+          "medianPerformance": 69.3283,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 747.83571024884,
+          "spec": "Survival",
+          "allStars": {
+            "points": 0,
+            "rank": 188,
+            "rankPercent": 69.64285714285714,
+            "total": 616
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 79.9514,
+          "medianPerformance": 79.9514,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 938.92048377913,
+          "spec": "Survival",
+          "allStars": {
+            "points": 93.32,
+            "rank": 137,
+            "rankPercent": 79.9410029498525,
+            "total": 678
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 55.6681,
+          "medianPerformance": 55.6681,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 857.81766353018,
+          "spec": "Survival",
+          "allStars": {
+            "points": 68.69,
+            "rank": 279,
+            "rankPercent": 56.96594427244582,
+            "total": 646
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 11.1498,
+          "medianPerformance": 11.1498,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 764.73959920479,
+          "spec": "Survival",
+          "allStars": {
+            "points": 35,
+            "rank": 523,
+            "rankPercent": 14.566284779050736,
+            "total": 611
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 32.8826,
+          "medianPerformance": 32.8826,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 716.32983355338,
+          "spec": "Survival",
+          "allStars": {
+            "points": 0,
+            "rank": 288,
+            "rankPercent": 34.77272727272727,
+            "total": 440
           }
         }
       ],
-      "bestPerformanceAverage": 85.90536666666667,
-      "medianPerformanceAverage": 65.6224,
+      "bestPerformanceAverage": 59.13131250000001,
+      "medianPerformanceAverage": 59.13131250000001,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -13670,12 +18768,12 @@ export const wclBakedData: WclBakedData = {
       "wclId": 108566413,
       "gear": [
         {
-          "id": 28193,
+          "id": 25855,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_56.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_helmet_84.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
         {
@@ -13688,12 +18786,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27796,
+          "id": 29079,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_22.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_shoulder_47.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2995,
           "temporaryEnchantID": null
         },
         {
@@ -13706,30 +18804,30 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28191,
+          "id": 21848,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_42.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 908,
+          "quality": 4,
+          "icon": "inv_chest_cloth_02.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27742,
+          "id": 21846,
           "slot": 6,
-          "quality": 3,
-          "icon": "inv_belt_13.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_belt_04.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27838,
+          "id": 29078,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_cloth_20.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_pants_cloth_21.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2747,
           "temporaryEnchantID": null
         },
         {
@@ -13747,25 +18845,25 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_bracer_13.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 1883,
+          "permanentEnchantID": 2650,
           "temporaryEnchantID": null
         },
         {
-          "id": 29080,
+          "id": 21847,
           "slot": 10,
           "quality": 4,
-          "icon": "inv_gauntlets_47.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": null,
+          "icon": "inv_gauntlets_19.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2937,
           "temporaryEnchantID": null
         },
         {
-          "id": 28394,
+          "id": 29286,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_48naxxramas.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2928,
           "temporaryEnchantID": null
         },
         {
@@ -13774,7 +18872,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 4,
           "icon": "inv_jewelry_ring_65.jpg",
           "itemLevel": 125,
-          "permanentEnchantID": null,
+          "permanentEnchantID": 2928,
           "temporaryEnchantID": null
         },
         {
@@ -13805,20 +18903,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27543,
+          "id": 28802,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_weapon_shortblade_37.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_sword_65.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2666,
           "temporaryEnchantID": 2628
         },
         {
-          "id": 28187,
+          "id": 28603,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_offhand_outlandraid_03blue.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_offhand_outlandraid_01.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -13843,58 +18941,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 43.9315,
-          "medianPerformance": 36.2605,
-          "totalKills": 2,
-          "fastestKill": 78275,
-          "bestAmount": 1048.5212392207,
-          "spec": "Arcane",
-          "allStars": {
-            "points": 46.28,
-            "rank": 20452,
-            "rankPercent": 41.10074304475549,
-            "total": 34722
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 35.7775,
-          "medianPerformance": 33.5154,
-          "totalKills": 2,
-          "fastestKill": 199777,
-          "bestAmount": 871.126305831,
-          "spec": "Arcane",
-          "allStars": {
-            "points": 41.54,
-            "rank": 24796,
-            "rankPercent": 33.60379177377892,
-            "total": 37344
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 51.6865,
-          "medianPerformance": 27.4505,
-          "totalKills": 2,
-          "fastestKill": 321375,
-          "bestAmount": 1021.3986775574,
-          "spec": "Arcane",
-          "allStars": {
-            "points": 54.97,
-            "rank": 18213,
-            "rankPercent": 49.0559176480461,
-            "total": 35749
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 43.7985,
-      "medianPerformanceAverage": 32.40880000000001,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -14078,58 +19238,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 98.8072,
-          "medianPerformance": 89.818,
-          "totalKills": 6,
-          "fastestKill": 24379,
-          "bestAmount": 3323.229008573,
-          "spec": "Combat",
-          "allStars": {
-            "points": 109.91,
-            "rank": 345,
-            "rankPercent": 98.66986311963498,
-            "total": 25862
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 98.1354,
-          "medianPerformance": 91.4317,
-          "totalKills": 6,
-          "fastestKill": 114560,
-          "bestAmount": 1620.2950418994,
-          "spec": "Combat",
-          "allStars": {
-            "points": 112.07,
-            "rank": 531,
-            "rankPercent": 97.97129186602871,
-            "total": 26125
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.3081,
-          "medianPerformance": 86.8081,
-          "totalKills": 6,
-          "fastestKill": 198308,
-          "bestAmount": 1676.4880892349,
-          "spec": "Combat",
-          "allStars": {
-            "points": 106.86,
-            "rank": 985,
-            "rankPercent": 96.12400047268287,
-            "total": 25387
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 98.08356666666667,
-      "medianPerformanceAverage": 89.35260000000001,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -14313,58 +19535,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 98.6367,
-          "medianPerformance": 86.3637,
-          "totalKills": 8,
-          "fastestKill": 18587,
-          "bestAmount": 2718.1694441379,
-          "spec": "Destruction",
-          "allStars": {
-            "points": 111.44,
-            "rank": 660,
-            "rankPercent": 98.4251027626422,
-            "total": 41844
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 98.4186,
-          "medianPerformance": 90.0613,
-          "totalKills": 8,
-          "fastestKill": 101676,
-          "bestAmount": 1582.7373211964,
-          "spec": "Destruction",
-          "allStars": {
-            "points": 103.96,
-            "rank": 3654,
-            "rankPercent": 91.34134490032947,
-            "total": 42189
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.296,
-          "medianPerformance": 97.296,
-          "totalKills": 8,
-          "fastestKill": 163693,
-          "bestAmount": 1800.7795079814,
-          "spec": "Affliction",
-          "allStars": {
-            "points": 108.74,
-            "rank": 255,
-            "rankPercent": 97.21582812671271,
-            "total": 9123
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 98.1171,
-      "medianPerformanceAverage": 91.24033333333334,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -14438,12 +19722,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 25686,
+          "id": 28608,
           "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_cloth_05.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": 911,
+          "quality": 4,
+          "icon": "inv_boots_plate_04.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2939,
           "temporaryEnchantID": null
         },
         {
@@ -14465,20 +19749,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30365,
+          "id": 28649,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_24.jpg",
-          "itemLevel": 109,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_47.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29282,
+          "id": 29283,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -14516,7 +19800,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_sword_74.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2673,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2639
         },
         {
           "id": 28729,
@@ -14548,58 +19832,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 91.3395,
-          "medianPerformance": 73.4205,
-          "totalKills": 5,
-          "fastestKill": 24379,
-          "bestAmount": 2724.8861725255,
-          "spec": "Arms",
-          "allStars": {
-            "points": 99.26,
-            "rank": 1205,
-            "rankPercent": 90.35797229118283,
-            "total": 12487
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 92.975,
-          "medianPerformance": 67.6398,
-          "totalKills": 5,
-          "fastestKill": 114560,
-          "bestAmount": 1360.5097765363,
-          "spec": "Arms",
-          "allStars": {
-            "points": 103.66,
-            "rank": 1061,
-            "rankPercent": 92.05695016860247,
-            "total": 13345
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 58.7664,
-          "medianPerformance": 55.6993,
-          "totalKills": 5,
-          "fastestKill": 198308,
-          "bestAmount": 1030.9568953345,
-          "spec": "Arms",
-          "allStars": {
-            "points": 59.17,
-            "rank": 5657,
-            "rankPercent": 54.533762057877816,
-            "total": 12440
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 81.02696666666667,
-      "medianPerformanceAverage": 65.58653333333332,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -14754,11 +20100,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2628
         },
         {
-          "id": 28781,
+          "id": 28603,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_offhand_draenei_a_01.jpg",
-          "itemLevel": 125,
+          "icon": "inv_offhand_outlandraid_01.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -14783,58 +20129,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 96.3398,
-          "medianPerformance": 82.0478,
-          "totalKills": 5,
-          "fastestKill": 18587,
-          "bestAmount": 1558.83144133,
-          "spec": "Balance",
-          "allStars": {
-            "points": 106.44,
-            "rank": 529,
-            "rankPercent": 96.13978651849686,
-            "total": 13678
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 91.0203,
-          "medianPerformance": 85.0452,
-          "totalKills": 5,
-          "fastestKill": 101676,
-          "bestAmount": 1149.0125496676,
-          "spec": "Balance",
-          "allStars": {
-            "points": 102.96,
-            "rank": 1241,
-            "rankPercent": 90.63090290895353,
-            "total": 13235
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 97.7231,
-          "medianPerformance": 75.6209,
-          "totalKills": 5,
-          "fastestKill": 163693,
-          "bestAmount": 1416.4747423531,
-          "spec": "Balance",
-          "allStars": {
-            "points": 108.92,
-            "rank": 280,
-            "rankPercent": 97.77582908163265,
-            "total": 12544
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 95.02773333333333,
-      "medianPerformanceAverage": 80.90463333333334,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -14845,20 +20253,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105988638,
       "gear": [
         {
-          "id": 8345,
+          "id": 29098,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_04.jpg",
-          "itemLevel": 45,
+          "quality": 4,
+          "icon": "inv_helmet_81.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 29381,
+          "id": 28509,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_04.jpg",
-          "itemLevel": 110,
+          "icon": "inv_jewelry_necklace_22.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -14890,21 +20298,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28750,
+          "id": 28423,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_26.jpg",
-          "itemLevel": 115,
+          "icon": "inv_belt_17.jpg",
+          "itemLevel": 123,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 30257,
+          "id": 29099,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_leather_05.jpg",
-          "itemLevel": 109,
-          "permanentEnchantID": 3010,
+          "quality": 4,
+          "icon": "inv_pants_leather_22.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3013,
           "temporaryEnchantID": null
         },
         {
@@ -14917,21 +20325,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29246,
+          "id": 28445,
           "slot": 9,
           "quality": 4,
-          "icon": "inv_bracer_15.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": 1593,
+          "icon": "inv_bracer_07.jpg",
+          "itemLevel": 113,
+          "permanentEnchantID": 2649,
           "temporaryEnchantID": null
         },
         {
-          "id": 28506,
+          "id": 30341,
           "slot": 10,
-          "quality": 4,
-          "icon": "inv_gauntlets_28.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2564,
+          "quality": 2,
+          "icon": "inv_gauntlets_23.jpg",
+          "itemLevel": 114,
+          "permanentEnchantID": 2613,
           "temporaryEnchantID": null
         },
         {
@@ -14944,11 +20352,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27925,
+          "id": 29278,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_16.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -14971,10 +20379,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27878,
+          "id": 28660,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_21.jpg",
+          "quality": 4,
+          "icon": "inv_misc_cape_20.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 368,
           "temporaryEnchantID": null
@@ -14998,11 +20406,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29390,
+          "id": 23198,
           "slot": 18,
-          "quality": 4,
-          "icon": "inv_relics_idolofhealth.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_relics_idolofferocity.jpg",
+          "itemLevel": 65,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -15018,58 +20426,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.7246,
-          "medianPerformance": 27.595,
-          "totalKills": 5,
-          "fastestKill": 27183,
-          "bestAmount": 1287.9005260641,
-          "spec": "Guardian",
-          "allStars": {
-            "points": 113.65,
-            "rank": 43,
-            "rankPercent": 99.67343130394215,
-            "total": 12861
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 96.1741,
-          "medianPerformance": 91.6881,
-          "totalKills": 5,
-          "fastestKill": 129192,
-          "bestAmount": 847.65761256957,
-          "spec": "Guardian",
-          "allStars": {
-            "points": 106.23,
-            "rank": 918,
-            "rankPercent": 94.33566001606029,
-            "total": 16189
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 85.2189,
-          "medianPerformance": 54.4677,
-          "totalKills": 5,
-          "fastestKill": 220362,
-          "bestAmount": 1261.8827202512,
-          "spec": "Feral",
-          "allStars": {
-            "points": 91.19,
-            "rank": 3214,
-            "rankPercent": 83.47902097902097,
-            "total": 19448
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 93.70586666666667,
-      "medianPerformanceAverage": 57.91693333333333,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -15206,10 +20676,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27878,
+          "id": 28672,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_21.jpg",
+          "quality": 4,
+          "icon": "inv_misc_cape_10.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 368,
           "temporaryEnchantID": null
@@ -15224,11 +20694,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": 2636
         },
         {
-          "id": 27872,
+          "id": 28308,
           "slot": 17,
-          "quality": 3,
-          "icon": "inv_axe_62.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_axe_54.jpg",
+          "itemLevel": 123,
           "permanentEnchantID": 2673,
           "temporaryEnchantID": 2636
         },
@@ -15253,58 +20723,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 99.5648,
-          "medianPerformance": 86.9693,
-          "totalKills": 10,
-          "fastestKill": 18587,
-          "bestAmount": 2231.2906870393,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 91.8451,
+          "medianPerformance": 91.8451,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1461.2438775846,
           "spec": "Enhancement",
           "allStars": {
-            "points": 113.73,
-            "rank": 118,
-            "rankPercent": 99.52710076391415,
-            "total": 24741
+            "points": 106.29,
+            "rank": 214,
+            "rankPercent": 92.12278106508876,
+            "total": 2704
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 99.7125,
-          "medianPerformance": 87.5136,
-          "totalKills": 10,
-          "fastestKill": 101676,
-          "bestAmount": 1785.5970670391,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 91.4465,
+          "medianPerformance": 91.4465,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 1201.3813658026,
           "spec": "Enhancement",
           "allStars": {
-            "points": 116.94,
-            "rank": 93,
-            "rankPercent": 99.63141025641026,
-            "total": 24960
+            "points": 104.87,
+            "rank": 216,
+            "rankPercent": 91.99553239017126,
+            "total": 2686
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 88.9027,
-          "medianPerformance": 78.4969,
-          "totalKills": 10,
-          "fastestKill": 163693,
-          "bestAmount": 1516.5632766877,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 8.31574,
+          "medianPerformance": 8.31574,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 450.12531131107,
           "spec": "Enhancement",
           "allStars": {
-            "points": 94.6,
-            "rank": 3561,
-            "rankPercent": 85.31353135313532,
-            "total": 24240
+            "points": 27.66,
+            "rank": 2210,
+            "rankPercent": 10.530579181855002,
+            "total": 2469
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 61.5948,
+          "medianPerformance": 61.5948,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 1312.1228207421,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 72.65,
+            "rank": 794,
+            "rankPercent": 62.909260991580915,
+            "total": 2138
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 87.1772,
+          "medianPerformance": 87.1772,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1591.0971444667,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 102.05,
+            "rank": 255,
+            "rankPercent": 87.54901960784314,
+            "total": 2040
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 86.7415,
+          "medianPerformance": 86.7415,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 810.80997997101,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 0,
+            "rank": 179,
+            "rankPercent": 87.43824982357093,
+            "total": 1417
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 91.9919,
+          "medianPerformance": 91.9919,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 959.53872222489,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 108.07,
+            "rank": 114,
+            "rankPercent": 92.50663129973475,
+            "total": 1508
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 92.3515,
+          "medianPerformance": 92.3515,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 1664.4950934638,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 109.58,
+            "rank": 102,
+            "rankPercent": 92.99583911234397,
+            "total": 1442
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 90.5133,
+          "medianPerformance": 90.5133,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1500.3845428294,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 102.61,
+            "rank": 126,
+            "rankPercent": 91.00719424460432,
+            "total": 1390
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 99.168,
+          "medianPerformance": 99.168,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 1033.410329933,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 0,
+            "rank": 9,
+            "rankPercent": 99.17780061664953,
+            "total": 973
           }
         }
       ],
-      "bestPerformanceAverage": 96.06,
-      "medianPerformanceAverage": 84.3266,
+      "bestPerformanceAverage": 76.904505,
+      "medianPerformanceAverage": 76.904505,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -15315,11 +20897,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 106014959,
       "gear": [
         {
-          "id": 28804,
+          "id": 24266,
           "slot": 1,
           "quality": 4,
           "icon": "inv_helmet_27.jpg",
-          "itemLevel": 125,
+          "itemLevel": 105,
           "permanentEnchantID": 3002,
           "temporaryEnchantID": null
         },
@@ -15333,12 +20915,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27778,
+          "id": 21869,
           "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_18.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2994,
+          "quality": 4,
+          "icon": "inv_shoulder_25.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2995,
           "temporaryEnchantID": null
         },
         {
@@ -15351,12 +20933,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28232,
+          "id": 21871,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_29.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_chest_cloth_08.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
         {
@@ -15369,20 +20951,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28594,
+          "id": 24262,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_cloth_05.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2747,
+          "icon": "inv_pants_cloth_14.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2748,
           "temporaryEnchantID": null
         },
         {
-          "id": 28517,
+          "id": 21870,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_cloth_05.jpg",
-          "itemLevel": 115,
+          "icon": "inv_boots_cloth_03.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": 911,
           "temporaryEnchantID": null
         },
@@ -15392,7 +20974,7 @@ export const wclBakedData: WclBakedData = {
           "quality": 3,
           "icon": "inv_bracer_10.jpg",
           "itemLevel": 112,
-          "permanentEnchantID": 369,
+          "permanentEnchantID": 2650,
           "temporaryEnchantID": null
         },
         {
@@ -15414,20 +20996,20 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29286,
+          "id": 28753,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "icon": "inv_jewelry_ring_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29132,
+          "id": 29370,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_misc_gem_bloodstone_02.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -15488,58 +21070,150 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 90.40493388624714,
-          "medianPerformance": 75.89715401665305,
-          "totalKills": 5,
-          "fastestKill": 27183,
-          "bestAmount": 239.45112754295,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 99.79300544674378,
+          "medianPerformance": 99.79300544674378,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 224.15436704908,
           "spec": "Shadow",
           "allStars": {
-            "points": 95.13775257441341,
+            "points": 114.46624396280815,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 77.96680497210767,
-          "medianPerformance": 49.91887836972873,
-          "totalKills": 5,
-          "fastestKill": 129192,
-          "bestAmount": 211.31887182308,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 95.06838173809996,
+          "medianPerformance": 95.06838173809996,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 249.79020125422,
           "spec": "Shadow",
           "allStars": {
-            "points": 83.36109592801627,
+            "points": 104.40027690072053,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 82.1893525573841,
-          "medianPerformance": 80.70504253245346,
-          "totalKills": 5,
-          "fastestKill": 220362,
-          "bestAmount": 192.61395790358,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 85.76398623217543,
+          "medianPerformance": 85.76398623217543,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 149.89357391007,
           "spec": "Shadow",
           "allStars": {
-            "points": 88.53054080864509,
+            "points": 93.74349108979513,
             "rank": null,
             "rankPercent": null,
             "total": 0
           }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 99.50910183049999,
+          "medianPerformance": 99.50910183049999,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 402.12896736701,
+          "spec": "Shadow",
+          "allStars": {
+            "points": 113.96989043026369,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 17.002145888075987,
+          "medianPerformance": 17.002145888075987,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 47.383894933277,
+          "spec": "Shadow",
+          "allStars": {
+            "points": 18.84229361665454,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 64.2708736475075,
+          "medianPerformance": 64.2708736475075,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 89.071075724721,
+          "spec": "Shadow",
+          "allStars": {
+            "points": "-",
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 83.5203638052463,
-      "medianPerformanceAverage": 68.84035830627842,
+      "bestPerformanceAverage": 79.42732422711903,
+      "medianPerformanceAverage": 79.42732422711903,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -15622,7 +21296,7 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28477,
+          "id": 28511,
           "slot": 9,
           "quality": 4,
           "icon": "inv_bracer_13.jpg",
@@ -15640,11 +21314,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29168,
+          "id": 28763,
           "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_22.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_08.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -15658,10 +21332,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30841,
+          "id": 28590,
           "slot": 13,
-          "quality": 3,
-          "icon": "inv_misc_book_11.jpg",
+          "quality": 4,
+          "icon": "inv_misc_bandage_16.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -15685,11 +21359,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27538,
+          "id": 28771,
           "slot": 16,
-          "quality": 3,
-          "icon": "inv_hammer_23.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_mace_46.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": 2629
         },
@@ -15723,58 +21397,120 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 2.50428,
-          "medianPerformance": 2.50428,
-          "totalKills": 2,
-          "fastestKill": 27183,
-          "bestAmount": 296.72149874343,
-          "spec": "Holy",
-          "allStars": {
-            "points": 10.49,
-            "rank": 26058,
-            "rankPercent": 1.2768053345457302,
-            "total": 26394
-          }
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 41.0444,
-          "medianPerformance": 41.0444,
-          "totalKills": 2,
-          "fastestKill": 129192,
-          "bestAmount": 603.87147124863,
-          "spec": "Holy",
-          "allStars": {
-            "points": 45.27,
-            "rank": 15849,
-            "rankPercent": 40.26160051264654,
-            "total": 26529
-          }
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 24.1564,
-          "medianPerformance": 24.1564,
-          "totalKills": 2,
-          "fastestKill": 251234,
-          "bestAmount": 491.11885941693,
-          "spec": "Holy",
-          "allStars": {
-            "points": 28.44,
-            "rank": 19613,
-            "rankPercent": 23.525053616689412,
-            "total": 25645
-          }
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
         }
       ],
-      "bestPerformanceAverage": 22.568360000000002,
-      "medianPerformanceAverage": 22.568360000000002,
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     },
@@ -15783,63 +21519,297 @@ export const wclBakedData: WclBakedData = {
       "serverSlug": "spineshatter",
       "serverRegion": "EU",
       "wclId": 106560073,
-      "gear": [],
-      "rankings": [
+      "gear": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 72.7435,
-          "medianPerformance": 45.4759,
-          "totalKills": 3,
-          "fastestKill": 29964,
-          "bestAmount": 1372.8474169003,
-          "spec": "Elemental",
-          "allStars": {
-            "points": 74.06,
-            "rank": 6997,
-            "rankPercent": 66.11121875605502,
-            "total": 20644
-          }
+          "id": 27993,
+          "slot": 1,
+          "quality": 3,
+          "icon": "inv_helmet_17.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 43.4671,
-          "medianPerformance": 36.3658,
-          "totalKills": 3,
-          "fastestKill": 132466,
-          "bestAmount": 802.587867046,
-          "spec": "Elemental",
-          "allStars": {
-            "points": 49.9,
-            "rank": 12990,
-            "rankPercent": 37.78022609695344,
-            "total": 20876
-          }
+          "id": 28762,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_29naxxramas.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 71.4963,
-          "medianPerformance": 18.8346,
-          "totalKills": 3,
-          "fastestKill": 198308,
-          "bestAmount": 1098.0646267422,
-          "spec": "Elemental",
-          "allStars": {
-            "points": 73.81,
-            "rank": 7002,
-            "rankPercent": 65.38613665578957,
-            "total": 20226
-          }
+          "id": 32078,
+          "slot": 3,
+          "quality": 4,
+          "icon": "inv_shoulder_33.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2981,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28191,
+          "slot": 5,
+          "quality": 3,
+          "icon": "inv_chest_cloth_42.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 1144,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29244,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_22.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30541,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_leather_03.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2748,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29242,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_cloth_11.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2792,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27746,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_19.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 369,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28780,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_15.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2792,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29367,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_56.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29286,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29370,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27683,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_misc_gem_pearl_01.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28269,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2662,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30832,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_hammer_08.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": 2678
+        },
+        {
+          "id": 29268,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_shield_37.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 3229,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28248,
+          "slot": 18,
+          "quality": 3,
+          "icon": "spell_arcane_blast.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 19,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
         }
       ],
-      "bestPerformanceAverage": 62.568966666666675,
-      "medianPerformanceAverage": 33.55876666666666,
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
-      "partial": true
+      "partial": false
     },
     "zulnani": {
       "characterName": "Zulnani",
@@ -15947,11 +21917,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28649,
+          "id": 28791,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_47.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_ring_71.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -16001,11 +21971,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29390,
+          "id": 32387,
           "slot": 18,
-          "quality": 4,
-          "icon": "inv_relics_idolofhealth.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv-mount_raven_54.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -16021,58 +21991,170 @@ export const wclBakedData: WclBakedData = {
       ],
       "rankings": [
         {
-          "encounterID": 50649,
-          "encounterName": "High King Maulgar",
-          "rankPercent": 97.6414,
-          "medianPerformance": 51.8249,
-          "totalKills": 9,
-          "fastestKill": 18587,
-          "bestAmount": 1628.5037929736,
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 90.9743,
+          "medianPerformance": 90.9743,
+          "totalKills": 1,
+          "fastestKill": 121684,
+          "bestAmount": 1503.7802833569,
           "spec": "Feral",
           "allStars": {
-            "points": 108.9,
-            "rank": 463,
-            "rankPercent": 97.61104503852319,
-            "total": 19339
+            "points": 106.13,
+            "rank": 103,
+            "rankPercent": 91.54929577464789,
+            "total": 1207
           }
         },
         {
-          "encounterID": 50650,
-          "encounterName": "Gruul the Dragonkiller",
-          "rankPercent": 97.1344,
-          "medianPerformance": 91.487,
-          "totalKills": 9,
-          "fastestKill": 101676,
-          "bestAmount": 1598.5509776536,
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 63.3766,
+          "medianPerformance": 63.3766,
+          "totalKills": 1,
+          "fastestKill": 196617,
+          "bestAmount": 829.5315257582,
           "spec": "Feral",
           "allStars": {
-            "points": 111.57,
-            "rank": 514,
-            "rankPercent": 96.58796142334553,
-            "total": 15035
+            "points": 70.39,
+            "rank": 583,
+            "rankPercent": 63.57947434292866,
+            "total": 1598
           }
         },
         {
-          "encounterID": 50651,
-          "encounterName": "Magtheridon",
-          "rankPercent": 99.3201,
-          "medianPerformance": 91.7325,
-          "totalKills": 9,
-          "fastestKill": 163693,
-          "bestAmount": 1985.2712089094,
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 22.049,
+          "medianPerformance": 22.049,
+          "totalKills": 1,
+          "fastestKill": 254167,
+          "bestAmount": 523.43537910114,
           "spec": "Feral",
           "allStars": {
-            "points": 111.26,
-            "rank": 131,
-            "rankPercent": 99.33155080213903,
-            "total": 19448
+            "points": 31.57,
+            "rank": 916,
+            "rankPercent": 24.317617866004962,
+            "total": 1209
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 14.065,
+          "medianPerformance": 14.065,
+          "totalKills": 1,
+          "fastestKill": 143168,
+          "bestAmount": 510.76357845329,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 48.51,
+            "rank": 884,
+            "rankPercent": 15.340364333652925,
+            "total": 1043
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 90.3096,
+          "medianPerformance": 90.3096,
+          "totalKills": 1,
+          "fastestKill": 227208,
+          "bestAmount": 1759.7839864793,
+          "spec": "Feral",
+          "allStars": {
+            "points": 105.74,
+            "rank": 88,
+            "rankPercent": 90.46052631578948,
+            "total": 912
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 74.5507,
+          "medianPerformance": 74.5507,
+          "totalKills": 1,
+          "fastestKill": 422887,
+          "bestAmount": 757.41273673582,
+          "spec": "Feral",
+          "allStars": {
+            "points": 0,
+            "rank": 178,
+            "rankPercent": 74.92917847025495,
+            "total": 706
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": 78.1948,
+          "medianPerformance": 78.1948,
+          "totalKills": 1,
+          "fastestKill": 291538,
+          "bestAmount": 582.68561902737,
+          "spec": "Warden",
+          "allStars": {
+            "points": 88.35,
+            "rank": 42,
+            "rankPercent": 76.57142857142857,
+            "total": 175
+          }
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": 91.2358,
+          "medianPerformance": 91.2358,
+          "totalKills": 1,
+          "fastestKill": 158564,
+          "bestAmount": 924.42168461946,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 108.04,
+            "rank": 68,
+            "rankPercent": 91.30998702983139,
+            "total": 771
+          }
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": 56.4992,
+          "medianPerformance": 56.4992,
+          "totalKills": 1,
+          "fastestKill": 137826,
+          "bestAmount": 1092.595011101,
+          "spec": "Feral",
+          "allStars": {
+            "points": 64.62,
+            "rank": 323,
+            "rankPercent": 58.01825293350717,
+            "total": 767
+          }
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": 59.1993,
+          "medianPerformance": 59.1993,
+          "totalKills": 1,
+          "fastestKill": 462791,
+          "bestAmount": 568.74053298357,
+          "spec": "Feral",
+          "allStars": {
+            "points": 0,
+            "rank": 218,
+            "rankPercent": 59.81481481481482,
+            "total": 540
           }
         }
       ],
-      "bestPerformanceAverage": 98.03196666666668,
-      "medianPerformanceAverage": 78.34813333333334,
+      "bestPerformanceAverage": 63.3380375,
+      "medianPerformanceAverage": 63.3380375,
       "totalKills": 0,
-      "fetchedAt": "2026-04-28T21:51:38.555Z",
+      "fetchedAt": "2026-05-16T22:37:47.068Z",
       "error": null,
       "partial": false
     }
