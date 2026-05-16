@@ -1,6 +1,6 @@
 // AUTO-GENERATED - do not edit manually.
 // Run `npm run bake:wcl` to regenerate.
-// Generated: 2026-05-16T22:37:47.068Z
+// Generated: 2026-05-16T22:57:37.055Z
 
 export interface WclGearItem {
   id: number;
@@ -56,7 +56,7 @@ export interface WclBakedData {
 }
 
 export const wclBakedData: WclBakedData = {
-  "generatedAt": "2026-05-16T22:37:47.068Z",
+  "generatedAt": "2026-05-16T22:57:37.055Z",
   "defaultServerSlug": "spineshatter",
   "defaultServerRegion": "eu",
   "characters": {
@@ -373,7 +373,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 61.56952947174426,
       "medianPerformanceAverage": 61.56952947174426,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -670,7 +670,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -967,7 +967,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -1264,7 +1264,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -1561,7 +1561,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -1858,7 +1858,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -2205,7 +2205,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 73.593175,
       "medianPerformanceAverage": 73.593175,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -2502,7 +2502,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -2849,7 +2849,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 18.74572875,
       "medianPerformanceAverage": 18.74572875,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -3146,7 +3146,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -3160,7 +3160,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -3457,7 +3457,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -3784,7 +3784,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 24.950423999999998,
       "medianPerformanceAverage": 24.950423999999998,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -4081,7 +4081,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -4378,7 +4378,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -4725,7 +4725,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.17778750000001,
       "medianPerformanceAverage": 79.17778750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -5072,7 +5072,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 73.8380875,
       "medianPerformanceAverage": 73.8380875,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -5419,7 +5419,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 52.460910000000005,
       "medianPerformanceAverage": 52.460910000000005,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -5716,7 +5716,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -6063,7 +6063,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 66.22856625,
       "medianPerformanceAverage": 66.22856625,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -6390,7 +6390,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 65.27703999999999,
       "medianPerformanceAverage": 65.27703999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -6687,7 +6687,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -6984,7 +6984,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -7301,7 +7301,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 38.68715,
       "medianPerformanceAverage": 38.68715,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -7648,7 +7648,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 85.625,
       "medianPerformanceAverage": 85.625,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -7945,7 +7945,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -8242,7 +8242,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -8589,7 +8589,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.14115006931327,
       "medianPerformanceAverage": 79.14115006931327,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -8886,7 +8886,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -9233,7 +9233,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.1123375,
       "medianPerformanceAverage": 79.1123375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -9530,7 +9530,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -9827,7 +9827,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -10174,7 +10174,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 71.0515375,
       "medianPerformanceAverage": 71.0515375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -10471,7 +10471,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -10818,7 +10818,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 74.6238275,
       "medianPerformanceAverage": 74.6238275,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -11115,7 +11115,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -11412,7 +11412,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -11709,7 +11709,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -12056,7 +12056,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 77.414057125,
       "medianPerformanceAverage": 77.414057125,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -12353,7 +12353,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -12700,7 +12700,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 70.87083750000001,
       "medianPerformanceAverage": 70.87083750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -13047,7 +13047,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 81.5758375,
       "medianPerformanceAverage": 81.5758375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -13344,7 +13344,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -13641,7 +13641,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -13938,7 +13938,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -14285,7 +14285,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 53.56133750000001,
       "medianPerformanceAverage": 53.56133750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -14582,7 +14582,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -14879,7 +14879,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -15176,7 +15176,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -15523,7 +15523,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.74020072487838,
       "medianPerformanceAverage": 79.74020072487838,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -15870,7 +15870,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 73.42298075,
       "medianPerformanceAverage": 73.42298075,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -16167,7 +16167,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -16514,7 +16514,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 94.7324,
       "medianPerformanceAverage": 94.7324,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -16811,7 +16811,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -17158,7 +17158,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 71.30479375,
       "medianPerformanceAverage": 71.30479375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -17455,7 +17455,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -17752,7 +17752,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -18049,7 +18049,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -18396,22 +18396,8 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 85.24839999999999,
       "medianPerformanceAverage": 85.24839999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
-      "partial": false
-    },
-    "serj": {
-      "characterName": "Serj",
-      "serverSlug": "spineshatter",
-      "serverRegion": "eu",
-      "wclId": null,
-      "gear": [],
-      "rankings": [],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
-      "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
-      "error": "Character not found on spineshatter-eu",
       "partial": false
     },
     "serjioo": {
@@ -18757,7 +18743,304 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 59.13131250000001,
       "medianPerformanceAverage": 59.13131250000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "error": null,
+      "partial": false
+    },
+    "serjo": {
+      "characterName": "Serjo",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 109077208,
+      "gear": [
+        {
+          "id": 24266,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_27.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24116,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_28.jpg",
+          "itemLevel": 114,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 35374,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_12.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31297,
+          "slot": 5,
+          "quality": 3,
+          "icon": "inv_chest_cloth_25.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31283,
+          "slot": 6,
+          "quality": 3,
+          "icon": "inv_belt_23.jpg",
+          "itemLevel": 106,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24262,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_cloth_14.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2748,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28585,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_cloth_09.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2656,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24250,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_10.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2650,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31149,
+          "slot": 10,
+          "quality": 3,
+          "icon": "inv_gauntlets_15.jpg",
+          "itemLevel": 91,
+          "permanentEnchantID": 2937,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31290,
+          "slot": 11,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31339,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_56.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30841,
+          "slot": 13,
+          "quality": 3,
+          "icon": "inv_misc_book_11.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28040,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_datacrystal06.jpg",
+          "itemLevel": 88,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24252,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_20.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2621,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31308,
+          "slot": 16,
+          "quality": 3,
+          "icon": "inv_staff_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2678
+        },
+        {
+          "id": 0,
+          "slot": 17,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 23197,
+          "slot": 18,
+          "quality": 3,
+          "icon": "inv_relics_idolofrejuvenation.jpg",
+          "itemLevel": 65,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 19,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -19054,7 +19337,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -19351,7 +19634,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -19648,7 +19931,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -19945,7 +20228,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -20242,7 +20525,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -20539,7 +20822,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -20886,7 +21169,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 76.904505,
       "medianPerformanceAverage": 76.904505,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -21213,7 +21496,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.42732422711903,
       "medianPerformanceAverage": 79.42732422711903,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -21510,7 +21793,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -21807,7 +22090,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     },
@@ -22154,7 +22437,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 63.3380375,
       "medianPerformanceAverage": 63.3380375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:37:47.068Z",
+      "fetchedAt": "2026-05-16T22:57:37.055Z",
       "error": null,
       "partial": false
     }
