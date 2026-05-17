@@ -281,6 +281,10 @@ export class AssignmentsTkComponent implements OnInit {
   }
 
   copyMrtNoteToBuffer() {
-    navigator.clipboard.writeText(this.mrtNote);
+    const json: Record<string, string> = {};
+    this.keys.forEach(key => {
+      json[this.assignments[key].headerText] = this.getMrtNoteForBoss(key);
+    });
+    navigator.clipboard.writeText(JSON.stringify(json, null, 2));
   }
 }
