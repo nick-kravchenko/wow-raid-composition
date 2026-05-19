@@ -421,6 +421,26 @@ export const players: Player[] = [
       },
     ],
   },
+  {
+    name: 'Roombaboomba',
+    discord: { userId: '556582468002775050' },
+    characters: [
+      {
+        name: 'Roombaboomba',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Affliction,
+      },
+      {
+        name: 'Moorkit',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Balance,
+      },
+    ],
+  },
   // {
   //   name: 'Greenbeam',
   //   discord: { userId: '240514249024077824' },
