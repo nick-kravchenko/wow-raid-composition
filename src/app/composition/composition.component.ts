@@ -129,7 +129,16 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
     );
   }
   raids: Character[][] = [];
-  benches: Character[][] = [];
+  private _benches: Character[][] = [];
+
+  get benches(): Character[][] {
+    return this._benches;
+  }
+
+  set benches(value: Character[][]) {
+    this._benches = value;
+    this.writeBenchesToQueryParams();
+  }
 
   get currentRaidSize(): number {
     return Number(this.formGroup.get('raidSize')?.value) || 25;
@@ -164,6 +173,7 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
     if (raidSizeFromSnapshot) {
       this.formGroup.get('raidSize')?.setValue(raidSizeFromSnapshot, { emitEvent: false });
     }
+    this.readBenchesFromQueryParams();
     this.handleActivatedRouteQueryParams();
     this.updateSignedUpPlayers();
     this.eventIdChangesHandler();
@@ -235,6 +245,25 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
 
   playerUsedInEveryRaid(player: Player): boolean {
     return this.compositionService.playerUsedInEveryRaid(player);
+  }
+
+  readBenchesFromQueryParams(): void {
+    const param = this.activatedRoute.snapshot.queryParamMap.get('benches');
+    if (!param) return;
+    this._benches = decodeURIComponent(param).split('-').map(b =>
+      b.split('_').filter(Boolean)
+        .map(name => this.compositionService.characters.find(c => c.name === name))
+        .filter(Boolean) as Character[]
+    );
+  }
+
+  writeBenchesToQueryParams(): void {
+    const value = this._benches.map(bench => bench.map(c => c?.name ?? '').join('_')).join('-');
+    this.router.navigate([], {
+      relativeTo: this.activatedRoute,
+      queryParams: { benches: encodeURIComponent(value) },
+      queryParamsHandling: 'merge',
+    });
   }
 
   subscribeForRaidChanges(): void {
