@@ -71,6 +71,8 @@ jobs:
           BNET_GAME_VERSION: ${{ vars.BNET_GAME_VERSION }}
         run: npm run bake:bnet
       - name: Build Angular app
+        env:
+          BITLY_API_TOKEN: ${{ secrets.BITLY_API_TOKEN }}
         run: |
           export NODE_OPTIONS=--openssl-legacy-provider
           npm run build:gpages

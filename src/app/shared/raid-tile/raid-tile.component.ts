@@ -99,7 +99,13 @@ export class RaidTileComponent {
 
   shareLink(): void {
     this.sharing.set(true);
-    this.bitlyService.shorten(decodeURIComponent(window.location.href)).subscribe(link => {
+    const url = new URL(window.location.origin + window.location.pathname);
+    url.searchParams.set('raids', this.queryParamsRaid());
+    url.searchParams.set('title0', this.titleValue());
+    url.searchParams.set('raidSize', String(this.raidSize()));
+    const benchNames = this.bench().map((c: Character) => c?.name ?? '').join('_');
+    if (benchNames) url.searchParams.set('benches', benchNames);
+    this.bitlyService.shorten(url.toString()).subscribe(link => {
       navigator.clipboard.writeText(link);
       this.sharing.set(false);
       this.shareCopied.set(true);
