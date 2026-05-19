@@ -1,4 +1,4 @@
-<button (click)="copyMrtNoteToBuffer()" type="button">MRT Note Export</button>
+<button class="button" (click)="copyMrtNoteToBuffer()" type="button">MRT Note Export</button>
 <section>
   @for (key of keys; track key) {
     @let classAssignment = assignments[key];
@@ -6,7 +6,12 @@
       <h4>
         <img src="assets/icons/{{classAssignment.headerIcon}}" alt="">
         {{ classAssignment.headerText }}
-        <button (click)="copyMrtNoteForBoss(key)" type="button">MRT</button>
+        <div class="boss-actions">
+          <button class="button" (click)="copyMrtNoteForBoss(key)" type="button">MRT</button>
+          @if (classAssignment.planImage) {
+            <button class="button" (click)="openPlan(key)" type="button">Plan</button>
+          }
+        </div>
       </h4>
       <div class="card-list">
         @for (assignment of classAssignment.assignments; track assignment) {
@@ -50,3 +55,12 @@
     </article>
   }
 </section>
+
+<ng-template #planModal>
+  <div class="plan-modal-backdrop" (click)="closePlan()">
+    <div class="plan-modal-box" (click)="$event.stopPropagation()">
+      <button class="plan-modal-close" type="button" (click)="closePlan()">✕</button>
+      <img [src]="activePlanImage" alt="Encounter plan">
+    </div>
+  </div>
+</ng-template>

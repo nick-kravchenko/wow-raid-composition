@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EmbeddedViewRef, Input, OnDestroy, OnInit, TemplateRef, ViewChild, ViewContainerRef} from '@angular/core';
 import {CharacterTileComponent} from '../../shared/character-tile/character-tile.component';
 import {Character} from '../../_entities/character';
 import {IconEnum} from '../../_entities/icon.enum';
@@ -30,6 +30,7 @@ interface ClassAssignment {
   headerIcon: string;
   headerText: string;
   assignments: Assignment[];
+  planImage?: string;
 }
 
 @Component({
@@ -38,8 +39,34 @@ interface ClassAssignment {
   templateUrl: './assignments-ssc.component.html',
   styleUrl: './assignments-ssc.component.scss'
 })
-export class AssignmentsSscComponent implements OnInit {
+export class AssignmentsSscComponent implements OnInit, OnDestroy {
   @Input() raid: Character[] = [];
+  @ViewChild('planModal') planModalTemplate!: TemplateRef<unknown>;
+
+  activePlanImage: string | null = null;
+  private modalViewRef: EmbeddedViewRef<unknown> | null = null;
+
+  constructor(private vcr: ViewContainerRef) {}
+
+  openPlan(key: AssignmentType) {
+    this.activePlanImage = this.assignments[key].planImage ?? null;
+    document.body.style.overflow = 'hidden';
+    this.modalViewRef = this.vcr.createEmbeddedView(this.planModalTemplate);
+    this.modalViewRef.rootNodes.forEach((node: Node) => document.body.appendChild(node));
+  }
+
+  closePlan() {
+    this.activePlanImage = null;
+    document.body.style.overflow = '';
+    if (this.modalViewRef) {
+      this.modalViewRef.destroy();
+      this.modalViewRef = null;
+    }
+  }
+
+  ngOnDestroy() {
+    this.closePlan();
+  }
 
   keys: AssignmentType[] = [
     AssignmentType.hydrossAssignments,
@@ -54,32 +81,36 @@ export class AssignmentsSscComponent implements OnInit {
     [AssignmentType.hydrossAssignments]: {
       headerIcon: IconEnum.hydross,
       headerText: 'Hydross the Unstable',
-      assignments: []
+      assignments: [],
+      planImage: 'assets/images/plans/hydross.png',
     },
     [AssignmentType.lurkerBelowAssignments]: {
       headerIcon: IconEnum.lurkerBelow,
       headerText: 'The Lurker Below',
-      assignments: []
+      assignments: [],
+      planImage: 'assets/images/plans/lurker.png',
     },
     [AssignmentType.leoterasAssignments]: {
       headerIcon: IconEnum.leotheras,
       headerText: 'Leotheras the Blind',
-      assignments: []
+      assignments: [],
+      planImage: 'assets/images/plans/leotheras.png',
     },
     [AssignmentType.karathressAssignments]: {
       headerIcon: IconEnum.karathress,
       headerText: 'Fathom-Lord Karathress',
-      assignments: []
+      assignments: [],
     },
     [AssignmentType.morogrimAssignments]: {
       headerIcon: IconEnum.morogrim,
       headerText: 'Morogrim Tidewalker',
-      assignments: []
+      assignments: [],
     },
     [AssignmentType.vashjAssignments]: {
       headerIcon: IconEnum.ladyVashj,
       headerText: 'Lady Vashj',
-      assignments: []
+      assignments: [],
+      planImage: 'assets/images/plans/vashj.png',
     },
   };
 
@@ -241,30 +272,36 @@ export class AssignmentsSscComponent implements OnInit {
       ],
     });
 
+    const group4 = this.raid.slice(14, 20);
+    const group4NonHealers = group4.filter(c => c?.role !== CharacterRole.healer);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
-    const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
-    const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
-    const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
-    const rangedDps = [...hunters, ...mages, ...warlocks, ...eleShamans];
+    const rangedLeft = this.raid.filter(c =>
+      c?.role === CharacterRole.ranged &&
+      c?.class !== CharacterClass.hunter &&
+      !group4.includes(c)
+    );
 
-    const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     const druidHealers = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
     const priestHealers = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
+    const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
-    const healers = [...paladinHealers, ...druidHealers, ...priestHealers, ...restoShamans];
+    const raidHealers = [...restoShamans, ...priestHealers];
+    const tankHealers = [...paladinHealers, ...druidHealers];
+    const allHealers = [...raidHealers, ...tankHealers];
 
-    const rangedGroupNames = ['Left', 'Middle', 'Right'];
-    const rangedGroups: Character[][] = [[], [], []];
-    const healerGroups: Character[][] = [[], [], []];
-    rangedDps.forEach((char, i) => rangedGroups[i % 3].push(char));
-    healers.forEach((char, i) => healerGroups[2 - (i % 3)].push(char));
+    const leftHealers: Character[] = [];
+    const rightHealers: Character[] = [];
+    allHealers.forEach((h, i) => (i % 2 === 0 ? leftHealers : rightHealers).push(h));
 
-    rangedGroupNames.forEach((groupName, i) => {
-      const members = [...rangedGroups[i], ...healerGroups[i]];
+    [
+      { label: 'Left', members: [...rangedLeft, ...leftHealers] },
+      { label: 'Middle', members: group4NonHealers },
+      { label: 'Right', members: [...hunters, ...rightHealers] },
+    ].forEach(group => {
       this.assignments[AssignmentType.hydrossAssignments].assignments.push({
         headerIcon: IconEnum.skull,
-        headerText: `${groupName} Ranged Group`,
-        actions: this.pairUp(members),
+        headerText: `Ranged ${group.label}`,
+        actions: this.pairUp(group.members),
       });
     });
 
@@ -281,7 +318,7 @@ export class AssignmentsSscComponent implements OnInit {
     ['Left', 'Right'].forEach((groupName, i) => {
       this.assignments[AssignmentType.hydrossAssignments].assignments.push({
         headerIcon: IconEnum.skull,
-        headerText: `${groupName} Melee Group`,
+        headerText: `Melee ${groupName}`,
         actions: this.pairUp(meleeGroups[i]),
       });
     });
@@ -319,9 +356,9 @@ export class AssignmentsSscComponent implements OnInit {
     });
 
     const ambusherActions: AssignmentAction[] = [];
-    if (mages[0]) ambusherActions.push({ caster: mages[0], target: 'Ambusher #1 (sheep)', icon: IconEnum.polymorph });
-    if (hunters[0]) ambusherActions.push({ caster: hunters[0], target: 'Ambusher #2 (trap)', icon: IconEnum.freezingTrap });
-    if (warlocks[0]) ambusherActions.push({ caster: warlocks[0], target: 'Ambusher #3 (fear)', icon: IconEnum.fear });
+    if (mages[0]) ambusherActions.push({ caster: mages[0], target: 'Ambusher #1', icon: IconEnum.polymorph });
+    if (hunters[0]) ambusherActions.push({ caster: hunters[0], target: 'Ambusher #2', icon: IconEnum.freezingTrap });
+    if (warlocks[0]) ambusherActions.push({ caster: warlocks[0], target: 'Ambusher #3', icon: IconEnum.fear });
 
     this.assignments[AssignmentType.lurkerBelowAssignments].assignments.push({
       headerIcon: IconEnum.polymorph,
@@ -334,9 +371,9 @@ export class AssignmentsSscComponent implements OnInit {
     const rangedGroup3 = [...warlocks, ...eleShamans, ...boomies];
 
     [
-      { label: 'Left Platform', members: rangedGroup1 },
-      { label: 'Platform Behind the Boss', members: rangedGroup2 },
-      { label: 'Right Platform', members: rangedGroup3 },
+      { label: 'LEFT', members: rangedGroup1 },
+      { label: 'MIDDLE', members: rangedGroup2 },
+      { label: 'RIGHT', members: rangedGroup3 },
     ].forEach(group => {
       this.assignments[AssignmentType.lurkerBelowAssignments].assignments.push({
         headerIcon: IconEnum.skull,
@@ -397,9 +434,9 @@ export class AssignmentsSscComponent implements OnInit {
       .filter(char => !group4.includes(char));
 
     [
-      { label: 'Left ', members: [...hunters, ...leftHealers] },
+      { label: 'Left ', members: [...otherRanged, ...rightHealers] },
       { label: 'Middle', members: group4 },
-      { label: 'Right', members: [...otherRanged, ...rightHealers] },
+      { label: 'Right', members: [...hunters, ...leftHealers] },
     ].forEach(group => {
       this.assignments[AssignmentType.leoterasAssignments].assignments.push({
         headerIcon: IconEnum.skull,
@@ -503,6 +540,8 @@ export class AssignmentsSscComponent implements OnInit {
     const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
     const staticChargeHealer = [...druidHealers, ...priestHealers, ...paladinHealers, ...restoShamans][0];
+    const raidHealers = [...restoShamans, ...priestHealers];
+    const tankHealers = [...paladinHealers, ...druidHealers];
 
     const mt = druidTanks[0] ?? paladinTanks[0];
     const eliteTank = druidTanks[0] ?? paladinTanks[0];
@@ -517,7 +556,7 @@ export class AssignmentsSscComponent implements OnInit {
 
     const p2Actions: AssignmentAction[] = [
       { caster: eliteTank, target: 'Naga (Behind the boss)', icon: undefined },
-      { caster: paladinTanks[0], target: 'Naga (In front of the boss)', icon: undefined },
+      { caster: paladinTanks[0], target: 'Naga (Entrance)', icon: undefined },
     ];
     if (eleShamans[0]) p2Actions.push({ caster: eleShamans[0], target: 'Coilfang Strider (kite)', icon: undefined });
 
@@ -529,11 +568,11 @@ export class AssignmentsSscComponent implements OnInit {
 
     const elementalKillers = [...warriors, ...rogues, ...enhShamans].slice(0, 5);
     const positions = [
-      'Entrance',
-      'Entrance',
-      'Behind the boss',
-      'Left',
-      'Right',
+      '1',
+      '2',
+      '3',
+      '4',
+      '5',
     ];
     const taintedCoreActions: AssignmentAction[] = positions.map((position, i) => ({
       caster: elementalKillers[i],
@@ -545,6 +584,17 @@ export class AssignmentsSscComponent implements OnInit {
       headerIcon: IconEnum.taintedCore,
       headerText: 'Phase 2 - Tainted Core Duty',
       actions: taintedCoreActions,
+    });
+
+    this.assignments[AssignmentType.vashjAssignments].assignments.push({
+      headerIcon: IconEnum.healingTouch,
+      headerText: 'Phase 2 - Healer Position',
+      actions: [
+        { caster: raidHealers.shift(), target: '1', icon: undefined },
+        { caster: tankHealers.shift(), target: '2', icon: undefined },
+        { caster: raidHealers.shift(), target: '3', icon: undefined },
+        { caster: tankHealers.shift(), target: '4', icon: undefined },
+      ],
     });
 
     this.assignments[AssignmentType.vashjAssignments].assignments.push({

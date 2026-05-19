@@ -20,7 +20,7 @@ section {
   }
 }
 
-button {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +43,7 @@ article {
   margin: 0 0 2rem;
 }
 
+
 h4 {
   width: 100%;
   display: flex;
@@ -55,6 +56,18 @@ h4 {
     display: block;
     margin: 0 .5rem 0 0;
     width: 48px;
+  }
+}
+
+.boss-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: auto;
+
+  button {
+    margin: 0;
+    height: auto;
   }
 }
 
