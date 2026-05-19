@@ -60,19 +60,17 @@
       ></app-raid-tile>
     }
   </div>
-  @if (!capturingScreenshot) {
-    <div class="actions" data-html2canvas-ignore="true">
-      <button class="add-raid" (click)="onAddRaidClick()" type="button" data-html2canvas-ignore="true">
-        <i class="fa-solid fa-plus"></i>
-      </button>
-      <button [disabled]="capturingScreenshot" class="capture-screenshot" (click)="screenshot()" type="button"><span class="icon-photo" [class.loading]="capturingScreenshot"></span></button>
-      <button class="share" [disabled]="sharing()" (click)="shareLink()" type="button" title="Copy share link">
-        @if (shareCopied()) {
-          <i class="fa-solid fa-check"></i>
-        } @else {
-          <i class="fa-solid fa-share-nodes" [class.loading]="sharing()"></i>
-        }
-      </button>
-    </div>
-  }
+  <div class="actions" data-html2canvas-ignore="true">
+    <button class="add-raid" (click)="onAddRaidClick()" type="button" data-html2canvas-ignore="true">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+    <button [disabled]="capturingScreenshot" class="capture-screenshot" (click)="screenshot()" type="button"><span class="icon-photo" [class.loading]="capturingScreenshot"></span></button>
+    <button class="share" [disabled]="sharing()" (click)="shareLink()" type="button" title="Copy share link">
+      @if (shareCopied()) {
+        <i class="fa-solid fa-check"></i>
+      } @else {
+        <i class="fa-solid fa-share-nodes" [class.loading]="sharing()"></i>
+      }
+    </button>
+  </div>
 </section>

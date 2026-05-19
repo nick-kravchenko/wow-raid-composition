@@ -431,9 +431,7 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
         navigator.clipboard.write([new ClipboardItem({'image/png': blob})]);
       });
     }).finally(() => {
-      setTimeout(() => {
-        this.capturingScreenshot = false;
-      }, 250);
+      this.capturingScreenshot = false;
     });
   }
 }
