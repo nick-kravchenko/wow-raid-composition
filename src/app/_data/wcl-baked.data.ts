@@ -1,6 +1,6 @@
 // AUTO-GENERATED - do not edit manually.
 // Run `npm run bake:wcl` to regenerate.
-// Generated: 2026-05-16T22:57:37.055Z
+// Generated: 2026-05-19T11:37:46.399Z
 
 export interface WclGearItem {
   id: number;
@@ -56,7 +56,7 @@ export interface WclBakedData {
 }
 
 export const wclBakedData: WclBakedData = {
-  "generatedAt": "2026-05-16T22:57:37.055Z",
+  "generatedAt": "2026-05-19T11:37:46.399Z",
   "defaultServerSlug": "spineshatter",
   "defaultServerRegion": "eu",
   "characters": {
@@ -315,7 +315,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 65.432293560359,
           "spec": "Shadow",
           "allStars": {
-            "points": 54.874442941036456,
+            "points": 53.06439235925032,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -347,7 +347,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 122.74171781812,
           "spec": "Shadow",
           "allStars": {
-            "points": 86.03769046227436,
+            "points": 82.9152993777393,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -373,7 +373,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 61.56952947174426,
       "medianPerformanceAverage": 61.56952947174426,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -670,7 +670,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -967,304 +967,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
-      "error": null,
-      "partial": false
-    },
-    "antagonyst": {
-      "characterName": "Antagonyst",
-      "serverSlug": "spineshatter",
-      "serverRegion": "EU",
-      "wclId": 107976519,
-      "gear": [
-        {
-          "id": 28192,
-          "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_18.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29335,
-          "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_04.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27776,
-          "slot": 3,
-          "quality": 3,
-          "icon": "inv_shoulder_24.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 0,
-          "slot": 4,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 25512,
-          "slot": 5,
-          "quality": 2,
-          "icon": "inv_chest_chain_06.jpg",
-          "itemLevel": 93,
-          "permanentEnchantID": 2841,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 30950,
-          "slot": 6,
-          "quality": 2,
-          "icon": "inv_belt_13.jpg",
-          "itemLevel": 111,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27936,
-          "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_cloth_20.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28384,
-          "slot": 8,
-          "quality": 3,
-          "icon": "inv_boots_chain_09.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28170,
-          "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_16.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27528,
-          "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_10.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2841,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 25811,
-          "slot": 11,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_43.jpg",
-          "itemLevel": 109,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 25055,
-          "slot": 12,
-          "quality": 2,
-          "icon": "inv_jewelry_ring_33.jpg",
-          "itemLevel": 114,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 185985,
-          "slot": 13,
-          "quality": 2,
-          "icon": "inv_misc_stonetablet_06.jpg",
-          "itemLevel": 52,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28041,
-          "slot": 14,
-          "quality": 3,
-          "icon": "inv_datacrystal06.jpg",
-          "itemLevel": 88,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27731,
-          "slot": 15,
-          "quality": 2,
-          "icon": "inv_misc_cape_13.jpg",
-          "itemLevel": 90,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 31153,
-          "slot": 16,
-          "quality": 3,
-          "icon": "inv_axe_18.jpg",
-          "itemLevel": 94,
-          "permanentEnchantID": 1900,
-          "temporaryEnchantID": 2636
-        },
-        {
-          "id": 31153,
-          "slot": 17,
-          "quality": 3,
-          "icon": "inv_axe_18.jpg",
-          "itemLevel": 94,
-          "permanentEnchantID": 1900,
-          "temporaryEnchantID": 2636
-        },
-        {
-          "id": 186073,
-          "slot": 18,
-          "quality": 2,
-          "icon": "spell_nature_manaregentotem.jpg",
-          "itemLevel": 52,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 23705,
-          "slot": 19,
-          "quality": 4,
-          "icon": "inv_misc_tabardpvp_02.jpg",
-          "itemLevel": 1,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        }
-      ],
-      "rankings": [
-        {
-          "encounterID": 100623,
-          "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100624,
-          "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100625,
-          "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100626,
-          "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100627,
-          "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100628,
-          "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100730,
-          "encounterName": "Al'ar",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100731,
-          "encounterName": "Void Reaver",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100732,
-          "encounterName": "High Astromancer Solarian",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        },
-        {
-          "encounterID": 100733,
-          "encounterName": "Kael'thas Sunstrider",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
-        }
-      ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
-      "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -1416,7 +1119,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_hammer_10.jpg",
           "itemLevel": 100,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": null
         },
         {
           "id": 0,
@@ -1450,68 +1153,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 69.964,
+          "medianPerformance": 69.964,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 500.13250298132,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 78.91,
+            "rank": 1002,
+            "rankPercent": 64.18604651162791,
+            "total": 2795
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 69.7418,
+          "medianPerformance": 69.7418,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 527.13568005398,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 82.2,
+            "rank": 1015,
+            "rankPercent": 63.006202116016055,
+            "total": 2741
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 51.4572,
+          "medianPerformance": 51.4572,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 488.72396384413,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 60.85,
+            "rank": 1604,
+            "rankPercent": 41.772611696331275,
+            "total": 2753
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 13.8434,
+          "medianPerformance": 13.8434,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 492.24669006341,
+          "spec": "Feral",
+          "allStars": {
+            "points": 28.54,
+            "rank": 2933,
+            "rankPercent": -6.30891950688905,
+            "total": 2758
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 43.3106,
+          "medianPerformance": 43.3106,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 596.39211714268,
+          "spec": "Guardian",
+          "allStars": {
+            "points": 71.65,
+            "rank": 2170,
+            "rankPercent": 29.85122897800776,
+            "total": 3092
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 27.8141,
+          "medianPerformance": 27.8141,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 286.93153904503,
+          "spec": "Warden",
+          "allStars": {
+            "points": 0,
+            "rank": 454,
+            "rankPercent": 5.625,
+            "total": 480
+          }
         },
         {
           "encounterID": 100730,
@@ -1558,10 +1291,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 49.6634,
+      "medianPerformanceAverage": 49.6634,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -1858,7 +1591,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -2051,10 +1784,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1099.5775944249,
           "spec": "Balance",
           "allStars": {
-            "points": 91.18,
-            "rank": 241,
-            "rankPercent": 79.96661101836393,
-            "total": 1198
+            "points": 95.13,
+            "rank": 858,
+            "rankPercent": 80.32598714416896,
+            "total": 4356
           }
         },
         {
@@ -2067,10 +1800,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1006.3168495095,
           "spec": "Balance",
           "allStars": {
-            "points": 112.06,
-            "rank": 38,
-            "rankPercent": 96.87763713080169,
-            "total": 1185
+            "points": 112.7,
+            "rank": 139,
+            "rankPercent": 96.8348623853211,
+            "total": 4360
           }
         },
         {
@@ -2083,10 +1816,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 888.1365401488,
           "spec": "Balance",
           "allStars": {
-            "points": 89.8,
-            "rank": 231,
-            "rankPercent": 78.64438254410399,
-            "total": 1077
+            "points": 93.96,
+            "rank": 884,
+            "rankPercent": 78.19214620894049,
+            "total": 4049
           }
         },
         {
@@ -2099,10 +1832,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1308.7351922217,
           "spec": "Balance",
           "allStars": {
-            "points": 113.08,
-            "rank": 28,
-            "rankPercent": 96.97648376259798,
-            "total": 893
+            "points": 112.52,
+            "rank": 95,
+            "rankPercent": 97.28793998845931,
+            "total": 3466
           }
         },
         {
@@ -2115,10 +1848,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1034.1801345023,
           "spec": "Balance",
           "allStars": {
-            "points": 74.76,
-            "rank": 362,
-            "rankPercent": 57.77777777777778,
-            "total": 855
+            "points": 78.57,
+            "rank": 1416,
+            "rankPercent": 58.074074074074076,
+            "total": 3375
           }
         },
         {
@@ -2132,9 +1865,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Balance",
           "allStars": {
             "points": 0,
-            "rank": 151,
-            "rankPercent": 72.6775956284153,
-            "total": 549
+            "rank": 773,
+            "rankPercent": 66.59454781479879,
+            "total": 2311
           }
         },
         {
@@ -2147,10 +1880,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1037.3673414786,
           "spec": "Balance",
           "allStars": {
-            "points": 113.9,
-            "rank": 21,
-            "rankPercent": 96.78972712680577,
-            "total": 623
+            "points": 115.18,
+            "rank": 71,
+            "rankPercent": 97.69812561657349,
+            "total": 3041
           }
         },
         {
@@ -2163,10 +1896,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1010.6329305517,
           "spec": "Balance",
           "allStars": {
-            "points": 81.33,
-            "rank": 235,
-            "rankPercent": 60,
-            "total": 585
+            "points": 86.08,
+            "rank": 1075,
+            "rankPercent": 63.71621621621622,
+            "total": 2960
           }
         },
         {
@@ -2179,10 +1912,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 793.65286665796,
           "spec": "Balance",
           "allStars": {
-            "points": 45.01,
-            "rank": 383,
-            "rankPercent": 32.74647887323944,
-            "total": 568
+            "points": 49.91,
+            "rank": 2310,
+            "rankPercent": 20.241796200345423,
+            "total": 2895
           }
         },
         {
@@ -2196,16 +1929,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Balance",
           "allStars": {
             "points": 0,
-            "rank": 78,
-            "rankPercent": 78.78787878787878,
-            "total": 363
+            "rank": 533,
+            "rankPercent": 69.7211155378486,
+            "total": 1757
           }
         }
       ],
       "bestPerformanceAverage": 73.593175,
       "medianPerformanceAverage": 73.593175,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -2502,7 +2235,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -2585,12 +2318,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28171,
+          "id": 30026,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_08.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2647,
+          "quality": 4,
+          "icon": "inv_bracer_17.jpg",
+          "itemLevel": 128,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -2695,10 +2428,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1002.5640182768,
           "spec": "Enhancement",
           "allStars": {
-            "points": 59.48,
-            "rank": 1344,
-            "rankPercent": 50.332840236686394,
-            "total": 2704
+            "points": 66.21,
+            "rank": 4689,
+            "rankPercent": 48.187444739168875,
+            "total": 9048
           }
         },
         {
@@ -2712,9 +2445,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 40.13,
-            "rank": 2087,
-            "rankPercent": 22.338049143708115,
-            "total": 2686
+            "rank": 8321,
+            "rankPercent": 7.740075404746063,
+            "total": 9018
           }
         },
         {
@@ -2728,9 +2461,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 28.86,
-            "rank": 2195,
-            "rankPercent": 11.13811259619279,
-            "total": 2469
+            "rank": 9232,
+            "rankPercent": -9.307282415630551,
+            "total": 8445
           }
         },
         {
@@ -2743,10 +2476,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 665.28134778721,
           "spec": "Enhancement",
           "allStars": {
-            "points": 34.07,
-            "rank": 1927,
-            "rankPercent": 9.915809167446211,
-            "total": 2138
+            "points": 33.27,
+            "rank": 8589,
+            "rankPercent": -14.338969511383304,
+            "total": 7511
           }
         },
         {
@@ -2760,9 +2493,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 58.05,
-            "rank": 1688,
-            "rankPercent": 17.30392156862745,
-            "total": 2040
+            "rank": 7009,
+            "rankPercent": 2.9093931837073983,
+            "total": 7218
           }
         },
         {
@@ -2776,9 +2509,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 0,
-            "rank": 1234,
-            "rankPercent": 12.985179957657023,
-            "total": 1417
+            "rank": 5891,
+            "rankPercent": -14.324534161490684,
+            "total": 5152
           }
         },
         {
@@ -2791,10 +2524,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 505.9546268411,
           "spec": "Enhancement",
           "allStars": {
-            "points": 50.6,
-            "rank": 1201,
-            "rankPercent": 20.424403183023873,
-            "total": 1508
+            "points": 49.6,
+            "rank": 6571,
+            "rankPercent": -2.1455223880597014,
+            "total": 6432
           }
         },
         {
@@ -2807,10 +2540,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 954.31497691784,
           "spec": "Enhancement",
           "allStars": {
-            "points": 58.48,
-            "rank": 1266,
-            "rankPercent": 12.274618585298198,
-            "total": 1442
+            "points": 58.49,
+            "rank": 7314,
+            "rankPercent": -16.37492043284532,
+            "total": 6284
           }
         },
         {
@@ -2824,9 +2557,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 44.82,
-            "rank": 1040,
-            "rankPercent": 25.25179856115108,
-            "total": 1390
+            "rank": 5846,
+            "rankPercent": 4.211733857751557,
+            "total": 6102
           }
         },
         {
@@ -2840,16 +2573,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 0,
-            "rank": 796,
-            "rankPercent": 18.29393627954779,
-            "total": 973
+            "rank": 4724,
+            "rankPercent": -19.539357124778537,
+            "total": 3951
           }
         }
       ],
       "bestPerformanceAverage": 18.74572875,
       "medianPerformanceAverage": 18.74572875,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -3146,7 +2879,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -3160,7 +2893,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": "Character not found on spineshatter-eu",
       "partial": false
     },
@@ -3288,11 +3021,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28727,
+          "id": 30720,
           "slot": 14,
           "quality": 4,
-          "icon": "inv_trinket_naxxramas02.jpg",
-          "itemLevel": 115,
+          "icon": "spell_nature_poisoncleansingtotem.jpg",
+          "itemLevel": 128,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -3312,7 +3045,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_weapon_shortblade_41.jpg",
           "itemLevel": 125,
           "permanentEnchantID": 2669,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2628
         },
         {
           "id": 29271,
@@ -3346,118 +3079,168 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 84.0496,
+          "medianPerformance": 84.0496,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1435.0313791151,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 94.39,
+            "rank": 2491,
+            "rankPercent": 81.13064565019702,
+            "total": 13196
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 65.2255,
+          "medianPerformance": 65.2255,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 922.29230265486,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 71.43,
+            "rank": 5511,
+            "rankPercent": 57.91322945310113,
+            "total": 13092
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 91.1198,
+          "medianPerformance": 91.1198,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 1285.2224976571,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 103.35,
+            "rank": 1297,
+            "rankPercent": 89.34998767359684,
+            "total": 12169
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 16.0092,
+          "medianPerformance": 16.0092,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 795.99267973069,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 37.82,
+            "rank": 11199,
+            "rankPercent": -5.1850460266766865,
+            "total": 10646
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 51.5543,
+          "medianPerformance": 51.5543,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 1096.3208093579,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 60.48,
+            "rank": 6074,
+            "rankPercent": 39.31248126311582,
+            "total": 10007
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 83.9487,
+          "medianPerformance": 83.9487,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 902.93274956079,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 0,
+            "rank": 1412,
+            "rankPercent": 79.83997713959137,
+            "total": 6999
+          }
         },
         {
           "encounterID": 100730,
           "encounterName": "Al'ar",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 59.72209783774941,
+          "medianPerformance": 59.72209783774941,
+          "totalKills": 1,
+          "fastestKill": 433147,
+          "bestAmount": 916.09315082409,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 69.69,
+            "rank": 5203,
+            "rankPercent": 46.00373676562176,
+            "total": 9634
+          }
         },
         {
           "encounterID": 100731,
           "encounterName": "Void Reaver",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 41.81095072648951,
+          "medianPerformance": 41.81095072648951,
+          "totalKills": 1,
+          "fastestKill": 218195,
+          "bestAmount": 1126.6115172208,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 52.19,
+            "rank": 7446,
+            "rankPercent": 19.678498219872694,
+            "total": 9269
+          }
         },
         {
           "encounterID": 100732,
           "encounterName": "High Astromancer Solarian",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 59.70175055564201,
+          "medianPerformance": 59.70175055564201,
+          "totalKills": 1,
+          "fastestKill": 152744,
+          "bestAmount": 1173.9642801027,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 66.41,
+            "rank": 5116,
+            "rankPercent": 42.91931704050887,
+            "total": 8961
+          }
         },
         {
           "encounterID": 100733,
           "encounterName": "Kael'thas Sunstrider",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 51.47821799051173,
+          "medianPerformance": 51.47821799051173,
+          "totalKills": 1,
+          "fastestKill": 633087,
+          "bestAmount": 895.98428020162,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 0,
+            "rank": 3957,
+            "rankPercent": 30.535557506584723,
+            "total": 5695
+          }
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 58.649149889985125,
+      "medianPerformanceAverage": 58.649149889985125,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -3650,10 +3433,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 740.89444791427,
           "spec": "Arms",
           "allStars": {
-            "points": 45.11,
-            "rank": 831,
-            "rankPercent": 29.481733220050977,
-            "total": 1177
+            "points": 42.17,
+            "rank": 2959,
+            "rankPercent": 21.53846153846154,
+            "total": 3770
           }
         },
         {
@@ -3667,9 +3450,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arms",
           "allStars": {
             "points": 26.38,
-            "rank": 973,
-            "rankPercent": 19.5364238410596,
-            "total": 1208
+            "rank": 3787,
+            "rankPercent": 1.636788776305534,
+            "total": 3849
           }
         },
         {
@@ -3682,10 +3465,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 631.19130335567,
           "spec": "Arms",
           "allStars": {
-            "points": 42.87,
-            "rank": 775,
-            "rankPercent": 31.685789938217123,
-            "total": 1133
+            "points": 40.13,
+            "rank": 3008,
+            "rankPercent": 18.926934483688324,
+            "total": 3709
           }
         },
         {
@@ -3698,10 +3481,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 688.31722172553,
           "spec": "Arms",
           "allStars": {
-            "points": 30.33,
-            "rank": 720,
-            "rankPercent": 12.953995157384988,
-            "total": 826
+            "points": 25.46,
+            "rank": 3056,
+            "rankPercent": -10.20923520923521,
+            "total": 2772
           }
         },
         {
@@ -3715,9 +3498,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arms",
           "allStars": {
             "points": 68.04,
-            "rank": 545,
-            "rankPercent": 41.316073354908305,
-            "total": 927
+            "rank": 1984,
+            "rankPercent": 36.847133757961785,
+            "total": 3140
           }
         },
         {
@@ -3731,9 +3514,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arms",
           "allStars": {
             "points": 0,
-            "rank": 316,
-            "rankPercent": 51.08695652173913,
-            "total": 644
+            "rank": 1339,
+            "rankPercent": 41.23847167325428,
+            "total": 2277
           }
         },
         {
@@ -3784,7 +3567,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 24.950423999999998,
       "medianPerformanceAverage": 24.950423999999998,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -4081,7 +3864,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -4233,7 +4016,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_spear_08.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2639
         },
         {
           "id": 0,
@@ -4267,68 +4050,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 85.4104,
+          "medianPerformance": 85.4104,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1362.2270137442,
+          "spec": "Survival",
+          "allStars": {
+            "points": 96.98,
+            "rank": 614,
+            "rankPercent": 82.4757004002287,
+            "total": 3498
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 69.1013,
+          "medianPerformance": 69.1013,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 846.59220574762,
+          "spec": "Survival",
+          "allStars": {
+            "points": 76.23,
+            "rank": 1357,
+            "rankPercent": 61.57551714366676,
+            "total": 3529
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 79.4569,
+          "medianPerformance": 79.4569,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 991.1688684664,
+          "spec": "Survival",
+          "allStars": {
+            "points": 89.01,
+            "rank": 861,
+            "rankPercent": 74.2899850523169,
+            "total": 3345
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 75.7195,
+          "medianPerformance": 75.7195,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1390.3842388276,
+          "spec": "Survival",
+          "allStars": {
+            "points": 85.76,
+            "rank": 931,
+            "rankPercent": 69.24603174603175,
+            "total": 3024
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 2.9864,
+          "medianPerformance": 2.9864,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 554.81822335927,
+          "spec": "Survival",
+          "allStars": {
+            "points": 30.57,
+            "rank": 3529,
+            "rankPercent": -21.529452290733722,
+            "total": 2903
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 90.1863,
+          "medianPerformance": 90.1863,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 855.73049517169,
+          "spec": "Survival",
+          "allStars": {
+            "points": 0,
+            "rank": 258,
+            "rankPercent": 87.96252927400468,
+            "total": 2135
+          }
         },
         {
           "encounterID": 100730,
@@ -4375,10 +4188,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 62.53489999999999,
+      "medianPerformanceAverage": 62.53489999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -4571,10 +4384,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 2100.0706748628,
           "spec": "Arcane",
           "allStars": {
-            "points": 116.04,
-            "rank": 14,
-            "rankPercent": 99.63005122367672,
-            "total": 3514
+            "points": 114.75,
+            "rank": 40,
+            "rankPercent": 99.70445589572597,
+            "total": 13196
           }
         },
         {
@@ -4587,10 +4400,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1152.8809818073,
           "spec": "Arcane",
           "allStars": {
-            "points": 89.91,
-            "rank": 615,
-            "rankPercent": 82.23893549320219,
-            "total": 3457
+            "points": 93.65,
+            "rank": 2299,
+            "rankPercent": 82.44729605866178,
+            "total": 13092
           }
         },
         {
@@ -4603,10 +4416,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1045.1710883002,
           "spec": "Arcane",
           "allStars": {
-            "points": 70.11,
-            "rank": 1193,
-            "rankPercent": 61.794871794871796,
-            "total": 3120
+            "points": 79,
+            "rank": 4542,
+            "rankPercent": 62.68386884707043,
+            "total": 12169
           }
         },
         {
@@ -4619,10 +4432,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1832.4136678587,
           "spec": "Arcane",
           "allStars": {
-            "points": 113.07,
-            "rank": 60,
-            "rankPercent": 97.74205893608878,
-            "total": 2613
+            "points": 113.02,
+            "rank": 196,
+            "rankPercent": 98.16832613188052,
+            "total": 10646
           }
         },
         {
@@ -4635,10 +4448,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1569.0380620401,
           "spec": "Arcane",
           "allStars": {
-            "points": 104.3,
-            "rank": 200,
-            "rankPercent": 91.7904290429043,
-            "total": 2424
+            "points": 107.92,
+            "rank": 628,
+            "rankPercent": 93.73438592984911,
+            "total": 10007
           }
         },
         {
@@ -4652,9 +4465,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arcane",
           "allStars": {
             "points": 0,
-            "rank": 171,
-            "rankPercent": 89.57055214723927,
-            "total": 1630
+            "rank": 744,
+            "rankPercent": 89.38419774253465,
+            "total": 6999
           }
         },
         {
@@ -4667,10 +4480,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1304.083858708,
           "spec": "Arcane",
           "allStars": {
-            "points": 107.46,
-            "rank": 114,
-            "rankPercent": 93.98616285258116,
-            "total": 1879
+            "points": 110.72,
+            "rank": 416,
+            "rankPercent": 95.6923396304754,
+            "total": 9634
           }
         },
         {
@@ -4683,10 +4496,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1744.2231527963,
           "spec": "Arcane",
           "allStars": {
-            "points": 108.66,
-            "rank": 115,
-            "rankPercent": 93.51535836177474,
-            "total": 1758
+            "points": 110.41,
+            "rank": 387,
+            "rankPercent": 95.8355809688208,
+            "total": 9269
           }
         },
         {
@@ -4700,9 +4513,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arcane",
           "allStars": {
             "points": 35.72,
-            "rank": 1330,
-            "rankPercent": 21.221102548903378,
-            "total": 1687
+            "rank": 9311,
+            "rankPercent": -3.8946546144403524,
+            "total": 8961
           }
         },
         {
@@ -4716,16 +4529,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arcane",
           "allStars": {
             "points": 0,
-            "rank": 591,
-            "rankPercent": 48.82914137033825,
-            "total": 1153
+            "rank": 3551,
+            "rankPercent": 37.664618086040385,
+            "total": 5695
           }
         }
       ],
       "bestPerformanceAverage": 79.17778750000001,
       "medianPerformanceAverage": 79.17778750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -4918,10 +4731,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 625.99026987936,
           "spec": "Warden",
           "allStars": {
-            "points": 66.31,
-            "rank": 191,
-            "rankPercent": 59.05172413793103,
-            "total": 464
+            "points": 72.28,
+            "rank": 598,
+            "rankPercent": 55.580357142857146,
+            "total": 1344
           }
         },
         {
@@ -4934,10 +4747,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 573.86695962201,
           "spec": "Guardian",
           "allStars": {
-            "points": 94.44,
-            "rank": 160,
-            "rankPercent": 80.95808383233533,
-            "total": 835
+            "points": 97.33,
+            "rank": 557,
+            "rankPercent": 79.71543232396935,
+            "total": 2741
           }
         },
         {
@@ -4950,10 +4763,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 589.79725928228,
           "spec": "Guardian",
           "allStars": {
-            "points": 77.71,
-            "rank": 233,
-            "rankPercent": 68.2626538987688,
-            "total": 731
+            "points": 88.85,
+            "rank": 737,
+            "rankPercent": 73.26552851434798,
+            "total": 2753
           }
         },
         {
@@ -4966,10 +4779,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 767.19658024139,
           "spec": "Warden",
           "allStars": {
-            "points": 83.98,
-            "rank": 52,
-            "rankPercent": 71.97802197802197,
-            "total": 182
+            "points": 90.42,
+            "rank": 180,
+            "rankPercent": 73.98255813953489,
+            "total": 688
           }
         },
         {
@@ -4982,10 +4795,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 709.64930812295,
           "spec": "Guardian",
           "allStars": {
-            "points": 85.26,
-            "rank": 286,
-            "rankPercent": 67.94150731158605,
-            "total": 889
+            "points": 90.95,
+            "rank": 893,
+            "rankPercent": 71.15135834411385,
+            "total": 3092
           }
         },
         {
@@ -4999,9 +4812,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Guardian",
           "allStars": {
             "points": 0,
-            "rank": 103,
-            "rankPercent": 76.71232876712328,
-            "total": 438
+            "rank": 432,
+            "rankPercent": 74.6321365509123,
+            "total": 1699
           }
         },
         {
@@ -5014,10 +4827,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 484.84931638414,
           "spec": "Guardian",
           "allStars": {
-            "points": 98.24,
-            "rank": 118,
-            "rankPercent": 86.17021276595744,
-            "total": 846
+            "points": 104.54,
+            "rank": 409,
+            "rankPercent": 89.31657501963865,
+            "total": 3819
           }
         },
         {
@@ -5030,10 +4843,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 816.03012032996,
           "spec": "Guardian",
           "allStars": {
-            "points": 91.68,
-            "rank": 247,
-            "rankPercent": 68.09338521400778,
-            "total": 771
+            "points": 97.62,
+            "rank": 851,
+            "rankPercent": 76.02932882120699,
+            "total": 3546
           }
         },
         {
@@ -5046,10 +4859,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 850.61599407949,
           "spec": "Guardian",
           "allStars": {
-            "points": 107.75,
-            "rank": 40,
-            "rankPercent": 91.64882226980728,
-            "total": 467
+            "points": 110.95,
+            "rank": 141,
+            "rankPercent": 93.61896080218779,
+            "total": 2194
           }
         },
         {
@@ -5063,16 +4876,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Guardian",
           "allStars": {
             "points": 0,
-            "rank": 100,
-            "rankPercent": 61.478599221789885,
-            "total": 257
+            "rank": 387,
+            "rankPercent": 60.20618556701031,
+            "total": 970
           }
         }
       ],
       "bestPerformanceAverage": 73.8380875,
       "medianPerformanceAverage": 73.8380875,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -5265,10 +5078,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1726.1595608297,
           "spec": "Destruction",
           "allStars": {
-            "points": 108.1,
-            "rank": 245,
-            "rankPercent": 94.00638663718988,
-            "total": 4071
+            "points": 109.25,
+            "rank": 752,
+            "rankPercent": 94.954652334565,
+            "total": 14885
           }
         },
         {
@@ -5281,10 +5094,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1249.4392651704,
           "spec": "Destruction",
           "allStars": {
-            "points": 99.51,
-            "rank": 431,
-            "rankPercent": 89.42709613966068,
-            "total": 4067
+            "points": 102.14,
+            "rank": 1501,
+            "rankPercent": 90.03322259136213,
+            "total": 15050
           }
         },
         {
@@ -5298,9 +5111,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 14.32,
-            "rank": 3307,
-            "rankPercent": 7.369010927430653,
-            "total": 3569
+            "rank": 15498,
+            "rankPercent": -15.926092160383003,
+            "total": 13368
           }
         },
         {
@@ -5314,9 +5127,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 39.69,
-            "rank": 2591,
-            "rankPercent": 18.9358372456964,
-            "total": 3195
+            "rank": 12607,
+            "rankPercent": -0.12708498808578236,
+            "total": 12590
           }
         },
         {
@@ -5329,10 +5142,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1431.4724833633,
           "spec": "Destruction",
           "allStars": {
-            "points": 81.23,
-            "rank": 912,
-            "rankPercent": 69.96373227827233,
-            "total": 3033
+            "points": 91.78,
+            "rank": 3099,
+            "rankPercent": 74.2348636061211,
+            "total": 12024
           }
         },
         {
@@ -5346,9 +5159,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 0,
-            "rank": 1443,
-            "rankPercent": 31.528964862298196,
-            "total": 2106
+            "rank": 7532,
+            "rankPercent": 13.803364999427721,
+            "total": 8737
           }
         },
         {
@@ -5361,10 +5174,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1262.9742949461,
           "spec": "Destruction",
           "allStars": {
-            "points": 92.3,
-            "rank": 485,
-            "rankPercent": 79.23637923637924,
-            "total": 2331
+            "points": 102.52,
+            "rank": 1716,
+            "rankPercent": 84.15118750577581,
+            "total": 10821
           }
         },
         {
@@ -5377,10 +5190,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1460.5963522615,
           "spec": "Destruction",
           "allStars": {
-            "points": 78.9,
-            "rank": 953,
-            "rankPercent": 57.000903342366755,
-            "total": 2214
+            "points": 85.59,
+            "rank": 3937,
+            "rankPercent": 63.13571227872998,
+            "total": 10677
           }
         },
         {
@@ -5394,9 +5207,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 35.21,
-            "rank": 1758,
-            "rankPercent": 17.627754336615094,
-            "total": 2133
+            "rank": 10944,
+            "rankPercent": -5.719254178340257,
+            "total": 10351
           }
         },
         {
@@ -5410,16 +5223,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 0,
-            "rank": 638,
-            "rankPercent": 57.95379537953795,
-            "total": 1515
+            "rank": 3623,
+            "rankPercent": 48.0195177956372,
+            "total": 6968
           }
         }
       ],
       "bestPerformanceAverage": 52.460910000000005,
       "medianPerformanceAverage": 52.460910000000005,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -5716,7 +5529,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -5909,10 +5722,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1642.6070806351,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 86.07,
-            "rank": 818,
-            "rankPercent": 75.42117930204573,
-            "total": 3324
+            "points": 94.28,
+            "rank": 2582,
+            "rankPercent": 79.31227957678743,
+            "total": 12476
           }
         },
         {
@@ -5925,10 +5738,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1115.0358310828,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 82.41,
-            "rank": 819,
-            "rankPercent": 75.21212121212122,
-            "total": 3300
+            "points": 89.2,
+            "rank": 2852,
+            "rankPercent": 77.3099880620772,
+            "total": 12565
           }
         },
         {
@@ -5941,10 +5754,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1019.0150570294,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 68.55,
-            "rank": 1145,
-            "rankPercent": 61.72632987621278,
-            "total": 2989
+            "points": 78.03,
+            "rank": 4254,
+            "rankPercent": 63.835034013605444,
+            "total": 11760
           }
         },
         {
@@ -5957,10 +5770,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 2017.8042579347,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 100.61,
-            "rank": 300,
-            "rankPercent": 88.26990976853668,
-            "total": 2549
+            "points": 105.93,
+            "rank": 908,
+            "rankPercent": 91.34211531118747,
+            "total": 10476
           }
         },
         {
@@ -5974,9 +5787,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "BeastMastery",
           "allStars": {
             "points": 27.31,
-            "rank": 2211,
-            "rankPercent": 8.639933856965689,
-            "total": 2419
+            "rank": 11667,
+            "rankPercent": -16.496904333932495,
+            "total": 10014
           }
         },
         {
@@ -5990,9 +5803,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "BeastMastery",
           "allStars": {
             "points": 0,
-            "rank": 572,
-            "rankPercent": 65.97139451728248,
-            "total": 1678
+            "rank": 2380,
+            "rankPercent": 67.07722114586217,
+            "total": 7226
           }
         },
         {
@@ -6005,10 +5818,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1027.1422593281,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 74.95,
-            "rank": 627,
-            "rankPercent": 66.1987041036717,
-            "total": 1852
+            "points": 91.74,
+            "rank": 2364,
+            "rankPercent": 74.18332787064351,
+            "total": 9153
           }
         },
         {
@@ -6021,10 +5834,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1768.9008854469,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 112.04,
-            "rank": 61,
-            "rankPercent": 96.60056657223797,
-            "total": 1765
+            "points": 114.51,
+            "rank": 149,
+            "rankPercent": 98.35042353990191,
+            "total": 8972
           }
         },
         {
@@ -6037,10 +5850,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1648.0417337803,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 75.54,
-            "rank": 535,
-            "rankPercent": 68.49557522123894,
-            "total": 1695
+            "points": 90.79,
+            "rank": 2193,
+            "rankPercent": 74.79590663447166,
+            "total": 8697
           }
         },
         {
@@ -6054,16 +5867,343 @@ export const wclBakedData: WclBakedData = {
           "spec": "BeastMastery",
           "allStars": {
             "points": 0,
-            "rank": 466,
-            "rankPercent": 61.34663341645885,
-            "total": 1203
+            "rank": 2284,
+            "rankPercent": 60.61756080731413,
+            "total": 5797
           }
         }
       ],
       "bestPerformanceAverage": 66.22856625,
       "medianPerformanceAverage": 66.22856625,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
+      "error": null,
+      "partial": false
+    },
+    "deserving": {
+      "characterName": "Deserving",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 97176801,
+      "gear": [
+        {
+          "id": 29058,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_91.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3002,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28245,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_36.jpg",
+          "itemLevel": 113,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29060,
+          "slot": 3,
+          "quality": 4,
+          "icon": "inv_shoulder_55.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2605,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 53,
+          "slot": 4,
+          "quality": 2,
+          "icon": "inv_shirt_01.jpg",
+          "itemLevel": 1,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 21875,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_cloth_04.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 1144,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28654,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_03.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29059,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_cloth_25.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2747,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29242,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_cloth_11.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28477,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_13.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28507,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_17.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2937,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28227,
+          "slot": 11,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_63.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28753,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_15.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25936,
+          "slot": 13,
+          "quality": 2,
+          "icon": "inv_misc_stonetablet_11.jpg",
+          "itemLevel": 99,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29370,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28570,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_20.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30832,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_hammer_08.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2628
+        },
+        {
+          "id": 29272,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_misc_orb_04.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25939,
+          "slot": 18,
+          "quality": 3,
+          "icon": "inv_wand_06.jpg",
+          "itemLevel": 97,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 19,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 92.29330876972385,
+          "medianPerformance": 92.29330876972385,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 113.90438103039,
+          "spec": "Shadow",
+          "allStars": {
+            "points": 99.74953713987038,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 49.00585048976264,
+          "medianPerformance": 49.00585048976264,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 114.16201699349,
+          "spec": "Shadow",
+          "allStars": {
+            "points": 51.718128271653725,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 58.70711790854861,
+          "medianPerformance": 58.70711790854861,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 89.051966504429,
+          "spec": "Shadow",
+          "allStars": {
+            "points": 60.702507171498766,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 30.68352167492116,
+          "medianPerformance": 30.68352167492116,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 78.000030124565,
+          "spec": "Shadow",
+          "allStars": {
+            "points": 32.37104893284886,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 45.717616647179824,
+          "medianPerformance": 45.717616647179824,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 147.54017247752,
+          "spec": "Shadow",
+          "allStars": {
+            "points": 50.74342099108561,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 39.979308839952196,
+          "medianPerformance": 39.979308839952196,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 60.682998148854,
+          "spec": "Shadow",
+          "allStars": {
+            "points": null,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": 55.281483098027216,
+      "medianPerformanceAverage": 55.281483098027216,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -6256,10 +6396,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 955.13600615695,
           "spec": "Elemental",
           "allStars": {
-            "points": 96.81905729636284,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 100.39,
+            "rank": 728,
+            "rankPercent": 89.64239920216555,
+            "total": 7019
           }
         },
         {
@@ -6272,10 +6412,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1010.617706281,
           "spec": "Elemental",
           "allStars": {
-            "points": 98.89518021599464,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 102.45,
+            "rank": 934,
+            "rankPercent": 87.03806612948041,
+            "total": 7198
           }
         },
         {
@@ -6288,10 +6428,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 890.80112568648,
           "spec": "Elemental",
           "allStars": {
-            "points": 72.16330291585155,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 77.44,
+            "rank": 2630,
+            "rankPercent": 60.72602330445175,
+            "total": 6694
           }
         },
         {
@@ -6304,10 +6444,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1090.2559775663,
           "spec": "Elemental",
           "allStars": {
-            "points": 63.43609267982789,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 69.41,
+            "rank": 2818,
+            "rankPercent": 51.79671457905544,
+            "total": 5844
           }
         },
         {
@@ -6320,10 +6460,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1025.2481679392,
           "spec": "Elemental",
           "allStars": {
-            "points": 68.01249060144752,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 68.01,
+            "rank": 3670,
+            "rankPercent": 35.518453427065026,
+            "total": 5690
           }
         },
         {
@@ -6336,10 +6476,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 821.85402247702,
           "spec": "Elemental",
           "allStars": {
-            "points": null,
-            "rank": null,
-            "rankPercent": null,
-            "total": 0
+            "points": 0,
+            "rank": 196,
+            "rankPercent": 95.42897327707455,
+            "total": 4266
           }
         },
         {
@@ -6390,7 +6530,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 65.27703999999999,
       "medianPerformanceAverage": 65.27703999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -6687,7 +6827,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -6984,7 +7124,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -7094,11 +7234,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29287,
+          "id": 28793,
           "slot": 12,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
+          "icon": "inv_jewelry_ring_65.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7148,11 +7288,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29350,
+          "id": 28673,
           "slot": 18,
           "quality": 4,
-          "icon": "inv_wand_1h_stratholme_d_01.jpg",
-          "itemLevel": 110,
+          "icon": "inv_wand_21.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -7170,68 +7310,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 79.1641,
+          "medianPerformance": 79.1641,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1352.7048676777,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 88.93,
+            "rank": 3814,
+            "rankPercent": 74.38360765871683,
+            "total": 14885
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 36.6922,
+          "medianPerformance": 36.6922,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 745.10750749956,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 42.16,
+            "rank": 11436,
+            "rankPercent": 24.019933554817275,
+            "total": 15050
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 89.4597,
+          "medianPerformance": 89.4597,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 1181.0476435201,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 101,
+            "rank": 1731,
+            "rankPercent": 87.05864751645721,
+            "total": 13368
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 4.91258,
+          "medianPerformance": 4.91258,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 465.34921902065,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 22.42,
+            "rank": 14660,
+            "rankPercent": -16.433677521842732,
+            "total": 12590
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 19.1667,
+          "medianPerformance": 19.1667,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 909.16261376502,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 48.41,
+            "rank": 12031,
+            "rankPercent": -0.0499001996007984,
+            "total": 12024
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 87.7643,
+          "medianPerformance": 87.7643,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 963.74151558146,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 0,
+            "rank": 1305,
+            "rankPercent": 85.07496852466522,
+            "total": 8737
+          }
         },
         {
           "encounterID": 100730,
@@ -7243,10 +7413,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1224.0016738813,
           "spec": "Destruction",
           "allStars": {
-            "points": 86.4,
-            "rank": 604,
-            "rankPercent": 74.13127413127413,
-            "total": 2331
+            "points": 98.68,
+            "rank": 2204,
+            "rankPercent": 79.64143794473709,
+            "total": 10821
           }
         },
         {
@@ -7259,10 +7429,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1257.4102570571,
           "spec": "Destruction",
           "allStars": {
-            "points": 67.92,
-            "rank": 1375,
-            "rankPercent": 37.94037940379404,
-            "total": 2214
+            "points": 67.19,
+            "rank": 6808,
+            "rankPercent": 36.24613655521214,
+            "total": 10677
           }
         },
         {
@@ -7276,9 +7446,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 30.4,
-            "rank": 1866,
-            "rankPercent": 12.56446319737459,
-            "total": 2133
+            "rank": 12326,
+            "rankPercent": -19.070621196019708,
+            "total": 10351
           }
         },
         {
@@ -7292,16 +7462,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 0,
-            "rank": 1025,
-            "rankPercent": 32.40924092409241,
-            "total": 1515
+            "rank": 6298,
+            "rankPercent": 9.629735935706085,
+            "total": 6968
           }
         }
       ],
-      "bestPerformanceAverage": 38.68715,
-      "medianPerformanceAverage": 38.68715,
+      "bestPerformanceAverage": 43.18209125,
+      "medianPerformanceAverage": 43.18209125,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -7648,7 +7818,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 85.625,
       "medianPerformanceAverage": 85.625,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -7834,68 +8004,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 61.2959,
+          "medianPerformance": 61.2959,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 528.38575231579,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 69.62,
+            "rank": 761,
+            "rankPercent": 54.2719614921781,
+            "total": 1662
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 47.7539,
+          "medianPerformance": 47.7539,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 525.1743834153,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 54.62,
+            "rank": 1000,
+            "rankPercent": 38.10408921933085,
+            "total": 1614
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 39.1126,
+          "medianPerformance": 39.1126,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 493.90852202304,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 46.34,
+            "rank": 1094,
+            "rankPercent": 27.567925778661365,
+            "total": 1509
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 51.8049,
+          "medianPerformance": 51.8049,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 680.87918543176,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 59.76,
+            "rank": 911,
+            "rankPercent": 41.51670951156812,
+            "total": 1556
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 61.3456,
+          "medianPerformance": 61.3456,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 610.97674202008,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 72.22,
+            "rank": 683,
+            "rankPercent": 52.80276816608997,
+            "total": 1445
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 32.0109,
+          "medianPerformance": 32.0109,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 448.78103420493,
+          "spec": "Discipline",
+          "allStars": {
+            "points": 0,
+            "rank": 967,
+            "rankPercent": 15.485564304461942,
+            "total": 1143
+          }
         },
         {
           "encounterID": 100730,
@@ -7942,10 +8142,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 52.26258,
+      "medianPerformanceAverage": 52.26258,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -8242,7 +8442,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -8499,7 +8699,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 16.971233407274,
           "spec": "Restoration",
           "allStars": {
-            "points": 76.95814376408175,
+            "points": 0,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -8547,7 +8747,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 11.585227416059,
           "spec": "Restoration",
           "allStars": {
-            "points": 83.00726952872617,
+            "points": 82.11086744108765,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -8589,7 +8789,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.14115006931327,
       "medianPerformanceAverage": 79.14115006931327,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -8886,7 +9086,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -9079,10 +9279,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 899.99506919562,
           "spec": "Elemental",
           "allStars": {
-            "points": 91.41,
-            "rank": 310,
-            "rankPercent": 83.51120597652081,
-            "total": 1874
+            "points": 95.08,
+            "rank": 1124,
+            "rankPercent": 84.00056988174954,
+            "total": 7019
           }
         },
         {
@@ -9095,10 +9295,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1049.3344929482,
           "spec": "Elemental",
           "allStars": {
-            "points": 103.94,
-            "rank": 181,
-            "rankPercent": 90.50131926121372,
-            "total": 1895
+            "points": 106.17,
+            "rank": 662,
+            "rankPercent": 90.81689358155043,
+            "total": 7198
           }
         },
         {
@@ -9111,10 +9311,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1026.4983259038,
           "spec": "Elemental",
           "allStars": {
-            "points": 93.83,
-            "rank": 314,
-            "rankPercent": 81.81289947704823,
-            "total": 1721
+            "points": 97.82,
+            "rank": 1125,
+            "rankPercent": 83.20884374066328,
+            "total": 6694
           }
         },
         {
@@ -9127,10 +9327,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1514.6261734466,
           "spec": "Elemental",
           "allStars": {
-            "points": 104.33,
-            "rank": 115,
-            "rankPercent": 92.0223932820154,
-            "total": 1429
+            "points": 106.83,
+            "rank": 423,
+            "rankPercent": 92.77891854893909,
+            "total": 5844
           }
         },
         {
@@ -9143,10 +9343,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1223.6673004472,
           "spec": "Elemental",
           "allStars": {
-            "points": 83.87,
-            "rank": 388,
-            "rankPercent": 72.07792207792208,
-            "total": 1386
+            "points": 92.3,
+            "rank": 1476,
+            "rankPercent": 74.07732864674868,
+            "total": 5690
           }
         },
         {
@@ -9160,9 +9360,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Elemental",
           "allStars": {
             "points": 0,
-            "rank": 110,
-            "rankPercent": 88.85480572597137,
-            "total": 978
+            "rank": 664,
+            "rankPercent": 84.45850914205344,
+            "total": 4266
           }
         },
         {
@@ -9175,10 +9375,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 964.35113089889,
           "spec": "Elemental",
           "allStars": {
-            "points": 97.22,
-            "rank": 179,
-            "rankPercent": 83.04761904761905,
-            "total": 1050
+            "points": 104.18,
+            "rank": 751,
+            "rankPercent": 85.67335243553009,
+            "total": 5235
           }
         },
         {
@@ -9191,10 +9391,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1411.5372972428,
           "spec": "Elemental",
           "allStars": {
-            "points": 113.42,
-            "rank": 40,
-            "rankPercent": 96.02446483180428,
-            "total": 981
+            "points": 115.96,
+            "rank": 116,
+            "rankPercent": 97.7214186645532,
+            "total": 5047
           }
         },
         {
@@ -9207,10 +9407,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 898.90876902761,
           "spec": "Elemental",
           "allStars": {
-            "points": 58.86,
-            "rank": 557,
-            "rankPercent": 42.2037422037422,
-            "total": 962
+            "points": 62.1,
+            "rank": 3213,
+            "rankPercent": 35.46313039983926,
+            "total": 4977
           }
         },
         {
@@ -9224,16 +9424,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Elemental",
           "allStars": {
             "points": 0,
-            "rank": 220,
-            "rankPercent": 67.55555555555556,
-            "total": 675
+            "rank": 1353,
+            "rankPercent": 59.94074074074074,
+            "total": 3375
           }
         }
       ],
       "bestPerformanceAverage": 79.1123375,
       "medianPerformanceAverage": 79.1123375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -9530,7 +9730,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -9716,118 +9916,168 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
+          "rankPercent": 75,
+          "medianPerformance": 75,
+          "totalKills": 1,
+          "fastestKill": 166034,
           "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "spec": "Restoration",
+          "allStars": {
+            "points": 75,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
+          "rankPercent": 70,
+          "medianPerformance": 70,
+          "totalKills": 1,
+          "fastestKill": 302351,
           "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "spec": "Restoration",
+          "allStars": {
+            "points": 70,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
+          "rankPercent": 40,
+          "medianPerformance": 40,
+          "totalKills": 1,
+          "fastestKill": 264666,
           "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "spec": "Restoration",
+          "allStars": {
+            "points": 40,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 80.40806600944242,
+          "medianPerformance": 80.40806600944242,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 9.8770917744875,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 80.77597414626855,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
+          "rankPercent": 60,
+          "medianPerformance": 60,
+          "totalKills": 1,
+          "fastestKill": 343581,
           "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "spec": "Restoration",
+          "allStars": {
+            "points": 0,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 99.75162742808399,
+          "medianPerformance": 99.75162742808399,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 90.603960901913,
+          "spec": "Restoration",
+          "allStars": {
+            "points": null,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100730,
           "encounterName": "Al'ar",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 93.74650834933982,
+          "medianPerformance": 93.74650834933982,
+          "totalKills": 1,
+          "fastestKill": 450175,
+          "bestAmount": 2.3257622035875,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 93.9831335263735,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100731,
           "encounterName": "Void Reaver",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 71.7610917653473,
+          "medianPerformance": 71.7610917653473,
+          "totalKills": 1,
+          "fastestKill": 203848,
+          "bestAmount": 1.8494172128252,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 71.96486533324918,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100732,
           "encounterName": "High Astromancer Solarian",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 98.80518013623939,
+          "medianPerformance": 98.80518013623939,
+          "totalKills": 1,
+          "fastestKill": 123578,
+          "bestAmount": 190.89158264416,
+          "spec": "Restoration",
+          "allStars": {
+            "points": 104.11991052611158,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100733,
           "encounterName": "Kael'thas Sunstrider",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 53.530307251084196,
+          "medianPerformance": 53.530307251084196,
+          "totalKills": 1,
+          "fastestKill": 512384,
+          "bestAmount": 3.0348332500625,
+          "spec": "Restoration",
+          "allStars": {
+            "points": null,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 73.71510578254612,
+      "medianPerformanceAverage": 73.71510578254612,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -10020,10 +10270,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1374.0343841425,
           "spec": "Destruction",
           "allStars": {
-            "points": 83.75,
-            "rank": 1083,
-            "rankPercent": 73.42176369442397,
-            "total": 4071
+            "points": 90.82,
+            "rank": 3511,
+            "rankPercent": 76.41921397379913,
+            "total": 14885
           }
         },
         {
@@ -10036,10 +10286,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1387.3011997945,
           "spec": "Destruction",
           "allStars": {
-            "points": 108.06,
-            "rank": 143,
-            "rankPercent": 96.50848291123678,
-            "total": 4067
+            "points": 109.15,
+            "rank": 459,
+            "rankPercent": 96.95681063122923,
+            "total": 15050
           }
         },
         {
@@ -10052,10 +10302,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 964.78299700591,
           "spec": "Destruction",
           "allStars": {
-            "points": 73.81,
-            "rank": 1219,
-            "rankPercent": 65.87279349957971,
-            "total": 3569
+            "points": 81.63,
+            "rank": 4492,
+            "rankPercent": 66.4048473967684,
+            "total": 13368
           }
         },
         {
@@ -10068,10 +10318,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1720.7336835047,
           "spec": "Destruction",
           "allStars": {
-            "points": 108.25,
-            "rank": 169,
-            "rankPercent": 94.74178403755869,
-            "total": 3195
+            "points": 110.21,
+            "rank": 554,
+            "rankPercent": 95.60762509928514,
+            "total": 12590
           }
         },
         {
@@ -10084,10 +10334,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1452.5896975459,
           "spec": "Destruction",
           "allStars": {
-            "points": 83.92,
-            "rank": 840,
-            "rankPercent": 72.33761951862841,
-            "total": 3033
+            "points": 93.94,
+            "rank": 2807,
+            "rankPercent": 76.66333998669327,
+            "total": 12024
           }
         },
         {
@@ -10101,9 +10351,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 0,
-            "rank": 1631,
-            "rankPercent": 22.602089268755936,
-            "total": 2106
+            "rank": 8754,
+            "rankPercent": -0.183129220556255,
+            "total": 8737
           }
         },
         {
@@ -10116,10 +10366,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1220.7225130172,
           "spec": "Destruction",
           "allStars": {
-            "points": 85.86,
-            "rank": 615,
-            "rankPercent": 73.65937365937366,
-            "total": 2331
+            "points": 98.25,
+            "rank": 2260,
+            "rankPercent": 79.12392570002773,
+            "total": 10821
           }
         },
         {
@@ -10132,10 +10382,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1758.677884009,
           "spec": "Destruction",
           "allStars": {
-            "points": 103.21,
-            "rank": 262,
-            "rankPercent": 88.21138211382114,
-            "total": 2214
+            "points": 109.6,
+            "rank": 870,
+            "rankPercent": 91.86100964690456,
+            "total": 10677
           }
         },
         {
@@ -10149,9 +10399,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 31.8,
-            "rank": 1836,
-            "rankPercent": 13.97093295827473,
-            "total": 2133
+            "rank": 11994,
+            "rankPercent": -15.86320162303159,
+            "total": 10351
           }
         },
         {
@@ -10165,16 +10415,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Destruction",
           "allStars": {
             "points": 0,
-            "rank": 684,
-            "rankPercent": 54.917491749174914,
-            "total": 1515
+            "rank": 3935,
+            "rankPercent": 43.54190585533869,
+            "total": 6968
           }
         }
       ],
       "bestPerformanceAverage": 71.0515375,
       "medianPerformanceAverage": 71.0515375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -10194,11 +10444,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27758,
+          "id": 28762,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_34.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_29naxxramas.jpg",
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10239,11 +10489,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27948,
+          "id": 28966,
           "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_08.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_pants_cloth_23.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10266,11 +10516,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28507,
+          "id": 28968,
           "slot": 10,
           "quality": 4,
-          "icon": "inv_gauntlets_17.jpg",
-          "itemLevel": 115,
+          "icon": "inv_gauntlets_52.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10284,11 +10534,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29286,
+          "id": 29287,
           "slot": 12,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "itemLevel": 130,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10326,7 +10576,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_weapon_shortblade_41.jpg",
           "itemLevel": 125,
           "permanentEnchantID": null,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2678
         },
         {
           "id": 28734,
@@ -10471,7 +10721,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -10664,10 +10914,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1804.4114263173,
           "spec": "Fury",
           "allStars": {
-            "points": 110.44,
-            "rank": 101,
-            "rankPercent": 95.68593615185505,
-            "total": 2318
+            "points": 111.8,
+            "rank": 304,
+            "rankPercent": 96.30532861846116,
+            "total": 8201
           }
         },
         {
@@ -10680,10 +10930,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1281.9339121236,
           "spec": "Fury",
           "allStars": {
-            "points": 96.17,
-            "rank": 329,
-            "rankPercent": 86.01279317697228,
-            "total": 2345
+            "points": 99.52,
+            "rank": 1103,
+            "rankPercent": 86.76435263031468,
+            "total": 8326
           }
         },
         {
@@ -10696,10 +10946,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 188.98598165773,
           "spec": "Fury",
           "allStars": {
-            "points": 9.86,
-            "rank": 2034,
-            "rankPercent": 5.661252900232019,
-            "total": 2155
+            "points": 9.45,
+            "rank": 9264,
+            "rankPercent": -16.691861929957167,
+            "total": 7938
           }
         },
         {
@@ -10712,10 +10962,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 2014.0743741618,
           "spec": "Fury",
           "allStars": {
-            "points": 84.37,
-            "rank": 379,
-            "rankPercent": 74.35549525101764,
-            "total": 1474
+            "points": 92.75,
+            "rank": 1291,
+            "rankPercent": 77.1560120417921,
+            "total": 5647
           }
         },
         {
@@ -10728,10 +10978,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1654.1539030316,
           "spec": "Fury",
           "allStars": {
-            "points": 98.23,
-            "rank": 260,
-            "rankPercent": 84.17837507635919,
-            "total": 1637
+            "points": 104.21,
+            "rank": 824,
+            "rankPercent": 87.00047385879009,
+            "total": 6331
           }
         },
         {
@@ -10745,9 +10995,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Fury",
           "allStars": {
             "points": 0,
-            "rank": 121,
-            "rankPercent": 89.23766816143498,
-            "total": 1115
+            "rank": 440,
+            "rankPercent": 89.78594695207073,
+            "total": 4298
           }
         },
         {
@@ -10760,10 +11010,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 808.02502589714,
           "spec": "Arms",
           "allStars": {
-            "points": 84.69,
-            "rank": 182,
-            "rankPercent": 72.28177641653905,
-            "total": 653
+            "points": 94.19,
+            "rank": 638,
+            "rankPercent": 74.72222222222223,
+            "total": 2520
           }
         },
         {
@@ -10776,10 +11026,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1556.6332837214,
           "spec": "Arms",
           "allStars": {
-            "points": 110.98,
-            "rank": 36,
-            "rankPercent": 94.5141065830721,
-            "total": 638
+            "points": 113.63,
+            "rank": 112,
+            "rankPercent": 95.6436420722135,
+            "total": 2548
           }
         },
         {
@@ -10792,10 +11042,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1512.8132572954,
           "spec": "Arms",
           "allStars": {
-            "points": 100.21,
-            "rank": 61,
-            "rankPercent": 90.2439024390244,
-            "total": 615
+            "points": 104.31,
+            "rank": 221,
+            "rankPercent": 91.37931034482759,
+            "total": 2552
           }
         },
         {
@@ -10809,16 +11059,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arms",
           "allStars": {
             "points": 0,
-            "rank": 314,
-            "rankPercent": 28.37528604118993,
-            "total": 437
+            "rank": 1666,
+            "rankPercent": -1.2773722627737227,
+            "total": 1644
           }
         }
       ],
       "bestPerformanceAverage": 74.6238275,
       "medianPerformanceAverage": 74.6238275,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -10919,11 +11169,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29283,
+          "id": 29379,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 130,
+          "icon": "inv_jewelry_ring_ahnqiraj_01.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -10970,7 +11220,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_spear_08.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 2670,
-          "temporaryEnchantID": 2639
+          "temporaryEnchantID": null
         },
         {
           "id": 0,
@@ -11004,68 +11254,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 91.3764,
+          "medianPerformance": 91.3764,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1844.7546887987,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 104.38,
+            "rank": 1303,
+            "rankPercent": 89.56396280859249,
+            "total": 12476
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 81.6796,
+          "medianPerformance": 81.6796,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 1123.5616882365,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 89.7,
+            "rank": 2787,
+            "rankPercent": 77.82729805013928,
+            "total": 12565
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 76.5672,
+          "medianPerformance": 76.5672,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 1098.5066053992,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 85.09,
+            "rank": 3348,
+            "rankPercent": 71.53911564625851,
+            "total": 11760
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 82.7355,
+          "medianPerformance": 82.7355,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1740.6387914024,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 94.24,
+            "rank": 2171,
+            "rankPercent": 79.28598701794579,
+            "total": 10476
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 72.3493,
+          "medianPerformance": 72.3493,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 1642.488961846,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 83.64,
+            "rank": 3432,
+            "rankPercent": 65.73796684641502,
+            "total": 10014
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 90.4028,
+          "medianPerformance": 90.4028,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 998.98796165652,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 0,
+            "rank": 874,
+            "rankPercent": 87.91862717962911,
+            "total": 7226
+          }
         },
         {
           "encounterID": 100730,
@@ -11112,10 +11392,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 80.9416,
+      "medianPerformanceAverage": 80.9416,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -11412,7 +11692,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -11709,7 +11989,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -11902,10 +12182,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1646.2312218533,
           "spec": "Enhancement",
           "allStars": {
-            "points": 114.56,
-            "rank": 45,
-            "rankPercent": 98.37278106508876,
-            "total": 2704
+            "points": 114.76,
+            "rank": 137,
+            "rankPercent": 98.49690539345711,
+            "total": 9048
           }
         },
         {
@@ -11918,10 +12198,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1065.3402299903,
           "spec": "Enhancement",
           "allStars": {
-            "points": 89.24,
-            "rank": 584,
-            "rankPercent": 78.29486224869694,
-            "total": 2686
+            "points": 93.54,
+            "rank": 1946,
+            "rankPercent": 78.43202483921047,
+            "total": 9018
           }
         },
         {
@@ -11934,10 +12214,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1152.1637348672,
           "spec": "Enhancement",
           "allStars": {
-            "points": 99.07,
-            "rank": 303,
-            "rankPercent": 87.76832725799919,
-            "total": 2469
+            "points": 103.29,
+            "rank": 867,
+            "rankPercent": 89.74541148608644,
+            "total": 8445
           }
         },
         {
@@ -11950,10 +12230,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1533.9461332141,
           "spec": "Enhancement",
           "allStars": {
-            "points": 94.65,
-            "rank": 380,
-            "rankPercent": 82.2731524789523,
-            "total": 2138
+            "points": 99.81,
+            "rank": 1193,
+            "rankPercent": 84.12994275063241,
+            "total": 7511
           }
         },
         {
@@ -11967,9 +12247,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 33.54,
-            "rank": 1954,
-            "rankPercent": 4.264705882352941,
-            "total": 2040
+            "rank": 8787,
+            "rankPercent": -21.72346910501524,
+            "total": 7218
           }
         },
         {
@@ -11983,9 +12263,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 0,
-            "rank": 214,
-            "rankPercent": 84.9682427664079,
-            "total": 1417
+            "rank": 1031,
+            "rankPercent": 80.00776397515529,
+            "total": 5152
           }
         },
         {
@@ -11998,10 +12278,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1034.1636424754,
           "spec": "Enhancement",
           "allStars": {
-            "points": 114.25,
-            "rank": 43,
-            "rankPercent": 97.21485411140584,
-            "total": 1508
+            "points": 115.54,
+            "rank": 118,
+            "rankPercent": 98.18097014925372,
+            "total": 6432
           }
         },
         {
@@ -12014,10 +12294,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1676.9821649302,
           "spec": "Enhancement",
           "allStars": {
-            "points": 110.36,
-            "rank": 93,
-            "rankPercent": 93.61997226074897,
-            "total": 1442
+            "points": 114.32,
+            "rank": 243,
+            "rankPercent": 96.14894971355824,
+            "total": 6284
           }
         },
         {
@@ -12030,10 +12310,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1425.5945902805,
           "spec": "Enhancement",
           "allStars": {
-            "points": 95.43,
-            "rank": 213,
-            "rankPercent": 84.74820143884892,
-            "total": 1390
+            "points": 102.06,
+            "rank": 802,
+            "rankPercent": 86.8731563421829,
+            "total": 6102
           }
         },
         {
@@ -12047,16 +12327,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 0,
-            "rank": 7,
-            "rankPercent": 99.38335046248716,
-            "total": 973
+            "rank": 25,
+            "rankPercent": 99.39255884586181,
+            "total": 3951
           }
         }
       ],
       "bestPerformanceAverage": 77.414057125,
       "medianPerformanceAverage": 77.414057125,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -12353,7 +12633,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -12546,10 +12826,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1726.7512573551,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 91.54,
-            "rank": 663,
-            "rankPercent": 80.08423586040915,
-            "total": 3324
+            "points": 98.74,
+            "rank": 2011,
+            "rankPercent": 83.88906700865662,
+            "total": 12476
           }
         },
         {
@@ -12562,10 +12842,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 624.08133579497,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 32.43,
-            "rank": 2280,
-            "rankPercent": 30.939393939393938,
-            "total": 3300
+            "points": 38.31,
+            "rank": 9880,
+            "rankPercent": 21.37684042976522,
+            "total": 12565
           }
         },
         {
@@ -12578,10 +12858,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1413.2558514677,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 99.59,
-            "rank": 359,
-            "rankPercent": 88.02275008364002,
-            "total": 2989
+            "points": 104.23,
+            "rank": 1005,
+            "rankPercent": 91.4625850340136,
+            "total": 11760
           }
         },
         {
@@ -12594,10 +12874,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 2173.6840634779,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 107.05,
-            "rank": 169,
-            "rankPercent": 93.40918007061593,
-            "total": 2549
+            "points": 110.16,
+            "rank": 497,
+            "rankPercent": 95.26536846124475,
+            "total": 10476
           }
         },
         {
@@ -12610,10 +12890,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1941.8110277807,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 95.94,
-            "rank": 405,
-            "rankPercent": 83.29888383629599,
-            "total": 2419
+            "points": 103.84,
+            "rank": 1211,
+            "rankPercent": 87.91691631715598,
+            "total": 10014
           }
         },
         {
@@ -12627,9 +12907,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "BeastMastery",
           "allStars": {
             "points": 0,
-            "rank": 797,
-            "rankPercent": 52.56257449344458,
-            "total": 1678
+            "rank": 3646,
+            "rankPercent": 49.55715471907003,
+            "total": 7226
           }
         },
         {
@@ -12642,10 +12922,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1337.6883973959,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 106.48,
-            "rank": 140,
-            "rankPercent": 92.49460043196544,
-            "total": 1852
+            "points": 111.37,
+            "rank": 383,
+            "rankPercent": 95.82650497104774,
+            "total": 9153
           }
         },
         {
@@ -12658,10 +12938,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1320.9177366868,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 81.96,
-            "rank": 491,
-            "rankPercent": 72.23796033994334,
-            "total": 1765
+            "points": 97.23,
+            "rank": 1755,
+            "rankPercent": 80.45028979045921,
+            "total": 8972
           }
         },
         {
@@ -12674,10 +12954,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1172.601686184,
           "spec": "BeastMastery",
           "allStars": {
-            "points": 40.22,
-            "rank": 1078,
-            "rankPercent": 36.46017699115044,
-            "total": 1695
+            "points": 54.42,
+            "rank": 6154,
+            "rankPercent": 29.251466022766472,
+            "total": 8697
           }
         },
         {
@@ -12691,16 +12971,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "BeastMastery",
           "allStars": {
             "points": 0,
-            "rank": 214,
-            "rankPercent": 82.29426433915212,
-            "total": 1203
+            "rank": 880,
+            "rankPercent": 84.83698464723133,
+            "total": 5797
           }
         }
       ],
       "bestPerformanceAverage": 70.87083750000001,
       "medianPerformanceAverage": 70.87083750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -12893,10 +13173,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1260.8066795963,
           "spec": "Fury",
           "allStars": {
-            "points": 77.08,
-            "rank": 752,
-            "rankPercent": 67.6013805004314,
-            "total": 2318
+            "points": 85.64,
+            "rank": 2418,
+            "rankPercent": 70.5279843921473,
+            "total": 8201
           }
         },
         {
@@ -12909,10 +13189,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1059.3743165647,
           "spec": "Fury",
           "allStars": {
-            "points": 74.8,
-            "rank": 773,
-            "rankPercent": 67.07889125799574,
-            "total": 2345
+            "points": 81.25,
+            "rank": 2732,
+            "rankPercent": 67.19913523901033,
+            "total": 8326
           }
         },
         {
@@ -12925,10 +13205,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1102.7946192857,
           "spec": "Fury",
           "allStars": {
-            "points": 79.15,
-            "rank": 635,
-            "rankPercent": 70.5800464037123,
-            "total": 2155
+            "points": 87.03,
+            "rank": 2123,
+            "rankPercent": 73.26782564877803,
+            "total": 7938
           }
         },
         {
@@ -12941,10 +13221,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 2636.3433169423,
           "spec": "Fury",
           "allStars": {
-            "points": 109.88,
-            "rank": 67,
-            "rankPercent": 95.5223880597015,
-            "total": 1474
+            "points": 111.34,
+            "rank": 230,
+            "rankPercent": 95.94474942447317,
+            "total": 5647
           }
         },
         {
@@ -12957,10 +13237,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1605.7137072638,
           "spec": "Fury",
           "allStars": {
-            "points": 92.95,
-            "rank": 337,
-            "rankPercent": 79.47464874770922,
-            "total": 1637
+            "points": 100.78,
+            "rank": 1062,
+            "rankPercent": 83.24119412415101,
+            "total": 6331
           }
         },
         {
@@ -12974,9 +13254,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Fury",
           "allStars": {
             "points": 0,
-            "rank": 46,
-            "rankPercent": 95.96412556053812,
-            "total": 1115
+            "rank": 161,
+            "rankPercent": 96.27733829688228,
+            "total": 4298
           }
         },
         {
@@ -12989,10 +13269,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1097.5824763839,
           "spec": "Fury",
           "allStars": {
-            "points": 100,
-            "rank": 157,
-            "rankPercent": 85.93327321911632,
-            "total": 1109
+            "points": 107.79,
+            "rank": 519,
+            "rankPercent": 90.28142589118198,
+            "total": 5330
           }
         },
         {
@@ -13005,10 +13285,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1784.5223379834,
           "spec": "Fury",
           "allStars": {
-            "points": 104.78,
-            "rank": 117,
-            "rankPercent": 89.54012623985572,
-            "total": 1109
+            "points": 110.64,
+            "rank": 390,
+            "rankPercent": 92.80296022201665,
+            "total": 5405
           }
         },
         {
@@ -13021,10 +13301,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 2313.308084106,
           "spec": "Fury",
           "allStars": {
-            "points": 111.7,
-            "rank": 13,
-            "rankPercent": 98.92280071813285,
-            "total": 1114
+            "points": 112.55,
+            "rank": 29,
+            "rankPercent": 99.48529411764706,
+            "total": 5440
           }
         },
         {
@@ -13038,16 +13318,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Fury",
           "allStars": {
             "points": 0,
-            "rank": 3,
-            "rankPercent": 99.72260748959778,
-            "total": 721
+            "rank": 7,
+            "rankPercent": 99.80909958638243,
+            "total": 3143
           }
         }
       ],
       "bestPerformanceAverage": 81.5758375,
       "medianPerformanceAverage": 81.5758375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -13344,7 +13624,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -13641,7 +13921,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -13652,11 +13932,11 @@ export const wclBakedData: WclBakedData = {
       "wclId": 109070276,
       "gear": [
         {
-          "id": 28224,
+          "id": 30146,
           "slot": 1,
-          "quality": 3,
-          "icon": "inv_helmet_15.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_helmet_87.jpg",
+          "itemLevel": 133,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
@@ -13688,11 +13968,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28264,
+          "id": 29045,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_chain_17.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_chest_plate02.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
@@ -13706,11 +13986,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 30538,
+          "id": 27837,
           "slot": 7,
-          "quality": 4,
-          "icon": "inv_pants_leather_09.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_pants_mail_04.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 3010,
           "temporaryEnchantID": null
         },
@@ -13733,28 +14013,28 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27531,
+          "id": 29048,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_25.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_gauntlets_28.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2564,
           "temporaryEnchantID": null
         },
         {
-          "id": 29281,
+          "id": 29282,
           "slot": 11,
           "quality": 4,
           "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 110,
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 27925,
+          "id": 28649,
           "slot": 12,
-          "quality": 3,
-          "icon": "inv_jewelry_ring_16.jpg",
+          "quality": 4,
+          "icon": "inv_jewelry_ring_47.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
@@ -13793,7 +14073,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_sword_71.jpg",
           "itemLevel": 123,
           "permanentEnchantID": 2673,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2639
         },
         {
           "id": 28189,
@@ -13827,68 +14107,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 86.6605,
+          "medianPerformance": 86.6605,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1259.3685630654,
+          "spec": "Combat",
+          "allStars": {
+            "points": 98.79,
+            "rank": 1181,
+            "rankPercent": 84.51443569553805,
+            "total": 7620
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 92.4724,
+          "medianPerformance": 92.4724,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 1158.6500458077,
+          "spec": "Combat",
+          "allStars": {
+            "points": 103.84,
+            "rank": 678,
+            "rankPercent": 91.1803022407504,
+            "total": 7676
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 88.9393,
+          "medianPerformance": 88.9393,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 1105.0666586052,
+          "spec": "Combat",
+          "allStars": {
+            "points": 100.33,
+            "rank": 943,
+            "rankPercent": 86.64776754075125,
+            "total": 7055
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 80.5138,
+          "medianPerformance": 80.5138,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1429.7683420946,
+          "spec": "Combat",
+          "allStars": {
+            "points": 91.25,
+            "rank": 1453,
+            "rankPercent": 75.97219923878868,
+            "total": 6043
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 70.7428,
+          "medianPerformance": 70.7428,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 1323.335690856,
+          "spec": "Combat",
+          "allStars": {
+            "points": 83.67,
+            "rank": 2094,
+            "rankPercent": 63.466573573049395,
+            "total": 5729
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 48.2499,
+          "medianPerformance": 48.2499,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 675.50906511239,
+          "spec": "Combat",
+          "allStars": {
+            "points": 0,
+            "rank": 2520,
+            "rankPercent": 32.284946236559136,
+            "total": 3720
+          }
         },
         {
           "encounterID": 100730,
@@ -13935,10 +14245,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 83.86576,
+      "medianPerformanceAverage": 83.86576,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -14131,10 +14441,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1517.1345452155,
           "spec": "Arcane",
           "allStars": {
-            "points": 94.92,
-            "rank": 576,
-            "rankPercent": 83.63688104723961,
-            "total": 3514
+            "points": 99.24,
+            "rank": 1821,
+            "rankPercent": 86.20794180054563,
+            "total": 13196
           }
         },
         {
@@ -14147,10 +14457,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1045.1792062741,
           "spec": "Arcane",
           "allStars": {
-            "points": 79.08,
-            "rank": 950,
-            "rankPercent": 72.54845241538906,
-            "total": 3457
+            "points": 84.44,
+            "rank": 3616,
+            "rankPercent": 72.38771769019249,
+            "total": 13092
           }
         },
         {
@@ -14163,10 +14473,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 930.71091054307,
           "spec": "Arcane",
           "allStars": {
-            "points": 53.07,
-            "rank": 1689,
-            "rankPercent": 45.8974358974359,
-            "total": 3120
+            "points": 61.85,
+            "rank": 6905,
+            "rankPercent": 43.26567507601282,
+            "total": 12169
           }
         },
         {
@@ -14179,10 +14489,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1285.3570630308,
           "spec": "Arcane",
           "allStars": {
-            "points": 77.53,
-            "rank": 832,
-            "rankPercent": 68.19747416762343,
-            "total": 2613
+            "points": 84.74,
+            "rank": 3342,
+            "rankPercent": 68.61732105955288,
+            "total": 10646
           }
         },
         {
@@ -14196,9 +14506,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arcane",
           "allStars": {
             "points": 45.66,
-            "rank": 1871,
-            "rankPercent": 22.854785478547853,
-            "total": 2424
+            "rank": 8974,
+            "rankPercent": 10.332767063055861,
+            "total": 10007
           }
         },
         {
@@ -14212,9 +14522,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arcane",
           "allStars": {
             "points": 0,
-            "rank": 1162,
-            "rankPercent": 28.773006134969325,
-            "total": 1630
+            "rank": 6452,
+            "rankPercent": 7.829689955707958,
+            "total": 6999
           }
         },
         {
@@ -14227,10 +14537,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1028.4491215553,
           "spec": "Arcane",
           "allStars": {
-            "points": 71.86,
-            "rank": 690,
-            "rankPercent": 63.331559340074506,
-            "total": 1879
+            "points": 87.39,
+            "rank": 3061,
+            "rankPercent": 68.23749221507163,
+            "total": 9634
           }
         },
         {
@@ -14243,10 +14553,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1391.5832093035,
           "spec": "Arcane",
           "allStars": {
-            "points": 74.8,
-            "rank": 767,
-            "rankPercent": 56.42775881683732,
-            "total": 1758
+            "points": 83.17,
+            "rank": 3488,
+            "rankPercent": 62.37997626496925,
+            "total": 9269
           }
         },
         {
@@ -14259,10 +14569,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 986.70787804913,
           "spec": "Arcane",
           "allStars": {
-            "points": 40.47,
-            "rank": 1194,
-            "rankPercent": 29.28275044457617,
-            "total": 1687
+            "points": 44.61,
+            "rank": 7639,
+            "rankPercent": 14.76397723468363,
+            "total": 8961
           }
         },
         {
@@ -14276,16 +14586,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Arcane",
           "allStars": {
             "points": 0,
-            "rank": 737,
-            "rankPercent": 36.16652211621856,
-            "total": 1153
+            "rank": 4745,
+            "rankPercent": 16.698858647936788,
+            "total": 5695
           }
         }
       ],
       "bestPerformanceAverage": 53.56133750000001,
       "medianPerformanceAverage": 53.56133750000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -14582,8 +14892,22 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
+      "partial": false
+    },
+    "moorkit": {
+      "characterName": "Moorkit",
+      "serverSlug": "spineshatter",
+      "serverRegion": "eu",
+      "wclId": null,
+      "gear": [],
+      "rankings": [],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
+      "error": "Character not found on spineshatter-eu",
       "partial": false
     },
     "möxentöxen": {
@@ -14629,11 +14953,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31297,
+          "id": 28964,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_25.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_chest_cloth_62.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -14768,68 +15092,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 50.4644,
+          "medianPerformance": 50.4644,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1023.031427298,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 57.49,
+            "rank": 1655,
+            "rankPercent": 39.25817113477782,
+            "total": 2723
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 35.3342,
+          "medianPerformance": 35.3342,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 671.37862947369,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 44.94,
+            "rank": 2139,
+            "rankPercent": 22.141296431172616,
+            "total": 2746
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 55.7515,
+          "medianPerformance": 55.7515,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 864.721575622,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 65.72,
+            "rank": 1264,
+            "rankPercent": 45.34833405452185,
+            "total": 2311
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 66.1704,
+          "medianPerformance": 66.1704,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1127.694265789,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 76.9,
+            "rank": 1028,
+            "rankPercent": 57.875307629204265,
+            "total": 2438
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 27.3743,
+          "medianPerformance": 27.3743,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 937.70610132691,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 64.39,
+            "rank": 2118,
+            "rankPercent": 10.372565622353937,
+            "total": 2362
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 74.9457,
+          "medianPerformance": 74.9457,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 750.2643090431,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 0,
+            "rank": 594,
+            "rankPercent": 67.09211986681466,
+            "total": 1802
+          }
         },
         {
           "encounterID": 100730,
@@ -14876,10 +15230,337 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 47.01896,
+      "medianPerformanceAverage": 47.01896,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
+      "error": null,
+      "partial": false
+    },
+    "nahába": {
+      "characterName": "Nahába",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 97456377,
+      "gear": [
+        {
+          "id": 28182,
+          "slot": 1,
+          "quality": 3,
+          "icon": "inv_helmet_15.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 3003,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31695,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_34.jpg",
+          "itemLevel": 103,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 33173,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2986,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 23522,
+          "slot": 5,
+          "quality": 3,
+          "icon": "inv_chest_chain_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27985,
+          "slot": 6,
+          "quality": 3,
+          "icon": "inv_belt_23.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31544,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_14.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": 3010,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25686,
+          "slot": 8,
+          "quality": 3,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2657,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28381,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_19.jpg",
+          "itemLevel": 113,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 25685,
+          "slot": 10,
+          "quality": 3,
+          "icon": "inv_gauntlets_22.jpg",
+          "itemLevel": 106,
+          "permanentEnchantID": 684,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30860,
+          "slot": 11,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_34.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30365,
+          "slot": 12,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28034,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_gizmo_khoriumpowercore.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27423,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_18.jpg",
+          "itemLevel": 103,
+          "permanentEnchantID": 368,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28438,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_mace_38.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2639
+        },
+        {
+          "id": 29124,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_sword_draenei_01.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2713
+        },
+        {
+          "id": 30279,
+          "slot": 18,
+          "quality": 2,
+          "icon": "inv_weapon_rifle_06.jpg",
+          "itemLevel": 111,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 19,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 65.1988,
+          "medianPerformance": 65.1988,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1117.7228760374,
+          "spec": "Fury",
+          "allStars": {
+            "points": 73.64,
+            "rank": 3473,
+            "rankPercent": 57.66369954883551,
+            "total": 8201
+          }
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 75.6281,
+          "medianPerformance": 75.6281,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 1082.5695962639,
+          "spec": "Fury",
+          "allStars": {
+            "points": 83.62,
+            "rank": 2516,
+            "rankPercent": 69.79341820802306,
+            "total": 8326
+          }
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 55.4583,
+          "medianPerformance": 55.4583,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 887.30765742616,
+          "spec": "Fury",
+          "allStars": {
+            "points": 62.29,
+            "rank": 4320,
+            "rankPercent": 45.59082892416226,
+            "total": 7938
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 69.1274,
+          "medianPerformance": 69.1274,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1734.9829043093,
+          "spec": "Fury",
+          "allStars": {
+            "points": 78.01,
+            "rank": 2216,
+            "rankPercent": 60.775633079511245,
+            "total": 5647
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 57.2445,
+          "medianPerformance": 57.2445,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 1269.1767006907,
+          "spec": "Fury",
+          "allStars": {
+            "points": 68.34,
+            "rank": 3397,
+            "rankPercent": 46.35918496288106,
+            "total": 6331
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 30.8746,
+          "medianPerformance": 30.8746,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 651.17298191694,
+          "spec": "Fury",
+          "allStars": {
+            "points": 0,
+            "rank": 3865,
+            "rankPercent": 10.09771986970684,
+            "total": 4298
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": 64.53142,
+      "medianPerformanceAverage": 64.53142,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -15176,7 +15857,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -15369,7 +16050,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 0,
           "spec": "Holy",
           "allStars": {
-            "points": 80,
+            "points": 0,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -15385,7 +16066,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1.8157127817025,
           "spec": "Holy",
           "allStars": {
-            "points": 73.10894024181687,
+            "points": 0,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -15465,7 +16146,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 6.7058153654069,
           "spec": "Holy",
           "allStars": {
-            "points": 98.52723002726984,
+            "points": 97.31889665941253,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -15481,7 +16162,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1.2487071466411,
           "spec": "Holy",
           "allStars": {
-            "points": 58.07255878583837,
+            "points": 58.02606249634666,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -15523,7 +16204,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.74020072487838,
       "medianPerformanceAverage": 79.74020072487838,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -15534,30 +16215,30 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105987565,
       "gear": [
         {
-          "id": 32461,
+          "id": 32083,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_gizmo_newgoggles.jpg",
-          "itemLevel": 127,
-          "permanentEnchantID": 3003,
+          "icon": "inv_helmet_01.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2999,
           "temporaryEnchantID": null
         },
         {
-          "id": 28745,
+          "id": 28516,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_06.jpg",
+          "icon": "inv_jewelry_necklace_ahnqiraj_02.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29075,
+          "id": 29070,
           "slot": 3,
           "quality": 4,
           "icon": "inv_shoulder_40.jpg",
           "itemLevel": 120,
-          "permanentEnchantID": 2986,
+          "permanentEnchantID": 2978,
           "temporaryEnchantID": null
         },
         {
@@ -15570,128 +16251,128 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29071,
+          "id": 28203,
           "slot": 5,
-          "quality": 4,
-          "icon": "inv_chest_plate18.jpg",
-          "itemLevel": 120,
+          "quality": 3,
+          "icon": "inv_chest_chain_15.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
         {
-          "id": 28828,
+          "id": 29253,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_26.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 30257,
-          "slot": 7,
-          "quality": 3,
-          "icon": "inv_pants_leather_05.jpg",
-          "itemLevel": 109,
-          "permanentEnchantID": 3012,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28608,
-          "slot": 8,
-          "quality": 4,
-          "icon": "inv_boots_plate_04.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2657,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28795,
-          "slot": 9,
-          "quality": 4,
-          "icon": "inv_bracer_15.jpg",
-          "itemLevel": 125,
-          "permanentEnchantID": 2647,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 30341,
-          "slot": 10,
-          "quality": 2,
-          "icon": "inv_gauntlets_23.jpg",
-          "itemLevel": 114,
-          "permanentEnchantID": 684,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 30834,
-          "slot": 11,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_41.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28730,
-          "slot": 12,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_24.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29383,
-          "slot": 13,
-          "quality": 4,
-          "icon": "inv_misc_monsterscales_15.jpg",
+          "icon": "inv_belt_11.jpg",
           "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 28288,
-          "slot": 14,
+          "id": 28621,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_plate_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2748,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29254,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_chain_05.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 2649,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28643,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_19.jpg",
+          "itemLevel": 113,
+          "permanentEnchantID": 2650,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29067,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_40.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2937,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28407,
+          "slot": 11,
           "quality": 3,
-          "icon": "inv_misc_enggizmos_18.jpg",
+          "icon": "inv_jewelry_ring_ahnqiraj_04.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 24259,
-          "slot": 15,
+          "id": 29172,
+          "slot": 12,
           "quality": 4,
-          "icon": "inv_misc_cape_18.jpg",
+          "icon": "inv_jewelry_ring_51naxxramas.jpg",
           "itemLevel": 105,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27529,
+          "slot": 13,
+          "quality": 3,
+          "icon": "inv_qirajidol_rebirth.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29370,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27804,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_13.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 368,
           "temporaryEnchantID": null
         },
         {
-          "id": 28429,
+          "id": 32450,
           "slot": 16,
           "quality": 4,
-          "icon": "inv_sword_2h_blacksmithing_02.jpg",
+          "icon": "inv_mace_47.jpg",
           "itemLevel": 123,
-          "permanentEnchantID": 2673,
-          "temporaryEnchantID": 2639
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2678
         },
         {
-          "id": 0,
+          "id": 28606,
           "slot": 17,
-          "quality": 1,
-          "icon": "inv_axe_02.jpg",
-          "itemLevel": 0,
-          "permanentEnchantID": null,
+          "quality": 4,
+          "icon": "inv_shield_29.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2655,
           "temporaryEnchantID": null
         },
         {
-          "id": 27484,
+          "id": 29388,
           "slot": 18,
-          "quality": 3,
-          "icon": "inv_misc_stonetablet_05.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_relics_libramofhope.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -15716,10 +16397,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1889.648598008,
           "spec": "Retribution",
           "allStars": {
-            "points": 114.88,
-            "rank": 20,
-            "rankPercent": 98.80277252678009,
-            "total": 1587
+            "points": 115.36,
+            "rank": 51,
+            "rankPercent": 99.04196206169765,
+            "total": 5219
           }
         },
         {
@@ -15732,10 +16413,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1243.5089539562,
           "spec": "Retribution",
           "allStars": {
-            "points": 104.46,
-            "rank": 131,
-            "rankPercent": 91.890205864005,
-            "total": 1603
+            "points": 106.65,
+            "rank": 397,
+            "rankPercent": 92.53815715093273,
+            "total": 5307
           }
         },
         {
@@ -15748,10 +16429,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 594.08577824816,
           "spec": "Retribution",
           "allStars": {
-            "points": 36.79,
-            "rank": 1164,
-            "rankPercent": 24.036577400391902,
-            "total": 1531
+            "points": 36.34,
+            "rank": 4701,
+            "rankPercent": 10.493239382974672,
+            "total": 5251
           }
         },
         {
@@ -15764,10 +16445,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1718.3728207421,
           "spec": "Retribution",
           "allStars": {
-            "points": 106.63,
-            "rank": 79,
-            "rankPercent": 93.31046312178388,
-            "total": 1166
+            "points": 108.91,
+            "rank": 235,
+            "rankPercent": 94.15438421184112,
+            "total": 4003
           }
         },
         {
@@ -15781,9 +16462,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Retribution",
           "allStars": {
             "points": 21.35,
-            "rank": 1109,
-            "rankPercent": 4.317789291882556,
-            "total": 1158
+            "rank": 4882,
+            "rankPercent": -22.147147147147148,
+            "total": 3996
           }
         },
         {
@@ -15797,9 +16478,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Retribution",
           "allStars": {
             "points": 0,
-            "rank": 648,
-            "rankPercent": 22.607655502392344,
-            "total": 836
+            "rank": 3081,
+            "rankPercent": 0.32362459546925565,
+            "total": 3090
           }
         },
         {
@@ -15812,10 +16493,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1169.1203205071,
           "spec": "Retribution",
           "allStars": {
-            "points": 113.51,
-            "rank": 27,
-            "rankPercent": 96.95550351288057,
-            "total": 854
+            "points": 114.1,
+            "rank": 80,
+            "rankPercent": 97.78773452814337,
+            "total": 3571
           }
         },
         {
@@ -15828,10 +16509,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1890.7192048637,
           "spec": "Retribution",
           "allStars": {
-            "points": 116.77,
-            "rank": 10,
-            "rankPercent": 98.94982497082847,
-            "total": 857
+            "points": 116.71,
+            "rank": 34,
+            "rankPercent": 99.11953041622199,
+            "total": 3748
           }
         },
         {
@@ -15844,10 +16525,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1531.1479691785,
           "spec": "Retribution",
           "allStars": {
-            "points": 96.03,
-            "rank": 116,
-            "rankPercent": 85.97560975609755,
-            "total": 820
+            "points": 102.03,
+            "rank": 436,
+            "rankPercent": 87.77746558021916,
+            "total": 3559
           }
         },
         {
@@ -15861,16 +16542,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Retribution",
           "allStars": {
             "points": 0,
-            "rank": 498,
-            "rankPercent": 14.310344827586206,
-            "total": 580
+            "rank": 2856,
+            "rankPercent": -25.992939099735217,
+            "total": 2266
           }
         }
       ],
       "bestPerformanceAverage": 73.42298075,
       "medianPerformanceAverage": 73.42298075,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -15890,11 +16571,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 24114,
+          "id": 29381,
           "slot": 2,
-          "quality": 3,
-          "icon": "inv_jewelry_necklace_07.jpg",
-          "itemLevel": 102,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_04.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -16056,68 +16737,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 91.1849,
+          "medianPerformance": 91.1849,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1838.8583061301,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 104.07,
+            "rank": 1342,
+            "rankPercent": 89.25136261622315,
+            "total": 12476
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 78.5442,
+          "medianPerformance": 78.5442,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 1068.2319555748,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 86.23,
+            "rank": 3242,
+            "rankPercent": 74.20612813370474,
+            "total": 12565
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 83.6599,
+          "medianPerformance": 83.6599,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 1210.9457661961,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 93.37,
+            "rank": 2308,
+            "rankPercent": 80.38265306122449,
+            "total": 11760
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 76.725,
+          "medianPerformance": 76.725,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1622.8969288006,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 86.99,
+            "rank": 2999,
+            "rankPercent": 71.38220694921726,
+            "total": 10476
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 49.6181,
+          "medianPerformance": 49.6181,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 1379.8754878762,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 59.12,
+            "rank": 6215,
+            "rankPercent": 37.946874375873776,
+            "total": 10014
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 81.215,
+          "medianPerformance": 81.215,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 933.51006339487,
+          "spec": "BeastMastery",
+          "allStars": {
+            "points": 0,
+            "rank": 1688,
+            "rankPercent": 76.65375034597288,
+            "total": 7226
+          }
         },
         {
           "encounterID": 100730,
@@ -16164,10 +16875,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 75.94642000000002,
+      "medianPerformanceAverage": 75.94642000000002,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -16360,10 +17071,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 615.24933434141,
           "spec": "Protection",
           "allStars": {
-            "points": 113.51,
-            "rank": 21,
-            "rankPercent": 98.18511796733212,
-            "total": 1102
+            "points": 108.57,
+            "rank": 45,
+            "rankPercent": 98.80467264330345,
+            "total": 3681
           }
         },
         {
@@ -16376,10 +17087,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 475.17762960476,
           "spec": "Justicar",
           "allStars": {
-            "points": 115.5,
-            "rank": 20,
-            "rankPercent": 98.63013698630137,
-            "total": 1387
+            "points": 113.84,
+            "rank": 59,
+            "rankPercent": 98.92850544984297,
+            "total": 5413
           }
         },
         {
@@ -16392,10 +17103,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 512.69047516003,
           "spec": "Justicar",
           "allStars": {
-            "points": 112.07,
-            "rank": 36,
-            "rankPercent": 96.99312714776632,
-            "total": 1164
+            "points": 108.82,
+            "rank": 89,
+            "rankPercent": 98.07481951432946,
+            "total": 4571
           }
         },
         {
@@ -16408,10 +17119,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1061.5081582477,
           "spec": "Protection",
           "allStars": {
-            "points": 116.18,
-            "rank": 12,
-            "rankPercent": 98.85892116182572,
-            "total": 964
+            "points": 112.99,
+            "rank": 39,
+            "rankPercent": 99.01196047841914,
+            "total": 3846
           }
         },
         {
@@ -16424,10 +17135,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 328.99369740502,
           "spec": "Justicar",
           "allStars": {
-            "points": 99.48,
-            "rank": 118,
-            "rankPercent": 91.2490650710546,
-            "total": 1337
+            "points": 101.96,
+            "rank": 397,
+            "rankPercent": 92.8,
+            "total": 5500
           }
         },
         {
@@ -16441,9 +17152,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Justicar",
           "allStars": {
             "points": 0,
-            "rank": 20,
-            "rankPercent": 97.0404984423676,
-            "total": 642
+            "rank": 74,
+            "rankPercent": 97.37410071942446,
+            "total": 2780
           }
         },
         {
@@ -16456,10 +17167,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 168.40686291324,
           "spec": "Justicar",
           "allStars": {
-            "points": 105.49,
-            "rank": 43,
-            "rankPercent": 95.23269012485811,
-            "total": 881
+            "points": 106.29,
+            "rank": 151,
+            "rankPercent": 96.47390691114245,
+            "total": 4254
           }
         },
         {
@@ -16472,10 +17183,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 672.81980777478,
           "spec": "Protection",
           "allStars": {
-            "points": 94.4,
-            "rank": 80,
-            "rankPercent": 81.41176470588235,
-            "total": 425
+            "points": 100.74,
+            "rank": 268,
+            "rankPercent": 86.41221374045801,
+            "total": 1965
           }
         },
         {
@@ -16488,10 +17199,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 635.1631767591,
           "spec": "Justicar",
           "allStars": {
-            "points": 115.58,
-            "rank": 8,
-            "rankPercent": 98.98255813953489,
-            "total": 688
+            "points": 116.5,
+            "rank": 16,
+            "rankPercent": 99.58915365653246,
+            "total": 3651
           }
         },
         {
@@ -16505,16 +17216,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Justicar",
           "allStars": {
             "points": 0,
-            "rank": 36,
-            "rankPercent": 90.59139784946237,
-            "total": 372
+            "rank": 122,
+            "rankPercent": 93.7789203084833,
+            "total": 1945
           }
         }
       ],
       "bestPerformanceAverage": 94.7324,
       "medianPerformanceAverage": 94.7324,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -16700,68 +17411,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 79.6215,
+          "medianPerformance": 79.6215,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1211.7578327331,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 90.48,
+            "rank": 2295,
+            "rankPercent": 74.64633068081343,
+            "total": 9048
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 75.0299,
+          "medianPerformance": 75.0299,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 999.3484393966,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 85.15,
+            "rank": 2769,
+            "rankPercent": 69.30583277888667,
+            "total": 9018
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 78.9966,
+          "medianPerformance": 78.9966,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 988.67483902174,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 88.38,
+            "rank": 2216,
+            "rankPercent": 73.77146240378923,
+            "total": 8445
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 73.3868,
+          "medianPerformance": 73.3868,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1348.5336867949,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 83.74,
+            "rank": 2529,
+            "rankPercent": 66.34269737718013,
+            "total": 7511
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 37.0652,
+          "medianPerformance": 37.0652,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 1143.5702207049,
+          "spec": "Enhancement",
+          "allStars": {
+            "points": 64.76,
+            "rank": 5653,
+            "rankPercent": 21.69576059850374,
+            "total": 7218
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 11.9006,
+          "medianPerformance": 11.9006,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 456.06771027799,
+          "spec": "Elemental",
+          "allStars": {
+            "points": 0,
+            "rank": 4739,
+            "rankPercent": -11.064228785747773,
+            "total": 4266
+          }
         },
         {
           "encounterID": 100730,
@@ -16808,10 +17549,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 68.82000000000001,
+      "medianPerformanceAverage": 68.82000000000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -17004,10 +17745,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1269.164393018,
           "spec": "Combat",
           "allStars": {
-            "points": 94.57,
-            "rank": 338,
-            "rankPercent": 83.08232931726907,
-            "total": 1992
+            "points": 99.4,
+            "rank": 1135,
+            "rankPercent": 85.11811023622047,
+            "total": 7620
           }
         },
         {
@@ -17020,10 +17761,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1191.1889612801,
           "spec": "Combat",
           "allStars": {
-            "points": 103.56,
-            "rank": 153,
-            "rankPercent": 92.29989868287741,
-            "total": 1974
+            "points": 105.6,
+            "rank": 547,
+            "rankPercent": 92.88692027097447,
+            "total": 7676
           }
         },
         {
@@ -17036,10 +17777,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 811.8127058194,
           "spec": "Combat",
           "allStars": {
-            "points": 56.8,
-            "rank": 855,
-            "rankPercent": 50.5787037037037,
-            "total": 1728
+            "points": 65.27,
+            "rank": 3653,
+            "rankPercent": 48.23529411764706,
+            "total": 7055
           }
         },
         {
@@ -17053,9 +17794,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Combat",
           "allStars": {
             "points": 13.84,
-            "rank": 1291,
-            "rankPercent": 6.589427950760318,
-            "total": 1381
+            "rank": 7243,
+            "rankPercent": -19.84113850736389,
+            "total": 6043
           }
         },
         {
@@ -17068,10 +17809,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1472.8222597796,
           "spec": "Combat",
           "allStars": {
-            "points": 92.95,
-            "rank": 282,
-            "rankPercent": 78.02971071149335,
-            "total": 1279
+            "points": 100.39,
+            "rank": 1012,
+            "rankPercent": 82.3529411764706,
+            "total": 5729
           }
         },
         {
@@ -17085,9 +17826,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Combat",
           "allStars": {
             "points": 0,
-            "rank": 257,
-            "rankPercent": 67.01030927835052,
-            "total": 776
+            "rank": 1459,
+            "rankPercent": 60.806451612903224,
+            "total": 3720
           }
         },
         {
@@ -17100,10 +17841,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 946.37062749967,
           "spec": "Combat",
           "allStars": {
-            "points": 101.59,
-            "rank": 123,
-            "rankPercent": 86.83926645091694,
-            "total": 927
+            "points": 108.35,
+            "rank": 457,
+            "rankPercent": 91.36200037885963,
+            "total": 5279
           }
         },
         {
@@ -17116,10 +17857,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1754.402008022,
           "spec": "Combat",
           "allStars": {
-            "points": 119.22,
-            "rank": 3,
-            "rankPercent": 99.77168949771689,
-            "total": 876
+            "points": 119.2,
+            "rank": 5,
+            "rankPercent": 99.92289899768697,
+            "total": 5188
           }
         },
         {
@@ -17132,10 +17873,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1432.5671498846,
           "spec": "Combat",
           "allStars": {
-            "points": 92.09,
-            "rank": 152,
-            "rankPercent": 81.85096153846153,
-            "total": 832
+            "points": 101.66,
+            "rank": 683,
+            "rankPercent": 86.29971876255524,
+            "total": 4978
           }
         },
         {
@@ -17149,16 +17890,343 @@ export const wclBakedData: WclBakedData = {
           "spec": "Combat",
           "allStars": {
             "points": 0,
-            "rank": 194,
-            "rankPercent": 63.09751434034417,
-            "total": 523
+            "rank": 1237,
+            "rankPercent": 57.56951596292482,
+            "total": 2913
           }
         }
       ],
       "bestPerformanceAverage": 71.30479375,
       "medianPerformanceAverage": 71.30479375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
+      "error": null,
+      "partial": false
+    },
+    "retributia": {
+      "characterName": "Retributia",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 106356920,
+      "gear": [
+        {
+          "id": 32461,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_gizmo_newgoggles.jpg",
+          "itemLevel": 127,
+          "permanentEnchantID": 3003,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28745,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 33173,
+          "slot": 3,
+          "quality": 3,
+          "icon": "inv_shoulder_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2986,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 23522,
+          "slot": 5,
+          "quality": 3,
+          "icon": "inv_chest_chain_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28779,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_22.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30257,
+          "slot": 7,
+          "quality": 3,
+          "icon": "inv_pants_leather_05.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": 3012,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28608,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_plate_04.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2657,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28795,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_15.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30341,
+          "slot": 10,
+          "quality": 2,
+          "icon": "inv_gauntlets_23.jpg",
+          "itemLevel": 114,
+          "permanentEnchantID": 684,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28730,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_24.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30834,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_41.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28288,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_misc_enggizmos_18.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24259,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_18.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 368,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28429,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_sword_2h_blacksmithing_02.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 17,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27484,
+          "slot": 18,
+          "quality": 3,
+          "icon": "inv_misc_stonetablet_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31405,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_15.jpg",
+          "itemLevel": 1,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 68.0348,
+          "medianPerformance": 68.0348,
+          "totalKills": 1,
+          "fastestKill": 169825,
+          "bestAmount": 1149.78948918,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 76.57,
+            "rank": 2072,
+            "rankPercent": 60.31806859551638,
+            "total": 5219
+          }
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 72.7467,
+          "medianPerformance": 72.7467,
+          "totalKills": 1,
+          "fastestKill": 263322,
+          "bestAmount": 981.95365370155,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 81.76,
+            "rank": 1802,
+            "rankPercent": 66.06368946674203,
+            "total": 5307
+          }
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 81.1785,
+          "medianPerformance": 81.1785,
+          "totalKills": 1,
+          "fastestKill": 237691,
+          "bestAmount": 1055.8077503986,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 92.21,
+            "rank": 1180,
+            "rankPercent": 77.5471338792611,
+            "total": 5251
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 54.7574,
+          "medianPerformance": 54.7574,
+          "totalKills": 1,
+          "fastestKill": 225659,
+          "bestAmount": 1144.8380077905,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 63.46,
+            "rank": 2252,
+            "rankPercent": 43.76717461903572,
+            "total": 4003
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 63.8959,
+          "medianPerformance": 63.8959,
+          "totalKills": 1,
+          "fastestKill": 239496,
+          "bestAmount": 1322.5106056051,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 76.62,
+            "rank": 1789,
+            "rankPercent": 55.25525525525526,
+            "total": 3996
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 17.1281,
+          "medianPerformance": 17.1281,
+          "totalKills": 1,
+          "fastestKill": 557166,
+          "bestAmount": 494.1974205174,
+          "spec": "Retribution",
+          "allStars": {
+            "points": 0,
+            "rank": 3280,
+            "rankPercent": -6.116504854368932,
+            "total": 3090
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": 68.12266,
+      "medianPerformanceAverage": 68.12266,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -17169,20 +18237,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 91156149,
       "gear": [
         {
-          "id": 29068,
+          "id": 31371,
           "slot": 1,
           "quality": 4,
-          "icon": "inv_helmet_77.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 2999,
+          "icon": "inv_helmet_06.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 3008,
           "temporaryEnchantID": null
         },
         {
-          "id": 28245,
+          "id": 25070,
           "slot": 2,
-          "quality": 4,
-          "icon": "inv_jewelry_necklace_36.jpg",
-          "itemLevel": 113,
+          "quality": 2,
+          "icon": "inv_jewelry_amulet_03.jpg",
+          "itemLevel": 117,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -17205,12 +18273,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29066,
+          "id": 31369,
           "slot": 5,
           "quality": 4,
-          "icon": "inv_chest_plate18.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 2661,
+          "icon": "inv_chest_plate11.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2987,
           "temporaryEnchantID": null
         },
         {
@@ -17223,21 +18291,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29069,
+          "id": 31370,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_plate_22.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 2748,
+          "icon": "inv_pants_plate_10.jpg",
+          "itemLevel": 100,
+          "permanentEnchantID": 2987,
           "temporaryEnchantID": null
         },
         {
-          "id": 30641,
+          "id": 31214,
           "slot": 8,
-          "quality": 4,
-          "icon": "inv_boots_plate_04.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": 2649,
+          "quality": 3,
+          "icon": "inv_boots_chain_08.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": 2987,
           "temporaryEnchantID": null
         },
         {
@@ -17268,26 +18336,17 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29384,
+          "id": 28394,
           "slot": 12,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_46.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 29370,
-          "slot": 13,
-          "quality": 4,
-          "icon": "inv_weapon_shortblade_23.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_48naxxramas.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
           "id": 28789,
-          "slot": 14,
+          "slot": 13,
           "quality": 4,
           "icon": "inv_elemental_mote_life01.jpg",
           "itemLevel": 125,
@@ -17295,12 +18354,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 27804,
+          "id": 29370,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28570,
           "slot": 15,
-          "quality": 3,
-          "icon": "inv_misc_cape_13.jpg",
+          "quality": 4,
+          "icon": "inv_misc_cape_20.jpg",
           "itemLevel": 115,
-          "permanentEnchantID": 2662,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -17322,11 +18390,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29388,
+          "id": 27917,
           "slot": 18,
-          "quality": 4,
-          "icon": "inv_relics_libramofhope.jpg",
-          "itemLevel": 110,
+          "quality": 3,
+          "icon": "inv_relics_libramoftruth.jpg",
+          "itemLevel": 112,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -17344,68 +18412,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 81.3521,
+          "medianPerformance": 81.3521,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 413.99954226243,
+          "spec": "Protection",
+          "allStars": {
+            "points": 87.23,
+            "rank": 837,
+            "rankPercent": 77.28878022276555,
+            "total": 3681
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 45.775,
+          "medianPerformance": 45.775,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 210.76497183737,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 51.76,
+            "rank": 3529,
+            "rankPercent": 34.823572880103455,
+            "total": 5413
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 49.9919,
+          "medianPerformance": 49.9919,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 256.76033132803,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 54.8,
+            "rank": 2803,
+            "rankPercent": 38.70050317217239,
+            "total": 4571
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 76.1969,
+          "medianPerformance": 76.1969,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 667.97457486708,
+          "spec": "Protection",
+          "allStars": {
+            "points": 84.51,
+            "rank": 1152,
+            "rankPercent": 70.07280291211649,
+            "total": 3846
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 44.7351,
+          "medianPerformance": 44.7351,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 118.33599646081,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 47.06,
+            "rank": 3799,
+            "rankPercent": 30.945454545454545,
+            "total": 5500
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 86.0798,
+          "medianPerformance": 86.0798,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 257.93221897759,
+          "spec": "Justicar",
+          "allStars": {
+            "points": 0,
+            "rank": 494,
+            "rankPercent": 82.26618705035972,
+            "total": 2780
+          }
         },
         {
           "encounterID": 100730,
@@ -17452,10 +18550,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 59.6102,
+      "medianPerformanceAverage": 59.6102,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -17538,11 +18636,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28194,
+          "id": 29249,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_12.jpg",
-          "itemLevel": 115,
+          "quality": 4,
+          "icon": "inv_bracer_13.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -17607,7 +18705,7 @@ export const wclBakedData: WclBakedData = {
           "icon": "inv_hammer_23.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
-          "temporaryEnchantID": null
+          "temporaryEnchantID": 2629
         },
         {
           "id": 28728,
@@ -17641,39 +18739,102 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
+          "rankPercent": 80,
+          "medianPerformance": 80,
+          "totalKills": 1,
+          "fastestKill": 166035,
           "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "spec": "Holy",
+          "allStars": {
+            "points": 0,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
+          "rankPercent": 50,
+          "medianPerformance": 50,
+          "totalKills": 1,
+          "fastestKill": 302409,
           "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "spec": "Holy",
+          "allStars": {
+            "points": 0,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
+          "rankPercent": 40,
+          "medianPerformance": 40,
+          "totalKills": 1,
+          "fastestKill": 264637,
           "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "spec": "Holy",
+          "allStars": {
+            "points": 40,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 75,
+          "medianPerformance": 75,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 0,
+          "spec": "Holy",
+          "allStars": {
+            "points": 75,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 60,
+          "medianPerformance": 60,
+          "totalKills": 1,
+          "fastestKill": 343614,
+          "bestAmount": 0,
+          "spec": "Holy",
+          "allStars": {
+            "points": 60,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100628,
+          "encounterName": "Lady Vashj",
+          "rankPercent": 69.42649719738289,
+          "medianPerformance": 69.42649719738289,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 0.93146830060093,
+          "spec": "Holy",
+          "allStars": {
+            "points": null,
+            "rank": null,
+            "rankPercent": null,
+            "total": 0
+          }
+        },
+        {
+          "encounterID": 100730,
+          "encounterName": "Al'ar",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -17683,8 +18844,8 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         },
         {
-          "encounterID": 100627,
-          "encounterName": "Morogrim Tidewalker",
+          "encounterID": 100731,
+          "encounterName": "Void Reaver",
           "rankPercent": null,
           "medianPerformance": null,
           "totalKills": 0,
@@ -17692,6 +18853,295 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 0,
           "spec": "",
           "allStars": null
+        },
+        {
+          "encounterID": 100732,
+          "encounterName": "High Astromancer Solarian",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 100733,
+          "encounterName": "Kael'thas Sunstrider",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": 61,
+      "medianPerformanceAverage": 61,
+      "totalKills": 0,
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
+      "error": null,
+      "partial": false
+    },
+    "roombaboomba": {
+      "characterName": "Roombaboomba",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 106091864,
+      "gear": [
+        {
+          "id": 28963,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_89.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 3002,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28762,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_29naxxramas.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28967,
+          "slot": 3,
+          "quality": 4,
+          "icon": "inv_shoulder_52.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2981,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 0,
+          "slot": 4,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28964,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_cloth_62.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29257,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_03.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24262,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_cloth_14.jpg",
+          "itemLevel": 105,
+          "permanentEnchantID": 2748,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28517,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2940,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24250,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_10.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2650,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28507,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_17.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2937,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28227,
+          "slot": 11,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_63.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2928,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28753,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_15.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2928,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29370,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27683,
+          "slot": 14,
+          "quality": 3,
+          "icon": "inv_misc_gem_pearl_01.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27981,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_11.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2621,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28802,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_sword_65.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2628
+        },
+        {
+          "id": 29273,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_misc_bag_10_green.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28673,
+          "slot": 18,
+          "quality": 4,
+          "icon": "inv_wand_21.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28788,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_guildtabard_01.jpg",
+          "itemLevel": 60,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 100623,
+          "encounterName": "Hydross the Unstable",
+          "rankPercent": 14.6114,
+          "medianPerformance": 14.6114,
+          "totalKills": 1,
+          "fastestKill": 287813,
+          "bestAmount": 739.13270074667,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 34.74,
+            "rank": 14345,
+            "rankPercent": 3.6345314074571715,
+            "total": 14885
+          }
+        },
+        {
+          "encounterID": 100624,
+          "encounterName": "The Lurker Below",
+          "rankPercent": 33.5995,
+          "medianPerformance": 33.5995,
+          "totalKills": 1,
+          "fastestKill": 487142,
+          "bestAmount": 756.37699069265,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 43.94,
+            "rank": 11135,
+            "rankPercent": 26.019933554817275,
+            "total": 15050
+          }
+        },
+        {
+          "encounterID": 100625,
+          "encounterName": "Leotheras the Blind",
+          "rankPercent": 12.7032,
+          "medianPerformance": 12.7032,
+          "totalKills": 1,
+          "fastestKill": 464199,
+          "bestAmount": 433.40248471022,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 25.95,
+            "rank": 13768,
+            "rankPercent": -2.9847396768402152,
+            "total": 13368
+          }
+        },
+        {
+          "encounterID": 100626,
+          "encounterName": "Fathom-Lord Karathress",
+          "rankPercent": 29.6073,
+          "medianPerformance": 29.6073,
+          "totalKills": 1,
+          "fastestKill": 277194,
+          "bestAmount": 1007.1141511,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 48.52,
+            "rank": 9899,
+            "rankPercent": 21.382049245432885,
+            "total": 12590
+          }
+        },
+        {
+          "encounterID": 100627,
+          "encounterName": "Morogrim Tidewalker",
+          "rankPercent": 39.7444,
+          "medianPerformance": 39.7444,
+          "totalKills": 1,
+          "fastestKill": 322304,
+          "bestAmount": 1196.3829179905,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 63.7,
+            "rank": 7115,
+            "rankPercent": 40.83499667332003,
+            "total": 12024
+          }
         },
         {
           "encounterID": 100628,
@@ -17749,10 +19199,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 26.053160000000002,
+      "medianPerformanceAverage": 26.053160000000002,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -17938,68 +19388,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 84.851,
+          "medianPerformance": 84.851,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 789.3383282942,
+          "spec": "Holy",
+          "allStars": {
+            "points": 96.74,
+            "rank": 1445,
+            "rankPercent": 83.07944691820951,
+            "total": 8534
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 75.4177,
+          "medianPerformance": 75.4177,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 867.29992624466,
+          "spec": "Holy",
+          "allStars": {
+            "points": 84.02,
+            "rank": 2567,
+            "rankPercent": 70.45820861155883,
+            "total": 8686
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 67.6516,
+          "medianPerformance": 67.6516,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 823.43405181535,
+          "spec": "Holy",
+          "allStars": {
+            "points": 74.72,
+            "rank": 3187,
+            "rankPercent": 60.73937153419593,
+            "total": 8115
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 76.9325,
+          "medianPerformance": 76.9325,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1136.1931587113,
+          "spec": "Holy",
+          "allStars": {
+            "points": 87.2,
+            "rank": 1963,
+            "rankPercent": 72.20569485762856,
+            "total": 7059
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 60.5481,
+          "medianPerformance": 60.5481,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 852.3143014311,
+          "spec": "Holy",
+          "allStars": {
+            "points": 70.36,
+            "rank": 3233,
+            "rankPercent": 51.64572112507481,
+            "total": 6684
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 80.6913,
+          "medianPerformance": 80.6913,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 772.41910571183,
+          "spec": "Holy",
+          "allStars": {
+            "points": 0,
+            "rank": 1092,
+            "rankPercent": 75.21017950465803,
+            "total": 4401
+          }
         },
         {
           "encounterID": 100730,
@@ -18046,10 +19526,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 73.08018,
+      "medianPerformanceAverage": 73.08018,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -18242,10 +19722,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 766.53463068275,
           "spec": "Discipline",
           "allStars": {
-            "points": 110.82,
-            "rank": 18,
-            "rankPercent": 95.68527918781726,
-            "total": 394
+            "points": 108.26,
+            "rank": 74,
+            "rankPercent": 95.60770156438026,
+            "total": 1662
           }
         },
         {
@@ -18258,10 +19738,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 647.27363351084,
           "spec": "Discipline",
           "allStars": {
-            "points": 80.06,
-            "rank": 103,
-            "rankPercent": 72.1311475409836,
-            "total": 366
+            "points": 82.77,
+            "rank": 496,
+            "rankPercent": 69.33085501858736,
+            "total": 1614
           }
         },
         {
@@ -18274,10 +19754,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 627.09950544327,
           "spec": "Discipline",
           "allStars": {
-            "points": 71.14,
-            "rank": 113,
-            "rankPercent": 64.89028213166144,
-            "total": 319
+            "points": 77.56,
+            "rank": 566,
+            "rankPercent": 62.557985420808485,
+            "total": 1509
           }
         },
         {
@@ -18290,10 +19770,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 893.97770451498,
           "spec": "Discipline",
           "allStars": {
-            "points": 91.99,
-            "rank": 58,
-            "rankPercent": 81.78913738019169,
-            "total": 313
+            "points": 96.03,
+            "rank": 273,
+            "rankPercent": 82.51928020565553,
+            "total": 1556
           }
         },
         {
@@ -18306,10 +19786,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 800.75965635013,
           "spec": "Discipline",
           "allStars": {
-            "points": 105.48,
-            "rank": 24,
-            "rankPercent": 92.04152249134948,
-            "total": 289
+            "points": 107.35,
+            "rank": 125,
+            "rankPercent": 91.41868512110727,
+            "total": 1445
           }
         },
         {
@@ -18323,9 +19803,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Discipline",
           "allStars": {
             "points": 0,
-            "rank": 14,
-            "rankPercent": 94.00921658986175,
-            "total": 217
+            "rank": 57,
+            "rankPercent": 95.10061242344707,
+            "total": 1143
           }
         },
         {
@@ -18338,10 +19818,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 590.07402122536,
           "spec": "Discipline",
           "allStars": {
-            "points": 100.36,
-            "rank": 23,
-            "rankPercent": 89.90825688073394,
-            "total": 218
+            "points": 105.93,
+            "rank": 99,
+            "rankPercent": 92.1285140562249,
+            "total": 1245
           }
         },
         {
@@ -18354,10 +19834,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 2916.109583512,
           "spec": "Holy",
           "allStars": {
-            "points": 112.07,
-            "rank": 57,
-            "rankPercent": 95.07908611599296,
-            "total": 1138
+            "points": 114.82,
+            "rank": 198,
+            "rankPercent": 96.80142880337718,
+            "total": 6159
           }
         },
         {
@@ -18370,10 +19850,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1323.2699200441,
           "spec": "Holy",
           "allStars": {
-            "points": 116.71,
-            "rank": 4,
-            "rankPercent": 99.71428571428571,
-            "total": 1050
+            "points": 117.01,
+            "rank": 8,
+            "rankPercent": 99.87807002264414,
+            "total": 5741
           }
         },
         {
@@ -18387,16 +19867,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Holy",
           "allStars": {
             "points": 0,
-            "rank": 13,
-            "rankPercent": 98.24046920821114,
-            "total": 682
+            "rank": 44,
+            "rankPercent": 98.7503632664923,
+            "total": 3441
           }
         }
       ],
       "bestPerformanceAverage": 85.24839999999999,
       "medianPerformanceAverage": 85.24839999999999,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -18589,10 +20069,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1213.7257157884,
           "spec": "Survival",
           "allStars": {
-            "points": 76.1,
-            "rank": 372,
-            "rankPercent": 66.66666666666667,
-            "total": 1113
+            "points": 80.68,
+            "rank": 1241,
+            "rankPercent": 64.55117209834191,
+            "total": 3498
           }
         },
         {
@@ -18605,10 +20085,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 806.34940010274,
           "spec": "Survival",
           "allStars": {
-            "points": 66.4,
-            "rank": 453,
-            "rankPercent": 59.570661896243294,
-            "total": 1118
+            "points": 70.12,
+            "rank": 1598,
+            "rankPercent": 54.74638707849249,
+            "total": 3529
           }
         },
         {
@@ -18621,10 +20101,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 847.51364260506,
           "spec": "Survival",
           "allStars": {
-            "points": 64.12,
-            "rank": 468,
-            "rankPercent": 55.09615384615385,
-            "total": 1040
+            "points": 66.42,
+            "rank": 1716,
+            "rankPercent": 48.729446935724965,
+            "total": 3345
           }
         },
         {
@@ -18637,10 +20117,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1516.5679481448,
           "spec": "Survival",
           "allStars": {
-            "points": 96.2,
-            "rank": 143,
-            "rankPercent": 84.64864864864865,
-            "total": 925
+            "points": 97.08,
+            "rank": 545,
+            "rankPercent": 82.01058201058201,
+            "total": 3024
           }
         },
         {
@@ -18653,10 +20133,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1327.4928699694,
           "spec": "Survival",
           "allStars": {
-            "points": 76.18,
-            "rank": 310,
-            "rankPercent": 65.20270270270271,
-            "total": 888
+            "points": 80.06,
+            "rank": 1160,
+            "rankPercent": 60.07578367206338,
+            "total": 2903
           }
         },
         {
@@ -18670,9 +20150,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Survival",
           "allStars": {
             "points": 0,
-            "rank": 188,
-            "rankPercent": 69.64285714285714,
-            "total": 616
+            "rank": 905,
+            "rankPercent": 57.65807962529274,
+            "total": 2135
           }
         },
         {
@@ -18685,10 +20165,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 938.92048377913,
           "spec": "Survival",
           "allStars": {
-            "points": 93.32,
-            "rank": 137,
-            "rankPercent": 79.9410029498525,
-            "total": 678
+            "points": 98.21,
+            "rank": 506,
+            "rankPercent": 80.30421216848674,
+            "total": 2564
           }
         },
         {
@@ -18701,10 +20181,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 857.81766353018,
           "spec": "Survival",
           "allStars": {
-            "points": 68.69,
-            "rank": 279,
-            "rankPercent": 56.96594427244582,
-            "total": 646
+            "points": 76.48,
+            "rank": 1207,
+            "rankPercent": 51.99044585987261,
+            "total": 2512
           }
         },
         {
@@ -18718,9 +20198,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Survival",
           "allStars": {
             "points": 35,
-            "rank": 523,
-            "rankPercent": 14.566284779050736,
-            "total": 611
+            "rank": 2935,
+            "rankPercent": -22.09737827715356,
+            "total": 2403
           }
         },
         {
@@ -18734,16 +20214,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Survival",
           "allStars": {
             "points": 0,
-            "rank": 288,
-            "rankPercent": 34.77272727272727,
-            "total": 440
+            "rank": 1502,
+            "rankPercent": 6.9435833849969,
+            "total": 1613
           }
         }
       ],
       "bestPerformanceAverage": 59.13131250000001,
       "medianPerformanceAverage": 59.13131250000001,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -18790,11 +20270,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 31297,
+          "id": 29091,
           "slot": 5,
-          "quality": 3,
-          "icon": "inv_chest_cloth_25.jpg",
-          "itemLevel": 112,
+          "quality": 4,
+          "icon": "inv_chest_leather_11.jpg",
+          "itemLevel": 120,
           "permanentEnchantID": 2661,
           "temporaryEnchantID": null
         },
@@ -18929,68 +20409,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 23.05051470150677,
+          "medianPerformance": 23.05051470150677,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 627.69071395015,
+          "spec": "Balance",
+          "allStars": {
+            "points": 40.09,
+            "rank": 4032,
+            "rankPercent": 7.460973370064279,
+            "total": 4356
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 32.50082169316449,
+          "medianPerformance": 32.50082169316449,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 532.11664588508,
+          "spec": "Balance",
+          "allStars": {
+            "points": 48.81,
+            "rank": 3548,
+            "rankPercent": 18.646788990825687,
+            "total": 4360
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 45.73536447042335,
+          "medianPerformance": 45.73536447042335,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 681.25925813961,
+          "spec": "Balance",
+          "allStars": {
+            "points": 55.34,
+            "rank": 2708,
+            "rankPercent": 33.14398616942455,
+            "total": 4049
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 3.127759487636913,
+          "medianPerformance": 3.127759487636913,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 310.94952629121,
+          "spec": "Balance",
+          "allStars": {
+            "points": 21.03,
+            "rank": 4161,
+            "rankPercent": -20.023081361800347,
+            "total": 3466
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 0.43602878136297646,
+          "medianPerformance": 0.43602878136297646,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 128.6276016427,
+          "spec": "Balance",
+          "allStars": {
+            "points": 9.3,
+            "rank": 4164,
+            "rankPercent": -23.348148148148148,
+            "total": 3375
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 4.608884663223055,
+          "medianPerformance": 4.608884663223055,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 335.83558994957,
+          "spec": "Balance",
+          "allStars": {
+            "points": 0,
+            "rank": 2853,
+            "rankPercent": -23.409779316313283,
+            "total": 2311
+          }
         },
         {
           "encounterID": 100730,
@@ -19037,10 +20547,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 20.9700978268189,
+      "medianPerformanceAverage": 20.9700978268189,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -19226,68 +20736,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 88.6824,
+          "medianPerformance": 88.6824,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1522.7363070215,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 99.57,
+            "rank": 1775,
+            "rankPercent": 86.55653228250985,
+            "total": 13196
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 59.1291,
+          "medianPerformance": 59.1291,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 871.09683778125,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 64.65,
+            "rank": 6514,
+            "rankPercent": 50.252062328139324,
+            "total": 13092
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 81.1412,
+          "medianPerformance": 81.1412,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 1150.6129266302,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 91.67,
+            "rank": 2827,
+            "rankPercent": 76.77705645492645,
+            "total": 12169
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 56.3849,
+          "medianPerformance": 56.3849,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1132.6874124505,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 64.77,
+            "rank": 5807,
+            "rankPercent": 45.4630847266579,
+            "total": 10646
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 9.23307,
+          "medianPerformance": 9.23307,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 702.36421688044,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 34.74,
+            "rank": 11400,
+            "rankPercent": -13.91026281602878,
+            "total": 10007
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 72.5223,
+          "medianPerformance": 72.5223,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 839.62827733388,
+          "spec": "Arcane",
+          "allStars": {
+            "points": 0,
+            "rank": 2521,
+            "rankPercent": 63.9948564080583,
+            "total": 6999
+          }
         },
         {
           "encounterID": 100730,
@@ -19334,10 +20874,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 58.914134000000004,
+      "medianPerformanceAverage": 58.914134000000004,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -19634,7 +21174,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -19820,68 +21360,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 59.4711,
+          "medianPerformance": 59.4711,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1117.4879843887,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 67.25,
+            "rank": 7307,
+            "rankPercent": 50.917030567685586,
+            "total": 14885
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 55.7531,
+          "medianPerformance": 55.7531,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 873.35249428644,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 62.24,
+            "rank": 8048,
+            "rankPercent": 46.53156146179402,
+            "total": 15050
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 70.3517,
+          "medianPerformance": 70.3517,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 942.7582454125,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 79.07,
+            "rank": 4868,
+            "rankPercent": 63.59216038300419,
+            "total": 13368
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 85.9326,
+          "medianPerformance": 85.9326,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 1475.2451386483,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 97.91,
+            "rank": 2144,
+            "rankPercent": 82.97855440826052,
+            "total": 12590
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 45.7696,
+          "medianPerformance": 45.7696,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 1144.6005454318,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 60.94,
+            "rank": 8081,
+            "rankPercent": 32.801064537591486,
+            "total": 12024
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 95.567,
+          "medianPerformance": 95.567,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 1053.1939144071,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 0,
+            "rank": 486,
+            "rankPercent": 94.44889550188852,
+            "total": 8737
+          }
         },
         {
           "encounterID": 100730,
@@ -19928,10 +21498,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 63.455619999999996,
+      "medianPerformanceAverage": 63.455619999999996,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -20228,7 +21798,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -20365,11 +21935,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28030,
+          "id": 28797,
           "slot": 15,
-          "quality": 3,
+          "quality": 4,
           "icon": "inv_misc_cape_16.jpg",
-          "itemLevel": 97,
+          "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -20414,68 +21984,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 59.60934685927204,
+          "medianPerformance": 59.60934685927204,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 889.80570244649,
+          "spec": "Balance",
+          "allStars": {
+            "points": 68.46,
+            "rank": 2123,
+            "rankPercent": 51.28558310376492,
+            "total": 4356
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 45.224113890995945,
+          "medianPerformance": 45.224113890995945,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 597.94411131433,
+          "spec": "Balance",
+          "allStars": {
+            "points": 54.85,
+            "rank": 2894,
+            "rankPercent": 33.64678899082569,
+            "total": 4360
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 47.129285008740375,
+          "medianPerformance": 47.129285008740375,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 688.09894494997,
+          "spec": "Balance",
+          "allStars": {
+            "points": 55.9,
+            "rank": 2632,
+            "rankPercent": 35.020992837737715,
+            "total": 4049
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 22.36919689920291,
+          "medianPerformance": 22.36919689920291,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 650.2349716076,
+          "spec": "Balance",
+          "allStars": {
+            "points": 43.97,
+            "rank": 3329,
+            "rankPercent": 3.981534910559723,
+            "total": 3466
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 15.63969650430185,
+          "medianPerformance": 15.63969650430185,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 679.70289393185,
+          "spec": "Balance",
+          "allStars": {
+            "points": 49.14,
+            "rank": 3586,
+            "rankPercent": -6.222222222222222,
+            "total": 3375
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 75.96350065016766,
+          "medianPerformance": 75.96350065016766,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 659.51296391641,
+          "spec": "Balance",
+          "allStars": {
+            "points": 0,
+            "rank": 730,
+            "rankPercent": 68.45521419299004,
+            "total": 2311
+          }
         },
         {
           "encounterID": 100730,
@@ -20522,10 +22122,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 37.99432783250262,
+      "medianPerformanceAverage": 37.99432783250262,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -20536,20 +22136,20 @@ export const wclBakedData: WclBakedData = {
       "wclId": 105988638,
       "gear": [
         {
-          "id": 29098,
+          "id": 8345,
           "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_81.jpg",
-          "itemLevel": 120,
+          "quality": 3,
+          "icon": "inv_helmet_04.jpg",
+          "itemLevel": 45,
           "permanentEnchantID": 3003,
           "temporaryEnchantID": null
         },
         {
-          "id": 28509,
+          "id": 29381,
           "slot": 2,
           "quality": 4,
-          "icon": "inv_jewelry_necklace_22.jpg",
-          "itemLevel": 115,
+          "icon": "inv_jewelry_necklace_04.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -20581,21 +22181,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28423,
+          "id": 28750,
           "slot": 6,
           "quality": 4,
-          "icon": "inv_belt_17.jpg",
-          "itemLevel": 123,
+          "icon": "inv_belt_26.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29099,
+          "id": 30257,
           "slot": 7,
-          "quality": 4,
-          "icon": "inv_pants_leather_22.jpg",
-          "itemLevel": 120,
-          "permanentEnchantID": 3013,
+          "quality": 3,
+          "icon": "inv_pants_leather_05.jpg",
+          "itemLevel": 109,
+          "permanentEnchantID": 3010,
           "temporaryEnchantID": null
         },
         {
@@ -20608,21 +22208,21 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28445,
+          "id": 29246,
           "slot": 9,
           "quality": 4,
-          "icon": "inv_bracer_07.jpg",
-          "itemLevel": 113,
-          "permanentEnchantID": 2649,
+          "icon": "inv_bracer_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 1593,
           "temporaryEnchantID": null
         },
         {
-          "id": 30341,
+          "id": 28506,
           "slot": 10,
-          "quality": 2,
-          "icon": "inv_gauntlets_23.jpg",
-          "itemLevel": 114,
-          "permanentEnchantID": 2613,
+          "quality": 4,
+          "icon": "inv_gauntlets_28.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 2564,
           "temporaryEnchantID": null
         },
         {
@@ -20635,11 +22235,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 29278,
+          "id": 27925,
           "slot": 12,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_62.jpg",
-          "itemLevel": 120,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_16.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -20662,10 +22262,10 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 28660,
+          "id": 27878,
           "slot": 15,
-          "quality": 4,
-          "icon": "inv_misc_cape_20.jpg",
+          "quality": 3,
+          "icon": "inv_misc_cape_21.jpg",
           "itemLevel": 115,
           "permanentEnchantID": 368,
           "temporaryEnchantID": null
@@ -20689,11 +22289,11 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 23198,
+          "id": 29390,
           "slot": 18,
-          "quality": 3,
-          "icon": "inv_relics_idolofferocity.jpg",
-          "itemLevel": 65,
+          "quality": 4,
+          "icon": "inv_relics_idolofhealth.jpg",
+          "itemLevel": 110,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -20711,68 +22311,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 84.94,
+          "medianPerformance": 84.94,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 1243.3597937772,
+          "spec": "Feral",
+          "allStars": {
+            "points": 96.16,
+            "rank": 798,
+            "rankPercent": 81.8781264211005,
+            "total": 4398
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 77.2798,
+          "medianPerformance": 77.2798,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 897.12288036091,
+          "spec": "Feral",
+          "allStars": {
+            "points": 85.21,
+            "rank": 1585,
+            "rankPercent": 72.15679381262085,
+            "total": 5689
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 43.8462,
+          "medianPerformance": 43.8462,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 642.08032286345,
+          "spec": "Feral",
+          "allStars": {
+            "points": 49.83,
+            "rank": 2855,
+            "rankPercent": 32.385690594645816,
+            "total": 4221
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 38.7273,
+          "medianPerformance": 38.7273,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 664.99600849513,
+          "spec": "Feral",
+          "allStars": {
+            "points": 44.94,
+            "rank": 2074,
+            "rankPercent": 24.83683828861494,
+            "total": 2758
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 61.3999,
+          "medianPerformance": 61.3999,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 1202.2492512683,
+          "spec": "Feral",
+          "allStars": {
+            "points": 71.5,
+            "rank": 1750,
+            "rankPercent": 51.64500967652751,
+            "total": 3617
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 78.2089,
+          "medianPerformance": 78.2089,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 755.65071117801,
+          "spec": "Feral",
+          "allStars": {
+            "points": 0,
+            "rank": 759,
+            "rankPercent": 71.69529499626587,
+            "total": 2678
+          }
         },
         {
           "encounterID": 100730,
@@ -20819,10 +22449,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 61.23864,
+      "medianPerformanceAverage": 61.23864,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -21015,10 +22645,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1461.2438775846,
           "spec": "Enhancement",
           "allStars": {
-            "points": 106.29,
-            "rank": 214,
-            "rankPercent": 92.12278106508876,
-            "total": 2704
+            "points": 108.79,
+            "rank": 586,
+            "rankPercent": 93.53448275862068,
+            "total": 9048
           }
         },
         {
@@ -21031,10 +22661,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1201.3813658026,
           "spec": "Enhancement",
           "allStars": {
-            "points": 104.87,
-            "rank": 216,
-            "rankPercent": 91.99553239017126,
-            "total": 2686
+            "points": 106.47,
+            "rank": 718,
+            "rankPercent": 92.04923486360612,
+            "total": 9018
           }
         },
         {
@@ -21048,9 +22678,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 27.66,
-            "rank": 2210,
-            "rankPercent": 10.530579181855002,
-            "total": 2469
+            "rank": 9323,
+            "rankPercent": -10.384843102427471,
+            "total": 8445
           }
         },
         {
@@ -21063,10 +22693,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1312.1228207421,
           "spec": "Enhancement",
           "allStars": {
-            "points": 72.65,
-            "rank": 794,
-            "rankPercent": 62.909260991580915,
-            "total": 2138
+            "points": 79.67,
+            "rank": 2875,
+            "rankPercent": 61.73612035681001,
+            "total": 7511
           }
         },
         {
@@ -21079,10 +22709,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1591.0971444667,
           "spec": "Enhancement",
           "allStars": {
-            "points": 102.05,
-            "rank": 255,
-            "rankPercent": 87.54901960784314,
-            "total": 2040
+            "points": 106.17,
+            "rank": 788,
+            "rankPercent": 89.09670268772513,
+            "total": 7218
           }
         },
         {
@@ -21096,9 +22726,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 0,
-            "rank": 179,
-            "rankPercent": 87.43824982357093,
-            "total": 1417
+            "rank": 896,
+            "rankPercent": 82.6281055900621,
+            "total": 5152
           }
         },
         {
@@ -21111,10 +22741,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 959.53872222489,
           "spec": "Enhancement",
           "allStars": {
-            "points": 108.07,
-            "rank": 114,
-            "rankPercent": 92.50663129973475,
-            "total": 1508
+            "points": 111.29,
+            "rank": 383,
+            "rankPercent": 94.06094527363184,
+            "total": 6432
           }
         },
         {
@@ -21127,10 +22757,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1664.4950934638,
           "spec": "Enhancement",
           "allStars": {
-            "points": 109.58,
-            "rank": 102,
-            "rankPercent": 92.99583911234397,
-            "total": 1442
+            "points": 113.79,
+            "rank": 278,
+            "rankPercent": 95.5919796308084,
+            "total": 6284
           }
         },
         {
@@ -21143,10 +22773,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1500.3845428294,
           "spec": "Enhancement",
           "allStars": {
-            "points": 102.61,
-            "rank": 126,
-            "rankPercent": 91.00719424460432,
-            "total": 1390
+            "points": 107.43,
+            "rank": 399,
+            "rankPercent": 93.47754834480499,
+            "total": 6102
           }
         },
         {
@@ -21160,16 +22790,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Enhancement",
           "allStars": {
             "points": 0,
-            "rank": 9,
-            "rankPercent": 99.17780061664953,
-            "total": 973
+            "rank": 29,
+            "rankPercent": 99.29131865350544,
+            "total": 3951
           }
         }
       ],
       "bestPerformanceAverage": 76.904505,
       "medianPerformanceAverage": 76.904505,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -21180,30 +22810,30 @@ export const wclBakedData: WclBakedData = {
       "wclId": 106014959,
       "gear": [
         {
-          "id": 24266,
+          "id": 29174,
           "slot": 1,
-          "quality": 4,
-          "icon": "inv_helmet_27.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 3002,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 30666,
-          "slot": 2,
-          "quality": 4,
-          "icon": "inv_jewelry_necklace_30naxxramas.jpg",
+          "quality": 3,
+          "icon": "inv_helmet_34.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 21869,
+          "id": 29334,
+          "slot": 2,
+          "quality": 3,
+          "icon": "inv_jewelry_necklace_12.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 21694,
           "slot": 3,
           "quality": 4,
-          "icon": "inv_shoulder_25.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 2995,
+          "icon": "inv_shoulder_05.jpg",
+          "itemLevel": 75,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -21216,12 +22846,12 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 21871,
+          "id": 27799,
           "slot": 5,
-          "quality": 4,
-          "icon": "inv_chest_cloth_08.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 2661,
+          "quality": 3,
+          "icon": "inv_chest_cloth_18.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
@@ -21234,101 +22864,101 @@ export const wclBakedData: WclBakedData = {
           "temporaryEnchantID": null
         },
         {
-          "id": 24262,
+          "id": 30543,
           "slot": 7,
           "quality": 4,
-          "icon": "inv_pants_cloth_14.jpg",
-          "itemLevel": 105,
-          "permanentEnchantID": 2748,
+          "icon": "inv_pants_cloth_20.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 21870,
+          "id": 28517,
           "slot": 8,
           "quality": 4,
-          "icon": "inv_boots_cloth_03.jpg",
-          "itemLevel": 105,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 115,
           "permanentEnchantID": 911,
           "temporaryEnchantID": null
         },
         {
-          "id": 24250,
+          "id": 28511,
           "slot": 9,
-          "quality": 3,
-          "icon": "inv_bracer_10.jpg",
-          "itemLevel": 112,
-          "permanentEnchantID": 2650,
+          "quality": 4,
+          "icon": "inv_bracer_13.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29317,
+          "id": 28508,
           "slot": 10,
-          "quality": 3,
-          "icon": "inv_gauntlets_32.jpg",
-          "itemLevel": 103,
-          "permanentEnchantID": 2935,
+          "quality": 4,
+          "icon": "inv_gauntlets_17.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29352,
+          "id": 28661,
           "slot": 11,
           "quality": 4,
-          "icon": "inv_jewelry_ring_57.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28753,
-          "slot": 12,
-          "quality": 4,
-          "icon": "inv_jewelry_ring_15.jpg",
+          "icon": "inv_jewelry_ring_36.jpg",
           "itemLevel": 115,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 29370,
+          "id": 28259,
+          "slot": 12,
+          "quality": 3,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28823,
           "slot": 13,
           "quality": 4,
-          "icon": "inv_weapon_shortblade_23.jpg",
-          "itemLevel": 110,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 27683,
-          "slot": 14,
-          "quality": 3,
-          "icon": "inv_misc_gem_pearl_01.jpg",
-          "itemLevel": 115,
-          "permanentEnchantID": null,
-          "temporaryEnchantID": null
-        },
-        {
-          "id": 28766,
-          "slot": 15,
-          "quality": 4,
-          "icon": "inv_misc_cape_18.jpg",
+          "icon": "spell_shadow_unholyfrenzy.jpg",
           "itemLevel": 125,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
         {
-          "id": 30832,
-          "slot": 16,
+          "id": 28590,
+          "slot": 14,
           "quality": 4,
-          "icon": "inv_hammer_08.jpg",
-          "itemLevel": 100,
-          "permanentEnchantID": 2669,
-          "temporaryEnchantID": 2678
+          "icon": "inv_misc_bandage_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
         },
         {
-          "id": 29272,
+          "id": 27946,
+          "slot": 15,
+          "quality": 3,
+          "icon": "inv_misc_cape_16.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28257,
+          "slot": 16,
+          "quality": 3,
+          "icon": "inv_mace_13.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": 2629
+        },
+        {
+          "id": 29170,
           "slot": 17,
           "quality": 4,
-          "icon": "inv_misc_orb_04.jpg",
-          "itemLevel": 110,
+          "icon": "inv_misc_orb_01.jpg",
+          "itemLevel": 105,
           "permanentEnchantID": null,
           "temporaryEnchantID": null
         },
@@ -21378,7 +23008,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 249.79020125422,
           "spec": "Shadow",
           "allStars": {
-            "points": 104.40027690072053,
+            "points": 101.00293362180184,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -21394,7 +23024,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 149.89357391007,
           "spec": "Shadow",
           "allStars": {
-            "points": 93.74349108979513,
+            "points": 89.1226546558593,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -21410,7 +23040,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 402.12896736701,
           "spec": "Shadow",
           "allStars": {
-            "points": 113.96989043026369,
+            "points": 108.2091445426685,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -21426,7 +23056,7 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 47.383894933277,
           "spec": "Shadow",
           "allStars": {
-            "points": 18.84229361665454,
+            "points": 18.6162295711022,
             "rank": null,
             "rankPercent": null,
             "total": 0
@@ -21496,7 +23126,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": 79.42732422711903,
       "medianPerformanceAverage": 79.42732422711903,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -21682,68 +23312,98 @@ export const wclBakedData: WclBakedData = {
         {
           "encounterID": 100623,
           "encounterName": "Hydross the Unstable",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 19.6571,
+          "medianPerformance": 19.6571,
+          "totalKills": 1,
+          "fastestKill": 166034,
+          "bestAmount": 475.49899418191,
+          "spec": "Holy",
+          "allStars": {
+            "points": 39.9,
+            "rank": 8143,
+            "rankPercent": 4.593391141317085,
+            "total": 8534
+          }
         },
         {
           "encounterID": 100624,
           "encounterName": "The Lurker Below",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 13.9309,
+          "medianPerformance": 13.9309,
+          "totalKills": 1,
+          "fastestKill": 302351,
+          "bestAmount": 460.70957264901,
+          "spec": "Holy",
+          "allStars": {
+            "points": 28.59,
+            "rank": 8958,
+            "rankPercent": -3.119963159106608,
+            "total": 8686
+          }
         },
         {
           "encounterID": 100625,
           "encounterName": "Leotheras the Blind",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 30.5012,
+          "medianPerformance": 30.5012,
+          "totalKills": 1,
+          "fastestKill": 264632,
+          "bestAmount": 602.81069560749,
+          "spec": "Holy",
+          "allStars": {
+            "points": 35.65,
+            "rank": 6804,
+            "rankPercent": 16.16759088108441,
+            "total": 8115
+          }
         },
         {
           "encounterID": 100626,
           "encounterName": "Fathom-Lord Karathress",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 26.2583,
+          "medianPerformance": 26.2583,
+          "totalKills": 1,
+          "fastestKill": 265564,
+          "bestAmount": 792.78441355003,
+          "spec": "Holy",
+          "allStars": {
+            "points": 41.74,
+            "rank": 6366,
+            "rankPercent": 9.831420881144638,
+            "total": 7059
+          }
         },
         {
           "encounterID": 100627,
           "encounterName": "Morogrim Tidewalker",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 57.5161,
+          "medianPerformance": 57.5161,
+          "totalKills": 1,
+          "fastestKill": 343581,
+          "bestAmount": 836.29478929277,
+          "spec": "Holy",
+          "allStars": {
+            "points": 67.15,
+            "rank": 3483,
+            "rankPercent": 47.90544584081388,
+            "total": 6684
+          }
         },
         {
           "encounterID": 100628,
           "encounterName": "Lady Vashj",
-          "rankPercent": null,
-          "medianPerformance": null,
-          "totalKills": 0,
-          "fastestKill": 0,
-          "bestAmount": 0,
-          "spec": "",
-          "allStars": null
+          "rankPercent": 4.49684,
+          "medianPerformance": 4.49684,
+          "totalKills": 1,
+          "fastestKill": 508874,
+          "bestAmount": 403.00938935768,
+          "spec": "Holy",
+          "allStars": {
+            "points": 0,
+            "rank": 5482,
+            "rankPercent": -24.539877300613497,
+            "total": 4401
+          }
         },
         {
           "encounterID": 100730,
@@ -21790,10 +23450,10 @@ export const wclBakedData: WclBakedData = {
           "allStars": null
         }
       ],
-      "bestPerformanceAverage": null,
-      "medianPerformanceAverage": null,
+      "bestPerformanceAverage": 29.572719999999997,
+      "medianPerformanceAverage": 29.572719999999997,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -22090,7 +23750,7 @@ export const wclBakedData: WclBakedData = {
       "bestPerformanceAverage": null,
       "medianPerformanceAverage": null,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     },
@@ -22283,10 +23943,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1503.7802833569,
           "spec": "Feral",
           "allStars": {
-            "points": 106.13,
-            "rank": 103,
-            "rankPercent": 91.54929577464789,
-            "total": 1207
+            "points": 108.11,
+            "rank": 301,
+            "rankPercent": 93.17871759890859,
+            "total": 4398
           }
         },
         {
@@ -22299,10 +23959,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 829.5315257582,
           "spec": "Feral",
           "allStars": {
-            "points": 70.39,
-            "rank": 583,
-            "rankPercent": 63.57947434292866,
-            "total": 1598
+            "points": 77.84,
+            "rank": 2038,
+            "rankPercent": 64.19405870979082,
+            "total": 5689
           }
         },
         {
@@ -22315,10 +23975,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 523.43537910114,
           "spec": "Feral",
           "allStars": {
-            "points": 31.57,
-            "rank": 916,
-            "rankPercent": 24.317617866004962,
-            "total": 1209
+            "points": 33.05,
+            "rank": 3641,
+            "rankPercent": 13.764510779436153,
+            "total": 4221
           }
         },
         {
@@ -22332,9 +23992,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Guardian",
           "allStars": {
             "points": 48.51,
-            "rank": 884,
-            "rankPercent": 15.340364333652925,
-            "total": 1043
+            "rank": 3750,
+            "rankPercent": 1.8072289156626506,
+            "total": 3818
           }
         },
         {
@@ -22347,10 +24007,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1759.7839864793,
           "spec": "Feral",
           "allStars": {
-            "points": 105.74,
-            "rank": 88,
-            "rankPercent": 90.46052631578948,
-            "total": 912
+            "points": 110.44,
+            "rank": 241,
+            "rankPercent": 93.36466685098148,
+            "total": 3617
           }
         },
         {
@@ -22364,9 +24024,9 @@ export const wclBakedData: WclBakedData = {
           "spec": "Feral",
           "allStars": {
             "points": 0,
-            "rank": 178,
-            "rankPercent": 74.92917847025495,
-            "total": 706
+            "rank": 749,
+            "rankPercent": 72.06870799103808,
+            "total": 2678
           }
         },
         {
@@ -22379,10 +24039,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 582.68561902737,
           "spec": "Warden",
           "allStars": {
-            "points": 88.35,
-            "rank": 42,
-            "rankPercent": 76.57142857142857,
-            "total": 175
+            "points": 98.96,
+            "rank": 112,
+            "rankPercent": 81.86274509803921,
+            "total": 612
           }
         },
         {
@@ -22395,10 +24055,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 924.42168461946,
           "spec": "Guardian",
           "allStars": {
-            "points": 108.04,
-            "rank": 68,
-            "rankPercent": 91.30998702983139,
-            "total": 771
+            "points": 113.63,
+            "rank": 165,
+            "rankPercent": 95.37507050197405,
+            "total": 3546
           }
         },
         {
@@ -22411,10 +24071,10 @@ export const wclBakedData: WclBakedData = {
           "bestAmount": 1092.595011101,
           "spec": "Feral",
           "allStars": {
-            "points": 64.62,
-            "rank": 323,
-            "rankPercent": 58.01825293350717,
-            "total": 767
+            "points": 76.86,
+            "rank": 1539,
+            "rankPercent": 55.79189422247772,
+            "total": 3479
           }
         },
         {
@@ -22428,16 +24088,16 @@ export const wclBakedData: WclBakedData = {
           "spec": "Feral",
           "allStars": {
             "points": 0,
-            "rank": 218,
-            "rankPercent": 59.81481481481482,
-            "total": 540
+            "rank": 1196,
+            "rankPercent": 52.0850040096231,
+            "total": 2494
           }
         }
       ],
       "bestPerformanceAverage": 63.3380375,
       "medianPerformanceAverage": 63.3380375,
       "totalKills": 0,
-      "fetchedAt": "2026-05-16T22:57:37.055Z",
+      "fetchedAt": "2026-05-19T11:37:46.399Z",
       "error": null,
       "partial": false
     }
