@@ -7,6 +7,7 @@ import { CharacterRole } from '../../_entities/character-role.enum';
 import { CharacterRank } from '../../_entities/character-rank.enum';
 import { CharacterTileComponent } from '../character-tile/character-tile.component';
 import { RouterLink } from '@angular/router';
+import { BitlyService } from '../bitly.service';
 
 @Component({
   selector: 'app-raid-tile',
@@ -20,6 +21,7 @@ import { RouterLink } from '@angular/router';
 export class RaidTileComponent {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
+  private bitlyService = inject(BitlyService);
   private queryParams = toSignal(this.route.queryParams, { initialValue: {} });
 
   title = input('Raid #');
@@ -46,6 +48,8 @@ export class RaidTileComponent {
   removeModalVisible = signal(false);
   capturingScreenshot = signal(false);
   editingTitle = signal(false);
+  sharing = signal(false);
+  shareCopied = signal(false);
   titleValue = linkedSignal(() => (this.queryParams() as Record<string, string>)[this.titleKey()] ?? this.title());
 
   titleInput = viewChild<ElementRef<HTMLInputElement>>('titleInput');
@@ -90,6 +94,16 @@ export class RaidTileComponent {
       });
     }).finally(() => {
       this.capturingScreenshot.set(false);
+    });
+  }
+
+  shareLink(): void {
+    this.sharing.set(true);
+    this.bitlyService.shorten(decodeURIComponent(window.location.href)).subscribe(link => {
+      navigator.clipboard.writeText(link);
+      this.sharing.set(false);
+      this.shareCopied.set(true);
+      setTimeout(() => { this.shareCopied.set(false); }, 2000);
     });
   }
 

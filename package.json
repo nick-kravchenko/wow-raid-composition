@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "prestart": "node scripts/generate-env.mjs",
     "start": "ng serve",
+    "prebuild": "node scripts/generate-env.mjs",
     "build": "ng build",
+    "prewatch": "node scripts/generate-env.mjs",
     "watch": "ng build --watch --configuration development",
+    "prebuild:gpages": "node scripts/generate-env.mjs",
     "build:gpages": "ng build --base-href https://nick-kravchenko.github.io/wow-raid-composition/",
     "test": "ng test",
     "bake:wcl": "tsx scripts/wcl-baker/index.ts",

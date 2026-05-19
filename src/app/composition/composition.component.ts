@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, signal } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Character } from '../_entities/character';
@@ -9,6 +9,7 @@ import { KeyValuePipe, LowerCasePipe } from '@angular/common';
 import { RaidTileComponent } from '../shared/raid-tile/raid-tile.component';
 import { CharacterTileComponent } from '../shared/character-tile/character-tile.component';
 import { CharacterRank } from '../_entities/character-rank.enum';
+import { BitlyService } from '../shared/bitly.service';
 
 @Component({
   selector: 'app-composition',
@@ -159,11 +160,15 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
       || (this.formGroup.get('characterClassAndRole') as FormGroup).get(characterClassAndRole)?.value === true;
   }
 
+  sharing = signal(false);
+  shareCopied = signal(false);
+
   constructor(
     private httpClient: HttpClient,
     private compositionService: CompositionService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    private bitlyService: BitlyService,
   ) {
     this.characters = this.compositionService.characters;
   }
@@ -403,6 +408,16 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
   onAddRaidClick(): void {
     this.compositionService.addRaid(this.currentRaidSize);
     this.benches = [...this.benches, []];
+  }
+
+  shareLink(): void {
+    this.sharing.set(true);
+    this.bitlyService.shorten(decodeURIComponent(window.location.href)).subscribe(link => {
+      navigator.clipboard.writeText(link);
+      this.sharing.set(false);
+      this.shareCopied.set(true);
+      setTimeout(() => { this.shareCopied.set(false); }, 2000);
+    });
   }
 
   async screenshot(): Promise<void> {

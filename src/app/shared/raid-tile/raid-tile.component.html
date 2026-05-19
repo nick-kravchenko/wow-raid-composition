@@ -24,6 +24,13 @@
     <a [routerLink]="'/assignments'" [queryParams]="{raids: queryParamsRaid()}" target="_blank" title="Assignments">
       <i class="fa fa-link"></i>
     </a>
+    <button [disabled]="sharing()" (click)="shareLink()" title="Copy share link">
+      @if (shareCopied()) {
+        <i class="fa-solid fa-check"></i>
+      } @else {
+        <i class="fa-solid fa-share-nodes"></i>
+      }
+    </button>
   </div>
   <h3>
     @if (!hideControls()) {
@@ -86,7 +93,7 @@
     }
   }
 </div>
-<div class="raidgroups bench" data-html2canvas-ignore="true">
+<div class="raidgroups bench">
   @for (slot of bench(); track $index; let i = $index) {
     @if (i % 5 === 0) {
       <span>{{i === 0 ? 'BENCH' : ''}}</span>
