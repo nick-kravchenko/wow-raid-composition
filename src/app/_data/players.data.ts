@@ -200,19 +200,6 @@ export const players: Player[] = [
     ],
   },
   {
-    name: 'Antagonyst',
-    discord: { userId: '' },
-    characters: [
-      {
-        name: 'Antagonyst',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Enhancement,
-      },
-    ],
-  },
-  {
     name: 'Entim',
     discord: { userId: '486541449568059402' },
     characters: [
@@ -405,6 +392,13 @@ export const players: Player[] = [
         class: CharacterClass.warlock,
         spec: CharacterSpecEnum.Destruction,
       },
+      {
+        name: 'Nahába',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Fury,
+      },
     ],
   },
   {
@@ -494,6 +488,19 @@ export const players: Player[] = [
       },
     ],
   },
+  {
+    name: 'Retributia',
+    discord: { userId: '580756767148081152' },
+    characters: [
+      {
+        name: 'Retributia',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Retribution,
+      },
+    ],
+  },
   //notwink here
   {
     name: 'Bigfrendd',
@@ -508,10 +515,9 @@ export const players: Player[] = [
       },
     ],
   },
-  //userId have to be updated later
   {
     name: 'Blackberry',
-    discord: { userId: '' },
+    discord: { userId: '410492102959562753' },
     characters: [
       {
         name: 'Blackbary',

@@ -112,8 +112,8 @@ export async function getRaidAttendance(eventId1: string, eventId2: string): Pro
   return result;
 }
 
-const id1 = '1498059827874758868';
-const id2 = '1498059922318037217';
+const id1 = '1504391357182120027';
+const id2 = '1504391419471724585';
 
 getRaidAttendance(id1, id2).then(result => {
   for (const day of result.days) {
