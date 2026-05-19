@@ -35,6 +35,11 @@ export class RaidTileComponent {
   onPruneClick = output<void>();
   onRemoveClick = output<void>();
 
+  bench = input<any[]>([]);
+  onBenchSlotClick = output<number>();
+  onBenchDragOver = output<number>();
+  onBenchSlotDragStart = output<number>();
+
   raidGroups = viewChild<ElementRef>('raidGroups');
 
   pruneModalVisible = signal(false);

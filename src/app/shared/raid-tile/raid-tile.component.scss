@@ -163,6 +163,13 @@ header {
     transition: color .2s;
   }
 }
+.bench {
+  margin-top: 1.75rem;
+
+  span {
+    font-size: .75rem;
+  }
+}
 .highlight {
   animation: shake .2s infinite;
 }

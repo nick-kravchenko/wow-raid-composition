@@ -86,3 +86,32 @@
     }
   }
 </div>
+<div class="raidgroups bench" data-html2canvas-ignore="true">
+  @for (slot of bench(); track $index; let i = $index) {
+    @if (i % 5 === 0) {
+      <span>{{i === 0 ? 'BENCH' : ''}}</span>
+    }
+    @if (hideControls()) {
+      <app-character-tile [character]="slot" [draggable]="!!slot"></app-character-tile>
+    } @else {
+      <app-character-tile
+        [class.highlight]="slot?.highlight"
+        (click)="onBenchSlotClick.emit(i)"
+        (dragover)="onBenchDragOver.emit(i)"
+        (dragstart)="onBenchSlotDragStart.emit(i)"
+        (dragend)="onSlotDragEnd.emit()"
+        [character]="slot"
+        [draggable]="!!slot"
+      ></app-character-tile>
+    }
+  }
+  @if (!hideControls()) {
+    @if (bench().length % 5 === 0) {
+      <span>{{bench().length === 0 ? 'BENCH' : ''}}</span>
+    }
+    <app-character-tile
+      (dragover)="onBenchDragOver.emit(bench().length)"
+      [character]="undefined"
+    ></app-character-tile>
+  }
+</div>

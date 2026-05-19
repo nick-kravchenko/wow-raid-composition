@@ -47,12 +47,16 @@
         [raidSize]="currentRaidSize"
         [title]="'Raid #' + ($index+1)"
         [titleKey]="'title' + $index"
+        [bench]="benches[$index] ?? []"
         (onSlotClick)="onRaidSlotClick($index, $event)"
         (onSlotDragStart)="onRaidSlotDragStart($index, $event)"
         (onSlotDragEnd)="onRaidSlotDragEnd()"
         (onDragOver)="onRaidDragOver($index, $event)"
         (onPruneClick)="onRaidPruneClick($index)"
         (onRemoveClick)="onRaidRemoveClick($index)"
+        (onBenchSlotClick)="onBenchSlotClick($index, $event)"
+        (onBenchDragOver)="onBenchDragOver($index)"
+        (onBenchSlotDragStart)="onBenchSlotDragStart($index, $event)"
       ></app-raid-tile>
     }
     <button class="add-raid" (click)="onAddRaidClick()" type="button">

@@ -129,6 +129,7 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
     );
   }
   raids: Character[][] = [];
+  benches: Character[][] = [];
 
   get currentRaidSize(): number {
     return Number(this.formGroup.get('raidSize')?.value) || 25;
@@ -136,9 +137,12 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
 
   dragFromRaidIndex?: number;
   dragFromSlotIndex?: number;
-  dragToRaidIndex?: number|undefined;
-  dragToSlotIndex?: number|undefined;
+  dragToRaidIndex?: number;
+  dragToSlotIndex?: number;
   draggableCharacter?: Character;
+  dragToBenchRaidIndex?: number;
+  dragFromBenchRaidIndex?: number;
+  dragFromBenchSlotIndex?: number;
 
   isCharacterClassAndRoleChecked(characterClassAndRole: string): boolean {
     return Object.values((this.formGroup.get('characterClassAndRole') as FormGroup).controls)
@@ -215,9 +219,14 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
   isCharacterAvailable(character: Character): boolean {
     const condictions: boolean[] = [
       !this.characterAlreadyInUse(character),
+      !this.characterInAnyBench(character),
       (!!character.player && !this.playerUsedInEveryRaid(character.player)),
     ];
     return condictions.every((condition: boolean) => condition);
+  }
+
+  characterInAnyBench(character: Character): boolean {
+    return this.benches.some(bench => bench.some(c => c?.name === character.name));
   }
 
   characterAlreadyInUse(character: Character): boolean {
@@ -231,6 +240,9 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
   subscribeForRaidChanges(): void {
     this.compositionService.raidsSubject.subscribe((raids) => {
       this.raids = raids;
+      while (this.benches.length < raids.length) this.benches.push([]);
+      if (this.benches.length > raids.length) this.benches.length = raids.length;
+      this.benches = [...this.benches];
     });
   }
 
@@ -256,6 +268,9 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
     this.dragToRaidIndex = undefined;
     this.dragToSlotIndex = undefined;
     this.draggableCharacter = undefined;
+    this.dragToBenchRaidIndex = undefined;
+    this.dragFromBenchRaidIndex = undefined;
+    this.dragFromBenchSlotIndex = undefined;
   }
 
   dragFromSidebar(character: Character): void {
@@ -267,15 +282,55 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
       this.compositionService.moveCharacter(this.dragFromRaidIndex, this.dragFromSlotIndex, raidId, slotId, this.draggableCharacter);
     } else if (this.draggableCharacter) {
       this.compositionService.addCharacterToRaid(raidId, slotId, this.draggableCharacter);
+      if (this.dragFromBenchRaidIndex !== undefined && this.dragFromBenchSlotIndex !== undefined) {
+        const fromRaid = this.dragFromBenchRaidIndex;
+        const fromSlot = this.dragFromBenchSlotIndex;
+        this.benches = this.benches.map((b, i) => i === fromRaid ? b.filter((_, j) => j !== fromSlot) : b);
+      }
     }
     this.resetData();
   }
 
+  dragToBenchFn(raidId: number): void {
+    if (!this.draggableCharacter) return;
+    const character = this.draggableCharacter;
+
+    if (this.dragFromRaidIndex !== undefined && this.dragFromSlotIndex !== undefined) {
+      this.compositionService.deleteCharacter(this.dragFromRaidIndex, this.dragFromSlotIndex);
+    } else if (this.dragFromBenchRaidIndex !== undefined && this.dragFromBenchSlotIndex !== undefined) {
+      const fromRaid = this.dragFromBenchRaidIndex;
+      const fromSlot = this.dragFromBenchSlotIndex;
+      this.benches = this.benches.map((b, i) => i === fromRaid ? b.filter((_, j) => j !== fromSlot) : b);
+    }
+
+    if (!this.benches[raidId]?.some(c => c?.name === character.name)) {
+      this.benches = this.benches.map((b, i) => i === raidId ? [...b, character] : b);
+    }
+  }
+
   onSidebarDragend(): void {
-    if (typeof this.dragToRaidIndex !== 'undefined' && typeof this.dragToSlotIndex !== 'undefined') {
+    if (this.dragToBenchRaidIndex !== undefined) {
+      this.dragToBenchFn(this.dragToBenchRaidIndex);
+    } else if (typeof this.dragToRaidIndex !== 'undefined' && typeof this.dragToSlotIndex !== 'undefined') {
       this.dragToRaid(this.dragToRaidIndex, this.dragToSlotIndex);
     }
     this.resetData();
+  }
+
+  onBenchDragOver(raidId: number): void {
+    this.dragToBenchRaidIndex = raidId;
+    this.dragToRaidIndex = undefined;
+    this.dragToSlotIndex = undefined;
+  }
+
+  onBenchSlotDragStart(raidId: number, slotId: number): void {
+    this.dragFromBenchRaidIndex = raidId;
+    this.dragFromBenchSlotIndex = slotId;
+    this.draggableCharacter = this.benches[raidId][slotId];
+  }
+
+  onBenchSlotClick(raidId: number, slotId: number): void {
+    this.benches = this.benches.map((b, i) => i === raidId ? b.filter((_, j) => j !== slotId) : b);
   }
 
   onRaidSlotClick(raidId: number, slotId: number): void {
@@ -294,7 +349,9 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
   }
 
   onRaidSlotDragEnd(): void {
-    if (typeof this.dragToRaidIndex !== 'undefined' && typeof this.dragToSlotIndex !== 'undefined') {
+    if (this.dragToBenchRaidIndex !== undefined) {
+      this.dragToBenchFn(this.dragToBenchRaidIndex);
+    } else if (typeof this.dragToRaidIndex !== 'undefined' && typeof this.dragToSlotIndex !== 'undefined') {
       this.dragToRaid(this.dragToRaidIndex, this.dragToSlotIndex);
     }
     this.resetData();
@@ -310,10 +367,12 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
 
   onRaidRemoveClick(raidId: number): void {
     this.compositionService.removeRaid(raidId);
+    this.benches = this.benches.filter((_, i) => i !== raidId);
   }
 
   onAddRaidClick(): void {
     this.compositionService.addRaid(this.currentRaidSize);
+    this.benches = [...this.benches, []];
   }
 
   async screenshot(): Promise<void> {
