@@ -369,6 +369,7 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
   onRaidDragOver(raidId: number, slotId: number): void {
     this.dragToRaidIndex = raidId;
     this.dragToSlotIndex = slotId;
+    this.dragToBenchRaidIndex = undefined;
   }
 
   onRaidSlotDragStart(raidId: number, slotId: number): void {
