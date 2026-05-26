@@ -77,6 +77,13 @@ export const players: Player[] = [
         class: CharacterClass.warlock,
         spec: CharacterSpecEnum.Destruction,
       },
+      {
+        name: 'Kravashamanb',
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Restoration,
+      },
     ],
   },
   {
@@ -179,26 +186,26 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Brokentoy',
-    discord: { userId: '234388219020443648' },
-    characters: [
-      {
-        name: 'Brokentoy',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Enhancement,
-      },
-      {
-        name: 'Zabyjaka',
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Elemental,
-      },
-    ],
-  },
+  // {
+  //   name: 'Brokentoy',
+  //   discord: { userId: '234388219020443648' },
+  //   characters: [
+  //     {
+  //       name: 'Brokentoy',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.melee,
+  //       class: CharacterClass.shaman,
+  //       spec: CharacterSpecEnum.Enhancement,
+  //     },
+  //     {
+  //       name: 'Zabyjaka',
+  //       rank: CharacterRank.alt,
+  //       role: CharacterRole.ranged,
+  //       class: CharacterClass.shaman,
+  //       spec: CharacterSpecEnum.Elemental,
+  //     },
+  //   ],
+  // },
   {
     name: 'Entim',
     discord: { userId: '486541449568059402' },
@@ -229,6 +236,13 @@ export const players: Player[] = [
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
         spec: CharacterSpecEnum.Survival,
+      },
+      {
+        name: 'Gromobiy',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Arms,
       },
       {
         name: 'Serjo',
@@ -426,6 +440,13 @@ export const players: Player[] = [
     discord: { userId: '556582468002775050' },
     characters: [
       {
+        name: 'Serlo',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Arms,
+      },
+      {
         name: 'Roombaboomba',
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
@@ -441,26 +462,6 @@ export const players: Player[] = [
       },
     ],
   },
-  // {
-  //   name: 'Greenbeam',
-  //   discord: { userId: '240514249024077824' },
-  //   characters: [
-  //     {
-  //       name: 'Greenbeam',
-  //       rank: CharacterRank.main,
-  //       role: CharacterRole.healer,
-  //       class: CharacterClass.shaman,
-  //       spec: CharacterSpecEnum.Restoration,
-  //     },
-  //     {
-  //       name: 'Mapleleaf',
-  //       rank: CharacterRank.alt,
-  //       role: CharacterRole.ranged,
-  //       class: CharacterClass.druid,
-  //       spec: CharacterSpecEnum.Balance,
-  //     },
-  //   ],
-  // },
   {
     name: 'Renko',
     discord: { userId: '319831527821410316' },
@@ -478,14 +479,7 @@ export const players: Player[] = [
         role: CharacterRole.tank,
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Feral,
-      },
-      {
-        name: 'Fantagodx',
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-        spec: CharacterSpecEnum.Arcane,
-      },
+      }
     ],
   },
   {
@@ -519,9 +513,15 @@ export const players: Player[] = [
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Retribution,
       },
+      {
+        name: 'Retrivutia',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Retribution,
+      },
     ],
   },
-  //notwink here
   {
     name: 'Bigfrendd',
     discord: { userId: '1213795318831779902' },
@@ -533,25 +533,12 @@ export const players: Player[] = [
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Enhancement,
       },
-    ],
-  },
-  {
-    name: 'Blackberry',
-    discord: { userId: '410492102959562753' },
-    characters: [
       {
-        name: 'Blackbary',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Enhancement,
-      },
-      {
-        name: 'Blackdye',
+        name: 'Bigkoshenya',
         rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.hunter,
-        spec: CharacterSpecEnum.BeastMastery,
+        role: CharacterRole.melee,
+        class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Feral,
       },
     ],
   },
@@ -647,6 +634,13 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Shadow,
       },
       {
+        name: 'Elitemob',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+      {
         name: 'Romovababka',
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
@@ -679,6 +673,13 @@ export const players: Player[] = [
         class: CharacterClass.hunter,
         spec: CharacterSpecEnum.BeastMastery,
       },
+      {
+        name: 'Manowarrr',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
+      },
     ],
   },
   {
@@ -691,6 +692,13 @@ export const players: Player[] = [
         role: CharacterRole.tank,
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Protection,
+      },
+      {
+        name: 'Prõfessõrr',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Affliction,
       },
     ],
   },
@@ -778,6 +786,39 @@ export const players: Player[] = [
         role: CharacterRole.ranged,
         class: CharacterClass.priest,
         spec: CharacterSpecEnum.Shadow,
+      },
+    ],
+  },
+  {
+    name: 'Obivan',
+    discord: { userId: '305053799523942401' },
+    characters: [
+      {
+        name: 'Obivankapman',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.rogue,
+        spec: CharacterSpecEnum.Combat,
+      },
+      {
+        name: 'Yourbunnywrote',
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Holy,
+      },
+    ],
+  },
+  {
+    name: 'Joyboyx',
+    discord: { userId: '320898119082573824' },
+    characters: [
+      {
+        name: 'Joyboyx',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Retribution,
       },
     ],
   },
