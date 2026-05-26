@@ -809,6 +809,7 @@ export const players: Player[] = [
       },
     ],
   },
+  //friend
   {
     name: 'Joyboyx',
     discord: { userId: '320898119082573824' },
