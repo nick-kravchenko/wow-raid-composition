@@ -681,7 +681,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.BeastMastery,
       },
       {
-        name: 'Manowarrr',
+        name: 'Månowar',
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.hunter,
