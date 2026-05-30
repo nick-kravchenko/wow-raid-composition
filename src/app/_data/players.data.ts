@@ -104,6 +104,13 @@ export const players: Player[] = [
         class: CharacterClass.hunter,
         spec: CharacterSpecEnum.Survival,
       },
+      {
+        name: 'Cambellsw',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Fury,
+      },
     ],
   },
   {
