@@ -15,6 +15,23 @@
     <span class="perf" [style.color]="rankPercentColor(wclCharacter.bestPerformanceAverage)">
       {{formatPercent(wclCharacter.bestPerformanceAverage)}}
     </span>
+    @if (overallDamageRanks.length) {
+      <span class="overall-info" aria-label="Overall SSC/TK DPS">
+        <i class="fa-solid fa-circle-info"></i>
+        <span class="overall-popover" role="tooltip">
+          <span class="overall-popover__title">Overall SSC/TK DPS</span>
+          @for (rank of overallDamageRanks; track rank.raid + '-' + rank.metric) {
+            <span class="overall-popover__row">
+              <span>{{rank.label}}</span>
+              <span [style.color]="rankPercentColor(rank.rankPercent)">
+                {{rank.rankPercent !== null ? formatPercent(rank.rankPercent) + '%' : '–'}}
+              </span>
+              <span>{{formatOverallRank(rank)}}</span>
+            </span>
+          }
+        </span>
+      </span>
+    }
   }
   @if (isGearVisible && wclCharacter) {
     <div class="gear">

@@ -11,7 +11,7 @@ import { CharacterClass } from '../_entities/character-class.enum';
 import { CharacterSpecEnum } from '../_entities/character-spec.enum';
 import { CharacterRole } from '../_entities/character-role.enum';
 import { DecimalPipe, LowerCasePipe } from '@angular/common';
-import { formatOverallRank } from './wcl-overall-ranks';
+import { formatOverallRank } from '../shared/wcl-overall-ranks';
 
 interface BisItem { id: number; name: string; source: string; }
 interface BisEntry { slot: string; item: BisItem; alts?: BisItem[]; }

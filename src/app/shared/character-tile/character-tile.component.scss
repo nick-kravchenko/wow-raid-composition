@@ -96,6 +96,60 @@ sup {
   text-shadow: -1px -1px 0 #0005, 1px -1px 0 #0005, -1px 1px 0 #0005, 1px 1px 0 #0005;
   z-index: 0;
 }
+.overall-info {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: .35rem;
+  color: colors.$regal-gold;
+  line-height: 1;
+  z-index: 2;
+
+  &:hover,
+  &:focus-within {
+    .overall-popover {
+      opacity: 1;
+      transform: translate(-50%, 0);
+      visibility: visible;
+    }
+  }
+}
+.overall-popover {
+  position: absolute;
+  bottom: calc(100% + .45rem);
+  left: 50%;
+  min-width: 20rem;
+  padding: .55rem .65rem;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, .94);
+  box-shadow: 0 .25rem 1rem rgba(0, 0, 0, .45);
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 600;
+  line-height: 1.25;
+  opacity: 0;
+  pointer-events: none;
+  text-shadow: none;
+  transform: translate(-50%, -.25rem);
+  transition: opacity .15s, transform .15s, visibility .15s;
+  visibility: hidden;
+  z-index: 10;
+}
+.overall-popover__title {
+  display: block;
+  margin-bottom: .35rem;
+  color: colors.$regal-gold;
+}
+.overall-popover__row {
+  display: grid;
+  grid-template-columns: max(0, 5fr) 1fr 3fr;
+  gap: .5rem;
+  padding: .15rem 0;
+}
 .gear {
   display: flex;
   flex-wrap: wrap;

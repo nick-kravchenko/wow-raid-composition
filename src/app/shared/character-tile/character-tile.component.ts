@@ -7,6 +7,7 @@ declare const $WowheadPower: { refreshLinks(): void } | undefined;
 import { wclBakedData, WclBakedCharacter } from '../../_data/wcl-baked.data';
 import { GEAR_SLOT_NAMES } from '../types/gear-slot-names';
 import {RouterLink} from '@angular/router';
+import { filterOverallDamageRanks, formatOverallRank } from '../wcl-overall-ranks';
 
 @Component({
   selector: 'app-character-tile',
@@ -39,6 +40,10 @@ export class CharacterTileComponent implements OnChanges {
     return wclBakedData.characters[this.character.name.toLowerCase()] ?? null;
   }
 
+  get overallDamageRanks() {
+    return filterOverallDamageRanks(this.wclCharacter?.overallRanks ?? []);
+  }
+
   rankPercentColor(percent: number | null): string {
     if (percent === null) return '#9d9d9d';
     if (percent === 100) return '#e5cc80';
@@ -53,6 +58,8 @@ export class CharacterTileComponent implements OnChanges {
   formatPercent(value: number | null): string {
     return value !== null ? `${Math.round(value * 10) / 10}` : '–';
   }
+
+  formatOverallRank = formatOverallRank;
 
   gearSlotName(slot: number): string {
     return GEAR_SLOT_NAMES[slot] ?? `Slot ${slot}`;
