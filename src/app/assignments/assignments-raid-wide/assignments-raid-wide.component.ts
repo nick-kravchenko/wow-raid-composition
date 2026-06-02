@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Character } from '../../_entities/character';
 import { CharacterClass } from '../../_entities/character-class.enum';
 import { CharacterRole } from '../../_entities/character-role.enum';
+import { CharacterSpecEnum } from '../../_entities/character-spec.enum';
 import { CharacterTileComponent } from '../../shared/character-tile/character-tile.component';
 import { IconEnum } from '../../_entities/icon.enum';
 import { KeyValuePipe } from '@angular/common';
@@ -190,11 +191,14 @@ export class AssignmentsRaidWideComponent implements OnInit {
 
 
   fillWarlockAssignments() {
-    const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged).reverse();
+    const warlocksInRaidOrder = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
+    const warlocks = [...warlocksInRaidOrder].reverse();
     const paladins = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     const priests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
     const druids = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer);
     const ssTargets = [...paladins, ...priests, ...druids];
+    const coeWarlock = warlocksInRaidOrder.find(warlock => warlock.spec === CharacterSpecEnum.Affliction);
+    const corWarlock = [...warlocksInRaidOrder].reverse().find(warlock => warlock.spec === CharacterSpecEnum.Destruction);
 
     this.assignments.warlocksAssignments.assignments.push({
       headerIcon: this.iconEnum.warlock,
@@ -208,14 +212,13 @@ export class AssignmentsRaidWideComponent implements OnInit {
     });
 
     const curses = [
-      {icon: this.iconEnum.coe, text: 'CoE'},
-      {icon: this.iconEnum.cor, text: 'CoR'},
+      {icon: this.iconEnum.coe, text: 'CoE', caster: coeWarlock},
+      {icon: this.iconEnum.cor, text: 'CoR', caster: corWarlock},
     ];
 
     for (let i = 0; i < curses.length; i++) {
-      const warlock = warlocks[i];
       this.assignments.warlocksAssignments.assignments[0].actions.push({
-        caster: warlock,
+        caster: curses[i].caster,
         target: curses[i].text,
         icon: curses[i].icon,
       });

@@ -257,21 +257,7 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     return actions;
   }
 
-  fillHydrossAssignments() {
-    const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
-    const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
-    const frTank = paladinTanks.shift();
-    const nrTank = druidTanks.shift();
-
-    this.assignments[AssignmentType.hydrossAssignments].assignments.push({
-      headerIcon: IconEnum.skull,
-      headerText: 'Tanks',
-      actions: [
-        { caster: frTank, target: 'FR Tank (Frost Phase)', icon: IconEnum.skull },
-        { caster: nrTank, target: 'NR Tank (Nature Phase)', icon: IconEnum.skull },
-      ],
-    });
-
+  private getHydrossRangedPositionGroups(): {label: string; members: Character[]}[] {
     const group4 = this.raid.slice(14, 20);
     const group4NonHealers = group4.filter(c => c?.role !== CharacterRole.healer);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
@@ -293,11 +279,29 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     const rightHealers: Character[] = [];
     allHealers.forEach((h, i) => (i % 2 === 0 ? leftHealers : rightHealers).push(h));
 
-    [
+    return [
       { label: 'Left', members: [...rangedLeft, ...leftHealers] },
       { label: 'Middle', members: group4NonHealers },
       { label: 'Right', members: [...hunters, ...rightHealers] },
-    ].forEach(group => {
+    ];
+  }
+
+  fillHydrossAssignments() {
+    const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
+    const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
+    const frTank = paladinTanks.shift();
+    const nrTank = druidTanks.shift();
+
+    this.assignments[AssignmentType.hydrossAssignments].assignments.push({
+      headerIcon: IconEnum.skull,
+      headerText: 'Tanks',
+      actions: [
+        { caster: frTank, target: 'FR Tank (Frost Phase)', icon: IconEnum.skull },
+        { caster: nrTank, target: 'NR Tank (Nature Phase)', icon: IconEnum.skull },
+      ],
+    });
+
+    this.getHydrossRangedPositionGroups().forEach(group => {
       this.assignments[AssignmentType.hydrossAssignments].assignments.push({
         headerIcon: IconEnum.skull,
         headerText: `Ranged ${group.label}`,
@@ -334,9 +338,6 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     const mages = this.getCharactersByClassAndRole(CharacterClass.mage, CharacterRole.ranged);
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
-    const rangedPriests = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.ranged);
-    const eleShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.ranged);
-    const boomies = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.ranged);
 
     const actions = [];
 
@@ -366,18 +367,18 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
       actions: ambusherActions,
     });
 
-    const rangedGroup1 = [...mages, ...rangedPriests];
-    const rangedGroup2 = [...hunters];
-    const rangedGroup3 = [...warlocks, ...eleShamans, ...boomies];
+    const [left, middle, right] = this.getHydrossRangedPositionGroups();
+    const middleMembers = right.members.filter(character => character.role !== CharacterRole.healer);
+    const movedHealers = right.members.filter(character => character.role === CharacterRole.healer);
 
     [
-      { label: 'LEFT', members: rangedGroup1 },
-      { label: 'MIDDLE', members: rangedGroup2 },
-      { label: 'RIGHT', members: rangedGroup3 },
+      {label: left.label, members: left.members},
+      {label: middle.label, members: middleMembers},
+      {label: right.label, members: [...middle.members, ...movedHealers]},
     ].forEach(group => {
       this.assignments[AssignmentType.lurkerBelowAssignments].assignments.push({
         headerIcon: IconEnum.skull,
-        headerText: group.label,
+        headerText: group.label.toUpperCase(),
         actions: this.pairUp(group.members),
       });
     });
@@ -451,30 +452,30 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
-    const tank1 = druidTanks.shift();
-    const tank2 = paladinTanks.shift();
-    const tank3 = druidTanks.shift();
+    const karathressTank = druidTanks.shift();
+    const protectionPaladinTank = paladinTanks.shift();
+    const caribdisTank = druidTanks.shift();
     const md1 = hunters.shift();
     const md2 = hunters.shift();
     const md3 = hunters.shift();
     const md4 = hunters.shift();
 
-    const actionsTidalvess = [{ caster: tank2, target: 'Tidalvess', icon: IconEnum.skull }];
-    const actionsSharkkis = [{ caster: tank1, target: 'Sharkkis', icon: IconEnum.cross }];
-    const actionsKarathress = [{ caster: tank1, target: 'Karathress', icon: IconEnum.square }];
-    const actionsCaribdis = [{ caster: tank3, target: 'Caribdis', icon: IconEnum.moon }];
+    const actionsTidalvess = [{ caster: protectionPaladinTank, target: 'Tidalvess', icon: IconEnum.skull }];
+    const actionsSharkkis = [{ caster: protectionPaladinTank, target: 'Sharkkis', icon: IconEnum.cross }];
+    const actionsKarathress = [{ caster: karathressTank, target: 'Karathress', icon: IconEnum.square }];
+    const actionsCaribdis = [{ caster: caribdisTank, target: 'Caribdis', icon: IconEnum.moon }];
 
     if (md1) {
-      actionsTidalvess.push({ caster: md1, target: tank2?.name ?? 'Tidalvess Tank', icon: IconEnum.misdirect });
+      actionsTidalvess.push({ caster: md1, target: protectionPaladinTank?.name ?? 'Tidalvess Tank', icon: IconEnum.misdirect });
     }
     if (md2) {
-      actionsSharkkis.push({ caster: md2, target: tank1?.name ?? 'Sharkkis Tank', icon: IconEnum.misdirect });
+      actionsSharkkis.push({ caster: md2, target: protectionPaladinTank?.name ?? 'Sharkkis Tank', icon: IconEnum.misdirect });
     }
     if (md3) {
-      actionsCaribdis.push({ caster: md3, target: tank1?.name ?? 'Sharkkis Tank', icon: IconEnum.misdirect });
+      actionsCaribdis.push({ caster: md3, target: caribdisTank?.name ?? 'Caribdis Tank', icon: IconEnum.misdirect });
     }
     if (md4) {
-      actionsKarathress.push({ caster: md4, target: tank1?.name ?? 'Sharkkis Tank', icon: IconEnum.misdirect });
+      actionsKarathress.push({ caster: md4, target: karathressTank?.name ?? 'Karathress Tank', icon: IconEnum.misdirect });
     }
     actionsCaribdis.push(...(restoShamans[0] ? [{ caster: restoShamans[0], target: 'Healing Wave interrupt', icon: IconEnum.kick }] : []));
 
