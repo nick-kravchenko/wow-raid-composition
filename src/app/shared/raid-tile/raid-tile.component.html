@@ -34,18 +34,18 @@
   </div>
   <h3>
     @if (!hideControls()) {
-      <button class="title-edit-btn" (click)="toggleTitleEdit()" [title]="editingTitle() ? 'Save' : 'Edit title'">
-        @if (editingTitle()) {
-          <i class="fa-solid fa-floppy-disk"></i>
-        } @else {
-          <i class="fa-solid fa-pencil"></i>
+      <form class="title-edit-form" (submit)="submitTitleEdit($event)">
+        @if (!editingTitle()) {
+          <button class="title-edit-btn" type="button" (click)="startTitleEdit()" title="Edit title">
+            <i class="fa-solid fa-pencil"></i>
+          </button>
         }
-      </button>
-      @if (editingTitle()) {
-        <input #titleInput type="text" [value]="titleValue()" (input)="onTitleChange($event)" />
-      } @else {
-        <span class="title">{{titleValue()}}</span>
-      }
+        @if (editingTitle()) {
+          <input #titleInput type="text" [value]="titleValue()" (input)="onTitleChange($event)" />
+        } @else {
+          <span class="title">{{titleValue()}}</span>
+        }
+      </form>
     } @else {
       <span class="title">{{titleValue()}}</span>
     }

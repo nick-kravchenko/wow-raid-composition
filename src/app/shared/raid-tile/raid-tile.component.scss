@@ -102,6 +102,10 @@ header {
       opacity: .75;
       &:hover { color: #fff; }
     }
+    .title-edit-form {
+      display: flex;
+      align-items: center;
+    }
     input {
       border: 1px solid #9d9d9d;
       height: 1.5rem;
@@ -110,10 +114,10 @@ header {
       font: inherit;
       text-align: center;
       outline: none;
-      width: 7rem;
+      width: 8.4rem;
     }
     .title {
-      width: 7rem;
+      width: 8.4rem;
       text-align: center;
       justify-content: center;
     }

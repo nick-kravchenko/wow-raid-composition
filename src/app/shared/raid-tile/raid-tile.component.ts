@@ -62,12 +62,14 @@ export class RaidTileComponent {
   healerCount = computed(() => this.raid().filter((c: Character) => !!c && c.role === CharacterRole.healer).length);
   queryParamsRaid = computed(() => this.raid().map((c: Character) => c?.name || '').join('_'));
 
-  toggleTitleEdit(): void {
-    const nowEditing = !this.editingTitle();
-    this.editingTitle.set(nowEditing);
-    if (nowEditing) {
-      setTimeout(() => this.titleInput()?.nativeElement.focus(), 0);
-    }
+  startTitleEdit(): void {
+    this.editingTitle.set(true);
+    setTimeout(() => this.titleInput()?.nativeElement.focus(), 0);
+  }
+
+  submitTitleEdit(event: Event): void {
+    event.preventDefault();
+    this.editingTitle.set(false);
   }
 
   onTitleChange(event: Event): void {
