@@ -1,4 +1,5 @@
 import { Component, ElementRef, computed, inject, input, linkedSignal, output, signal, viewChild } from '@angular/core';
+import { LowerCasePipe } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
 import html2canvas from 'html2canvas';
@@ -8,11 +9,14 @@ import { CharacterRank } from '../../_entities/character-rank.enum';
 import { CharacterTileComponent } from '../character-tile/character-tile.component';
 import { RouterLink } from '@angular/router';
 import { BitlyService } from '../bitly.service';
+import { wclBakedData } from '../../_data/wcl-baked.data';
+import { buildRaidDamageSummary, formatRaidDamage } from './raid-damage-summary';
 
 @Component({
   selector: 'app-raid-tile',
   imports: [
     CharacterTileComponent,
+    LowerCasePipe,
     RouterLink,
   ],
   templateUrl: './raid-tile.component.html',
@@ -61,6 +65,8 @@ export class RaidTileComponent {
   rangedCount = computed(() => this.raid().filter((c: Character) => !!c && c.role === CharacterRole.ranged).length);
   healerCount = computed(() => this.raid().filter((c: Character) => !!c && c.role === CharacterRole.healer).length);
   queryParamsRaid = computed(() => this.raid().map((c: Character) => c?.name || '').join('_'));
+  raidDamageSummary = computed(() => buildRaidDamageSummary(this.raid(), wclBakedData.characters));
+  formatRaidDamage = formatRaidDamage;
 
   startTitleEdit(): void {
     this.editingTitle.set(true);

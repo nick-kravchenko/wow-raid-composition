@@ -144,6 +144,50 @@ header {
   .ratio {
     margin: 0 0 0 16px;
   }
+  .raid-dps {
+    margin-left: 16px;
+    color: #fff;
+  }
+  .raid-dps--unranked {
+    color: colors.$victory-red;
+  }
+  .overall-info {
+    position: relative;
+    margin-left: .35rem;
+    color: colors.$regal-gold;
+
+    &:hover {
+      .overall-popover {
+        display: block;
+      }
+    }
+  }
+  .overall-popover {
+    display: none;
+    position: absolute;
+    top: calc(100% + .45rem);
+    left: 50%;
+    min-width: 16rem;
+    padding: .55rem .65rem;
+    background: rgba(0, 0, 0, .94);
+    color: #fff;
+    text-shadow: none;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .overall-popover__row {
+    justify-content: space-between;
+  }
+  .overall-popover__note {
+    display: block;
+    margin-top: .4rem;
+    color: colors.$victory-red;
+  }
+  .overall-popover__unranked-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+  }
   .green {
     color: green;
   }

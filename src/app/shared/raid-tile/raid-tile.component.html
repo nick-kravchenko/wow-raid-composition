@@ -56,6 +56,41 @@
     <span class="ratio">
       [<span class="yellow">{{altCounter()}}</span>/<span class="green">{{mainCounter()}}</span>]
     </span>
+    <span class="raid-dps" [class.raid-dps--unranked]="raidDamageSummary().hasUnranked">
+      {{formatRaidDamage(raidDamageSummary().raidDps)}}
+    </span>
+    <span class="overall-info" aria-label="Raid SSC/TK DPS">
+      <i class="fa-solid fa-circle-info"></i>
+      <span class="overall-popover" role="tooltip">
+        <span class="overall-popover__title">Raid SSC/TK DPS</span>
+        <span class="overall-popover__row">
+          <span>SSC bosses</span>
+          <span>{{formatRaidDamage(raidDamageSummary().sscBossesDamage)}} DPS</span>
+        </span>
+        <span class="overall-popover__row">
+          <span>SSC bosses + trash</span>
+          <span>{{formatRaidDamage(raidDamageSummary().sscBossesTrashDamage)}} DPS</span>
+        </span>
+        <span class="overall-popover__row">
+          <span>TK bosses</span>
+          <span>{{formatRaidDamage(raidDamageSummary().tkBossesDamage)}} DPS</span>
+        </span>
+        <span class="overall-popover__row">
+          <span>TK bosses + trash</span>
+          <span>{{formatRaidDamage(raidDamageSummary().tkBossesTrashDamage)}} DPS</span>
+        </span>
+        @if (raidDamageSummary().hasUnranked) {
+          <span class="overall-popover__note">
+            Unranked characters:
+            <span class="overall-popover__unranked-list">
+              @for (character of raidDamageSummary().unrankedCharacters; track character.name) {
+                <span class="text-{{character.class | lowercase}}">{{character.name}}</span>
+              }
+            </span>
+          </span>
+        }
+      </span>
+    </span>
   </h3>
   <div class="external-actions" data-html2canvas-ignore="true">
     @if (!hideControls()) {
