@@ -245,7 +245,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Survival,
       },
       {
-        name: 'Gromobiy',
+        name: 'Serjoo',
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
