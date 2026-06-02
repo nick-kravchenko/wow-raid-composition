@@ -373,73 +373,68 @@ export class AssignmentsRaidWideComponent implements OnInit {
   }
 
   fillTankHealerAssignments() {
-    const tanks = [
-      ...this.getCharactersByClassAndRole(CharacterClass.warrior, CharacterRole.tank),
-      ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank),
-      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank),
-    ];
+    const feralTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank)
+      .filter(tank => tank.spec === CharacterSpecEnum.Feral);
+    const protectionPaladin = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank)
+      .find(tank => tank.spec === CharacterSpecEnum.Protection);
+
     const healers = [
-      ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer),
-      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer),
-      ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer),
-    ];
-    const marksToTank = [
-      {
-        icon: this.iconEnum.skull,
-        text: 'Skull',
-      },
-      {
-        icon: this.iconEnum.cross,
-        text: 'Cross',
-      },
-      {
-        icon: this.iconEnum.square,
-        text: 'Square',
-      },
-      {
-        icon: this.iconEnum.moon,
-        text: 'Moon',
-      },
-      {
-        icon: this.iconEnum.triangle,
-        text: 'Triangle',
-      },
-      {
-        icon: this.iconEnum.diamond,
-        text: 'Diamond',
-      },
-      {
-        icon: this.iconEnum.circle,
-        text: 'Circle',
-      },
-      {
-        icon: this.iconEnum.star,
-        text: 'Star',
-      },
+      ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Holy),
+      ...this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+      ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Discipline || healer.spec === CharacterSpecEnum.Holy),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
     ];
 
     this.assignments.tanksHealersHuntersAssignments.assignments.push({
       headerIcon: this.iconEnum.protection,
-      headerText: 'Target to tank',
-      actions: [],
+      headerText: 'Target to tank (2 mobs)',
+      actions: [
+        { caster: feralTanks[0], target: 'Skull', icon: this.iconEnum.skull },
+        { caster: protectionPaladin, target: 'Cross', icon: this.iconEnum.cross },
+      ],
     });
 
     this.assignments.tanksHealersHuntersAssignments.assignments.push({
-      headerIcon: this.iconEnum.holyLight,
-      headerText: 'Target to heal',
-      actions: [],
+      headerIcon: this.iconEnum.protection,
+      headerText: 'Target to tank (many mobs)',
+      actions: [
+        { caster: feralTanks[0], target: 'Skull', icon: this.iconEnum.skull },
+        { caster: protectionPaladin, target: 'Cross +', icon: this.iconEnum.cross },
+        { caster: feralTanks[1], target: 'Square', icon: this.iconEnum.square },
+      ],
     });
 
-    for (let i = 0; i < tanks.length; i++) {
-      this.assignments.tanksHealersHuntersAssignments.assignments[0].actions.push({
-        caster: tanks[i],
-        target: marksToTank[i].text,
-        icon: marksToTank[i].icon,
-      });
+    const twoMobsFirstTank = feralTanks[0] ?? 'Skull tank';
+    const twoMobsSecondTank = protectionPaladin ?? 'Cross tank';
+    this.assignments.tanksHealersHuntersAssignments.assignments.push({
+      headerIcon: this.iconEnum.holyLight,
+      headerText: 'Target to heal (2 mobs)',
+      actions: [
+        { caster: healers[0], target: twoMobsFirstTank, icon: this.iconEnum.holyLight },
+        { caster: healers[2], target: twoMobsFirstTank, icon: this.iconEnum.holyLight },
+        { caster: healers[1], target: twoMobsSecondTank, icon: this.iconEnum.holyLight },
+        { caster: healers[3], target: twoMobsSecondTank, icon: this.iconEnum.holyLight },
+      ],
+    });
 
-      this.assignments.tanksHealersHuntersAssignments.assignments[1].actions.push({
+    const manyMobsThirdTank = protectionPaladin ?? 'Square tank';
+    this.assignments.tanksHealersHuntersAssignments.assignments.push({
+      headerIcon: this.iconEnum.holyLight,
+      headerText: 'Target to heal (many mobs)',
+      actions: [
+        { caster: healers[0], target: feralTanks[0] ?? 'Skull tank', icon: this.iconEnum.holyLight },
+        { caster: healers[1], target: feralTanks[1] ?? 'Cross tank', icon: this.iconEnum.holyLight },
+      ],
+    });
+
+    for (let i = 2; i < healers.length; i++) {
+      this.assignments.tanksHealersHuntersAssignments.assignments[3].actions.push({
         caster: healers[i],
-        target: tanks[i],
+        target: manyMobsThirdTank,
         icon: this.iconEnum.holyLight,
       });
     }
