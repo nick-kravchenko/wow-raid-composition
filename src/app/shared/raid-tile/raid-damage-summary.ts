@@ -82,7 +82,7 @@ export function buildRaidDamageSummary(
   }
 
   return {
-    raidDps: Math.round((sscDamage + tkDamage) / 2),
+    raidDps: Math.round((sscDamage + tkDamage) / 4),
     sscDamage: Math.round(sscDamage),
     tkDamage: Math.round(tkDamage),
     sscBossesDamage: Math.round(sscBossesDamage),
