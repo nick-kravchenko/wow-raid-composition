@@ -4,6 +4,7 @@ import {Character} from '../../_entities/character';
 import {IconEnum} from '../../_entities/icon.enum';
 import {CharacterClass} from '../../_entities/character-class.enum';
 import {CharacterRole} from '../../_entities/character-role.enum';
+import {CharacterSpecEnum} from '../../_entities/character-spec.enum';
 
 interface AssignmentAction {
   caster: Character | string | undefined;
@@ -206,15 +207,55 @@ export class AssignmentsTkComponent implements OnInit {
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
     const warlocks = this.getCharactersByClassAndRole(CharacterClass.warlock, CharacterRole.ranged);
     const hunters = this.getCharactersByClassAndRole(CharacterClass.hunter, CharacterRole.ranged);
+    const protectionPaladin = paladinTanks.find(tank => tank.spec === CharacterSpecEnum.Protection);
+    const capernianTank = [...warlocks].reverse().find(warlock => warlock.spec === CharacterSpecEnum.Destruction);
+    const capernianConflagrationTank = protectionPaladin ?? paladinTanks[0];
+    const bowTank = hunters[hunters.length - 1];
+    const sanguinarTank = druidTanks[0] ?? paladinTanks[0] ?? 'Sanguinar tank';
+    const telonicusTank = druidTanks[1] ?? paladinTanks[0] ?? 'Telonicus tank';
+    const axeTank = druidTanks[0] ?? 'Axe tank';
+    const weaponsTank = paladinTanks[0] ?? 'Weapons tank';
+    const healers = [
+      ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Holy),
+      ...this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+      ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Discipline || healer.spec === CharacterSpecEnum.Holy),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+    ];
+    const specialTankHealer = healers[healers.length - 1];
+    const regularTankHealers = healers.slice(0, -1);
+
+    const getManyMobsHealerAssignments = (
+      firstTank: Character | string,
+      secondTank: Character | string,
+      thirdTank: Character | string,
+    ): AssignmentAction[] => [
+      { caster: regularTankHealers[0], target: firstTank, icon: IconEnum.holyLight },
+      { caster: regularTankHealers[1], target: secondTank, icon: IconEnum.holyLight },
+      ...regularTankHealers.slice(2).map(healer => ({
+        caster: healer,
+        target: thirdTank,
+        icon: IconEnum.holyLight,
+      })),
+    ];
+    const getP3HealerAssignments = (): AssignmentAction[] => [
+      { caster: regularTankHealers[0], target: druidTanks[0] ?? 'First druid tank', icon: IconEnum.holyLight },
+      { caster: regularTankHealers[1], target: druidTanks[1] ?? 'Second druid tank', icon: IconEnum.holyLight },
+      { caster: regularTankHealers[2], target: capernianConflagrationTank ?? 'Paladin soaker', icon: IconEnum.holyLight },
+    ];
 
     this.assignments[AssignmentType.kaelthasAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'P1 Advisors - Tanks',
       actions: [
         { caster: '-', target: 'Thaladred - No tank', icon: IconEnum.skull },
-        { caster: (druidTanks[0] ?? paladinTanks[0]), target: 'Sanguinar', icon: IconEnum.cross },
-        { caster: warlocks[0], target: 'Capernian', icon: IconEnum.square },
-        { caster: (druidTanks[1] ?? paladinTanks[0]), target: 'Telonicus', icon: IconEnum.moon },
+        { caster: sanguinarTank, target: 'Sanguinar', icon: IconEnum.cross },
+        { caster: capernianTank, target: 'Capernian', icon: IconEnum.square },
+        { caster: capernianConflagrationTank, target: 'Capernian (Conflagration)', icon: IconEnum.protection },
+        { caster: telonicusTank, target: 'Telonicus', icon: IconEnum.moon },
       ],
     });
 
@@ -222,9 +263,11 @@ export class AssignmentsTkComponent implements OnInit {
       headerIcon: IconEnum.skull,
       headerText: 'P2 Weapon Phase - Tanks',
       actions: [
-        { caster: druidTanks[0], target: 'Axe (Devastation)', icon: undefined },
-        { caster: hunters[0], target: 'Bow (Netherstrand Longbow )', icon: IconEnum.hunter },
-        { caster: paladinTanks[0], target: 'All other weapons', icon: IconEnum.protection },
+        { caster: axeTank, target: 'Axe (Devastation)', icon: undefined },
+        { caster: bowTank, target: 'Bow (Netherstrand Longbow )', icon: IconEnum.hunter },
+        { caster: weaponsTank, target: 'All other weapons', icon: IconEnum.protection },
+        { caster: specialTankHealer, target: bowTank ?? 'Bow tank', icon: IconEnum.holyLight },
+        ...getManyMobsHealerAssignments(axeTank, weaponsTank, weaponsTank),
       ],
     });
 
@@ -241,9 +284,12 @@ export class AssignmentsTkComponent implements OnInit {
       headerIcon: IconEnum.skull,
       headerText: 'P3 Tank Assignments',
       actions: [
-        { caster: (druidTanks[0] ?? paladinTanks[0]), target: 'Sanguinar', icon: IconEnum.cross },
-        { caster: warlocks[0], target: 'Capernian', icon: IconEnum.square },
-        { caster: (druidTanks[1] ?? paladinTanks[0]), target: 'Telonicus', icon: IconEnum.moon },
+        { caster: sanguinarTank, target: 'Sanguinar', icon: IconEnum.cross },
+        { caster: capernianTank, target: 'Capernian', icon: IconEnum.square },
+        { caster: capernianConflagrationTank, target: 'Capernian (Conflagration)', icon: IconEnum.protection },
+        { caster: telonicusTank, target: 'Telonicus', icon: IconEnum.moon },
+        { caster: specialTankHealer, target: capernianTank ?? 'Capernian tank', icon: IconEnum.holyLight },
+        ...getP3HealerAssignments(),
       ],
     });
 
