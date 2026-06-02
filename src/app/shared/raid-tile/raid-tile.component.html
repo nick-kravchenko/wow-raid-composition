@@ -57,30 +57,40 @@
       [<span class="yellow">{{altCounter()}}</span>/<span class="green">{{mainCounter()}}</span>]
     </span>
     <span class="raid-dps" [class.raid-dps--unranked]="raidDamageSummary().hasUnranked">
-      {{formatRaidDamage(raidDamageSummary().raidDps)}}
+      {{formatRaidDamage(raidDamageSummary().raidDps)}} DPS / {{formatRaidDamage(raidDamageSummary().raidHps)}} HPS
     </span>
-    <span class="overall-info" aria-label="Raid SSC/TK DPS">
+    <span class="overall-info" aria-label="Raid SSC/TK DPS and HPS">
       <i class="fa-solid fa-circle-info"></i>
       <span class="overall-popover" role="tooltip">
-        <span class="overall-popover__title">Raid SSC/TK DPS</span>
+        <span class="overall-popover__title">Raid SSC/TK DPS and HPS</span>
+        <span class="overall-popover__section-title">SSC</span>
         <span class="overall-popover__row">
-          <span>SSC bosses</span>
+          <span>Bosses</span>
           <span>{{formatRaidDamage(raidDamageSummary().sscBossesDamage)}} DPS</span>
         </span>
         <span class="overall-popover__row">
-          <span>SSC bosses + trash</span>
+          <span>Bosses + trash</span>
           <span>{{formatRaidDamage(raidDamageSummary().sscBossesTrashDamage)}} DPS</span>
         </span>
         <span class="overall-popover__row">
-          <span>TK bosses</span>
+          <span>Healing</span>
+          <span>{{formatRaidDamage(raidDamageSummary().sscHealing)}} HPS</span>
+        </span>
+        <span class="overall-popover__section-title overall-popover__section-title--divider">TK</span>
+        <span class="overall-popover__row">
+          <span>Bosses</span>
           <span>{{formatRaidDamage(raidDamageSummary().tkBossesDamage)}} DPS</span>
         </span>
         <span class="overall-popover__row">
-          <span>TK bosses + trash</span>
+          <span>Bosses + trash</span>
           <span>{{formatRaidDamage(raidDamageSummary().tkBossesTrashDamage)}} DPS</span>
         </span>
+        <span class="overall-popover__row">
+          <span>Healing</span>
+          <span>{{formatRaidDamage(raidDamageSummary().tkHealing)}} HPS</span>
+        </span>
         @if (raidDamageSummary().hasUnranked) {
-          <span class="overall-popover__note">
+          <span class="overall-popover__note overall-popover__note--section">
             Unranked characters:
             <span class="overall-popover__unranked-list">
               @for (character of raidDamageSummary().unrankedCharacters; track character.name) {

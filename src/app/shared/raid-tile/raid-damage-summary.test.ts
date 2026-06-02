@@ -40,6 +40,7 @@ const rank = (
 const wclCharacter = (
   name: string,
   amounts: [number | null, number | null, number | null, number | null],
+  hpsAmounts: [number | null, number | null] = [null, null],
 ): WclBakedCharacter => ({
   characterName: name,
   serverSlug: 'spineshatter',
@@ -52,6 +53,8 @@ const wclCharacter = (
     rank('ssc', 'dps-bosses-trash', amounts[1]),
     rank('tk', 'dps-bosses', amounts[2]),
     rank('tk', 'dps-bosses-trash', amounts[3]),
+    rank('ssc', 'hps', hpsAmounts[0]),
+    rank('tk', 'hps', hpsAmounts[1]),
   ],
   bestPerformanceAverage: 77.7,
   medianPerformanceAverage: 77.7,
@@ -70,13 +73,13 @@ const summary = buildRaidDamageSummary(
   {
     rankedone: wclCharacter('Rankedone', [1000, 500, 800, 400]),
     unrankedone: wclCharacter('Unrankedone', [600, 300, null, null]),
-    healerone: wclCharacter('Healerone', [9999, 9999, 9999, 9999]),
+    healerone: wclCharacter('Healerone', [9999, 9999, 9999, 9999], [1200, null]),
   },
 );
 
 assert.equal(
   summary.raidDps,
-  1800,
+  900,
   'raid DPS should sum non-healer character averages across SSC and TK damage',
 );
 
@@ -84,6 +87,9 @@ assert.deepEqual(
   {
     sscDamage: summary.sscDamage,
     tkDamage: summary.tkDamage,
+    raidHps: summary.raidHps,
+    sscHealing: summary.sscHealing,
+    tkHealing: summary.tkHealing,
     sscBossesDamage: summary.sscBossesDamage,
     sscBossesTrashDamage: summary.sscBossesTrashDamage,
     tkBossesDamage: summary.tkBossesDamage,
@@ -96,14 +102,20 @@ assert.deepEqual(
   {
     sscDamage: 2400,
     tkDamage: 1200,
+    raidHps: 600,
+    sscHealing: 1200,
+    tkHealing: 0,
     sscBossesDamage: 1600,
     sscBossesTrashDamage: 800,
     tkBossesDamage: 800,
     tkBossesTrashDamage: 400,
-    unrankedCount: 1,
+    unrankedCount: 2,
     characterCount: 2,
     hasUnranked: true,
-    unrankedCharacters: [['Unrankedone', CharacterClass.rogue]],
+    unrankedCharacters: [
+      ['Unrankedone', CharacterClass.rogue],
+      ['Healerone', CharacterClass.mage],
+    ],
   },
   'raid damage summary should include per-metric totals and unranked non-healer characters',
 );

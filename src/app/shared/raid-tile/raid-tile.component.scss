@@ -165,28 +165,79 @@ header {
   .overall-popover {
     display: none;
     position: absolute;
-    top: calc(100% + .45rem);
+    top: calc(100% + .35rem);
     left: 50%;
-    min-width: 16rem;
-    padding: .55rem .65rem;
+    width: 15rem;
+    padding: .45rem .55rem;
     background: rgba(0, 0, 0, .94);
+    border: 1px solid rgba(255, 255, 255, .14);
     color: #fff;
+    font-size: .75rem;
+    line-height: 1.15rem;
     text-shadow: none;
     transform: translateX(-50%);
     z-index: 1;
   }
+  .overall-popover__title {
+    display: block;
+    padding-bottom: .3rem;
+    margin-bottom: .2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .16);
+    color: #fff;
+    font-weight: 700;
+  }
   .overall-popover__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: .65rem;
     justify-content: space-between;
+    padding: .1rem 0;
+
+    span:first-child {
+      overflow: hidden;
+      text-align: left;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    span:last-child {
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+  .overall-popover__section-title {
+    display: block;
+    margin-top: .2rem;
+    color: colors.$regal-gold;
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .overall-popover__section-title--divider {
+    margin-top: .3rem;
+    padding-top: .35rem;
+    border-top: 1px solid rgba(255, 255, 255, .16);
   }
   .overall-popover__note {
     display: block;
-    margin-top: .4rem;
+    margin-top: .25rem;
     color: colors.$victory-red;
+    font-weight: 700;
+    line-height: 1.1rem;
+    text-align: center;
+  }
+  .overall-popover__note--section {
+    padding-top: .35rem;
+    border-top: 1px solid rgba(255, 255, 255, .16);
   }
   .overall-popover__unranked-list {
     display: flex;
     flex-wrap: wrap;
-    gap: .25rem;
+    justify-content: center;
+    gap: 0 .25rem;
+    font-weight: 700;
   }
   .green {
     color: green;
