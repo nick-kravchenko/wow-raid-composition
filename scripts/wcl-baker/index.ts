@@ -26,6 +26,7 @@ import { fileURLToPath } from 'url';
 // players.data.ts uses only plain string enums - no Angular runtime required.
 // tsx (esbuild) resolves its relative imports correctly.
 import { players } from '../../src/app/_data/players.data';
+import type { CharacterRole } from '../../src/app/_entities/character-role.enum';
 
 import { getAccessToken } from './auth';
 import { WclApiClient } from './api';
@@ -35,6 +36,7 @@ import {
   GET_REPORT_MASTER_DATA,
   GET_REPORT_COMBATANT_INFO,
 } from './queries';
+import { fetchCharacterOverallRanks } from './overall-ranks';
 import {
   buildBakedCharacter,
   buildErrorCharacter,
@@ -80,6 +82,9 @@ const CLIENT_SECRET = requireEnv('WCL_CLIENT_SECRET');
 const DEFAULT_REALM = requireEnv('WCL_DEFAULT_REALM');
 const DEFAULT_REGION = requireEnv('WCL_DEFAULT_REGION');
 const ZONE_ID = process.env['WCL_ZONE_ID'] ? parseInt(process.env['WCL_ZONE_ID'], 10) : null;
+const OVERALL_RANK_ZONE_ID = parseInt(process.env['WCL_OVERALL_RANK_ZONE_ID'] ?? '1056', 10);
+const WCL_OVERALL_SSC_BOSS_ID = parseInt(process.env['WCL_OVERALL_SSC_BOSS_ID'] ?? '100702', 10);
+const WCL_OVERALL_TK_BOSS_ID = parseInt(process.env['WCL_OVERALL_TK_BOSS_ID'] ?? '100703', 10);
 const SKIP_GEAR = process.env['WCL_SKIP_GEAR'] === 'true';
 const API_DELAY_MS = parseInt(process.env['WCL_API_DELAY_MS'] ?? '300', 10);
 const BATCH_SIZE = parseInt(process.env['WCL_BATCH_SIZE'] ?? '10', 10);
@@ -291,6 +296,7 @@ async function fetchCharacterData(
   name: string,
   serverSlug: string,
   serverRegion: string,
+  role: CharacterRole,
   fetchedAt: string,
 ): Promise<WclBakedCharacter> {
   // Fetch rankings
@@ -325,6 +331,21 @@ async function fetchCharacterData(
     });
   }
 
+  const overallRanks = await fetchCharacterOverallRanks({
+    client,
+    name,
+    serverSlug,
+    serverRegion,
+    role,
+    config: {
+      zoneID: OVERALL_RANK_ZONE_ID,
+      sscBossID: WCL_OVERALL_SSC_BOSS_ID,
+      tkBossID: WCL_OVERALL_TK_BOSS_ID,
+    },
+    delayMs: API_DELAY_MS,
+    warn,
+  });
+
   // Fetch gear (best-effort, does not fail the character entry)
   let gear: WclGearItem[] = [];
   let gearError: string | null = null;
@@ -336,9 +357,11 @@ async function fetchCharacterData(
     if (gearError) {
       warn(`Gear not fetched for "${name}": ${gearError}`);
     }
+  } else {
+    gearError = 'Gear fetching skipped';
   }
 
-  return buildBakedCharacter({ rawCharacter, gear, gearError, fetchedAt });
+  return buildBakedCharacter({ rawCharacter, gear, gearError, overallRanks, fetchedAt });
 }
 
 // ── Output file generation ───────────────────────────────────────────────────
@@ -366,6 +389,7 @@ export interface WclEncounterRanking {
   totalKills: number;
   fastestKill: number;
   bestAmount: number;
+  highestDps: number;
   spec: string;
   allStars: {
     points: number | null;
@@ -375,6 +399,25 @@ export interface WclEncounterRanking {
   } | null;
 }
 
+export type WclOverallRankMetric = 'dps-bosses' | 'dps-bosses-trash' | 'hps';
+
+export interface WclOverallRank {
+  raid: 'ssc' | 'tk';
+  raidName: string;
+  bossID: number;
+  metric: WclOverallRankMetric;
+  label: string;
+  rank: number | null;
+  rankPercent: number | null;
+  total: number | null;
+  bestAmount: number | null;
+  medianPerformance: number | null;
+  averagePerformance: number | null;
+  totalKills: number;
+  fastestKill: number | null;
+  sourceUrl: string;
+}
+
 export interface WclBakedCharacter {
   characterName: string;
   serverSlug: string;
@@ -382,6 +425,7 @@ export interface WclBakedCharacter {
   wclId: number | null;
   gear: WclGearItem[];
   rankings: WclEncounterRanking[];
+  overallRanks: WclOverallRank[];
   bestPerformanceAverage: number | null;
   medianPerformanceAverage: number | null;
   totalKills: number;
@@ -428,19 +472,20 @@ async function main(): Promise<void> {
   const client = new WclApiClient(token);
 
   // Flatten all characters, keeping their player name for diagnostics
-  const characters: Array<{ playerName: string; charName: string }> = [];
+  const characters: Array<{ playerName: string; charName: string; role: CharacterRole }> = [];
   for (const player of players) {
     for (const character of player.characters ?? []) {
       characters.push({
         playerName: player.name as string,
         charName: character.name as string,
+        role: character.role,
       });
     }
   }
 
   log(`Found ${characters.length} characters across ${players.length} players`);
   log(
-    `Config: realm=${DEFAULT_REALM} region=${DEFAULT_REGION} zoneID=${ZONE_ID ?? 'all'} skipGear=${SKIP_GEAR} batchSize=${BATCH_SIZE}`,
+    `Config: realm=${DEFAULT_REALM} region=${DEFAULT_REGION} zoneID=${ZONE_ID ?? 'all'} overallRankZoneID=${OVERALL_RANK_ZONE_ID} overallSSC=${WCL_OVERALL_SSC_BOSS_ID} overallTK=${WCL_OVERALL_TK_BOSS_ID} skipGear=${SKIP_GEAR} batchSize=${BATCH_SIZE}`,
   );
 
   const existingCharacters = readExistingCharacters();
@@ -456,10 +501,10 @@ async function main(): Promise<void> {
     log(`Batch ${Math.floor(batchStart / BATCH_SIZE) + 1}: characters ${batchStart + 1}–${batchEnd} of ${characters.length}`);
 
     const batchResults = await Promise.all(
-      batch.map(({ playerName, charName }, j) => {
+      batch.map(({ playerName, charName, role }, j) => {
         const idx = batchStart + j + 1;
         log(`  [${idx}/${characters.length}] Queuing "${charName}" (${playerName})`);
-        return fetchCharacterData(client, charName, DEFAULT_REALM, DEFAULT_REGION, generatedAt)
+        return fetchCharacterData(client, charName, DEFAULT_REALM, DEFAULT_REGION, role, generatedAt)
           .then((baked) => ({ charName, playerName, baked }));
       }),
     );

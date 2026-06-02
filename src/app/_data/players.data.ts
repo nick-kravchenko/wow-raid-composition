@@ -808,7 +808,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Combat,
       },
       {
-        name: 'Yourbunnywrote',
+        name: 'Yourßunywrot',
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.priest,

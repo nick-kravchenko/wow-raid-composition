@@ -11,6 +11,7 @@ import { CharacterClass } from '../_entities/character-class.enum';
 import { CharacterSpecEnum } from '../_entities/character-spec.enum';
 import { CharacterRole } from '../_entities/character-role.enum';
 import { DecimalPipe, LowerCasePipe } from '@angular/common';
+import { formatOverallRank } from './wcl-overall-ranks';
 
 interface BisItem { id: number; name: string; source: string; }
 interface BisEntry { slot: string; item: BisItem; alts?: BisItem[]; }
@@ -167,6 +168,12 @@ export class CharacterComponent implements OnInit, OnChanges {
     const pts = wcl.rankings.reduce((sum, r) => sum + (r.allStars?.points ?? 0), 0);
     return pts > 0 ? pts : null;
   }
+
+  wclOverallRanks(wcl: WclBakedCharacter) {
+    return wcl.overallRanks ?? [];
+  }
+
+  formatOverallRank = formatOverallRank;
 
   isBis(slotName: string, itemId: number | undefined): boolean {
     if (!itemId) return false;

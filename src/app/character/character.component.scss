@@ -201,8 +201,17 @@
     background: #000;
   }
 }
+.overall-rank-row {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    background: #1d1d1d;
+  }
+}
 .parse-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 3.5rem 8rem 3.5rem;
   font-size: 1rem;
   &:nth-child(odd) {
     background: #101010;
@@ -210,12 +219,18 @@
   span {
     padding: .25rem .5rem;
     border-right: 1px solid #333;
+    min-width: 0;
     &:last-child {
       border-right: none;
     }
   }
   &-boss {
-    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-val {
+    text-align: right;
   }
 }
 

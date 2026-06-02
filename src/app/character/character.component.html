@@ -41,11 +41,30 @@
           </div>
         </div>
         <div class="parses-list">
+          @if (wclOverallRanks(wcl).length) {
+            @for (rank of wclOverallRanks(wcl); track rank.raid + '-' + rank.metric) {
+              <a class="parse-row overall-rank-row" [href]="rank.sourceUrl" target="_blank">
+                <span class="parse-row-boss">{{ rank.label }}</span>
+                <span [class]="parseColorClass(rank.rankPercent)" class="parse-row-val">
+                  {{ rank.rankPercent !== null ? (rank.rankPercent | number:'1.1-1') : '-' }}
+                </span>
+                <span class="parse-row-val parse-row-dps">
+                  {{ formatOverallRank(rank) }}
+                </span>
+                <span [class]="parseColorClass(rank.medianPerformance)" class="parse-row-val parse-row-median">
+                  {{ rank.medianPerformance !== null ? (rank.medianPerformance | number:'1.1-1') : '-' }}
+                </span>
+              </a>
+            }
+          }
           @for (r of wcl.rankings; track r.encounterID) {
             <div class="parse-row">
               <span class="parse-row-boss">{{ r.encounterName }}</span>
               <span [class]="parseColorClass(r.rankPercent)" class="parse-row-val">
                   {{ r.rankPercent !== null ? (r.rankPercent | number:'1.1-1') : '-' }}
+                </span>
+              <span class="parse-row-val parse-row-dps">
+                  {{ r.highestDps ? (r.highestDps | number:'1.1-1') : '-' }}
                 </span>
               <span [class]="parseColorClass(r.medianPerformance)" class="parse-row-val parse-row-median">
                   {{ r.medianPerformance !== null ? (r.medianPerformance | number:'1.1-1') : '-' }}

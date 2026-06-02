@@ -5,6 +5,7 @@ import type {
   WclBakedCharacter,
   WclEncounterRanking,
   WclGearItem,
+  WclOverallRank,
 } from './types';
 
 export function normalizeGearItem(raw: WclRawGearItem, slot: number): WclGearItem {
@@ -46,6 +47,7 @@ export function normalizeZoneRankings(
       totalKills: r.totalKills ?? 0,
       fastestKill: r.fastestKill ?? 0,
       bestAmount: r.bestAmount ?? 0,
+      highestDps: r.bestAmount ?? 0,
       spec: r.spec ?? '',
       allStars: r.allStars
         ? {
@@ -71,9 +73,10 @@ export function buildBakedCharacter(params: {
   rawCharacter: WclRawCharacterData;
   gear: WclGearItem[];
   gearError: string | null;
+  overallRanks?: WclOverallRank[];
   fetchedAt: string;
 }): WclBakedCharacter {
-  const { rawCharacter, gear, gearError, fetchedAt } = params;
+  const { rawCharacter, gear, gearError, overallRanks = [], fetchedAt } = params;
   const rankingData = normalizeZoneRankings(rawCharacter.zoneRankings);
 
   return {
@@ -82,6 +85,7 @@ export function buildBakedCharacter(params: {
     serverRegion: rawCharacter.server.region.slug,
     wclId: rawCharacter.id,
     gear,
+    overallRanks,
     ...rankingData,
     fetchedAt,
     error: null,
@@ -103,6 +107,7 @@ export function buildErrorCharacter(params: {
     wclId: null,
     gear: [],
     rankings: [],
+    overallRanks: [],
     bestPerformanceAverage: null,
     medianPerformanceAverage: null,
     totalKills: 0,

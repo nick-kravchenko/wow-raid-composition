@@ -38,6 +38,35 @@ export const GET_CHARACTER_RANKINGS = /* GraphQL */ `
 `;
 
 /**
+ * Fetch a character's overall ranking for one aggregate encounter/ranking view.
+ *
+ * encounterRankings returns a JSON scalar. For the overall SSC/TK views this is
+ * normalized in overall-ranks.ts into the stable baked output shape.
+ */
+export const GET_CHARACTER_ENCOUNTER_RANKINGS = /* GraphQL */ `
+  query GetCharacterEncounterRankings(
+    $name: String!
+    $serverSlug: String!
+    $serverRegion: String!
+    $encounterID: Int!
+    $metric: CharacterRankingMetricType!
+  ) {
+    characterData {
+      character(
+        name: $name
+        serverSlug: $serverSlug
+        serverRegion: $serverRegion
+      ) {
+        encounterRankings(
+          encounterID: $encounterID
+          metric: $metric
+        )
+      }
+    }
+  }
+`;
+
+/**
  * Fetch the character's most recent report code + kill fight IDs.
  * Used as the first step in the gear-fetching flow.
  */

@@ -55,6 +55,16 @@ export interface WclRawCharacterRankingsResponse {
   };
 }
 
+export type WclRawEncounterRankings = unknown;
+
+export interface WclRawEncounterRankingsResponse {
+  characterData: {
+    character: {
+      encounterRankings: WclRawEncounterRankings | null;
+    } | null;
+  };
+}
+
 export interface WclRawFight {
   id: number;
   name: string;
@@ -131,6 +141,7 @@ export interface WclEncounterRanking {
   totalKills: number;
   fastestKill: number;
   bestAmount: number;
+  highestDps: number;
   spec: string;
   allStars: {
     points: number | null;
@@ -138,6 +149,25 @@ export interface WclEncounterRanking {
     rankPercent: number | null;
     total: number;
   } | null;
+}
+
+export type WclOverallRankMetric = 'dps-bosses' | 'dps-bosses-trash' | 'hps';
+
+export interface WclOverallRank {
+  raid: 'ssc' | 'tk';
+  raidName: string;
+  bossID: number;
+  metric: WclOverallRankMetric;
+  label: string;
+  rank: number | null;
+  rankPercent: number | null;
+  total: number | null;
+  bestAmount: number | null;
+  medianPerformance: number | null;
+  averagePerformance: number | null;
+  totalKills: number;
+  fastestKill: number | null;
+  sourceUrl: string;
 }
 
 export interface WclBakedCharacter {
@@ -148,6 +178,7 @@ export interface WclBakedCharacter {
   wclId: number | null;
   gear: WclGearItem[];
   rankings: WclEncounterRanking[];
+  overallRanks: WclOverallRank[];
   bestPerformanceAverage: number | null;
   medianPerformanceAverage: number | null;
   totalKills: number;
