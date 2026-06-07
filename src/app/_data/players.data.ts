@@ -281,6 +281,45 @@ export const players: Player[] = [
     ],
   },
   {
+    name: 'Taurhorn',
+    discord: { userId: '281040155429568512' },
+    characters: [
+      {
+        name: 'Taurhorn',
+        rank: CharacterRank.main,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Feral,
+      },
+    ],
+  },
+  {
+    name: 'Xamyc',
+    discord: { userId: '237142360595759104' },
+    characters: [
+      {
+        name: 'Xamyc',
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Restoration,
+      },
+    ],
+  },
+  {
+    name: 'Sayfer',
+    discord: { userId: '234249857085210625' },
+    characters: [
+      {
+        name: 'Sayfer',
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Holy,
+      },
+    ],
+  },
+  {
     name: 'Legalise',
     discord: { userId: '364448191724257280' },
     characters: [
