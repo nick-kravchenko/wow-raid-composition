@@ -525,7 +525,14 @@ export const players: Player[] = [
         role: CharacterRole.tank,
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Feral,
-      }
+      },
+      {
+        name: 'Fantagodx',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+        spec: CharacterSpecEnum.Arcane,
+      },
     ],
   },
   {
