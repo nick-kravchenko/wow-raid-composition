@@ -362,7 +362,7 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
-        spec: CharacterSpecEnum.Destruction,
+        spec: CharacterSpecEnum.Affliction,
       },
     ],
   },
