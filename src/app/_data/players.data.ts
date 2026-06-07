@@ -153,26 +153,26 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Lansena',
-    discord: { userId: '360123145522249729' },
-    characters: [
-      {
-        name: 'Lansena',
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.priest,
-        spec: CharacterSpecEnum.Holy,
-      },
-      {
-        name: 'Mellorin',
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Balance,
-      },
-    ],
-  },
+  // {
+  //   name: 'Lansena',
+  //   discord: { userId: '360123145522249729' },
+  //   characters: [
+  //     {
+  //       name: 'Lansena',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.healer,
+  //       class: CharacterClass.priest,
+  //       spec: CharacterSpecEnum.Holy,
+  //     },
+  //     {
+  //       name: 'Mellorin',
+  //       rank: CharacterRank.alt,
+  //       role: CharacterRole.ranged,
+  //       class: CharacterClass.druid,
+  //       spec: CharacterSpecEnum.Balance,
+  //     },
+  //   ],
+  // },
   {
     name: 'Edgelord',
     discord: { userId: '257947077324177411' },
@@ -461,26 +461,26 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Amorales',
-    discord: { userId: '556582468002775050' },
-    characters: [
-      {
-        name: 'Bozer',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Arms,
-      },
-      {
-        name: 'Amorales',
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-        spec: CharacterSpecEnum.Destruction,
-      },
-    ],
-  },
+  // {
+  //   name: 'Amorales',
+  //   discord: { userId: '556582468002775050' },
+  //   characters: [
+  //     {
+  //       name: 'Bozer',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.melee,
+  //       class: CharacterClass.warrior,
+  //       spec: CharacterSpecEnum.Arms,
+  //     },
+  //     {
+  //       name: 'Amorales',
+  //       rank: CharacterRank.alt,
+  //       role: CharacterRole.ranged,
+  //       class: CharacterClass.warlock,
+  //       spec: CharacterSpecEnum.Destruction,
+  //     },
+  //   ],
+  // },
   {
     name: 'Roombaboomba',
     discord: { userId: '556582468002775050' },
