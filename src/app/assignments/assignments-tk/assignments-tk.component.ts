@@ -94,7 +94,7 @@ export class AssignmentsTkComponent implements OnInit {
   }
 
   get mrtNote() {
-    return this.keys.map(key => this.getMrtNoteForBoss(key)).join('\n');
+    return [this.getRaidWideTankHealerMrtNote(), ...this.keys.map(key => this.getMrtNoteForBoss(key))].join('\n');
   }
 
   ngOnInit() {
@@ -111,6 +111,47 @@ export class AssignmentsTkComponent implements OnInit {
 
   getCharactersByClassAndRole(className: CharacterClass, role: CharacterRole) {
     return this.raid.filter((character: Character | undefined) => character?.class === className && character?.role === role);
+  }
+
+  private getCharacterName(character: Character | string | undefined, fallback = '-'): string {
+    if (typeof character === 'string') return character;
+    return character?.name ?? fallback;
+  }
+
+  private getRaidWideTankHealerMrtNote(): string {
+    const feralTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank)
+      .filter(tank => tank.spec === CharacterSpecEnum.Feral);
+    const protectionPaladin = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank)
+      .find(tank => tank.spec === CharacterSpecEnum.Protection);
+    const healers = [
+      ...this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Holy),
+      ...this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+      ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Discipline || healer.spec === CharacterSpecEnum.Holy),
+      ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer)
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+    ];
+    const formatLine = (mark: string, tank: Character | string | undefined, assignedHealers: (Character | undefined)[]) => {
+      const healerNames = assignedHealers
+        .filter((healer): healer is Character => !!healer)
+        .map(healer => healer.name)
+        .join(' ');
+      return `{${mark}} - ${this.getCharacterName(tank, `${mark} tank`)} - ${healerNames}`;
+    };
+
+    return [
+      'Tanks/Heals (2 mobs)',
+      formatLine('skull', feralTanks[0], [healers[0], healers[2]]),
+      formatLine('cross', protectionPaladin, [healers[1], healers[3]]),
+      '',
+      'Tanks/Heals (many mobs)',
+      formatLine('skull', feralTanks[0], [healers[0]]),
+      formatLine('cross', protectionPaladin, healers.slice(2)),
+      formatLine('square', feralTanks[1], [healers[1]]),
+      '',
+    ].join('\n');
   }
 
   fillAssignments() {
@@ -327,10 +368,13 @@ export class AssignmentsTkComponent implements OnInit {
   }
 
   copyMrtNoteToBuffer() {
-    const json: Record<string, string> = {};
-    this.keys.forEach(key => {
-      json[this.assignments[key].headerText] = this.getMrtNoteForBoss(key);
-    });
+    const json: Record<string, string> = {
+      '1. tank/heal': this.getRaidWideTankHealerMrtNote(),
+      '2. alar': this.getMrtNoteForBoss(AssignmentType.alarAssignments),
+      '3. solarian': this.getMrtNoteForBoss(AssignmentType.solarianAssignments),
+      '4. void reaver': this.getMrtNoteForBoss(AssignmentType.voidReaverAssignments),
+      '5. kael\'thas': this.getMrtNoteForBoss(AssignmentType.kaelthasAssignments),
+    };
     navigator.clipboard.writeText(JSON.stringify(json, null, 2));
   }
 }
