@@ -659,8 +659,9 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
       '2. lurker': this.getMrtNoteForBoss(AssignmentType.lurkerBelowAssignments),
       '3. hydros': this.getMrtNoteForBoss(AssignmentType.hydrossAssignments),
       '4. leotheras': this.getMrtNoteForBoss(AssignmentType.leoterasAssignments),
-      '5. morogrim': this.getMrtNoteForBoss(AssignmentType.morogrimAssignments),
-      '6. lady vashj': this.getMrtNoteForBoss(AssignmentType.vashjAssignments),
+      '5. karathress': this.getMrtNoteForBoss(AssignmentType.karathressAssignments),
+      '6. morogrim': this.getMrtNoteForBoss(AssignmentType.morogrimAssignments),
+      '7. lady vashj': this.getMrtNoteForBoss(AssignmentType.vashjAssignments),
     };
     navigator.clipboard.writeText(JSON.stringify(json, null, 2));
   }
