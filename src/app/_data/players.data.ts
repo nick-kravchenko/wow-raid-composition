@@ -344,6 +344,13 @@ export const players: Player[] = [
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Protection,
       },
+      {
+        name: 'Livingstone',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+        spec: CharacterSpecEnum.Arcane,
+      },
     ],
   },
   {
