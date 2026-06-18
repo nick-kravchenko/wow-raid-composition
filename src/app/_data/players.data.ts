@@ -307,6 +307,19 @@ export const players: Player[] = [
     ],
   },
   {
+    name: 'Ersiliya ',
+    discord: { userId: '212531792220127232' },
+    characters: [
+      {
+        name: 'Ersiliya ',
+        rank: CharacterRank.main,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Restoration,
+      },
+    ],
+  },
+  {
     name: 'Sayfer',
     discord: { userId: '234249857085210625' },
     characters: [
