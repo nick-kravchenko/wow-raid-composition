@@ -724,7 +724,7 @@ export const players: Player[] = [
   },
   {
     name: 'Dixonmyez',
-    discord: { userId: '' },
+    discord: { userId: '598212398125416468' },
     characters: [
       {
         name: 'Dixonmyez',
@@ -739,6 +739,19 @@ export const players: Player[] = [
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
         spec: CharacterSpecEnum.Retribution,
+      },
+    ],
+  },
+  {
+    name: 'Oxi',
+    discord: { userId: '1012404881656647720' },
+    characters: [
+      {
+        name: 'Northsidewet',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Shadow,
       },
     ],
   },
