@@ -295,9 +295,9 @@ export const players: Player[] = [
       {
         name: 'Globaldoctor',
         rank: CharacterRank.alt,
-        role: CharacterRole.melee,
+        role: CharacterRole.healer,
         class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Enhancement,
+        spec: CharacterSpecEnum.Restoration,
       },
       {
         name: 'Altezzå',
