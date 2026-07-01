@@ -1035,9 +1035,9 @@ export const players: Player[] = [
       {
         name: 'Yourßunywrot',
         rank: CharacterRank.alt,
-        role: CharacterRole.healer,
+        role: CharacterRole.ranged,
         class: CharacterClass.priest,
-        spec: CharacterSpecEnum.Holy,
+        spec: CharacterSpecEnum.Shadow,
       },
     ],
   },
