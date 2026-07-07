@@ -974,26 +974,26 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Nevercome',
-    discord: { userId: '252177261006946304' },
-    characters: [
-      {
-        name: 'Monkablaze',
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.mage,
-        spec: CharacterSpecEnum.Arcane,
-      },
-      {
-        name: 'Monkablazé',
-        rank: CharacterRank.alt,
-        role: CharacterRole.tank,
-        class: CharacterClass.paladin,
-        spec: CharacterSpecEnum.Protection,
-      }
-    ],
-  },
+  // {
+  //   name: 'Nevercome',
+  //   discord: { userId: '252177261006946304' },
+  //   characters: [
+  //     {
+  //       name: 'Monkablaze',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.ranged,
+  //       class: CharacterClass.mage,
+  //       spec: CharacterSpecEnum.Arcane,
+  //     },
+  //     {
+  //       name: 'Monkablazé',
+  //       rank: CharacterRank.alt,
+  //       role: CharacterRole.tank,
+  //       class: CharacterClass.paladin,
+  //       spec: CharacterSpecEnum.Protection,
+  //     }
+  //   ],
+  // },
   {
     name: 'Deserve',
     discord: { userId: '961651735187841114' },
