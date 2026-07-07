@@ -66,9 +66,9 @@ export const players: Player[] = [
       {
         name: 'Kravá',
         rank: CharacterRank.main,
-        role: CharacterRole.melee,
+        role: CharacterRole.tank,
         class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Fury,
+        spec: CharacterSpecEnum.Protection,
       },
       {
         name: 'Kravä',
