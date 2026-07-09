@@ -77,11 +77,30 @@ export class AssignmentsTkComponent implements OnInit {
       typeof action.target === 'string' ? action.target : (action.target as Character).name;
 
     const classAssignment = this.assignments[key];
-    let note = classAssignment.headerText + '\n';
+
+    if (key === AssignmentType.solarianAssignments) {
+      return [
+        classAssignment.headerText,
+        '',
+        ...classAssignment.assignments.flatMap(assignment =>
+          assignment.actions.map(action => `${casterName(action)} -> ${targetName(action)}`)
+        ),
+      ].join('\n');
+    }
+
+    if (key === AssignmentType.voidReaverAssignments) {
+      return this.getVoidReaverMrtNote(casterName, targetName);
+    }
+
+    if (key === AssignmentType.alarAssignments) {
+      return this.getSpacedMrtNote(classAssignment, casterName, targetName);
+    }
 
     if (key === AssignmentType.kaelthasAssignments) {
-      note += 'Kill Order: Thaladred ➜ Sanguinar ➜ Capernian ➜ Telonicus\n';
+      return this.getKaelthasMrtNote(casterName);
     }
+
+    let note = classAssignment.headerText + '\n';
 
     classAssignment.assignments.forEach(assignment => {
       note += `${assignment.headerText}\n`;
@@ -91,6 +110,70 @@ export class AssignmentsTkComponent implements OnInit {
     });
 
     return note;
+  }
+
+  private getSpacedMrtNote(
+    classAssignment: ClassAssignment,
+    casterName: (a: AssignmentAction) => string,
+    targetName: (a: AssignmentAction) => string,
+  ): string {
+    let note = `${classAssignment.headerText}\n`;
+
+    classAssignment.assignments.forEach(assignment => {
+      note += `\n${assignment.headerText}\n`;
+      assignment.actions.forEach(action => {
+        note += `${casterName(action)} -> ${targetName(action)}\n`;
+      });
+    });
+
+    return note;
+  }
+
+  private getVoidReaverMrtNote(
+    casterName: (action: AssignmentAction) => string,
+    targetName: (action: AssignmentAction) => string,
+  ): string {
+    const assignments = this.assignments[AssignmentType.voidReaverAssignments].assignments;
+    const knockAway = assignments.find(assignment => assignment.headerText === 'Knock Away Rotation');
+    const hunters = assignments.find(assignment => assignment.headerText === 'Hunters (max range)');
+
+    const tankLines = knockAway?.actions.map((tankAction, i) => {
+      const tank = casterName(tankAction);
+      const assignedHunters = hunters?.actions
+        .filter(hunterAction => targetName(hunterAction) === tank)
+        .map(casterName) ?? [];
+      return `${targetName(tankAction)} - ${[tank, ...assignedHunters].join(' + ')}`;
+    }) ?? [];
+
+    return [
+      'Void Reaver',
+      '',
+      'Knock Away Rotation',
+      ...tankLines,
+    ].join('\n');
+  }
+
+  private getKaelthasMrtNote(casterName: (action: AssignmentAction) => string): string {
+    const assignments = this.assignments[AssignmentType.kaelthasAssignments].assignments;
+    const p1 = assignments.find(assignment => assignment.headerText === 'P1 Advisors Assignments');
+    const p2 = assignments.find(assignment => assignment.headerText === 'P2 Weapon Phase - Tanks');
+    const p3 = assignments.find(assignment => assignment.headerText === 'P3 Advisors Assignments');
+    const formatNames = (actions: AssignmentAction[]) => actions.map(casterName).filter(name => name !== '-').join(' + ');
+
+    return [
+      'Kael\'thas Sunstrider',
+      '',
+      p1?.headerText,
+      ...(p1?.actions.map(action => `${casterName(action)} -> ${action.target}`) ?? []),
+      '',
+      p2?.headerText,
+      `Axe (Devastation) - ${formatNames(p2?.actions.filter(action => action.target === 'Axe (Devastation)') ?? [])}`,
+      `Bow (Netherstrand Longbow ) - ${formatNames(p2?.actions.filter(action => action.target === 'Bow (Netherstrand Longbow )') ?? [])}`,
+      `All other weapons - ${formatNames(p2?.actions.filter(action => action.target === 'All other weapons') ?? [])}`,
+      '',
+      p3?.headerText,
+      ...(p3?.actions.map(action => `${action.target} - ${casterName(action)}`) ?? []),
+    ].filter(line => line !== undefined).join('\n');
   }
 
   get mrtNote() {
@@ -164,13 +247,15 @@ export class AssignmentsTkComponent implements OnInit {
   fillAlarAssignments() {
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
+    const protectionPaladin = paladinTanks.find(tank => tank.spec === CharacterSpecEnum.Protection);
 
     this.assignments[AssignmentType.alarAssignments].assignments.push({
       headerIcon: IconEnum.skull,
       headerText: 'P1 Platform Tanks',
       actions: [
-        { caster: druidTanks[0], target: 'Platform Tank #1', icon: undefined },
-        { caster: druidTanks[1], target: 'Platform Tank #2', icon: undefined },
+        { caster: protectionPaladin, target: 'Platform Tank #1', icon: undefined },
+        { caster: druidTanks[0], target: 'Platform Tank #2', icon: undefined },
+        { caster: druidTanks[1], target: 'Platform Tank #3', icon: undefined },
       ],
     });
 
@@ -232,13 +317,13 @@ export class AssignmentsTkComponent implements OnInit {
   fillSolarianAssignments() {
     const druidTanks = this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.tank);
     const paladinTanks = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.tank);
+    const protectionPaladin = paladinTanks.find(tank => tank.spec === CharacterSpecEnum.Protection);
 
     this.assignments[AssignmentType.solarianAssignments].assignments.push({
       headerIcon: IconEnum.skull,
-      headerText: 'Tanks',
+      headerText: 'Main Tank',
       actions: [
-        { caster: (druidTanks.shift()), target: 'Main Tank', icon: IconEnum.skull },
-        { caster: (paladinTanks.shift()), target: 'Adds Tank (add phases ~every 50s)', icon: undefined },
+        { caster: protectionPaladin ?? druidTanks[0] ?? paladinTanks[0], target: 'Main Tank', icon: IconEnum.skull },
       ],
     });
   }
@@ -266,33 +351,12 @@ export class AssignmentsTkComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer)
         .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
     ];
-    const specialTankHealer = healers[healers.length - 1];
-    const regularTankHealers = healers.slice(0, -1);
-
-    const getManyMobsHealerAssignments = (
-      firstTank: Character | string,
-      secondTank: Character | string,
-      thirdTank: Character | string,
-    ): AssignmentAction[] => [
-      { caster: regularTankHealers[0], target: firstTank, icon: IconEnum.holyLight },
-      { caster: regularTankHealers[1], target: secondTank, icon: IconEnum.holyLight },
-      ...regularTankHealers.slice(2).map(healer => ({
-        caster: healer,
-        target: thirdTank,
-        icon: IconEnum.holyLight,
-      })),
-    ];
-    const getP3HealerAssignments = (): AssignmentAction[] => [
-      { caster: regularTankHealers[0], target: druidTanks[0] ?? 'First druid tank', icon: IconEnum.holyLight },
-      { caster: regularTankHealers[1], target: druidTanks[1] ?? 'Second druid tank', icon: IconEnum.holyLight },
-      { caster: regularTankHealers[2], target: capernianConflagrationTank ?? 'Paladin soaker', icon: IconEnum.holyLight },
-    ];
+    const [firstHealer, secondHealer, thirdHealer, fourthHealer] = healers;
 
     this.assignments[AssignmentType.kaelthasAssignments].assignments.push({
       headerIcon: IconEnum.skull,
-      headerText: 'P1 Advisors - Tanks',
+      headerText: 'P1 Advisors Assignments',
       actions: [
-        { caster: '-', target: 'Thaladred - No tank', icon: IconEnum.skull },
         { caster: sanguinarTank, target: 'Sanguinar', icon: IconEnum.cross },
         { caster: capernianTank, target: 'Capernian', icon: IconEnum.square },
         { caster: capernianConflagrationTank, target: 'Capernian (Conflagration)', icon: IconEnum.protection },
@@ -305,48 +369,22 @@ export class AssignmentsTkComponent implements OnInit {
       headerText: 'P2 Weapon Phase - Tanks',
       actions: [
         { caster: axeTank, target: 'Axe (Devastation)', icon: undefined },
+        { caster: firstHealer, target: 'Axe (Devastation)', icon: IconEnum.holyLight },
         { caster: bowTank, target: 'Bow (Netherstrand Longbow )', icon: IconEnum.hunter },
+        { caster: thirdHealer, target: 'Bow (Netherstrand Longbow )', icon: IconEnum.holyLight },
         { caster: weaponsTank, target: 'All other weapons', icon: IconEnum.protection },
-        { caster: specialTankHealer, target: bowTank ?? 'Bow tank', icon: IconEnum.holyLight },
-        ...getManyMobsHealerAssignments(axeTank, weaponsTank, weaponsTank),
+        { caster: secondHealer, target: 'All other weapons', icon: IconEnum.holyLight },
+        { caster: fourthHealer, target: 'All other weapons', icon: IconEnum.holyLight },
       ],
     });
 
     this.assignments[AssignmentType.kaelthasAssignments].assignments.push({
       headerIcon: IconEnum.skull,
-      headerText: 'P3 Kill Order',
+      headerText: 'P3 Advisors Assignments',
       actions: [
-        { caster: 'Ranged', target: 'Thaladred ➜ Capernian', icon: IconEnum.skull },
-        { caster: 'Melee', target: 'Sanguinar ➜ Telonicus', icon: IconEnum.cross },
-      ],
-    });
-
-    this.assignments[AssignmentType.kaelthasAssignments].assignments.push({
-      headerIcon: IconEnum.skull,
-      headerText: 'P3 Tank Assignments',
-      actions: [
-        { caster: sanguinarTank, target: 'Sanguinar', icon: IconEnum.cross },
-        { caster: capernianTank, target: 'Capernian', icon: IconEnum.square },
-        { caster: capernianConflagrationTank, target: 'Capernian (Conflagration)', icon: IconEnum.protection },
-        { caster: telonicusTank, target: 'Telonicus', icon: IconEnum.moon },
-        { caster: specialTankHealer, target: capernianTank ?? 'Capernian tank', icon: IconEnum.holyLight },
-        ...getP3HealerAssignments(),
-      ],
-    });
-
-    this.assignments[AssignmentType.kaelthasAssignments].assignments.push({
-      headerIcon: IconEnum.skull,
-      headerText: 'P4 - Main Tank',
-      actions: [
-        { caster: (druidTanks[0] ?? paladinTanks[0]), target: 'Kael\'thas Sunstrider (MT)', icon: IconEnum.skull },
-      ],
-    });
-
-    this.assignments[AssignmentType.kaelthasAssignments].assignments.push({
-      headerIcon: IconEnum.sleep,
-      headerText: 'P4 - Phoenix Kite',
-      actions: [
-        { caster: paladinTanks[0], target: 'Kite Phoenix (stun/slow)', icon: undefined },
+        { caster: `${this.getCharacterName(sanguinarTank)} + ${this.getCharacterName(firstHealer)}`, target: 'Sanguinar', icon: IconEnum.cross },
+        { caster: `${this.getCharacterName(capernianTank)} + ${this.getCharacterName(thirdHealer)}`, target: 'Capernian', icon: IconEnum.square },
+        { caster: `${this.getCharacterName(telonicusTank)} + ${this.getCharacterName(secondHealer)}`, target: 'Telonicus', icon: IconEnum.moon },
       ],
     });
   }
@@ -360,7 +398,7 @@ export class AssignmentsTkComponent implements OnInit {
       all.slice(1, 2),
       all.slice(2, 4),
       all.slice(4),
-    ];
+    ].filter(group => group.length > 0);
   }
 
   copyMrtNoteForBoss(key: AssignmentType) {

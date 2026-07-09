@@ -205,11 +205,15 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
       return note;
     }
 
-    let note = classAssignment.headerText + '\n';
-
     if (key === AssignmentType.karathressAssignments) {
-      note += 'Kill Order: Tidalvess ➜ Sharkkis ➜ Karathress (Caribdis - hold separately)\n';
+      return this.getKarathressMrtNote(casterName);
     }
+
+    if (key === AssignmentType.morogrimAssignments) {
+      return this.getSpacedMrtNote(classAssignment, casterName, targetName);
+    }
+
+    let note = classAssignment.headerText + '\n';
 
     classAssignment.assignments.forEach(assignment => {
       note += `${assignment.headerText}\n`;
@@ -219,6 +223,52 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     });
 
     return note;
+  }
+
+  private getSpacedMrtNote(
+    classAssignment: ClassAssignment,
+    casterName: (a: AssignmentAction) => string,
+    targetName: (a: AssignmentAction) => string,
+  ): string {
+    let note = `${classAssignment.headerText}\n`;
+
+    classAssignment.assignments.forEach(assignment => {
+      note += `\n${assignment.headerText}\n`;
+      assignment.actions.forEach(action => {
+        note += `${casterName(action)} -> ${targetName(action)}\n`;
+      });
+    });
+
+    return note;
+  }
+
+  private getKarathressMrtNote(casterName: (action: AssignmentAction) => string): string {
+    const assignments = this.assignments[AssignmentType.karathressAssignments].assignments;
+    const getAssignment = (headerText: string) => assignments.find(assignment => assignment.headerText === headerText);
+    const getCasters = (assignment: Assignment | undefined) =>
+      assignment?.actions
+        .filter(action => action.target !== 'Healing Wave interrupt')
+        .map(casterName)
+        .filter(name => name !== '-') ?? [];
+    const shamanHealers = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
+    const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
+    const priestHealers = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
+    const tankHealers = [shamanHealers[0], paladinHealers[0]]
+      .filter((healer): healer is Character => !!healer)
+      .map(healer => healer.name);
+    const karathressHealer = priestHealers[0]?.name;
+    const caribdisHealer = priestHealers[1]?.name;
+    const withExtras = (names: string[], extras: (string | undefined)[]) =>
+      [...names, ...extras.filter((name): name is string => !!name)].join(' + ');
+
+    return [
+      'Fathom-Lord Karathress',
+      '',
+      `{skull} Tidalvess - ${withExtras(getCasters(getAssignment('Tidalvess')), tankHealers)}`,
+      `{cross} Sharkkis - ${withExtras(getCasters(getAssignment('Sharkkis')), tankHealers)}`,
+      `{square} Karathress - ${withExtras(getCasters(getAssignment('Karathress')), [karathressHealer])}`,
+      `{moon} Caribdis - ${withExtras(getCasters(getAssignment('Caribdis')), [caribdisHealer])}`,
+    ].join('\n');
   }
 
   get mrtNote() {
@@ -550,7 +600,9 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     const priestHealers = this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer);
     const paladinHealers = this.getCharactersByClassAndRole(CharacterClass.paladin, CharacterRole.healer);
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
-    const healers = [...druidHealers, ...priestHealers, ...paladinHealers, ...restoShamans];
+    const disciplinePriests = priestHealers.filter(healer => healer.spec === CharacterSpecEnum.Discipline);
+    const otherPriests = priestHealers.filter(healer => healer.spec !== CharacterSpecEnum.Discipline);
+    const healers = [...druidHealers, ...disciplinePriests, ...otherPriests, ...paladinHealers, ...restoShamans];
 
     this.assignments[AssignmentType.morogrimAssignments].assignments.push({
       headerIcon: IconEnum.skull,
