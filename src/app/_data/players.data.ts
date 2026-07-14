@@ -243,7 +243,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Restoration,
+        spec: CharacterSpecEnum.Dreamstate,
       },
       {
         name: 'Entimx',

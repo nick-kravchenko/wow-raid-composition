@@ -8,6 +8,7 @@ export enum CharacterSpecEnum {
   Marksmanship = 'Marksmanship',
   Survival = 'Survival',
   Balance = 'Balance',
+  Dreamstate = 'Dreamstate',
   Feral = 'Feral',
   Restoration = 'Restoration',
   Assassination = 'Assassination',

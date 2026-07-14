@@ -45,6 +45,10 @@ export interface DruidBalance {
   class: CharacterClass.druid;
   spec: CharacterSpecEnum.Balance;
 }
+export interface DruidDreamstate {
+  class: CharacterClass.druid;
+  spec: CharacterSpecEnum.Dreamstate;
+}
 export interface DruidFeral {
   class: CharacterClass.druid;
   spec: CharacterSpecEnum.Feral;
@@ -122,7 +126,7 @@ export interface ShamanRestoration {
 export type CharacterClassSpec = WarriorArms | WarriorFury | WarriorProtection
                                | PaladinProtection | PaladinHoly | PaladinRetribution
                                | HunterBeastMastery | HunterMarksmanship | HunterSurvival
-                               | DruidBalance | DruidFeral | DruidRestoration
+                               | DruidBalance | DruidDreamstate | DruidFeral | DruidRestoration
                                | RogueAssassination | RogueCombat | RogueSubtlety
                                | WarlockAffliction | WarlockDemonology | WarlockDestruction
                                | MageArcane | MageFire | MageFrost

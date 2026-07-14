@@ -93,6 +93,7 @@ export class CharacterTileComponent implements OnChanges {
     Druid_Feral_Melee: 'ability_druid_catform.jpg',
     Druid_Feral_Tank: 'ability_racial_bearform.jpg',
     Druid_Balance_Ranged: 'spell_nature_starfall.jpg',
+    Druid_Dreamstate_Healer: 'ability_druid_dreamstate.jpg',
     Druid_Restoration_Healer: 'spell_nature_healingtouch.jpg',
 
     Rogue_Assassination_Melee: 'ability_rogue_eviscerate.jpg',
