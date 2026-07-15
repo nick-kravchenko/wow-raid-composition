@@ -386,7 +386,7 @@ export class AssignmentsRaidWideComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer)
         .filter(healer => healer.spec === CharacterSpecEnum.Discipline || healer.spec === CharacterSpecEnum.Holy),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer)
-        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration || healer.spec === CharacterSpecEnum.Dreamstate),
     ];
 
     this.assignments.tanksHealersHuntersAssignments.assignments.push({

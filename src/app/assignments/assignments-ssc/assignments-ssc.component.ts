@@ -309,7 +309,7 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
       ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer)
         .filter(healer => healer.spec === CharacterSpecEnum.Discipline || healer.spec === CharacterSpecEnum.Holy),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer)
-        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration || healer.spec === CharacterSpecEnum.Dreamstate),
     ];
     const formatLine = (mark: string, tank: Character | string | undefined, assignedHealers: (Character | undefined)[]) => {
       const healerNames = assignedHealers
@@ -522,14 +522,15 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     const restoShamans = this.getCharactersByClassAndRole(CharacterClass.shaman, CharacterRole.healer);
     const leftHealers = [...restoShamans, ...paladinHealers];
     const rightHealers = [...priestHealers, ...druidHealers];
+    const middleMembers = group4.filter(character => character.role !== CharacterRole.healer);
 
     const otherRanged = [...mages, ...warlocks, ...eleShamans, ...boomies, ...shadowPriests]
       .filter(char => !group4.includes(char));
 
     [
       { label: 'Left ', members: [...otherRanged, ...rightHealers] },
-      { label: 'Middle', members: group4 },
-      { label: 'Right', members: [...hunters, ...leftHealers] },
+      { label: 'Middle', members: middleMembers },
+      { label: 'Right', members: [...hunters.filter(hunter => !group4.includes(hunter)), ...leftHealers] },
     ].forEach(group => {
       this.assignments[AssignmentType.leoterasAssignments].assignments.push({
         headerIcon: IconEnum.skull,
@@ -637,6 +638,14 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     const staticChargeHealer = [...druidHealers, ...priestHealers, ...paladinHealers, ...restoShamans][0];
     const raidHealers = [...restoShamans, ...priestHealers];
     const tankHealers = [...paladinHealers, ...druidHealers];
+    const positionHealers = [
+      raidHealers.shift(),
+      tankHealers.shift(),
+      raidHealers.shift(),
+      tankHealers.shift(),
+      ...raidHealers,
+      ...tankHealers,
+    ].filter((healer): healer is Character => !!healer);
 
     const mt = druidTanks[0] ?? paladinTanks[0];
     const eliteTank = druidTanks[0] ?? paladinTanks[0];
@@ -684,12 +693,11 @@ export class AssignmentsSscComponent implements OnInit, OnDestroy {
     this.assignments[AssignmentType.vashjAssignments].assignments.push({
       headerIcon: IconEnum.healingTouch,
       headerText: 'Phase 2 - Healer Position',
-      actions: [
-        { caster: raidHealers.shift(), target: '1', icon: undefined },
-        { caster: tankHealers.shift(), target: '2', icon: undefined },
-        { caster: raidHealers.shift(), target: '3', icon: undefined },
-        { caster: tankHealers.shift(), target: '4', icon: undefined },
-      ],
+      actions: positionHealers.slice(0, 4).map((healer, index) => ({
+        caster: healer,
+        target: `${index + 1}`,
+        icon: undefined,
+      })),
     });
 
     this.assignments[AssignmentType.vashjAssignments].assignments.push({

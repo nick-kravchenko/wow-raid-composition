@@ -214,7 +214,7 @@ export class AssignmentsTkComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer)
         .filter(healer => healer.spec === CharacterSpecEnum.Discipline || healer.spec === CharacterSpecEnum.Holy),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer)
-        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration || healer.spec === CharacterSpecEnum.Dreamstate),
     ];
     const formatLine = (mark: string, tank: Character | string | undefined, assignedHealers: (Character | undefined)[]) => {
       const healerNames = assignedHealers
@@ -349,7 +349,7 @@ export class AssignmentsTkComponent implements OnInit {
       ...this.getCharactersByClassAndRole(CharacterClass.priest, CharacterRole.healer)
         .filter(healer => healer.spec === CharacterSpecEnum.Discipline || healer.spec === CharacterSpecEnum.Holy),
       ...this.getCharactersByClassAndRole(CharacterClass.druid, CharacterRole.healer)
-        .filter(healer => healer.spec === CharacterSpecEnum.Restoration),
+        .filter(healer => healer.spec === CharacterSpecEnum.Restoration || healer.spec === CharacterSpecEnum.Dreamstate),
     ];
     const [firstHealer, secondHealer, thirdHealer, fourthHealer] = healers;
 
