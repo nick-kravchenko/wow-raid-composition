@@ -194,26 +194,26 @@ export const players: Player[] = [
   //     },
   //   ],
   // },
-  // {
-  //   name: 'Edgelord',
-  //   discord: { userId: '257947077324177411' },
-  //   characters: [
-  //     {
-  //       name: 'Edgelørd',
-  //       rank: CharacterRank.main,
-  //       role: CharacterRole.ranged,
-  //       class: CharacterClass.warlock,
-  //       spec: CharacterSpecEnum.Destruction,
-  //     },
-  //     {
-  //       name: 'Udy',
-  //       rank: CharacterRank.alt,
-  //       role: CharacterRole.ranged,
-  //       class: CharacterClass.priest,
-  //       spec: CharacterSpecEnum.Shadow,
-  //     },
-  //   ],
-  // },
+  {
+    name: 'Edgelord',
+    discord: { userId: '257947077324177411' },
+    characters: [
+      {
+        name: 'Edgelørd',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
+      },
+      {
+        name: 'Udy',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Shadow,
+      },
+    ],
+  },
   // {
   //   name: 'Brokentoy',
   //   discord: { userId: '234388219020443648' },
