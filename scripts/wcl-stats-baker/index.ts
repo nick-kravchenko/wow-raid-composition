@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 import { WclStatsApiClient } from './api';
 import { getAccessToken } from './auth';
-import { bakeRaid } from './baker';
+import { bakeRaids } from './baker';
 import { RAIDS, RANK_TARGETS, TRACKED_GUILDS } from './config';
 import type { WclStatsData } from './types';
 
@@ -50,11 +50,8 @@ async function main(): Promise<void> {
   if (!clientId || !clientSecret) throw new Error('Missing WCL_CLIENT_ID or WCL_CLIENT_SECRET in the environment or .env');
 
   const api = new WclStatsApiClient(await getAccessToken(clientId, clientSecret));
-  const raids = [];
-  for (const raid of RAIDS) {
-    console.log(`[wcl-stats-baker] Fetching ${raid.name}`);
-    raids.push(await bakeRaid(api, raid));
-  }
+  console.log(`[wcl-stats-baker] Fetching ${RAIDS.map(raid => raid.name).join(', ')}`);
+  const raids = await bakeRaids(api, RAIDS);
   const data: WclStatsData = { generatedAt: new Date().toISOString(), raids };
   writeBakedData(data);
   console.log(`[wcl-stats-baker] Wrote ${outputPath}`);

@@ -5,7 +5,6 @@ export const RANKINGS_PER_PAGE = 50;
 export const RAID_SIZE = 25;
 // Warcraft Logs currently exposes at most 1,000 public ranking rows (20 x 50).
 export const MAX_GUILD_SEARCH_PAGES = 20;
-export const GUILD_DIRECTORY_PAGE_SIZE = 100;
 export const GUILD_REPORTS_PAGE_SIZE = 25;
 
 export const RAIDS: readonly WclStatsRaidConfig[] = [

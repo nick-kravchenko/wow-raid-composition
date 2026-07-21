@@ -38,7 +38,7 @@
             </thead>
             <tbody>
               @for (row of visibleRows(raid.rows); track row.guildName) {
-                <tr [class.ukrainian-guild]="row.guildGroup === 'ua'" [class.russian-guild]="row.guildGroup === 'ru'">
+                <tr>
                   <td class="rank">{{ formatRank(row.rank) }}</td>
                   <td class="guild">
                     <a

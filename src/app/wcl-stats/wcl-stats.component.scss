@@ -146,22 +146,6 @@ tbody tr {
   }
 }
 
-.ukrainian-guild {
-  background: rgba(colors.$alliance-blue, .12);
-
-  &:hover {
-    background: rgba(colors.$alliance-blue, .18);
-  }
-}
-
-.russian-guild {
-  background: rgba(colors.$victory-red, .12);
-
-  &:hover {
-    background: rgba(colors.$victory-red, .18);
-  }
-}
-
 .rank,
 .time {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;

@@ -1,5 +1,4 @@
 import {
-  GUILD_DIRECTORY_PAGE_SIZE,
   GUILD_REPORTS_PAGE_SIZE,
   MAX_GUILD_SEARCH_PAGES,
   RAID_SIZE,
@@ -8,7 +7,7 @@ import {
   TRACKED_GUILDS,
 } from './config';
 import type { WclStatsApi } from './api';
-import { GET_GUILD_DIRECTORY, GET_GUILD_REPORT_RANKINGS, GET_SPEED_RANKINGS } from './queries';
+import { GET_GUILD_BY_NAME, GET_SPEED_RANKINGS, buildGuildReportRankingsQuery, reportRankingsAlias } from './queries';
 import { isGuildEntry, mergeRankingRows, normalizeKey, parseRank, rankingEntryToRow, unresolvedGuildRow } from './normalize';
 import type { RawRankingEntry, WclStatsGuildConfig, WclStatsRaid, WclStatsRaidConfig, WclStatsRow } from './types';
 
@@ -16,53 +15,82 @@ interface RankingPageResponse {
   worldData?: { encounter?: { fightRankings?: unknown } };
 }
 
-const guildDirectoryCache = new WeakMap<WclStatsApi, Promise<Map<string, number>>>();
+const guildIdCache = new WeakMap<WclStatsApi, Map<string, Promise<number | null>>>();
 
-export async function bakeRaid(api: WclStatsApi, raid: WclStatsRaidConfig): Promise<WclStatsRaid> {
-  const pageCache = new Map<number, RawRankingEntry[]>();
-  const targetRows: WclStatsRow[] = [];
+export async function bakeRaids(api: WclStatsApi, raids: readonly WclStatsRaidConfig[]): Promise<WclStatsRaid[]> {
+  const targetRowsByRaid = new Map<string, WclStatsRow[]>();
+  const foundGuildRowsByRaid = new Map<string, Map<string, WclStatsRow>>();
 
-  for (const targetRank of RANK_TARGETS) {
-    const page = Math.ceil(targetRank / RANKINGS_PER_PAGE);
-    const entries = await getRankingPage(api, raid, page, pageCache);
-    const entry = entries[targetRank - ((page - 1) * RANKINGS_PER_PAGE) - 1];
-    const row = entry && rankingEntryToRow(entry, targetRank);
-    if (!row || row.rank !== targetRank) throw new Error(`${raid.name}: required rank ${targetRank} was not returned`);
-    targetRows.push(row);
-  }
+  for (const raid of raids) {
+    const pageCache = new Map<number, RawRankingEntry[]>();
+    const targetRows: WclStatsRow[] = [];
 
-  const foundGuildRows = new Map<string, WclStatsRow>();
-  for (let page = 1; page <= MAX_GUILD_SEARCH_PAGES && foundGuildRows.size < TRACKED_GUILDS.length; page += 1) {
-    const entries = await getRankingPage(api, raid, page, pageCache);
-    for (const guild of TRACKED_GUILDS) {
-      const key = normalizeKey(guild.name);
-      if (foundGuildRows.has(key)) continue;
-      const index = entries.findIndex(entry => isGuildEntry(entry, guild));
-      if (index >= 0) {
-        const row = rankingEntryToRow(entries[index], ((page - 1) * RANKINGS_PER_PAGE) + index + 1, guild);
-        if (row) foundGuildRows.set(key, row);
+    for (const targetRank of RANK_TARGETS) {
+      const page = Math.ceil(targetRank / RANKINGS_PER_PAGE);
+      const entries = await getRankingPage(api, raid, page, pageCache);
+      const entry = entries[targetRank - ((page - 1) * RANKINGS_PER_PAGE) - 1];
+      const row = entry && rankingEntryToRow(entry, targetRank);
+      if (!row || row.rank !== targetRank) throw new Error(`${raid.name}: required rank ${targetRank} was not returned`);
+      targetRows.push(row);
+    }
+    targetRowsByRaid.set(raid.id, targetRows);
+
+    const foundGuildRows = new Map<string, WclStatsRow>();
+    for (let page = 1; page <= MAX_GUILD_SEARCH_PAGES && foundGuildRows.size < TRACKED_GUILDS.length; page += 1) {
+      const entries = await getRankingPage(api, raid, page, pageCache);
+      for (const guild of TRACKED_GUILDS) {
+        const key = normalizeKey(guild.name);
+        if (foundGuildRows.has(key)) continue;
+        const index = entries.findIndex(entry => isGuildEntry(entry, guild));
+        if (index >= 0) {
+          const row = rankingEntryToRow(entries[index], ((page - 1) * RANKINGS_PER_PAGE) + index + 1, guild);
+          if (row) foundGuildRows.set(key, row);
+        }
       }
+      if (entries.length < RANKINGS_PER_PAGE) break;
     }
-    if (entries.length < RANKINGS_PER_PAGE) break;
+    foundGuildRowsByRaid.set(raid.id, foundGuildRows);
   }
 
-  if (foundGuildRows.size < TRACKED_GUILDS.length) {
-    const directory = await fetchGuildDirectory(api);
-    for (const guild of TRACKED_GUILDS) {
-      const key = normalizeKey(guild.name);
-      if (foundGuildRows.has(key)) continue;
-      const guildId = directory.get(key);
-      const row = guildId ? await fetchGuildBestRank(api, raid, guild, guildId) : null;
-      foundGuildRows.set(key, row ?? unresolvedGuildRow(guild));
-    }
-  }
+  await resolveMissingGuildRows(api, raids, foundGuildRowsByRaid);
 
-  return {
+  return raids.map(raid => ({
     id: raid.id,
     name: raid.name,
     encounterId: raid.encounterId,
-    rows: mergeRankingRows(targetRows, [...foundGuildRows.values()], TRACKED_GUILDS),
-  };
+    rows: mergeRankingRows(targetRowsByRaid.get(raid.id) ?? [], [...(foundGuildRowsByRaid.get(raid.id)?.values() ?? [])], TRACKED_GUILDS),
+  }));
+}
+
+async function resolveMissingGuildRows(
+  api: WclStatsApi,
+  raids: readonly WclStatsRaidConfig[],
+  foundGuildRowsByRaid: Map<string, Map<string, WclStatsRow>>,
+): Promise<void> {
+  for (const zoneRaids of groupRaidsByZone(raids)) {
+    for (const guild of TRACKED_GUILDS) {
+      const key = normalizeKey(guild.name);
+      const needingRaids = zoneRaids.filter(raid => !foundGuildRowsByRaid.get(raid.id)?.has(key));
+      if (needingRaids.length === 0) continue;
+
+      const guildId = await resolveGuildId(api, guild);
+      const bestByRaidId = guildId ? await fetchGuildBestRanksByZone(api, zoneRaids[0].zoneId, needingRaids, guild, guildId) : new Map();
+      for (const raid of needingRaids) {
+        const row = bestByRaidId.get(raid.id) ?? null;
+        foundGuildRowsByRaid.get(raid.id)?.set(key, row ?? unresolvedGuildRow(guild));
+      }
+    }
+  }
+}
+
+function groupRaidsByZone(raids: readonly WclStatsRaidConfig[]): WclStatsRaidConfig[][] {
+  const byZone = new Map<number, WclStatsRaidConfig[]>();
+  for (const raid of raids) {
+    const group = byZone.get(raid.zoneId) ?? [];
+    group.push(raid);
+    byZone.set(raid.zoneId, group);
+  }
+  return [...byZone.values()];
 }
 
 async function getRankingPage(
@@ -81,66 +109,69 @@ async function getRankingPage(
   return entries;
 }
 
-async function fetchGuildDirectory(api: WclStatsApi): Promise<Map<string, number>> {
-  let request = guildDirectoryCache.get(api);
+async function resolveGuildId(api: WclStatsApi, guild: WclStatsGuildConfig): Promise<number | null> {
+  let cache = guildIdCache.get(api);
+  if (!cache) {
+    cache = new Map();
+    guildIdCache.set(api, cache);
+  }
+  const key = `${normalizeKey(guild.name)}|${normalizeKey(guild.realm)}`;
+  let request = cache.get(key);
   if (!request) {
-    request = loadGuildDirectory(api);
-    guildDirectoryCache.set(api, request);
-    void request.catch(() => guildDirectoryCache.delete(api));
+    request = loadGuildId(api, guild);
+    cache.set(key, request);
+    void request.catch(() => cache?.delete(key));
   }
   return request;
 }
 
-async function loadGuildDirectory(api: WclStatsApi): Promise<Map<string, number>> {
-  const serverId = TRACKED_GUILDS[0]?.wclServerId;
-  const directory = new Map<string, number>();
-  let page = 1;
-  let lastPage = 1;
-  do {
-    const data = await api.query<{ guildData?: { guilds?: { last_page?: number; data?: Array<{ id: number; name: string }> } } }>(
-      GET_GUILD_DIRECTORY,
-      { limit: GUILD_DIRECTORY_PAGE_SIZE, page, serverId: serverId ?? null },
-    );
-    const guilds = data.guildData?.guilds;
-    for (const guild of guilds?.data ?? []) directory.set(normalizeKey(guild.name), guild.id);
-    lastPage = guilds?.last_page ?? page;
-    page += 1;
-  } while (page <= lastPage);
-  return directory;
+async function loadGuildId(api: WclStatsApi, guild: WclStatsGuildConfig): Promise<number | null> {
+  const data = await api.query<{ guildData?: { guild?: { id?: number } | null } }>(GET_GUILD_BY_NAME, {
+    name: guild.name,
+    serverSlug: guild.realm,
+    serverRegion: guild.region,
+  });
+  return data.guildData?.guild?.id ?? null;
 }
 
-async function fetchGuildBestRank(
+async function fetchGuildBestRanksByZone(
   api: WclStatsApi,
-  raid: WclStatsRaidConfig,
+  zoneId: number,
+  raids: readonly WclStatsRaidConfig[],
   guild: WclStatsGuildConfig,
   guildId: number,
-): Promise<WclStatsRow | null> {
-  let best: WclStatsRow | null = null;
+): Promise<Map<string, WclStatsRow | null>> {
+  const best = new Map<string, WclStatsRow | null>(raids.map(raid => [raid.id, null]));
+  const query = buildGuildReportRankingsQuery(raids.map(raid => raid.id));
+  const variables: Record<string, unknown> = { guildId, zoneId, limit: GUILD_REPORTS_PAGE_SIZE };
+  for (const raid of raids) variables[`encounterId_${raid.id}`] = raid.encounterId;
+
   let page = 1;
   let lastPage = 1;
   do {
-    const data = await api.query<{ reportData?: { reports?: { last_page?: number; data?: Array<{ code?: string; rankings?: unknown }> } } }>(
-      GET_GUILD_REPORT_RANKINGS,
-      { guildId, zoneId: raid.zoneId, limit: GUILD_REPORTS_PAGE_SIZE, page, encounterId: raid.encounterId },
+    const data = await api.query<{ reportData?: { reports?: { last_page?: number; data?: Array<Record<string, unknown>> } } }>(
+      query,
+      { ...variables, page },
     );
     const reports = data.reportData?.reports;
     for (const report of reports?.data ?? []) {
-      for (const ranking of extractEntries(report.rankings)) {
-        const speed = objectValue(ranking['speed']);
-        const rank = parseRank(speed?.['rank'] ?? speed?.['best'] ?? ranking.rank);
-        if (!rank) continue;
-        const enriched: RawRankingEntry = {
-          ...ranking,
-          rank,
-          reportCode: ranking.reportCode ?? report.code,
-        };
-        const row = rankingEntryToRow(enriched, rank, guild);
-        if (row && (best?.rank === null || typeof best?.rank === 'undefined' || rank < best.rank)) best = row;
+      const reportCode = typeof report['code'] === 'string' ? report['code'] : undefined;
+      for (const raid of raids) {
+        const current = best.get(raid.id) ?? null;
+        for (const ranking of extractEntries(report[reportRankingsAlias(raid.id)])) {
+          const speed = objectValue(ranking['speed']);
+          const rank = parseRank(speed?.['rank'] ?? speed?.['best'] ?? ranking.rank);
+          if (!rank) continue;
+          const enriched: RawRankingEntry = { ...ranking, rank, reportCode: ranking.reportCode ?? reportCode };
+          const row = rankingEntryToRow(enriched, rank, guild);
+          if (row && (current === null || rank < current.rank!)) best.set(raid.id, row);
+        }
       }
     }
     lastPage = reports?.last_page ?? page;
     page += 1;
   } while (page <= lastPage);
+
   return best;
 }
 
