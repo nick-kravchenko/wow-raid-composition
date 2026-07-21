@@ -47,7 +47,7 @@
         [raidSize]="currentRaidSize"
         [title]="'Raid #' + ($index+1)"
         [titleKey]="'title' + $index"
-        [bench]="benches[$index] ?? []"
+        [bench]="benches[$index]"
         (onSlotClick)="onRaidSlotClick($index, $event)"
         (onSlotDragStart)="onRaidSlotDragStart($index, $event)"
         (onSlotDragEnd)="onRaidSlotDragEnd()"

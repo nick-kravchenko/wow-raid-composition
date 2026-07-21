@@ -1,0 +1,234 @@
+@use "colors";
+
+:host {
+  display: block;
+}
+
+.wcl-stats {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.page-heading,
+.raid-card {
+  background: rgba(colors.$deep-space, .86);
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: .75rem;
+  box-shadow: 0 .25rem 2rem rgba(0, 0, 0, .2);
+  backdrop-filter: blur(.75rem);
+}
+
+.page-heading {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .85rem;
+  padding: .9rem 1.1rem;
+}
+
+.eyebrow {
+  color: colors.$regal-gold;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  margin: 0 0 .15rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+.intro,
+.freshness {
+  margin-top: 0;
+}
+
+.heading-actions {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem .85rem;
+  font-size: .85rem;
+
+  label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: .35rem;
+    white-space: nowrap;
+  }
+
+  input {
+    accent-color: colors.$regal-gold;
+  }
+}
+
+h1 {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  margin-bottom: .2rem;
+}
+
+h2 {
+  color: colors.$regal-gold;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin-bottom: .65rem;
+}
+
+.intro,
+.freshness {
+  color: #c8cbd0;
+  margin-bottom: 0;
+}
+
+.intro {
+  font-size: .9rem;
+}
+
+.freshness {
+  flex: 0 0 auto;
+  font-size: .78rem;
+}
+
+.raid-tables {
+  display: grid;
+  gap: .85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.raid-card {
+  min-width: 0;
+  padding: .9rem 1rem 1rem;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: .88rem;
+  min-width: 28rem;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  padding: .45rem .55rem;
+  text-align: left;
+}
+
+th {
+  color: #aeb2b8;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  transition: background-color .15s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, .05);
+  }
+
+  &:last-child td {
+    border-bottom: 0;
+  }
+}
+
+.ukrainian-guild {
+  background: rgba(colors.$alliance-blue, .12);
+
+  &:hover {
+    background: rgba(colors.$alliance-blue, .18);
+  }
+}
+
+.russian-guild {
+  background: rgba(colors.$victory-red, .12);
+
+  &:hover {
+    background: rgba(colors.$victory-red, .18);
+  }
+}
+
+.rank,
+.time {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+
+.rank {
+  color: colors.$regal-gold;
+  font-weight: 700;
+  width: 3.5rem;
+}
+
+.time {
+  text-align: right;
+  width: 6.5rem;
+}
+
+a {
+  color: #fff;
+  text-decoration-color: rgba(colors.$regal-gold, .6);
+  text-underline-offset: .2em;
+
+  &:hover,
+  &:focus-visible {
+    color: colors.$regal-gold;
+  }
+}
+
+.guild a {
+  align-items: center;
+  display: inline-flex;
+  gap: .3rem;
+}
+
+.faction-icon {
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (max-width: 70rem) {
+  .raid-tables {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 40rem) {
+  .page-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .heading-actions {
+    align-items: flex-start;
+  }
+
+  .page-heading,
+  .raid-card {
+    padding: .8rem .9rem;
+  }
+}

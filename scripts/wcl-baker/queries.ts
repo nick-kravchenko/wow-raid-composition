@@ -128,15 +128,13 @@ export const GET_REPORT_COMBATANT_INFO = /* GraphQL */ `
   query GetReportCombatantInfo(
     $reportCode: String!
     $fightID: Int!
-    $sourceID: Int!
   ) {
     reportData {
       report(code: $reportCode) {
         events(
           dataType: CombatantInfo
           fightIDs: [$fightID]
-          sourceID: $sourceID
-          limit: 1
+          limit: 100
           translate: true
         ) {
           data

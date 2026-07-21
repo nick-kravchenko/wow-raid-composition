@@ -17,6 +17,7 @@
  *   WCL_API_DELAY_MS   - Delay between API calls within a single character fetch in ms (default: 300)
  *   WCL_BATCH_SIZE     - Number of characters to fetch concurrently (default: 5)
  *   WCL_BATCH_DELAY_MS - Delay between batches in ms (default: 1000)
+ *   WCL_CACHE_MAX_AGE_HOURS - Reuse complete baked entries newer than this (default: 6; 0 disables)
  */
 import dotenv from 'dotenv';
 import { writeFileSync, readFileSync, existsSync } from 'fs';
@@ -36,7 +37,7 @@ import {
   GET_REPORT_MASTER_DATA,
   GET_REPORT_COMBATANT_INFO,
 } from './queries';
-import { fetchCharacterOverallRanks } from './overall-ranks';
+import { buildOverallRankRequests, fetchCharacterOverallRanks } from './overall-ranks';
 import {
   buildBakedCharacter,
   buildErrorCharacter,
@@ -89,6 +90,7 @@ const SKIP_GEAR = process.env['WCL_SKIP_GEAR'] === 'true';
 const API_DELAY_MS = parseInt(process.env['WCL_API_DELAY_MS'] ?? '300', 10);
 const BATCH_SIZE = parseInt(process.env['WCL_BATCH_SIZE'] ?? '10', 10);
 const BATCH_DELAY_MS = parseInt(process.env['WCL_BATCH_DELAY_MS'] ?? '500', 10);
+const CACHE_MAX_AGE_HOURS = parseFloat(process.env['WCL_CACHE_MAX_AGE_HOURS'] ?? '6');
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -114,6 +116,36 @@ function charKey(name: string): string {
 }
 
 // ── Gear fetching ────────────────────────────────────────────────────────────
+
+// Multiple roster characters commonly come from the same raid report. Cache
+// in-flight promises too, so concurrent characters share these requests.
+const masterDataCache = new Map<string, Promise<WclRawReportMasterDataResponse>>();
+const combatantInfoCache = new Map<string, Promise<WclRawCombatantInfoResponse>>();
+
+function cachedMasterData(client: WclApiClient, reportCode: string): Promise<WclRawReportMasterDataResponse> {
+  let request = masterDataCache.get(reportCode);
+  if (!request) {
+    request = client.query<WclRawReportMasterDataResponse>(GET_REPORT_MASTER_DATA, { reportCode });
+    masterDataCache.set(reportCode, request);
+    void request.catch(() => masterDataCache.delete(reportCode));
+  }
+  return request;
+}
+
+function cachedCombatantInfo(
+  client: WclApiClient,
+  reportCode: string,
+  fightID: number,
+): Promise<WclRawCombatantInfoResponse> {
+  const key = `${reportCode}:${fightID}`;
+  let request = combatantInfoCache.get(key);
+  if (!request) {
+    request = client.query<WclRawCombatantInfoResponse>(GET_REPORT_COMBATANT_INFO, { reportCode, fightID });
+    combatantInfoCache.set(key, request);
+    void request.catch(() => combatantInfoCache.delete(key));
+  }
+  return request;
+}
 
 /**
  * Attempts to fetch gear for a character via the CombatantInfo event in their
@@ -170,11 +202,7 @@ async function fetchGear(
   let actorId: number;
 
   try {
-    const masterResp =
-      await client.query<WclRawReportMasterDataResponse>(
-        GET_REPORT_MASTER_DATA,
-        { reportCode },
-      );
+    const masterResp = await cachedMasterData(client, reportCode);
 
     const actors =
       masterResp.reportData?.report?.masterData?.actors ?? [];
@@ -205,11 +233,7 @@ async function fetchGear(
   await sleep(API_DELAY_MS);
 
   try {
-    const combatantResp =
-      await client.query<WclRawCombatantInfoResponse>(
-        GET_REPORT_COMBATANT_INFO,
-        { reportCode, fightID: fightId, sourceID: actorId },
-      );
+    const combatantResp = await cachedCombatantInfo(client, reportCode, fightId);
 
     const events =
       combatantResp.reportData?.report?.events?.data ?? [];
@@ -287,6 +311,30 @@ function mergeCharacter(
   }
 
   return fresh;
+}
+
+function reusableCharacter(
+  existing: WclBakedCharacter | undefined,
+  name: string,
+  role: CharacterRole,
+  now: number,
+): WclBakedCharacter | null {
+  if (!existing || CACHE_MAX_AGE_HOURS <= 0 || existing.error || existing.partial) return null;
+  const fetchedAt = Date.parse(existing.fetchedAt);
+  if (!Number.isFinite(fetchedAt) || now - fetchedAt > CACHE_MAX_AGE_HOURS * 60 * 60 * 1_000) return null;
+  if (
+    existing.characterName.toLowerCase() !== name.toLowerCase() ||
+    existing.serverSlug !== DEFAULT_REALM ||
+    existing.serverRegion !== DEFAULT_REGION
+  ) return null;
+
+  const expectedMetrics = buildOverallRankRequests(role, {
+    zoneID: OVERALL_RANK_ZONE_ID,
+    sscBossID: WCL_OVERALL_SSC_BOSS_ID,
+    tkBossID: WCL_OVERALL_TK_BOSS_ID,
+  }).map(request => `${request.raid}:${request.metric}`).sort();
+  const actualMetrics = existing.overallRanks.map(rank => `${rank.raid}:${rank.metric}`).sort();
+  return expectedMetrics.join('|') === actualMetrics.join('|') ? existing : null;
 }
 
 // ── Rankings fetching ────────────────────────────────────────────────────────
@@ -492,6 +540,7 @@ async function main(): Promise<void> {
   log(`Loaded ${Object.keys(existingCharacters).length} existing character(s) from previous bake`);
 
   const generatedAt = new Date().toISOString();
+  const generatedAtMs = Date.parse(generatedAt);
   const results: Record<string, WclBakedCharacter> = {};
   const failed: string[] = [];
 
@@ -503,6 +552,11 @@ async function main(): Promise<void> {
     const batchResults = await Promise.all(
       batch.map(({ playerName, charName, role }, j) => {
         const idx = batchStart + j + 1;
+        const cached = reusableCharacter(existingCharacters[charKey(charName)], charName, role, generatedAtMs);
+        if (cached) {
+          log(`  [${idx}/${characters.length}] Reusing fresh cached data for "${charName}"`);
+          return Promise.resolve({ charName, playerName, baked: cached });
+        }
         log(`  [${idx}/${characters.length}] Queuing "${charName}" (${playerName})`);
         return fetchCharacterData(client, charName, DEFAULT_REALM, DEFAULT_REGION, role, generatedAt)
           .then((baked) => ({ charName, playerName, baked }));

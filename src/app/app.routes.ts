@@ -10,5 +10,6 @@ export const routes: Routes = [
   { path: 'characters', loadComponent: () => import('./characters/characters.component').then(m => m.CharactersComponent) },
   { path: 'character/:name', loadComponent: () => import('./character/character.component').then(m => m.CharacterComponent) },
   { path: 'bis', loadComponent: () => import('./bis/bis.component').then(m => m.BisComponent) },
+  { path: 'wcl-stats', loadComponent: () => import('./wcl-stats/wcl-stats.component').then(m => m.WclStatsComponent) },
   { path: '**', redirectTo: '' },
 ];

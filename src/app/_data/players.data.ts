@@ -250,7 +250,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Dreamstate,
+        spec: CharacterSpecEnum.Restoration,
       },
       {
         name: 'Entimx',
@@ -1054,18 +1054,18 @@ export const players: Player[] = [
     discord: { userId: '839586121754476545' },
     characters: [
       {
-        name: 'Grobash',
-        rank: CharacterRank.main,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Fury,
-      },
-      {
         name: 'Haílrake',
-        rank: CharacterRank.alt,
+        rank: CharacterRank.main,
         role: CharacterRole.melee,
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Enhancement,
+      },
+      {
+        name: 'Grobash',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Fury,
       },
     ],
   },

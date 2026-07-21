@@ -1,0 +1,87 @@
+<section class="wcl-stats">
+  <header class="page-heading">
+    <div>
+      <p class="eyebrow">Warcraft Logs</p>
+      <h1>Speed rankings</h1>
+      <p class="intro">Complete-raid clear times for world rank milestones and selected guilds.</p>
+    </div>
+    <div class="heading-actions">
+      <div class="filters" aria-label="Guild visibility">
+        <label>
+          <input type="checkbox" [checked]="showUaGuilds()" (change)="setUaVisibility($event)">
+          Show UA guilds
+        </label>
+        @if (showRuControl()) {
+          <label>
+            <input type="checkbox" [checked]="showRuGuilds()" (change)="setRuVisibility($event)">
+            Show RU guilds
+          </label>
+        }
+      </div>
+      <p class="freshness">Updated {{ data.generatedAt | date:'medium' }}</p>
+    </div>
+  </header>
+
+  <div class="raid-tables">
+    @for (raid of raids; track raid.id) {
+      <section class="raid-card" [attr.aria-labelledby]="raid.id + '-heading'">
+        <h2 [id]="raid.id + '-heading'">{{ raid.name }}</h2>
+        <div class="table-scroll" tabindex="0" [attr.aria-label]="raid.name + ' rankings table'">
+          <table>
+            <caption class="visually-hidden">{{ raid.name }} complete-raid speed rankings</caption>
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Guild</th>
+                <th scope="col">Clear time</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (row of visibleRows(raid.rows); track row.guildName) {
+                <tr [class.ukrainian-guild]="row.guildGroup === 'ua'" [class.russian-guild]="row.guildGroup === 'ru'">
+                  <td class="rank">{{ formatRank(row.rank) }}</td>
+                  <td class="guild">
+                    <a
+                      [href]="row.guildUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      [attr.aria-label]="row.guildName + ' on Warcraft Logs (opens in a new tab)'"
+                    >
+                      @if (row.guildGroup === 'ua') {
+                        <span class="region-icon" aria-hidden="true">🇺🇦</span>
+                      } @else if (row.guildGroup === 'ru') {
+                        <span class="region-icon" aria-hidden="true">🧟</span>
+                      }
+                      @if (row.faction; as faction) {
+                        <img
+                          class="faction-icon"
+                          [src]="'assets/images/factions/' + faction.toLowerCase() + '.png'"
+                          alt=""
+                          width="15"
+                          height="15"
+                        >
+                      }
+                      {{ row.guildName }}
+                    </a>
+                  </td>
+                  <td class="time">
+                    @if (row.reportUrl && row.durationMs) {
+                      <a
+                        [href]="row.reportUrl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        [attr.aria-label]="row.guildName + ' exact raid log, ' + formatDuration(row.durationMs) + ' (opens in a new tab)'"
+                      >{{ formatDuration(row.durationMs) }}</a>
+                    } @else {
+                      {{ formatDuration(row.durationMs) }}
+                    }
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+    }
+  </div>
+</section>
