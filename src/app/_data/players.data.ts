@@ -250,7 +250,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Restoration,
+        spec: CharacterSpecEnum.Dreamstate,
       },
       {
         name: 'Entimx',
@@ -770,7 +770,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
-        spec: CharacterSpecEnum.Destruction,
+        spec: CharacterSpecEnum.Affliction,
       },
       {
         name: 'Sypukha',
