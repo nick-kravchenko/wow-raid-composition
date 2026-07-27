@@ -1,1 +1,161 @@
-<p>home works!</p>
+<main class="home">
+  <section class="hero" aria-labelledby="home-title">
+    <div class="hero__content">
+      <p class="eyebrow">TBC Classic</p>
+      <h1 id="home-title">Raid composition <span>&amp; assignments.</span></h1>
+      <p class="hero__intro">
+        Build a 25-player composition, assign roles, and check roster, gear, attendance, and Warcraft Logs
+        data — all in one place.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" routerLink="/composition">
+          Build a composition
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <a class="button button--secondary" routerLink="/about-us">About the guild</a>
+      </div>
+    </div>
+
+    <div class="hero__summary" aria-label="Project highlights">
+      <div class="summary__heading">
+        <span class="summary__status" aria-hidden="true"></span>
+        <span>Overview</span>
+      </div>
+      <ol>
+        <li>
+          <span class="summary__number">01</span>
+          <span><strong>Assemble</strong> balanced groups from the roster</span>
+        </li>
+        <li>
+          <span class="summary__number">02</span>
+          <span><strong>Coordinate</strong> roles and boss responsibilities</span>
+        </li>
+        <li>
+          <span class="summary__number">03</span>
+          <span><strong>Review</strong> characters, gear, attendance, and logs</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="problems" aria-labelledby="problems-title">
+    <div class="section-heading">
+      <p class="eyebrow">Why it exists</p>
+      <h2 id="problems-title">Less admin between your team and the next pull.</h2>
+    </div>
+
+    <div class="problem-grid">
+      <article>
+        <span class="problem__icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
+        <h3>Composition is a puzzle</h3>
+        <p>
+          Five groups, limited buffs, required roles, mains, alts, and a bench are hard to track in a
+          spreadsheet. Build the raid visually from the roster instead.
+        </p>
+      </article>
+      <article>
+        <span class="problem__icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span>
+        <h3>Assignments get scattered</h3>
+        <p>
+          Jobs get lost across chat threads and old notes. Keep raid-wide and encounter assignments tied
+          to the composition everyone is using.
+        </p>
+      </article>
+      <article>
+        <span class="problem__icon"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></span>
+        <h3>Context lives in too many tabs</h3>
+        <p>
+          Roster, gear, rankings, best-in-slot references, and attendance belong together when you're
+          making raid decisions.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tools" aria-labelledby="tools-title">
+    <div class="section-heading section-heading--row">
+      <div>
+        <p class="eyebrow">Tools</p>
+        <h2 id="tools-title">Everything you need.</h2>
+      </div>
+      <p>No login, no setup — just open a tool.</p>
+    </div>
+
+    <div class="tool-grid">
+      <a class="tool-card tool-card--featured" routerLink="/composition">
+        <span class="tool-card__icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
+        <span class="tool-card__body">
+          <span class="tool-card__label">Core tool</span>
+          <strong>Raid composition</strong>
+          <span>Build five groups from the roster and bench, filter available characters, then share the result by link or image.</span>
+        </span>
+        <i class="fa-solid fa-arrow-right tool-card__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tool-card" routerLink="/assignments">
+        <span class="tool-card__icon"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span>
+        <span class="tool-card__body">
+          <strong>Assignments</strong>
+          <span>Prepare raid-wide and boss responsibilities, with notes ready to move into MRT.</span>
+        </span>
+        <i class="fa-solid fa-arrow-right tool-card__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tool-card" routerLink="/players">
+        <span class="tool-card__icon"><i class="fa-solid fa-user-group" aria-hidden="true"></i></span>
+        <span class="tool-card__body">
+          <strong>Players & roster</strong>
+          <span>See every player, their characters, Warcraft Logs rankings, and equipped gear.</span>
+        </span>
+        <i class="fa-solid fa-arrow-right tool-card__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tool-card" routerLink="/characters">
+        <span class="tool-card__icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+        <span class="tool-card__body">
+          <strong>Characters</strong>
+          <span>Browse the roster by class and open a focused profile for any character.</span>
+        </span>
+        <i class="fa-solid fa-arrow-right tool-card__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tool-card" routerLink="/bis">
+        <span class="tool-card__icon"><i class="fa-solid fa-gem" aria-hidden="true"></i></span>
+        <span class="tool-card__body">
+          <strong>Best in slot</strong>
+          <span>Compare Tier 4 and Tier 5 gear references for each class and specialization.</span>
+        </span>
+        <i class="fa-solid fa-arrow-right tool-card__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tool-card" routerLink="/calendar">
+        <span class="tool-card__icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></span>
+        <span class="tool-card__body">
+          <strong>Raid calendar</strong>
+          <span>Check the schedule and see lockout weeks at a glance.</span>
+        </span>
+        <i class="fa-solid fa-arrow-right tool-card__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tool-card" routerLink="/wcl-stats">
+        <span class="tool-card__icon"><i class="fa-solid fa-stopwatch" aria-hidden="true"></i></span>
+        <span class="tool-card__body">
+          <strong>WCL speed stats</strong>
+          <span>Track SSC and Tempest Keep clear-time milestones alongside selected guilds.</span>
+        </span>
+        <i class="fa-solid fa-arrow-right tool-card__arrow" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div>
+      <p class="eyebrow">Ready for raid night?</p>
+      <h2>Start with the lineup.</h2>
+    </div>
+    <a class="button button--primary" routerLink="/composition">
+      Create your raid
+      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  </section>
+</main>
