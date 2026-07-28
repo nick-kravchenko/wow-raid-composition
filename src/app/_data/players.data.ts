@@ -847,7 +847,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Shadow,
       },
       {
-        name: 'Dixonmyezpala',
+        name: 'Paladigga',
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.paladin,
