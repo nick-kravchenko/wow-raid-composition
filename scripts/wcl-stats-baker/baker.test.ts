@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 
 import type { WclStatsApi } from './api';
 import { bakeRaids, extractEntries } from './baker';
-import { RAIDS, TRACKED_GUILDS } from './config';
+import { RAIDS, RANK_TARGETS, TRACKED_GUILDS } from './config';
 import { serializeBakedData, validateBakedData, writeBakedData } from './index';
 import type { WclStatsData } from './types';
 
@@ -67,7 +67,7 @@ async function run(): Promise<void> {
   const tkRaid = raids.find(raid => raid.id === 'tk')!;
   const sscRaid = raids.find(raid => raid.id === 'ssc')!;
 
-  assert.deepEqual(tkRaid.rows.filter(row => [1, 50, 100].includes(row.rank ?? -1)).map(row => row.rank), [1, 50, 100]);
+  assert.deepEqual(tkRaid.rows.filter(row => RANK_TARGETS.includes(row.rank as typeof RANK_TARGETS[number])).map(row => row.rank), [...RANK_TARGETS]);
   assert.equal(tkRaid.rows.filter(row => row.guildName === 'Ïzhachok').length, 1, 'target/guild row must be deduplicated');
   assert.equal(tkRaid.rows.find(row => row.guildName === 'LiberalPug')?.rank, 1205);
   assert.equal(tkRaid.rows.find(row => row.guildName === 'LiberalPug')?.reportUrl, 'https://fresh.warcraftlogs.com/reports/UA2');

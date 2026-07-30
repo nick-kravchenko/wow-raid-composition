@@ -1,6 +1,6 @@
 import type { WclStatsGuildConfig, WclStatsRaidConfig } from './types';
 
-export const RANK_TARGETS = [1, 50, 100] as const;
+export const RANK_TARGETS = [1, 25, 50, 100] as const;
 export const RANKINGS_PER_PAGE = 50;
 export const RAID_SIZE = 25;
 // Warcraft Logs currently exposes at most 1,000 public ranking rows (20 x 50).
@@ -42,10 +42,27 @@ function russianGuild(name: string, faction: 'Alliance' | 'Horde'): WclStatsGuil
 }
 
 export const RUSSIAN_GUILDS: readonly WclStatsGuildConfig[] = [
-  ...['Annuit Coeptis', 'BOARS', 'Dwarves drank Baikal', 'Free Will', 'GAMBIT', 'Its Official', 'MUGIWARA', 'N O R D', 'Warsong']
-    .map(name => russianGuild(name, 'Alliance')),
-  ...['CEBEP POMNIT', 'DELETED', 'Eternal Sleep', 'Faceroll', 'Just Ask', 'MATRëSHKA', 'Trade Goods', 'Unexpected Journey']
-    .map(name => russianGuild(name, 'Horde')),
+  ...[
+    'Annuit Coeptis',
+    'BOARS',
+    'Dwarves drank Baikal',
+    // 'Free Will',
+    'GAMBIT',
+    'Its Official',
+    // 'MUGIWARA',
+    'N O R D',
+    // 'Warsong',
+  ].map(name => russianGuild(name, 'Alliance')),
+  ...[
+    'CEBEP POMNIT',
+    'DELETED',
+    'Eternal Sleep',
+    // 'Faceroll',
+    'Just Ask',
+    // 'MATRëSHKA',
+    'Trade Goods',
+    'Unexpected Journey',
+  ].map(name => russianGuild(name, 'Horde')),
 ];
 
 export const TRACKED_GUILDS: readonly WclStatsGuildConfig[] = [
