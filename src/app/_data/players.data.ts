@@ -770,7 +770,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
-        spec: CharacterSpecEnum.Affliction,
+        spec: CharacterSpecEnum.Destruction,
       },
       {
         name: 'Sypukha',

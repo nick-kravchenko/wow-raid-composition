@@ -23,7 +23,7 @@ export interface WclStatsRaid {
 export interface WclStatsData { generatedAt: string; raids: WclStatsRaid[]; }
 
 export const wclStatsData: WclStatsData = {
-  "generatedAt": "2026-07-30T07:44:41.261Z",
+  "generatedAt": "2026-08-05T11:53:25.463Z",
   "raids": [
     {
       "id": "tk",
@@ -32,42 +32,42 @@ export const wclStatsData: WclStatsData = {
       "rows": [
         {
           "rank": 1,
-          "guildName": "Progress",
-          "displayName": "Progress",
+          "guildName": "Eternal",
+          "displayName": "Eternal",
           "faction": null,
           "region": "eu",
-          "realm": "Spineshatter",
-          "durationMs": 1503097,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/progress",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/1c7dHynFrhxLmtMZ",
+          "realm": "Nightslayer",
+          "durationMs": 1491250,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/nightslayer/eternal",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/r7MLxptWv2FyVhqg",
           "guildGroup": "milestone"
         },
         {
           "rank": 25,
-          "guildName": "TOXIC",
-          "displayName": "TOXIC",
+          "guildName": "Faint",
+          "displayName": "Faint",
           "faction": null,
           "region": "eu",
           "realm": "Spineshatter",
-          "durationMs": 2005406,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/toxic",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/jrRk3bQfJgh8B1mz",
+          "durationMs": 1998167,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/faint",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/jfw78kYvdQTRbPqN",
           "guildGroup": "milestone"
         },
         {
           "rank": 50,
-          "guildName": "DFB",
-          "displayName": "DFB",
+          "guildName": "HOOLIGANS",
+          "displayName": "HOOLIGANS",
           "faction": null,
           "region": "eu",
-          "realm": "Dreamscythe",
-          "durationMs": 2180044,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/dreamscythe/dfb",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/X4BCcj2ZDYz37brP",
+          "realm": "Spineshatter",
+          "durationMs": 2131910,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/hooligans",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/bzFCv26fxhQk8q4p",
           "guildGroup": "milestone"
         },
         {
-          "rank": 51,
+          "rank": 60,
           "guildName": "Ïzhachok",
           "displayName": "Ïzhachok",
           "faction": "Horde",
@@ -79,7 +79,19 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 78,
+          "rank": 64,
+          "guildName": "DELETED",
+          "displayName": "DELETED",
+          "faction": "Horde",
+          "region": "eu",
+          "realm": "spineshatter",
+          "durationMs": 2236098,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/deleted",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/PqmyKb2YATxvcawr",
+          "guildGroup": "ru"
+        },
+        {
+          "rank": 87,
           "guildName": "CBITAHOK",
           "displayName": "CBITAHOK",
           "faction": "Alliance",
@@ -91,31 +103,31 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 100,
-          "guildName": "goodnighting",
-          "displayName": "goodnighting",
-          "faction": null,
-          "region": "eu",
-          "realm": "Dreamscythe",
-          "durationMs": 2498634,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/dreamscythe/goodnighting",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/H7qhKTrnVpZkcDwB",
-          "guildGroup": "milestone"
-        },
-        {
-          "rank": 111,
+          "rank": 96,
           "guildName": "Just Ask",
           "displayName": "Just Ask",
           "faction": "Horde",
           "region": "eu",
           "realm": "spineshatter",
-          "durationMs": 2556870,
+          "durationMs": 2431632,
           "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/just%20ask",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/pfgz6L3WFXZcPKvR",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/mfkrNWRY2y1FGnxq",
           "guildGroup": "ru"
         },
         {
-          "rank": 238,
+          "rank": 100,
+          "guildName": "Life is Sweat",
+          "displayName": "Life is Sweat",
+          "faction": null,
+          "region": "eu",
+          "realm": "Nightslayer",
+          "durationMs": 2449593,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/nightslayer/life%20is%20sweat",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/pkzgqYGQ4WmbrMC2",
+          "guildGroup": "milestone"
+        },
+        {
+          "rank": 255,
           "guildName": "BOARS",
           "displayName": "BOARS",
           "faction": "Alliance",
@@ -127,31 +139,19 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 252,
-          "guildName": "DELETED",
-          "displayName": "DELETED",
-          "faction": "Horde",
-          "region": "eu",
-          "realm": "spineshatter",
-          "durationMs": 2900918,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/deleted",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/PdGzx43D6R29LWBt",
-          "guildGroup": "ru"
-        },
-        {
-          "rank": 289,
+          "rank": 275,
           "guildName": "Dwarves drank Baikal",
           "displayName": "Dwarves drank Baikal",
           "faction": "Alliance",
           "region": "eu",
           "realm": "spineshatter",
-          "durationMs": 2967576,
+          "durationMs": 2924703,
           "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/dwarves%20drank%20baikal",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/qBRcV2PhD4FQw8Ty",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/BNYLX3JtzdKPWpm1",
           "guildGroup": "ru"
         },
         {
-          "rank": 748,
+          "rank": 801,
           "guildName": "Unexpected Journey",
           "displayName": "Unexpected Journey",
           "faction": "Horde",
@@ -163,7 +163,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 844,
+          "rank": 897,
           "guildName": "N O R D",
           "displayName": "N O R D",
           "faction": "Alliance",
@@ -175,7 +175,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 963,
+          "rank": 1013,
           "guildName": "Its Official",
           "displayName": "Its Official",
           "faction": "Alliance",
@@ -187,7 +187,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 979,
+          "rank": 1030,
           "guildName": "Trade Goods",
           "displayName": "Trade Goods",
           "faction": "Horde",
@@ -195,11 +195,11 @@ export const wclStatsData: WclStatsData = {
           "realm": "spineshatter",
           "durationMs": 3514056,
           "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/trade%20goods",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/j9JqVD3wRmnCkgtT",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/KqQcyzRVrwN1h6P7",
           "guildGroup": "ru"
         },
         {
-          "rank": 1217,
+          "rank": 1285,
           "guildName": "SWP in Three Days",
           "displayName": "SWP in Three Days",
           "faction": "Horde",
@@ -211,7 +211,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 1242,
+          "rank": 1314,
           "guildName": "Eternal Sleep",
           "displayName": "Eternal Sleep",
           "faction": "Horde",
@@ -223,7 +223,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 1417,
+          "rank": 1497,
           "guildName": "GAMBIT",
           "displayName": "GAMBIT",
           "faction": "Alliance",
@@ -235,7 +235,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 2237,
+          "rank": 2339,
           "guildName": "LiberalPug",
           "displayName": "LiberalPug",
           "faction": "Horde",
@@ -247,7 +247,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 2408,
+          "rank": 2538,
           "guildName": "MokNatal UA",
           "displayName": "MokNatal UA",
           "faction": "Horde",
@@ -259,7 +259,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 2435,
+          "rank": 2538,
           "guildName": "ATB",
           "displayName": "ATB",
           "faction": "Horde",
@@ -271,7 +271,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 3472,
+          "rank": 3565,
           "guildName": "BAPTA",
           "displayName": "BAPTA",
           "faction": "Horde",
@@ -283,7 +283,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 3792,
+          "rank": 3889,
           "guildName": "Ukrainian Ironbelly",
           "displayName": "Ukrainian Ironbelly",
           "faction": "Horde",
@@ -295,7 +295,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 4166,
+          "rank": 4267,
           "guildName": "CMEPEKA",
           "displayName": "CMEPEKA",
           "faction": "Alliance",
@@ -307,7 +307,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 4807,
+          "rank": 4861,
           "guildName": "Trident Reborn",
           "displayName": "Trident Reborn",
           "faction": "Horde",
@@ -319,7 +319,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 4807,
+          "rank": 4861,
           "guildName": "CEBEP POMNIT",
           "displayName": "CEBEP POMNIT",
           "faction": "Horde",
@@ -356,37 +356,37 @@ export const wclStatsData: WclStatsData = {
           "faction": null,
           "region": "eu",
           "realm": "Spineshatter",
-          "durationMs": 1563192,
+          "durationMs": 1522188,
           "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/progress",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/dRw6AyZGWNVCJH9j",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/GrpN1wRtzBCjg3ck",
           "guildGroup": "milestone"
         },
         {
           "rank": 25,
-          "guildName": "WIP",
-          "displayName": "WIP",
+          "guildName": "SNF",
+          "displayName": "SNF",
           "faction": null,
           "region": "eu",
           "realm": "Spineshatter",
-          "durationMs": 2103207,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/wip",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/baqKPtJH3FvQn4MX",
+          "durationMs": 2087927,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/snf",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/wBCd9NY6qmAyJp2x",
           "guildGroup": "milestone"
         },
         {
           "rank": 50,
-          "guildName": "Perfect Morning",
-          "displayName": "Perfect Morning",
+          "guildName": "Sanity",
+          "displayName": "Sanity",
           "faction": null,
           "region": "eu",
           "realm": "Spineshatter",
-          "durationMs": 2324734,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/perfect%20morning",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/6ZkftRnrxVqhgF8j",
+          "durationMs": 2304574,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/sanity",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/w76NaFqLXM2TQjfA",
           "guildGroup": "milestone"
         },
         {
-          "rank": 53,
+          "rank": 55,
           "guildName": "Ïzhachok",
           "displayName": "Ïzhachok",
           "faction": "Horde",
@@ -398,19 +398,31 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
+          "rank": 65,
+          "guildName": "DELETED",
+          "displayName": "DELETED",
+          "faction": "Horde",
+          "region": "eu",
+          "realm": "spineshatter",
+          "durationMs": 2402660,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/deleted",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/HmQwT6WBvGPJncrL",
+          "guildGroup": "ru"
+        },
+        {
           "rank": 82,
           "guildName": "Just Ask",
           "displayName": "Just Ask",
           "faction": "Horde",
           "region": "eu",
           "realm": "spineshatter",
-          "durationMs": 2554636,
+          "durationMs": 2514348,
           "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/just%20ask",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/pfgz6L3WFXZcPKvR",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/wYh1d2MZkHn4pTcL",
           "guildGroup": "ru"
         },
         {
-          "rank": 86,
+          "rank": 96,
           "guildName": "CBITAHOK",
           "displayName": "CBITAHOK",
           "faction": "Alliance",
@@ -423,18 +435,18 @@ export const wclStatsData: WclStatsData = {
         },
         {
           "rank": 100,
-          "guildName": "丨风林火山丨",
-          "displayName": "丨风林火山丨",
+          "guildName": "JP",
+          "displayName": "JP",
           "faction": null,
           "region": "eu",
-          "realm": "无情",
-          "durationMs": 2666257,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/%E6%97%A0%E6%83%85/%E4%B8%A8%E9%A3%8E%E6%9E%97%E7%81%AB%E5%B1%B1%E4%B8%A8",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/zxJdygq1XjYF9tVh",
+          "realm": "Thunderstrike",
+          "durationMs": 2580113,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/thunderstrike/jp",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/3WLxVdma18ZzQPMr",
           "guildGroup": "milestone"
         },
         {
-          "rank": 173,
+          "rank": 184,
           "guildName": "Dwarves drank Baikal",
           "displayName": "Dwarves drank Baikal",
           "faction": "Alliance",
@@ -446,7 +458,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 194,
+          "rank": 205,
           "guildName": "BOARS",
           "displayName": "BOARS",
           "faction": "Alliance",
@@ -458,19 +470,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 251,
-          "guildName": "DELETED",
-          "displayName": "DELETED",
-          "faction": "Horde",
-          "region": "eu",
-          "realm": "spineshatter",
-          "durationMs": 3308713,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/deleted",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/AGCzmPtaJXw6MRTK",
-          "guildGroup": "ru"
-        },
-        {
-          "rank": 447,
+          "rank": 467,
           "guildName": "N O R D",
           "displayName": "N O R D",
           "faction": "Alliance",
@@ -482,7 +482,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 567,
+          "rank": 592,
           "guildName": "Unexpected Journey",
           "displayName": "Unexpected Journey",
           "faction": "Horde",
@@ -494,7 +494,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 643,
+          "rank": 675,
           "guildName": "SWP in Three Days",
           "displayName": "SWP in Three Days",
           "faction": "Horde",
@@ -506,7 +506,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 698,
+          "rank": 733,
           "guildName": "Trade Goods",
           "displayName": "Trade Goods",
           "faction": "Horde",
@@ -518,7 +518,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 1270,
+          "rank": 1342,
           "guildName": "Its Official",
           "displayName": "Its Official",
           "faction": "Alliance",
@@ -530,19 +530,19 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 1822,
+          "rank": 1618,
           "guildName": "GAMBIT",
           "displayName": "GAMBIT",
           "faction": "Alliance",
           "region": "eu",
           "realm": "spineshatter",
-          "durationMs": 4602151,
+          "durationMs": 4453728,
           "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/gambit",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/ja28ZmBAbD3PKJnx",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/dB1Dm8y2aHfVZTLQ",
           "guildGroup": "ru"
         },
         {
-          "rank": 2276,
+          "rank": 2394,
           "guildName": "LiberalPug",
           "displayName": "LiberalPug",
           "faction": "Horde",
@@ -554,7 +554,19 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 2660,
+          "rank": 2691,
+          "guildName": "Trident Reborn",
+          "displayName": "Trident Reborn",
+          "faction": "Horde",
+          "region": "eu",
+          "realm": "spineshatter",
+          "durationMs": 4979983,
+          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/trident%20reborn",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/ZKfyc8ARNrdhHvtL",
+          "guildGroup": "ua"
+        },
+        {
+          "rank": 2745,
           "guildName": "Eternal Sleep",
           "displayName": "Eternal Sleep",
           "faction": "Horde",
@@ -566,7 +578,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ru"
         },
         {
-          "rank": 3032,
+          "rank": 3122,
           "guildName": "MokNatal UA",
           "displayName": "MokNatal UA",
           "faction": "Horde",
@@ -578,19 +590,19 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 3192,
+          "rank": 3337,
           "guildName": "ATB",
           "displayName": "ATB",
           "faction": "Horde",
           "region": "eu",
           "realm": "spineshatter",
-          "durationMs": 5360898,
+          "durationMs": 5371256,
           "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/atb",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/VNGC2yctKZad6FAP",
+          "reportUrl": "https://fresh.warcraftlogs.com/reports/YfVzNDcG72gj1pr4",
           "guildGroup": "ua"
         },
         {
-          "rank": 3351,
+          "rank": 3498,
           "guildName": "BAPTA",
           "displayName": "BAPTA",
           "faction": "Horde",
@@ -602,7 +614,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 3404,
+          "rank": 3552,
           "guildName": "Ukrainian Ironbelly",
           "displayName": "Ukrainian Ironbelly",
           "faction": "Horde",
@@ -614,19 +626,7 @@ export const wclStatsData: WclStatsData = {
           "guildGroup": "ua"
         },
         {
-          "rank": 3458,
-          "guildName": "Trident Reborn",
-          "displayName": "Trident Reborn",
-          "faction": "Horde",
-          "region": "eu",
-          "realm": "spineshatter",
-          "durationMs": 5560230,
-          "guildUrl": "https://fresh.warcraftlogs.com/guild/eu/spineshatter/trident%20reborn",
-          "reportUrl": "https://fresh.warcraftlogs.com/reports/WZYT6mN4L2vrMGyD",
-          "guildGroup": "ua"
-        },
-        {
-          "rank": 4788,
+          "rank": 4844,
           "guildName": "CMEPEKA",
           "displayName": "CMEPEKA",
           "faction": "Alliance",
