@@ -219,6 +219,13 @@ export const players: Player[] = [
         class: CharacterClass.mage,
         spec: CharacterSpecEnum.Arcane,
       },
+      {
+        name: 'Abuse',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Arms,
+      },
     ],
   },
   // {
@@ -672,6 +679,13 @@ export const players: Player[] = [
         class: CharacterClass.warrior,
         spec: CharacterSpecEnum.Fury,
       },
+      {
+        name: 'Tonyfury',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
     ],
   },
   {
@@ -1080,6 +1094,13 @@ export const players: Player[] = [
         class: CharacterClass.priest,
         spec: CharacterSpecEnum.Holy,
       },
+      {
+        name: 'Dieforu',
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Restoration,
+      },
     ],
   },
   {
@@ -1105,6 +1126,53 @@ export const players: Player[] = [
         role: CharacterRole.tank,
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Feral,
+      },
+    ],
+  },
+  {
+    name: 'Drwala',
+    discord: { userId: '434434231045718027' },
+    characters: [
+      {
+        name: 'Drwala',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+        spec: CharacterSpecEnum.Arcane,
+      },
+      {
+        name: 'Cheesburger',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Arms,
+      },
+      {
+        name: 'Stoneboner',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+    ],
+  },
+  {
+    name: 'Biruang',
+    discord: { userId: '840952972850233375' },
+    characters: [
+      {
+        name: 'Biruang',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
+      },
+      {
+        name: 'Biruang',
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Restoration,
       },
     ],
   },
