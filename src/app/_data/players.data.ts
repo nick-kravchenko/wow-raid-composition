@@ -174,26 +174,6 @@ export const players: Player[] = [
   //     },
   //   ],
   // },
-  // {
-  //   name: 'Lansena',
-  //   discord: { userId: '360123145522249729' },
-  //   characters: [
-  //     {
-  //       name: 'Lansena',
-  //       rank: CharacterRank.main,
-  //       role: CharacterRole.healer,
-  //       class: CharacterClass.priest,
-  //       spec: CharacterSpecEnum.Holy,
-  //     },
-  //     {
-  //       name: 'Mellorin',
-  //       rank: CharacterRank.alt,
-  //       role: CharacterRole.ranged,
-  //       class: CharacterClass.druid,
-  //       spec: CharacterSpecEnum.Balance,
-  //     },
-  //   ],
-  // },
   {
     name: 'Edgelord',
     discord: { userId: '257947077324177411' },
@@ -266,6 +246,13 @@ export const players: Player[] = [
         class: CharacterClass.priest,
         spec: CharacterSpecEnum.Discipline,
       },
+      {
+        name: 'Entimz',
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Restoration,
+      },
     ],
   },
   {
@@ -319,6 +306,13 @@ export const players: Player[] = [
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
         spec: CharacterSpecEnum.Combat,
+      },
+      {
+        name: 'Chaiserr',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+        spec: CharacterSpecEnum.Arcane,
       },
     ],
   },
@@ -375,26 +369,26 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Sayfer',
-    discord: { userId: '234249857085210625' },
-    characters: [
-      {
-        name: 'Sayfer',
-        rank: CharacterRank.main,
-        role: CharacterRole.healer,
-        class: CharacterClass.paladin,
-        spec: CharacterSpecEnum.Holy,
-      },
-      {
-        name: 'Frenzyrage',
-        rank: CharacterRank.alt,
-        role: CharacterRole.melee,
-        class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Fury,
-      },
-    ],
-  },
+  // {
+  //   name: 'Sayfer',
+  //   discord: { userId: '234249857085210625' },
+  //   characters: [
+  //     {
+  //       name: 'Sayfer',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.healer,
+  //       class: CharacterClass.paladin,
+  //       spec: CharacterSpecEnum.Holy,
+  //     },
+  //     {
+  //       name: 'Frenzyrage',
+  //       rank: CharacterRank.alt,
+  //       role: CharacterRole.melee,
+  //       class: CharacterClass.warrior,
+  //       spec: CharacterSpecEnum.Fury,
+  //     },
+  //   ],
+  // },
   {
     name: 'Legalise',
     discord: { userId: '364448191724257280' },
@@ -488,6 +482,13 @@ export const players: Player[] = [
         class: CharacterClass.rogue,
         spec: CharacterSpecEnum.Combat,
       },
+      {
+        name: 'Pepejammer',
+        rank: CharacterRank.alt,
+        role: CharacterRole.tank,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Protection,
+      },
     ],
   },
   {
@@ -562,6 +563,13 @@ export const players: Player[] = [
         role: CharacterRole.melee,
         class: CharacterClass.rogue,
         spec: CharacterSpecEnum.Combat,
+      },
+      {
+        name: 'Beshketnik',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.mage,
+        spec: CharacterSpecEnum.Arcane,
       },
     ],
   },
