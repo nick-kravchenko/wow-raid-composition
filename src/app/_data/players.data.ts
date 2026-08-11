@@ -473,7 +473,7 @@ export const players: Player[] = [
         rank: CharacterRank.main,
         role: CharacterRole.ranged,
         class: CharacterClass.warlock,
-        spec: CharacterSpecEnum.Destruction,
+        spec: CharacterSpecEnum.Affliction,
       },
       {
         name: 'Strikex',
