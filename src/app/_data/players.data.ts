@@ -1252,4 +1252,17 @@ export const players: Player[] = [
       },
     ],
   },
+  {
+    name: 'Thundermatee',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Thundermatee',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+    ],
+  },
 ];
