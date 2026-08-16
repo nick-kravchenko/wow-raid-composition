@@ -1239,4 +1239,17 @@ export const players: Player[] = [
       },
     ],
   },
+  {
+    name: 'Gastropod',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Gastropod',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Fury,
+      },
+    ],
+  },
 ];
