@@ -9,6 +9,8 @@ import { RaidTileComponent } from '../shared/raid-tile/raid-tile.component';
 import { AssignmentsT4Component } from './assignments-t4/assignments-t4.component';
 import { AssignmentsSscComponent } from './assignments-ssc/assignments-ssc.component';
 import { AssignmentsTkComponent } from './assignments-tk/assignments-tk.component';
+import { AssignmentsHyjalComponent } from './assignments-hyjal/assignments-hyjal.component';
+import { AssignmentsBtComponent } from './assignments-bt/assignments-bt.component';
 
 enum PaneNameEnum {
   RaidWide = 'raid-wide',
@@ -18,6 +20,8 @@ enum PaneNameEnum {
   Magtheridon = 'magtheridon',
   Ssc = 'ssc',
   Tk = 'tk',
+  Hyjal = 'hyjal',
+  Bt = 'bt',
 }
 
 @Component({
@@ -29,6 +33,8 @@ enum PaneNameEnum {
     AssignmentsT4Component,
     AssignmentsSscComponent,
     AssignmentsTkComponent,
+    AssignmentsHyjalComponent,
+    AssignmentsBtComponent,
     RouterLink,
   ],
   templateUrl: './assignments.component.html',
@@ -61,6 +67,8 @@ export class AssignmentsComponent implements OnInit {
       [PaneNameEnum.Magtheridon]: 'pit-lord.gif',
       [PaneNameEnum.Ssc]: 'naga-sea-witch.png',
       [PaneNameEnum.Tk]: 'hero-blood-elf-prince.png',
+      [PaneNameEnum.Hyjal]: 'BTNArchimonde.webp',
+      [PaneNameEnum.Bt]: 'BTNEvilIllidan.webp',
     };
     return `assets/icons/${icons[pane as PaneNameEnum]}`;
   }

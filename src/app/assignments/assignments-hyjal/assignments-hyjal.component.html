@@ -1,0 +1,43 @@
+<button class="export" (click)="copyMrtNoteToBuffer()" type="button">MRT Note Export</button>
+<section>
+  @for (key of keys; track key) {
+    @let boss = assignments[key];
+    <article>
+      <h4>
+        <img src="assets/icons/{{boss.headerIcon}}" alt="">
+        {{boss.headerText}}
+        <button (click)="copyMrtNoteForBoss(key)" type="button">MRT</button>
+      </h4>
+      <div class="card-list">
+        @for (assignment of boss.assignments; track assignment) {
+          <div class="card">
+            <h5><img src="assets/icons/{{assignment.headerIcon}}" alt="">{{assignment.headerText}}</h5>
+            <ul>
+              @for (action of assignment.actions; track action) {
+                <li>
+                  <div class="caster">
+                    @if (typeof action.caster === 'object') {
+                      <app-character-tile [character]="getCaster(action)"></app-character-tile>
+                    } @else {
+                      <span>{{action.caster ?? '-'}}</span>
+                    }
+                  </div>
+                  <div class="target">
+                    @if (typeof action.target === 'object') {
+                      <app-character-tile [character]="getTarget(action)"></app-character-tile>
+                    } @else {
+                      <span>
+                        @if (action.icon) { <img src="assets/icons/{{action.icon}}" alt=""> }
+                        {{action.target}}
+                      </span>
+                    }
+                  </div>
+                </li>
+              }
+            </ul>
+          </div>
+        }
+      </div>
+    </article>
+  }
+</section>

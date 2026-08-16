@@ -73,6 +73,11 @@ export enum IconEnum {
   voidReaver = 'BTNArmorGolem.png',
   solarian = 'BTNSorceress.png',
   kaelthas = 'BTNHeroBloodElfPrince.png',
+  rageWinterchill = 'BTNHeroLich.webp',
+  anetheron = 'BTNTichondrius.webp',
+  kazrogal = 'BTNDoomGuard.webp',
+  azgalor = 'BTNPitLord.webp',
+  archimonde = 'BTNArchimonde.webp',
 
   /**
    * Marks

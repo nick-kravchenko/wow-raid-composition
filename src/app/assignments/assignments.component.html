@@ -16,6 +16,12 @@
         <button title="Tk assignments" (click)="togglePane($index, PaneNameEnum.Tk)" [class.active]="isPaneVisible($index, PaneNameEnum.Tk)" type="button">
           <img [src]="getPaneIcon(PaneNameEnum.Tk)" alt="">
         </button>
+        <button title="Hyjal assignments" (click)="togglePane($index, PaneNameEnum.Hyjal)" [class.active]="isPaneVisible($index, PaneNameEnum.Hyjal)" type="button">
+          <img [src]="getPaneIcon(PaneNameEnum.Hyjal)" alt="">
+        </button>
+        <button title="Black Temple assignments" (click)="togglePane($index, PaneNameEnum.Bt)" [class.active]="isPaneVisible($index, PaneNameEnum.Bt)" type="button">
+          <img [src]="getPaneIcon(PaneNameEnum.Bt)" alt="">
+        </button>
         <button title="BWL assignments" (click)="togglePane($index, PaneNameEnum.Bwl)" [class.active]="isPaneVisible($index, PaneNameEnum.Bwl)" type="button" disabled>
           <img [src]="getPaneIcon(PaneNameEnum.Bwl)" alt="">
         </button>
@@ -41,6 +47,12 @@
       }
       @if (isPaneVisible($index, PaneNameEnum.Tk)) {
         <app-assignments-tk [raid]="raid"></app-assignments-tk>
+      }
+      @if (isPaneVisible($index, PaneNameEnum.Hyjal)) {
+        <app-assignments-hyjal [raid]="raid"></app-assignments-hyjal>
+      }
+      @if (isPaneVisible($index, PaneNameEnum.Bt)) {
+        <app-assignments-bt [raid]="raid"></app-assignments-bt>
       }
     </section>
 
