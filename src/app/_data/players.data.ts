@@ -1194,7 +1194,7 @@ export const players: Player[] = [
       {
         name: 'Kapeng',
         rank: CharacterRank.main,
-        role: CharacterRole.ranged,
+        role: CharacterRole.healer,
         class: CharacterClass.priest,
         spec: CharacterSpecEnum.Holy,
       },
