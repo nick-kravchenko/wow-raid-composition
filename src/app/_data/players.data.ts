@@ -1226,4 +1226,17 @@ export const players: Player[] = [
       },
     ],
   },
+  {
+    name: 'Serloo',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Serloo',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Arms,
+      },
+    ],
+  },
 ];
