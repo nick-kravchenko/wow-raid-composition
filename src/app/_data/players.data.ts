@@ -1218,7 +1218,7 @@ export const players: Player[] = [
     discord: { userId: '' },
     characters: [
       {
-        name: 'Myzhichok',
+        name: 'Muzhichok',
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.shaman,
