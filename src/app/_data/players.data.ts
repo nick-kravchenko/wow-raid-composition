@@ -1184,4 +1184,33 @@ export const players: Player[] = [
       },
     ],
   },
+
+
+  // DELETE ⬇️
+  {
+    name: 'Kapeng',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Kapeng',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Holy,
+      },
+    ],
+  },
+  {
+    name: 'Juderette',
+    discord: { userId: '' },
+    characters: [
+      {
+        name: 'Juderette',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Destruction,
+      },
+    ],
+  },
 ];
