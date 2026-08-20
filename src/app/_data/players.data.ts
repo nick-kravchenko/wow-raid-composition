@@ -602,7 +602,7 @@ export const players: Player[] = [
   },
   {
     name: 'Roombaboomba',
-    discord: { userId: '556582468002775050' },
+    discord: { userId: '209028340114391040' },
     characters: [
       {
         name: 'Serlo',
@@ -718,7 +718,7 @@ export const players: Player[] = [
   },
   {
     name: 'Retributia',
-    discord: { userId: '580756767148081152' },
+    discord: { userId: '250341256318681088' },
     characters: [
       {
         name: 'Retributia',
