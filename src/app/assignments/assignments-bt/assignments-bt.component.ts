@@ -74,7 +74,13 @@ export class AssignmentsBtComponent implements OnInit {
     const boss = this.assignments[key];
     return [boss.headerText, '', ...boss.assignments.flatMap(assignment => [
       assignment.headerText,
-      ...assignment.actions.map(action => `${this.name(action.caster)} -> ${this.name(action.target)}`),
+      ...assignment.actions.map(action => {
+        const caster = this.name(action.caster);
+        const target = this.name(action.target);
+        return assignment.headerText.endsWith(' Camp')
+          ? [caster, target].filter(name => name !== '-').join(', ')
+          : `${caster} -> ${target}`;
+      }),
       '',
     ])].join('\n').trim();
   }
@@ -88,6 +94,18 @@ export class AssignmentsBtComponent implements OnInit {
       `${index + 1}. ${this.assignments[key].headerText.toLowerCase()}`,
       this.getMrtNoteForBoss(key),
     ])), null, 2));
+  }
+
+  copyReliquaryKickAssignment(): void {
+    const kickAssignment = this.assignments[AssignmentType.Reliquary].assignments
+      .find(assignment => assignment.headerText === 'P2 Spirit Shock / Deaden Interrupts');
+    const exportText = (kickAssignment?.actions ?? [])
+      .map(action => this.name(action.caster))
+      .filter(name => name !== '-')
+      .map((name, index) => `${index + 1}:${name}`)
+      .join('-');
+
+    navigator.clipboard.writeText(exportText);
   }
 
   private fillAssignments(): void {

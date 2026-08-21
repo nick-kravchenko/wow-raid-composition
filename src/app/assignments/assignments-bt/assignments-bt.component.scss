@@ -18,6 +18,7 @@ h4 > img { width: 48px; }
 h4 button { margin-left: auto; }
 h5 { display: flex; align-items: center; margin: 0; padding: 5px; border: 1px solid #000; background: colors.$mako; }
 h5 img { width: 24px; margin-right: .25rem; }
+.assignment-export { margin-left: auto; }
 .card-list { display: grid; gap: 1rem; }
 ul { margin: 0; padding: 0; list-style: none; }
 li { display: grid; grid-template-columns: repeat(2, 1fr); align-items: center; text-align: center; border: 1px solid #000; }

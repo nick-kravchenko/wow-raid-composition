@@ -11,7 +11,12 @@
       <div class="card-list">
         @for (assignment of boss.assignments; track assignment) {
           <div class="card">
-            <h5><img src="assets/icons/{{assignment.headerIcon}}" alt="">{{assignment.headerText}}</h5>
+            <h5>
+              <img src="assets/icons/{{assignment.headerIcon}}" alt="">{{assignment.headerText}}
+              @if (assignment.headerText === 'P2 Spirit Shock / Deaden Interrupts') {
+                <button class="assignment-export" (click)="copyReliquaryKickAssignment()" type="button">Kick Export</button>
+              }
+            </h5>
             <ul>
               @for (action of assignment.actions; track action) {
                 <li>

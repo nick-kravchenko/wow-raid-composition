@@ -70,7 +70,13 @@ export class AssignmentsHyjalComponent implements OnInit {
       '',
       ...boss.assignments.flatMap(assignment => [
         assignment.headerText,
-        ...assignment.actions.map(action => `${this.characterName(action.caster)} -> ${this.characterName(action.target)}`),
+        ...assignment.actions.map(action => {
+          const caster = this.characterName(action.caster);
+          const target = this.characterName(action.target);
+          return assignment.headerText.endsWith(' Camp')
+            ? [caster, target].filter(name => name !== '-').join(', ')
+            : `${caster} -> ${target}`;
+        }),
         '',
       ]),
     ].join('\n').trim();
