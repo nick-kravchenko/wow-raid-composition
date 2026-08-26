@@ -1136,7 +1136,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.BeastMastery,
       },
       {
-        name: 'Biruang',
+        name: 'Bîruang',
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.shaman,
