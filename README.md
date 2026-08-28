@@ -141,6 +141,7 @@ Failed per-character requests retain existing baked entries when possible. Crede
 | --- | --- |
 | `npm run bake:bis:t4` | Rebuild Tier 4 best-in-slot modules from Wowhead guides. |
 | `npm run bake:bis:t5` | Rebuild Tier 5 best-in-slot modules from Wowhead guides. |
+| `npm run bake:bis:t6` | Rebuild Tier 6 best-in-slot modules from Wowhead Phase 3 guides. |
 | `npm run vr:curses` | Print a weekly Void Reaver curse matrix for roster warlocks using WCL data. |
 | `npm run attendance` | Compare the two Raid Helper event IDs currently configured in the script. |
 
@@ -155,7 +156,7 @@ src/assets/              Images, icons, fonts, and encounter plans
 scripts/wcl-baker/       Character rankings and gear baker
 scripts/wcl-stats-baker/ Raid speed-statistics baker
 scripts/battlenet-baker/ Battle.net profile baker
-scripts/bis-baker/       Tier 4 and Tier 5 BIS parsers and generated lists
+scripts/bis-baker/       Tier 4, Tier 5, and Tier 6 BIS parsers and generated lists
 scripts/void-reaver-curses/ WCL-based curse audit utility
 scss/                    Shared Sass variables
 ```
