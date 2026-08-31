@@ -924,26 +924,26 @@ export const players: Player[] = [
       },
     ],
   },
-  {
-    name: 'Benzobak',
-    discord: { userId: '817226698071998484' },
-    characters: [
-      {
-        name: 'Möxentöxen',
-        rank: CharacterRank.main,
-        role: CharacterRole.ranged,
-        class: CharacterClass.warlock,
-        spec: CharacterSpecEnum.Affliction,
-      },
-      {
-        name: 'Benzöbak',
-        rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
-        class: CharacterClass.druid,
-        spec: CharacterSpecEnum.Balance,
-      },
-    ],
-  },
+  // {
+  //   name: 'Benzobak',
+  //   discord: { userId: '817226698071998484' },
+  //   characters: [
+  //     {
+  //       name: 'Möxentöxen',
+  //       rank: CharacterRank.main,
+  //       role: CharacterRole.ranged,
+  //       class: CharacterClass.warlock,
+  //       spec: CharacterSpecEnum.Affliction,
+  //     },
+  //     {
+  //       name: 'Benzöbak',
+  //       rank: CharacterRank.alt,
+  //       role: CharacterRole.ranged,
+  //       class: CharacterClass.druid,
+  //       spec: CharacterSpecEnum.Balance,
+  //     },
+  //   ],
+  // },
   {
     name: 'Fline',
     discord: { userId: '431791718535528448' },
