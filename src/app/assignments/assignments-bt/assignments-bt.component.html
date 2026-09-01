@@ -6,7 +6,12 @@
       <h4>
         <img src="assets/icons/{{boss.headerIcon}}" alt="">
         {{boss.headerText}}
-        <button (click)="copyMrtNoteForBoss(key)" type="button">MRT</button>
+        <div class="boss-actions">
+          <button (click)="copyMrtNoteForBoss(key)" type="button">MRT</button>
+          @if (boss.planImage) {
+            <button (click)="openPlan(key)" type="button">Plan</button>
+          }
+        </div>
       </h4>
       <div class="card-list">
         @for (assignment of boss.assignments; track assignment) {
@@ -44,3 +49,12 @@
     </article>
   }
 </section>
+
+<ng-template #planModal>
+  <div class="plan-modal-backdrop" (click)="closePlan()">
+    <div class="plan-modal-box" (click)="$event.stopPropagation()">
+      <button class="plan-modal-close" type="button" (click)="closePlan()">✕</button>
+      <img [src]="activePlanImage" alt="Encounter plan">
+    </div>
+  </div>
+</ng-template>

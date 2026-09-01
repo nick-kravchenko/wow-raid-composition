@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EmbeddedViewRef, Input, OnDestroy, OnInit, TemplateRef, ViewChild, ViewContainerRef} from '@angular/core';
 import {Character} from '../../_entities/character';
 import {CharacterClass} from '../../_entities/character-class.enum';
 import {CharacterRole} from '../../_entities/character-role.enum';
@@ -34,6 +34,7 @@ interface BossAssignment {
   headerIcon: string;
   headerText: string;
   assignments: Assignment[];
+  planImage?: string;
 }
 
 @Component({
@@ -42,24 +43,48 @@ interface BossAssignment {
   templateUrl: './assignments-bt.component.html',
   styleUrl: './assignments-bt.component.scss',
 })
-export class AssignmentsBtComponent implements OnInit {
+export class AssignmentsBtComponent implements OnInit, OnDestroy {
   @Input() raid: Character[] = [];
+  @ViewChild('planModal') planModalTemplate!: TemplateRef<unknown>;
+
+  activePlanImage: string | null = null;
+  private modalViewRef: EmbeddedViewRef<unknown> | null = null;
+
+  constructor(private vcr: ViewContainerRef) {}
 
   readonly keys = Object.values(AssignmentType);
   readonly assignments: Record<AssignmentType, BossAssignment> = {
-    [AssignmentType.Najentus]: {headerIcon: IconEnum.skull, headerText: "High Warlord Naj'entus", assignments: []},
-    [AssignmentType.Supremus]: {headerIcon: IconEnum.skull, headerText: 'Supremus', assignments: []},
-    [AssignmentType.Akama]: {headerIcon: IconEnum.skull, headerText: 'Shade of Akama', assignments: []},
-    [AssignmentType.Teron]: {headerIcon: IconEnum.skull, headerText: 'Teron Gorefiend', assignments: []},
-    [AssignmentType.Bloodboil]: {headerIcon: IconEnum.skull, headerText: 'Gurtogg Bloodboil', assignments: []},
-    [AssignmentType.Reliquary]: {headerIcon: IconEnum.skull, headerText: 'Reliquary of Souls', assignments: []},
-    [AssignmentType.Shahraz]: {headerIcon: IconEnum.skull, headerText: 'Mother Shahraz', assignments: []},
-    [AssignmentType.Council]: {headerIcon: IconEnum.skull, headerText: 'Illidari Council', assignments: []},
-    [AssignmentType.Illidan]: {headerIcon: IconEnum.leotheras, headerText: 'Illidan Stormrage', assignments: []},
+    [AssignmentType.Najentus]: {headerIcon: IconEnum.najentus, headerText: "High Warlord Naj'entus", assignments: [], planImage: 'assets/images/plans/high-warlord-najentus.png'},
+    [AssignmentType.Supremus]: {headerIcon: IconEnum.supremus, headerText: 'Supremus', assignments: [], planImage: 'assets/images/plans/supremus.png'},
+    [AssignmentType.Akama]: {headerIcon: IconEnum.shadeOfAkama, headerText: 'Shade of Akama', assignments: [], planImage: 'assets/images/plans/shade-of-akama.png'},
+    [AssignmentType.Teron]: {headerIcon: IconEnum.teronGorefiend, headerText: 'Teron Gorefiend', assignments: [], planImage: 'assets/images/plans/teron-gorefiend.png'},
+    [AssignmentType.Bloodboil]: {headerIcon: IconEnum.gurtoggBloodboil, headerText: 'Gurtogg Bloodboil', assignments: [], planImage: 'assets/images/plans/gurtogg-bloodboil.png'},
+    [AssignmentType.Reliquary]: {headerIcon: IconEnum.reliquaryOfSouls, headerText: 'Reliquary of Souls', assignments: [], planImage: 'assets/images/plans/reliquary-of-souls.png'},
+    [AssignmentType.Shahraz]: {headerIcon: IconEnum.motherShahraz, headerText: 'Mother Shahraz', assignments: []},
+    [AssignmentType.Council]: {headerIcon: IconEnum.illidariCouncil, headerText: 'Illidari Council', assignments: [], planImage: 'assets/images/plans/illidari-council.png'},
+    [AssignmentType.Illidan]: {headerIcon: IconEnum.leotheras, headerText: 'Illidan Stormrage', assignments: [], planImage: 'assets/images/plans/illidan-stormrage.png'},
   };
 
   ngOnInit(): void {
     this.fillAssignments();
+  }
+
+  ngOnDestroy(): void {
+    this.closePlan();
+  }
+
+  openPlan(key: AssignmentType): void {
+    this.activePlanImage = this.assignments[key].planImage ?? null;
+    document.body.style.overflow = 'hidden';
+    this.modalViewRef = this.vcr.createEmbeddedView(this.planModalTemplate);
+    this.modalViewRef.rootNodes.forEach((node: Node) => document.body.appendChild(node));
+  }
+
+  closePlan(): void {
+    this.activePlanImage = null;
+    document.body.style.overflow = '';
+    this.modalViewRef?.destroy();
+    this.modalViewRef = null;
   }
 
   getCaster(action: AssignmentAction): Character {
@@ -124,6 +149,7 @@ export class AssignmentsBtComponent implements OnInit {
 
     this.assignments[AssignmentType.Najentus].assignments.push(
       this.assignment(IconEnum.skull, 'Main Tank', [{caster: mainTank, target: "High Warlord Naj'entus", icon: IconEnum.skull}]),
+      this.misdirectAssignment(hunters, [mainTank]),
       ...this.getRangedCampAssignments(),
     );
 
@@ -133,6 +159,8 @@ export class AssignmentsBtComponent implements OnInit {
         {caster: mainTank, target: 'Main Tank', icon: IconEnum.skull},
         ...[0, 1].map(index => ({caster: supremusSoakers[index], target: `Hateful Strike Soaker #${index + 1}`, icon: IconEnum.protection})),
       ]),
+      this.misdirectAssignment(hunters, [mainTank, ...supremusSoakers]),
+      ...this.getRangedCampAssignments(),
     );
 
     const protectionWarriors = warriorTanks.filter(character => character.spec === CharacterSpecEnum.Protection);
@@ -146,22 +174,26 @@ export class AssignmentsBtComponent implements OnInit {
     this.assignments[AssignmentType.Akama].assignments.push(
       this.assignment(IconEnum.skull, 'Left Door', [
         {caster: leftDoorTank, target: 'Door Tank', icon: IconEnum.skull},
-        {caster: hunters[0], target: 'Frost Trap', icon: IconEnum.freezingTrap},
         {caster: healers[0], target: this.name(leftDoorTank), icon: IconEnum.holyLight},
+        {caster: healers[2], target: `Backup for ${this.name(leftDoorTank)}`, icon: IconEnum.holyLight},
       ]),
       this.assignment(IconEnum.cross, 'Right Door', [
         {caster: rightDoorTank, target: 'Door Tank', icon: IconEnum.cross},
-        {caster: hunters[1], target: 'Frost Trap', icon: IconEnum.freezingTrap},
         {caster: healers[1], target: this.name(rightDoorTank), icon: IconEnum.holyLight},
+        {caster: healers[3], target: `Backup for ${this.name(rightDoorTank)}`, icon: IconEnum.holyLight},
       ]),
-      this.assignment(IconEnum.square, 'Defenders', [{caster: defenderTank, target: 'Defenders at Akama', icon: IconEnum.square}]),
+      this.assignment(IconEnum.square, 'Seed of Corruption Mob', [
+        {caster: defenderTank, target: 'Seed of Corruption mob', icon: IconEnum.square},
+        {caster: healers.find(character => this.isSingleTargetHealer(character) && !healers.slice(0, 4).includes(character)) ?? healers[4], target: this.name(defenderTank), icon: IconEnum.holyLight},
+      ]),
     );
 
     this.assignments[AssignmentType.Teron].assignments.push(
       this.assignment(IconEnum.skull, 'Main Tank', [{caster: mainTank, target: 'Teron Gorefiend', icon: IconEnum.skull}]),
+      this.misdirectAssignment(hunters, [mainTank]),
     );
 
-    const bloodboilTanks = tanks.slice(0, 3);
+    const bloodboilTanks = [protectionPaladin, ...tanks.filter(character => character !== protectionPaladin)].filter((character): character is Character => !!character).slice(0, 3);
     const felRageHealers = [
       ...healers.filter(character => this.isSingleTargetHealer(character)),
       ...healers.filter(character => !this.isSingleTargetHealer(character)),
@@ -169,8 +201,9 @@ export class AssignmentsBtComponent implements OnInit {
     const raidHealers = healers.filter(character => !felRageHealers.includes(character));
     this.assignments[AssignmentType.Bloodboil].assignments.push(
       this.assignment(IconEnum.skull, 'Acidic Wound Tank Rotation', bloodboilTanks.map((caster, index) => ({caster, target: `Tank #${index + 1} - swap at 5 stacks`}))),
-      this.assignment(IconEnum.holyLight, 'Fel Rage Target Healers', felRageHealers.map(caster => ({caster, target: 'Heal Fel Rage target'}))),
-      this.assignment(IconEnum.healingWave, 'Raid Recovery Healers', raidHealers.map(caster => ({caster, target: 'Top up raid after AoE damage'}))),
+      this.assignment(IconEnum.holyLight, 'Boss Target Healers', felRageHealers.map(caster => ({caster, target: 'Heal boss target'}))),
+      this.assignment(IconEnum.healingWave, 'Raid Healers', raidHealers.map(caster => ({caster, target: 'Heal raid'}))),
+      this.misdirectAssignment(hunters, [bloodboilTanks[0]]),
     );
 
     const interrupters = [
@@ -178,14 +211,22 @@ export class AssignmentsBtComponent implements OnInit {
       ...this.characters(CharacterClass.warrior, CharacterRole.melee),
     ];
     this.assignments[AssignmentType.Reliquary].assignments.push(
-      this.assignment(IconEnum.protection, 'P1 Tank', [{caster: protectionPaladin, target: 'Full Mitigation Gear'}]),
+      this.assignment(IconEnum.protection, 'Tanks', [
+        {caster: protectionPaladin ?? mainTank, target: 'Phase 1 - Full Mitigation Gear'},
+        {caster: tanks.find(character => character !== (protectionPaladin ?? mainTank)), target: 'Phase 2 / Phase 3 Tank'},
+      ]),
       this.assignment(IconEnum.kick, 'P2 Spirit Shock / Deaden Interrupts', interrupters.map((caster, index) => ({caster, target: `Interrupt #${index + 1}`}))),
       this.assignment(IconEnum.dispel, 'P2 Rune Shield Spellsteal', mages.map((caster, index) => ({caster, target: `Spellsteal #${index + 1}`}))),
-      this.assignment(IconEnum.tranquilizingShot, 'P3 Tranquilizing Shot', hunters.map((caster, index) => ({caster, target: `Tranq rotation #${index + 1}`}))),
+      this.misdirectAssignment(hunters, [tanks.find(character => character !== (protectionPaladin ?? mainTank))], 'P2 / P3 Misdirect Rotation'),
     );
 
     this.assignments[AssignmentType.Shahraz].assignments.push(
       this.assignment(IconEnum.skull, 'Saber Lash Tanks', [0, 1, 2].map(index => ({caster: tanks[index], target: `Tank #${index + 1}`}))),
+      this.assignment(IconEnum.star, 'Deployables', [
+        {caster: 'Assigned raiders', target: 'Thornling Seeds'},
+        {caster: 'Assigned raiders', target: 'Gnomish Flame Turret'},
+      ]),
+      this.misdirectAssignment(hunters, [mainTank]),
     );
 
     const councilMainTank = feralTanks[0] ?? mainTank;
@@ -196,29 +237,24 @@ export class AssignmentsBtComponent implements OnInit {
     );
     const mageTank = mages.find(character => character.spec === CharacterSpecEnum.Frost) ?? mages[0];
     const malandeMeleeInterrupter = rogues[0] ?? this.raid.find(character => character?.role === CharacterRole.melee);
-    const malandeMageInterrupter = mages.find(character => character !== mageTank) ?? mageTank;
+    const malandeMageInterrupter = mages.find(character => character !== mageTank);
     const malandeShamanInterrupter = shamans.find(character => character.spec === CharacterSpecEnum.Restoration);
     const councilHealerQueue = [
       ...healers.filter(character => this.isSingleTargetHealer(character)),
       ...healers.filter(character => !this.isSingleTargetHealer(character)),
     ];
-    const gathiosHealers = councilHealerQueue.splice(0, 2);
-    const malandeHealer = councilHealerQueue.shift();
-    const zerevorHealer = councilHealerQueue.shift();
-    const poisonCleansers: AssignmentAction[] = [
-      ...this.characters(CharacterClass.shaman, CharacterRole.healer)
-        .filter(character => character.spec === CharacterSpecEnum.Restoration)
-        .map(caster => ({caster, target: 'Poison Cleansing Totem - own group'})),
-      ...this.characters(CharacterClass.paladin, CharacterRole.healer)
-        .filter(character => character.spec === CharacterSpecEnum.Holy)
-        .map(caster => ({caster, target: 'Cleanse Deadly Poison - backup'})),
-    ];
+    const restorationShaman = this.characters(CharacterClass.shaman, CharacterRole.healer)
+      .find(character => character.spec === CharacterSpecEnum.Restoration);
+    const malandeHealer = restorationShaman ?? councilHealerQueue.shift();
+    const remainingCouncilHealers = councilHealerQueue.filter(character => character !== malandeHealer);
+    const gathiosHealers = remainingCouncilHealers.splice(0, 2);
+    const zerevorHealer = remainingCouncilHealers.shift();
     this.assignments[AssignmentType.Council].assignments.push(
       this.assignment(IconEnum.skull, 'Boss Tanks', [
         {caster: councilMainTank, target: 'Gathios - Main Tank', icon: IconEnum.skull},
         {caster: verasTank, target: 'Veras - Off Tank', icon: IconEnum.cross},
         {caster: malandeTank, target: 'Malande - Off Tank', icon: IconEnum.square},
-        {caster: mageTank, target: 'Zerevor (Spellsteal)', icon: IconEnum.moon},
+        {caster: mageTank, target: 'Zerevor - Mage Kiter / Tank (Spellsteal)', icon: IconEnum.moon},
       ]),
       this.assignment(IconEnum.holyLight, 'Tank Healers (raid flex when stable)', [
         {caster: gathiosHealers[0], target: `${this.name(councilMainTank)} - Gathios`, icon: IconEnum.skull},
@@ -226,12 +262,12 @@ export class AssignmentsBtComponent implements OnInit {
         {caster: malandeHealer, target: `${this.name(malandeTank)} - Malande`, icon: IconEnum.square},
         {caster: zerevorHealer, target: `${this.name(mageTank)} - Zerevor`, icon: IconEnum.moon},
       ]),
-      this.assignment(IconEnum.dispel, 'Deadly Poison Cleansing', poisonCleansers),
       this.assignment(IconEnum.kick, 'Malande Interrupts', [
         {caster: malandeMeleeInterrupter, target: 'Kick / Pummel'},
         {caster: malandeMageInterrupter, target: 'Counterspell'},
         {caster: malandeShamanInterrupter, target: 'Earth Shock'},
       ]),
+      this.misdirectAssignment(hunters, [councilMainTank, verasTank, malandeTank, mageTank]),
     );
 
     const flameTanks = tanks.filter(character => character !== mainTank).slice(0, 2);
@@ -240,6 +276,7 @@ export class AssignmentsBtComponent implements OnInit {
       this.assignment(IconEnum.skull, 'P1 / P3 / P4 Main Tank', [{caster: mainTank, target: 'Illidan (block every Shear)', icon: IconEnum.skull}]),
       this.assignment(IconEnum.freezingTrap, 'Parasite Frost Trap', [{caster: hunters[0], target: 'Parasitic Shadowfiend trap point'}]),
       this.assignment(IconEnum.protection, 'P2 Flames of Azzinoth', [0, 1].map(index => ({caster: flameTanks[index], target: `Flame Tank #${index + 1} - Fire Resistance`}))),
+      this.misdirectAssignment(hunters, [flameTanks[0]], 'P2 Flame #1 Misdirect Queue'),
       this.assignment(IconEnum.warlock, 'P3 Demon Form', [{caster: demonTank, target: 'Warlock Tank - Shadow Resistance'}]),
     );
   }
@@ -322,5 +359,14 @@ export class AssignmentsBtComponent implements OnInit {
 
   private assignment(headerIcon: string, headerText: string, actions: AssignmentAction[]): Assignment {
     return {headerIcon, headerText, actions};
+  }
+
+  private misdirectAssignment(hunters: Character[], targets: Array<Character | undefined>, headerText = 'Misdirect Queue'): Assignment {
+    const availableTargets = targets.filter((target): target is Character => !!target);
+    return this.assignment(IconEnum.misdirect, headerText, hunters.map((caster, index) => ({
+      caster,
+      target: availableTargets[index % availableTargets.length] ?? 'Main Tank',
+      icon: IconEnum.misdirect,
+    })));
   }
 }

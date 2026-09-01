@@ -78,6 +78,14 @@ export enum IconEnum {
   kazrogal = 'BTNDoomGuard.webp',
   azgalor = 'BTNPitLord.webp',
   archimonde = 'BTNArchimonde.webp',
+  najentus = 'BTNSeaTurtleRed.webp',
+  supremus = 'BTNInfernal.webp',
+  shadeOfAkama = 'BTNDranai.png',
+  teronGorefiend = 'BTNAcolyte.webp',
+  gurtoggBloodboil = 'BTNChaosPeon.webp',
+  reliquaryOfSouls = 'BTNWispSplode.webp',
+  motherShahraz = 'BTNBlueDemoness.webp',
+  illidariCouncil = 'BTNBloodElfPeasant.webp',
 
   /**
    * Marks

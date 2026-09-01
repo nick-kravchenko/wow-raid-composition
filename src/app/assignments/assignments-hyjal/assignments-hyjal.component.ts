@@ -102,15 +102,17 @@ export class AssignmentsHyjalComponent implements OnInit {
     ];
     const warriorTank = tanks.find(character => character.class === CharacterClass.warrior);
     const nonPaladinTank = tanks.find(character => character.class !== CharacterClass.paladin);
-    const mainTank = warriorTank ?? nonPaladinTank ?? tanks[0];
     const protectionPaladin = tanks.find(character =>
       character.class === CharacterClass.paladin && character.spec === CharacterSpecEnum.Protection
     );
+    const mainTank = protectionPaladin ?? warriorTank ?? nonPaladinTank ?? tanks[0];
     const healers = this.raid.filter(character => character?.role === CharacterRole.healer);
     const singleTargetHealers = healers.filter(character => this.isSingleTargetHealer(character));
+    const hunters = this.characters(CharacterClass.hunter, CharacterRole.ranged);
 
     this.assignments[AssignmentType.Winterchill].assignments.push(
       this.assignment(IconEnum.skull, 'Main Tank', [{caster: mainTank, target: 'Rage Winterchill', icon: IconEnum.skull}]),
+      this.misdirectAssignment(hunters, mainTank),
       this.assignment(IconEnum.holyLight, 'Icebolt Healer', [{caster: singleTargetHealers[0] ?? healers[0], target: 'Heal every Icebolt target'}]),
       this.assignment(IconEnum.dispel, 'Frost Nova Dispel', [
         ...this.characters(CharacterClass.priest, CharacterRole.healer),
@@ -127,17 +129,19 @@ export class AssignmentsHyjalComponent implements OnInit {
         {caster: infernalTank, target: 'Infernals Tank (25+ yd from boss)', icon: IconEnum.cross},
       ]),
       this.assignment(IconEnum.holyLight, 'Infernal Tank Healers', healers.slice(-2).map(caster => ({caster, target: this.characterName(infernalTank)}))),
+      this.misdirectAssignment(hunters, anetheronTank),
       ...this.getCampAssignments(),
     );
 
-    const kazrogalTank = nonPaladinTank ?? mainTank;
-    const cleaveSoakers = tanks.filter(character => character !== kazrogalTank).slice(0, 2);
+    const kazrogalTank = protectionPaladin ?? mainTank;
+    const cleaveSoakers = tanks.filter(character => character !== kazrogalTank);
     this.assignments[AssignmentType.Kazrogal].assignments.push(
       this.assignment(IconEnum.skull, 'Main Tank', [{caster: kazrogalTank, target: "Kaz'rogal (at Thrall, facing away)", icon: IconEnum.skull}]),
-      this.assignment(IconEnum.protection, 'Cleave Soakers', [0, 1].map(index => ({
-        caster: cleaveSoakers[index],
+      this.assignment(IconEnum.protection, 'Cleave Soakers', cleaveSoakers.map((caster, index) => ({
+        caster,
         target: `OT Cleave Soaker #${index + 1}`,
       }))),
+      this.misdirectAssignment(hunters, kazrogalTank),
     );
 
     const doomguardTank = protectionPaladin ?? tanks.find(character => character !== mainTank);
@@ -152,26 +156,23 @@ export class AssignmentsHyjalComponent implements OnInit {
       this.assignment(IconEnum.soulStone, 'Doom Soulstone Sequence', warlocks.map((caster, index) => ({caster, target: `Soulstone #${index + 1} - Doom target`}))),
     );
 
-    const decursers = this.raid.filter(character =>
-      character?.class === CharacterClass.mage ||
-      (character?.class === CharacterClass.druid && character.spec !== CharacterSpecEnum.Feral)
-    );
     const archimondeTank = protectionPaladin ?? warriorTank ?? mainTank;
     const priests = this.raid.filter(character => character?.class === CharacterClass.priest);
+    const archimondeCamps = this.getCampAssignments(true);
     this.assignments[AssignmentType.Archimonde].assignments.push(
       this.assignment(IconEnum.skull, 'Main Tank', [{caster: archimondeTank, target: 'Archimonde (never leave melee)', icon: IconEnum.skull}]),
       this.assignment(IconEnum.fearWard, 'Fear Ward Sequence', priests.map((caster, index) => ({
         caster,
         target: `Fear Ward #${index + 1} -> ${this.characterName(archimondeTank)}`,
       }))),
-      this.assignment(IconEnum.decurse, 'Grip of Death Decurse', decursers.map(caster => ({caster, target: 'Decurse immediately'}))),
-      ...this.getCampAssignments(),
+      this.misdirectAssignment(hunters, archimondeTank),
+      ...archimondeCamps,
     );
   }
 
-  private getCampAssignments(): Assignment[] {
-    const campNames = ['Left', 'Middle', 'Right'];
-    const camps: Character[][] = [[], [], []];
+  private getCampAssignments(includeMelee = false): Assignment[] {
+    const campNames = includeMelee ? ['Left', 'Middle', 'Right', 'Melee'] : ['Left', 'Middle', 'Right'];
+    const camps: Character[][] = campNames.map(() => []);
     const areaHealerCounts = [0, 0, 0];
     const singleTargetHealerCounts = [0, 0, 0];
     const preferredCampOrder = [0, 2, 1];
@@ -205,6 +206,10 @@ export class AssignmentsHyjalComponent implements OnInit {
       areaHealerCounts[campIndex] += groupAreaHealers;
       singleTargetHealerCounts[campIndex] += groupSingleTargetHealers;
     });
+
+    if (includeMelee) {
+      camps[3] = this.raid.filter(character => character?.role === CharacterRole.melee || character?.role === CharacterRole.tank);
+    }
 
     return camps.map((camp, index) => this.assignment(
       IconEnum.hunter,
@@ -249,5 +254,13 @@ export class AssignmentsHyjalComponent implements OnInit {
 
   private assignment(headerIcon: string, headerText: string, actions: AssignmentAction[]): Assignment {
     return {headerIcon, headerText, actions};
+  }
+
+  private misdirectAssignment(hunters: Character[], target: Character | undefined): Assignment {
+    return this.assignment(IconEnum.misdirect, 'Misdirect Queue', hunters.map(caster => ({
+      caster,
+      target: target ?? 'Main Tank',
+      icon: IconEnum.misdirect,
+    })));
   }
 }
