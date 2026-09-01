@@ -46,41 +46,43 @@ assert.deepEqual(
 );
 
 const healerRequests = buildOverallRankRequests(CharacterRole.healer, {
-  zoneID: 1056,
-  sscBossID: 100702,
-  tkBossID: 100703,
+  zoneID: 1060,
+  partition: 3,
+  btBossID: 50704,
+  hyjalBossID: 50705,
 });
 
 assert.deepEqual(
   healerRequests.map((request) => [request.raid, request.metric, request.dpstype, request.wclMetric]),
   [
-    ['ssc', 'hps', 'dps', 'hps'],
-    ['tk', 'hps', 'dps', 'hps'],
+    ['bt', 'hps', 'dps', 'hps'],
+    ['hyjal', 'hps', 'dps', 'hps'],
   ],
   'healers should request one HPS overall rank per raid',
 );
 
 const dpsRequests = buildOverallRankRequests(CharacterRole.ranged, {
-  zoneID: 1056,
-  sscBossID: 100702,
-  tkBossID: 100703,
+  zoneID: 1060,
+  partition: 3,
+  btBossID: 50704,
+  hyjalBossID: 50705,
 });
 
 assert.deepEqual(
   dpsRequests.map((request) => [request.raid, request.metric, request.dpstype, request.wclMetric]),
   [
-    ['ssc', 'dps-bosses', 'dps', null],
-    ['ssc', 'dps-bosses-trash', 'wdps', null],
-    ['tk', 'dps-bosses', 'dps', null],
-    ['tk', 'dps-bosses-trash', 'wdps', null],
+    ['bt', 'dps-bosses', 'dps', null],
+    ['bt', 'dps-bosses-trash', 'wdps', null],
+    ['hyjal', 'dps-bosses', 'dps', null],
+    ['hyjal', 'dps-bosses-trash', 'wdps', null],
   ],
   'non-healers should request bosses and bosses+trash DPS ranks for both raids',
 );
 
 assert.equal(
   dpsRequests[0].sourceUrl,
-  'https://fresh.warcraftlogs.com/zone/rankings/1056?boss=100702&dpstype=dps',
-  'source URL should match the supplied SSC bosses ranking view',
+  'https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50704&dpstype=dps',
+  'source URL should match the supplied Black Temple bosses ranking view',
 );
 
 const bakedWithOverallRanks = buildBakedCharacter({
@@ -88,11 +90,11 @@ const bakedWithOverallRanks = buildBakedCharacter({
   gear: [],
   gearError: null,
   overallRanks: [{
-    raid: 'ssc',
-    raidName: 'SSC',
-    bossID: 100702,
+    raid: 'bt',
+    raidName: 'BT',
+    bossID: 50704,
     metric: 'dps-bosses',
-    label: 'SSC bosses',
+    label: 'BT bosses',
     rank: 12,
     rankPercent: 98.5,
     total: 1000,
@@ -101,7 +103,7 @@ const bakedWithOverallRanks = buildBakedCharacter({
     averagePerformance: 85,
     totalKills: 3,
     fastestKill: 4632749,
-    sourceUrl: 'https://fresh.warcraftlogs.com/zone/rankings/1056?boss=100702&dpstype=dps',
+    sourceUrl: 'https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50704&dpstype=dps',
   }],
   fetchedAt: '2026-06-02T00:00:00.000Z',
 });

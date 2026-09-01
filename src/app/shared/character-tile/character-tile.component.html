@@ -16,10 +16,10 @@
       {{formatPercent(wclCharacter.bestPerformanceAverage)}}
     </span>
     @if (overallDamageRanks.length) {
-      <span class="overall-info" aria-label="Overall SSC/TK DPS">
+      <span class="overall-info" aria-label="Overall BT/Hyjal DPS">
         <i class="fa-solid fa-circle-info"></i>
         <span class="overall-popover" role="tooltip">
-          <span class="overall-popover__title">Overall SSC/TK DPS</span>
+          <span class="overall-popover__title">Overall BT/Hyjal DPS</span>
           @for (rank of overallDamageRanks; track rank.raid + '-' + rank.metric) {
             <span class="overall-popover__row">
               <span>{{rank.label}}</span>

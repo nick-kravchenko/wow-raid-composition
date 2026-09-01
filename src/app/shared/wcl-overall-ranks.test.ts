@@ -6,7 +6,7 @@ import type { WclOverallRank } from '../_data/wcl-baked.data';
 const rank = (raid: WclOverallRank['raid'], metric: WclOverallRank['metric']): WclOverallRank => ({
   raid,
   raidName: raid.toUpperCase(),
-  bossID: raid === 'ssc' ? 100702 : 100703,
+  bossID: raid === 'bt' ? 50704 : 50705,
   metric,
   label: `${raid.toUpperCase()} ${metric}`,
   rank: null,
@@ -46,12 +46,12 @@ assert.equal(
 
 assert.deepEqual(
   filterOverallDamageRanks([
-    rank('ssc', 'dps-bosses'),
-    rank('ssc', 'dps-bosses-trash'),
-    rank('tk', 'dps-bosses'),
-    rank('tk', 'dps-bosses-trash'),
-    rank('ssc', 'hps'),
+    rank('bt', 'dps-bosses'),
+    rank('bt', 'dps-bosses-trash'),
+    rank('hyjal', 'dps-bosses'),
+    rank('hyjal', 'dps-bosses-trash'),
+    rank('bt', 'hps'),
   ]).map(r => r.label),
-  ['SSC dps-bosses', 'SSC dps-bosses-trash', 'TK dps-bosses', 'TK dps-bosses-trash'],
-  'character tiles should show only SSC/TK overall damage ranks',
+  ['BT dps-bosses', 'BT dps-bosses-trash', 'HYJAL dps-bosses', 'HYJAL dps-bosses-trash'],
+  'character tiles should show only BT/Hyjal overall damage ranks',
 );

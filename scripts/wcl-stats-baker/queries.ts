@@ -1,8 +1,8 @@
 export const GET_SPEED_RANKINGS = `
-  query SpeedRankings($encounterId: Int!, $page: Int!, $raidSize: Int!) {
+  query SpeedRankings($encounterId: Int!, $page: Int!, $raidSize: Int!, $partition: Int!) {
     worldData {
       encounter(id: $encounterId) {
-        fightRankings(metric: speed, page: $page, size: $raidSize)
+        fightRankings(metric: speed, page: $page, size: $raidSize, partition: $partition)
       }
     }
   }

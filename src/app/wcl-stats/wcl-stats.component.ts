@@ -23,7 +23,7 @@ const SHOW_RU_STORAGE_KEY = 'wclStatsShowRuGuilds';
 })
 export class WclStatsComponent implements OnDestroy {
   readonly data = wclStatsData;
-  readonly raids = [...wclStatsData.raids].sort((a, b) => a.id === 'tk' ? -1 : b.id === 'tk' ? 1 : 0);
+  readonly raids = [...wclStatsData.raids].sort((a, b) => a.id === 'bt' ? -1 : b.id === 'bt' ? 1 : 0);
   readonly showUaGuilds = signal(readStoredBoolean(SHOW_UA_STORAGE_KEY, true));
   readonly showRuGuilds = signal(readStoredBoolean(SHOW_RU_STORAGE_KEY, false));
   readonly showRuControl = signal(false);

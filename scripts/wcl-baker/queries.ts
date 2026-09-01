@@ -40,7 +40,7 @@ export const GET_CHARACTER_RANKINGS = /* GraphQL */ `
 /**
  * Fetch a character's overall ranking for one aggregate encounter/ranking view.
  *
- * encounterRankings returns a JSON scalar. For the overall SSC/TK views this is
+ * encounterRankings returns a JSON scalar. For the overall BT/Hyjal views this is
  * normalized in overall-ranks.ts into the stable baked output shape.
  */
 export const GET_CHARACTER_ENCOUNTER_RANKINGS = /* GraphQL */ `
@@ -49,6 +49,7 @@ export const GET_CHARACTER_ENCOUNTER_RANKINGS = /* GraphQL */ `
     $serverSlug: String!
     $serverRegion: String!
     $encounterID: Int!
+    $partition: Int!
     $metric: CharacterRankingMetricType!
   ) {
     characterData {
@@ -59,6 +60,7 @@ export const GET_CHARACTER_ENCOUNTER_RANKINGS = /* GraphQL */ `
       ) {
         encounterRankings(
           encounterID: $encounterID
+          partition: $partition
           metric: $metric
         )
       }

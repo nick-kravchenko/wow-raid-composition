@@ -16,15 +16,22 @@ interface RankingPageResponse {
 }
 
 const guildIdCache = new WeakMap<WclStatsApi, Map<string, Promise<number | null>>>();
+export type BakeProgress = (message: string) => void;
 
-export async function bakeRaids(api: WclStatsApi, raids: readonly WclStatsRaidConfig[]): Promise<WclStatsRaid[]> {
+export async function bakeRaids(
+  api: WclStatsApi,
+  raids: readonly WclStatsRaidConfig[],
+  progress: BakeProgress = () => undefined,
+): Promise<WclStatsRaid[]> {
   const targetRowsByRaid = new Map<string, WclStatsRow[]>();
   const foundGuildRowsByRaid = new Map<string, Map<string, WclStatsRow>>();
 
-  for (const raid of raids) {
+  for (const [raidIndex, raid] of raids.entries()) {
+    progress(`Raid ${raidIndex + 1}/${raids.length}: ${raid.name}`);
     const pageCache = new Map<number, RawRankingEntry[]>();
     const targetRows: WclStatsRow[] = [];
 
+    progress(`${raid.name}: fetching milestone ranks ${RANK_TARGETS.join(', ')}`);
     for (const targetRank of RANK_TARGETS) {
       const page = Math.ceil(targetRank / RANKINGS_PER_PAGE);
       const entries = await getRankingPage(api, raid, page, pageCache);
@@ -37,6 +44,7 @@ export async function bakeRaids(api: WclStatsApi, raids: readonly WclStatsRaidCo
 
     const foundGuildRows = new Map<string, WclStatsRow>();
     for (let page = 1; page <= MAX_GUILD_SEARCH_PAGES && foundGuildRows.size < TRACKED_GUILDS.length; page += 1) {
+      progress(`${raid.name}: scanning ranking page ${page}/${MAX_GUILD_SEARCH_PAGES} (${foundGuildRows.size}/${TRACKED_GUILDS.length} tracked guilds found)`);
       const entries = await getRankingPage(api, raid, page, pageCache);
       for (const guild of TRACKED_GUILDS) {
         const key = normalizeKey(guild.name);
@@ -49,10 +57,11 @@ export async function bakeRaids(api: WclStatsApi, raids: readonly WclStatsRaidCo
       }
       if (entries.length < RANKINGS_PER_PAGE) break;
     }
+    progress(`${raid.name}: ranking scan complete (${foundGuildRows.size}/${TRACKED_GUILDS.length} tracked guilds found)`);
     foundGuildRowsByRaid.set(raid.id, foundGuildRows);
   }
 
-  await resolveMissingGuildRows(api, raids, foundGuildRowsByRaid);
+  await resolveMissingGuildRows(api, raids, foundGuildRowsByRaid, progress);
 
   return raids.map(raid => ({
     id: raid.id,
@@ -66,13 +75,19 @@ async function resolveMissingGuildRows(
   api: WclStatsApi,
   raids: readonly WclStatsRaidConfig[],
   foundGuildRowsByRaid: Map<string, Map<string, WclStatsRow>>,
+  progress: BakeProgress,
 ): Promise<void> {
   for (const zoneRaids of groupRaidsByZone(raids)) {
-    for (const guild of TRACKED_GUILDS) {
+    const unresolvedGuilds = TRACKED_GUILDS.filter(guild => {
+      const key = normalizeKey(guild.name);
+      return zoneRaids.some(raid => !foundGuildRowsByRaid.get(raid.id)?.has(key));
+    });
+    for (const [guildIndex, guild] of unresolvedGuilds.entries()) {
       const key = normalizeKey(guild.name);
       const needingRaids = zoneRaids.filter(raid => !foundGuildRowsByRaid.get(raid.id)?.has(key));
       if (needingRaids.length === 0) continue;
 
+      progress(`Guild fallback ${guildIndex + 1}/${unresolvedGuilds.length}: ${guild.displayName} (${needingRaids.map(raid => raid.name).join(', ')})`);
       const guildId = await resolveGuildId(api, guild);
       const bestByRaidId = guildId ? await fetchGuildBestRanksByZone(api, zoneRaids[0].zoneId, needingRaids, guild, guildId) : new Map();
       for (const raid of needingRaids) {
@@ -80,6 +95,7 @@ async function resolveMissingGuildRows(
         foundGuildRowsByRaid.get(raid.id)?.set(key, row ?? unresolvedGuildRow(guild));
       }
     }
+    progress(`Guild fallback complete for zone ${zoneRaids[0].zoneId}`);
   }
 }
 
@@ -100,7 +116,12 @@ async function getRankingPage(
   cache: Map<number, RawRankingEntry[]>,
 ): Promise<RawRankingEntry[]> {
   if (cache.has(page)) return cache.get(page) ?? [];
-  const data = await api.query<RankingPageResponse>(GET_SPEED_RANKINGS, { encounterId: raid.encounterId, page, raidSize: RAID_SIZE });
+  const data = await api.query<RankingPageResponse>(GET_SPEED_RANKINGS, {
+    encounterId: raid.encounterId,
+    page,
+    raidSize: RAID_SIZE,
+    partition: raid.partition,
+  });
   const entries = extractEntries(data.worldData?.encounter?.fightRankings).map((entry, index) => ({
     ...entry,
     rank: entry.rank ?? entry.ranking ?? entry.position ?? ((page - 1) * RANKINGS_PER_PAGE) + index + 1,

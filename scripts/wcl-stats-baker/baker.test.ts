@@ -40,15 +40,15 @@ class FixtureApi implements WclStatsApi {
     if (query.includes('GuildReportRankings')) {
       this.guildReportPageQueries += 1;
       const guildId = Number(variables['guildId']);
-      // Both raids share zoneId 1056, so a single query must carry per-raid rankings aliases.
-      assert.match(query, /rankings_tk: rankings\(encounterID: \$encounterId_tk\)/);
-      assert.match(query, /rankings_ssc: rankings\(encounterID: \$encounterId_ssc\)/);
+      // Both raids share zoneId 1060, so a single query must carry per-raid rankings aliases.
+      assert.match(query, /rankings_bt: rankings\(encounterID: \$encounterId_bt\)/);
+      assert.match(query, /rankings_hyjal: rankings\(encounterID: \$encounterId_hyjal\)/);
       return {
         reportData: {
           reports: {
             last_page: 1,
             data: guildId === 2
-              ? [{ code: 'UA2', rankings_tk: [{ speed: { rank: '~1205' } }], rankings_ssc: [{ speed: { rank: '~980' } }] }]
+              ? [{ code: 'UA2', rankings_bt: [{ speed: { rank: '~1205' } }], rankings_hyjal: [{ speed: { rank: '~980' } }] }]
               : [],
           },
         },
@@ -64,15 +64,15 @@ assert.deepEqual(extractEntries(null), []);
 async function run(): Promise<void> {
   const api = new FixtureApi();
   const raids = await bakeRaids(api, RAIDS);
-  const tkRaid = raids.find(raid => raid.id === 'tk')!;
-  const sscRaid = raids.find(raid => raid.id === 'ssc')!;
+  const btRaid = raids.find(raid => raid.id === 'bt')!;
+  const hyjalRaid = raids.find(raid => raid.id === 'hyjal')!;
 
-  assert.deepEqual(tkRaid.rows.filter(row => RANK_TARGETS.includes(row.rank as typeof RANK_TARGETS[number])).map(row => row.rank), [...RANK_TARGETS]);
-  assert.equal(tkRaid.rows.filter(row => row.guildName === 'Ïzhachok').length, 1, 'target/guild row must be deduplicated');
-  assert.equal(tkRaid.rows.find(row => row.guildName === 'LiberalPug')?.rank, 1205);
-  assert.equal(tkRaid.rows.find(row => row.guildName === 'LiberalPug')?.reportUrl, 'https://fresh.warcraftlogs.com/reports/UA2');
-  assert.equal(sscRaid.rows.find(row => row.guildName === 'LiberalPug')?.rank, 980);
-  assert.equal(tkRaid.rows.find(row => row.guildName === 'MokNatal UA')?.rank, null);
+  assert.deepEqual(btRaid.rows.filter(row => RANK_TARGETS.includes(row.rank as typeof RANK_TARGETS[number])).map(row => row.rank), [...RANK_TARGETS]);
+  assert.equal(btRaid.rows.filter(row => row.guildName === 'Ïzhachok').length, 1, 'target/guild row must be deduplicated');
+  assert.equal(btRaid.rows.find(row => row.guildName === 'LiberalPug')?.rank, 1205);
+  assert.equal(btRaid.rows.find(row => row.guildName === 'LiberalPug')?.reportUrl, 'https://fresh.warcraftlogs.com/reports/UA2');
+  assert.equal(hyjalRaid.rows.find(row => row.guildName === 'LiberalPug')?.rank, 980);
+  assert.equal(btRaid.rows.find(row => row.guildName === 'MokNatal UA')?.rank, null);
 
   // Ïzhachok is discovered directly in the top-1000 ranking scan (both raids), so it never needs a lookup.
   const expectedLookups = TRACKED_GUILDS.length - 1;
@@ -99,7 +99,7 @@ async function run(): Promise<void> {
   assert.throws(() => writeBakedData({ generatedAt: data.generatedAt, raids: [] }, destination));
   assert.equal(readFileSync(destination, 'utf8'), 'existing-valid-data', 'invalid bake must preserve existing output');
   writeBakedData(data, destination);
-  assert.match(readFileSync(destination, 'utf8'), /Serpentshrine Cavern/);
+  assert.match(readFileSync(destination, 'utf8'), /Black Temple/);
   rmSync(temporaryDirectory, { recursive: true });
 
   console.log('wcl-stats baker tests passed');

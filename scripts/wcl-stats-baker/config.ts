@@ -8,8 +8,8 @@ export const MAX_GUILD_SEARCH_PAGES = 20;
 export const GUILD_REPORTS_PAGE_SIZE = 25;
 
 export const RAIDS: readonly WclStatsRaidConfig[] = [
-  { id: 'tk', name: 'Tempest Keep', encounterId: 100703, zoneId: 1056 },
-  { id: 'ssc', name: 'Serpentshrine Cavern', encounterId: 100702, zoneId: 1056 },
+  { id: 'bt', name: 'Black Temple', encounterId: 50704, zoneId: 1060, partition: 3 },
+  { id: 'hyjal', name: 'Hyjal Summit', encounterId: 50705, zoneId: 1060, partition: 3 },
 ];
 
 const REGION = 'eu';

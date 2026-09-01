@@ -59,35 +59,35 @@
     <span class="raid-dps" [class.raid-dps--unranked]="raidDamageSummary().hasUnranked">
       {{formatRaidDamage(raidDamageSummary().raidDps)}} DPS / {{formatRaidDamage(raidDamageSummary().raidHps)}} HPS
     </span>
-    <span class="overall-info" aria-label="Raid SSC/TK DPS and HPS">
+    <span class="overall-info" aria-label="Raid BT/Hyjal DPS and HPS">
       <i class="fa-solid fa-circle-info"></i>
       <span class="overall-popover" role="tooltip">
-        <span class="overall-popover__title">Raid SSC/TK DPS and HPS</span>
-        <span class="overall-popover__section-title">SSC</span>
+        <span class="overall-popover__title">Raid BT/Hyjal DPS and HPS</span>
+        <span class="overall-popover__section-title">Black Temple</span>
         <span class="overall-popover__row">
           <span>Bosses</span>
-          <span>{{formatRaidDamage(raidDamageSummary().sscBossesDamage)}} DPS</span>
+          <span>{{formatRaidDamage(raidDamageSummary().btBossesDamage)}} DPS</span>
         </span>
         <span class="overall-popover__row">
           <span>Bosses + trash</span>
-          <span>{{formatRaidDamage(raidDamageSummary().sscBossesTrashDamage)}} DPS</span>
+          <span>{{formatRaidDamage(raidDamageSummary().btBossesTrashDamage)}} DPS</span>
         </span>
         <span class="overall-popover__row">
           <span>Healing</span>
-          <span>{{formatRaidDamage(raidDamageSummary().sscHealing)}} HPS</span>
+          <span>{{formatRaidDamage(raidDamageSummary().btHealing)}} HPS</span>
         </span>
-        <span class="overall-popover__section-title overall-popover__section-title--divider">TK</span>
+        <span class="overall-popover__section-title overall-popover__section-title--divider">Hyjal Summit</span>
         <span class="overall-popover__row">
           <span>Bosses</span>
-          <span>{{formatRaidDamage(raidDamageSummary().tkBossesDamage)}} DPS</span>
+          <span>{{formatRaidDamage(raidDamageSummary().hyjalBossesDamage)}} DPS</span>
         </span>
         <span class="overall-popover__row">
           <span>Bosses + trash</span>
-          <span>{{formatRaidDamage(raidDamageSummary().tkBossesTrashDamage)}} DPS</span>
+          <span>{{formatRaidDamage(raidDamageSummary().hyjalBossesTrashDamage)}} DPS</span>
         </span>
         <span class="overall-popover__row">
           <span>Healing</span>
-          <span>{{formatRaidDamage(raidDamageSummary().tkHealing)}} HPS</span>
+          <span>{{formatRaidDamage(raidDamageSummary().hyjalHealing)}} HPS</span>
         </span>
         @if (raidDamageSummary().hasUnranked) {
           <span class="overall-popover__note overall-popover__note--section">

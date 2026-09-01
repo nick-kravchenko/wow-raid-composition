@@ -1,4 +1,4 @@
-export type WclStatsRaidId = 'ssc' | 'tk';
+export type WclStatsRaidId = 'bt' | 'hyjal';
 
 export interface WclStatsGuildConfig {
   name: string;
@@ -15,6 +15,7 @@ export interface WclStatsRaidConfig {
   name: string;
   encounterId: number;
   zoneId: number;
+  partition: number;
 }
 
 export interface WclStatsRow {

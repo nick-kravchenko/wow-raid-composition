@@ -16,8 +16,9 @@ type WclGraphqlRankingMetric = 'dps' | 'wdps' | 'hps';
 
 export interface OverallRankConfig {
   zoneID: number;
-  sscBossID: number;
-  tkBossID: number;
+  partition: number;
+  btBossID: number;
+  hyjalBossID: number;
 }
 
 export interface OverallRankRequest {
@@ -25,6 +26,7 @@ export interface OverallRankRequest {
   raidName: string;
   zoneID: number;
   bossID: number;
+  partition: number;
   metric: WclOverallRankMetric;
   label: string;
   dpstype: WclRankingDpstype;
@@ -46,11 +48,12 @@ interface RankFields {
 function sourceUrl(config: {
   zoneID: number;
   bossID: number;
+  partition: number;
   dpstype: WclRankingDpstype;
   wclMetric: 'hps' | null;
 }): string {
   const metricParam = config.wclMetric ? `&metric=${config.wclMetric}` : '';
-  return `${WCL_RANKINGS_BASE_URL}/${config.zoneID}?boss=${config.bossID}&dpstype=${config.dpstype}${metricParam}`;
+  return `${WCL_RANKINGS_BASE_URL}/${config.zoneID}?partition=${config.partition}&boss=${config.bossID}&dpstype=${config.dpstype}${metricParam}`;
 }
 
 function raidRequests(
@@ -58,6 +61,7 @@ function raidRequests(
   raidName: string,
   zoneID: number,
   bossID: number,
+  partition: number,
   role: CharacterRole,
 ): OverallRankRequest[] {
   if (role === CharacterRole.healer) {
@@ -66,11 +70,12 @@ function raidRequests(
       raidName,
       zoneID,
       bossID,
+      partition,
       metric: 'hps',
       label: `${raidName} healing`,
       dpstype: 'dps',
       wclMetric: 'hps',
-      sourceUrl: sourceUrl({ zoneID, bossID, dpstype: 'dps', wclMetric: 'hps' }),
+      sourceUrl: sourceUrl({ zoneID, bossID, partition, dpstype: 'dps', wclMetric: 'hps' }),
     }];
   }
 
@@ -80,22 +85,24 @@ function raidRequests(
       raidName,
       zoneID,
       bossID,
+      partition,
       metric: 'dps-bosses',
       label: `${raidName} bosses`,
       dpstype: 'dps',
       wclMetric: null,
-      sourceUrl: sourceUrl({ zoneID, bossID, dpstype: 'dps', wclMetric: null }),
+      sourceUrl: sourceUrl({ zoneID, bossID, partition, dpstype: 'dps', wclMetric: null }),
     },
     {
       raid,
       raidName,
       zoneID,
       bossID,
+      partition,
       metric: 'dps-bosses-trash',
       label: `${raidName} bosses + trash`,
       dpstype: 'wdps',
       wclMetric: null,
-      sourceUrl: sourceUrl({ zoneID, bossID, dpstype: 'wdps', wclMetric: null }),
+      sourceUrl: sourceUrl({ zoneID, bossID, partition, dpstype: 'wdps', wclMetric: null }),
     },
   ];
 }
@@ -105,8 +112,8 @@ export function buildOverallRankRequests(
   config: OverallRankConfig,
 ): OverallRankRequest[] {
   return [
-    ...raidRequests('ssc', 'SSC', config.zoneID, config.sscBossID, role),
-    ...raidRequests('tk', 'TK', config.zoneID, config.tkBossID, role),
+    ...raidRequests('bt', 'BT', config.zoneID, config.btBossID, config.partition, role),
+    ...raidRequests('hyjal', 'Hyjal', config.zoneID, config.hyjalBossID, config.partition, role),
   ];
 }
 
@@ -257,6 +264,7 @@ export async function fetchCharacterOverallRanks(params: {
           serverSlug: params.serverSlug,
           serverRegion: params.serverRegion,
           encounterID: request.bossID,
+          partition: request.partition,
           metric,
         },
       );

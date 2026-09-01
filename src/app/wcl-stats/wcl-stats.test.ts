@@ -13,7 +13,7 @@ assert.equal(isRankingRowVisible({ rank: 200, guildGroup: 'ua' }, false, false, 
 assert.equal(isRankingRowVisible({ rank: 200, guildGroup: 'ru' }, true, false, true), false);
 assert.equal(isRankingRowVisible({ rank: 200, guildGroup: 'ru' }, true, true, true), true);
 assert.equal(isRankingRowVisible({ rank: 50, guildGroup: 'ru' }, false, false, false), true, 'milestone ranks remain visible');
-assert.deepEqual(wclStatsData.raids.map(raid => raid.id), ['tk', 'ssc']);
+assert.deepEqual(wclStatsData.raids.map(raid => raid.id), ['bt', 'hyjal']);
 for (const raid of wclStatsData.raids) {
   assert.deepEqual(raid.rows.filter(row => [1, 50, 100].includes(row.rank ?? -1)).map(row => row.rank), [1, 50, 100]);
   assert.equal(raid.rows.filter(row => row.guildGroup === 'ua').length, 10);

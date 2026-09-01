@@ -22,7 +22,7 @@ export function formatOverallRank(rank: OverallRankDisplayValue): string {
 
 export function filterOverallDamageRanks(ranks: WclOverallRank[]): WclOverallRank[] {
   return ranks.filter(rank =>
-    (rank.raid === 'ssc' || rank.raid === 'tk') &&
+    (rank.raid === 'bt' || rank.raid === 'hyjal') &&
     (rank.metric === 'dps-bosses' || rank.metric === 'dps-bosses-trash')
   );
 }

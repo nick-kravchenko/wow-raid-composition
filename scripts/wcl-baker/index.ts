@@ -83,9 +83,10 @@ const CLIENT_SECRET = requireEnv('WCL_CLIENT_SECRET');
 const DEFAULT_REALM = requireEnv('WCL_DEFAULT_REALM');
 const DEFAULT_REGION = requireEnv('WCL_DEFAULT_REGION');
 const ZONE_ID = process.env['WCL_ZONE_ID'] ? parseInt(process.env['WCL_ZONE_ID'], 10) : null;
-const OVERALL_RANK_ZONE_ID = parseInt(process.env['WCL_OVERALL_RANK_ZONE_ID'] ?? '1056', 10);
-const WCL_OVERALL_SSC_BOSS_ID = parseInt(process.env['WCL_OVERALL_SSC_BOSS_ID'] ?? '100702', 10);
-const WCL_OVERALL_TK_BOSS_ID = parseInt(process.env['WCL_OVERALL_TK_BOSS_ID'] ?? '100703', 10);
+const OVERALL_RANK_ZONE_ID = parseInt(process.env['WCL_OVERALL_RANK_ZONE_ID'] ?? '1060', 10);
+const OVERALL_RANK_PARTITION = parseInt(process.env['WCL_OVERALL_RANK_PARTITION'] ?? '3', 10);
+const WCL_OVERALL_BT_BOSS_ID = parseInt(process.env['WCL_OVERALL_BT_BOSS_ID'] ?? '50704', 10);
+const WCL_OVERALL_HYJAL_BOSS_ID = parseInt(process.env['WCL_OVERALL_HYJAL_BOSS_ID'] ?? '50705', 10);
 const SKIP_GEAR = process.env['WCL_SKIP_GEAR'] === 'true';
 const API_DELAY_MS = parseInt(process.env['WCL_API_DELAY_MS'] ?? '300', 10);
 const BATCH_SIZE = parseInt(process.env['WCL_BATCH_SIZE'] ?? '10', 10);
@@ -330,8 +331,9 @@ function reusableCharacter(
 
   const expectedMetrics = buildOverallRankRequests(role, {
     zoneID: OVERALL_RANK_ZONE_ID,
-    sscBossID: WCL_OVERALL_SSC_BOSS_ID,
-    tkBossID: WCL_OVERALL_TK_BOSS_ID,
+    partition: OVERALL_RANK_PARTITION,
+    btBossID: WCL_OVERALL_BT_BOSS_ID,
+    hyjalBossID: WCL_OVERALL_HYJAL_BOSS_ID,
   }).map(request => `${request.raid}:${request.metric}`).sort();
   const actualMetrics = existing.overallRanks.map(rank => `${rank.raid}:${rank.metric}`).sort();
   return expectedMetrics.join('|') === actualMetrics.join('|') ? existing : null;
@@ -387,8 +389,9 @@ async function fetchCharacterData(
     role,
     config: {
       zoneID: OVERALL_RANK_ZONE_ID,
-      sscBossID: WCL_OVERALL_SSC_BOSS_ID,
-      tkBossID: WCL_OVERALL_TK_BOSS_ID,
+      partition: OVERALL_RANK_PARTITION,
+      btBossID: WCL_OVERALL_BT_BOSS_ID,
+      hyjalBossID: WCL_OVERALL_HYJAL_BOSS_ID,
     },
     delayMs: API_DELAY_MS,
     warn,
@@ -450,7 +453,7 @@ export interface WclEncounterRanking {
 export type WclOverallRankMetric = 'dps-bosses' | 'dps-bosses-trash' | 'hps';
 
 export interface WclOverallRank {
-  raid: 'ssc' | 'tk';
+  raid: 'bt' | 'hyjal';
   raidName: string;
   bossID: number;
   metric: WclOverallRankMetric;
@@ -533,7 +536,7 @@ async function main(): Promise<void> {
 
   log(`Found ${characters.length} characters across ${players.length} players`);
   log(
-    `Config: realm=${DEFAULT_REALM} region=${DEFAULT_REGION} zoneID=${ZONE_ID ?? 'all'} overallRankZoneID=${OVERALL_RANK_ZONE_ID} overallSSC=${WCL_OVERALL_SSC_BOSS_ID} overallTK=${WCL_OVERALL_TK_BOSS_ID} skipGear=${SKIP_GEAR} batchSize=${BATCH_SIZE}`,
+    `Config: realm=${DEFAULT_REALM} region=${DEFAULT_REGION} zoneID=${ZONE_ID ?? 'all'} overallRankZoneID=${OVERALL_RANK_ZONE_ID} partition=${OVERALL_RANK_PARTITION} overallBT=${WCL_OVERALL_BT_BOSS_ID} overallHyjal=${WCL_OVERALL_HYJAL_BOSS_ID} skipGear=${SKIP_GEAR} batchSize=${BATCH_SIZE}`,
   );
 
   const existingCharacters = readExistingCharacters();

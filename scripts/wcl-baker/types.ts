@@ -154,7 +154,7 @@ export interface WclEncounterRanking {
 export type WclOverallRankMetric = 'dps-bosses' | 'dps-bosses-trash' | 'hps';
 
 export interface WclOverallRank {
-  raid: 'ssc' | 'tk';
+  raid: 'bt' | 'hyjal';
   raidName: string;
   bossID: number;
   metric: WclOverallRankMetric;
