@@ -143,7 +143,6 @@ export class AssignmentsBtComponent implements OnInit, OnDestroy {
     const healers = this.raid.filter(character => character?.role === CharacterRole.healer);
     const hunters = this.characters(CharacterClass.hunter, CharacterRole.ranged);
     const mages = this.characters(CharacterClass.mage, CharacterRole.ranged);
-    const warlocks = this.characters(CharacterClass.warlock, CharacterRole.ranged);
     const rogues = this.characters(CharacterClass.rogue, CharacterRole.melee);
     const shamans = this.raid.filter(character => character?.class === CharacterClass.shaman);
 
@@ -271,13 +270,10 @@ export class AssignmentsBtComponent implements OnInit, OnDestroy {
     );
 
     const flameTanks = tanks.filter(character => character !== mainTank).slice(0, 2);
-    const demonTank = [...warlocks].reverse().find(character => character.spec === CharacterSpecEnum.Destruction) ?? warlocks[0];
     this.assignments[AssignmentType.Illidan].assignments.push(
       this.assignment(IconEnum.skull, 'P1 / P3 / P4 Main Tank', [{caster: mainTank, target: 'Illidan (block every Shear)', icon: IconEnum.skull}]),
-      this.assignment(IconEnum.freezingTrap, 'Parasite Frost Trap', [{caster: hunters[0], target: 'Parasitic Shadowfiend trap point'}]),
       this.assignment(IconEnum.protection, 'P2 Flames of Azzinoth', [0, 1].map(index => ({caster: flameTanks[index], target: `Flame Tank #${index + 1} - Fire Resistance`}))),
       this.misdirectAssignment(hunters, [flameTanks[0]], 'P2 Flame #1 Misdirect Queue'),
-      this.assignment(IconEnum.warlock, 'P3 Demon Form', [{caster: demonTank, target: 'Warlock Tank - Shadow Resistance'}]),
     );
   }
 
