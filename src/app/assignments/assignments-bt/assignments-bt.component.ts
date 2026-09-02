@@ -9,6 +9,7 @@ import {CharacterTileComponent} from '../../shared/character-tile/character-tile
 interface AssignmentAction {
   caster: Character | string | undefined;
   target: Character | string;
+  mrtTarget?: string;
   icon?: string;
 }
 
@@ -101,7 +102,7 @@ export class AssignmentsBtComponent implements OnInit, OnDestroy {
       assignment.headerText,
       ...assignment.actions.map(action => {
         const caster = this.name(action.caster);
-        const target = this.name(action.target);
+        const target = action.mrtTarget ?? this.name(action.target);
         return assignment.headerText.endsWith(' Camp')
           ? [caster, target].filter(name => name !== '-').join(', ')
           : `${caster} -> ${target}`;
@@ -225,7 +226,7 @@ export class AssignmentsBtComponent implements OnInit, OnDestroy {
         {caster: 'Assigned raiders', target: 'Thornling Seeds'},
         {caster: 'Assigned raiders', target: 'Gnomish Flame Turret'},
       ]),
-      this.misdirectAssignment(hunters, [mainTank]),
+      this.misdirectAssignment(hunters, [tanks[0]]),
     );
 
     const councilMainTank = feralTanks[0] ?? mainTank;
@@ -266,7 +267,12 @@ export class AssignmentsBtComponent implements OnInit, OnDestroy {
         {caster: malandeMageInterrupter, target: 'Counterspell'},
         {caster: malandeShamanInterrupter, target: 'Earth Shock'},
       ]),
-      this.misdirectAssignment(hunters, [councilMainTank, verasTank, malandeTank, mageTank]),
+      this.misdirectAssignment(
+        hunters,
+        [councilMainTank, verasTank, malandeTank, mageTank],
+        'Misdirect Queue',
+        ['Gathios', 'Veras', 'Malande', 'Zerevor'],
+      ),
     );
 
     const flameTanks = tanks.filter(character => character !== mainTank).slice(0, 2);
@@ -357,12 +363,27 @@ export class AssignmentsBtComponent implements OnInit, OnDestroy {
     return {headerIcon, headerText, actions};
   }
 
-  private misdirectAssignment(hunters: Character[], targets: Array<Character | undefined>, headerText = 'Misdirect Queue'): Assignment {
-    const availableTargets = targets.filter((target): target is Character => !!target);
-    return this.assignment(IconEnum.misdirect, headerText, hunters.map((caster, index) => ({
-      caster,
-      target: availableTargets[index % availableTargets.length] ?? 'Main Tank',
-      icon: IconEnum.misdirect,
-    })));
+  private misdirectAssignment(
+    hunters: Character[],
+    targets: Array<Character | undefined>,
+    headerText = 'Misdirect Queue',
+    mobTargets: string[] = [],
+  ): Assignment {
+    const availableTargets = targets
+      .map<{target: Character | undefined; mobTarget: string | undefined}>((target, index) => ({
+        target,
+        mobTarget: mobTargets[index],
+      }))
+      .filter((entry): entry is {target: Character; mobTarget: string | undefined} => !!entry.target);
+    return this.assignment(IconEnum.misdirect, headerText, hunters.map((caster, index) => {
+      const entry = availableTargets[index % availableTargets.length];
+      const target = entry?.target ?? 'Main Tank';
+      return {
+        caster,
+        target,
+        mrtTarget: entry?.mobTarget ? `${this.name(target)} (target: ${entry.mobTarget})` : undefined,
+        icon: IconEnum.misdirect,
+      };
+    }));
   }
 }

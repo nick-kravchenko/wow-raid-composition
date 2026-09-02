@@ -136,7 +136,7 @@ export class AssignmentsHyjalComponent implements OnInit {
     const kazrogalTank = protectionPaladin ?? mainTank;
     const cleaveSoakers = tanks.filter(character => character !== kazrogalTank);
     this.assignments[AssignmentType.Kazrogal].assignments.push(
-      this.assignment(IconEnum.skull, 'Main Tank', [{caster: kazrogalTank, target: "Kaz'rogal (at Thrall, facing away)", icon: IconEnum.skull}]),
+      this.assignment(IconEnum.skull, 'Main Tank', [{caster: kazrogalTank, target: "Kaz'rogal", icon: IconEnum.skull}]),
       this.assignment(IconEnum.protection, 'Cleave Soakers', cleaveSoakers.map((caster, index) => ({
         caster,
         target: `OT Cleave Soaker #${index + 1}`,
