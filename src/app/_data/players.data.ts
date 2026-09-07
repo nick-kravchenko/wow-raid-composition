@@ -44,7 +44,7 @@ export const players: Player[] = [
     discord: { userId: '193687671359406080' },
     characters: [
       {
-        name: 'Lazyswotch',
+        name: 'Yoshkad',
         rank: CharacterRank.main,
         role: CharacterRole.healer,
         class: CharacterClass.druid,
@@ -304,9 +304,9 @@ export const players: Player[] = [
       {
         name: 'Morfoza',
         rank: CharacterRank.alt,
-        role: CharacterRole.healer,
+        role: CharacterRole.ranged,
         class: CharacterClass.priest,
-        spec: CharacterSpecEnum.Holy,
+        spec: CharacterSpecEnum.Shadow,
       },
     ],
   },
@@ -346,7 +346,7 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Fury,
+        spec: CharacterSpecEnum.Arms,
       },
     ],
   },
@@ -468,7 +468,7 @@ export const players: Player[] = [
         rank: CharacterRank.alt,
         role: CharacterRole.melee,
         class: CharacterClass.warrior,
-        spec: CharacterSpecEnum.Arms,
+        spec: CharacterSpecEnum.Fury,
       },
       {
         name: 'Alcoswotch',
