@@ -419,7 +419,7 @@ export const players: Player[] = [
       {
         name: 'Dontmissbyte',
         rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
+        role: CharacterRole.healer,
         class: CharacterClass.shaman,
         spec: CharacterSpecEnum.Restoration,
       },
@@ -758,7 +758,7 @@ export const players: Player[] = [
       {
         name: 'Sypukha',
         rank: CharacterRank.alt,
-        role: CharacterRole.ranged,
+        role: CharacterRole.healer,
         class: CharacterClass.druid,
         spec: CharacterSpecEnum.Dreamstate,
       },
