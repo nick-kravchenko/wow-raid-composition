@@ -649,7 +649,7 @@ export const players: Player[] = [
         spec: CharacterSpecEnum.Fury,
       },
       {
-        name: 'Tonyfury',
+        name: 'Restorenko',
         rank: CharacterRank.alt,
         role: CharacterRole.healer,
         class: CharacterClass.shaman,
