@@ -276,9 +276,23 @@ export class AssignmentsBtComponent implements OnInit, OnDestroy {
     );
 
     const flameTanks = tanks.filter(character => character !== mainTank).slice(0, 2);
+    const flameHotHealers = this.characters(CharacterClass.druid, CharacterRole.healer);
+    const flameDirectHealers = healers.filter(character => !flameHotHealers.includes(character));
+    const flameHealerQueue = [
+      ...flameDirectHealers.filter(character => this.isSingleTargetHealer(character)),
+      ...flameDirectHealers.filter(character => !this.isSingleTargetHealer(character)),
+    ];
     this.assignments[AssignmentType.Illidan].assignments.push(
       this.assignment(IconEnum.skull, 'P1 / P3 / P4 Main Tank', [{caster: mainTank, target: 'Illidan (block every Shear)', icon: IconEnum.skull}]),
       this.assignment(IconEnum.protection, 'P2 Flames of Azzinoth', [0, 1].map(index => ({caster: flameTanks[index], target: `Flame Tank #${index + 1} - Fire Resistance`}))),
+      this.assignment(IconEnum.holyLight, 'P2 Flame Tank Healers', [0, 1].map(index => ({
+        caster: flameHealerQueue[index],
+        target: flameTanks[index] ?? `Flame Tank #${index + 1}`,
+      }))),
+      this.assignment(IconEnum.holyLight, 'P2 Flame Tank HoTs', flameHotHealers.map(caster => ({
+        caster,
+        target: `Keep HoTs on ${this.name(flameTanks[0])} + ${this.name(flameTanks[1])}`,
+      }))),
       this.misdirectAssignment(hunters, [flameTanks[0]], 'P2 Flame #1 Misdirect Queue'),
     );
   }

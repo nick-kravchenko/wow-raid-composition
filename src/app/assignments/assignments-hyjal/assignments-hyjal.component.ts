@@ -146,13 +146,21 @@ export class AssignmentsHyjalComponent implements OnInit {
 
     const doomguardTank = protectionPaladin ?? tanks.find(character => character !== mainTank);
     const azgalorTank = tanks.find(character => character !== doomguardTank) ?? mainTank;
+    const hotHealers = this.characters(CharacterClass.druid, CharacterRole.healer);
+    const meleeHealer = healers.find(character => this.isAreaHealer(character) && character.class === CharacterClass.priest)
+      ?? healers.find(character => this.isAreaHealer(character))
+      ?? healers.find(character => !hotHealers.includes(character));
+    const doomguardHealers = healers.filter(character => character !== meleeHealer && !hotHealers.includes(character)).slice(-2);
     const warlocks = this.characters(CharacterClass.warlock, CharacterRole.ranged);
     this.assignments[AssignmentType.Azgalor].assignments.push(
       this.assignment(IconEnum.skull, 'Tanks', [
         {caster: azgalorTank, target: 'Azgalor', icon: IconEnum.skull},
         {caster: doomguardTank, target: 'Lesser Doomguards in Doom zone', icon: IconEnum.cross},
       ]),
-      this.assignment(IconEnum.holyLight, 'Doomguard Tank Healers', healers.slice(-2).map(caster => ({caster, target: this.characterName(doomguardTank)}))),
+      this.misdirectAssignment(hunters, azgalorTank),
+      this.assignment(IconEnum.healingWave, 'Melee Healer', [{caster: meleeHealer, target: 'Heal melee'}]),
+      this.assignment(IconEnum.holyLight, 'Main Tank HoTs', hotHealers.map(caster => ({caster, target: `Keep HoTs on ${this.characterName(azgalorTank)}`}))),
+      this.assignment(IconEnum.holyLight, 'Doomguard Tank Healers', doomguardHealers.map(caster => ({caster, target: this.characterName(doomguardTank)}))),
       this.assignment(IconEnum.soulStone, 'Doom Soulstone Sequence', warlocks.map((caster, index) => ({caster, target: `Soulstone #${index + 1} - Doom target`}))),
     );
 
