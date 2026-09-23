@@ -1,6 +1,6 @@
 // AUTO-GENERATED - do not edit manually.
 // Run `npm run bake:wcl` to regenerate.
-// Generated: 2026-09-01T14:13:24.348Z
+// Generated: 2026-09-23T13:12:16.119Z
 
 export interface WclGearItem {
   id: number;
@@ -77,7 +77,7 @@ export interface WclBakedData {
 }
 
 export const wclBakedData: WclBakedData = {
-  "generatedAt": "2026-09-01T14:13:24.348Z",
+  "generatedAt": "2026-09-23T13:12:16.119Z",
   "defaultServerSlug": "spineshatter",
   "defaultServerRegion": "eu",
   "characters": {
@@ -2281,6 +2281,427 @@ export const wclBakedData: WclBakedData = {
       "medianPerformanceAverage": 80.15579773039809,
       "totalKills": 0,
       "fetchedAt": "2026-09-01T14:13:24.348Z",
+      "error": null,
+      "partial": false
+    },
+    "bombawar": {
+      "characterName": "Bombawar",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 105332172,
+      "gear": [
+        {
+          "id": 28182,
+          "slot": 1,
+          "quality": 3,
+          "icon": "inv_helmet_15.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": 3003,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29381,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_04.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29023,
+          "slot": 3,
+          "quality": 4,
+          "icon": "inv_shoulder_54.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2983,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 2587,
+          "slot": 4,
+          "quality": 2,
+          "icon": "inv_shirt_grey_01.jpg",
+          "itemLevel": 20,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28601,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_leather_06.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28385,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_14.jpg",
+          "itemLevel": 123,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30538,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_leather_09.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": 3012,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28608,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_plate_04.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28795,
+          "slot": 9,
+          "quality": 4,
+          "icon": "inv_bracer_15.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2647,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28824,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_31.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28757,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_ahnqiraj_05.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29283,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_62.jpg",
+          "itemLevel": 130,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30446,
+          "slot": 13,
+          "quality": 4,
+          "icon": "inv_misc_gem_sapphire_01.jpg",
+          "itemLevel": 128,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29383,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_misc_monsterscales_15.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28529,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_10.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28773,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_axe_60.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2673,
+          "temporaryEnchantID": 2639
+        },
+        {
+          "id": 0,
+          "slot": 17,
+          "quality": 1,
+          "icon": "inv_axe_02.jpg",
+          "itemLevel": 0,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28581,
+          "slot": 18,
+          "quality": 4,
+          "icon": "inv_weapon_rifle_23.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 5976,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_guildtabard_01.jpg",
+          "itemLevel": 1,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "overallRanks": [
+        {
+          "raid": "bt",
+          "raidName": "BT",
+          "bossID": 50704,
+          "metric": "dps-bosses",
+          "label": "BT bosses",
+          "rank": null,
+          "rankPercent": null,
+          "total": null,
+          "bestAmount": null,
+          "medianPerformance": null,
+          "averagePerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "sourceUrl": "https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50704&dpstype=dps"
+        },
+        {
+          "raid": "bt",
+          "raidName": "BT",
+          "bossID": 50704,
+          "metric": "dps-bosses-trash",
+          "label": "BT bosses + trash",
+          "rank": null,
+          "rankPercent": null,
+          "total": null,
+          "bestAmount": null,
+          "medianPerformance": null,
+          "averagePerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "sourceUrl": "https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50704&dpstype=wdps"
+        },
+        {
+          "raid": "hyjal",
+          "raidName": "Hyjal",
+          "bossID": 50705,
+          "metric": "dps-bosses",
+          "label": "Hyjal bosses",
+          "rank": null,
+          "rankPercent": null,
+          "total": null,
+          "bestAmount": null,
+          "medianPerformance": null,
+          "averagePerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "sourceUrl": "https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50705&dpstype=dps"
+        },
+        {
+          "raid": "hyjal",
+          "raidName": "Hyjal",
+          "bossID": 50705,
+          "metric": "dps-bosses-trash",
+          "label": "Hyjal bosses + trash",
+          "rank": null,
+          "rankPercent": null,
+          "total": null,
+          "bestAmount": null,
+          "medianPerformance": null,
+          "averagePerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "sourceUrl": "https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50705&dpstype=wdps"
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 50601,
+          "encounterName": "High Warlord Naj'entus",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50602,
+          "encounterName": "Supremus",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50603,
+          "encounterName": "Shade of Akama",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50604,
+          "encounterName": "Teron Gorefiend",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50605,
+          "encounterName": "Gurtogg Bloodboil",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50606,
+          "encounterName": "Reliquary of Souls",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50607,
+          "encounterName": "Mother Shahraz",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50608,
+          "encounterName": "The Illidari Council",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50609,
+          "encounterName": "Illidan Stormrage",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50618,
+          "encounterName": "Rage Winterchill",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50619,
+          "encounterName": "Anetheron",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50620,
+          "encounterName": "Kaz'rogal",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50621,
+          "encounterName": "Azgalor",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50622,
+          "encounterName": "Archimonde",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        }
+      ],
+      "bestPerformanceAverage": null,
+      "medianPerformanceAverage": null,
+      "totalKills": 0,
+      "fetchedAt": "2026-09-23T13:12:16.119Z",
       "error": null,
       "partial": false
     },
@@ -22793,6 +23214,492 @@ export const wclBakedData: WclBakedData = {
       "medianPerformanceAverage": null,
       "totalKills": 0,
       "fetchedAt": "2026-09-01T14:13:24.348Z",
+      "error": null,
+      "partial": false
+    },
+    "mcballzy": {
+      "characterName": "Mcballzy",
+      "serverSlug": "spineshatter",
+      "serverRegion": "EU",
+      "wclId": 106489235,
+      "gear": [
+        {
+          "id": 30212,
+          "slot": 1,
+          "quality": 4,
+          "icon": "inv_helmet_90.jpg",
+          "itemLevel": 133,
+          "permanentEnchantID": 3002,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30015,
+          "slot": 2,
+          "quality": 4,
+          "icon": "inv_jewelry_necklace_14.jpg",
+          "itemLevel": 138,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28967,
+          "slot": 3,
+          "quality": 4,
+          "icon": "inv_shoulder_52.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2995,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 4334,
+          "slot": 4,
+          "quality": 2,
+          "icon": "inv_shirt_08.jpg",
+          "itemLevel": 34,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30107,
+          "slot": 5,
+          "quality": 4,
+          "icon": "inv_chest_cloth_17.jpg",
+          "itemLevel": 138,
+          "permanentEnchantID": 2661,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30038,
+          "slot": 6,
+          "quality": 4,
+          "icon": "inv_belt_13.jpg",
+          "itemLevel": 128,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30213,
+          "slot": 7,
+          "quality": 4,
+          "icon": "inv_pants_cloth_24.jpg",
+          "itemLevel": 133,
+          "permanentEnchantID": 2748,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 30037,
+          "slot": 8,
+          "quality": 4,
+          "icon": "inv_boots_cloth_05.jpg",
+          "itemLevel": 128,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 24250,
+          "slot": 9,
+          "quality": 3,
+          "icon": "inv_bracer_10.jpg",
+          "itemLevel": 112,
+          "permanentEnchantID": 2650,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28968,
+          "slot": 10,
+          "quality": 4,
+          "icon": "inv_gauntlets_52.jpg",
+          "itemLevel": 120,
+          "permanentEnchantID": 2937,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28793,
+          "slot": 11,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_65.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29302,
+          "slot": 12,
+          "quality": 4,
+          "icon": "inv_jewelry_ring_54.jpg",
+          "itemLevel": 128,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 27683,
+          "slot": 13,
+          "quality": 3,
+          "icon": "inv_misc_gem_pearl_01.jpg",
+          "itemLevel": 115,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29370,
+          "slot": 14,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_23.jpg",
+          "itemLevel": 110,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28766,
+          "slot": 15,
+          "quality": 4,
+          "icon": "inv_misc_cape_18.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2621,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 28770,
+          "slot": 16,
+          "quality": 4,
+          "icon": "inv_weapon_shortblade_41.jpg",
+          "itemLevel": 125,
+          "permanentEnchantID": 2669,
+          "temporaryEnchantID": 2678
+        },
+        {
+          "id": 30049,
+          "slot": 17,
+          "quality": 4,
+          "icon": "inv_misc_gem_azuredraenite_02.jpg",
+          "itemLevel": 128,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 29982,
+          "slot": 18,
+          "quality": 4,
+          "icon": "inv_wand_15.jpg",
+          "itemLevel": 134,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        },
+        {
+          "id": 31405,
+          "slot": 19,
+          "quality": 2,
+          "icon": "inv_shirt_15.jpg",
+          "itemLevel": 1,
+          "permanentEnchantID": null,
+          "temporaryEnchantID": null
+        }
+      ],
+      "overallRanks": [
+        {
+          "raid": "bt",
+          "raidName": "BT",
+          "bossID": 50704,
+          "metric": "dps-bosses",
+          "label": "BT bosses",
+          "rank": null,
+          "rankPercent": null,
+          "total": null,
+          "bestAmount": null,
+          "medianPerformance": null,
+          "averagePerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "sourceUrl": "https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50704&dpstype=dps"
+        },
+        {
+          "raid": "bt",
+          "raidName": "BT",
+          "bossID": 50704,
+          "metric": "dps-bosses-trash",
+          "label": "BT bosses + trash",
+          "rank": null,
+          "rankPercent": null,
+          "total": null,
+          "bestAmount": null,
+          "medianPerformance": null,
+          "averagePerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "sourceUrl": "https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50704&dpstype=wdps"
+        },
+        {
+          "raid": "hyjal",
+          "raidName": "Hyjal",
+          "bossID": 50705,
+          "metric": "dps-bosses",
+          "label": "Hyjal bosses",
+          "rank": null,
+          "rankPercent": 71.77493035539537,
+          "total": 5490,
+          "bestAmount": 1446.7706792806,
+          "medianPerformance": 32.9253921230601,
+          "averagePerformance": 39.09977887402162,
+          "totalKills": 3,
+          "fastestKill": 4734280,
+          "sourceUrl": "https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50705&dpstype=dps"
+        },
+        {
+          "raid": "hyjal",
+          "raidName": "Hyjal",
+          "bossID": 50705,
+          "metric": "dps-bosses-trash",
+          "label": "Hyjal bosses + trash",
+          "rank": null,
+          "rankPercent": 73.70683926323272,
+          "total": 5490,
+          "bestAmount": 1411.5707140262,
+          "medianPerformance": 43.25418984358055,
+          "averagePerformance": 40.40656616961714,
+          "totalKills": 3,
+          "fastestKill": 4734280,
+          "sourceUrl": "https://fresh.warcraftlogs.com/zone/rankings/1060?partition=3&boss=50705&dpstype=wdps"
+        }
+      ],
+      "rankings": [
+        {
+          "encounterID": 50601,
+          "encounterName": "High Warlord Naj'entus",
+          "rankPercent": 77.38326554642155,
+          "medianPerformance": 77.38326554642155,
+          "totalKills": 1,
+          "fastestKill": 138238,
+          "bestAmount": 1781.8544828484,
+          "highestDps": 1781.8544828484,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 77.59,
+            "rank": 8449,
+            "rankPercent": 66.61265462593369,
+            "total": 25303
+          }
+        },
+        {
+          "encounterID": 50602,
+          "encounterName": "Supremus",
+          "rankPercent": 10.294250575527235,
+          "medianPerformance": 10.294250575527235,
+          "totalKills": 1,
+          "fastestKill": 235674,
+          "bestAmount": 731.42985649669,
+          "highestDps": 731.42985649669,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 27.47,
+            "rank": 24003,
+            "rankPercent": 5.27271292130397,
+            "total": 25338
+          }
+        },
+        {
+          "encounterID": 50603,
+          "encounterName": "Shade of Akama",
+          "rankPercent": 54.50463288976082,
+          "medianPerformance": 54.50463288976082,
+          "totalKills": 1,
+          "fastestKill": 87006,
+          "bestAmount": 1230.6507597177,
+          "highestDps": 1230.6507597177,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 0,
+            "rank": 14841,
+            "rankPercent": 41.35778076345531,
+            "total": 25306
+          }
+        },
+        {
+          "encounterID": 50604,
+          "encounterName": "Teron Gorefiend",
+          "rankPercent": 66.07450854860653,
+          "medianPerformance": 66.07450854860653,
+          "totalKills": 1,
+          "fastestKill": 146412,
+          "bestAmount": 1931.7269076305,
+          "highestDps": 1931.7269076305,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 67.75,
+            "rank": 10965,
+            "rankPercent": 56.336121067303864,
+            "total": 25110
+          }
+        },
+        {
+          "encounterID": 50605,
+          "encounterName": "Gurtogg Bloodboil",
+          "rankPercent": 33.62933190046678,
+          "medianPerformance": 33.62933190046678,
+          "totalKills": 1,
+          "fastestKill": 210986,
+          "bestAmount": 1409.268861441,
+          "highestDps": 1409.268861441,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 55.49,
+            "rank": 17216,
+            "rankPercent": 26.456766917293233,
+            "total": 23408
+          }
+        },
+        {
+          "encounterID": 50606,
+          "encounterName": "Reliquary of Souls",
+          "rankPercent": 63.674137240774385,
+          "medianPerformance": 63.674137240774385,
+          "totalKills": 1,
+          "fastestKill": 328383,
+          "bestAmount": 1851.8897749609,
+          "highestDps": 1851.8897749609,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 75.55,
+            "rank": 11716,
+            "rankPercent": 51.009910927110774,
+            "total": 23913
+          }
+        },
+        {
+          "encounterID": 50607,
+          "encounterName": "Mother Shahraz",
+          "rankPercent": 78.32998271657851,
+          "medianPerformance": 78.32998271657851,
+          "totalKills": 1,
+          "fastestKill": 168626,
+          "bestAmount": 1654.8574952854,
+          "highestDps": 1654.8574952854,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 81.05,
+            "rank": 6683,
+            "rankPercent": 69.88597953941142,
+            "total": 22189
+          }
+        },
+        {
+          "encounterID": 50608,
+          "encounterName": "The Illidari Council",
+          "rankPercent": 34.49709677098869,
+          "medianPerformance": 34.49709677098869,
+          "totalKills": 1,
+          "fastestKill": 401042,
+          "bestAmount": 1153.3505218905,
+          "highestDps": 1153.3505218905,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 60.08,
+            "rank": 15096,
+            "rankPercent": 27.07729468599034,
+            "total": 20700
+          }
+        },
+        {
+          "encounterID": 50609,
+          "encounterName": "Illidan Stormrage",
+          "rankPercent": null,
+          "medianPerformance": null,
+          "totalKills": 0,
+          "fastestKill": 0,
+          "bestAmount": 0,
+          "highestDps": 0,
+          "spec": "",
+          "allStars": null
+        },
+        {
+          "encounterID": 50618,
+          "encounterName": "Rage Winterchill",
+          "rankPercent": 68.83739585352721,
+          "medianPerformance": 65.11263303122593,
+          "totalKills": 4,
+          "fastestKill": 123746,
+          "bestAmount": 1657.265689396,
+          "highestDps": 1657.265689396,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 76.24,
+            "rank": 2573,
+            "rankPercent": 64.29761243753471,
+            "total": 7204
+          }
+        },
+        {
+          "encounterID": 50619,
+          "encounterName": "Anetheron",
+          "rankPercent": 55.843912919622475,
+          "medianPerformance": 39.48929003296442,
+          "totalKills": 4,
+          "fastestKill": 117573,
+          "bestAmount": 1550.2770319557,
+          "highestDps": 1550.2770319557,
+          "spec": "Destruction",
+          "allStars": {
+            "points": 49.26,
+            "rank": 16190,
+            "rankPercent": 40.59300576125647,
+            "total": 27251
+          }
+        },
+        {
+          "encounterID": 50620,
+          "encounterName": "Kaz'rogal",
+          "rankPercent": 75.0761060018258,
+          "medianPerformance": 54.69104805518029,
+          "totalKills": 4,
+          "fastestKill": 150698,
+          "bestAmount": 1708.1779452946,
+          "highestDps": 1708.1779452946,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 83.36,
+            "rank": 2097,
+            "rankPercent": 70.54111033028812,
+            "total": 7115
+          }
+        },
+        {
+          "encounterID": 50621,
+          "encounterName": "Azgalor",
+          "rankPercent": 61.49601948569747,
+          "medianPerformance": 48.612258937554806,
+          "totalKills": 3,
+          "fastestKill": 163075,
+          "bestAmount": 1165.469875824,
+          "highestDps": 1165.469875824,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 67.39,
+            "rank": 2999,
+            "rankPercent": 57.06101403609281,
+            "total": 6982
+          }
+        },
+        {
+          "encounterID": 50622,
+          "encounterName": "Archimonde",
+          "rankPercent": 72.81196234813893,
+          "medianPerformance": 49.36203705994519,
+          "totalKills": 3,
+          "fastestKill": 153540,
+          "bestAmount": 1300.1693369806,
+          "highestDps": 1300.1693369806,
+          "spec": "Affliction",
+          "allStars": {
+            "points": 80.06,
+            "rank": 2086,
+            "rankPercent": 69.04231625835189,
+            "total": 6735
+          }
+        }
+      ],
+      "bestPerformanceAverage": 58.162330825681295,
+      "medianPerformanceAverage": 51.76248670135286,
+      "totalKills": 0,
+      "fetchedAt": "2026-09-23T13:07:57.570Z",
       "error": null,
       "partial": false
     },

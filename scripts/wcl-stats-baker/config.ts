@@ -43,6 +43,16 @@ function russianGuild(name: string, faction: 'Alliance' | 'Horde'): WclStatsGuil
 
 export const RUSSIAN_GUILDS: readonly WclStatsGuildConfig[] = [
   ...[
+    'CEBEP POMNIT',
+    'DELETED',
+    'Eternal Sleep',
+    // 'Faceroll',
+    'Just Ask',
+    // 'MATRëSHKA',
+    'Trade Goods',
+    'Unexpected Journey',
+  ].map(name => russianGuild(name, 'Horde')),
+  ...[
     'Annuit Coeptis',
     'BOARS',
     'Dwarves drank Baikal',
@@ -53,16 +63,6 @@ export const RUSSIAN_GUILDS: readonly WclStatsGuildConfig[] = [
     'N O R D',
     // 'Warsong',
   ].map(name => russianGuild(name, 'Alliance')),
-  ...[
-    'CEBEP POMNIT',
-    'DELETED',
-    'Eternal Sleep',
-    // 'Faceroll',
-    'Just Ask',
-    // 'MATRëSHKA',
-    'Trade Goods',
-    'Unexpected Journey',
-  ].map(name => russianGuild(name, 'Horde')),
 ];
 
 export const TRACKED_GUILDS: readonly WclStatsGuildConfig[] = [

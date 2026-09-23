@@ -6,6 +6,31 @@ import { CharacterSpecEnum } from '../_entities/character-spec.enum';
 
 export const players: Player[] = [
   {
+    name: 'Bombawar',
+    characters: [
+      {
+        name: 'Bombawar',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.warrior,
+        spec: CharacterSpecEnum.Arms,
+      },
+    ],
+  },
+  {
+    name: 'Mcballzy',
+    discord: { userId: '313277704432779265' },
+    characters: [
+      {
+        name: 'Mcballzy',
+        rank: CharacterRank.main,
+        role: CharacterRole.ranged,
+        class: CharacterClass.warlock,
+        spec: CharacterSpecEnum.Affliction,
+      },
+    ],
+  },
+  {
     name: 'Lazykit',
     discord: { userId: '298460716904611840' },
     characters: [

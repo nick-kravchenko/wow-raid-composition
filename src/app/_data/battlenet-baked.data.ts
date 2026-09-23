@@ -1,6 +1,6 @@
 // AUTO-GENERATED - do not edit manually.
 // Run `npm run bake:bnet` to regenerate.
-// Generated: 2026-09-01T14:14:10.865Z
+// Generated: 2026-09-23T13:12:16.119Z
 
 export type BnetFaction = 'ALLIANCE' | 'HORDE';
 export type BnetGender = 'MALE' | 'FEMALE';
@@ -40,7 +40,7 @@ export interface BnetBakedData {
 }
 
 export const bnetBakedData: BnetBakedData = {
-  "generatedAt": "2026-09-01T14:14:10.865Z",
+  "generatedAt": "2026-09-23T13:12:16.119Z",
   "defaultRealmSlug": "spineshatter",
   "defaultRegion": "eu",
   "gameVersion": "classicann",
@@ -232,6 +232,27 @@ export const bnetBakedData: BnetBakedData = {
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/54/56164662-avatar.jpg",
       "mainRawUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/54/56164662-main-raw.png",
       "fetchedAt": "2026-09-01T14:14:10.865Z",
+      "error": null
+    },
+    "bombawar": {
+      "characterName": "Bombawar",
+      "realmSlug": "spineshatter",
+      "region": "eu",
+      "bnetId": 50687879,
+      "raceId": 2,
+      "raceName": "Orc",
+      "classId": 1,
+      "className": "Warrior",
+      "gender": "FEMALE",
+      "level": 70,
+      "activeSpecId": null,
+      "activeSpecName": null,
+      "faction": "HORDE",
+      "averageItemLevel": 121,
+      "equippedItemLevel": 119,
+      "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/135/50687879-avatar.jpg",
+      "mainRawUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/135/50687879-main-raw.png",
+      "fetchedAt": "2026-09-23T13:12:16.119Z",
       "error": null
     },
     "bîruang": {
@@ -1303,6 +1324,27 @@ export const bnetBakedData: BnetBakedData = {
       "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/0/48176896-avatar.jpg",
       "mainRawUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/0/48176896-main-raw.png",
       "fetchedAt": "2026-09-01T14:14:10.865Z",
+      "error": null
+    },
+    "mcballzy": {
+      "characterName": "Mcballzy",
+      "realmSlug": "spineshatter",
+      "region": "eu",
+      "bnetId": 53206316,
+      "raceId": 2,
+      "raceName": "Orc",
+      "classId": 9,
+      "className": "Warlock",
+      "gender": "MALE",
+      "level": 70,
+      "activeSpecId": null,
+      "activeSpecName": null,
+      "faction": "HORDE",
+      "averageItemLevel": 133,
+      "equippedItemLevel": 131,
+      "avatarUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/44/53206316-avatar.jpg",
+      "mainRawUrl": "https://render.worldofwarcraft.com/classicann-eu/character/spineshatter/44/53206316-main-raw.png",
+      "fetchedAt": "2026-09-23T13:07:57.570Z",
       "error": null
     },
     "mitsurú": {
