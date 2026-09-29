@@ -1092,4 +1092,24 @@ export const players: Player[] = [
       },
     ],
   },
+  {
+    name: 'Handirel',
+    discord: { userId: '580497070285389854' },
+    characters: [
+      {
+        name: 'Handirel',
+        rank: CharacterRank.main,
+        role: CharacterRole.tank,
+        class: CharacterClass.druid,
+        spec: CharacterSpecEnum.Feral,
+      },
+      {
+        name: 'Handelion',
+        rank: CharacterRank.alt,
+        role: CharacterRole.ranged,
+        class: CharacterClass.hunter,
+        spec: CharacterSpecEnum.BeastMastery,
+      },
+    ],
+  },
 ];
