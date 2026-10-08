@@ -520,9 +520,9 @@ export const players: Player[] = [
       {
         name: 'Shamkira',
         rank: CharacterRank.alt,
-        role: CharacterRole.healer,
+        role: CharacterRole.melee,
         class: CharacterClass.shaman,
-        spec: CharacterSpecEnum.Restoration,
+        spec: CharacterSpecEnum.Enhancement,
       },
       // {
       //   name: 'Kegbear',
