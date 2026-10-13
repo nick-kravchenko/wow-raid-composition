@@ -1139,4 +1139,44 @@ export const players: Player[] = [
       },
     ],
   },
+  {
+    name: 'Bachmann',
+    discord: { userId: '477121453356220436' },
+    characters: [
+      {
+        name: 'Báchmann',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+      {
+        name: 'Bächmann',
+        rank: CharacterRank.alt,
+        role: CharacterRole.healer,
+        class: CharacterClass.priest,
+        spec: CharacterSpecEnum.Holy,
+      },
+    ],
+  },
+  {
+    name: 'Iesha',
+    discord: { userId: '238749916988571648' },
+    characters: [
+      {
+        name: 'Ieshig',
+        rank: CharacterRank.main,
+        role: CharacterRole.melee,
+        class: CharacterClass.shaman,
+        spec: CharacterSpecEnum.Enhancement,
+      },
+      {
+        name: 'Iesha',
+        rank: CharacterRank.alt,
+        role: CharacterRole.melee,
+        class: CharacterClass.paladin,
+        spec: CharacterSpecEnum.Retribution,
+      },
+    ],
+  },
 ];
