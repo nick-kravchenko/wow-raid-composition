@@ -1,5 +1,4 @@
-import assert from 'node:assert/strict';
-import { test } from 'node:test';
+import { expect, test } from 'vitest';
 import { recoverLazyLoad } from '../src/app/lazy-load-recovery';
 
 function browserStub() {
@@ -23,24 +22,24 @@ for (const message of [
   test(`recovers once: ${message}`, () => {
     const { browser, navigations } = browserStub();
     const url = '/wow-raid-composition/characters?view=class#mage';
-    assert.equal(recoverLazyLoad(new TypeError(message), url, browser), true);
+    expect(recoverLazyLoad(new TypeError(message), url, browser)).toBe(true);
     // A fresh invocation with the same tab storage models the reloaded app.
-    assert.equal(recoverLazyLoad(new TypeError(message), url, browser), false);
-    assert.deepEqual(navigations, [url]);
+    expect(recoverLazyLoad(new TypeError(message), url, browser)).toBe(false);
+    expect(navigations).toEqual([url]);
   });
 }
 
 test('does not reload for unrelated errors', () => {
   const { browser, navigations } = browserStub();
   for (const error of [new TypeError('Cannot read properties of undefined'), null, 'error']) {
-    assert.equal(recoverLazyLoad(error, '/characters', browser), false);
+    expect(recoverLazyLoad(error, '/characters', browser)).toBe(false);
   }
-  assert.deepEqual(navigations, []);
+  expect(navigations).toEqual([]);
 });
 
 test('does not reload when storage is blocked', () => {
   const { browser, navigations } = browserStub();
   Object.defineProperty(browser, 'sessionStorage', { get() { throw new Error('Access denied'); } });
-  assert.equal(recoverLazyLoad(new TypeError('Importing a module script failed.'), '/characters', browser), false);
-  assert.deepEqual(navigations, []);
+  expect(recoverLazyLoad(new TypeError('Importing a module script failed.'), '/characters', browser)).toBe(false);
+  expect(navigations).toEqual([]);
 });

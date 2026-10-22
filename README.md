@@ -54,13 +54,10 @@ npm test
 
 Production artifacts are written to `dist/wow-raid-composition/`.
 
-Some script and presentation tests use Node's test runner through `tsx` rather than Karma. For example:
+Unit tests run on Vitest. `npm test` covers the app (`src/`), and the data-baking scripts have their own suite:
 
 ```bash
-npx tsx scripts/wcl-stats-baker/normalize.test.ts
-npx tsx scripts/wcl-stats-baker/baker.test.ts
-npx tsx scripts/wcl-baker/overall-ranks.test.ts
-npx tsx src/app/wcl-stats/wcl-stats.test.ts
+npm run test:scripts
 ```
 
 ## Data baking

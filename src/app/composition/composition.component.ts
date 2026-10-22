@@ -423,7 +423,7 @@ if (this.signedPlayers.length && c.player?.discord?.userId) {
 
   async screenshot(): Promise<void> {
     this.capturingScreenshot = true;
-    const { default: html2canvas } = await import('html2canvas');
+    const { default: html2canvas } = await import('html2canvas-pro');
     html2canvas(this.raidGroups.nativeElement, {
       backgroundColor: '#404040'
     }).then(canvas => {

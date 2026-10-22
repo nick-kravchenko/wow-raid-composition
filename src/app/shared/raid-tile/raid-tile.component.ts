@@ -2,7 +2,7 @@ import { Component, ElementRef, computed, inject, input, linkedSignal, output, s
 import { LowerCasePipe } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
-import html2canvas from 'html2canvas';
+import html2canvas from 'html2canvas-pro';
 import { Character } from '../../_entities/character';
 import { CharacterRole } from '../../_entities/character-role.enum';
 import { CharacterRank } from '../../_entities/character-rank.enum';
