@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Player } from '../../_entities/player';
 import { CharacterTileComponent } from '../character-tile/character-tile.component';
 
@@ -8,6 +8,7 @@ import { CharacterTileComponent } from '../character-tile/character-tile.compone
     CharacterTileComponent,
   ],
   templateUrl: './player-tile.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './player-tile.component.scss'
 })
 export class PlayerTileComponent {

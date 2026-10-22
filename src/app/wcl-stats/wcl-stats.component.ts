@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common';
-import { Component, OnDestroy, signal } from '@angular/core';
+import { Component, OnDestroy, signal, ChangeDetectionStrategy } from '@angular/core';
 
 import { wclStatsData } from '../_data/wcl-stats.data';
 import type { WclStatsRow } from '../_data/wcl-stats.data';
@@ -19,6 +19,7 @@ const SHOW_RU_STORAGE_KEY = 'wclStatsShowRuGuilds';
   selector: 'app-wcl-stats',
   imports: [DatePipe],
   templateUrl: './wcl-stats.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './wcl-stats.component.scss',
 })
 export class WclStatsComponent implements OnDestroy {

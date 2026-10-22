@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {CharacterTileComponent} from '../../shared/character-tile/character-tile.component';
 import {Character} from '../../_entities/character';
 import {IconEnum} from '../../_entities/icon.enum';
@@ -35,6 +35,7 @@ interface ClassAssignment {
   selector: 'app-assignments-tk',
   imports: [CharacterTileComponent],
   templateUrl: './assignments-tk.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './assignments-tk.component.scss'
 })
 export class AssignmentsTkComponent implements OnInit {

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Character } from '../../_entities/character';
 import { CharacterClass } from '../../_entities/character-class.enum';
 import { CharacterRole } from '../../_entities/character-role.enum';
@@ -43,6 +43,7 @@ interface ClassAssignment {
     KeyValuePipe,
   ],
   templateUrl: './assignments-raid-wide.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './assignments-raid-wide.component.scss'
 })
 export class AssignmentsRaidWideComponent implements OnInit {

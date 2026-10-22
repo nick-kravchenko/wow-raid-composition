@@ -1,4 +1,4 @@
-import { Component, computed, inject, OnChanges, OnInit, Signal } from '@angular/core';
+import { Component, computed, inject, OnChanges, OnInit, Signal, ChangeDetectionStrategy } from '@angular/core';
 import { toSignal, toObservable } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap, from, of } from 'rxjs';
@@ -105,6 +105,7 @@ declare const $WowheadPower: { refreshLinks(): void } | undefined;
   selector: 'app-character',
   templateUrl: './character.component.html',
   styleUrl: './character.component.scss',
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     DecimalPipe,
     LowerCasePipe

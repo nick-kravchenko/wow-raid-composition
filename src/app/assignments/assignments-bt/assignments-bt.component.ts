@@ -1,4 +1,4 @@
-import {Component, EmbeddedViewRef, Input, OnDestroy, OnInit, TemplateRef, ViewChild, ViewContainerRef} from '@angular/core';
+import {Component, EmbeddedViewRef, Input, OnDestroy, OnInit, TemplateRef, ViewChild, ViewContainerRef, ChangeDetectionStrategy} from '@angular/core';
 import {Character} from '../../_entities/character';
 import {CharacterClass} from '../../_entities/character-class.enum';
 import {CharacterRole} from '../../_entities/character-role.enum';
@@ -42,6 +42,7 @@ interface BossAssignment {
   selector: 'app-assignments-bt',
   imports: [CharacterTileComponent],
   templateUrl: './assignments-bt.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './assignments-bt.component.scss',
 })
 export class AssignmentsBtComponent implements OnInit, OnDestroy {

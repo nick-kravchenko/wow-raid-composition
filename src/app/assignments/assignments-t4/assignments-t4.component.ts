@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {CharacterTileComponent} from '../../shared/character-tile/character-tile.component';
 import {Character} from '../../_entities/character';
 import {IconEnum} from '../../_entities/icon.enum';
@@ -53,6 +53,7 @@ interface ClassAssignment {
     CharacterTileComponent
   ],
   templateUrl: './assignments-t4.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './assignments-t4.component.scss'
 })
 export class AssignmentsT4Component implements OnInit {

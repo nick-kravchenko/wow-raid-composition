@@ -1,4 +1,4 @@
-import { Component, signal, effect, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { Component, signal, effect, HostListener, ViewChild, ElementRef, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { RouterLink } from '@angular/router';
     RouterLink
   ],
   templateUrl: './layout.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './layout.component.scss',
 })
 export class LayoutComponent {

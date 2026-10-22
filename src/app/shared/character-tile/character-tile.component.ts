@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import { Character } from '../../_entities/character';
 import { LowerCasePipe } from '@angular/common';
 
@@ -17,6 +17,7 @@ import { filterOverallDamageRanks, formatOverallRank } from '../wcl-overall-rank
     RouterLink,
   ],
   templateUrl: './character-tile.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './character-tile.component.scss'
 })
 export class CharacterTileComponent implements OnChanges {

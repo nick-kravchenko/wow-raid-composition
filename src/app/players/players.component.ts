@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { players } from '../_data/players.data';
 import { Player } from '../_entities/player';
 import { PlayerTileComponent } from '../shared/player-tile/player-tile.component';
@@ -11,6 +11,7 @@ import { CharacterRank } from '../_entities/character-rank.enum';
     PlayerTileComponent
   ],
   templateUrl: './players.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './players.component.scss'
 })
 export class PlayersComponent {

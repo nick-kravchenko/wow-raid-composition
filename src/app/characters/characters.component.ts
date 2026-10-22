@@ -1,4 +1,4 @@
-import {Component, computed, Signal} from '@angular/core';
+import {Component, computed, Signal, ChangeDetectionStrategy} from '@angular/core';
 import { players } from '../_data/players.data';
 import { CharacterTileComponent } from '../shared/character-tile/character-tile.component';
 import { RouterLink } from '@angular/router';
@@ -22,6 +22,7 @@ interface CharacterClassGroup {
     RouterLink
   ],
   templateUrl: './characters.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './characters.component.scss',
 })
 export class CharactersComponent {

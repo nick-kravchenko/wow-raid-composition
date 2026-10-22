@@ -1,4 +1,4 @@
-import {Component, EmbeddedViewRef, Input, OnDestroy, OnInit, TemplateRef, ViewChild, ViewContainerRef} from '@angular/core';
+import {Component, EmbeddedViewRef, Input, OnDestroy, OnInit, TemplateRef, ViewChild, ViewContainerRef, ChangeDetectionStrategy} from '@angular/core';
 import {CharacterTileComponent} from '../../shared/character-tile/character-tile.component';
 import {Character} from '../../_entities/character';
 import {IconEnum} from '../../_entities/icon.enum';
@@ -38,6 +38,7 @@ interface ClassAssignment {
   selector: 'app-assignments-ssc',
   imports: [CharacterTileComponent],
   templateUrl: './assignments-ssc.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './assignments-ssc.component.scss'
 })
 export class AssignmentsSscComponent implements OnInit, OnDestroy {

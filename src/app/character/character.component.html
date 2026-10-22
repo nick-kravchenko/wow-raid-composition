@@ -16,7 +16,7 @@
              href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
              [title]="slot"
              target="_blank"></a>
-          @if (isBis(slot, getItemBySlotName(slot)?.id)) {
+          @if (isBis(slot, $safeNavigationMigration(getItemBySlotName(slot)?.id))) {
             <span class="bis-badge">BiS</span>
           }
         </div>
@@ -82,7 +82,7 @@
              href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
              [title]="slot"
              target="_blank"></a>
-          @if (isBis(slot, getItemBySlotName(slot)?.id)) {
+          @if (isBis(slot, $safeNavigationMigration(getItemBySlotName(slot)?.id))) {
             <span class="bis-badge">BiS</span>
           }
         </div>
@@ -96,7 +96,7 @@
              href="https://www.wowhead.com/tbc/item={{ getItemBySlotName(slot)?.id }}&ench={{ getItemBySlotName(slot)?.permanentEnchantID }}"
              [title]="slot"
              target="_blank"></a>
-          @if (isBis(slot, getItemBySlotName(slot)?.id)) {
+          @if (isBis(slot, $safeNavigationMigration(getItemBySlotName(slot)?.id))) {
             <span class="bis-badge">BiS</span>
           }
         </div>

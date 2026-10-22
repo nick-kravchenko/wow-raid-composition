@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, signal } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, signal, ChangeDetectionStrategy } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Character } from '../_entities/character';
@@ -25,6 +25,7 @@ import { BitlyService } from '../shared/bitly.service';
     CompositionService,
   ],
   templateUrl: './composition.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './composition.component.scss'
 })
 export class CompositionComponent implements OnInit {

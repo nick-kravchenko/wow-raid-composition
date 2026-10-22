@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import { AssignmentsRaidWideComponent } from './assignments-raid-wide/assignments-raid-wide.component';
 import { Player } from '../_entities/player';
 import { Character } from '../_entities/character';
@@ -38,6 +38,7 @@ enum PaneNameEnum {
     RouterLink,
   ],
   templateUrl: './assignments.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './assignments.component.scss'
 })
 export class AssignmentsComponent implements OnInit {

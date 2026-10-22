@@ -1,4 +1,4 @@
-import { Component, computed, effect, signal, WritableSignal } from '@angular/core';
+import { Component, computed, effect, signal, WritableSignal, ChangeDetectionStrategy } from '@angular/core';
 
 declare const $WowheadPower: { refreshLinks(): void } | undefined;
 
@@ -20,6 +20,7 @@ const SLOT_LABELS: Record<string, string> = {
 @Component({
   selector: 'app-bis',
   templateUrl: './bis.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './bis.component.scss',
 })
 export class BisComponent {

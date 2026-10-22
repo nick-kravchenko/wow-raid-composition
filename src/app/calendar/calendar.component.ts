@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { DatePipe } from '@angular/common';
 
 @Component({
@@ -7,6 +7,7 @@ import { DatePipe } from '@angular/common';
     DatePipe,
   ],
   templateUrl: './calendar.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './calendar.component.scss'
 })
 export class CalendarComponent implements OnInit {

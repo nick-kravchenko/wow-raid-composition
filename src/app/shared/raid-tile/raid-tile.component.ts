@@ -1,4 +1,4 @@
-import { Component, ElementRef, computed, inject, input, linkedSignal, output, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, computed, inject, input, linkedSignal, output, signal, viewChild, ChangeDetectionStrategy } from '@angular/core';
 import { LowerCasePipe } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -20,6 +20,7 @@ import { buildRaidDamageSummary, formatRaidDamage } from './raid-damage-summary'
     RouterLink,
   ],
   templateUrl: './raid-tile.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './raid-tile.component.scss'
 })
 export class RaidTileComponent {
