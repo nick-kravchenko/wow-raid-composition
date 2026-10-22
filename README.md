@@ -48,7 +48,7 @@ npm run watch
 # GitHub Pages build with the repository base href
 npm run build:gpages
 
-# Angular/Karma test runner (requires Chrome)
+# Angular unit tests (Vitest)
 npm test
 ```
 
